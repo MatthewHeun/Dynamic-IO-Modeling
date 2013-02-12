@@ -1,0 +1,24 @@
+#
+# Files created by the LaTeX compile process
+#
+*.aux
+*.log
+*.spl
+*.gz
+
+#
+# Output .pdf file doesn't need to be updated in the repository
+#
+Heun_Dale_A_dynamic_approach_to_input-output_modeling_v7.pdf
+
+#
+# Files from OSX
+#
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
