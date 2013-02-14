@@ -426,6 +426,7 @@
 
 
 
+
 <path
    sodipodi:nodetypes="ccc"
    inkscape:connector-curvature="0"
@@ -445,6 +446,7 @@
      y="188.01523">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan3044">12</tspan></tspan></text>
+
 
 
 
@@ -492,6 +494,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -530,13 +533,18 @@
    style="font-size:25.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
    xml:space="preserve"><tspan
      y="-87.123711"
-     x="388.30566"
+     x="391.85565"
      sodipodi:role="line"
-     id="tspan3123">Economy</tspan><tspan
+     id="tspan3123">Society / </tspan><tspan
      y="-55.123711"
      x="388.30566"
      sodipodi:role="line"
+     id="tspan3034">Economy</tspan><tspan
+     y="-23.123711"
+     x="388.30566"
+     sodipodi:role="line"
      id="tspan3125">(2)</tspan></text>
+
 
 
 
@@ -564,6 +572,7 @@
      y="188.01535">Q<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan4847">21</tspan></tspan></text>
+
 
 
 
@@ -600,6 +609,7 @@
      id="tspan3107"
      x="1491.8081"
      y="664.91211" /></text>
+
 
 
 
@@ -882,6 +892,7 @@
      x="1491.8081"
      id="tspan3107-8"
      sodipodi:role="line" /></text>
+
 
 
 

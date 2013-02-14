@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Heun_Dale_A_dynamic_approach_to_input-output_modeling_v7.aux
+The style file: model2-names.bst
+Database file #1: EROI_review_v2.bib
+Repeated entry---line 1207 of file EROI_review_v2.bib
+ : @article{Brandt2011
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Costanza1980"
+Warning--I didn't find a database entry for "Joshi1999"
+Warning--I didn't find a database entry for "Costanza1984"
+Warning--empty booktitle in Brown2004
+Warning--empty booktitle in Bullard1978
+Warning--empty pages in Bullard1978
+You've used 17 entries,
+            2761 wiz_defined-function locations,
+            717 strings with 7136 characters,
+and the built_in function-call counts, 9293 in all, are:
+= -- 786
+> -- 238
+< -- 18
++ -- 96
+- -- 76
+* -- 932
+:= -- 1419
+add.period$ -- 47
+call.type$ -- 17
+change.case$ -- 109
+chr.to.int$ -- 16
+cite$ -- 20
+duplicate$ -- 655
+empty$ -- 726
+format.name$ -- 113
+if$ -- 1762
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 124
+newline$ -- 91
+num.names$ -- 70
+pop$ -- 149
+preamble$ -- 1
+purify$ -- 93
+quote$ -- 0
+skip$ -- 266
+stack$ -- 0
+substring$ -- 512
+swap$ -- 488
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 144
+warning$ -- 3
+while$ -- 78
+width$ -- 0
+write$ -- 238
+(There was 1 error message)
