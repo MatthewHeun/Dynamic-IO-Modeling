@@ -1,0 +1,25 @@
+FIndbyIndTRDetail.txt                          June 10, 2008
+
+File layout for IndbyIndTrDetail.txt, 
+Industry-by-Industry Total Requirements
+----------------------------------------
+   Field            Description
+----------------------------------------
+    1            Industry I-O code
+
+    2            Industry description
+
+    3            Industry I-O code
+ 
+    4            Industry description
+
+    5            Total requirements coefficients.  These 
+                 values show the production required both
+                 directly and indirectly of the industry named
+                 by the row code per dollar of production delivered to 
+                 final users from the industry named by the column code.  
+                 Coefficients are shown to seven decimal places.
+
+    6            Year	
+------------------------------------------------------------
+      Note: Detail may not add to total due to rounding.
