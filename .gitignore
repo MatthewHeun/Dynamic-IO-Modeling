@@ -5,6 +5,7 @@
 *.log
 *.spl
 *.gz
+*.pdf
 
 #
 # Output .pdf file doesn't need to be updated in the repository
