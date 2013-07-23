@@ -1,0 +1,146 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
+A level-1 auxiliary file: Chapter_Introduction/Chapter_Introduction.aux
+I couldn't open database file EROI_review_v2.bib
+---line 23 of file Chapter_Introduction/Chapter_Introduction.aux
+ : \bibdata{EROI_review_v2
+ :                        }
+I'm skipping whatever remains of this command
+The style file: unsrt.bst
+A level-1 auxiliary file: Chapter_Methodology/Chapter_Methodology.aux
+Illegal, another \bibdata command---line 14 of file Chapter_Methodology/Chapter_Methodology.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 15 of file Chapter_Methodology/Chapter_Methodology.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter_Example_A/Chapter_Single_sector_economy.aux
+Illegal, another \bibdata command---line 19 of file Chapter_Example_A/Chapter_Single_sector_economy.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 20 of file Chapter_Example_A/Chapter_Single_sector_economy.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter_Value/Chapter_Value_and_energy_intensity.aux
+Illegal, another \bibdata command---line 10 of file Chapter_Value/Chapter_Value_and_energy_intensity.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 11 of file Chapter_Value/Chapter_Value_and_energy_intensity.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter_Example_B/Chapter_Single_sector_with_external_demand.aux
+Illegal, another \bibdata command---line 34 of file Chapter_Example_B/Chapter_Single_sector_with_external_demand.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 35 of file Chapter_Example_B/Chapter_Single_sector_with_external_demand.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter_Example_C/Chapter_two_sector_economy.aux
+Illegal, another \bibdata command---line 82 of file Chapter_Example_C/Chapter_two_sector_economy.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 83 of file Chapter_Example_C/Chapter_two_sector_economy.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter_Example_D/Chapter_durable_and_non_durable.aux
+Illegal, another \bibdata command---line 64 of file Chapter_Example_D/Chapter_durable_and_non_durable.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 65 of file Chapter_Example_D/Chapter_durable_and_non_durable.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter_Implications/Chapter_Implicaions.aux
+Illegal, another \bibdata command---line 17 of file Chapter_Implications/Chapter_Implicaions.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 18 of file Chapter_Implications/Chapter_Implicaions.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter_Issues/Chapter_Issues.aux
+Illegal, another \bibdata command---line 12 of file Chapter_Issues/Chapter_Issues.aux
+ : \bibdata
+ :         {EROI_review_v2}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 13 of file Chapter_Issues/Chapter_Issues.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Appendix_Proof_1/Appendix_proof_of_equation_1.aux
+A level-1 auxiliary file: Appendix_Proof_2/Appendix_proof_of_equation_2.aux
+A level-1 auxiliary file: Appendix_Derivation/Appendix_derivation.aux
+I found no database files---while reading file Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
+Warning--I didn't find a database entry for "Leontief1936"
+Warning--I didn't find a database entry for "Costanza1980"
+Warning--I didn't find a database entry for "Carter1974"
+Warning--I didn't find a database entry for "Bullard1975"
+Warning--I didn't find a database entry for "Bullard1978"
+Warning--I didn't find a database entry for "Herendeen1978"
+Warning--I didn't find a database entry for "Casler1984"
+Warning--I didn't find a database entry for "Joshi1999"
+Warning--I didn't find a database entry for "Suh2009"
+Warning--I didn't find a database entry for "G-R1975"
+Warning--I didn't find a database entry for "G-R1979a"
+Warning--I didn't find a database entry for "G-R1979b"
+Warning--I didn't find a database entry for "Leask2012"
+Warning--I didn't find a database entry for "Costanza1984"
+Warning--I didn't find a database entry for "Odum1975"
+Warning--I didn't find a database entry for "Odum1996"
+Warning--I didn't find a database entry for "Brown2004"
+Warning--I didn't find a database entry for "Zwillinger2011"
+You've used 0 entries,
+            1791 wiz_defined-function locations,
+            493 strings with 4560 characters,
+and the built_in function-call counts, 18 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There were 18 error messages)

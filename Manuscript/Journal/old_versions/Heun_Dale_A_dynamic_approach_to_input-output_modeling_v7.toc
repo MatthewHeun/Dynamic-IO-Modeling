@@ -1,0 +1,57 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {subsection}{\numberline {1.1}Brief history of input-output (I-O) modeling}{4}
+\contentsline {subsection}{\numberline {1.2}Basic I-O method}{4}
+\contentsline {subsection}{\numberline {1.3}An I-O method for dynamic (transient) economic analysis}{6}
+\contentsline {section}{\numberline {2}Methodology}{6}
+\contentsline {subsection}{\numberline {2.1}Model economy}{6}
+\contentsline {subsection}{\numberline {2.2}Direct energy ($E$), indirect (embodied) energy ($B$), and waste heat ($Q$)}{7}
+\contentsline {subsection}{\numberline {2.3}Total energy ($T$)}{8}
+\contentsline {section}{\numberline {3}Example A: single sector economy}{10}
+\contentsline {subsection}{\numberline {3.1}First Law of Thermodynamics}{10}
+\contentsline {subsection}{\numberline {3.2}Total energy accounting}{11}
+\contentsline {subsection}{\numberline {3.3}Embodied energy accounting}{12}
+\contentsline {subsection}{\numberline {3.4}Depreciation}{14}
+\contentsline {section}{\numberline {4}Value ($X$), energy intensity ($\varepsilon $), and the input-output ratio ($a$)}{14}
+\contentsline {subsection}{\numberline {4.1}Value flows ($\mathaccentV {dot}05F{X}$)}{14}
+\contentsline {subsection}{\numberline {4.2}Energy intensity ($\varepsilon $)}{15}
+\contentsline {subsection}{\numberline {4.3}Input-output ratios ($a$)}{15}
+\contentsline {section}{\numberline {5}Example B: a one sector economy with external demand}{16}
+\contentsline {subsection}{\numberline {5.1}First Law of Thermodynamics}{16}
+\contentsline {subsection}{\numberline {5.2}Total energy accounting}{17}
+\contentsline {subsection}{\numberline {5.3}Embodied energy accounting}{18}
+\contentsline {subsection}{\numberline {5.4}Depreciation}{19}
+\contentsline {subsection}{\numberline {5.5}Estimating energy intensity ($\varepsilon $) of the economy}{19}
+\contentsline {subsection}{\numberline {5.6}Derivation of economic sector energy intensity ($\varepsilon $) by a convergent infinite series}{21}
+\contentsline {section}{\numberline {6}Example C: a two-sector economy}{22}
+\contentsline {subsection}{\numberline {6.1}First Law of Thermodynamics}{22}
+\contentsline {subsection}{\numberline {6.2}Total energy accounting}{24}
+\contentsline {subsection}{\numberline {6.3}Embodied energy accounting}{25}
+\contentsline {subsection}{\numberline {6.4}Definition of embodied energy ($\mathaccentV {dot}05F{B}$)}{26}
+\contentsline {subsection}{\numberline {6.5}Depreciation}{27}
+\contentsline {subsection}{\numberline {6.6}Final demand}{28}
+\contentsline {subsection}{\numberline {6.7}Flows of Value ($\mathaccentV {dot}05F{X}$)}{29}
+\contentsline {subsection}{\numberline {6.8}Matrix Formulation}{30}
+\contentsline {subsection}{\numberline {6.9}Estimating $\mathbf {\varepsilon }$ and $\frac {\mathrm {d}\mathbf {B}}{\mathrm {d}t}$}{32}
+\contentsline {section}{\numberline {7}Example D: a two-sector economy with durable and non-durable goods}{33}
+\contentsline {subsection}{\numberline {7.1}First Law of Thermodynamics}{34}
+\contentsline {subsection}{\numberline {7.2}Total energy accounting}{35}
+\contentsline {subsection}{\numberline {7.3}Embodied energy accounting}{36}
+\contentsline {subsection}{\numberline {7.4}Depreciation}{37}
+\contentsline {subsection}{\numberline {7.5}Final demand}{37}
+\contentsline {subsection}{\numberline {7.6}Flows of Value ($\mathaccentV {dot}05F{X}$)}{38}
+\contentsline {subsection}{\numberline {7.7}Matrix Formulation}{38}
+\contentsline {subsection}{\numberline {7.8}Estimating $\mathbf {\varepsilon }$ and $\frac {\mathrm {d}\mathbf {B}}{\mathrm {d}t}$}{39}
+\contentsline {section}{\numberline {8}Implications}{40}
+\contentsline {subsection}{\numberline {8.1}Implications for economic ``development"}{40}
+\contentsline {subsection}{\numberline {8.2}Implications for the I-O method}{42}
+\contentsline {subsection}{\numberline {8.3}Implications for recycling, reuse, and dematerialization}{43}
+\contentsline {subsection}{\numberline {8.4}Comparison to a Steady-state Economy}{44}
+\contentsline {section}{\numberline {9}Conceptual and Theoretical Issues}{44}
+\contentsline {subsection}{\numberline {9.1}Choice of Energy Input Vector}{44}
+\contentsline {subsection}{\numberline {9.2}What is Endogenous?}{45}
+\contentsline {subsection}{\numberline {9.3}What About the Sun?}{46}
+\let \numberline \tmptocnumberline 
+\contentsline {section}{\numberline {Appendix~A}Proof of Equation \ref {eq:Xdifference1}}{46}
+\contentsline {section}{\numberline {Appendix~B}Proof of Equation \ref {eq:Xdifference2}}{47}
+\contentsline {section}{\numberline {Appendix~C}Derivation of Equation \ref {eq:Xdifference2_inverse}}{48}

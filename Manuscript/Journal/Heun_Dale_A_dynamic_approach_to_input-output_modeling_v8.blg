@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Heun_Dale_A_dynamic_approach_to_input-output_modeling_v8.aux
+The style file: model2-names.bst
+Database file #1: EROI_review_v2.bib
+Warning--I didn't find a database entry for "Costanza1980"
+Warning--I didn't find a database entry for "Joshi1999"
+Warning--I didn't find a database entry for "Costanza1984"
+Warning--empty booktitle in Brown2004
+Warning--empty booktitle in Bullard1978
+Warning--empty pages in Bullard1978
+You've used 15 entries,
+            2761 wiz_defined-function locations,
+            702 strings with 6658 characters,
+and the built_in function-call counts, 8114 in all, are:
+= -- 685
+> -- 202
+< -- 17
++ -- 80
+- -- 64
+* -- 805
+:= -- 1238
+add.period$ -- 41
+call.type$ -- 15
+change.case$ -- 95
+chr.to.int$ -- 14
+cite$ -- 18
+duplicate$ -- 577
+empty$ -- 641
+format.name$ -- 97
+if$ -- 1545
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 108
+newline$ -- 81
+num.names$ -- 62
+pop$ -- 135
+preamble$ -- 1
+purify$ -- 81
+quote$ -- 0
+skip$ -- 239
+stack$ -- 0
+substring$ -- 435
+swap$ -- 425
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 126
+warning$ -- 3
+while$ -- 68
+width$ -- 0
+write$ -- 210
+(There were 6 warnings)
