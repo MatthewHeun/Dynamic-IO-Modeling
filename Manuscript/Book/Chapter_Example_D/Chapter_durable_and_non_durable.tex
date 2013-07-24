@@ -20,9 +20,11 @@
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
 
 
-[INSERT QUOTE FROM G-R]
+\begin{quotation}
+we should not fail to observe that, since a fund enters a reproducible process and comes out without any impairment of its economic efficiency, service is the only way by which it can participate in the production of the product. While it is true that the cloth---an inflow element---effectively passes into the coat, the same cannot apply to the needle---a fund element. And if one finds the needle in the coat just bought, it certainly is a regrettable accident. The point is that the problem of how the contribution of a fund affects the value of the product is not as directly simple as in the case of a flow factor. \cite{G-R1970}
+\end{quotation} 
 
-We now extend the two-sector economy from Example C by distinguishing between flows from sector $i$ into sector $j$ which are being processed---such as the tailor's cloth and thread, to use Georgescu-Roegen's example---and are destined to leave in the products of that sector, $\dot{T}_{j}$ (except for some proportion of wastage) and flows which are doing the processing---the tailor's needle and labor. The processed flows we term \emph{resource} flows, $\dot{R}_{ij}$ and may comprise either direct energy or energy embodied in goods or services. We assume that these do not accumulate within a sector, such that $\frac{\textrm{d}R}{\textrm{dt}} = 0$.
+We now extend the two-sector economy from Example C by distinguishing between \emph{resource} flows from sector $i$ into sector $j$ which are being processed---such as the tailor's cloth and thread, to use Georgescu-Roegen's example---and are destined to leave in the products of that sector, $\dot{T}_{j}$ (except for some proportion of wastage) and flows which are doing the processing---the tailor's needle and labor. The processed flows we term \emph{resource} flows, $\dot{R}_{ij}$ and may comprise either direct energy or energy embodied in goods or services. We assume that these do not accumulate within a sector, such that $R_{j} = \frac{\textrm{d}R_{j}}{\textrm{dt}} = 0$.
 
 \begin{figure}[h!]
 \includegraphics[width=1.0\linewidth]{Chapter_Example_D/images/Basic_unit_C.pdf}
@@ -30,9 +32,9 @@ We now extend the two-sector economy from Example C by distinguishing between fl
 \label{fig:basic_unit_C}
 \end{figure}
 
-We also introduce a distinction between two types of embodied energy flows: short-lived, non-durable goods (S), such as packaging, newspapers or the embodied energy content of direct energy flows and long-lived, durable goods (L), such as appliances, capital equipment, roads or buildings. In reality, (as the names suggest) the distinction between short- and long-lived goods is really one of degree rather than a difference in kind such that the distribution in lifetime of goods stretches from a matter of hours or days for some intermediate goods right up to thousands of years for some structures still in use today \cite{Leask2012}. We assume that there is no accumulation of short-lived goods within the economy or society, such that $\frac{\textrm{d}S}{\textrm{dt}} = 0$.  
+We also introduce a distinction between two types of embodied energy flows: short-lived, non-durable goods (S), such as packaging, newspapers or the embodied energy content of direct energy flows and long-lived, durable capital goods (K), such as appliances, manufacturing equipment, roads or buildings. In reality, (as the names suggest) the distinction between short- and long-lived goods is really one of degree rather than a difference in kind such that the distribution in lifetime of goods stretches from a matter of hours or days for some intermediate goods right up to thousands of years for some structures still in use today \cite{Leask2012}. We assume that there is no accumulation of short-lived goods within the economy or society, such that $S_{j} = \frac{\textrm{d}S_{j}}{\textrm{dt}} = 0$.  
 
-These flows are shown in Figure XXXX for our two sector economy. Resource flows enter into the sector from the left and products leave from the right, processing flows enter from the top and waste flows leave from the bottom. We may now define the following relationships:
+These flows are shown in Figure \ref{fig:PERKS} for our two sector economy. Resource flows enter into the sector from the left and products leave from the right, processing flows enter from the top and waste flows leave from the bottom. We may now define the following relationships:
 
 \begin{figure}[h!]
 \includegraphics[width=1.0\linewidth]{Chapter_Example_D/images/PERKS_two_sector.pdf}
@@ -40,8 +42,8 @@ These flows are shown in Figure XXXX for our two sector economy. Resource flows 
 \label{fig:PERKS}
 \end{figure}
 
-\begin{equation}\label{eq:D_def_S_L}
-B_{j} \equiv S_{j} + L_{j} = L_{j}
+\begin{equation}\label{eq:D_def_R_S_K}
+B_{j} \equiv R_{j} + S_{j} + K_{j} = K_{j}
 \end{equation}
 
 %\begin{equation}\label{eq:D_def_dot_S_L}
@@ -49,8 +51,8 @@ B_{j} \equiv S_{j} + L_{j} = L_{j}
 %\end{equation}
 
 
-\begin{equation}\label{eq:D_def_acc_S_L}
-\frac{\textrm{d}B_{j}}{\textrm{dt}} =\frac{\textrm{d}S_{j}}{\textrm{dt}} + \frac{\textrm{d}L_{j}}{\textrm{dt}} = \frac{\textrm{d}L_{j}}{\textrm{dt}}
+\begin{equation}\label{eq:D_def_acc_R_S_K}
+\frac{\textrm{d}B_{j}}{\textrm{dt}} =\frac{\textrm{d}R_{j}}{\textrm{dt}} + \frac{\textrm{d}S_{j}}{\textrm{dt}} + \frac{\textrm{d}K_{j}}{\textrm{dt}} = \frac{\textrm{d}K_{j}}{\textrm{dt}}
 \end{equation}
 
 We assume that all non-resource, energy flows $\dot{E}_{ij}$ are degraded to waste heat $\dot{Q}_{j1}$ by the processes of the sector, such that:
@@ -65,10 +67,10 @@ Similarly, we assume that all short-lived embodied energy flows $\dot{S}_{ij}$ a
 \sum_{i} \dot{S}_{ij} = \dot{S}_{j1}
 \end{equation}
 
-Since long-lived embodied energy flows, $\dot{L}_{ij}$ may accumulate with a sector, we can define that:
+Since long-lived embodied energy flows, $\dot{K}_{ij}$ may accumulate within sector $j$, we can define that:
 
-\begin{equation}\label{eq:D_L_balance}
-\sum_{i} \dot{L}_{ij} = \dot{L}_{j1} + \frac{\textrm{d}L_{j}}{\textrm{dt}}
+\begin{equation}\label{eq:D_K_balance}
+\sum_{i} \dot{K}_{ij} = \dot{K}_{j1} + \frac{\textrm{d}K_{j}}{\textrm{dt}}
 \end{equation}
 
 %Given equations \ref{eq:D_E_balance} - \ref{eq:D_L_balance}, we may now stipulate that any resource flows into a sector, $\dot{R}_{ij}$, must either leave as waste flows to the earth $\dot{R}_{j1}$, or as part of the product from that sector $\dot{T}_{j}$, such that:
@@ -83,7 +85,7 @@ Since long-lived embodied energy flows, $\dot{L}_{ij}$ may accumulate with a sec
 
 As before, the First Law of Thermodynamics requires that energy is conserved around each sector of the economy as well as around the Earth (1) and Society (2) as shown in Figure \ref{}. 
 
-The First Law of Thermodynamics around the Earth (1), Society (2), the Energy sector (3) and Goods and Services sector (4) gives
+The First Law of Thermodynamics around the Earth (1), Society (2), the Energy sector (3) and Goods and Services sector (4) separately gives:
 
 \begin{equation} \label{eq:D-CV_E_dot_1}
 	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 =  \dot{Q}_{21} + \dot{Q}_{31} + \dot{Q}_{41} - \dot{E}_{13} - \dot{E}_{14},
@@ -94,7 +96,7 @@ The First Law of Thermodynamics around the Earth (1), Society (2), the Energy se
 \end{equation}
 
 \begin{equation} \label{eq:D-CV_E_dot_3}
-	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 	 = \dot{E}_{13} + \dot{E}_{33} + \dot{E}_{43} - \dot{E}_{3} - \dot{Q}_{31}.
+	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 	 = \dot{E}_{13} + \dot{E}_{33} + \dot{E}_{43} - \dot{E}_{3} - \dot{Q}_{31},
 \end{equation}
 
 \noindent and 
@@ -103,7 +105,7 @@ The First Law of Thermodynamics around the Earth (1), Society (2), the Energy se
 	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 	 = \dot{E}_{14} + \dot{E}_{34} + \dot{E}_{44} - \dot{E}_{4} - \dot{Q}_{41}.
 \end{equation}
 
-As in Examples A and B, we can set the accumulation of direct energy to zero.
+As in previous examples, we can set the accumulation of direct energy to zero.
 
 \begin{equation} \label{eq:D-CV_E_dot_1_SS}
 	0 =  \dot{Q}_{21} + \dot{Q}_{31} + \dot{Q}_{41} - \dot{E}_{13} - \dot{E}_{14}
@@ -153,57 +155,56 @@ Accounting for accumulation of total energy and using the assumption that total 
 \section{Embodied energy accounting}
 %%%%%%%%%%
 
-Given that $\frac{\mathrm{d}E_{i}}{\mathrm{d}t} = \frac{\mathrm{d}R_{i}}{\mathrm{d}t} = \frac{\mathrm{d}S_{i}}{\mathrm{d}t} = 0$, we note that $\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}L_i}{\mathrm{d}t}$. Substituting $\dot{T} = \dot{R} + \dot{E} + \dot{S} + \dot{L}$ into the total energy accounting equations gives
+Given that $\frac{\mathrm{d}E_{j}}{\mathrm{d}t} = \frac{\mathrm{d}R_{j}}{\mathrm{d}t} = \frac{\mathrm{d}S_{j}}{\mathrm{d}t} = 0$, we note that $\frac{\mathrm{d}T_j}{\mathrm{d}t} = \frac{\mathrm{d}K_j}{\mathrm{d}t}$. Substituting $\dot{T} = \dot{R} + \dot{E} + \dot{S} + \dot{K}$ into the total energy accounting equations gives
 
 \begin{equation} \label{eq:D-CV_dB_1}
-	\frac{\mathrm{d}L_{1}}{\mathrm{d}t} 	 = \dot{E}_{21} + \dot{S}_{21} + \dot{L}_{21} + \dot{R}_{31} + \dot{E}_{31} + \dot{S}_{31} + \dot{L}_{31} + \dot{R}_{41} + \dot{E}_{41} + \dot{S}_{41} + \dot{L}_{41} - \dot{R}_{13} - \dot{R}_{14},
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t} 	 = \dot{E}_{21} + \dot{S}_{21} + \dot{K}_{21} + \dot{R}_{31} + \dot{E}_{31} + \dot{S}_{31} + \dot{K}_{31} + \dot{R}_{41} + \dot{E}_{41} + \dot{S}_{41} + \dot{K}_{41} - \dot{R}_{13} - \dot{R}_{14},
 \end{equation}
 
 \begin{equation} \label{eq:D-CV_dB_2}
-	\frac{\mathrm{d}L_{2}}{\mathrm{d}t} 	 = \dot{E}_{32} + \dot{S}_{32} + \dot{L}_{32} + \dot{E}_{42} + \dot{S}_{42} + \dot{L}_{42} - \dot{E}_{21} - \dot{S}_{21} - \dot{L}_{21},
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t} 	 = \dot{E}_{32} + \dot{S}_{32} + \dot{K}_{32} + \dot{E}_{42} + \dot{S}_{42} + \dot{K}_{42} - \dot{E}_{21} - \dot{S}_{21} - \dot{K}_{21},
 \end{equation}
 
 \begin{equation} \label{eq:D-CV_dB_3}
-	\frac{\mathrm{d}L_{3}}{\mathrm{d}t} 	 = \dot{R}_{13} + \dot{R}_{33} + \dot{E}_{33} + \dot{S}_{33} + \dot{L}_{33} + \dot{R}_{43} + \dot{E}_{43} + \dot{S}_{43} + \dot{L}_{43} - \dot{T}_{3} - \dot{R}_{31} - \dot{E}_{31} - \dot{S}_{31} - \dot{L}_{31},
+	\frac{\mathrm{d}K_{3}}{\mathrm{d}t} 	 = \dot{R}_{13} + \dot{R}_{33} + \dot{E}_{33} + \dot{S}_{33} + \dot{K}_{33} + \dot{R}_{43} + \dot{E}_{43} + \dot{S}_{43} + \dot{K}_{43} - \dot{T}_{3} - \dot{R}_{31} - \dot{E}_{31} - \dot{S}_{31} - \dot{K}_{31},
 \end{equation}
 
 \noindent and 
 
 \begin{equation} \label{eq:D-CV_dB_4}
-	\frac{\mathrm{d}L_{4}}{\mathrm{d}t} 	 = \dot{R}_{14} + \dot{R}_{34} + \dot{E}_{34} + \dot{S}_{34} + \dot{L}_{34} + \dot{R}_{44} + \dot{E}_{44} + \dot{S}_{44} + \dot{L}_{44} - \dot{T}_{4} - \dot{R}_{41} - \dot{E}_{41} - \dot{S}_{41} - \dot{L}_{41}.
+	\frac{\mathrm{d}K_{4}}{\mathrm{d}t} 	 = \dot{R}_{14} + \dot{R}_{34} + \dot{E}_{34} + \dot{S}_{34} + \dot{K}_{34} + \dot{R}_{44} + \dot{E}_{44} + \dot{S}_{44} + \dot{K}_{44} - \dot{T}_{4} - \dot{R}_{41} - \dot{E}_{41} - \dot{S}_{41} - \dot{K}_{41}.
 \end{equation}
 
 Substituting the First Law of Thermodynamics (Equations \ref{eq:D-CV_E_dot_1_SS} through \ref{eq:D-CV_E_dot_4_SS}) into the total energy accounting equations (Equations \ref{eq:D-CV_dB_1} through \ref{eq:D-CV_dB_4}) gives embodied energy accounting equations for Example D.
 
 \begin{equation} \label{eq:D-embodied_acct_1}
-	\frac{\mathrm{d}L_{1}}{\mathrm{d}t} 	 = \dot{S}_{21} + \dot{L}_{21} + \dot{R}_{31} + \dot{S}_{31} + \dot{L}_{31} + \dot{R}_{41} +\dot{S}_{41} + \dot{L}_{41} - \dot{Q}_{21} - \dot{Q}_{31} - \dot{Q}_{41}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t} 	 = \dot{S}_{21} + \dot{K}_{21} + \dot{R}_{31} + \dot{S}_{31} + \dot{K}_{31} + \dot{R}_{41} +\dot{S}_{41} + \dot{K}_{41} - \dot{Q}_{21} - \dot{Q}_{31} - \dot{Q}_{41}
 \end{equation}
 
 \begin{equation} \label{eq:D-embodied_acct_2}
-	\frac{\mathrm{d}L_{2}}{\mathrm{d}t} 	 = \dot{S}_{32} + \dot{L}_{32} + \dot{S}_{42} + \dot{L}_{42} + \dot{Q}_{21} - \dot{S}_{21} - \dot{L}_{21}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t} 	 = \dot{S}_{32} + \dot{K}_{32} + \dot{S}_{42} + \dot{K}_{42} + \dot{Q}_{21} - \dot{S}_{21} - \dot{K}_{21}
 \end{equation}
 
 \begin{equation} \label{eq:D-embodied_acct_3}
-	\frac{\mathrm{d}L_{3}}{\mathrm{d}t} 	 = \dot{S}_{33} + \dot{L_33} + \dot{S}_{43} + \dot{L}_{43} + \dot{Q}_{31} + \dot{E}_{3} - \dot{T}_{3} - \dot{R}_{31} - \dot{S}_{31} - \dot{L}_{31}
+	\frac{\mathrm{d}K_{3}}{\mathrm{d}t} 	 = \dot{S}_{33} + \dot{K}_{33} + \dot{S}_{43} + \dot{K}_{43} + \dot{Q}_{31} + \dot{E}_{3} - \dot{T}_{3} - \dot{R}_{31} - \dot{S}_{31} - \dot{K}_{31}
 \end{equation}
 
 \begin{equation} \label{eq:D-embodied_acct_4}
-	\frac{\mathrm{d}L_{4}}{\mathrm{d}t} 	 = \dot{S}_{34} + \dot{L_34} + \dot{S}_{44} + \dot{L}_{44} + \dot{Q}_{41} + \dot{E}_{4} - \dot{T}_{4} - \dot{R}_{41} - \dot{S}_{41} - \dot{L}_{41}
+	\frac{\mathrm{d}K_{4}}{\mathrm{d}t} 	 = \dot{S}_{34} + \dot{K}_{34} + \dot{S}_{44} + \dot{K}_{44} + \dot{Q}_{41} + \dot{E}_{4} - \dot{T}_{4} - \dot{R}_{41} - \dot{S}_{41} - \dot{K}_{41}
 \end{equation}
 
-[MIK ENDED HERE - MAR 27, 2013]
 
-%Again remembering that $\frac{\textrm{d}E_{i}}{\textrm{dt}} = \dot{E}_{i1} = 0$ we can substitute \ref{eq:D_first_law} into \ref{eq:D_total_energy} to obtain:
+Again remembering that $\frac{\textrm{d}E_{j}}{\textrm{dt}} = \dot{E}_{j1} = 0$ we can substitute \ref{eq:D_first_law} into \ref{eq:D_total_energy} to obtain:
 %
-%\begin{equation}\label{eq:D_emb_energy}
-%\frac{\textrm{d}B_{i}}{\textrm{dt}} = \sum_{j}\dot{B}{ji} - \dot{B}_{i} - \dot{B}_{i1} + \dot{Q}_{i1}
-%\end{equation}
-%
-%Remembering that $\frac{\textrm{d}S_{i}}{\textrm{dt}} = 0$ and $\frac{\textrm{d}B_{i}}{\textrm{dt}} = \frac{\textrm{d}S_{i}}{\textrm{dt}} + \frac{\textrm{d}L_{i}}{\textrm{dt}} = \frac{\textrm{d}L_{i}}{\textrm{dt}}$, we may simplify equation \ref{eq:D_emb_energy} to:
-%
-%\begin{equation}\label{eq:D_emb_energy_dL}
-%\frac{\textrm{d}L_{i}}{\textrm{dt}} = \sum_{j}\dot{B}{ji} - \dot{B}_{i} - \dot{B}_{i1} + \dot{Q}_{i1}
-%\end{equation}
+\begin{equation}\label{eq:D_emb_energy}
+\frac{\textrm{d}B_{j}}{\textrm{dt}} = \sum_{i}\dot{B}{ij} - \dot{B}_{j} - \dot{B}_{j1} + \dot{Q}_{j1}
+\end{equation}
+
+Remembering that $\frac{\textrm{d}S_{j}}{\textrm{dt}} = 0$ and $\frac{\textrm{d}B_{j}}{\textrm{dt}} = \frac{\textrm{d}S_{j}}{\textrm{dt}} + \frac{\textrm{d}K_{j}}{\textrm{dt}} = \frac{\textrm{d}K_{j}}{\textrm{dt}}$, we may simplify equation \ref{eq:D_emb_energy} to:
+
+\begin{equation}\label{eq:D_emb_energy_dK}
+\frac{\textrm{d}K_{j}}{\textrm{dt}} = \sum_{i}\dot{B}{ij} - \dot{B}_{j} - \dot{B}_{j1} + \dot{Q}_{j1}
+\end{equation}
 
 %Given that $\frac{\mathrm{d}E_{i}}{\mathrm{d}t} = \frac{\mathrm{d}S_{i}}{\mathrm{d}t} = 0$, we again note that $\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t} = \frac{\mathrm{d}L_{i}}{\mathrm{d}t}$. Substituting $\dot{T} = \dot{E} + \dot{B} = \dot{E} + \dot{S} + \dot{L}$ into the total energy accounting equations gives
 %
@@ -276,29 +277,29 @@ Substituting the First Law of Thermodynamics (Equations \ref{eq:D-CV_E_dot_1_SS}
 %%%%%%%%%%
 
 
-The term $\dot{B}_{i1}$ represents material depreciation (i.e., disposal) rates. There are two components to this disposal of embodied energy: the first is disposal of short-lived goods, $S_{i1}$, the second is depreciation of long-lived capital, $L_{i1} = \gamma_i L_i$. We may now substitute these into equation \ref{eq:D_emb_energy_dL} to obtain:
+The term $\dot{B}_{j1}$ represents material depreciation (i.e., disposal) rates. There are two components to this disposal of embodied energy: the first is disposal of short-lived goods, $S_{j1}$, the second is depreciation of long-lived capital, $K_{j1} = \gamma_j K_{j}$. We may now substitute these into equation \ref{eq:D_emb_energy_dK} to obtain:
 
 \begin{equation}\label{eq:D_dep}
-\frac{\textrm{d}L_{i}}{\textrm{dt}} = \sum_{j}\dot{B}{ji} - \dot{B}_{i} - \dot{S}_{i1} - \gamma_i L_i + \dot{Q}_{i1}
+\frac{\textrm{d}K_{j}}{\textrm{dt}} = \sum_{i}\dot{B}_{ij} - \dot{B}_{j} - \dot{S}_{j1} - \gamma_j K_j + \dot{Q}_{j1}
 \end{equation}
 
-%We can represent the embodied energy content of material depreciation as $\dot{B}_{i1} = \gamma_i B_i = \gamma_i (S_i + L_i)$. Realizing that $S_i = 0$ we can see that $\gamma_i B_i = \gamma_i L_i$ which we may use to obtain:
+We can represent the embodied energy content of material depreciation as $\dot{B}_{j1} = \gamma_j B_j = \gamma_j (S_j + K_j)$. Realizing that $S_j = 0$ we can see that $\gamma_j B_j = \gamma_j K_j$ which we may use to obtain:
 %
-%\begin{equation} \label{eq:D-embodied_acct_1_depreciation}
-%	\frac{\mathrm{d}L_{1}}{\mathrm{d}t} 	 = \dot{S}_{21} + \gamma_2 L_2 + \dot{S}_{31} + \gamma_3 L_3 + \dot{S}_{41} + \gamma_4 L_4 - \dot{S}_{13} - \dot{L}_{13} - \dot{S}_{14} - \dot{L}_{14} - \dot{Q}_{21} - \dot{Q}_{31} - \dot{Q}_{41}
-%\end{equation}
+\begin{equation} \label{eq:D-embodied_acct_1_depreciation}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t} 	 = \dot{S}_{21} + \gamma_2 K_2 + \dot{S}_{31} + \gamma_3 K_3 + \dot{S}_{41} + \gamma_4 K_4 - \dot{S}_{13} - \dot{K}_{13} - \dot{S}_{14} - \dot{K}_{14} - \dot{Q}_{21} - \dot{Q}_{31} - \dot{Q}_{41}
+\end{equation}
 %
-%\begin{equation} \label{eq:D-embodied_acct_2_depreciation}
-%	\frac{\mathrm{d}L_{2}}{\mathrm{d}t} 	 = \dot{S}_{32} + \dot{L}_{32} + \dot{S}_{42} + \dot{L}_{42} + \dot{Q}_{21} - \dot{S}_{21} - \gamma_2 L_2
-%\end{equation}
+\begin{equation} \label{eq:D-embodied_acct_2_depreciation}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t} 	 = \dot{S}_{32} + \dot{K}_{32} + \dot{S}_{42} + \dot{K}_{42} + \dot{Q}_{21} - \dot{S}_{21} - \gamma_2 K_2
+\end{equation}
 %
-%\begin{equation} \label{eq:D-embodied_acct_3_depreciation}
-%	\frac{\mathrm{d}L_{3}}{\mathrm{d}t} 	 = \dot{S}_{13} + \dot{L}_{13} + \dot{S}_{33} + \dot{L}_{33} + \dot{S}_{43} + \dot{L}_{43} + \dot{Q}_{31} - \dot{S}_{3} - \dot{L}_{3} - \dot{S}_{31} - \gamma_3 L_3
-%\end{equation}
+\begin{equation} \label{eq:D-embodied_acct_3_depreciation}
+	\frac{\mathrm{d}K_{3}}{\mathrm{d}t} 	 = \dot{S}_{13} + \dot{K}_{13} + \dot{S}_{33} + \dot{K}_{33} + \dot{S}_{43} + \dot{K}_{43} + \dot{Q}_{31} - \dot{S}_{3} - \dot{K}_{3} - \dot{S}_{31} - \gamma_3 K_3
+\end{equation}
 %
-%\begin{equation} \label{eq:D-embodied_acct_4_depreciation}
-%	\frac{\mathrm{d}L_{4}}{\mathrm{d}t}	 = \dot{S}_{14} + \dot{L}_{14} + \dot{S}_{34} + \dot{L}_{34} + \dot{S}_{44} + \dot{L}_{44} + \dot{Q}_{41} - \dot{S}_{4} - \dot{L}_{4} - \dot{S}_{41} - \gamma_4 L_4
-%\end{equation}
+\begin{equation} \label{eq:D-embodied_acct_4_depreciation}
+	\frac{\mathrm{d}K_{4}}{\mathrm{d}t}	 = \dot{S}_{14} + \dot{K}_{14} + \dot{S}_{34} + \dot{K}_{34} + \dot{S}_{44} + \dot{K}_{44} + \dot{Q}_{41} - \dot{S}_{4} - \dot{K}_{4} - \dot{S}_{41} - \gamma_4 K_4
+\end{equation}
 
 
 %%%%%%%%%% Example D %%%%%%%%%%
@@ -316,30 +317,32 @@ Society's demand vector for total energy, $\dot{T}$, can again be written as
 \noindent In terms of total energy, the ultimate demand ($Y_{\dot{T}}$) is given by 
 
 \begin{equation} \label{eq:D-final_demand_T_sum}
-	Y_{\dot{T}} = 	\sum_{i=3}^{N} \dot{T}_{i2} = \dot{T}_{32} + \dot{B}_{42} = \dot{T}_{32} + \dot{S}_{42} + \dot{L}_{42}.
+	Y_{\dot{T}} = 	\sum_{i=3}^{N} \dot{T}_{i2} = \dot{T}_{32} + \dot{B}_{42} = \dot{T}_{32} + \dot{S}_{42} + \dot{K}_{42}.
 \end{equation}
 
-\noindent after realizing that $\dot{E}_{42} = 0$.
+\noindent after remembering that $\dot{E}_{42} = 0$.
 
-Using $\dot{T}_{32} = \dot{E}_{32} + \dot{S}_{32} + \dot{L}_{32}$ and rearranging Equation \ref{eq:D-final_demand_T_sum} gives
+Using $\dot{T}_{32} = \dot{E}_{32} + \dot{S}_{32} + \dot{K}_{32}$ and rearranging Equation \ref{eq:D-final_demand_T_sum} gives
 
 \begin{equation} \label{eq:D-rearranged_final_demand_T_sum}
-	\dot{S}_{32} +\dot{L}_{32} + \dot{S}_{42} + \dot{L}_{42} = Y_{\dot{T}} - \dot{E}_{32}.
+	\dot{S}_{32} +\dot{K}_{32} + \dot{S}_{42} + \dot{K}_{42} = Y_{\dot{T}} - \dot{E}_{32}.
 \end{equation}
 
 \noindent Substituting Equation \ref{eq:D-rearranged_final_demand_T_sum} into Equation \ref{eq:D-embodied_acct_2_depreciation} yields
 
 \begin{equation} \label{eq:D-intermediate_T_sum_dB2_dt}
-	\frac{\mathrm{d}L_2}{\mathrm{d}t} = Y_{\dot{T}} - \dot{E}_{32} + \dot{Q}_{21} - \dot{S}_{21} - \gamma_2 L_2.
+	\frac{\mathrm{d}K_2}{\mathrm{d}t} = Y_{\dot{T}} - \dot{E}_{32} + \dot{Q}_{21} - \dot{S}_{21} - \gamma_2 K_2.
 \end{equation}
 
-Substituting Equation \ref{eq:C-CV_E_dot_2_SS} into Eqaution \ref{eq:D-intermediate_T_sum_dB2_dt} and realizing that $\dot{E}_{42} = 0$ because direct energy is supplied to society by the energy sector only, we obtain 
+Substituting Equation \ref{eq:C-CV_E_dot_2_SS} into Equation \ref{eq:D-intermediate_T_sum_dB2_dt} and remembering that $\dot{E}_{42} = 0$ because direct energy is supplied to society by the energy sector only, we obtain 
 
 \begin{equation} \label{eq:D-compare_demand_and_accumulation}
-	\frac{\mathrm{d}L_{2}}{\mathrm{d}t} = Y_{\dot{T}} - \dot{S}-{21} - \gamma_{2}L_{2},
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t} = Y_{\dot{T}} - \dot{S}_{21} - \gamma_{2}K_{2},
 \end{equation}
 
-\noindent indicating that the final demand vector for total energy ($Y_{\dot{T}}$) and the accumulation rate of energy in society $\left(\frac{\mathrm{d}L_{2}}{\mathrm{d}t}\right)$ differ by the rate of disposal from society ($\gamma_{2}L_{2}$). We note that as total embodied energy in society ($B_{2}$) becomes increasingly large, we need an ever-increasing rate of energy supplied to the society ($Y_{\dot{T}}$) to maintain positive growth $\left(\frac{\mathrm{d}L_{2}}{\mathrm{d}t}\right)$. 
+\noindent indicating that the final demand vector for total energy ($Y_{\dot{T}}$) and the accumulation rate of energy in society $\left(\frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$ differ by the rate of disposal from society ($\gamma_{2}K_{2}$). We note that as total embodied energy in society ($B_{2}$) becomes increasingly large, we need an ever-increasing rate of energy supplied to the society ($Y_{\dot{T}}$) to maintain positive growth $\left(\frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$. 
+
+[MIK FINISHED HERE - JULY 23RD 2013]
 
 %%%%%%%%%% Example D %%%%%%%%%%
 \section{Flows of Value ($\dot{X}$)}

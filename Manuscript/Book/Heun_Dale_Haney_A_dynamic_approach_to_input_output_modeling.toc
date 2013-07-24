@@ -50,30 +50,30 @@
 \contentsline {section}{\numberline {7.2}Total energy accounting}{40}
 \contentsline {section}{\numberline {7.3}Embodied energy accounting}{40}
 \contentsline {section}{\numberline {7.4}Depreciation}{41}
-\contentsline {section}{\numberline {7.5}Final demand}{41}
-\contentsline {section}{\numberline {7.6}Flows of Value ($\mathaccentV {dot}05F{X}$)}{42}
+\contentsline {section}{\numberline {7.5}Final demand}{42}
+\contentsline {section}{\numberline {7.6}Flows of Value ($\mathaccentV {dot}05F{X}$)}{43}
 \contentsline {section}{\numberline {7.7}Matrix Formulation}{43}
 \contentsline {section}{\numberline {7.8}Estimating $\ensuremath {\mathchoice {\unhbox \voidb@x \hbox {\boldmath $\displaystyle \mathbf {\varepsilon }$}} {\unhbox \voidb@x \hbox {\boldmath $\textstyle \mathbf {\varepsilon }$}} {\unhbox \voidb@x \hbox {\boldmath $\scriptstyle \mathbf {\varepsilon }$}} {\unhbox \voidb@x \hbox {\boldmath $\scriptscriptstyle \mathbf {\varepsilon }$}}}$ and $\frac {\mathrm {d}\ensuremath {\mathchoice {\unhbox \voidb@x \hbox {\boldmath $\displaystyle \mathbf {B}$}} {\unhbox \voidb@x \hbox {\boldmath $\textstyle \mathbf {B}$}} {\unhbox \voidb@x \hbox {\boldmath $\scriptstyle \mathbf {B}$}} {\unhbox \voidb@x \hbox {\boldmath $\scriptscriptstyle \mathbf {B}$}}}}{\mathrm {d}t}$}{44}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {chapter}{\numberline {8}Implications}{45}
-\contentsline {section}{\numberline {8.1}Implications for economic ``development"}{45}
-\contentsline {section}{\numberline {8.2}Implications for the I-O method}{46}
-\contentsline {section}{\numberline {8.3}Implications for recycling, reuse, and dematerialization}{47}
-\contentsline {section}{\numberline {8.4}Comparison to a Steady-state Economy}{48}
+\contentsline {chapter}{\numberline {8}Implications}{47}
+\contentsline {section}{\numberline {8.1}Implications for economic ``development"}{47}
+\contentsline {section}{\numberline {8.2}Implications for the I-O method}{48}
+\contentsline {section}{\numberline {8.3}Implications for recycling, reuse, and dematerialization}{49}
+\contentsline {section}{\numberline {8.4}Comparison to a Steady-state Economy}{50}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {chapter}{\numberline {9}Conceptual and theoretical issues}{49}
-\contentsline {section}{\numberline {9.1}Choice of Energy Input Vector}{49}
-\contentsline {section}{\numberline {9.2}What is Endogenous?}{50}
-\contentsline {section}{\numberline {9.3}What About the Sun?}{50}
+\contentsline {chapter}{\numberline {9}Conceptual and theoretical issues}{51}
+\contentsline {section}{\numberline {9.1}Choice of Energy Input Vector}{51}
+\contentsline {section}{\numberline {9.2}What is Endogenous?}{52}
+\contentsline {section}{\numberline {9.3}What About the Sun?}{52}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
-\contentsline {chapter}{\numberline {A}Appendix A: Proof of Equation XX}{51}
+\contentsline {chapter}{\numberline {A}Appendix A: Proof of Equation XX}{53}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
-\contentsline {chapter}{\numberline {A}Appendix B: Proof of Equation XX}{53}
+\contentsline {chapter}{\numberline {A}Appendix B: Proof of Equation XX}{55}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-12}
-\contentsline {chapter}{\numberline {A}Appendix C: Derivation of Equation XX}{55}
+\contentsline {chapter}{\numberline {A}Appendix C: Derivation of Equation XX}{57}
 \gdef \the@ipfilectr {}
