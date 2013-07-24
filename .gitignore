@@ -5,12 +5,14 @@
 *.log
 *.spl
 *.gz
-*.pdf
+
 
 #
-# Output .pdf file doesn't need to be updated in the repository
+# Output .pdf files don't need to be updated in the repository
 #
 Heun_Dale_A_dynamic_approach_to_input-output_modeling_v7.pdf
+#Manuscript/Book/Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf
+#Manuscript/Journal/Heun_Dale_A_dynamic_approach_to_input-output_modeling_v8.pdf
 
 #
 # Files from OSX
