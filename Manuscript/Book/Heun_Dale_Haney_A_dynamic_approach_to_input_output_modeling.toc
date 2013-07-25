@@ -69,21 +69,11 @@
 \contentsline {section}{\numberline {9.3}What About the Sun?}{52}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
-<<<<<<< HEAD
-\contentsline {chapter}{\numberline {A}Appendix A: Proof of Equation XX}{53}
+\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}6.54\hbox {}}{53}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
-\contentsline {chapter}{\numberline {A}Appendix B: Proof of Equation XX}{55}
+\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}6.55\hbox {}}{55}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-12}
-\contentsline {chapter}{\numberline {A}Appendix C: Derivation of Equation XX}{57}
-=======
-\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}6.54\hbox {}}{51}
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-11}
-\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}6.55\hbox {}}{53}
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-12}
-\contentsline {chapter}{\numberline {A}Derivation of Equation\nobreakspace {}6.56\hbox {}}{55}
->>>>>>> b205b98af8bc702509a62bc85e26f479af01830c
+\contentsline {chapter}{\numberline {A}Derivation of Equation\nobreakspace {}6.56\hbox {}}{57}
 \gdef \the@ipfilectr {}
