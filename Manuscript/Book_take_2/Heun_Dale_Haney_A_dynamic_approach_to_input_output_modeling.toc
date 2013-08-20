@@ -9,18 +9,18 @@
 \gdef \the@ipfilectr {@-2}
 \contentsline {chapter}{\numberline {2}Material flows}{7}
 \contentsline {section}{\numberline {2.1}Methodology}{7}
-\contentsline {section}{\numberline {2.2}Example A: one sector economy}{8}
+\contentsline {section}{\numberline {2.2}Example A: one sector economy}{7}
 \contentsline {section}{\numberline {2.3}Example B: two sector economy}{8}
-\contentsline {section}{\numberline {2.4}Example C: three sector economy}{8}
-\contentsline {section}{References}{8}
+\contentsline {section}{\numberline {2.4}Example C: three sector economy}{9}
+\contentsline {section}{References}{9}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
 \contentsline {chapter}{\numberline {3}Direct energy flows}{11}
 \contentsline {section}{\numberline {3.1}Methodology}{11}
 \contentsline {section}{\numberline {3.2}Example A: one sector economy}{11}
-\contentsline {section}{\numberline {3.3}Example B: two sector economy}{11}
-\contentsline {section}{\numberline {3.4}Example C: three sector economy}{11}
-\contentsline {section}{References}{11}
+\contentsline {section}{\numberline {3.3}Example B: two sector economy}{12}
+\contentsline {section}{\numberline {3.4}Example C: three sector economy}{12}
+\contentsline {section}{References}{13}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {chapter}{\numberline {4}Embodied energy flows}{15}
@@ -34,9 +34,9 @@
 \contentsline {chapter}{\numberline {5}Value flows}{17}
 \contentsline {section}{\numberline {5.1}Methodology}{17}
 \contentsline {section}{\numberline {5.2}Example A: one sector economy}{17}
-\contentsline {section}{\numberline {5.3}Example B: two sector economy}{17}
+\contentsline {section}{\numberline {5.3}Example B: two sector economy}{18}
 \contentsline {section}{\numberline {5.4}Example C: three sector economy}{18}
-\contentsline {section}{References}{18}
+\contentsline {section}{References}{19}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {chapter}{\numberline {6}Energy intensity}{21}
