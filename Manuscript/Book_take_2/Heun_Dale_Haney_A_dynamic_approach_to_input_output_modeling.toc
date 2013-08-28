@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {4.4}Example C: three sector economy}{19}
 \contentsline {section}{References}{19}
 \gdef \the@ipfilectr {}
-\contentsline {part}{Part\ III\hspace {\betweenumberspace }Economic Value Flows}{21}
+\contentsline {part}{Part\ III\hspace {\betweenumberspace }Economic Value Flows and Energy Intensity}{21}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {5}Value flows}{23}
 \contentsline {section}{\numberline {5.1}Methodology}{23}
