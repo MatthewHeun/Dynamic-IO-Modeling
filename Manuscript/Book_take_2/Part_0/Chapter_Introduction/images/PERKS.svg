@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="497.65933"
-   height="309.64499"
+   width="483.96753"
+   height="342.08997"
    id="svg3126"
    version="1.1"
    inkscape:version="0.48.1 r9760"
@@ -859,8 +859,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.352043"
-     inkscape:cx="223.13139"
-     inkscape:cy="165.34012"
+     inkscape:cx="178.58156"
+     inkscape:cy="197.78511"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -883,7 +883,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -891,7 +891,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(85.941841,-333.69592)">
+     transform="translate(41.39201,-333.69592)">
     <path
        sodipodi:nodetypes="ccccccc"
        id="path4742"
@@ -1009,7 +1009,7 @@
        inkscape:connector-curvature="0" />
     <path
        id="path3346"
-       d="m 273.11009,354.59091 0,0 7.77608,0"
+       d="m 193.11009,354.59091 0,0 7.77608,0"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        inkscape:connector-curvature="0" />
     <path
@@ -1033,7 +1033,7 @@
     <path
        inkscape:connector-curvature="0"
        id="path3362"
-       d="m 197.30434,365.24891 0,0 -5.4432,0"
+       d="m 277.30434,365.24891 0,0 -5.4432,0"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
     <path
        inkscape:connector-curvature="0"
@@ -1057,7 +1057,7 @@
          y="619.9209"
          x="240.00761"
          id="tspan5312"
-         sodipodi:role="line">labour &amp; capital</tspan></text>
+         sodipodi:role="line">factors of production</tspan></text>
     <text
        id="text5314"
        y="342.43225"
@@ -1086,98 +1086,107 @@
        id="path4601-9"
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0"
-       id="rect3166"
-       width="139.8784"
-       height="91.409897"
-       x="-85.191841"
-       y="526.64417"
-       ry="6.8025966" />
     <path
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
-       d="m -14.09085,556.12773 0,-77.53682 81.05834,0"
+       d="m -28.09085,666.12773 0,-187.53682 95.05834,0"
        id="path4224"
        sodipodi:nodetypes="ccc" />
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
-       x="-13.769379"
-       y="570.72675"
+       style="font-size:13px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       x="-26.060719"
+       y="457.63358"
        id="text4226"><tspan
          sodipodi:role="line"
          id="tspan4228"
-         x="-13.769379"
-         y="570.72675"
-         style="font-size:13px;font-weight:normal">RAW</tspan><tspan
+         x="-26.060719"
+         y="457.63358"
+         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start">RAW</tspan><tspan
          sodipodi:role="line"
-         x="-13.769379"
-         y="586.97675"
-         style="font-size:13px;font-weight:normal"
+         x="-26.060719"
+         y="473.88358"
+         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
          id="tspan4230">RESOURCES</tspan></text>
     <g
        id="g4741">
-      <g
-         transform="translate(0,110)"
-         id="g4514">
-        <path
-           sodipodi:nodetypes="cc"
-           id="path4232"
-           d="m 75.90915,512.59091 37.05834,0"
-           style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:none"
-           inkscape:connector-curvature="0" />
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:none"
-           d="m 83.90915,522.59091 21.05834,0"
-           id="path4510"
-           sodipodi:nodetypes="cc" />
-        <path
-           sodipodi:nodetypes="cc"
-           id="path4512"
-           d="m 91.90915,532.59091 5.05834,0"
-           style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:none"
-           inkscape:connector-curvature="0" />
-      </g>
       <path
          sodipodi:nodetypes="cc"
          id="path4739"
-         d="m 94.96749,502.59091 0,116.12885"
+         d="m 94.96749,502.59091 0,144.12885"
          style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
          inkscape:connector-curvature="0" />
     </g>
     <g
        id="g4748"
        transform="translate(300,0)">
-      <g
-         id="g4750"
-         transform="translate(0,110)">
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:none"
-           d="m 73.90915,512.59091 37.05834,0"
-           id="path4752"
-           sodipodi:nodetypes="cc" />
-        <path
-           sodipodi:nodetypes="cc"
-           id="path4754"
-           d="m 81.90915,522.59091 21.05834,0"
-           style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:none"
-           inkscape:connector-curvature="0" />
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:none"
-           d="m 89.90915,532.59091 5.05834,0"
-           id="path4756"
-           sodipodi:nodetypes="cc" />
-      </g>
       <path
          inkscape:connector-curvature="0"
          style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
-         d="m 78.96749,514.59091 14,25.13781 0,78.99104"
+         d="m 78.96749,514.59091 14,25.13781 0,120.99104"
          id="path4758"
          sodipodi:nodetypes="ccc" />
     </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -40.89201,669.70097 c 151.955,-32.92396 319.02694,-31.09345 455.36619,-0.42516"
+       id="path3146"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       x="300.00763"
+       y="579.9209"
+       id="text3148"><tspan
+         sodipodi:role="line"
+         id="tspan3150"
+         x="300.00763"
+         y="579.9209"
+         style="font-size:12px;font-weight:normal">income</tspan></text>
+    <text
+       id="text3152"
+       y="379.9209"
+       x="302.00763"
+       style="font-size:18px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       xml:space="preserve"><tspan
+         style="font-size:12px;font-weight:normal"
+         y="379.9209"
+         x="302.00763"
+         id="tspan3154"
+         sodipodi:role="line">spending</tspan></text>
+    <text
+       id="text3156"
+       y="675.63354"
+       x="169.9393"
+       style="font-size:13px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       xml:space="preserve"><tspan
+         id="tspan3160"
+         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
+         y="675.63354"
+         x="169.9393"
+         sodipodi:role="line">Earth</tspan></text>
+    <text
+       id="text3164"
+       y="625.63354"
+       x="45.939281"
+       style="font-size:13px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       xml:space="preserve"><tspan
+         id="tspan3168"
+         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
+         y="625.63354"
+         x="45.939281"
+         sodipodi:role="line">WASTE  FLOWS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       x="343.9393"
+       y="625.63354"
+       id="text3172"><tspan
+         sodipodi:role="line"
+         x="343.9393"
+         y="625.63354"
+         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
+         id="tspan3174">WASTE  FLOWS</tspan></text>
   </g>
 </svg>
