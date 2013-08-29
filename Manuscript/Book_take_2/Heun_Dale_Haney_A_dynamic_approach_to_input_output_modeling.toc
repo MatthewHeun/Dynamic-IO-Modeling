@@ -37,9 +37,9 @@
 \contentsline {chapter}{\numberline {5}Value flows}{23}
 \contentsline {section}{\numberline {5.1}Methodology}{23}
 \contentsline {section}{\numberline {5.2}Example A: one sector economy}{23}
-\contentsline {section}{\numberline {5.3}Example B: two sector economy}{24}
-\contentsline {section}{\numberline {5.4}Example C: three sector economy}{24}
-\contentsline {section}{References}{25}
+\contentsline {section}{\numberline {5.3}Example B: two sector economy}{23}
+\contentsline {section}{\numberline {5.4}Example C: three sector economy}{23}
+\contentsline {section}{References}{23}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {chapter}{\numberline {6}Energy intensity}{27}
