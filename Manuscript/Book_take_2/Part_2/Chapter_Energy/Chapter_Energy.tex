@@ -20,7 +20,10 @@
 
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
 
+%%%%%%%%%% Energy: Methodology %%%%%%%%%%
 \section{Methodology}
+\label{sec:energy_methodology}
+%%%%%%%%%%
 
 In Chapter \ref{chap:intro}, we formulated a model of economies
 consisting of producers and consumers who exchange
@@ -32,29 +35,32 @@ for the benefit of producers and consumers while generating unavoidable wastes.
 In this chapter, we describe and analyze the direct energy that is associated 
 with the material flows.
 
-Figure \ref{fig:PERKS_energy_content} shows a corresponding 
-direct energy flow for each material flow of Figure \ref{fig:PERKS_materials}.
+Figure~\ref{fig:PERKS_energy_content} shows a corresponding 
+direct energy flow for each material flow of Figure~\ref{fig:PERKS_materials}.
 ``Direct'' energy refers to forms of energy accounted by the First Law of Thermodynamics,
 including chemical potential energy, 
 nuclear potential energy, 
 gravitational potential energy,
 thermal energy, 
 and kinetic energy.
-We use the term ``direct'' energy as distinct from ``embodied'' energy 
+We use the term ``direct'' energy as distinct from ``embodied'' energy, 
 which will be discussed in Chapter \ref{chap:embodied_energy}.
 Examples of direct energy flows include 
 the chemical potential energy of coal inflows to an energy sector, 
 the thermal energy of process steam into a textile plant, and
 the thermal energy of CO$_2$ automobile exhaust.
 In each case, the material (coal, steam, and CO$_2$) 
-carries direct energy with it. 
+carries direct energy with it.\footnote{Even radiative thermal energy 
+can be considered a material flow (photons) that carries
+direct energy (thermal) with it.}
+
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_2/Chapter_Energy/images/PERKS_basic_unit_energy_content.pdf}
 \caption{Energy content ($\dot{E}$) of material flows 
 ($\dot{R}$, $\dot{S}$, and $\dot{K}$) 
-from Figure \ref{fig:PERKS_materials}. 
+from Figure~\ref{fig:PERKS_materials}. 
 **** Mik: This figure should not have the green lines. 
 The point of this figure is that the $\dot{R}$, $\dot{S}$, and $\dot{K}$ lines 
 each have energy associated with them. 
@@ -97,12 +103,12 @@ On the other hand, the direct energy flow rates for fossil fuels (coal, oil, and
 are typically orders of magnitude larger than any others for a given unit of analysis.
 
 To simplify the direct energy analysis, 
-we can aggregate the direct energy flows of Figure \ref{fig:PERKS_energy_content}
+we can aggregate the direct energy flows of Figure~\ref{fig:PERKS_energy_content}
 into single arrows when appropriate. 
 For example, the direct energy inputs from other sectors of the economy
 (labeled as $\dot{E}_{\dot{R}}$, $\dot{E}_{\dot{S}}$, and $\dot{E}_{\dot{K}}$ 
-in Figure \ref{fig:PERKS_energy_content}) can be summed to $\dot{E}$ 
-(in Figure \ref{fig:PERKS_energy}) such that
+in Figure~\ref{fig:PERKS_energy_content}) can be summed to $\dot{E}$ 
+(in Figure~\ref{fig:PERKS_energy}) such that
 
 \begin{equation} \label{eq:direct_energy_aggregation}
 	\dot{E}_{\mathrm{Fig. \: \ref{fig:PERKS_energy}}} 
@@ -115,23 +121,74 @@ in Figure \ref{fig:PERKS_energy_content}) can be summed to $\dot{E}$
 \centering
 \includegraphics[width=0.8\linewidth]{Part_2/Chapter_Energy/images/PERKS_basic_unit_energy.pdf}
 \caption{Aggregated direct energy flow rates around 
-the producer of Figure \ref{fig:PERKS_energy_content}.
-**** Mik: remove the subscript ``E'' from the label in this figure --Matt ****}
+the producer of Figure~\ref{fig:PERKS_energy_content}.
+**** Mik: remove the subscript ``E'' from the label in this figure. Also, change the 
+``E'' to an $\dot{E}$. It's a flow rate. --Matt ****}
 \label{fig:PERKS_energy}
 \end{figure}
 
-\section{Example A: one sector economy}
 
-[SOME TEXT HERE]
+%%%%%%%%%% Energy: Example A %%%%%%%%%%
+\section{Example A: one sector economy}
+%%%%%%%%%%
+
+Aggregated direct energy flows are now applied to Example A, 
+the single-sector economy shown in Figure~\ref{fig:A_materials}.
+By summing the direct energy flows associated with
+each material flow of Figure~\ref{fig:A_materials}, we obtain
+a simplified picture of direct energy flows in the economy,
+as shown in Figure~\ref{fig:A_energy}.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_2/Chapter_Energy/images/1_sector_direct_energy.pdf}
-\caption{XXXX}
+\caption{Direct energy flow rates for Example A, the single-sector economy.}
 \label{fig:A_energy}
 \end{figure}
 
+We distinguish useful direct energy inputs to a sector of the economy
+($\dot{E}_{12}$ in Figure~\ref{fig:A_energy}) from wasteful direct energy flows 
+($\dot{Q}_{21}$ in Figure~\ref{fig:A_energy}), 
+because $\dot{Q}$ typically denotes thermal energy, 
+and most waste energy flows are in the form of thermal
+energy, i.e., waste heat. In Figure~\ref{fig:A_energy}, direct energy input to the 
+economy ($\dot{E}_{12}$) is shown as being extracted from the biosphere, because
+the vast majority of direct energy today is derived from fossil fuel extraction.
+Waste heat from the economy ($\dot{Q}_{21}$) is shown as returning 
+to the biosphere.
+
+As discussed in Section~\ref{sec:energy_methodology}, 
+both direct energy ($\dot{E}$), and waste heat ($\dot{Q}$) 
+are accounted by the First Law of Thermodynamics. 
+Accounting for possible accumulation of direct energy in the economy, 
+the First Law of Thermodynamics for Example~A indicates that
+
+\begin{equation} \label{eq:dE_2/dt_single_sector}
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} = \dot{E}_{12} - \dot{Q}_{21}.
+\end{equation}
+
+Aside from, for example, the U.S. Strategic Petroleum Reserve, 
+we are not stockpiling oil and coal at any meaningful rate, 
+i.e. we consume fossil fuels at a rate equal to the extraction rate. 
+Thus, the world is not accumulating direct energy 
+in the economy.\footnote{A counter-example could be made 
+for nuclear fuels where ``spent'' fuel represents a large exergetic stockpile. 
+However, this reserve is not (presently) economically useful.} 
+(The world \emph{is}, however, 
+accumulating embodied energy in the economy as we shall see 
+in Chapter \ref{chap:embodied_energy}.) 
+Thus, the accumulation rate for direct energy 
+$\left( \frac{\mathrm{d}E_{2}}{\mathrm{d}t} \right)$ in the above equation 
+can be set to zero to obtain
+
+\begin{equation} \label{eq:single_sector_direct_energy_no_accumulation}
+	0 = \dot{E}_{12} - \dot{Q}_{21}.
+\end{equation}
+
+
+%%%%%%%%%% Energy: Example B %%%%%%%%%%
 \section{Example B: two sector economy}
+%%%%%%%%%%
 
 [SOME TEXT HERE]
 
@@ -142,7 +199,10 @@ the producer of Figure \ref{fig:PERKS_energy_content}.
 \label{fig:B_energy}
 \end{figure}
 
+
+%%%%%%%%%% Energy: Example D %%%%%%%%%%
 \section{Example C: three sector economy}
+%%%%%%%%%%
 
 [SOME TEXT HERE]
 
