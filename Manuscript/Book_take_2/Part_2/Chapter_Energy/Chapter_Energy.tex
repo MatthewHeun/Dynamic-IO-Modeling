@@ -190,17 +190,65 @@ can be set to zero to obtain
 \section{Example B: two sector economy}
 %%%%%%%%%%
 
-[SOME TEXT HERE]
+For Example B, we split the energy sector (3) from 
+society (2), assuming that all useful energy for society is 
+supplied by the energy sector. Figure~\ref{fig:B_energy} shows aggregated
+direct energy flows associated with the material flows of Figure~\ref{fig:B_materials}.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_2/Chapter_Energy/images/2_sector_direct_energy.pdf}
-\caption{XXXX}
+\caption{Direct energy flows for Example B, a two-sector economy.}
 \label{fig:B_energy}
 \end{figure}
 
+The First Law of Thermodynamics requires that both 
+direct energy and waste heat be conserved around each 
+sector of the economy (2 and 3) as well as around the biosphere (1).
 
-%%%%%%%%%% Energy: Example D %%%%%%%%%%
+The First Law around the economic sector (3) 
+including the accumulation rate of direct energy in the sector 
+$\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$ yields
+
+\begin{equation} \label{eq:CV_E_dot_3}
+	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} = \dot{E}_{13} + \dot{E}_{33} - \dot{E}_{3} - \dot{Q}_{31}.
+\end{equation}
+
+\noindent It is notable that sector 3 consumes 
+a portion of its own energy output ($\dot{E}_{33}$) 
+as it produces its goods and services: it takes energy to make energy.
+
+First Law energy accounting around the biosphere (1) and society (2) gives
+
+\begin{equation} \label{eq:CV_E_dot_1}
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 =  \dot{Q}_{21} + \dot{Q}_{31} - \dot{E}_{13},
+\end{equation}
+
+\noindent and 
+
+\begin{equation} \label{eq:CV_E_dot_2}
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 = \dot{E}_{32} - \dot{Q}_{21}.
+\end{equation}
+
+As in Example A, we can set the accumulation of direct energy 
+within each sector to zero to obtain
+
+\begin{equation} \label{eq:CV_E_dot_3_SS}
+	0 =\dot{E}_{13} + \dot{E}_{33} - \dot{E}_{3} - \dot{Q}_{31},
+\end{equation}
+
+\begin{equation} \label{eq:CV_E_dot_1_SS}
+	0 =  \dot{Q}_{21} + \dot{Q}_{31} - \dot{E}_{13},
+\end{equation}
+
+\noindent and 
+
+\begin{equation} \label{eq:CV_E_dot_2_SS}
+	0 =\dot{E}_{32} - \dot{Q}_{21},
+\end{equation}
+
+
+%%%%%%%%%% Energy: Example C %%%%%%%%%%
 \section{Example C: three sector economy}
 %%%%%%%%%%
 
