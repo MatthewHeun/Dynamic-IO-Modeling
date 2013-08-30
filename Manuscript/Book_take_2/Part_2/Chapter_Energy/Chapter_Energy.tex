@@ -7,10 +7,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
 \chapter{Direct energy flows}
-\chaptermark{energy}
-\label{chap:direct_energy} % Always give a unique label
 % use \chaptermark{}
 % to alter or adjust the chapter heading in the running head
+\chaptermark{energy}
+% Always give a unique label
+\label{chap:direct_energy} 
 
 \abstract*{[NEED TO ADD ABSTRACT HERE]}
 
@@ -21,20 +22,101 @@
 
 \section{Methodology}
 
-[SOME TEXT HERE]
+In Chapter \ref{chap:intro}, we formulated a model of economies
+consisting of producers and consumers who exchange
+goods and services and factors of production 
+while extracting resources and disposing of wastes. 
+In Chapter \ref{chap:materials}, we established the material basis of economies: 
+economies are analogous to organisms that process raw resources
+for the benefit of producers and consumers while generating unavoidable wastes.
+In this chapter, we describe and analyze the direct energy that is associated 
+with the material flows.
+
+Figure \ref{fig:PERKS_energy_content} shows that for each material flow
+of Figure \ref{fig:PERKS_materials}, there is a corresponding direct energy flow.
+``Direct'' energy refers to forms of energy accounted by the First Law of Thermodynamics,
+including chemical potential energy, 
+nuclear potential energy, 
+gravitational potential energy,
+thermal energy, 
+and kinetic energy.
+We use the term ``direct'' energy as distinct from ``embodied'' energy 
+which will be discussed in Chapter \ref{chap:embodied_energy}.
+Examples of direct energy flows include 
+the chemical potential energy of coal inflows to an energy sector, 
+the thermal energy of process steam into a textile plant, and
+the thermal energy of CO$_2$ automobile exhaust.
+In each case, the material (coal, steam, and CO$_2$) 
+carries direct energy with it. 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_2/Chapter_Energy/images/PERKS_basic_unit_energy_content.pdf}
-\caption{XXXX}
+\caption{Energy content ($\dot{E}$) of material flows 
+($\dot{R}$, $\dot{S}$, and $\dot{K}$) 
+from Figure \ref{fig:PERKS_materials}. 
+**** Mik: This figure should not have the green lines. 
+The point of this figure is that the $\dot{R}$, $\dot{S}$, and $\dot{K}$ lines 
+each have energy associated with them. 
+We'll aggregate those lines in the next figure, 
+which includes \emph{only} green lines. 
+Also, the subscripts should have dots on them: 
+$\dot{R}$, $\dot{S}$, etc. 
+Can you add an $\dot{E}_{\dot{P}}$ label to the purple line? 
+Finally, Would it be possible to put the labels 
+in the same color as the lines they're labeling? --Matt ****}
 \label{fig:PERKS_energy_content}
 \end{figure}
 
+For any boundary (around, say, a machine, a plant,
+a sector of the economy, or the entire economy itself), 
+the First Law of Thermodynamics says that
+the accumulation rate of direct energy within the boundary
+is equal to the sum of the signed direct energy flow rates $\left( \dot{E} \right)$
+across the boundary (where inflows are positive and outflows are negative): 
+energy is conserved.
+
+\begin{equation} \label{eq:First_Law_with_accumulation}
+	\frac{\mathrm{d}E}{\mathrm{d}t} = \sum \dot{E}
+\end{equation}
+
+When there is no accumulation of direct energy within the boundary,
+$\left( \frac{\mathrm{d}E}{\mathrm{d}t} = 0 \right)$ the sum of all 
+signed direct energy flow rates $\left( \dot{E} \right)$ will be zero.
+
+\begin{equation} \label{eq:First_Law_no_accumulation}
+	\sum \dot{E} = 0
+\end{equation}
+
+It is important to note that the direct energy associated with some material flows can
+be very small or negligible compared to other direct energy flows in the economy.
+For example, the direct energy of steel into the automobile sector of the economy 
+is almost negligible. (The \emph{embodied} energy of the steel is almost certainly
+\emph{not} negligible, as will be discussed in Chapter~\ref{chap:embodied_energy}.)
+On the other hand, the direct energy flow rates for fossil fuels (coal, oil, and natural gas)
+are typically orders of magnitude larger than any others for a given unit of analysis.
+
+To simplify the direct energy analysis, 
+we can aggregate the direct energy flows of Figure \ref{fig:PERKS_energy_content}
+into single arrows when appropriate. 
+For example, the direct energy inputs from other sectors of the economy
+(labeled as $\dot{E}_{\dot{R}}$, $\dot{E}_{\dot{S}}$, and $\dot{E}_{\dot{K}}$ 
+in Figure \ref{fig:PERKS_energy_content}) can be summed to $\dot{E}$ 
+(in Figure \ref{fig:PERKS_energy}) such that
+
+\begin{equation} \label{eq:direct_energy_aggregation}
+	\dot{E}_{\mathrm{Fig. \: \ref{fig:PERKS_energy}}} 
+	= \dot{E}_{\dot{R}, \: \mathrm{Fig. \: \ref{fig:PERKS_energy_content}}} 
+	+ \dot{E}_{\dot{S}, \: \mathrm{Fig. \: \ref{fig:PERKS_energy_content}}} 
+	+ \dot{E}_{\dot{K}, \: \mathrm{Fig. \: \ref{fig:PERKS_energy_content}}}.
+\end{equation}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_2/Chapter_Energy/images/PERKS_basic_unit_energy.pdf}
-\caption{XXXX}
+\caption{Aggregated direct energy flow rates around 
+the producer of Figure \ref{fig:PERKS_energy_content}.
+**** Mik: remove the subscript ``E'' from the label in this figure --Matt ****}
 \label{fig:PERKS_energy}
 \end{figure}
 
