@@ -346,10 +346,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="838"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1125"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -744,7 +744,7 @@
            height="54.619225"
            x="306.07376"
            y="322.21259" /></flowRegion><flowPara
-         id="flowPara3101"></flowPara></flowRoot>    <flowRoot
+         id="flowPara3101" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3103"
        style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -754,7 +754,7 @@
            height="42.252609"
            x="419.43442"
            y="419.08441" /></flowRegion><flowPara
-         id="flowPara3109"></flowPara></flowRoot>    <flowRoot
+         id="flowPara3109" /></flowRoot>    <flowRoot
        transform="translate(-677.53897,-69.960804)"
        style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot3085-1"
@@ -827,7 +827,7 @@
    style="font-weight:bold;-inkscape-font-specification:Sans Bold"
    id="flowSpan3433">IIIa. </flowSpan>Capital flows:</flowPara><flowPara
          style="font-size:22px"
-         id="flowPara3093-9-1-6">$xxx</flowPara></flowRoot>    <flowRoot
+         id="flowPara3093-9-1-6">$26,474</flowPara></flowRoot>    <flowRoot
        transform="translate(-92.957182,167.34648)"
        style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot3085-1-5-1-1"
@@ -845,7 +845,7 @@
    id="flowSpan3299"
    style="font-size:16px"><flowSpan
    style="font-weight:bold;-inkscape-font-specification:Sans Bold"
-   id="flowSpan3441">IIIb. </flowSpan>Capital flows from self: </flowSpan>$xxxx</flowPara></flowRoot>    <flowRoot
+   id="flowSpan3441">IIIb. </flowSpan>Capital flows from self: </flowSpan>$551</flowPara></flowRoot>    <flowRoot
        transform="translate(-382.44056,303.7938)"
        style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot3085-2"
@@ -900,7 +900,7 @@
            x="908.94635"
            y="169.69096"
            style="font-size:16px" /></flowRegion><flowPara
-         id="flowPara3362"></flowPara></flowRoot>    <flowRoot
+         id="flowPara3362" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3364"
        style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -970,5 +970,5 @@
            height="30.916542"
            x="764.66913"
            y="363.43463" /></flowRegion><flowPara
-         id="flowPara3463"></flowPara></flowRoot>  </g>
+         id="flowPara3463" /></flowRoot>  </g>
 </svg>
