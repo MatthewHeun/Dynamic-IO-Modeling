@@ -129,7 +129,7 @@ the producer of Figure~\ref{fig:PERKS_energy_content}.
 
 
 %%%%%%%%%% Energy: Example A %%%%%%%%%%
-\section{Example A: one sector economy}
+\section{Example A: single-sector economy}
 %%%%%%%%%%
 
 Aggregated direct energy flows are now applied to Example A, 
@@ -187,7 +187,7 @@ can be set to zero to obtain
 
 
 %%%%%%%%%% Energy: Example B %%%%%%%%%%
-\section{Example B: two sector economy}
+\section{Example B: two-sector economy}
 %%%%%%%%%%
 
 For Example B, we split the energy sector (3) from 
@@ -249,17 +249,90 @@ within each sector to zero to obtain
 
 
 %%%%%%%%%% Energy: Example C %%%%%%%%%%
-\section{Example C: three sector economy}
+\section{Example C: three-sector economy}
 %%%%%%%%%%
 
-[SOME TEXT HERE]
+By adding a goods and services sector (4) to the economy, 
+a fuller picture of direct energy flows among sectors is achieved
+(Figure \ref{fig:C_energy}). 
+In this economy, the purpose of the goods and services sector (4) 
+is to produce goods and provide services, 
+it provides no direct energy to society. 
+The purpose of the energy sector (3) is to make direct energy ($\dot{E}$) 
+available to the economy and society in a useful form.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_2/Chapter_Energy/images/3_sector_direct_energy.pdf}
-\caption{XXXX}
+\caption{Direct energy flows in Example C: a three-sector economy.}
 \label{fig:C_energy}
 \end{figure}
+
+Both direct energy ($\dot{E}$) (such as chemical potential energy in coal, 
+oil, and electricity) and waste heat ($\dot{Q}$) 
+are accounted by the First Law of Thermodynamics. 
+The First Law around the Goods and Services sector (4) including, 
+for now, the accumulation rate of direct energy in the sector 
+$\left(\frac{\mathrm{d}E_{4}}{\mathrm{d}t}\right)$ yields
+
+\begin{equation} \label{eq:C-CV_E_dot_4}
+	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 	 
+	= \dot{E}_{14} + \dot{E}_{34} + \dot{E}_{44} - \dot{E}_4 - \dot{Q}_{41}.
+\end{equation}
+
+Note that we may simplify Equation \ref{eq:C-CV_E_dot_4} 
+by realizing that (a) $\dot{E}_{4} = \dot{E}_{4i} = 0$, 
+because the goods and services sector 
+is assumed to produce no flows of energy, 
+and (b) $\dot{E}_{14} = 0$, 
+because sector (4) receives no direct energy from the biosphere, 
+except via the energy sector (3), hence:
+
+\begin{equation} \label{eq:C-CV_E_dot_4_simp}
+	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 	 
+	= \dot{E}_{34} - \dot{Q}_{41}.
+\end{equation}
+
+The First Law of Thermodynamics around the 
+biosphere (1), society (2), and the energy sector (3) gives
+
+\begin{equation} \label{eq:C-CV_E_dot_1}
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 
+	=  \dot{Q}_{21} + \dot{Q}_{31} + \dot{Q}_{41} - \dot{E}_{13} - \dot{E}_{14},
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_E_dot_2}
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 
+	= \dot{E}_{32}  + \dot{E}_{42} - \dot{Q}_{21},
+\end{equation}
+
+\noindent and 
+
+\begin{equation} \label{eq:C-CV_E_dot_3}
+	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 	 
+	= \dot{E}_{13} + \dot{E}_{33} + \dot{E}_{43} - \dot{E}_{3} - \dot{Q}_{31}.
+\end{equation}
+
+As in Examples A and B, we can set the accumulation of direct energy to zero.
+
+\begin{equation} \label{eq:C-CV_E_dot_1_SS}
+	0 =  \dot{Q}_{21} + \dot{Q}_{31} + \dot{Q}_{41} - \dot{E}_{13} - \dot{E}_{14}
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_E_dot_2_SS}
+	0  = \dot{E}_{32}  + \dot{E}_{42} - \dot{Q}_{21}
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_E_dot_3_SS}
+	0 = \dot{E}_{13} + \dot{E}_{33} + \dot{E}_{43} - \dot{E}_{3} - \dot{Q}_{31}
+\end{equation}
+
+\noindent and 
+
+\begin{equation} \label{eq:C-CV_E_dot_4_SS}
+	0 = \dot{E}_{14} + \dot{E}_{34} + \dot{E}_{44} - \dot{E}_4 - \dot{Q}_{41}
+\end{equation}
+
 
 
 \bibliography{../../EROI_review_v2}

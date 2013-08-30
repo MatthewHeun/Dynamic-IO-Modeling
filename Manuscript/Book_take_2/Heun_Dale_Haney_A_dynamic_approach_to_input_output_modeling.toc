@@ -19,47 +19,47 @@
 \gdef \the@ipfilectr {@-3}
 \contentsline {chapter}{\numberline {3}Direct energy flows}{15}
 \contentsline {section}{\numberline {3.1}Methodology}{15}
-\contentsline {section}{\numberline {3.2}Example A: one sector economy}{16}
-\contentsline {section}{\numberline {3.3}Example B: two sector economy}{18}
-\contentsline {section}{\numberline {3.4}Example C: three sector economy}{19}
-\contentsline {section}{References}{19}
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-4}
-\contentsline {chapter}{\numberline {4}Embodied energy flows}{21}
-\contentsline {section}{\numberline {4.1}Methodology}{21}
-\contentsline {section}{\numberline {4.2}Example A: one sector economy}{21}
-\contentsline {section}{\numberline {4.3}Example B: two sector economy}{21}
-\contentsline {section}{\numberline {4.4}Example C: three sector economy}{21}
+\contentsline {section}{\numberline {3.2}Example A: single-sector economy}{16}
+\contentsline {section}{\numberline {3.3}Example B: two-sector economy}{18}
+\contentsline {section}{\numberline {3.4}Example C: three-sector economy}{19}
 \contentsline {section}{References}{21}
 \gdef \the@ipfilectr {}
-\contentsline {part}{Part\ III\hspace {\betweenumberspace }Economic Value Flows and Energy Intensity}{23}
+\gdef \the@ipfilectr {@-4}
+\contentsline {chapter}{\numberline {4}Embodied energy flows}{23}
+\contentsline {section}{\numberline {4.1}Methodology}{23}
+\contentsline {section}{\numberline {4.2}Example A: one sector economy}{23}
+\contentsline {section}{\numberline {4.3}Example B: two sector economy}{23}
+\contentsline {section}{\numberline {4.4}Example C: three sector economy}{23}
+\contentsline {section}{References}{23}
+\gdef \the@ipfilectr {}
+\contentsline {part}{Part\ III\hspace {\betweenumberspace }Economic Value Flows and Energy Intensity}{25}
 \gdef \the@ipfilectr {@-5}
-\contentsline {chapter}{\numberline {5}Value flows}{25}
-\contentsline {section}{\numberline {5.1}Methodology}{25}
-\contentsline {section}{\numberline {5.2}Example A: one sector economy}{25}
-\contentsline {section}{\numberline {5.3}Example B: two sector economy}{25}
-\contentsline {section}{\numberline {5.4}Example C: three sector economy}{25}
-\contentsline {section}{References}{25}
+\contentsline {chapter}{\numberline {5}Value flows}{27}
+\contentsline {section}{\numberline {5.1}Methodology}{27}
+\contentsline {section}{\numberline {5.2}Example A: one sector economy}{27}
+\contentsline {section}{\numberline {5.3}Example B: two sector economy}{27}
+\contentsline {section}{\numberline {5.4}Example C: three sector economy}{27}
+\contentsline {section}{References}{27}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {chapter}{\numberline {6}Energy intensity}{29}
-\contentsline {section}{References}{29}
+\contentsline {chapter}{\numberline {6}Energy intensity}{31}
+\contentsline {section}{References}{31}
 \gdef \the@ipfilectr {}
-\contentsline {part}{Part\ IV\hspace {\betweenumberspace }Implications}{31}
+\contentsline {part}{Part\ IV\hspace {\betweenumberspace }Implications}{33}
 \gdef \the@ipfilectr {@-7}
-\contentsline {chapter}{\numberline {7}Implications}{33}
-\contentsline {section}{\numberline {7.1}Implications for economic ``development"}{33}
-\contentsline {section}{\numberline {7.2}Implications for the I-O method}{34}
-\contentsline {section}{\numberline {7.3}Implications for recycling, reuse, and dematerialization}{35}
-\contentsline {section}{\numberline {7.4}Comparison to a Steady-state Economy}{36}
-\contentsline {section}{References}{36}
+\contentsline {chapter}{\numberline {7}Implications}{35}
+\contentsline {section}{\numberline {7.1}Implications for economic ``development"}{35}
+\contentsline {section}{\numberline {7.2}Implications for the I-O method}{36}
+\contentsline {section}{\numberline {7.3}Implications for recycling, reuse, and dematerialization}{37}
+\contentsline {section}{\numberline {7.4}Comparison to a Steady-state Economy}{38}
+\contentsline {section}{References}{38}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}\G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `eq:Xdifference1' on page 37 undefined}}{37}
+\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}\G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `eq:Xdifference1' on page 39 undefined}}{39}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}\G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `eq:Xdifference2' on page 39 undefined}}{39}
+\contentsline {chapter}{\numberline {A}Proof of Equation\nobreakspace {}\G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `eq:Xdifference2' on page 41 undefined}}{41}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
-\contentsline {chapter}{\numberline {A}Derivation of Equation\nobreakspace {}\G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `eq:Xdifference2_inverse' on page 41 undefined}}{41}
+\contentsline {chapter}{\numberline {A}Derivation of Equation\nobreakspace {}\G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `eq:Xdifference2_inverse' on page 43 undefined}}{43}
 \gdef \the@ipfilectr {}
