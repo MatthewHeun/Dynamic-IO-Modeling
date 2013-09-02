@@ -18,50 +18,76 @@
 
 %% \abstract{Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\newline\indent
 %% Please use the 'starred' version of the new Springer \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
-
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
+
 
 %%%%%%%%%% Embodied Energy: Methodology %%%%%%%%%%
 \section{Methodology}
 \label{sec:embodied_methodology}
 %%%%%%%%%%
 
-In Chapter~\ref{chap:direct_energy}, we used the First Law of Thermodynamics
-to account for all of the direct energy flowing through sectors of an economy.
-In this chapter, we will adapt the First Law to account for 
+In Chapter~\ref{chap:direct_energy}, the First Law of Thermodynamics
+was used to account for direct energy flowing through sectors of an economy.
+In this chapter, we will adapt the First Law to account  
 \emph{embodied} energy. 
+The embodied energy ($B$) of the output 
+of an economic sector 
+is the sum total of all direct energy
+consumed in its manufacture, including 
+all upstream processing stages. 
+We begin the derivation of embodied energy accounting
+equations by defining \emph{total} energy. 
+
 
 %+++++++++ Embodied Energy: Total Energy Accounting ++++++++++
 \subsection{Total Energy Accounting}
 \label{sec:total_energy_accounting}
 %+++++++++
 
-Total energy ($T$) is the sum of the direct energy 
-(as discussed in Chapter~\ref{chap:direct_energy}) 
-and indirect (or \emph{embodied}) energy.
+Total energy ($T$) is defined as the sum of the direct energy 
+(see Chapter~\ref{chap:direct_energy}) 
+and embodied energy.
 
 \begin{equation} \label{eq:T_def}
 	T \equiv E + B
 \end{equation}
 
-In general, the flow rate of total energy among sectors in 
+The flow rate of total energy among sectors in 
 the economy, the biosphere, and society is given by
 
 \begin{equation} \label{eq:T_dot_def}
 	\dot{T} = \dot{E} + \dot{B}.
 \end{equation}
 
-In some cases, total energy flows may consist of direct energy ($\dot{E}$) 
+Figure~\ref{fig:embodied_single_producer} shows that
+total energy flows are comprised of direct energy ($\dot{E}$)
+and embodied energy ($\dot{B}$). 
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=.9\textwidth]{Part_2/Chapter_Embodied/images/TotalEnergyOneProducer.pdf}
+	\caption{Total energy flows for a single sector of an economy. 
+	For the sake of clarity, 
+	embodied ($\dot{B}$) and direct ($\dot{E}$) energy
+	are shown separately only for material flows from other sectors.
+	**** Mik: Can you make a figure that looks like this? 
+	But, the waste streams should not be present. 
+	I made a mistake to include them. **** --Matt}
+	\label{fig:embodied_single_producer}
+\end{figure}
+
+In some cases, total energy flows ($\dot{T}$) 
+may consist of direct energy ($\dot{E}$) 
 or embodied energy ($\dot{B}$) exclusively. 
 For example, the flow of extracted crude oil from the earth 
 consists of direct energy only ($\dot{B} = 0$ and $\dot{T} = \dot{E}$), 
-because, in this method, no embodied energy ($B$) has been added 
-to the crude oil until it reaches the downstream side of the pump. 
-The flow of goods produced by a non-energy sector of the economy 
-consists of indirect energy only ($\dot{E} = 0$, 
-and therefore $\dot{T} = \dot{B}$), 
-because no direct energy ($E$) is produced by 
-a non-energy sector in this model economy. 
+because, in this method, no embodied energy ($B$) is added 
+to the crude oil until it reaches the downstream side of the oil rig.
+The material produced by a non-energy sector of the economy 
+consists of indirect energy only ($\dot{E} \approx 0$, 
+and therefore $\dot{T} \approx \dot{B}$), 
+because direct energy ($E$) produced by 
+a non-energy sector is negligible in this economy. 
 
 In other cases, total energy flows may have both direct 
 \emph{and} indirect components. 
@@ -75,24 +101,26 @@ agricultural sectors will be similar:
 both the direct energy component (comprising chemical potential energy) 
 and the embodied energy component will be non-zero.}
 
-Single subscripts on $T$, $E$, or $B$ can mean one of two things: 
-$\dot{T}_{i}$ indicates the outflow of total energy from sector $i$, 
-whereas $T_{i}$ denotes the total energy content of sector $i$. 
-Double subscripts on $T$, $E$, or $B$ 
-(e.g., $\dot{T}_{ij}$) indicate a flow 
-from sector $i$ to sector $j$,\footnote{In the following discussion, 
-the first index always indicates the sector \emph{from} which a quantity flows, 
-and the second index indicates the sector \emph{to} which a quantity flows.} 
-in this case for total energy ($T$).  
+Most of the I-O literature \cite{Bullard1975, Herendeen1978} 
+[REF TO BULLARD AND HERENDEEN, ETC. HERE --MKH] assumes the following:
 
-The I-O literature \cite{Bullard1975, Herendeen1978} 
-[REF TO BULLARD AND HERENDEEN, ETC. HERE --MKH] assumes 
-(a) that steady state conditions exist 
-(i.e., no accumulation of total energy in economic sectors) and 
-(b) that flows of total energy ($\dot{T}$) are \emph{conserved}, 
-where by \emph{conserved}, 
-it is meant that total energy can be neither created nor destroyed. 
-Like the I-O literature, we assume that total energy is conserved. 
+\begin{enumerate}
+	\item flows of total energy ($\dot{T}$) are 
+	\emph{conserved},\footnote{Total energy 
+	can be neither created nor destroyed.}
+	
+	\item the sum total of the total energy input to a sector
+	appears in the products of the sector (i.e., 
+	there is no ``waste'' of total energy), and
+	
+	\item steady state conditions exist 
+	(i.e., total energy does not accumulate in economic sectors).
+\end{enumerate}
+
+Like the I-O literature, we assume that total energy is conserved
+and never wasted.\footnote{Of course, waste heat exists and is
+accounted by the First Law of Thermodynamics. However,
+waste heat is ignored when accounting for total energy.}
 However, we depart from the literature to allow durability of goods 
 as represented by total energy accumulation in economic sectors. 
 Steady state, this approach is not.
@@ -100,9 +128,10 @@ Steady state, this approach is not.
 Total energy may accumulate within an economic sector 
 as stocks of direct energy materials 
 (piles of coal or tanks of oil) 
-but also as embodied energy in stocks of capital goods 
+but also as energy embodied in stocks of capital goods 
 (e.g. machinery or buildings). 
-The rate of accumulation of total energy ($\frac{dT}{dt}$) 
+The rate of accumulation of total energy 
+$\left( \frac{dT}{dt} \right)$
 in a sector of the economy, the biosphere, 
 or society is given by the time derivative of total energy:
 
@@ -121,9 +150,9 @@ waste heat ($Q$) terms.
 The consequence of the foregoing difference is that 
 an interesting relationship exists between embodied energy ($B$) 
 and waste heat ($Q$). 
-We shall see in the following example that waste heat 
-from an economic sector can be considered to contribute to 
-energy embodied within the products of that sector.
+We shall see below that waste heat 
+from an economic sector is additive to energy embodied
+in the products of the sector.
 
 
 %+++++++++ Embodied Energy: Embodied Energy Accounting ++++++++++
