@@ -81,6 +81,7 @@ $\dot{R}$, $\dot{S}$, etc.
 Can you add an $\dot{E}_{\dot{P}}$ label to the purple line? 
 Should we have a net output line pointing to the right
 after the product is split apart?
+Can we add $\dot{Q}$ labels to the waste lines?
 Finally, would it be possible to put the labels 
 in the same color as the lines they're labeling? --Matt ****}
 \label{fig:PERKS_energy_content}
@@ -90,20 +91,22 @@ For any boundary (around, say, a machine, a plant,
 a sector of the economy, or the entire economy itself), 
 the First Law of Thermodynamics says that
 the accumulation rate of direct energy within the boundary
-is equal to the sum of the signed direct energy flow rates $\left( \dot{E} \right)$
-across the boundary (where inflows are positive and outflows are negative): 
+is equal to the sum of the signed direct energy flow rates ($\dot{E}$)
+across the boundary (where inflows are positive and outflows are negative)
+less outflowing energy carried by wastes ($\dot{Q}$): 
 energy is conserved.
 
 \begin{equation} \label{eq:First_Law_with_accumulation}
-	\frac{\mathrm{d}E}{\mathrm{d}t} = \sum \dot{E}
+	\frac{\mathrm{d}E}{\mathrm{d}t} = \sum \dot{E} - \sum \dot{Q}
 \end{equation}
 
 When there is no accumulation of direct energy within the boundary,
 $\left( \frac{\mathrm{d}E}{\mathrm{d}t} = 0 \right)$ the sum of all 
-signed direct energy flow rates $\left( \dot{E} \right)$ will be zero.
+signed direct energy flow rates ($\dot{E}$) 
+and waste heats ($\dot{Q}$) will be zero.
 
 \begin{equation} \label{eq:First_Law_no_accumulation}
-	0 = \sum \dot{E}
+	0 = \sum \dot{E} - \sum \dot{Q}
 \end{equation}
 
 It is important to note that the direct energy associated with some material flows can
