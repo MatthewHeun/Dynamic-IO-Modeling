@@ -36,7 +36,11 @@
 In Chapter~\ref{chap:direct_energy}, the First Law of Thermodynamics
 was used to account for direct energy flowing through sectors of an economy.
 In this chapter, we will adapt the First Law to account  
-\emph{embodied} energy. 
+\emph{embodied} energy.\footnote{To the authors' knowledge, 
+this is the first appearance in the literature 
+of a systematic, detailed, and mathematically rigorous derivation 
+of embodied energy accounting equations based upon the 
+laws of thermodynamics.}
 The embodied energy ($B$) of the output 
 of an economic sector 
 is the sum total of all direct energy
@@ -52,8 +56,8 @@ equations by defining \emph{total} energy.
 %+++++++++
 
 Total energy ($T$) is defined as the sum of the direct energy 
-(see Chapter~\ref{chap:direct_energy}) 
-and embodied energy.
+($E$, see Chapter~\ref{chap:direct_energy}) 
+and embodied energy ($B$).
 
 \begin{equation} \label{eq:T_def}
 	T \equiv E + B
@@ -66,7 +70,7 @@ the economy, the biosphere, and society is given by
 	\dot{T} = \dot{E} + \dot{B}.
 \end{equation}
 
-Figure~\ref{fig:embodied_single_producer} shows that
+\noindent Figure~\ref{fig:embodied_single_producer} shows that
 total energy flows are comprised of direct energy ($\dot{E}$)
 and embodied energy ($\dot{B}$). 
 
@@ -76,10 +80,10 @@ and embodied energy ($\dot{B}$).
 	\caption{Total energy flows for a single sector of an economy. 
 	For the sake of clarity, 
 	embodied ($\dot{B}$) and direct ($\dot{E}$) energy
-	are shown separately only for material flows from other sectors.
+	are shown separately for material inflows from other sectors only.
 	**** Mik: Can you make a figure that looks like this? 
 	But, the waste streams should not be present. 
-	I made a mistake to include them. **** --Matt}
+	I made a mistake to draw them. **** --Matt}
 	\label{fig:embodied_single_producer}
 \end{figure}
 
@@ -98,7 +102,7 @@ a non-energy sector is negligible in this economy.
 
 In other cases, total energy flows may have both direct 
 \emph{and} indirect components. 
-For example, the flow of refined petroleum from the energy sector 
+For example, the outgoing flow of refined petroleum from the energy sector 
 has both a direct energy ($\dot{E}$, the energy content of the oil product, 
 usually represented by chemical potential energy) 
 and embodied energy ($\dot{B}$, which accounts for the energy 
@@ -115,30 +119,34 @@ Most of the I-O literature \cite{Bullard1975, Herendeen1978}
 	\item flows of total energy ($\dot{T}$) are 
 	\emph{conserved},\footnote{Total energy 
 	can be neither created nor destroyed.}
-	
-	\item the sum total of the total energy input to a sector
-	appears in the products of the sector (i.e., 
-	there is no ``waste'' of total energy), and
-	
+
 	\item steady state conditions exist 
-	(i.e., total energy does not accumulate in economic sectors).
+	(i.e., total energy does not accumulate in economic 
+	sectors),\footnote{We will see later how the
+	steady-state assumption in the literature 
+	can introduce errors into I-O analyses.} and
+	
+	\item the sum of the signed 
+	(input is positive, output is negative) 
+	total energy inflows of a sector
+	is assigned to the products of the sector (i.e., 
+	there is no ``waste'' of total energy).
 \end{enumerate}
 
 Like the I-O literature, we assume that total energy is conserved
 and never wasted.\footnote{Of course, waste heat exists and is
 accounted by the First Law of Thermodynamics. However,
 waste heat is ignored when accounting for total energy.}
-However, we depart from the literature to allow durability of goods 
+However, we depart from the I-O literature to allow durability of goods 
 as represented by total energy accumulation in economic sectors. 
 Steady state, this approach is not. 
 
-Total energy may accumulate within an economic sector 
+Total energy ($T$) may accumulate within an economic sector 
 as stocks of direct energy materials 
 (piles of coal or tanks of oil) 
 but also as energy embodied in stocks of capital goods 
-(e.g. machinery or buildings). 
+(e.g., machinery or buildings). 
 The rate of accumulation of total energy 
-$\left( \frac{\mathrm{d}T}{\mathrm{d}t} \right)$
 in a sector of the economy, the biosphere, 
 or society is given by the time derivative of total energy:
 
@@ -149,16 +157,18 @@ or society is given by the time derivative of total energy:
 \end{equation}
 
 The following equation provides a total energy accounting 
-for a sector of the economy.
+for a sector of the economy, where the $\dot{T}$ terms
+are signed: positive for total energy input and negative
+for total energy output.
 
 \begin{equation} \label{eq:total_energy_accounting}
 		\frac{\mathrm{d}T}{\mathrm{d}t}
 		= \sum \dot{T}
 \end{equation}
 
-By substituting Equations~\eqref{eq:T_dot_def} and
-\eqref{eq:T_accum_def} into 
-Equation~\eqref{eq:total_energy_accounting},
+By substituting Equations~\ref{eq:T_dot_def} and
+\ref{eq:T_accum_def} into 
+Equation~\ref{eq:total_energy_accounting},
 we obtain
 
 \begin{equation} \label{eq:total_energy_accounting_details}
@@ -167,6 +177,7 @@ we obtain
 	= \sum{\left( \dot{E} 
 			+ \dot{B} \right)}.
 \end{equation}
+
 
 %+++++++++ Embodied Energy: Embodied Energy Accounting ++++++++++
 \subsection{Embodied Energy Accounting}
@@ -193,9 +204,11 @@ obtain
 	+ \sum \dot{Q}_{out}
 \end{equation}
 
-The waste heat term ($\dot{Q}$) in Equation~\ref{eq:embodied_energy_accounting}
-is an outflow of energy from the sector. The embodied energy 
-term ($\dot{B}$) represents embodied energy on either inflows
+The waste energy term ($\dot{Q}_{out}$) 
+in Equation~\ref{eq:embodied_energy_accounting}
+is an \emph{outflow} of energy from the sector. 
+The embodied energy 
+terms ($\dot{B}$) represent embodied energy of either inflows
 or outflows of material. Splitting the $\dot{B}$ term
 into inflows and outflows gives
 
@@ -212,35 +225,83 @@ Rearranging Equation~\ref{eq:embodied_energy_accounting_2} gives
 	\sum \dot{B}_{out}
 	= \sum \dot{B}_{in}
 	- \frac{\mathrm{d}B}{\mathrm{d}t} 
-	+ \sum \dot{Q}_{out}	
+	+ \sum \dot{Q}_{out}.
 \end{equation}
 
-Equation~\ref{eq:embodied_energy_accounting_3} shows that waste heat 
-\emph{out} of an economic sector ($\dot{Q}$) 
+Equation~\ref{eq:embodied_energy_accounting_3} shows that waste 
+energy \emph{out} of an economic sector ($\dot{Q}_{out}$) 
 is \emph{additive to} energy embodied
-in the products of the sector.
+in the products of the sector ($\dot{B}_{out}$).
+It also shows that embodied energy accumulating
+within the sector 
+$\left( \mathrm{when} \; \frac{\mathrm{d}B}{\mathrm{d}t} > 0 \right)$
+reduces the embodied energy output from the sector
+($\dot{B}_{out}$), as expected.
 
-**** Substitute the First Law into the Total Energy 
-equation to obtain an embodied energy equation. ****.
+We now apply the embodied energy accounting
+equations to each of our example economies.
 
 
 %%%%%%%%%% Embodied Energy: Example A %%%%%%%%%%
-\section{Example A: one sector economy}
+\section{Example A: single-sector economy}
 %%%%%%%%%%
 
 Figure \ref{fig:single_sector_flows_2} shows the flows of total energy ($\dot{T}$) through the single-sector economy.
 
 \begin{figure}[h!]
 \includegraphics[width=1.0\linewidth]{Part_2/Chapter_Embodied/images/I-O_one_sector_total_energy.pdf}
-\caption{Total Energy Flows ($\dot{T}$) in a Single-sector Economy.}
+\caption{Total energy flows ($\dot{T}$) in a single-sector Economy. 
+**** Mik: Can you convert this figure to our new style? --Matt ****}
 \label{fig:single_sector_flows_2}
 \end{figure}
 
-We follow the I-O literature in assuming that total energy ($T$) is conserved. The I-O literature assumes steady-state operation of the economy with no accumulation of embodied energy in the economic sectors. (We will see later how the assumption in the literature introduces errors into I-O analyses.) We depart from the I-O literature by accounting for both accumulation and depreciation of energy embodied in sectors of the economy and society. By doing so, the present analysis does \emph{not} assume a steady-state economy. A total energy accounting around the single-sector economy (2) gives
+As discussed above, we follow the I-O literature in assuming that 
+total energy ($T$) is conserved. 
+A total energy accounting around the single-sector economy (2) gives
 
 \begin{equation} \label{eq:single_sector_T_with_accumulation}
-	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} = \dot{T}_{12}  - \dot{T}_{21}.
+	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 
+	= \dot{T}_{12} 
+	- \dot{T}_{21}.
 \end{equation}
+
+Substituting Equations~\ref{eq:T_dot_def} and
+\ref{eq:T_accum_def} into 
+Equation~\ref{eq:single_sector_T_with_accumulation}
+yields
+
+\begin{equation} \label{eq:A_total_energy}
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= \dot{E}_{12} 
+	+ \dot{B}_{12} 
+	- \dot{E}_{21}
+	- \dot{B}_{21}.	
+\end{equation}
+
+Substituting the First Law of Thermodynamics 
+(Equation~\ref{eq:dE_2/dt_single_sector}) 
+into Equation~\ref{eq:A_total_energy} yields
+
+\begin{equation} \label{eq:A_embodied_energy}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= \dot{B}_{12} 
+	- \dot{B}_{21}
+	+ \dot{Q}_{21}.
+\end{equation}
+
+By definition, no embodied energy flows from 
+the earth with extracted material, so we can 
+simplify Equation~\ref{eq:A_embodied_energy}
+as
+
+\begin{equation} \label{eq:A_embodied_energy_2}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= \dot{Q}_{21} 
+	- \dot{B}_{21}.
+\end{equation}
+
+We now turn to Example B, a two-sector economy.
 
 
 %%%%%%%%%% Embodied Energy: Example B %%%%%%%%%%
