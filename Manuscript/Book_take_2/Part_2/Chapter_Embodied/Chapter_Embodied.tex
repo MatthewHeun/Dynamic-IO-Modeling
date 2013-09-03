@@ -439,7 +439,7 @@ is the sum of the rates of waste heat from the sector
 less the rate of embodied energy leaving the sector 
 on its output stream ($\dot{B}_{31}$).
 
-Finally, we apply embodied energy accounting to 
+In the next section, we apply embodied energy accounting to 
 Example~C, a three-sector economy.
 
 
@@ -497,15 +497,14 @@ we can write the following equations.
 	- \dot{T}_{41}.
 \end{equation}
 
-**** Remove this assumption --Matt **** 
-Given that $\frac{\mathrm{d}E_{i}}{\mathrm{d}t} = 0$, 
-we again note that 
-$\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$. 
-Substituting $\dot{T} = \dot{E} + \dot{B}$ 
-into the total energy accounting equations gives
+Substituting Equations~\ref{eq:T_dot_def} 
+and \ref{eq:T_accum_def} into 
+Equations~\ref{eq:C-CV_T_1} through
+\ref{eq:C-CV_T_4} gives
 
 \begin{equation} \label{eq:C-CV_dB_1}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 	 
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t}
 	= \dot{E}_{21} 
 	+ \dot{B}_{21} 
 	+ \dot{E}_{31} 
@@ -519,7 +518,8 @@ into the total energy accounting equations gives
 \end{equation}
 
 \begin{equation} \label{eq:C-CV_dB_2}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
 	= \dot{E}_{32} 
 	+ \dot{B}_{32} 
 	+ \dot{E}_{42} 
@@ -529,7 +529,8 @@ into the total energy accounting equations gives
 \end{equation}
 
 \begin{equation} \label{eq:C-CV_dB_3}
-	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
+	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
 	= \dot{E}_{13} 
 	+ \dot{B}_{13} 
 	+ \dot{E}_{33} 
@@ -545,7 +546,8 @@ into the total energy accounting equations gives
 \noindent and 
 
 \begin{equation} \label{eq:C-CV_dB_4}
-	\frac{\mathrm{d}B_{4}}{\mathrm{d}t} 	 
+	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{4}}{\mathrm{d}t} 	 
 	= \dot{E}_{14} 
 	+ \dot{B}_{14} 
 	+ \dot{E}_{34} 
@@ -559,7 +561,7 @@ into the total energy accounting equations gives
 \end{equation}
 
 Substituting the First Law of Thermodynamics 
-(Equations~\ref{eq:C-CV_E_dot_1_SS} through \ref{eq:C-CV_E_dot_4_SS}) 
+(Equations~\ref{eq:C-CV_E_dot_4_simp} through \ref{eq:C-CV_E_dot_3}) 
 into the total energy accounting equations 
 (Equations \ref{eq:C-CV_dB_1} through \ref{eq:C-CV_dB_4}) 
 gives embodied energy accounting equations for Example~C.
