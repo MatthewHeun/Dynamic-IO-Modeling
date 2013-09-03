@@ -62,16 +62,18 @@ and embodied energy ($B$).
 	T \equiv E + B
 \end{equation}
 
-The flow rate of total energy among sectors in 
-the economy, the biosphere, and society is given by
+The flow rate of total energy ($\dot{T}$) among sectors in 
+the economy, the biosphere, and society is the sum of
+direct energy ($\dot{E}$) and embodied 
+energy ($\dot{B}$).
 
 \begin{equation} \label{eq:T_dot_def}
-	\dot{T} = \dot{E} + \dot{B}.
+	\dot{T} = \dot{E} + \dot{B}
 \end{equation}
 
-\noindent Figure~\ref{fig:embodied_single_producer} shows that
-total energy flows are comprised of direct energy ($\dot{E}$)
-and embodied energy ($\dot{B}$). 
+\noindent Figure~\ref{fig:embodied_single_producer} illustrates
+that total energy flows are comprised of
+direct energy ($\dot{E}$) and embodied energy ($\dot{B}$). 
 
 \begin{figure}[h!]
 	\centering
@@ -86,9 +88,9 @@ and embodied energy ($\dot{B}$).
 	\label{fig:embodied_single_producer}
 \end{figure}
 
-In some cases, total energy flows ($\dot{T}$) 
-may consist of direct energy ($\dot{E}$) 
-or embodied energy ($\dot{B}$) exclusively. 
+In some cases, a material flow may include 
+either direct energy ($\dot{E}$) 
+or embodied energy ($\dot{B}$), exclusive. 
 For example, the flow of extracted crude oil from the earth 
 consists of direct energy only ($\dot{B} = 0$ and $\dot{T} = \dot{E}$), 
 because, in this method, no embodied energy ($B$) is added 
@@ -99,8 +101,8 @@ and therefore $\dot{T} \approx \dot{B}$),
 because direct energy ($E$) produced by 
 a non-energy sector is negligible in this economy. 
 
-In other cases, total energy flows may have both direct 
-\emph{and} indirect components. 
+In other cases, a material flow may include both direct energy flow
+($\dot{E}$) \emph{and} embodied energy flow ($\dot{B}$) components.
 For example, the outgoing flow of refined petroleum from the energy sector 
 has both a direct energy ($\dot{E}$, the energy content of the oil product, 
 usually represented by chemical potential energy) 
@@ -109,7 +111,8 @@ consumed in upstream processes
 to extract and refine the crude oil).\footnote{Outputs from 
 agricultural sectors will be similar: 
 both the direct energy component (comprising chemical potential energy) 
-and the embodied energy component will be non-zero.}
+and the embodied energy component (representing upstream
+energy consumed in food production) will be non-zero.}
 
 Most of the I-O literature \cite{Bullard1975, Herendeen1978} 
 [REF TO BULLARD AND HERENDEEN, ETC. HERE --MKH] assumes the following:
@@ -249,18 +252,19 @@ equations to each of our example economies.
 \section{Example A: single-sector economy}
 %%%%%%%%%%
 
-Figure \ref{fig:single_sector_flows_2} shows the flows of total energy ($\dot{T}$) through the single-sector economy.
+Figure \ref{fig:A_total_energy} shows the flows of total energy ($\dot{T}$) through the single-sector economy.
 
 \begin{figure}[h!]
 \includegraphics[width=1.0\linewidth]{Part_2/Chapter_Embodied/images/I-O_one_sector_total_energy.pdf}
 \caption{Total energy flows ($\dot{T}$) in a single-sector Economy. 
 **** Mik: Can you convert this figure to our new style? --Matt ****}
-\label{fig:single_sector_flows_2}
+\label{fig:A_total_energy}
 \end{figure}
 
 As discussed above, we follow the I-O literature in assuming that 
 total energy ($T$) is conserved. 
-A total energy accounting around the single-sector economy (2) gives
+A total energy ($\dot{T}$) accounting around the 
+single-sector economy (2) gives
 
 \begin{equation} \label{eq:single_sector_T_with_accumulation}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 
@@ -304,12 +308,119 @@ as
 	- \dot{B}_{21}.
 \end{equation}
 
-We now turn to Example B, a two-sector economy.
+We turn now to Example B, a two-sector economy.
 
 
 %%%%%%%%%% Embodied Energy: Example B %%%%%%%%%%
-\section{Example B: two sector economy}
+\section{Example B: two-sector economy}
 %%%%%%%%%%
+
+For the two-sector economy of Figures~\ref{fig:B_materials}
+and \ref{fig:B_energy}, we again follow the I-O literature 
+by assuming that total energy ($T$) is conserved. 
+Figure~\ref{fig:B_total_energy} shows total energy
+flows for the two-sector economy.
+
+\begin{figure}[h!]
+\includegraphics[width=0.9\linewidth]{Part_2/Chapter_Embodied/images/I-O_two_sector_total_energy.pdf}
+\caption{Flows of total energy ($\dot{T}$) in a two-sector economy.
+**** Mik: can you update this figure to our new style? --Matt ****}
+\label{fig:B_total_energy}
+\end{figure}
+
+Accounting for accumulation of total energy and using the assumption 
+that total energy is conserved, we can write the following equations.
+
+\begin{equation} \label{eq:CV_T_1}
+	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 	 
+	= \dot{T}_{21} 
+	+ \dot{T}_{31} 
+	- \dot{T}_{13},
+\end{equation}
+
+\begin{equation} \label{eq:CV_T_2}
+	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
+	= \dot{T}_{32} 
+	- \dot{T}_{21},
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:CV_T_3}
+	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 	 
+	= \dot{T}_{13} 
+	+ \dot{T}_{33} 
+	- \dot{T}_{3} 
+	- \dot{T}_{31}.
+\end{equation}
+
+Given that 
+$\frac{\mathrm{d}E_{i}}{\mathrm{d}t} 
+		= 0$ and $\dot{T} = \dot{E} + \dot{B}$, 
+we note that
+
+\begin{equation} \label{eq:T_dot_equals_B_dot}
+	\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t},
+\end{equation}
+
+\noindent and we can rewrite 
+the total energy accumulation accounting equations as
+
+\begin{equation} \label{eq:CV_dB_1}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{E}_{21} 
+	+ \dot{B}_{21} 
+	+ \dot{E}_{31} 
+	+ \dot{B}_{31} 
+	- \dot{E}_{13} 
+	+ \dot{B}_{13},
+\end{equation}
+
+\begin{equation} \label{eq:CV_dB_2}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= \dot{E}_{32} 
+	+ \dot{B}_{32} 
+	- \dot{E}_{21} 
+	- \dot{B}_{21},
+\end{equation}
+
+\noindent and 
+
+\begin{equation} \label{eq:CV_dB_3}
+	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
+	= \dot{E}_{13} 
+	+ \dot{B}_{13} 
+	+ \dot{E}_{33} 
+	+ \dot{B}_{33} 
+	- \dot{E}_{3} 
+	- \dot{B}_{3} 
+	- \dot{E}_{31} 
+	- \dot{B}_{31}.
+\end{equation}
+
+As in Example A, we can substitute the First Law of Thermodynamics 
+for the economic Sector (Equation~\ref{eq:CV_E_dot_3_SS}) 
+into the total energy accounting equation for the economic Sector 
+(Equation~\ref{eq:CV_dB_3}). 
+Assuming that $\dot{E}_{31} = 0$ 
+(because energy is returned to the biosphere as waste heat, 
+not direct energy), we obtain
+
+\begin{equation} \label{eq:ExB_embodied_energy_accounting}
+	\frac{\mathrm{d}B_3}{\mathrm{d}t} 
+	= \dot{Q}_{31} 
+	+ \dot{B}_{13} 
+	+ \dot{B}_{33} 
+	- \dot{B}_{31}
+\end{equation}
+
+Similar to Example A, we observe that the accumulation rate 
+of embodied energy in the Goods and Services sector (3) 
+is the sum of the rates of waste heat from the sector 
+($\dot{Q}_{31}$) and embodied energy into the sector 
+($\dot{B}_{13} + \dot{B}_{33}$) 
+less the rate of embodied energy leaving the sector 
+on its output stream ($\dot{B}_{31}$).
 
 
 %%%%%%%%%% Embodied Energy: Example C %%%%%%%%%%
