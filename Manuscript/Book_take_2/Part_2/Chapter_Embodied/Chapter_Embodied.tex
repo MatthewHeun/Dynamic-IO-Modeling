@@ -34,7 +34,7 @@
 %%%%%%%%%%
 
 In Chapter~\ref{chap:direct_energy}, the First Law of Thermodynamics
-was used to account for direct energy flowing through sectors of an economy.
+was used to account direct energy flowing among sectors of an economy.
 In this chapter, we will adapt the First Law to account  
 \emph{embodied} energy.\footnote{To the authors' knowledge, 
 this is the first appearance in the literature 
@@ -220,9 +220,22 @@ into inflows and outflows gives
 	+ \sum \dot{Q}_{out}
 \end{equation}
 
+In words, the rate of accumulation of embodied energy 
+in a sector of the economy 
+$\left( \frac{\mathrm{d}B}{\mathrm{d}t} \right)$ 
+is equal to the sum of the rates of 
+inflow of embodied energy into the sector 
+	($\sum \dot{B}_{in}$) 
+less the rate of output of embodied energy from the sector 
+	($\dot{B}_{out}$) 
+\emph{plus} the rate of waste heat from the sector 
+	($\dot{Q}_{out}$). 
+The first two terms on the right side of
+Equation~\ref{eq:embodied_energy_accounting_2} are expected: 
+accumulation is the difference between inflow and outflow rates. 
+
 Rearranging Equation~\ref{eq:embodied_energy_accounting_2}
-yields a version of the equation that may be more easily
-understood.
+yields another useful version of the equation.
 
 \begin{equation} \label{eq:embodied_energy_accounting_3}
 	\sum \dot{B}_{out}
@@ -231,21 +244,24 @@ understood.
 	+ \sum \dot{Q}_{out}
 \end{equation}
 
+We see that the waste energy term ($+\ \dot{Q}_{out}$) 
+is \emph{additive} to both accumulation 
+of embodied energy in a sector of the economy
+(Equation \ref{eq:embodied_energy_accounting_2}) and 
+outflow of embodied energy from a sector of the economy 
+(Equation \ref{eq:embodied_energy_accounting_3}). 
+Furthermore, because the waste direct energy 
+($\dot{Q}_{out}$) appears 
+in the embodied energy output from a sector, 
+waste heat accumulates along each step of a process 
+such that the energy embodied in a product 
+is the \emph{sum} of waste heats along 
+its upstream process path.
+
 Equations~\ref{eq:embodied_energy_accounting_2}
 and \ref{eq:embodied_energy_accounting_3} are generalized
-embodied energy accounting equations. 
-Equation~\ref{eq:embodied_energy_accounting_3} shows that waste 
-energy flows \emph{out} of an economic sector ($\dot{Q}_{out}$) 
-are \emph{additive to} energy embodied
-in the products of the sector ($\dot{B}_{out}$).
-It also shows that embodied energy accumulating
-within the sector 
-$\left( \mathrm{when} \; \frac{\mathrm{d}B}{\mathrm{d}t} > 0 \right)$
-reduces the embodied energy output from the sector
-($\dot{B}_{out}$), as expected.
-
-We now apply the embodied energy accounting
-equations to each of our example economies.
+embodied energy accounting equations that we will
+apply to Examples~A--C in the sections that follow.
 
 
 %%%%%%%%%% Embodied Energy: Example A %%%%%%%%%%
@@ -354,6 +370,7 @@ that total energy is conserved, we can write the following equations.
 	- \dot{T}_{31}.
 \end{equation}
 
+**** Remove this assumption --Matt **** 
 Given that 
 $\frac{\mathrm{d}E_{i}}{\mathrm{d}t} 
 		= 0$ and $\dot{T} = \dot{E} + \dot{B}$, 
@@ -414,7 +431,7 @@ not direct energy), we obtain
 	- \dot{B}_{31}
 \end{equation}
 
-Similar to Example A, we observe that the accumulation rate 
+Similar to Example~A, we observe that the accumulation rate 
 of embodied energy in the Goods and Services sector (3) 
 is the sum of the rates of waste heat from the sector 
 ($\dot{Q}_{31}$) and embodied energy into the sector 
@@ -422,10 +439,206 @@ is the sum of the rates of waste heat from the sector
 less the rate of embodied energy leaving the sector 
 on its output stream ($\dot{B}_{31}$).
 
+Finally, we apply embodied energy accounting to 
+Example~C, a three-sector economy.
+
 
 %%%%%%%%%% Embodied Energy: Example C %%%%%%%%%%
-\section{Example C: three sector economy}
+\section{Example C: three-sector economy}
 %%%%%%%%%%
+
+Again, we begin with a diagram showing total energy ($\dot{T}$) flows
+among the economic sectors of Example~C.
+
+\begin{figure}[h!]
+\includegraphics[width=1.0\linewidth]{Part_2/Chapter_Embodied/images/I-O_three_sector_total_energy.pdf}
+\caption{Flows of total energy ($\dot{T}$) in a three-sector economy.
+**** Mik: Can you update this figure to our new style? --Matt ****}
+\label{fig:C_total_energy}
+\end{figure}
+
+Accounting for accumulation of total energy and 
+applyingthe assumption that total energy is conserved, 
+we can write the following equations.
+
+\begin{equation} \label{eq:C-CV_T_1}
+	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 	 
+	= \dot{T}_{21} 
+	+ \dot{T}_{31} 
+	+ \dot{T}_{41} 
+	- \dot{T}_{13} 
+	- \dot{T}_{14},
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_T_2}
+	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
+	= \dot{T}_{32} 
+	+ \dot{T}_{42} 
+	- \dot{T}_{21},
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_T_3}
+	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 	 
+	= \dot{T}_{13} 
+	+ \dot{T}_{33} 
+	+ \dot{T}_{43} 
+	- \dot{T}_{3} 
+	- \dot{T}_{31},
+\end{equation}
+
+\noindent and 
+
+\begin{equation} \label{eq:C-CV_T_4}
+	\frac{\mathrm{d}T_{4}}{\mathrm{d}t} 	 
+	= \dot{T}_{14} 
+	+ \dot{T}_{34} 
+	+ \dot{T}_{44} 
+	- \dot{T}_{4} 
+	- \dot{T}_{41}.
+\end{equation}
+
+**** Remove this assumption --Matt **** 
+Given that $\frac{\mathrm{d}E_{i}}{\mathrm{d}t} = 0$, 
+we again note that 
+$\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$. 
+Substituting $\dot{T} = \dot{E} + \dot{B}$ 
+into the total energy accounting equations gives
+
+\begin{equation} \label{eq:C-CV_dB_1}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 	 
+	= \dot{E}_{21} 
+	+ \dot{B}_{21} 
+	+ \dot{E}_{31} 
+	+ \dot{B}_{31} 
+	+ \dot{E}_{41} 
+	+ \dot{B}_{41} 
+	- \dot{E}_{13} 
+	- \dot{B}_{13} 
+	- \dot{E}_{14} 
+	- \dot{B}_{14},
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_dB_2}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
+	= \dot{E}_{32} 
+	+ \dot{B}_{32} 
+	+ \dot{E}_{42} 
+	+ \dot{B}_{42} 
+	- \dot{E}_{21} 
+	- \dot{B}_{21},
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_dB_3}
+	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
+	= \dot{E}_{13} 
+	+ \dot{B}_{13} 
+	+ \dot{E}_{33} 
+	+ \dot{B}_{33} 
+	+ \dot{E}_{43} 
+	+ \dot{B}_{43} 
+	- \dot{E}_{3} 
+	- \dot{B}_{3} 
+	- \dot{E}_{31} 
+	- \dot{B}_{31},
+\end{equation}
+
+\noindent and 
+
+\begin{equation} \label{eq:C-CV_dB_4}
+	\frac{\mathrm{d}B_{4}}{\mathrm{d}t} 	 
+	= \dot{E}_{14} 
+	+ \dot{B}_{14} 
+	+ \dot{E}_{34} 
+	+ \dot{B}_{34}
+	+ \dot{E}_{44} 
+	+ \dot{B}_{44} 
+	- \dot{E}_{4} 
+	- \dot{B}_{4} 
+	- \dot{E}_{41} 
+	- \dot{B}_{41}.
+\end{equation}
+
+Substituting the First Law of Thermodynamics 
+(Equations~\ref{eq:C-CV_E_dot_1_SS} through \ref{eq:C-CV_E_dot_4_SS}) 
+into the total energy accounting equations 
+(Equations \ref{eq:C-CV_dB_1} through \ref{eq:C-CV_dB_4}) 
+gives embodied energy accounting equations for Example~C.
+
+\begin{equation} \label{eq:C-embodied_acct_1}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 	 
+	= \dot{B}_{21} 
+	+ \dot{B}_{31} 
+	+ \dot{B}_{41} 
+	- \dot{B}_{13} 
+	- \dot{B}_{14} 
+	- \dot{Q}_{21} 
+	- \dot{Q}_{31} 
+	- \dot{Q}_{41}
+\end{equation}
+
+\begin{equation} \label{eq:C-embodied_acct_2}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
+	= \dot{B}_{32} 
+	+ \dot{B}_{42} 
+	+ \dot{Q}_{21} 
+	- \dot{B}_{21}
+\end{equation}
+
+\begin{equation} \label{eq:C-embodied_acct_3}
+	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
+	= \dot{B}_{13} 
+	+ \dot{B}_{33} 
+	+ \dot{B}_{43} 
+	+ \dot{Q}_{31} 
+	- \dot{B}_{3} 
+	- \dot{B}_{31}
+\end{equation}
+
+\begin{equation} \label{eq:C-embodied_acct_4}
+	\frac{\mathrm{d}B_{4}}{\mathrm{d}t}	 
+	= \dot{B}_{14} 
+	+ \dot{B}_{34} 
+	+ \dot{B}_{44} 
+	+ \dot{Q}_{41} 
+	- \dot{B}_{4} 
+	- \dot{B}_{41}
+\end{equation}
+
+To verify the above derivation, 
+we sum Equations~\ref{eq:C-embodied_acct_1} through 
+\ref{eq:C-embodied_acct_4} 
+and use the following identities:
+
+\begin{equation} \label{eq:C-B_sum_3_output}
+	\dot{B}_3 
+	= \dot{B}_{32} 
+	+ \dot{B}_{33} 
+	+ \dot{B}_{34}
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:C-B_sum_4_output}
+	\dot{B}_4 
+	= \dot{B}_{42} 
+	+ \dot{B}_{43} 
+	+ \dot{B}_{44};
+\end{equation}
+
+\noindent to obtain
+
+\begin{equation} \label{eq:C-B_sums_to_zero}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{4}}{\mathrm{d}t} 
+	= 0,
+\end{equation}
+
+\noindent as expected. The total embodied energy content of the system 
+(biosphere (1), society (2), energy sector (3), and goods and services sector (4)) 
+remains constant with respect to time.
+
 
 
 \bibliography{../../EROI_review_v2}
