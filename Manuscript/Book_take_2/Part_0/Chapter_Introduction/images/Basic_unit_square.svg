@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1451.9015"
-   height="930.10486"
+   height="933.84509"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
@@ -109,16 +109,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.72983439"
-     inkscape:cx="719.16212"
-     inkscape:cy="465.05246"
+     inkscape:zoom="0.57842941"
+     inkscape:cx="725.95074"
+     inkscape:cy="468.79269"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1229"
+     inkscape:window-height="756"
+     inkscape:window-x="1920"
+     inkscape:window-y="965"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -240,7 +240,7 @@
            y="830.31702"
            x="190.75932"
            id="tspan3133"
-           sodipodi:role="line">Earth</tspan></text>
+           sodipodi:role="line">Biosphere</tspan></text>
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -365,7 +365,7 @@
            sodipodi:role="line"
            id="tspan4285"
            x="958.75934"
-           y="830.31702">Earth</tspan></text>
+           y="830.31702">Biosphere</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 1259.4377,823.11274 c -161.5514,-38.26737 -372.71068,-40.45343 -531.2321,0"
@@ -481,7 +481,7 @@
            y="328.31702"
            x="958.75934"
            id="tspan4303"
-           sodipodi:role="line">Earth</tspan></text>
+           sodipodi:role="line">Biosphere</tspan></text>
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -558,7 +558,7 @@
            sodipodi:role="line"
            id="tspan4342"
            x="170.75934"
-           y="328.31702">Earth</tspan></text>
+           y="328.31702">Biosphere</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 471.4377,321.11274 c -161.5514,-38.26737 -372.71068,-40.45343 -531.2321,0"

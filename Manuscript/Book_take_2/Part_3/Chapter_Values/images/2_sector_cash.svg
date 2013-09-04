@@ -24,15 +24,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
+     inkscape:window-width="1229"
+     inkscape:window-height="756"
      id="namedview97"
      showgrid="false"
      inkscape:zoom="0.79783708"
      inkscape:cx="701.78976"
-     inkscape:cy="510.01377"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:cy="159.06493"
+     inkscape:window-x="1920"
+     inkscape:window-y="965"
      inkscape:window-maximized="1"
      inkscape:current-layer="g12"
      fit-margin-top="0"
@@ -733,11 +733,12 @@
      y="291.01602"
      x="-91.893478"
      sodipodi:role="line"
-     id="tspan4117">Earth</tspan><tspan
+     id="tspan4117">Biosphere</tspan><tspan
      y="323.01602"
      x="-91.893478"
      sodipodi:role="line"
      id="tspan4119">(1)</tspan></text>
+
 
 
 
@@ -889,6 +890,7 @@
 
 
 
+
 <path
    d="m 309.27099,-44.21217 0,468.3 85.42,48 85.417,-48 0,-468.047 -85.417,-48.125 z"
    id="path4124"
@@ -935,6 +937,7 @@
      id="tspan3107"
      x="1491.8081"
      y="664.91211" /></text>
+
 
 
 
@@ -1234,6 +1237,7 @@
 
 
 
+
 </g></g><path
    sodipodi:nodetypes="cc"
    inkscape:connector-curvature="0"
@@ -1258,11 +1262,12 @@
      id="tspan3089"
      sodipodi:role="line"
      x="-31.503605"
-     y="22.68931">Energy</tspan><tspan
+     y="22.68931">Economy</tspan><tspan
      sodipodi:role="line"
      x="-31.503603"
      y="54.689312"
      id="tspan3115">(3)</tspan></text>
+
 
 
 
@@ -1285,6 +1290,7 @@
      sodipodi:role="line">C<tspan
    id="tspan4985"
    style="font-size:52.00042725%;baseline-shift:sub">3</tspan></tspan></text>
+
 
 
 
@@ -1351,6 +1357,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1359,7 +1366,7 @@
    sodipodi:cy="250.41866"
    sodipodi:rx="27.011545"
    sodipodi:ry="19.392904"
-   d="m -155.14324,250.41866 a 27.011545,19.392904 0 1 1 -54.02309,0 27.011545,19.392904 0 1 1 54.02309,0 z"
+   d="m -155.14324,250.41866 c 0,10.7104 -12.09348,19.3929 -27.01155,19.3929 -14.91806,0 -27.01154,-8.6825 -27.01154,-19.3929 0,-10.71041 12.09348,-19.39291 27.01154,-19.39291 14.91807,0 27.01155,8.6825 27.01155,19.39291 z"
    transform="matrix(0.07404241,0,0,-0.1031305,-33.45641,156.8853)" />
 
 
@@ -1378,6 +1385,7 @@
      y="7.512825">C<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan4227">32</tspan></tspan></text>
+
 
 
 
@@ -1470,6 +1478,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1478,7 +1487,7 @@
    sodipodi:cy="250.41866"
    sodipodi:rx="27.011545"
    sodipodi:ry="19.392904"
-   d="m -155.14324,250.41866 a 27.011545,19.392904 0 1 1 -54.02309,0 27.011545,19.392904 0 1 1 54.02309,0 z"
+   d="m -155.14324,250.41866 c 0,10.7104 -12.09348,19.3929 -27.01155,19.3929 -14.91806,0 -27.01154,-8.6825 -27.01154,-19.3929 0,-10.71041 12.09348,-19.39291 27.01154,-19.39291 14.91807,0 27.01155,8.6825 27.01155,19.39291 z"
    transform="matrix(0.07404241,0,0,-0.1031305,-110.2564,156.8853)" />
 
 
@@ -1509,6 +1518,7 @@
      y="-488.48721">C<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan4667">2</tspan></tspan></text>
+
 
 
 
