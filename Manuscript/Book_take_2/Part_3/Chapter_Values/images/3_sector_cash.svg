@@ -24,15 +24,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
+     inkscape:window-width="1229"
+     inkscape:window-height="756"
      id="namedview97"
      showgrid="false"
-     inkscape:zoom="0.79783708"
-     inkscape:cx="679.85546"
-     inkscape:cy="510.01377"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="0.48396946"
+     inkscape:cx="746.10748"
+     inkscape:cy="555.82019"
+     inkscape:window-x="1920"
+     inkscape:window-y="965"
      inkscape:window-maximized="1"
      inkscape:current-layer="g12"
      fit-margin-top="0"
@@ -792,11 +792,12 @@
      y="291.01602"
      x="-91.893478"
      sodipodi:role="line"
-     id="tspan4117">Earth</tspan><tspan
+     id="tspan4117">Biosphere</tspan><tspan
      y="323.01602"
      x="-91.893478"
      sodipodi:role="line"
      id="tspan4119">(1)</tspan></text>
+
 
 
 
@@ -950,6 +951,7 @@
 
 
 
+
 <path
    d="m 309.27099,-44.21217 0,468.3 85.42,48 85.417,-48 0,-468.047 -85.417,-48.125 z"
    id="path4124"
@@ -996,6 +998,7 @@
      id="tspan3107"
      x="1491.8081"
      y="664.91211" /></text>
+
 
 
 
@@ -1297,6 +1300,7 @@
 
 
 
+
 </g></g><path
    sodipodi:nodetypes="cc"
    inkscape:connector-curvature="0"
@@ -1333,6 +1337,7 @@
 
 
 
+
 </g>
 
 <text
@@ -1349,6 +1354,7 @@
      sodipodi:role="line">C<tspan
    id="tspan4985"
    style="font-size:52.00042725%;baseline-shift:sub">3</tspan></tspan></text>
+
 
 
 
@@ -1417,6 +1423,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1451,6 +1458,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1474,6 +1482,7 @@
      y="-87.771721">C<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan4235">43</tspan></tspan></text>
+
 
 
 
@@ -1579,6 +1588,7 @@
 
 
 
+
 </g><text
    xml:space="preserve"
    style="font-size:25.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
@@ -1593,6 +1603,7 @@
      y="-248.48721">C<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan4589">4</tspan></tspan></text>
+
 
 
 
@@ -1638,6 +1649,7 @@
 
 
 
+
 <path
    transform="matrix(0.07404241,0,0,-0.1031305,-279.85641,414.4853)"
    d="m -155.14324,250.41866 c 0,10.7104 -12.09348,19.3929 -27.01155,19.3929 -14.91806,0 -27.01154,-8.6825 -27.01154,-19.3929 0,-10.71041 12.09348,-19.39291 27.01154,-19.39291 14.91807,0 27.01155,8.6825 27.01155,19.39291 z"
@@ -1661,6 +1673,7 @@
      y="-346.08719">C<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan4627">23</tspan></tspan></text>
+
 
 
 
@@ -1714,6 +1727,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1741,6 +1755,7 @@
      y="-250.08716">C<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan4683">42</tspan></tspan></text>
+
 
 
 
@@ -1778,6 +1793,7 @@
 
 
 
+
 <path
    transform="matrix(0.07404241,0,0,-0.1031305,-371.05641,491.2853)"
    d="m -155.14324,250.41866 c 0,10.7104 -12.09348,19.3929 -27.01155,19.3929 -14.91806,0 -27.01154,-8.6825 -27.01154,-19.3929 0,-10.71041 12.09348,-19.39291 27.01154,-19.39291 14.91807,0 27.01155,8.6825 27.01155,19.39291 z"
@@ -1801,6 +1817,7 @@
      y="-441.37173">C<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
    id="tspan5127">34</tspan></tspan></text>
+
 
 
 

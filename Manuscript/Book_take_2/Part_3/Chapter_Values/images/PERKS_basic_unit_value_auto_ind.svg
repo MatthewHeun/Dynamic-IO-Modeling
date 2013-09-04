@@ -13,8 +13,8 @@
    height="582.94208"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="PERKS_basic_unit_value_auto_ind.pdf">
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="PERKS_basic_unit_value_auto_ind.svg">
   <defs
      id="defs4">
     <marker
@@ -340,16 +340,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.97035431"
-     inkscape:cx="558.95524"
+     inkscape:zoom="0.92290473"
+     inkscape:cx="555.08844"
      inkscape:cy="291.47104"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1125"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-width="1229"
+     inkscape:window-height="756"
+     inkscape:window-x="1920"
+     inkscape:window-y="965"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -363,7 +363,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -388,7 +388,7 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path4734"
-       d="m -831.13994,170.39423 65.4793,-0.41408"
+       d="m -831.13994,250.39423 65.4793,-0.41408"
        style="fill:none;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none" />
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none"
@@ -406,19 +406,19 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path4740"
-       d="m -831.13994,253.06086 65.4793,-0.41408"
+       d="m -831.13994,333.06086 65.4793,-0.41408"
        style="fill:none;stroke:#2a7fff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none" />
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
        x="-756.526"
-       y="183.26689"
+       y="263.26691"
        id="text5894"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5896"
          x="-756.526"
-         y="183.26689">Resources</tspan></text>
+         y="263.26691">R: Resources</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5898"
@@ -429,18 +429,18 @@
          y="221.20244"
          x="-756.526"
          id="tspan5900"
-         sodipodi:role="line">Energy</tspan></text>
+         sodipodi:role="line">E: Energy</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
        x="-756.526"
-       y="263.35675"
+       y="343.35675"
        id="text5902"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5904"
          x="-756.526"
-         y="263.35675">Short-lived goods</tspan></text>
+         y="343.35675">S: Short-lived goods</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5906"
@@ -451,7 +451,7 @@
          y="305.26691"
          x="-756.526"
          id="tspan5908"
-         sodipodi:role="line">Capital goods</tspan></text>
+         sodipodi:role="line">K: Capital goods</tspan></text>
     <path
        sodipodi:nodetypes="ccczcc"
        inkscape:connector-curvature="0"
@@ -670,13 +670,14 @@
        sodipodi:linespacing="125%"
        id="text4961"
        y="703.26691"
-       x="-162.526"
+       x="-131.09436"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
        xml:space="preserve"><tspan
          y="703.26691"
-         x="-162.526"
+         x="-131.09436"
          id="tspan4963"
-         sodipodi:role="line">Earth</tspan></text>
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle">Biosphere</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4965"
@@ -970,5 +971,22 @@
            height="30.916542"
            x="764.66913"
            y="363.43463" /></flowRegion><flowPara
-         id="flowPara3463" /></flowRoot>  </g>
+         id="flowPara3463" /></flowRoot>    <path
+       style="fill:none;stroke:#800080;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none"
+       d="m -831.13994,170.39423 65.4793,-0.41408"
+       id="path3176"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3178"
+       y="183.26691"
+       x="-756.526"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"><tspan
+         y="183.26691"
+         x="-756.526"
+         id="tspan3180"
+         sodipodi:role="line">P: Products</tspan></text>
+  </g>
 </svg>
