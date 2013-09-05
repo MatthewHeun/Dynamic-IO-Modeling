@@ -397,21 +397,14 @@ that total energy is conserved, we can write the following equations.
 	- \dot{T}_{31}.
 \end{equation}
 
-**** Remove this assumption --Matt **** 
-Given that 
-$\frac{\mathrm{d}E_{i}}{\mathrm{d}t} 
-		= 0$ and $\dot{T} = \dot{E} + \dot{B}$, 
-we note that
-
-\begin{equation} \label{eq:T_dot_equals_B_dot}
-	\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t},
-\end{equation}
-
-\noindent and we can rewrite 
-the total energy accumulation accounting equations as
+Substituting Equations~\ref{eq:T_dot_def} 
+and \ref{eq:T_accum_def} into 
+Equations~\ref{eq:CV_T_1} through
+\ref{eq:C-CV_T_3} gives
 
 \begin{equation} \label{eq:CV_dB_1}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
 	= \dot{E}_{21} 
 	+ \dot{B}_{21} 
 	+ \dot{E}_{31} 
@@ -422,6 +415,7 @@ the total energy accumulation accounting equations as
 
 \begin{equation} \label{eq:CV_dB_2}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
 	= \dot{E}_{32} 
 	+ \dot{B}_{32} 
 	- \dot{E}_{21} 
@@ -432,6 +426,7 @@ the total energy accumulation accounting equations as
 
 \begin{equation} \label{eq:CV_dB_3}
 	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
 	= \dot{E}_{13} 
 	+ \dot{B}_{13} 
 	+ \dot{E}_{33} 
@@ -443,19 +438,36 @@ the total energy accumulation accounting equations as
 \end{equation}
 
 As in Example A, we can substitute the First Law of Thermodynamics 
-for the economic Sector (Equation~\ref{eq:CV_E_dot_3_SS}) 
-into the total energy accounting equation for the economic Sector 
-(Equation~\ref{eq:CV_dB_3}). 
-Assuming that $\dot{E}_{31} = 0$ 
-(because energy is returned to the biosphere as waste heat, 
-not direct energy), we obtain
+(Equations~\ref{eq:CV_E_dot_3}--\ref{eq:CV_E_dot_2}
+into the total energy accounting equations
+(Equations~\ref{eq:CV_dB_1}--\ref{eq:CV_dB_3}) to obtain
 
-\begin{equation} \label{eq:ExB_embodied_energy_accounting}
+**** Fix the following equations ****
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_1}
+	\frac{\mathrm{d}B_1}{\mathrm{d}t} 
+	= \dot{Q}_{31} 
+	+ \dot{B}_{13} 
+	+ \dot{B}_{33} 
+	- \dot{B}_{31},
+\end{equation}
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_2}
+	\frac{\mathrm{d}B_2}{\mathrm{d}t} 
+	= \dot{Q}_{31} 
+	+ \dot{B}_{13} 
+	+ \dot{B}_{33} 
+	- \dot{B}_{31},
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_3}
 	\frac{\mathrm{d}B_3}{\mathrm{d}t} 
 	= \dot{Q}_{31} 
 	+ \dot{B}_{13} 
 	+ \dot{B}_{33} 
-	- \dot{B}_{31}
+	- \dot{B}_{31}.
 \end{equation}
 
 Similar to Example~A, we observe that the accumulation rate 
