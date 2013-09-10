@@ -279,7 +279,7 @@ yields another useful version of the equation:
 	+ \sum \dot{Q}_{out},
 \end{equation}
 
-and we see that the waste direct energy term 
+\noindent and we see that the waste direct energy term 
 ($+\ \dot{Q}_{out}$) is \emph{additive} to both accumulation 
 of embodied energy in a sector of the economy
 (Equation \ref{eq:embodied_energy_accounting_2}) and 
@@ -313,10 +313,18 @@ Figure \ref{fig:A_total_energy} shows the flows of total energy ($\dot{T}$) thro
 
 As discussed above, we follow the I-O literature in assuming that 
 total energy ($T$) is conserved. 
-A total energy ($\dot{T}$) accounting around the 
-single-sector economy (2) gives
+A total energy accounting around the biosphere (1)
+and the single-sector economy (2) gives
 
-\begin{equation} \label{eq:single_sector_T_with_accumulation}
+\begin{equation} \label{eq:A_T_acct_1}
+	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 
+	= \dot{T}_{21} 
+	- \dot{T}_{12},
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:A_T_acct_2}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 
 	= \dot{T}_{12} 
 	- \dot{T}_{21}.
@@ -324,10 +332,21 @@ single-sector economy (2) gives
 
 Substituting Equations~\ref{eq:T_dot_def} and
 \ref{eq:T_accum_def} into 
-Equation~\ref{eq:single_sector_T_with_accumulation}
+Equations~\ref{eq:A_T_acct_1} and \ref{eq:A_T_acct_2}
 yields
 
-\begin{equation} \label{eq:A_total_energy}
+\begin{equation} \label{eq:A_total_energy_1}
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{E}_{21} 
+	+ \dot{B}_{21} 
+	- \dot{E}_{12}
+	- \dot{B}_{12}.	
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:A_total_energy_2}
 	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 	= \dot{E}_{12} 
@@ -337,25 +356,66 @@ yields
 \end{equation}
 
 Substituting the First Law of Thermodynamics 
-(Equation~\ref{eq:dE_2/dt_single_sector}) 
-into Equation~\ref{eq:A_total_energy} yields
+(Equations~\ref{eq:dE_1/dt_single_sector} and \ref{eq:dE_2/dt_single_sector}) 
+into Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2} yields
 
-\begin{equation} \label{eq:A_embodied_energy}
+\begin{equation} \label{eq:A_dB1/dt}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{E}_{21}
+	+ \dot{B}_{21} 
+	- \dot{B}_{12}
+	- \dot{Q}_{21}
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:A_dB2/dt}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 	= \dot{B}_{12} 
+	- \dot{E}_{21}
 	- \dot{B}_{21}
 	+ \dot{Q}_{21}.
 \end{equation}
 
-By definition, no embodied energy flows from 
-the earth with extracted material, so we can 
-simplify Equation~\ref{eq:A_embodied_energy}
-as
+Note that the Equation~\ref{eq:A_dB1/dt} includes the
+term $-\dot{Q}_{21}$, which appears different from 
+Equation~\ref{eq:embodied_energy_accounting_2}, which
+has a positive sign for the waste energy term (+ $\dot{Q}_{out}$).
+However, upon realizing that $\dot{Q}_{21}$ is an \emph{inflow}
+of waste energy into the biosphere, we can use $\dot{Q}_{21} = - \dot{Q}_{12}$
+to rewrite Equation~\ref{eq:A_dB1/dt} with an \emph{outflow} 
+term,
 
-\begin{equation} \label{eq:A_embodied_energy_2}
+\begin{equation} \label{eq:A_dB1/dt_waste_outflow}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{E}_{21}
+	+ \dot{B}_{21} 
+	- \dot{B}_{12}
+	+ \dot{Q}_{12},
+\end{equation}
+
+\noindent thereby maintining consistency with
+Equation~\ref{eq:embodied_energy_accounting_3}.
+
+By definition, no embodied energy flows from 
+the earth with extracted material, so $\dot{B}_{12} = 0$.
+Furthermore, we note that $\dot{E}_{21} = 0$, 
+because society does not supply direct energy 
+to the biosphere. We can simplify 
+Equations~\ref{eq:A_dB1/dt} and \ref{eq:A_dB2/dt} as
+
+\begin{equation} \label{eq:A_dB1/dt_simp}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{B}_{21} 
+	- \dot{Q}_{21}
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:A_dB2/dt_simp}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{Q}_{21} 
-	- \dot{B}_{21}.
+	= - \dot{B}_{21}
+	+ \dot{Q}_{21}.
 \end{equation}
 
 We turn now to Example B, a two-sector economy.
