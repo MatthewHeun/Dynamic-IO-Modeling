@@ -43,19 +43,29 @@ net output? --Matt ****}
 Example A looks at the case of a one sector economy that includes both production and consumption together. 
 
 \begin{equation}\label{eq:dS_1/dt_single_sector}
-	\frac{\mathrm{d}R_1}{\mathrm{d}t} + \frac{\mathrm{d}S_1}{\mathrm{d}t}
+	\frac{\mathrm{d}R_1}{\mathrm{d}t}
+	+ \frac{\mathrm{d}S_1}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_1}{\mathrm{d}t}
 	= \dot{R}_{21} + \dot{S}_{21} + \dot{K}_{21}
 	- \dot{R}_{12} - \dot{S}_{12}
 \end{equation}
 
 \begin{equation} \label{eq:dS_2/dt_single_sector}
-	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} + \frac{\mathrm{d}S_{2}}{\mathrm{d}t} + \frac{\mathrm{d}K_{2}}{\mathrm{d}t} 
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t} 
 	= \dot{R}_{12} + \dot{S}_{12} 
 	- \dot{R}_{21} - \dot{S}_{21} - \dot{K}_{21}.
 \end{equation}
 
+\begin{equation}\label{eq:dS_1/dt_zero}
+	\frac{\mathrm{d}S_1}{\mathrm{d}t} = 0
+\end{equation}
+
 \begin{equation}\label{eq:biosphere_material_steady_state}
-	0 = \dot{R}_{21} + \dot{S}_{21} + \dot{K}_{21}
+	\frac{\mathrm{d}R_1}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_1}{\mathrm{d}t}
+	= \dot{R}_{21} + \dot{S}_{21} + \dot{K}_{21}
 	- \dot{R}_{12} - \dot{S}_{12}
 \end{equation}
 
