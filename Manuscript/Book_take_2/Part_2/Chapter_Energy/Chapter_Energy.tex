@@ -251,9 +251,8 @@ can be set to zero to obtain
 \label{sec:B_energy}
 %%%%%%%%%%
 
-For Example~B, we split the energy sector (3) from 
-society (2), assuming that all useful energy for society is 
-supplied by the energy sector. Figure~\ref{fig:B_energy} shows aggregated
+For Example~B, we split an economic sector (3) from 
+society (2). Figure~\ref{fig:B_energy} shows aggregated
 direct energy flows associated with the material flows of Figure~\ref{fig:B_materials}.
 
 \begin{figure}[h!]
@@ -269,7 +268,7 @@ requires that both
 direct energy and 
 waste heat\index{waste heat} 
 be conserved around each 
-sector of the economy (2 and 3) as well as around the biosphere (1).
+entity (2 and 3) as well as around the biosphere (1).
 
 First Law energy accounting around the biosphere (1) and society (2) gives
 
@@ -284,18 +283,20 @@ First Law energy accounting around the biosphere (1) and society (2) gives
 
 \begin{equation} \label{eq:CV_E_dot_2}
 	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 
-	= \dot{E}_{32} 
-	- \dot{E}_{23}
+	= \dot{E}_{22} 
+	+ \dot{E}_{32}
+	- \dot{E}_{2}
 	- \dot{Q}_{21}.
 \end{equation}
 
-Note that $\dot{E}_{23}$ represents useful work that people
+Note that $\dot{E}_{22}$ represents the energy required
+for consumption. $\dot{E}_{23}$ represents useful work that people
 and draught animals contribute to sector 3 of the economy. 
 \citep{Ayres} calls this ``muscle work.''
 
-The First Law around the energy sector (3) 
+The First Law around the energy sector (3), 
 including the accumulation rate of direct energy in the sector 
-$\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$ yields
+$\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$, yields
 
 \begin{equation} \label{eq:CV_E_dot_3}
 	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
@@ -319,14 +320,15 @@ within each sector to zero to obtain
 	- \dot{E}_{13},
 \end{equation}
 
-\noindent and 
-
 \begin{equation} \label{eq:CV_E_dot_2_SS}
 	0 
-	= \dot{E}_{32} 
-	- \dot{E}_{23}
+	= \dot{E}_{22} 
+	+ \dot{E}_{32}
+	- \dot{E}_{2}
 	- \dot{Q}_{21},
 \end{equation}
+
+\noindent and 
 
 \begin{equation} \label{eq:CV_E_dot_3_SS}
 	0 
