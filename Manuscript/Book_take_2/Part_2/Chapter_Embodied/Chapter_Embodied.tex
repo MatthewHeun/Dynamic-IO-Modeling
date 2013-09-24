@@ -45,9 +45,10 @@ and within the material in the sector itself.
 The energy embodied in the output of an economic sector 
 (e.g., energy embodied in the automobiles produced by the automotive sector)
 is related to the sum of all direct energy
-consumed in the manufacture of its products, including 
-all upstream processing stages. It is an indicator of the 
-energy demand created by consumption of goods and services
+consumed in the manufacture of its products, 
+including all upstream processing stages. 
+Embodied energy gives an indication 
+of the energy demand created by consumption of goods and services
 within an economy.
 
 Energy that becomes embodied in the materials of an economic sector 
@@ -296,7 +297,7 @@ its upstream process path.
 Equations~\ref{eq:embodied_energy_accounting_2}
 and \ref{eq:embodied_energy_accounting_3} are generalized
 embodied energy accounting equations that we will
-apply to Examples~A--C in the sections that follow.
+see again for Examples~A--C in the sections that follow.
 
 
 %%%%%%%%%% Embodied Energy: Example A %%%%%%%%%%
@@ -307,9 +308,7 @@ Figure \ref{fig:A_total_energy_T_dot} shows the flows of total energy ($\dot{T}$
 
 \begin{figure}[h!]
 \includegraphics[width=1.0\linewidth]{Part_2/Chapter_Embodied/images/1_sector_embodied_energy.pdf}
-\caption{Total energy flows ($\dot{T}$) in a single-sector Economy.
-**** Mik: Can you edit this figure include only $\dot{T}$ flows everywhere?
---MKH ****}
+\caption{Total energy flows ($\dot{T}$) in a single-sector Economy. **** Mik: Change left $\dot{T}_{1} = \dot{T}_{12}$ to $\dot{T}_{1} = \dot{E}_{12}$. ****}
 \label{fig:A_total_energy_T_dot}
 \end{figure}
 
@@ -357,7 +356,7 @@ yields
 	- \dot{B}_{21}.	
 \end{equation}
 
-At this point, we can proceed in two directions with the derivation.
+At this point, we can proceed in two directions.
 The first, involving simplifying Equations~\ref{eq:A_total_energy_1}
 and \ref{eq:A_total_energy_2}, is intuitive.
 A second approach, involving substituting the First Law
@@ -374,7 +373,8 @@ We begin with simplification.
 
 To simplify Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2},
 we first realize that, by definition, no embodied energy flows from 
-the earth with extracted material, so $\dot{B}_{12} = 0$.
+the earth with extracted material, so $\dot{B}_{12} = 0$
+and $\dot{T}_{1} = \dot{E}_{12}$ as shown in Figure~\ref{fig:A_total_energy_T_dot}.
 Second, we can assume that direct energy ($E$) does not accumulate
 in the economy such that 
 $\frac{\mathrm{d}E_1}{\mathrm{d}t} = 0$ and
@@ -399,20 +399,9 @@ and \ref{eq:A_total_energy_2} become
 \end{equation}
 
 These equations show that direct energy consumed by a 
-sector ($\dot{E}_{12}$) increases the energy embodied within the sector, 
+sector ($\dot{E}_{12}$) increases the energy embodied within the sector ($B_2$), 
 whereas the waste from the sector produces an embodied
-energy outflow ($\dot{B}_{21}$). 
-The total energy flows of Figure~\ref{fig:A_total_energy_T_dot}
-become slightly clearer with these simplifications. (See 
-Figure~\ref{fig:A_total_energy_simp}.)
-
-\begin{figure}[h!]
-\includegraphics[width=1.0\linewidth]{Part_2/Chapter_Embodied/images/1_sector_embodied_energy.pdf}
-\caption{Simplified energy energy flows through a single-sector economy for 
-embodied energy accounting.
-**** Mik: Change left $\dot{T}_{12}$ to $\dot{E}_{12}$. ****}
-\label{fig:A_total_energy_simp}
-\end{figure}
+energy outflow ($\dot{B}_{21}$) that reduces the enerby embodied within the sector. 
 
 % subsection sec:A_simplified_embodied (end)
 
@@ -427,13 +416,6 @@ accounting equations is to substitute the First Law
 (Equations~\ref{eq:dE_1/dt_single_sector} and \ref{eq:dE_2/dt_single_sector}) 
 into the total energy accounting equations 
 (Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2}). 
-This approach has the advantage of canceling all 
-First Law direct energy terms from the embodied energy accounting equations.
-And, it is no longer necessary to assume that the 
-accumulation rate of direct energy 
-$\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$
-is zero.
-
 \begin{equation} \label{eq:A_dB1/dt}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
 	= \dot{E}_{21}
@@ -449,6 +431,13 @@ is zero.
 	- \dot{B}_{21}
 	+ \dot{Q}_{21}
 \end{equation}
+
+This substitution has the advantage of canceling most 
+First Law direct energy terms from the embodied energy accounting equations.
+And, it is no longer necessary to assume that the 
+accumulation rate of direct energy 
+$\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$
+is zero, because it cancels during this substitution.
 
 Note that the Equation~\ref{eq:A_dB1/dt} includes the
 term $-\dot{Q}_{21}$, which, at first glance,
@@ -516,7 +505,8 @@ flows for the two-sector economy.
 
 \begin{figure}[h!]
 \includegraphics[width=0.9\linewidth]{Part_2/Chapter_Embodied/images/2_sector_embodied_energy.pdf}
-\caption{Flows of total energy ($\dot{T}$) in a two-sector economy.}
+\caption{Flows of total energy ($\dot{T}$) in a two-sector economy. 
+**** Mik: Change $\dot{T}_{1} = \dot{T}_{13}$ to $\dot{T}_{1} = \dot{E}_{13}$ ****}
 \label{fig:B_total_energy}
 \end{figure}
 
@@ -630,7 +620,7 @@ to obtain
 
 Similar to Example~A, we observe that the accumulation rate 
 of embodied energy in the Goods and Services sector (3) 
-is the sum of the rates of waste heat from the sector 
+is the sum of the rates of waste heat flowing from the sector 
 ($\dot{Q}_{31}$) and embodied energy into the sector 
 ($\dot{B}_{13} + \dot{B}_{33}$) 
 less the rate of embodied energy leaving the sector 
