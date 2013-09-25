@@ -13,6 +13,8 @@
 *.bbl
 *.blg
 
+.DS_Store
+
 
 #
 # Output .pdf files don't need to be updated in the repository
