@@ -10,6 +10,8 @@
 *.ilg
 *.ind
 *.pdfsync
+*.bbl
+*.blg
 
 
 #
