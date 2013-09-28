@@ -383,13 +383,14 @@ yields
 \end{equation}
 
 At this point, we can proceed in two directions.
-The first, involving simplifying Equations~\ref{eq:A_total_energy_1}
-and \ref{eq:A_total_energy_2}, is intuitive.
-A second approach, involving substituting the First Law
-into Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2}
-provides the advantage of canceling direct energy terms 
-in the embodied energy accounting equation.
-We begin with simplification.
+The first direction, 
+simplifying Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2}, 
+provides an intuitive result. 
+The second direction,
+substituting the First Law of Thermodynamics into 
+Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2}, 
+provides the advantage of cancelling most of the direct energy terms.
+We begin with the first approach: simplification.
 
 
 %+++++++++ Simplified embodied energy ++++++++++
@@ -427,14 +428,15 @@ and \ref{eq:A_total_energy_2} become
 These equations show that direct energy consumed by a 
 sector ($\dot{E}_{12}$) increases the energy embodied within the sector ($B_2$), 
 whereas the waste from the sector produces an embodied
-energy outflow ($\dot{B}_{21}$) that reduces the enerby embodied within the sector. 
+energy outflow ($\dot{B}_{21}$) that reduces 
+the energy embodied within the sector. 
 
 % subsection sec:A_simplified_embodied (end)
 
 
 %+++++++++ First Law embodied energy ++++++++++
 \subsection{Substitution of First Law into the embodied energy accounting equation} % (fold)
-\label{sec:A_first_law_embodied}
+\label{subsec:A_first_law_embodied}
 %+++++++++
 
 The second approach to the derivation of embodied energy
@@ -459,11 +461,13 @@ into the total energy accounting equations
 \end{equation}
 
 This substitution has the advantage of canceling most 
-First Law direct energy terms from the embodied energy accounting equations.
+of the direct energy terms from the embodied energy accounting equations.
 And, it is no longer necessary to assume that the 
 accumulation rate of direct energy 
 $\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$
-is zero, because it cancels during this substitution.
+is zero, because the 
+$\frac{\mathrm{d}E}{\mathrm{d}t}$
+term is cancelled by the substitution.
 
 Note that the Equation~\ref{eq:A_dB1/dt} includes the
 term $-\dot{Q}_{21}$, which, at first glance,
@@ -511,8 +515,9 @@ to obtain
 \noindent the embodied energy accounting equations for 
 Example~A.
 
-In Examples~B and C following, we will choose to substitute
-the First Law into the embodied energy accounting equations,
+In Examples~B and C following, we will choose the approach of 
+Section~\ref{subsec:A_first_law_embodied} (substitution of the 
+First Law of Thermodynamics into the total energy accounting equation)
 because of the benefit of canceling direct energy terms. 
 We turn now to Example~B, a two-sector economy.
 
@@ -547,7 +552,8 @@ that total energy is conserved, we can write the following equations.
 
 \begin{equation} \label{eq:CV_T_2}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
-	= \dot{T}_{32} 
+	= \dot{T}_{22}
+	+ \dot{T}_{32} 
 	- \dot{T}_2
 	- \dot{T}_{21},
 \end{equation}
@@ -566,7 +572,7 @@ that total energy is conserved, we can write the following equations.
 Substituting Equations~\ref{eq:T_dot_def} 
 and \ref{eq:T_accum_def} into 
 Equations~\ref{eq:CV_T_1} through
-\ref{eq:C-CV_T_3} gives
+\ref{eq:CV_T_3} gives
 
 \begin{equation} \label{eq:CV_dB_1}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
@@ -582,7 +588,9 @@ Equations~\ref{eq:CV_T_1} through
 \begin{equation} \label{eq:CV_dB_2}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
-	= \dot{E}_{32} 
+	= \dot{E}_{22}
+	+ \dot{B}_{22}
+	+ \dot{E}_{32} 
 	+ \dot{B}_{32} 
 	- \dot{E}_2
 	- \dot{B}_2
@@ -608,7 +616,7 @@ Equations~\ref{eq:CV_T_1} through
 \end{equation}
 
 As in Example~A, we can substitute the First Law of Thermodynamics 
-(Equations~\ref{eq:CV_E_dot_3}--\ref{eq:CV_E_dot_2})
+(Equations~\ref{eq:CV_E_dot_1}--\ref{eq:CV_E_dot_3})
 into the total energy accounting equations
 (Equations~\ref{eq:CV_dB_1}--\ref{eq:CV_dB_3}) 
 and employ the assumptions that 
@@ -624,30 +632,29 @@ to obtain
 	- \dot{Q}_{31}, 
 \end{equation}
 
-**** Verify the following equations ****
-
 \begin{equation} \label{eq:B_embodied_energy_accounting_2}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{Q}_{21} 
+	= \dot{B}_{22} 
 	+ \dot{B}_{32} 
-	- \dot{B}_{21},
+	- \dot{B}_{21}
+	+ \dot{Q}_{21},
 \end{equation}
 
 \noindent and
 
 \begin{equation} \label{eq:B_embodied_energy_accounting_3}
 	\frac{\mathrm{d}B_3}{\mathrm{d}t} 
-	= \dot{Q}_{31} 
-	+ \dot{B}_{13} 
+	= \dot{B}_{23} 
 	+ \dot{B}_{33} 
-	- \dot{B}_{31}.
+	- \dot{B}_{31} 
+	+ \dot{Q}_{31}.
 \end{equation}
 
 Similar to Example~A, we observe that the accumulation rate 
 of embodied energy in the Goods and Services sector (3) 
 is the sum of the rates of waste heat flowing from the sector 
 ($\dot{Q}_{31}$) and embodied energy into the sector 
-($\dot{B}_{13} + \dot{B}_{33}$) 
+($\dot{B}_{23} + \dot{B}_{33}$) 
 less the rate of embodied energy leaving the sector 
 on its output stream ($\dot{B}_{31}$).
 
