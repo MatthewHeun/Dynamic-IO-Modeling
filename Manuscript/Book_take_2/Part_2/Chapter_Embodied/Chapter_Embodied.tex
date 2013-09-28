@@ -676,7 +676,7 @@ among the economic sectors of Example~C.
 \end{figure}
 
 Accounting for accumulation of total energy and 
-applyingthe assumption that total energy is conserved, 
+applying the assumption that total energy is conserved, 
 we can write the following equations.
 
 \begin{equation} \label{eq:C-CV_T_1}
@@ -690,14 +690,17 @@ we can write the following equations.
 
 \begin{equation} \label{eq:C-CV_T_2}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
-	= \dot{T}_{32} 
+	= \dot{T}_{22}
+	+ \dot{T}_{32} 
 	+ \dot{T}_{42} 
+	- \dot{T}_{2}
 	- \dot{T}_{21},
 \end{equation}
 
 \begin{equation} \label{eq:C-CV_T_3}
 	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 	 
 	= \dot{T}_{13} 
+	+ \dot{T}_{23}
 	+ \dot{T}_{33} 
 	+ \dot{T}_{43} 
 	- \dot{T}_{3} 
@@ -709,6 +712,7 @@ we can write the following equations.
 \begin{equation} \label{eq:C-CV_T_4}
 	\frac{\mathrm{d}T_{4}}{\mathrm{d}t} 	 
 	= \dot{T}_{14} 
+	+ \dot{T}_{24}
 	+ \dot{T}_{34} 
 	+ \dot{T}_{44} 
 	- \dot{T}_{4} 
