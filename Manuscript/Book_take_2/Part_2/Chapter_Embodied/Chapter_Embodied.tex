@@ -262,29 +262,62 @@ less the rate of output of embodied energy from the sector
 The first two terms on the right side of
 Equation~\ref{eq:embodied_energy_accounting_2} are expected: 
 accumulation is the difference between inflow and outflow rates. 
+
 Rearranging Equation~\ref{eq:embodied_energy_accounting_2}
-yields another useful version of the equation:
+yields another version of the embodied energy accounting equation:
+one that illuminates issues related to 
+stages of growth for an economic sector.
 
 \begin{equation} \label{eq:embodied_energy_accounting_3}
-	\sum \dot{B}_{out}
+	\frac{\mathrm{d}B}{\mathrm{d}t} 
+	+ \sum \dot{B}_{out}
 	= \sum \dot{B}_{in}
-	- \frac{\mathrm{d}B}{\mathrm{d}t} 
-	+ \sum \dot{Q}_{out},
+	+ \sum \dot{Q}_{out}
 \end{equation}
 
-\noindent and we see that the waste direct energy term 
-($+\ \dot{Q}_{out}$) is \emph{additive} to both accumulation 
-of embodied energy in a sector of the economy
-(Equation \ref{eq:embodied_energy_accounting_2}) and 
-outflow of embodied energy from a sector of the economy 
-(Equation \ref{eq:embodied_energy_accounting_3}). 
-Furthermore, because the waste direct energy 
-($\dot{Q}_{out}$) appears 
-in the embodied energy output from a sector, 
-waste heat accumulates along each step of a process 
-such that the energy embodied in a product 
-is the \emph{sum} of waste heats along 
-its upstream process path.
+\noindent From Equation~\ref{eq:embodied_energy_accounting_3},
+we see that incoming embodied energy ($\dot{B}_{in}$) and 
+waste heat\footnote{Because we have substituted 
+the First Law of Thermodynamics into the total energy accounting equation,
+$\dot{Q}_{out}$ becomes a proxy for direct energy consumption by the sector.} 
+($\dot{Q}_{out}$) can be used to increase either (a)
+the embodied energy within a sector of the economy 
+$\left( \frac{\mathrm{d}B}{\mathrm{d}t}  \right)$
+or (b) the embodied energy output of a sector of the economy 
+($\dot{B}_{out}$), 
+depending on decisions by actors 
+(firms, households, or the government) 
+within the sector. 
+If the sector is ``building up'' production capacity, 
+much of the incoming embodied energy ($\dot{B}_{in}$)
+and direct energy consumption (represented by $\dot{Q}_{out}$)
+will be used to increase infrastructure 
+(and associated embodied energy, $B$) within the sector, 
+and $\frac{\mathrm{d}B}{\mathrm{d}t}$ will be positive.
+If, on the other hand, the sector is mature, 
+much of the incoming embodied energy ($\dot{B}_{in}$)
+and direct energy consumption (represented by $\dot{Q}_{out}$)
+will be used for production of goods ($\dot{B}_{out}$).
+$\frac{\mathrm{d}B}{\mathrm{d}t}$ will be close to zero.
+Equation~\ref{eq:embodied_energy_accounting_2} shows that
+an economic sector in decline may experience an outflow 
+of embodied energy (via products or depreciation)
+in excess of the sum of 
+its embodied energy inflows ($\dot{B}_{in}$)
+and direct energy consumption (represented by $\dot{Q}_{out}$),
+and $\frac{\mathrm{d}B}{\mathrm{d}t}$ will be negative.
+
+Equations~\ref{eq:embodied_energy_accounting_2}
+and \ref{eq:embodied_energy_accounting_3} 
+highlight a contrast between 
+the present dynamic analysis and the I-O literature.
+The traditional assumption of steady-state conditions 
+in economic sectors is tantamount to assuming that
+$\frac{\mathrm{d}B}{\mathrm{d}t} = 0$ in 
+Equations~\ref{eq:embodied_energy_accounting_2}
+and \ref{eq:embodied_energy_accounting_3}.
+That assumption precludes analysis of stages of growth 
+and the embodied energy implications thereof.
 
 Equations~\ref{eq:embodied_energy_accounting_2}
 and \ref{eq:embodied_energy_accounting_3} are generalized
