@@ -742,10 +742,14 @@ Equations~\ref{eq:C-CV_T_1} through
 \begin{equation} \label{eq:C-CV_dB_2}
 	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
-	= \dot{E}_{32} 
+	= \dot{E}_{22}
+	+ \dot{B}_{22}
+	+ \dot{E}_{32} 
 	+ \dot{B}_{32} 
 	+ \dot{E}_{42} 
 	+ \dot{B}_{42} 
+	- \dot{E}_{2}
+	- \dot{B}_{2}
 	- \dot{E}_{21} 
 	- \dot{B}_{21},
 \end{equation}
@@ -755,6 +759,8 @@ Equations~\ref{eq:C-CV_T_1} through
 	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
 	= \dot{E}_{13} 
 	+ \dot{B}_{13} 
+	+ \dot{E}_{23}
+	+ \dot{B}_{23}
 	+ \dot{E}_{33} 
 	+ \dot{B}_{33} 
 	+ \dot{E}_{43} 
@@ -771,7 +777,9 @@ Equations~\ref{eq:C-CV_T_1} through
 	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}B_{4}}{\mathrm{d}t} 	 
 	= \dot{E}_{14} 
-	+ \dot{B}_{14} 
+	+ \dot{B}_{14}
+	+ \dot{E}_{24} 
+	+ \dot{B}_{24} 
 	+ \dot{E}_{34} 
 	+ \dot{B}_{34}
 	+ \dot{E}_{44} 
