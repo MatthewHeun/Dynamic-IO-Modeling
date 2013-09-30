@@ -791,7 +791,7 @@ Equations~\ref{eq:C-CV_T_1} through
 \end{equation}
 
 Substituting the First Law of Thermodynamics 
-(Equations~\ref{eq:C-CV_E_dot_4_simp} through \ref{eq:C-CV_E_dot_3}) 
+(Equations~\ref{eq:C-CV_E_dot_1} through \ref{eq:C-CV_E_dot_4}) 
 into the total energy accounting equations 
 (Equations \ref{eq:C-CV_dB_1} through \ref{eq:C-CV_dB_4}) 
 gives embodied energy accounting equations for Example~C.
@@ -801,8 +801,7 @@ gives embodied energy accounting equations for Example~C.
 	= \dot{B}_{21} 
 	+ \dot{B}_{31} 
 	+ \dot{B}_{41} 
-	- \dot{B}_{13} 
-	- \dot{B}_{14} 
+	- \dot{E}_{13} 
 	- \dot{Q}_{21} 
 	- \dot{Q}_{31} 
 	- \dot{Q}_{41}
@@ -810,30 +809,34 @@ gives embodied energy accounting equations for Example~C.
 
 \begin{equation} \label{eq:C-embodied_acct_2}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
-	= \dot{B}_{32} 
+	= \dot{B}_{22}
+	+ \dot{B}_{32} 
 	+ \dot{B}_{42} 
-	+ \dot{Q}_{21} 
+	- \dot{B}_{2}
 	- \dot{B}_{21}
+	+ \dot{Q}_{21} 
 \end{equation}
 
 \begin{equation} \label{eq:C-embodied_acct_3}
 	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
 	= \dot{B}_{13} 
+	+ \dot{B}_{23}
 	+ \dot{B}_{33} 
 	+ \dot{B}_{43} 
-	+ \dot{Q}_{31} 
 	- \dot{B}_{3} 
 	- \dot{B}_{31}
+	+ \dot{Q}_{31} 
 \end{equation}
 
 \begin{equation} \label{eq:C-embodied_acct_4}
 	\frac{\mathrm{d}B_{4}}{\mathrm{d}t}	 
 	= \dot{B}_{14} 
+	+ \dot{B}_{24}
 	+ \dot{B}_{34} 
 	+ \dot{B}_{44} 
-	+ \dot{Q}_{41} 
 	- \dot{B}_{4} 
 	- \dot{B}_{41}
+	+ \dot{Q}_{41} 
 \end{equation}
 
 To verify the above derivation, 
