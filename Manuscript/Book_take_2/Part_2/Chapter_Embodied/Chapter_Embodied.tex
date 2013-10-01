@@ -524,6 +524,61 @@ We turn now to Example~B, a two-sector economy.
 % subsection sec:A_first_law_embodied (end)
 
 
+%+++++++++ Depreciation ++++++++++
+\subsection{Depreciation}
+%+++++++++
+
+The term $\dot{B}_{21}$ in Equation~\ref{eq:A_dB2/dt_simp}
+represents the disposal rate 
+of embodied energy from the economy to the biosphere, 
+akin to depreciation of physical assets. 
+This physical depreciation is different from, 
+but related to, financial depreciation: 
+financial depreciation is usually faster than physical depreciation. 
+Embodied energy depreciation ($\dot{B}_{21}$ in Example~A) 
+can be represented by a depreciation term such as
+
+\begin{equation} \label{eq:depreciation_term_defined}
+	\dot{B}_{21} = \gamma_{2}B_{2},
+\end{equation}
+
+\noindent where $\gamma$ represents the depreciation rate 
+in units of inverse time (e.g., 1/year) and $\gamma > 0$. 
+The depreciation rate ($\gamma$) indicates that 
+a fraction of the total stock of embodied energy 
+is disposed over a period of time (e.g, $\gamma = 0.05$/year). 
+In the absence of other inputs or outputs, 
+this depreciation function provides exponential decay 
+of embodied energy ($B$) in an economic sector. 
+$\gamma$ is, in general, a function of time.
+
+Equation \ref{eq:depreciation_term_defined} 
+can be substituted into Equations~\ref{eq:A_dB1/dt_simp}
+and \ref{eq:A_dB2/dt_simp} to obtain 
+
+\begin{equation} \label{eq:A-dB1/dt_with_depreciation_gamma}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \gamma_{2}B_{2}
+	- \dot{Q}_{21} 
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:A-dB2/dt_with_depreciation_gamma}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= - \gamma_{2}B_{2}
+	+ \dot{Q}_{21}.
+\end{equation}
+
+\noindent Equation~\ref{eq:A-dB2/dt_with_depreciation_gamma} 
+indicates that the accumulation rate 
+of embodied energy in an economic sector 
+$\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} \right)$
+is equal to the sum of the waste heat from the economic sector 
+($\dot{Q}_{21}$) less the rate of disposal of embodied energy 
+($\gamma_{2}B_{2}$).
+
+
 %%%%%%%%%% Embodied Energy: Example B %%%%%%%%%%
 \section{Example B: two-sector economy}
 %%%%%%%%%%
