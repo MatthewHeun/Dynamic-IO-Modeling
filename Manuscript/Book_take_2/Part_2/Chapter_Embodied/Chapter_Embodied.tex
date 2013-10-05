@@ -354,6 +354,8 @@ and the single-sector economy (2) gives
 \begin{equation} \label{eq:A_T_acct_2}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 
 	= \dot{T}_{12} 
+	+ \dot{T}_{22}
+	- \dot{T}_{2}
 	- \dot{T}_{21}.
 \end{equation}
 
@@ -378,6 +380,10 @@ yields
 	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 	= \dot{E}_{12} 
 	+ \dot{B}_{12} 
+	+ \dot{E}_{22}
+	+ \dot{B}_{22}
+	- \dot{E}_{2}
+	- \dot{B}_{2}
 	- \dot{E}_{21}
 	- \dot{B}_{21}.	
 \end{equation}
@@ -422,6 +428,10 @@ and \ref{eq:A_total_energy_2} become
 \begin{equation} \label{eq:A_total_energy_2_simp}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 	= \dot{E}_{12} 
+	+ \dot{E}_{22}
+	+ \dot{B}_{22}
+	- \dot{E}_{2}
+	- \dot{B}_{2}
 	- \dot{B}_{21}.	
 \end{equation}
 
@@ -455,8 +465,10 @@ into the total energy accounting equations
 \begin{equation} \label{eq:A_dB2/dt}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 	= \dot{B}_{12} 
-	- \dot{E}_{21}
+	+ \dot{B}_{22}
+	- \dot{B}_{2}
 	- \dot{B}_{21}
+	- \dot{E}_{21}
 	+ \dot{Q}_{21}
 \end{equation}
 
@@ -508,7 +520,9 @@ to obtain
 
 \begin{equation} \label{eq:A_dB2/dt_simp}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= - \dot{B}_{21}
+	= \dot{B}_{22}
+	- \dot{B}_{2}
+	- \dot{B}_{21}
 	+ \dot{Q}_{21},
 \end{equation}
 

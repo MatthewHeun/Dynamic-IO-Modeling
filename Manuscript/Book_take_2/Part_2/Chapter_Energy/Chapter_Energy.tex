@@ -214,11 +214,23 @@ the First Law of Thermodynamics for Example~A indicates that
 	- \dot{E}_{12}
 \end{equation}
 
+\noindent and
+
 \begin{equation} \label{eq:dE_2/dt_single_sector}
 	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
 	= \dot{E}_{12} 
+	+ \dot{E}_{22}
+	- \dot{E}_{2}
 	- \dot{Q}_{21}.
 \end{equation}
+
+Note that $\dot{E}_{2}$ is the gross direct energy production rate
+of society. 
+For example, firms extract crude oil (a component of $\dot{E}_{12}$) 
+and refine it into petroleum products (a component of $\dot{E}_{2}$)
+that are consumed by society.
+The direct energy consumption of extraction and refining firms 
+is a component of $\dot{E}_{22}$.
 
 Aside from, for example, the U.S. 
 Strategic Petroleum Reserve\index{Strategic Petroleum Reserve}, 
@@ -237,13 +249,19 @@ $\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$ in the above equations
 can be set to zero to obtain
 
 \begin{equation} \label{eq:biosphere_direct_energy_steady_state}
-	0 = \dot{Q}_{21} - \dot{E}_{12}
+	0 
+	= \dot{Q}_{21} 
+	- \dot{E}_{12}
 \end{equation}
 
 \noindent and
 
 \begin{equation} \label{eq:single_sector_direct_energy_steady_state}
-	0 = \dot{E}_{12} - \dot{Q}_{21}.
+	0 
+	= \dot{E}_{12} 
+	+ \dot{E}_{22}
+	- \dot{E}_{2} 
+	- \dot{Q}_{21}.
 \end{equation}
 
 
@@ -359,6 +377,17 @@ a fuller picture of direct energy flows among sectors
 \caption{Direct energy flows in Example C: a three-sector economy.}
 \label{fig:C_energy}
 \end{figure}
+
+We note that the gross direct energy production of the energy sector is 
+$\dot{E}_{3}$, and the direct energy consumption of the energy sector is 
+$\dot{E}_{23} + \dot{E}_{33} + \dot{E}_{43}$. 
+The net direct energy production by the energy sector
+is given by $\dot{E}_{3} - (\dot{E}_{23} + \dot{E}_{33} + \dot{E}_{43})$.
+The energy return on investment ($EROI$) of the energy sector is given by
+
+\begin{equation} \label{eq:C-EROI}
+	EROI = \frac{\dot{E}_{3}}{\dot{E}_{23} + \dot{E}_{33} + \dot{E}_{43}}.
+\end{equation}
 
 The First Law of Thermodynamics around the 
 biosphere (1), society (2), and the energy sector (3) gives
