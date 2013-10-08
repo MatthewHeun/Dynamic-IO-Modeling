@@ -533,7 +533,6 @@ In Examples~B and C following, we will choose the approach of
 Section~\ref{subsec:A_first_law_embodied} (substitution of the 
 First Law of Thermodynamics into the total energy accounting equation)
 because of the benefit of canceling direct energy terms. 
-We turn now to Example~B, a two-sector economy.
 
 % subsection sec:A_first_law_embodied (end)
 
@@ -591,6 +590,8 @@ $\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} \right)$
 is equal to the sum of the waste heat from the economic sector 
 ($\dot{Q}_{21}$) less the rate of disposal of embodied energy 
 ($\gamma_{2}B_{2}$).
+
+We turn now to Example~B, a two-sector economy.
 
 
 %%%%%%%%%% Embodied Energy: Example B %%%%%%%%%%
@@ -727,7 +728,35 @@ is the sum of the rates of waste heat flowing from the sector
 less the rate of embodied energy leaving the sector 
 on its output stream ($\dot{B}_{31}$).
 
-**** Add a depreciation section. ****
+We can replace the waste embodied energy terms in 
+Equations~\ref{eq:B_embodied_energy_accounting_1}--\ref{eq:B_embodied_energy_accounting_3}
+with depreciation terms to obtain
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_1_with_depreciation}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \gamma_2 \dot{B}_{2}  
+	+ \gamma_3 \dot{B}_{3} 
+	- \dot{Q}_{21} 
+	- \dot{Q}_{31}, 
+\end{equation}
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_2_with_depreciation}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= \dot{B}_{22} 
+	+ \dot{B}_{32} 
+	- \gamma_2 \dot{B}_{2} 
+	+ \dot{Q}_{21},
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_3_with_depreciation}
+	\frac{\mathrm{d}B_3}{\mathrm{d}t} 
+	= \dot{B}_{23} 
+	+ \dot{B}_{33} 
+	- \gamma_3 \dot{B}_{3}
+	+ \dot{Q}_{31}.
+\end{equation}
 
 In the next section, we apply embodied energy accounting to 
 Example~C, a three-sector economy.
