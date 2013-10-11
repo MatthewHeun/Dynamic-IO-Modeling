@@ -15,7 +15,7 @@
    id="svg2"
    xml:space="preserve"
    inkscape:version="0.48.1 r9760"
-   sodipodi:docname="3_sector_direct_energy.pdf"><sodipodi:namedview
+   sodipodi:docname="3_sector_direct_energy.svg"><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -24,12 +24,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
+     inkscape:window-width="1229"
+     inkscape:window-height="756"
      id="namedview97"
      showgrid="false"
-     inkscape:zoom="0.86358864"
-     inkscape:cx="725.8432"
+     inkscape:zoom="0.48396946"
+     inkscape:cx="746.10748"
      inkscape:cy="555.82019"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -41,7 +41,7 @@
      fit-margin-bottom="0" /><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><marker
    inkscape:stockid="Arrow1Lstart"
    orient="auto"
@@ -787,7 +787,8 @@
      y="323.01602"
      x="-91.893478"
      sodipodi:role="line"
-     id="tspan4119">(1)</tspan></text>
+     id="tspan4119">(0)</tspan></text>
+
 
 
 
@@ -910,7 +911,8 @@
      x="-180.76221"
      y="4.0152621">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan4810">13</tspan></tspan></text>
+   id="tspan4810">02</tspan></tspan></text>
+
 
 
 
@@ -960,7 +962,8 @@
      id="tspan3125"
      sodipodi:role="line"
      x="392.96185"
-     y="-167.12372">(2)</tspan></text>
+     y="-167.12372">(1)</tspan></text>
+
 
 
 
@@ -991,7 +994,8 @@
      id="tspan4845"
      sodipodi:role="line">Q<tspan
    id="tspan4847"
-   style="font-size:52.00042725%;baseline-shift:sub">21</tspan></tspan></text>
+   style="font-size:52.00042725%;baseline-shift:sub">10</tspan></tspan></text>
+
 
 
 
@@ -1026,7 +1030,8 @@
      x="-38.505859"
      y="181.61533">Q<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan3170">31</tspan></tspan></text>
+   id="tspan3170">20</tspan></tspan></text>
+
 
 
 
@@ -1074,6 +1079,7 @@
      id="tspan3107"
      x="1491.8081"
      y="664.91211" /></text>
+
 
 
 
@@ -1375,6 +1381,7 @@
 
 
 
+
 </g></g><path
    sodipodi:nodetypes="cc"
    inkscape:connector-curvature="0"
@@ -1403,7 +1410,8 @@
      sodipodi:role="line"
      x="-31.503603"
      y="54.689312"
-     id="tspan3115">(3)</tspan></text>
+     id="tspan3115">(2)</tspan></text>
+
 
 
 
@@ -1426,7 +1434,8 @@
      id="tspan4983"
      sodipodi:role="line">E<tspan
    id="tspan4985"
-   style="font-size:52.00042725%;baseline-shift:sub">3</tspan></tspan></text>
+   style="font-size:52.00042725%;baseline-shift:sub">2</tspan></tspan></text>
+
 
 
 
@@ -1487,7 +1496,8 @@
      x="74.807205"
      y="-162.97168">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan3120">33</tspan></tspan></text>
+   id="tspan3120">22</tspan></tspan></text>
+
 
 
 
@@ -1521,7 +1531,8 @@
      x="255.60733"
      y="7.512825">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan4227">32</tspan></tspan></text>
+   id="tspan4227">21</tspan></tspan></text>
+
 
 
 
@@ -1551,7 +1562,8 @@
      x="-101.19279"
      y="-87.771721">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan4235">43</tspan></tspan></text>
+   id="tspan4235">32</tspan></tspan></text>
+
 
 
 
@@ -1613,7 +1625,8 @@
      id="tspan4525"
      sodipodi:role="line">E<tspan
    id="tspan4527"
-   style="font-size:52.00042725%;text-align:start;text-anchor:start;baseline-shift:sub">1</tspan></tspan></text>
+   style="font-size:52.00042725%;text-align:start;text-anchor:start;baseline-shift:sub">0</tspan></tspan></text>
+
 
 
 
@@ -1643,7 +1656,8 @@
      id="tspan4533"
      sodipodi:role="line">E<tspan
    id="tspan4535"
-   style="font-size:52.00042725%;baseline-shift:sub">14</tspan></tspan></text>
+   style="font-size:52.00042725%;baseline-shift:sub">03</tspan></tspan></text>
+
 
 
 
@@ -1673,7 +1687,8 @@
      id="tspan4543"
      sodipodi:role="line">Q<tspan
    id="tspan4545"
-   style="font-size:52.00042725%;baseline-shift:sub">41</tspan></tspan></text>
+   style="font-size:52.00042725%;baseline-shift:sub">30</tspan></tspan></text>
+
 
 
 
@@ -1729,7 +1744,8 @@
      id="tspan4581"
      y="69.08931"
      x="-39.503597"
-     sodipodi:role="line">(4)</tspan></text>
+     sodipodi:role="line">(3)</tspan></text>
+
 
 
 
@@ -1750,7 +1766,8 @@
      x="-179.59268"
      y="-248.48721">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan4589">4</tspan></tspan></text>
+   id="tspan4589">3</tspan></tspan></text>
+
 
 
 
@@ -1788,7 +1805,8 @@
      id="tspan4611"
      sodipodi:role="line">E<tspan
    id="tspan4613"
-   style="font-size:52.00042725%;baseline-shift:sub">44</tspan></tspan></text>
+   style="font-size:52.00042725%;baseline-shift:sub">33</tspan></tspan></text>
+
 
 
 
@@ -1818,7 +1836,8 @@
      x="-6.792665"
      y="-346.08719">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan4627">23</tspan></tspan></text>
+   id="tspan4627">12</tspan></tspan></text>
+
 
 
 
@@ -1864,7 +1883,8 @@
      x="431.60736"
      y="-488.48721">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan4667">2</tspan></tspan></text>
+   id="tspan4667">1</tspan></tspan></text>
+
 
 
 
@@ -1898,7 +1918,8 @@
      x="255.60735"
      y="-250.08716">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan4683">42</tspan></tspan></text>
+   id="tspan4683">31</tspan></tspan></text>
+
 
 
 
@@ -1928,7 +1949,8 @@
      id="tspan5117"
      sodipodi:role="line">E<tspan
    id="tspan5119"
-   style="font-size:52.00042725%;baseline-shift:sub">24</tspan></tspan></text>
+   style="font-size:52.00042725%;baseline-shift:sub">13</tspan></tspan></text>
+
 
 
 
@@ -1958,7 +1980,8 @@
      x="-288.39276"
      y="-441.37173">E<tspan
    style="font-size:52.00042725%;baseline-shift:sub"
-   id="tspan5127">34</tspan></tspan></text>
+   id="tspan5127">23</tspan></tspan></text>
+
 
 
 
@@ -2059,7 +2082,8 @@
      id="tspan3158"
      sodipodi:role="line">E<tspan
    id="tspan3160"
-   style="font-size:52.00042725%;baseline-shift:sub">22</tspan></tspan></text>
+   style="font-size:52.00042725%;baseline-shift:sub">11</tspan></tspan></text>
+
 
 <path
    transform="matrix(0.07404241,0,0,-0.1031305,268.9436,443.2853)"
