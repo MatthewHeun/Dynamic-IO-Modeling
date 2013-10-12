@@ -398,49 +398,47 @@ Equations~\ref{eq:A_total_energy_0} and \ref{eq:A_total_energy_1},
 provides the advantage of cancelling most of the direct energy terms.
 We begin with the first approach: simplification.
 
-************ Matt finished here with renumbering the sectors (reducing all indices by 1) **********
-
 
 %+++++++++ Simplified embodied energy ++++++++++
 \subsection{Simplification of the embodied energy accounting equation} % (fold)
 \label{sec:A_simplified_embodied}
 %+++++++++
 
-To simplify Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2},
+To simplify Equations~\ref{eq:A_total_energy_0} and \ref{eq:A_total_energy_1},
 we first realize that, by definition, no embodied energy flows from 
-the earth with extracted material, so $\dot{B}_{12} = 0$
-and $\dot{T}_{1} = \dot{E}_{12}$ as shown in Figure~\ref{fig:A_total_energy_T_dot}.
+the earth with extracted material, so $\dot{B}_{01} = 0$
+and $\dot{T}_{0} = \dot{E}_{01}$ as shown in Figure~\ref{fig:A_total_energy_T_dot}.
 Second, we can assume that direct energy ($E$) does not accumulate
 in the economy such that 
-$\frac{\mathrm{d}E_1}{\mathrm{d}t} = 0$ and
-$\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$.
-Finally, we note that $\dot{E}_{21} = 0$, 
+$\frac{\mathrm{d}E_0}{\mathrm{d}t} = 0$ and
+$\frac{\mathrm{d}E_1}{\mathrm{d}t} = 0$.
+Finally, we note that $\dot{E}_{10} = 0$, 
 because society does not supply direct energy 
-to the biosphere. Thus, Equations~\ref{eq:A_total_energy_1}
-and \ref{eq:A_total_energy_2} become
+to the biosphere. Thus, Equations~\ref{eq:A_total_energy_0}
+and \ref{eq:A_total_energy_1} become
 
-\begin{equation} \label{eq:A_total_energy_1_simp}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \dot{B}_{21} 
-	- \dot{E}_{12}
+\begin{equation} \label{eq:A_total_energy_0_simp}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \dot{B}_{10} 
+	- \dot{E}_{01}
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:A_total_energy_2_simp}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{E}_{12} 
-	+ \dot{E}_{22}
-	+ \dot{B}_{22}
-	- \dot{E}_{2}
-	- \dot{B}_{2}
-	- \dot{B}_{21}.	
+\begin{equation} \label{eq:A_total_energy_1_simp}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{E}_{01} 
+	+ \dot{E}_{11}
+	+ \dot{B}_{11}
+	- \dot{E}_{1}
+	- \dot{B}_{1}
+	- \dot{B}_{10}.	
 \end{equation}
 
 These equations show that direct energy consumed by a 
-sector ($\dot{E}_{12}$) increases the energy embodied within the sector ($B_2$), 
+sector ($\dot{E}_{01}$) increases the energy embodied within the sector ($B_1$), 
 whereas the waste from the sector produces an embodied
-energy outflow ($\dot{B}_{21}$) that reduces 
+energy outflow ($\dot{B}_{10}$) that reduces 
 the energy embodied within the sector. 
 
 % subsection sec:A_simplified_embodied (end)
@@ -453,25 +451,25 @@ the energy embodied within the sector.
 
 The second approach to the derivation of embodied energy
 accounting equations is to substitute the First Law
-(Equations~\ref{eq:dE_1/dt_single_sector} and \ref{eq:dE_2/dt_single_sector}) 
+(Equations~\ref{eq:dE_0/dt_single_sector} and \ref{eq:dE_1/dt_single_sector}) 
 into the total energy accounting equations 
-(Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2}). 
-\begin{equation} \label{eq:A_dB1/dt}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \dot{E}_{21}
-	+ \dot{B}_{21} 
-	- \dot{B}_{12}
-	- \dot{Q}_{21}
+(Equations~\ref{eq:A_total_energy_0} and \ref{eq:A_total_energy_1}). 
+\begin{equation} \label{eq:A_dB0/dt}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \dot{E}_{10}
+	+ \dot{B}_{10} 
+	- \dot{B}_{01}
+	- \dot{Q}_{10}
 \end{equation}
 
-\begin{equation} \label{eq:A_dB2/dt}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{B}_{12} 
-	+ \dot{B}_{22}
-	- \dot{B}_{2}
-	- \dot{B}_{21}
-	- \dot{E}_{21}
-	+ \dot{Q}_{21}
+\begin{equation} \label{eq:A_dB1/dt}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{B}_{01} 
+	+ \dot{B}_{11}
+	- \dot{B}_{1}
+	- \dot{B}_{10}
+	- \dot{E}_{10}
+	+ \dot{Q}_{10}
 \end{equation}
 
 This substitution has the advantage of canceling most 
@@ -483,49 +481,49 @@ is zero, because the
 $\frac{\mathrm{d}E}{\mathrm{d}t}$
 term is cancelled by the substitution.
 
-Note that the Equation~\ref{eq:A_dB1/dt} includes the
-term $-\dot{Q}_{21}$, which, at first glance,
+Note that the Equation~\ref{eq:A_dB0/dt} includes the
+term $-\dot{Q}_{10}$, which, at first glance,
 appears different from 
-Equation~\ref{eq:embodied_energy_accounting_2}.\footnote{Equation~\ref{eq:embodied_energy_accounting_2}
+Equation~\ref{eq:embodied_energy_accounting_1}.\footnote{Equation~\ref{eq:embodied_energy_accounting_1}
 has a positive sign for the waste energy term (+ $\dot{Q}_{out}$),
-whereas Equation~\ref{eq:A_dB1/dt} has a 
-negative sign for the waste energy term ($- \dot{Q}_{21}$).}
-However, upon realizing that $\dot{Q}_{21}$ is an \emph{inflow}
-of waste energy into the biosphere, we can use $\dot{Q}_{21} = - \dot{Q}_{12}$
-to rewrite Equation~\ref{eq:A_dB1/dt} with an \emph{outflow} 
+whereas Equation~\ref{eq:A_dB0/dt} has a 
+negative sign for the waste energy term ($- \dot{Q}_{10}$).}
+However, upon realizing that $\dot{Q}_{10}$ is an \emph{inflow}
+of waste energy into the biosphere, we can use $\dot{Q}_{10} = - \dot{Q}_{01}$
+to rewrite Equation~\ref{eq:A_dB0/dt} with an \emph{outflow} 
 term,
 
-\begin{equation} \label{eq:A_dB1/dt_waste_outflow}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \dot{E}_{21}
-	+ \dot{B}_{21} 
-	- \dot{B}_{12}
-	+ \dot{Q}_{12},
+\begin{equation} \label{eq:A_dB0/dt_waste_outflow}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \dot{E}_{10}
+	+ \dot{B}_{10} 
+	- \dot{B}_{01}
+	+ \dot{Q}_{01},
 \end{equation}
 
 \noindent thereby maintining consistency with
-Equation~\ref{eq:embodied_energy_accounting_2}.
+Equation~\ref{eq:embodied_energy_accounting_1}.
 
 We can simplify 
-Equations~\ref{eq:A_dB1/dt} and \ref{eq:A_dB2/dt} 
+Equations~\ref{eq:A_dB0/dt} and \ref{eq:A_dB1/dt} 
 using the assumptions of Section~\ref{sec:A_simplified_embodied} 
-(namely, that $\dot{B}_{12} = 0$ and $\dot{E}_{21} = 0$)
+(namely, that $\dot{B}_{01} = 0$ and $\dot{E}_{10} = 0$)
 to obtain
 
 \begin{equation} \label{eq:A_dB1/dt_simp}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \dot{B}_{21} 
-	- \dot{Q}_{21}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \dot{B}_{10} 
+	- \dot{Q}_{10}
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:A_dB2/dt_simp}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{B}_{22}
-	- \dot{B}_{2}
-	- \dot{B}_{21}
-	+ \dot{Q}_{21},
+\begin{equation} \label{eq:A_dB1/dt_simp}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{B}_{11}
+	- \dot{B}_{1}
+	- \dot{B}_{10}
+	+ \dot{Q}_{10},
 \end{equation}
 
 \noindent the embodied energy accounting equations for 
@@ -543,18 +541,18 @@ because of the benefit of canceling direct energy terms.
 \subsection{Depreciation}
 %+++++++++
 
-The term $\dot{B}_{21}$ in Equation~\ref{eq:A_dB2/dt_simp}
+The term $\dot{B}_{10}$ in Equation~\ref{eq:A_dB1/dt_simp}
 represents the disposal rate 
 of embodied energy from the economy to the biosphere, 
 akin to depreciation of physical assets. 
 This physical depreciation is different from, 
 but related to, financial depreciation: 
 financial depreciation is usually faster than physical depreciation. 
-Embodied energy depreciation ($\dot{B}_{21}$ in Example~A) 
+Embodied energy depreciation ($\dot{B}_{10}$ in Example~A) 
 can be represented by a depreciation term such as
 
 \begin{equation} \label{eq:depreciation_term_defined}
-	\dot{B}_{21} = \gamma_{2}B_{2},
+	\dot{B}_{10} = \gamma_{1}B_{1},
 \end{equation}
 
 \noindent where $\gamma$ represents the depreciation rate 
@@ -568,33 +566,34 @@ of embodied energy ($B$) in an economic sector.
 $\gamma$ is, in general, a function of time.
 
 Equation \ref{eq:depreciation_term_defined} 
-can be substituted into Equations~\ref{eq:A_dB1/dt_simp}
-and \ref{eq:A_dB2/dt_simp} to obtain 
+can be substituted into Equations~\ref{eq:A_dB0/dt_simp}
+and \ref{eq:A_dB1/dt_simp} to obtain 
 
-\begin{equation} \label{eq:A-dB1/dt_with_depreciation_gamma}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \gamma_{2}B_{2}
-	- \dot{Q}_{21} 
+\begin{equation} \label{eq:A-dB0/dt_with_depreciation_gamma}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \gamma_{1}B_{1}
+	- \dot{Q}_{10} 
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:A-dB2/dt_with_depreciation_gamma}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= - \gamma_{2}B_{2}
-	+ \dot{Q}_{21}.
+\begin{equation} \label{eq:A-dB1/dt_with_depreciation_gamma}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= - \gamma_{1}B_{1}
+	+ \dot{Q}_{10}.
 \end{equation}
 
-\noindent Equation~\ref{eq:A-dB2/dt_with_depreciation_gamma} 
+\noindent Equation~\ref{eq:A-dB1/dt_with_depreciation_gamma} 
 indicates that the accumulation rate 
 of embodied energy in an economic sector 
-$\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} \right)$
+$\left( \frac{\mathrm{d}B_{1}}{\mathrm{d}t} \right)$
 is equal to the sum of the waste heat from the economic sector 
-($\dot{Q}_{21}$) less the rate of disposal of embodied energy 
-($\gamma_{2}B_{2}$).
+($\dot{Q}_{10}$) less the rate of disposal of embodied energy 
+($\gamma_{1}B_{1}$).
 
 We turn now to Example~B, a two-sector economy.
 
+********** Matt finished changing indexing here ************
 
 %%%%%%%%%% Embodied Energy: Example B %%%%%%%%%%
 \section{Example B: two-sector economy}
