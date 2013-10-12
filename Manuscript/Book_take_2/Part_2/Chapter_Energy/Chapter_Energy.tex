@@ -200,14 +200,14 @@ and the second index indicates the sector \emph{to} which a quantity flows.}
 \end{figure}
 
 We distinguish useful direct energy inputs to a sector of the economy
-($\dot{E}_{12}$ in Figure~\ref{fig:A_energy}) from wasteful direct energy flows 
-($\dot{Q}_{21}$ in Figure~\ref{fig:A_energy}), 
+($\dot{E}_{01}$ in Figure~\ref{fig:A_energy}) from wasteful direct energy flows 
+($\dot{Q}_{10}$ in Figure~\ref{fig:A_energy}), 
 because $\dot{Q}$ typically denotes thermal energy, 
 and many waste energy flows are in the form of thermal
 energy, i.e., waste heat. In Figure~\ref{fig:A_energy}, direct energy input to the 
-economy ($\dot{E}_{12}$) is shown as being extracted from the biosphere, because
+economy ($\dot{E}_{01}$) is shown as being extracted from the biosphere, because
 the vast majority of direct energy today is derived from fossil fuels.
-Waste heat from the economy ($\dot{Q}_{21}$) is shown as returning 
+Waste heat from the economy ($\dot{Q}_{10}$) is shown as returning 
 to the biosphere.
 
 As discussed in Section~\ref{sec:energy_methodology}, 
@@ -216,29 +216,29 @@ are accounted by the First Law of Thermodynamics.
 Accounting for possible accumulation of direct energy, 
 the First Law of Thermodynamics for Example~A indicates that
 
-\begin{equation} \label{eq:dE_1/dt_single_sector}
-	\frac{\mathrm{d}E_1}{\mathrm{d}t} 
-	= \dot{Q}_{21} 
-	- \dot{E}_{12}
+\begin{equation} \label{eq:dE_0/dt_single_sector}
+	\frac{\mathrm{d}E_0}{\mathrm{d}t} 
+	= \dot{Q}_{10} 
+	- \dot{E}_{01}
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:dE_2/dt_single_sector}
-	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
-	= \dot{E}_{12} 
-	+ \dot{E}_{22}
-	- \dot{E}_{2}
-	- \dot{Q}_{21}.
+\begin{equation} \label{eq:dE_1/dt_single_sector}
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
+	= \dot{E}_{01} 
+	+ \dot{E}_{11}
+	- \dot{E}_{1}
+	- \dot{Q}_{10}.
 \end{equation}
 
-Note that $\dot{E}_{2}$ is the gross direct energy production rate
+Note that $\dot{E}_{1}$ is the gross direct energy production rate
 of society. 
-For example, firms extract crude oil (a component of $\dot{E}_{12}$) 
-and refine it into petroleum products (a component of $\dot{E}_{2}$)
+For example, firms extract crude oil (a component of $\dot{E}_{01}$) 
+and refine it into petroleum products (a component of $\dot{E}_{1}$)
 that are consumed by society.
 The direct energy consumption of extraction and refining firms 
-is a component of $\dot{E}_{22}$.
+is a component of $\dot{E}_{11}$.
 
 Aside from, for example, the U.S. 
 Strategic Petroleum Reserve\index{Strategic Petroleum Reserve}, 
@@ -258,18 +258,18 @@ can be set to zero to obtain
 
 \begin{equation} \label{eq:biosphere_direct_energy_steady_state}
 	0 
-	= \dot{Q}_{21} 
-	- \dot{E}_{12}
+	= \dot{Q}_{10} 
+	- \dot{E}_{01}
 \end{equation}
 
 \noindent and
 
 \begin{equation} \label{eq:single_sector_direct_energy_steady_state}
 	0 
-	= \dot{E}_{12} 
-	+ \dot{E}_{22}
-	- \dot{E}_{2} 
-	- \dot{Q}_{21}.
+	= \dot{E}_{01} 
+	+ \dot{E}_{11}
+	- \dot{E}_{1} 
+	- \dot{Q}_{10}.
 \end{equation}
 
 
@@ -278,8 +278,8 @@ can be set to zero to obtain
 \label{sec:B_energy}
 %%%%%%%%%%
 
-For Example~B, we split an economic sector (3) from 
-society (2). Figure~\ref{fig:B_energy} shows aggregated
+For Example~B, we split an economic sector (2) from 
+society (1). Figure~\ref{fig:B_energy} shows aggregated
 direct energy flows associated with the material flows of Figure~\ref{fig:B_materials}.
 
 \begin{figure}[h!]
@@ -294,78 +294,78 @@ requires that both
 direct energy and 
 waste heat\index{waste heat} 
 be conserved around each 
-entity (2 and 3) as well as around the biosphere (1).
+entity (1 and 2) as well as around the biosphere (0).
 
-First Law energy accounting around the biosphere (1) and society (2) gives
+First Law energy accounting around the biosphere (0) and society (1) gives
 
-\begin{equation} \label{eq:CV_E_dot_1}
-	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 
-	=  \dot{Q}_{21} 
-	+ \dot{Q}_{31} 
-	- \dot{E}_{13},
+\begin{equation} \label{eq:CV_E_dot_0}
+	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
+	=  \dot{Q}_{10} 
+	+ \dot{Q}_{20} 
+	- \dot{E}_{02},
 \end{equation}
 
 \noindent and 
 
-\begin{equation} \label{eq:CV_E_dot_2}
-	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 
-	= \dot{E}_{22} 
-	+ \dot{E}_{32}
-	- \dot{E}_{2}
-	- \dot{Q}_{21}.
+\begin{equation} \label{eq:CV_E_dot_1}
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 
+	= \dot{E}_{11} 
+	+ \dot{E}_{21}
+	- \dot{E}_{1}
+	- \dot{Q}_{10}.
 \end{equation}
 
-Note that $\dot{E}_{23}$ represents useful work that people
-and draught animals contribute to sector 3 of the economy. 
+Note that $\dot{E}_{12}$ represents useful work that people
+and draught animals contribute to the economy (2). 
 \citet{Ayres:2003ec} and \citet{Warr:2012cg} call this ``muscle work.'' 
-$\dot{E}_{22}$ represents the muscle work required
+$\dot{E}_{11}$ represents the muscle work required
 for consumption. Direct energy required for consumption 
 by final demand (electricity, oil, natural gas, etc.)
-is included in $\dot{E}_{32}$.
+is included in $\dot{E}_{21}$.
 
-The First Law around the energy sector (3), 
+The First Law around the economy (2), 
 including the accumulation rate of direct energy in the sector 
-$\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$, yields
+$\left(\frac{\mathrm{d}E_{2}}{\mathrm{d}t}\right)$, yields
 
-\begin{equation} \label{eq:CV_E_dot_3}
-	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
-	= \dot{E}_{13} 
-	+ \dot{E}_{23}
-	+ \dot{E}_{33} 
-	- \dot{E}_{3} 
-	- \dot{Q}_{31}.
+\begin{equation} \label{eq:CV_E_dot_2}
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
+	= \dot{E}_{02} 
+	+ \dot{E}_{12}
+	+ \dot{E}_{22} 
+	- \dot{E}_{2} 
+	- \dot{Q}_{20}.
 \end{equation}
 
-\noindent It is notable that the energy sector (3) consumes ($\dot{E}_{33}$)
-a portion of its own energy output ($\dot{E}_3$): it takes energy to make energy.
+\noindent It is notable that the economy (2) consumes ($\dot{E}_{22}$)
+a portion of its gross energy output ($\dot{E}_2$): it takes energy to make energy.
 
 As in Example A, we can set the accumulation of direct energy 
 within each sector to zero to obtain
 
-\begin{equation} \label{eq:CV_E_dot_1_SS}
+\begin{equation} \label{eq:CV_E_dot_0_SS}
 	0 
-	= \dot{Q}_{21} 
-	+ \dot{Q}_{31} 
-	- \dot{E}_{13},
+	= \dot{Q}_{10} 
+	+ \dot{Q}_{20} 
+	- \dot{E}_{02},
 \end{equation}
 
-\begin{equation} \label{eq:CV_E_dot_2_SS}
+\begin{equation} \label{eq:CV_E_dot_1_SS}
 	0 
-	= \dot{E}_{22} 
-	+ \dot{E}_{32}
-	- \dot{E}_{2}
-	- \dot{Q}_{21},
+	= \dot{E}_{11} 
+	+ \dot{E}_{21}
+	- \dot{E}_{1}
+	- \dot{Q}_{10},
 \end{equation}
 
 \noindent and 
 
-\begin{equation} \label{eq:CV_E_dot_3_SS}
+\begin{equation} \label{eq:CV_E_dot_2_SS}
 	0 
-	= \dot{E}_{13} 
-	+ \dot{E}_{23}
-	+ \dot{E}_{33} 
-	- \dot{E}_{3} 
-	- \dot{Q}_{31},
+	= \dot{E}_{02} 
+	+ \dot{E}_{12}
+	+ \dot{E}_{22} 
+	- \dot{E}_{2} 
+	- \dot{Q}_{20}.
 \end{equation}
 
 
@@ -374,8 +374,8 @@ within each sector to zero to obtain
 \label{sec:C_energy}
 %%%%%%%%%%
 
-We can extend Example~B, to include an energy sector (3) 
-and a goods and services sector (4), thereby obtaining
+We can extend Example~B, to include an energy sector (2) 
+and a goods and services sector (3), thereby obtaining
 a fuller picture of direct energy flows among sectors
 (Figure \ref{fig:C_energy}).
 
@@ -386,147 +386,149 @@ a fuller picture of direct energy flows among sectors
 \label{fig:C_energy}
 \end{figure}
 
-We note that the gross direct energy production of the energy sector (3) is 
-$\dot{E}_{3}$, and the direct energy consumption of the energy sector (3) is 
-$\dot{E}_{23} + \dot{E}_{33} + \dot{E}_{43}$. 
-The net direct energy production by the energy sector (3)
-is given by $\dot{E}_{3} - (\dot{E}_{23} + \dot{E}_{33} + \dot{E}_{43})$.
-The energy return on investment ($EROI$) of the energy sector (3) is given by
+We note that the gross direct energy production of the energy sector (2) is 
+$\dot{E}_{2}$, and the direct energy consumption of the energy sector (2) is 
+$\dot{E}_{12} + \dot{E}_{22} + \dot{E}_{32}$. 
+The net direct energy production by the energy sector (2)
+is given by $\dot{E}_{2} - (\dot{E}_{12} + \dot{E}_{22} + \dot{E}_{32})$.
+The energy return on investment\index{energy!return on investment|see{EROI}} 
+($EROI$)\index{EROI} of the energy sector (2) is given by
 
 \begin{equation} \label{eq:C-EROI}
-	EROI_3 = \frac{\dot{E}_{3}}{\dot{E}_{23} + \dot{E}_{33} + \dot{E}_{43}}.
+	EROI_2 
+	= \frac{\dot{E}_{2}}{\dot{E}_{12} + \dot{E}_{22} + \dot{E}_{32}}.
 \end{equation}
 
 The First Law of Thermodynamics around the 
-biosphere (1), society (2), and the energy sector (3) gives
+biosphere (0), society (1), and the energy sector (2) gives
 
-\begin{equation} \label{eq:C-CV_E_dot_1}
-	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 
-	= \dot{Q}_{21} 
-	+ \dot{Q}_{31} 
-	+ \dot{Q}_{41} 
-	- \dot{E}_{13} 
-	- \dot{E}_{14},
+\begin{equation} \label{eq:C-CV_E_dot_0}
+	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
+	= \dot{Q}_{10} 
+	+ \dot{Q}_{20} 
+	+ \dot{Q}_{30} 
+	- \dot{E}_{02} 
+	- \dot{E}_{03},
 \end{equation}
 
-\begin{equation} \label{eq:C-CV_E_dot_2}
-	\frac{\mathrm{d}E_{2}}{\mathrm{d}t}
-	= \dot{E}_{22}
-	+ \dot{E}_{32}  
-	+ \dot{E}_{42} 
-	- \dot{E}_{2}
-	- \dot{Q}_{21},
+\begin{equation} \label{eq:C-CV_E_dot_1}
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t}
+	= \dot{E}_{11}
+	+ \dot{E}_{21}  
+	+ \dot{E}_{31} 
+	- \dot{E}_{1}
+	- \dot{Q}_{10},
 \end{equation}
 
 \noindent and 
 
-\begin{equation} \label{eq:C-CV_E_dot_3}
-	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 	 
-	= \dot{E}_{13} 
-	+ \dot{E}_{23}
-	+ \dot{E}_{33} 
-	+ \dot{E}_{43} 
-	- \dot{E}_{3} 
-	- \dot{Q}_{31}.
+\begin{equation} \label{eq:C-CV_E_dot_2}
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 
+	= \dot{E}_{02} 
+	+ \dot{E}_{12}
+	+ \dot{E}_{22} 
+	+ \dot{E}_{32} 
+	- \dot{E}_{2} 
+	- \dot{Q}_{20}.
 \end{equation}
 
-The First Law around the goods and services sector (4) including, 
+The First Law around the goods and services sector (3) including, 
 for now, the accumulation rate of direct energy in the sector 
-$\left(\frac{\mathrm{d}E_{4}}{\mathrm{d}t}\right)$ yields
+$\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$ yields
 
-\begin{equation} \label{eq:C-CV_E_dot_4}
-	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 
-	= \dot{E}_{14} 
-	+ \dot{E}_{24}
-	+ \dot{E}_{34} 
-	+ \dot{E}_{44} 
-	- \dot{E}_4 
-	- \dot{Q}_{41}.
+\begin{equation} \label{eq:C-CV_E_dot_3}
+	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
+	= \dot{E}_{03} 
+	+ \dot{E}_{13}
+	+ \dot{E}_{23} 
+	+ \dot{E}_{33} 
+	- \dot{E}_3 
+	- \dot{Q}_{30}.
 \end{equation}
 
-In this economy, the purpose of the goods and services sector (4) 
+In this economy, the purpose of the goods and services sector (3) 
 is to produce goods and provide services, 
 it provides no direct energy to society. 
-The purpose of the energy sector (3) is to make direct energy ($\dot{E}$) 
+The purpose of the energy sector (2) is to make direct energy ($\dot{E}$) 
 available to the economy and society in a useful form.
 We may simplify the above equations
-by realizing that (a)~$\dot{E}_{4} = \dot{E}_{4i} = 0$, 
+by realizing that (a)~$\dot{E}_{3} = \dot{E}_{3i} = 0$, 
 because the goods and services sector 
 is assumed to produce no direct energy, 
-and (b) $\dot{E}_{14} = 0$, 
-because the goods and services sector (4) 
-receives no direct energy from the biosphere, 
-except via the energy sector (3).
+and (b) $\dot{E}_{03} = 0$, 
+because the goods and services sector (3) 
+receives no direct energy from the biosphere (0), 
+except via the energy sector (2).
 Hence:
 
+\begin{equation} \label{eq:C-CV_E_dot_0_simp}
+	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
+	= \dot{Q}_{10} 
+	+ \dot{Q}_{20} 
+	+ \dot{Q}_{30} 
+	- \dot{E}_{02},
+\end{equation}
+
 \begin{equation} \label{eq:C-CV_E_dot_1_simp}
-	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 
-	= \dot{Q}_{21} 
-	+ \dot{Q}_{31} 
-	+ \dot{Q}_{41} 
-	- \dot{E}_{13},
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t}
+	= \dot{E}_{11}
+	+ \dot{E}_{21}
+	- \dot{E}_{1}
+	- \dot{Q}_{10},
 \end{equation}
 
 \begin{equation} \label{eq:C-CV_E_dot_2_simp}
-	\frac{\mathrm{d}E_{2}}{\mathrm{d}t}
-	= \dot{E}_{22}
-	+ \dot{E}_{32}
-	- \dot{E}_{2}
-	- \dot{Q}_{21},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_E_dot_3_simp}
-	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 	 
-	= \dot{E}_{13} 
-	+ \dot{E}_{23}
-	+ \dot{E}_{33} 
-	- \dot{E}_{3} 
-	- \dot{Q}_{31},
+	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 
+	= \dot{E}_{02} 
+	+ \dot{E}_{12}
+	+ \dot{E}_{22} 
+	- \dot{E}_{2} 
+	- \dot{Q}_{20},
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:C-CV_E_dot_4_simp}
-	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 
-	= \dot{E}_{24}
-	+ \dot{E}_{34} 
-	- \dot{Q}_{41}.
+\begin{equation} \label{eq:C-CV_E_dot_3_simp}
+	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
+	= \dot{E}_{13}
+	+ \dot{E}_{23} 
+	- \dot{Q}_{30}.
 \end{equation}
 
 As in Examples A and B, we can set the accumulation of direct energy to zero.
 
+\begin{equation} \label{eq:C-CV_E_dot_0_SS}
+	0
+	= \dot{Q}_{10} 
+	+ \dot{Q}_{20} 
+	+ \dot{Q}_{30} 
+	- \dot{E}_{02},
+\end{equation}
+
 \begin{equation} \label{eq:C-CV_E_dot_1_SS}
 	0
-	= \dot{Q}_{21} 
-	+ \dot{Q}_{31} 
-	+ \dot{Q}_{41} 
-	- \dot{E}_{13},
+	= \dot{E}_{11}
+	+ \dot{E}_{21}
+	- \dot{E}_{1}
+	- \dot{Q}_{10},
 \end{equation}
 
 \begin{equation} \label{eq:C-CV_E_dot_2_SS}
 	0
-	= \dot{E}_{22}
-	+ \dot{E}_{32}
-	- \dot{E}_{2}
-	- \dot{Q}_{21},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_E_dot_3_SS}
-	0
-	= \dot{E}_{13} 
-	+ \dot{E}_{23}
-	+ \dot{E}_{33} 
-	- \dot{E}_{3} 
-	- \dot{Q}_{31},
+	= \dot{E}_{02} 
+	+ \dot{E}_{12}
+	+ \dot{E}_{22} 
+	- \dot{E}_{2} 
+	- \dot{Q}_{20},
 \end{equation}
 
 \noindent and 
 
-\begin{equation} \label{eq:C-CV_E_dot_4_SS}
+\begin{equation} \label{eq:C-CV_E_dot_3_SS}
 	0
-	= \dot{E}_{24}
-	+ \dot{E}_{34} 
-	- \dot{Q}_{41}.
+	= \dot{E}_{13}
+	+ \dot{E}_{23} 
+	- \dot{Q}_{31}.
 \end{equation}
 
 
