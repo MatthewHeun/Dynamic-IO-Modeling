@@ -340,63 +340,65 @@ of total energy ($\dot{T}$) through the single-sector economy.
 
 As discussed above, we follow the I-O literature in assuming that 
 total energy ($T$) is conserved. 
-A total energy accounting around the biosphere (1)
-and the single-sector economy (2) gives
+A total energy accounting around the biosphere (0)
+and the single-sector economy (1) gives
 
-\begin{equation} \label{eq:A_T_acct_1}
-	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 
-	= \dot{T}_{21} 
-	- \dot{T}_{12},
+\begin{equation} \label{eq:A_T_acct_0}
+	\frac{\mathrm{d}T_{0}}{\mathrm{d}t} 
+	= \dot{T}_{10} 
+	- \dot{T}_{01},
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:A_T_acct_2}
-	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 
-	= \dot{T}_{12} 
-	+ \dot{T}_{22}
-	- \dot{T}_{2}
-	- \dot{T}_{21}.
+\begin{equation} \label{eq:A_T_acct_1}
+	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 
+	= \dot{T}_{01} 
+	+ \dot{T}_{11}
+	- \dot{T}_{1}
+	- \dot{T}_{10}.
 \end{equation}
 
 Substituting Equations~\ref{eq:T_dot_def} and
 \ref{eq:T_accum_def} into 
-Equations~\ref{eq:A_T_acct_1} and \ref{eq:A_T_acct_2}
+Equations~\ref{eq:A_T_acct_0} and \ref{eq:A_T_acct_1}
 yields
 
-\begin{equation} \label{eq:A_total_energy_1}
-	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \dot{E}_{21} 
-	+ \dot{B}_{21} 
-	- \dot{E}_{12}
-	- \dot{B}_{12}
+\begin{equation} \label{eq:A_total_energy_0}
+	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \dot{E}_{10} 
+	+ \dot{B}_{10} 
+	- \dot{E}_{01}
+	- \dot{B}_{01}
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:A_total_energy_2}
-	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{E}_{12} 
-	+ \dot{B}_{12} 
-	+ \dot{E}_{22}
-	+ \dot{B}_{22}
-	- \dot{E}_{2}
-	- \dot{B}_{2}
-	- \dot{E}_{21}
-	- \dot{B}_{21}.	
+\begin{equation} \label{eq:A_total_energy_1}
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \dot{E}_{01} 
+	+ \dot{B}_{01} 
+	+ \dot{E}_{11}
+	+ \dot{B}_{11}
+	- \dot{E}_{1}
+	- \dot{B}_{1}
+	- \dot{E}_{10}
+	- \dot{B}_{10}.	
 \end{equation}
 
 At this point, we can proceed in two directions.
 The first direction, 
-simplifying Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2}, 
+simplifying Equations~\ref{eq:A_total_energy_0} and \ref{eq:A_total_energy_1}, 
 provides an intuitive result. 
 The second direction,
 substituting the First Law of Thermodynamics into 
-Equations~\ref{eq:A_total_energy_1} and \ref{eq:A_total_energy_2}, 
+Equations~\ref{eq:A_total_energy_0} and \ref{eq:A_total_energy_1}, 
 provides the advantage of cancelling most of the direct energy terms.
 We begin with the first approach: simplification.
+
+************ Matt finished here with renumbering the sectors (reducing all indices by 1) **********
 
 
 %+++++++++ Simplified embodied energy ++++++++++
