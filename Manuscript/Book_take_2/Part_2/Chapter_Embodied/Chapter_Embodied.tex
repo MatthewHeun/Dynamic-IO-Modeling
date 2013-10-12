@@ -593,7 +593,6 @@ is equal to the sum of the waste heat from the economic sector
 
 We turn now to Example~B, a two-sector economy.
 
-********** Matt finished changing indexing here ************
 
 %%%%%%%%%% Embodied Energy: Example B %%%%%%%%%%
 \section{Example B: two-sector economy}
@@ -614,149 +613,149 @@ flows for the two-sector economy.
 Accounting for accumulation of total energy and using the assumption 
 that total energy is conserved, we can write the following equations.
 
-\begin{equation} \label{eq:CV_T_1}
-	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 	 
-	= \dot{T}_{21} 
-	+ \dot{T}_{31} 
-	- \dot{T}_{13},
+\begin{equation} \label{eq:CV_T_0}
+	\frac{\mathrm{d}T_{0}}{\mathrm{d}t} 	 
+	= \dot{T}_{10} 
+	+ \dot{T}_{20} 
+	- \dot{T}_{02},
 \end{equation}
 
-\begin{equation} \label{eq:CV_T_2}
-	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
-	= \dot{T}_{22}
-	+ \dot{T}_{32} 
-	- \dot{T}_2
-	- \dot{T}_{21},
+\begin{equation} \label{eq:CV_T_1}
+	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 	 
+	= \dot{T}_{11}
+	+ \dot{T}_{21} 
+	- \dot{T}_{1}
+	- \dot{T}_{10},
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:CV_T_3}
-	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 	 
-	= \dot{T}_{13} 
-	+ \dot{T}_{23}
-	+ \dot{T}_{33} 
-	- \dot{T}_{3} 
-	- \dot{T}_{31}.
+\begin{equation} \label{eq:CV_T_2}
+	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
+	= \dot{T}_{02} 
+	+ \dot{T}_{12}
+	+ \dot{T}_{22} 
+	- \dot{T}_{2} 
+	- \dot{T}_{20}.
 \end{equation}
 
 Substituting Equations~\ref{eq:T_dot_def} 
 and \ref{eq:T_accum_def} into 
-Equations~\ref{eq:CV_T_1} through
-\ref{eq:CV_T_3} gives
+Equations~\ref{eq:CV_T_0} through
+\ref{eq:CV_T_2} gives
+
+\begin{equation} \label{eq:CV_dB_0}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}E_{0}}{\mathrm{d}t} 
+	= \dot{E}_{10} 
+	+ \dot{B}_{10} 
+	+ \dot{E}_{20} 
+	+ \dot{B}_{20} 
+	- \dot{E}_{02} 
+	- \dot{B}_{02},
+\end{equation}
 
 \begin{equation} \label{eq:CV_dB_1}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
-	= \dot{E}_{21} 
+	= \dot{E}_{1}
+	+ \dot{B}_{1}
+	+ \dot{E}_{21} 
 	+ \dot{B}_{21} 
-	+ \dot{E}_{31} 
-	+ \dot{B}_{31} 
-	- \dot{E}_{13} 
-	- \dot{B}_{13},
-\end{equation}
-
-\begin{equation} \label{eq:CV_dB_2}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
-	= \dot{E}_{22}
-	+ \dot{B}_{22}
-	+ \dot{E}_{32} 
-	+ \dot{B}_{32} 
-	- \dot{E}_2
-	- \dot{B}_2
-	- \dot{E}_{21} 
-	- \dot{B}_{21},
+	- \dot{E}_1
+	- \dot{B}_1
+	- \dot{E}_{10} 
+	- \dot{B}_{10},
 \end{equation}
 
 \noindent and 
 
-\begin{equation} \label{eq:CV_dB_3}
-	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
-	= \dot{E}_{13} 
-	+ \dot{B}_{13} 
-	+ \dot{E}_{23}
-	+ \dot{B}_{23}
-	+ \dot{E}_{33} 
-	+ \dot{B}_{33} 
-	- \dot{E}_{3} 
-	- \dot{B}_{3} 
-	- \dot{E}_{31} 
-	- \dot{B}_{31}.
+\begin{equation} \label{eq:CV_dB_2}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
+	= \dot{E}_{02} 
+	+ \dot{B}_{02} 
+	+ \dot{E}_{12}
+	+ \dot{B}_{12}
+	+ \dot{E}_{22} 
+	+ \dot{B}_{22} 
+	- \dot{E}_{2} 
+	- \dot{B}_{2} 
+	- \dot{E}_{20} 
+	- \dot{B}_{20}.
 \end{equation}
 
 As in Example~A, we can substitute the First Law of Thermodynamics 
-(Equations~\ref{eq:CV_E_dot_1}--\ref{eq:CV_E_dot_3})
+(Equations~\ref{eq:CV_E_dot_0}--\ref{eq:CV_E_dot_2})
 into the total energy accounting equations
-(Equations~\ref{eq:CV_dB_1}--\ref{eq:CV_dB_3}) 
+(Equations~\ref{eq:CV_dB_0}--\ref{eq:CV_dB_2}) 
 and employ the assumptions that 
-$\dot{E}_{i1} = 0$ and
-$\dot{B}_{1j} = 0$ 
+$\dot{E}_{i0} = 0$ and
+$\dot{B}_{0j} = 0$ 
 to obtain
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_0}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \dot{B}_{10} 
+	+ \dot{B}_{20} 
+	- \dot{Q}_{10} 
+	- \dot{Q}_{20}, 
+\end{equation}
 
 \begin{equation} \label{eq:B_embodied_energy_accounting_1}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \dot{B}_{21} 
-	+ \dot{B}_{31} 
-	- \dot{Q}_{21} 
-	- \dot{Q}_{31}, 
-\end{equation}
-
-\begin{equation} \label{eq:B_embodied_energy_accounting_2}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{B}_{22} 
-	+ \dot{B}_{32} 
-	- \dot{B}_{21}
-	+ \dot{Q}_{21},
+	= \dot{B}_{11} 
+	+ \dot{B}_{21} 
+	- \dot{B}_{10}
+	+ \dot{Q}_{10},
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:B_embodied_energy_accounting_3}
-	\frac{\mathrm{d}B_3}{\mathrm{d}t} 
-	= \dot{B}_{23} 
-	+ \dot{B}_{33} 
-	- \dot{B}_{31} 
-	+ \dot{Q}_{31}.
+\begin{equation} \label{eq:B_embodied_energy_accounting_2}
+	\frac{\mathrm{d}B_2}{\mathrm{d}t} 
+	= \dot{B}_{12} 
+	+ \dot{B}_{22} 
+	- \dot{B}_{20} 
+	+ \dot{Q}_{20}.
 \end{equation}
 
 Similar to Example~A, we observe that the accumulation rate 
-of embodied energy in the Goods and Services sector (3) 
+of embodied energy in the economy (2) 
 is the sum of the rates of waste heat flowing from the sector 
-($\dot{Q}_{31}$) and embodied energy into the sector 
-($\dot{B}_{23} + \dot{B}_{33}$) 
+($\dot{Q}_{20}$) and embodied energy into the sector 
+($\dot{B}_{12} + \dot{B}_{22}$) 
 less the rate of embodied energy leaving the sector 
-on its output stream ($\dot{B}_{31}$).
+on its output stream ($\dot{B}_{20}$).
 
 We can replace the waste embodied energy terms in 
-Equations~\ref{eq:B_embodied_energy_accounting_1}--\ref{eq:B_embodied_energy_accounting_3}
+Equations~\ref{eq:B_embodied_energy_accounting_0}--\ref{eq:B_embodied_energy_accounting_2}
 with depreciation terms to obtain
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_0_with_depreciation}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \gamma_{1} \dot{B}_{1}  
+	+ \gamma_{2} \dot{B}_{2} 
+	- \dot{Q}_{10} 
+	- \dot{Q}_{20}, 
+\end{equation}
 
 \begin{equation} \label{eq:B_embodied_energy_accounting_1_with_depreciation}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \gamma_2 \dot{B}_{2}  
-	+ \gamma_3 \dot{B}_{3} 
-	- \dot{Q}_{21} 
-	- \dot{Q}_{31}, 
-\end{equation}
-
-\begin{equation} \label{eq:B_embodied_energy_accounting_2_with_depreciation}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{B}_{22} 
-	+ \dot{B}_{32} 
-	- \gamma_2 \dot{B}_{2} 
-	+ \dot{Q}_{21},
+	= \dot{B}_{11} 
+	+ \dot{B}_{21} 
+	- \gamma_{1} \dot{B}_{1} 
+	+ \dot{Q}_{10},
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:B_embodied_energy_accounting_3_with_depreciation}
-	\frac{\mathrm{d}B_3}{\mathrm{d}t} 
-	= \dot{B}_{23} 
-	+ \dot{B}_{33} 
-	- \gamma_3 \dot{B}_{3}
-	+ \dot{Q}_{31}.
+\begin{equation} \label{eq:B_embodied_energy_accounting_2_with_depreciation}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= \dot{B}_{12} 
+	+ \dot{B}_{22} 
+	- \gamma_{2} \dot{B}_{2}
+	+ \dot{Q}_{20}.
 \end{equation}
 
 In the next section, we apply embodied energy accounting to 
@@ -780,210 +779,210 @@ Accounting for accumulation of total energy and
 applying the assumption that total energy is conserved, 
 we can write the following equations.
 
+\begin{equation} \label{eq:C-CV_T_0}
+	\frac{\mathrm{d}T_{0}}{\mathrm{d}t} 	 
+	= \dot{T}_{10} 
+	+ \dot{T}_{20} 
+	+ \dot{T}_{30} 
+	- \dot{T}_{02} 
+	- \dot{T}_{03},
+\end{equation}
+
 \begin{equation} \label{eq:C-CV_T_1}
 	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 	 
-	= \dot{T}_{21} 
+	= \dot{T}_{11}
+	+ \dot{T}_{21} 
 	+ \dot{T}_{31} 
-	+ \dot{T}_{41} 
-	- \dot{T}_{13} 
-	- \dot{T}_{14},
+	- \dot{T}_{1}
+	- \dot{T}_{10},
 \end{equation}
 
 \begin{equation} \label{eq:C-CV_T_2}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
-	= \dot{T}_{22}
+	= \dot{T}_{02} 
+	+ \dot{T}_{12}
+	+ \dot{T}_{22} 
 	+ \dot{T}_{32} 
-	+ \dot{T}_{42} 
-	- \dot{T}_{2}
-	- \dot{T}_{21},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_T_3}
-	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 	 
-	= \dot{T}_{13} 
-	+ \dot{T}_{23}
-	+ \dot{T}_{33} 
-	+ \dot{T}_{43} 
-	- \dot{T}_{3} 
-	- \dot{T}_{31},
+	- \dot{T}_{2} 
+	- \dot{T}_{20},
 \end{equation}
 
 \noindent and 
 
-\begin{equation} \label{eq:C-CV_T_4}
-	\frac{\mathrm{d}T_{4}}{\mathrm{d}t} 	 
-	= \dot{T}_{14} 
-	+ \dot{T}_{24}
-	+ \dot{T}_{34} 
-	+ \dot{T}_{44} 
-	- \dot{T}_{4} 
-	- \dot{T}_{41}.
+\begin{equation} \label{eq:C-CV_T_3}
+	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 	 
+	= \dot{T}_{03} 
+	+ \dot{T}_{13}
+	+ \dot{T}_{23} 
+	+ \dot{T}_{33} 
+	- \dot{T}_{3} 
+	- \dot{T}_{30}.
 \end{equation}
 
 Substituting Equations~\ref{eq:T_dot_def} 
 and \ref{eq:T_accum_def} into 
-Equations~\ref{eq:C-CV_T_1} through
-\ref{eq:C-CV_T_4} gives
+Equations~\ref{eq:C-CV_T_0} through
+\ref{eq:C-CV_T_3} gives
+
+\begin{equation} \label{eq:C-CV_dB_0}
+	\frac{\mathrm{d}E_{0}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}B_{0}}{\mathrm{d}t}
+	= \dot{E}_{10} 
+	+ \dot{B}_{10} 
+	+ \dot{E}_{20} 
+	+ \dot{B}_{20} 
+	+ \dot{E}_{30} 
+	+ \dot{B}_{30} 
+	- \dot{E}_{02} 
+	- \dot{B}_{02} 
+	- \dot{E}_{03} 
+	- \dot{B}_{03},
+\end{equation}
 
 \begin{equation} \label{eq:C-CV_dB_1}
-	\frac{\mathrm{d}E_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t}
-	= \dot{E}_{21} 
+	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t} 	 
+	= \dot{E}_{11}
+	+ \dot{B}_{11}
+	+ \dot{E}_{21} 
 	+ \dot{B}_{21} 
 	+ \dot{E}_{31} 
 	+ \dot{B}_{31} 
-	+ \dot{E}_{41} 
-	+ \dot{B}_{41} 
-	- \dot{E}_{13} 
-	- \dot{B}_{13} 
-	- \dot{E}_{14} 
-	- \dot{B}_{14},
+	- \dot{E}_{1}
+	- \dot{B}_{1}
+	- \dot{E}_{01} 
+	- \dot{B}_{01},
 \end{equation}
 
 \begin{equation} \label{eq:C-CV_dB_2}
 	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
-	= \dot{E}_{22}
-	+ \dot{B}_{22}
-	+ \dot{E}_{32} 
-	+ \dot{B}_{32} 
-	+ \dot{E}_{42} 
-	+ \dot{B}_{42} 
-	- \dot{E}_{2}
-	- \dot{B}_{2}
-	- \dot{E}_{21} 
-	- \dot{B}_{21},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_dB_3}
-	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
-	= \dot{E}_{13} 
-	+ \dot{B}_{13} 
-	+ \dot{E}_{23}
-	+ \dot{B}_{23}
-	+ \dot{E}_{33} 
-	+ \dot{B}_{33} 
-	+ \dot{E}_{43} 
-	+ \dot{B}_{43} 
-	- \dot{E}_{3} 
-	- \dot{B}_{3} 
-	- \dot{E}_{31} 
-	- \dot{B}_{31},
+	= \dot{E}_{02} 
+	+ \dot{B}_{02} 
+	+ \dot{E}_{12}
+	+ \dot{B}_{12}
+	+ \dot{E}_{22} 
+	+ \dot{B}_{22} 
+	+ \dot{E}_{23} 
+	+ \dot{B}_{23} 
+	- \dot{E}_{2} 
+	- \dot{B}_{2} 
+	- \dot{E}_{20} 
+	- \dot{B}_{20},
 \end{equation}
 
 \noindent and 
 
-\begin{equation} \label{eq:C-CV_dB_4}
-	\frac{\mathrm{d}E_{4}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{4}}{\mathrm{d}t} 	 
-	= \dot{E}_{14} 
-	+ \dot{B}_{14}
-	+ \dot{E}_{24} 
-	+ \dot{B}_{24} 
-	+ \dot{E}_{34} 
-	+ \dot{B}_{34}
-	+ \dot{E}_{44} 
-	+ \dot{B}_{44} 
-	- \dot{E}_{4} 
-	- \dot{B}_{4} 
-	- \dot{E}_{41} 
-	- \dot{B}_{41}.
+\begin{equation} \label{eq:C-CV_dB_3}
+	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
+	= \dot{E}_{03} 
+	+ \dot{B}_{03}
+	+ \dot{E}_{13} 
+	+ \dot{B}_{13} 
+	+ \dot{E}_{23} 
+	+ \dot{B}_{23}
+	+ \dot{E}_{33} 
+	+ \dot{B}_{33} 
+	- \dot{E}_{3} 
+	- \dot{B}_{3} 
+	- \dot{E}_{30} 
+	- \dot{B}_{30}.
 \end{equation}
 
 Substituting the First Law of Thermodynamics 
-(Equations~\ref{eq:C-CV_E_dot_1} through \ref{eq:C-CV_E_dot_4}) 
+(Equations~\ref{eq:C-CV_E_dot_0} through \ref{eq:C-CV_E_dot_3}) 
 into the total energy accounting equations 
-(Equations \ref{eq:C-CV_dB_1} through \ref{eq:C-CV_dB_4}) 
+(Equations \ref{eq:C-CV_dB_0} through \ref{eq:C-CV_dB_3}) 
 gives embodied energy accounting equations for Example~C.
 
-**** Should the $\dot{E}_{13}$ term remain in the following equation? ****
+**** Should the $\dot{E}_{02}$ term remain in the following equation? ****
+
+\begin{equation} \label{eq:C-embodied_acct_0}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 	 
+	= \dot{B}_{10} 
+	+ \dot{B}_{20} 
+	+ \dot{B}_{30} 
+	- \dot{E}_{02} 
+	- \dot{Q}_{10} 
+	- \dot{Q}_{20} 
+	- \dot{Q}_{30}
+\end{equation}
 
 \begin{equation} \label{eq:C-embodied_acct_1}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 	 
-	= \dot{B}_{21} 
+	= \dot{B}_{11}
+	+ \dot{B}_{21} 
 	+ \dot{B}_{31} 
-	+ \dot{B}_{41} 
-	- \dot{E}_{13} 
-	- \dot{Q}_{21} 
-	- \dot{Q}_{31} 
-	- \dot{Q}_{41}
+	- \dot{B}_{1}
+	- \dot{B}_{10}
+	+ \dot{Q}_{10} 
 \end{equation}
 
 \begin{equation} \label{eq:C-embodied_acct_2}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
-	= \dot{B}_{22}
-	+ \dot{B}_{32} 
-	+ \dot{B}_{42} 
-	- \dot{B}_{2}
-	- \dot{B}_{21}
-	+ \dot{Q}_{21} 
+	= \dot{B}_{02} 
+	+ \dot{B}_{12}
+	+ \dot{B}_{22} 
+	+ \dot{B}_{23} 
+	- \dot{B}_{2} 
+	- \dot{B}_{20}
+	+ \dot{Q}_{20} 
 \end{equation}
 
 \begin{equation} \label{eq:C-embodied_acct_3}
-	\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
-	= \dot{B}_{13} 
-	+ \dot{B}_{23}
+	\frac{\mathrm{d}B_{3}}{\mathrm{d}t}	 
+	= \dot{B}_{03} 
+	+ \dot{B}_{14}
+	+ \dot{B}_{23} 
 	+ \dot{B}_{33} 
-	+ \dot{B}_{43} 
 	- \dot{B}_{3} 
-	- \dot{B}_{31}
-	+ \dot{Q}_{31} 
-\end{equation}
-
-\begin{equation} \label{eq:C-embodied_acct_4}
-	\frac{\mathrm{d}B_{4}}{\mathrm{d}t}	 
-	= \dot{B}_{14} 
-	+ \dot{B}_{24}
-	+ \dot{B}_{34} 
-	+ \dot{B}_{44} 
-	- \dot{B}_{4} 
-	- \dot{B}_{41}
-	+ \dot{Q}_{41} 
+	- \dot{B}_{30}
+	+ \dot{Q}_{30} 
 \end{equation}
 
 To verify the above derivation, 
 we sum 
-Equations~\ref{eq:C-embodied_acct_1}--\ref{eq:C-embodied_acct_4},
-recognize that $\dot{B}_{13} = 0$ and $\dot{B}_{14} = 0$, 
+Equations~\ref{eq:C-embodied_acct_0}--\ref{eq:C-embodied_acct_3},
+recognize that $\dot{B}_{02} = 0$ and $\dot{B}_{03} = 0$, 
 and use the following identities:
 
-\begin{equation} \label{eq:C-B_sum_2_output}
-	\dot{B}_2 
-	= \dot{B}_{22} 
-	+ \dot{B}_{23} 
-	+ \dot{B}_{24},
+\begin{equation} \label{eq:C-B_sum_1_output}
+	\dot{B}_{1} 
+	= \dot{B}_{11} 
+	+ \dot{B}_{12} 
+	+ \dot{B}_{13},
 \end{equation}
 
-\begin{equation} \label{eq:C-B_sum_3_output}
-	\dot{B}_3 
-	= \dot{B}_{32} 
-	+ \dot{B}_{33} 
-	+ \dot{B}_{34},
+\begin{equation} \label{eq:C-B_sum_2_output}
+	\dot{B}_{2} 
+	= \dot{B}_{21} 
+	+ \dot{B}_{22} 
+	+ \dot{B}_{23},
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:C-B_sum_4_output}
-	\dot{B}_4 
-	= \dot{B}_{42} 
-	+ \dot{B}_{43} 
-	+ \dot{B}_{44};
+\begin{equation} \label{eq:C-B_sum_3_output}
+	\dot{B}_{3} 
+	= \dot{B}_{31} 
+	+ \dot{B}_{32} 
+	+ \dot{B}_{33};
 \end{equation}
 
 \noindent to obtain
 
 \begin{equation} \label{eq:C-B_sums_to_zero}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{4}}{\mathrm{d}t} 
 	= 0,
 \end{equation}
 
 \noindent as expected. The total embodied energy content of the system 
-(biosphere~(1), society~(2), energy sector~(3), 
-and goods and services sector~(4)) 
+(biosphere~(0), society~(1), energy sector~(2), 
+and goods and services sector~(3)) 
 remains constant with respect to time.
 
 **** Add a depreciation section. ****
