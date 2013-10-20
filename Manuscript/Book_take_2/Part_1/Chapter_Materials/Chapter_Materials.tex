@@ -30,8 +30,7 @@
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
-\caption{**** Mik: should this figure have an arrow to the right indicating
-net output? --Matt ****}
+\caption{XXXX}
 \label{fig:PERKS_materials}
 \end{figure}
 
@@ -42,37 +41,35 @@ net output? --Matt ****}
 
 Example A looks at the case of a one sector economy that includes both production and consumption together. 
 
-\begin{equation}\label{eq:dS_1/dt_single_sector}
-	\frac{\mathrm{d}R_1}{\mathrm{d}t}
-	+ \frac{\mathrm{d}S_1}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_1}{\mathrm{d}t}
-	= \dot{R}_{21} + \dot{S}_{21} + \dot{K}_{21}
-	- \dot{R}_{12} - \dot{S}_{12}
+\begin{equation}\label{eq:dS_0/dt_single_sector}
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}
+	+ \frac{\mathrm{d}S_0}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
+	= \dot{R}_{10} + \dot{S}_{10} + \dot{K}_{10}
+	- \dot{R}_{0} - \dot{S}_{0}
 \end{equation}
 
-\begin{equation} \label{eq:dS_2/dt_single_sector}
-	\frac{\mathrm{d}R_{2}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t} 
-	= \dot{R}_{12} + \dot{S}_{12} 
-	- \dot{R}_{21} - \dot{S}_{21} - \dot{K}_{21}.
+\begin{equation} \label{eq:dS_1/dt_single_sector}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t} 
+	= \dot{R}_{0} + \dot{S}_{0} + \dot{S}_{11}
+	- \dot{R}_{10} - \dot{S}_{10} - \dot{K}_{10} - \dot{S}_{1}.
 \end{equation}
 
 \begin{equation}\label{eq:dS_1/dt_zero}
-	\frac{\mathrm{d}S_1}{\mathrm{d}t} = 0
+	\frac{\mathrm{d}S_1}{\mathrm{d}t} = 
+	\frac{\mathrm{d}R_1}{\mathrm{d}t} = 0
 \end{equation}
 
-\begin{equation}\label{eq:biosphere_material_steady_state}
-	\frac{\mathrm{d}R_1}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_1}{\mathrm{d}t}
-	= \dot{R}_{21} + \dot{S}_{21} + \dot{K}_{21}
-	- \dot{R}_{12} - \dot{S}_{12}
+\begin{equation}\label{eq:A1_self_cons}
+	S_{11} = S_{1}
 \end{equation}
 
 \begin{equation}\label{eq:single_sector_material_steady_state}
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	= \dot{R}_{12} + \dot{S}_{12} 
-	- \dot{R}_{21} - \dot{S}_{21} - \dot{K}_{21}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	= \dot{R}_{0} + \dot{S}_{0} 
+	- \dot{R}_{10} - \dot{S}_{10} - \dot{K}_{10}
 \end{equation}
 
 \begin{figure}[h!]
@@ -89,20 +86,45 @@ Example A looks at the case of a one sector economy that includes both productio
 
 In example B, we split the society into two components: production and consumption. One sector produces goods and services for consumption in society
 
-\begin{equation} \label{eq:CV_R_dot_1}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} + \frac{\mathrm{d}S_{1}}{\mathrm{d}t}	 
-	=  \dot{R}_{21} + \dot{R}_{31} 
-	+ \dot{S}_{21} + \dot{S}_{31} 
-	+ \dot{K}_{21} + \dot{K}_{31} 
-	- \dot{R}_{13} - \dot{S}_{13},
+\begin{equation} \label{eq:CV_R_dot_0a}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
+	=  \dot{R}_{10} + \dot{R}_{20} 
+	+ \dot{S}_{10} + \dot{S}_{20} 
+	+ \dot{K}_{10} + \dot{K}_{20} 
+	- \dot{R}_{0} 
+	- \dot{S}_{0},
 \end{equation}
 
-\begin{equation} \label{eq:CV_R_dot_2}
-	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} + \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	=  \dot{R}_{32} + \dot{S}_{32} 
-	+ \dot{K}_{32} - \dot{R}_{21} 
-	- \dot{S}_{21} - \dot{K}_{21},
+\begin{equation}
+	\dot{R}_{0} = \dot{R}_{02}
+\end{equation}
+
+\begin{equation}
+	\dot{S}_{0} = \dot{S}_{01} + \dot{S}_{02}
+\end{equation}
+
+\begin{equation} \label{eq:CV_R_dot_0b}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	 
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
+	=  \dot{R}_{10} + \dot{R}_{20} 
+	+ \dot{S}_{10} + \dot{S}_{20} 
+	+ \dot{K}_{10} + \dot{K}_{20} 
+	- \dot{R}_{02} 
+	- \dot{S}_{01} - \dot{S}_{02} - \dot{S}_{1},
+\end{equation}
+
+\begin{equation} \label{eq:CV_R_dot_1}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} + \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	=  \dot{R}_{21} 
+	+ \dot{S}_{21} + \dot{S}_{11}
+	+ \dot{K}_{21} 
+	- \dot{R}_{10} 
+	- \dot{S}_{10} - \dot{S}_{1}
+	- \dot{K}_{10},
 \end{equation}
 
 \begin{equation} \label{eq:CV_K_dot_2}
@@ -112,18 +134,51 @@ In example B, we split the society into two components: production and consumpti
 
 [NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{32}$ AS FOOD AND $K_{2}$ AS INCLUDING HUMANS...]
 
-\begin{equation} \label{eq:CV_R_dot_3}
-	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} + \frac{\mathrm{d}S_{3}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{3}}{\mathrm{d}t}
-	=  \dot{R}_{13} + \dot{S}_{13} 
-	+ \dot{R}_{33} + \dot{S}_{33} + \dot{K}_{33}
-	- \dot{P}_{3}
-	- \dot{R}_{31} - \dot{S}_{31} - \dot{K}_{31},
+\begin{equation} \label{eq:CV_R_dot_2}
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} + \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	=  \dot{R}_{02} + \dot{R}_{22} 
+	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} 
+	+ \dot{K}_{22}
+	- \dot{P}_{2}
+	- \dot{R}_{20} 
+	- \dot{S}_{20} 
+	- \dot{K}_{20},
 \end{equation}
 
-\begin{equation} \label{eq:CV_K_dot_3}
-	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}
-	=  \dot{K}_{33} - \dot{K}_{31},
+\begin{equation} \label{eq:CV_K_dot_2}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	=  \dot{K}_{22} - \dot{K}_{20},
+\end{equation}
+
+\begin{equation}\label{eq:dR1_dt_zero}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} = \frac{\mathrm{d}S_{1}}{\mathrm{d}t} = 0
+\end{equation}
+
+\begin{equation}\label{eq:dR2_dt_zero}
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} = \frac{\mathrm{d}S_{2}}{\mathrm{d}t} = 0
+\end{equation}
+
+\begin{equation} \label{eq:CV_R_dot_1b}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	=  \dot{R}_{21} 
+	+ \dot{S}_{21} + \dot{S}_{11}
+	+ \dot{K}_{21} 
+	- \dot{R}_{10} 
+	- \dot{S}_{10} - \dot{S}_{1}
+	- \dot{K}_{10},
+\end{equation}
+
+\begin{equation} \label{eq:CV_R_dot_2b}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	=  \dot{R}_{02} + \dot{R}_{22} 
+	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} 
+	+ \dot{K}_{22}
+	- \dot{P}_{2}
+	- \dot{R}_{20} 
+	- \dot{S}_{20} 
+	- \dot{K}_{20}
+	= \dot{K}_{22} - \dot{K}_{20},
 \end{equation}
 
 \begin{figure}[h!]
