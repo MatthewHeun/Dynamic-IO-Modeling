@@ -49,15 +49,18 @@ Example A looks at the case of a one sector economy that includes both productio
 	- \dot{R}_{0} - \dot{S}_{0}
 \end{equation}
 
-\begin{equation} \label{eq:dS_1/dt_single_sector}
+\begin{equation} \label{eq:A-dS_1/dt_single_sector}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t} 
 	= \dot{R}_{0} + \dot{S}_{0} + \dot{S}_{11}
-	- \dot{R}_{10} - \dot{S}_{10} - \dot{K}_{10} - \dot{S}_{1}.
+	- \dot{S}_{1}
+	- \dot{R}_{10}
+	- \dot{S}_{10}
+	- \dot{K}_{10} .
 \end{equation}
 
-\begin{equation}\label{eq:dS_1/dt_zero}
+\begin{equation}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t} = 
 	\frac{\mathrm{d}R_1}{\mathrm{d}t} = 0
 \end{equation}
@@ -86,7 +89,7 @@ Example A looks at the case of a one sector economy that includes both productio
 
 In example B, we split the society into two components: production and consumption. One sector produces goods and services for consumption in society
 
-\begin{equation} \label{eq:CV_R_dot_0a}
+\begin{equation} \label{eq:B-CV_R_dot_0a}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
 	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
@@ -105,7 +108,7 @@ In example B, we split the society into two components: production and consumpti
 	\dot{S}_{0} = \dot{S}_{01} + \dot{S}_{02}
 \end{equation}
 
-\begin{equation} \label{eq:CV_R_dot_0b}
+\begin{equation} \label{eq:B-CV_R_dot_0b}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	 
 	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
@@ -113,28 +116,29 @@ In example B, we split the society into two components: production and consumpti
 	+ \dot{S}_{10} + \dot{S}_{20} 
 	+ \dot{K}_{10} + \dot{K}_{20} 
 	- \dot{R}_{02} 
-	- \dot{S}_{01} - \dot{S}_{02} - \dot{S}_{1},
+	- \dot{S}_{01} - \dot{S}_{02},
 \end{equation}
 
-\begin{equation} \label{eq:CV_R_dot_1}
+\begin{equation} \label{eq:B-CV_R_dot_1}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} + \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
 	=  \dot{R}_{21} 
 	+ \dot{S}_{01} + \dot{S}_{21} + \dot{S}_{11}
-	+ \dot{K}_{21} 
+	+ \dot{K}_{21}
+	- \dot{S}_{1} 
 	- \dot{R}_{10} 
-	- \dot{S}_{10} - \dot{S}_{1}
+	- \dot{S}_{10} 
 	- \dot{K}_{10},
 \end{equation}
 
-\begin{equation} \label{eq:CV_K_dot_2}
+\begin{equation} \label{eq:B-CV_K_dot_2}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
 	=  \dot{K}_{32} - \dot{K}_{21},
 \end{equation}
 
 [NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{32}$ AS FOOD AND $K_{2}$ AS INCLUDING HUMANS...]
 
-\begin{equation} \label{eq:CV_R_dot_2}
+\begin{equation} \label{eq:B-CV_R_dot_2}
 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} + \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
 	=  \dot{R}_{02} + \dot{R}_{22} 
@@ -146,7 +150,7 @@ In example B, we split the society into two components: production and consumpti
 	- \dot{K}_{20},
 \end{equation}
 
-\begin{equation} \label{eq:CV_K_dot_2}
+\begin{equation} \label{eq:B-CV_K_dot_2}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
 	=  \dot{K}_{22} - \dot{K}_{20},
 \end{equation}
@@ -159,17 +163,18 @@ In example B, we split the society into two components: production and consumpti
 	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} = \frac{\mathrm{d}S_{2}}{\mathrm{d}t} = 0
 \end{equation}
 
-\begin{equation} \label{eq:CV_R_dot_1b}
+\begin{equation} \label{eq:B-CV_R_dot_1b}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
 	=  \dot{R}_{21} 
 	+ \dot{S}_{01} + \dot{S}_{21} + \dot{S}_{11}
 	+ \dot{K}_{21} 
+	- \dot{S}_{1}
 	- \dot{R}_{10} 
-	- \dot{S}_{10} - \dot{S}_{1}
+	- \dot{S}_{10} 
 	- \dot{K}_{10},
 \end{equation}
 
-\begin{equation} \label{eq:CV_R_dot_2b}
+\begin{equation} \label{eq:B-CV_R_dot_2b}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
 	=  \dot{R}_{02} + \dot{R}_{22} 
 	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} 
@@ -234,8 +239,9 @@ In example C, we differentiate between two production sectors, one produces ener
  	+ \dot{S}_{01} + \dot{S}_{11} 
 	+ \dot{S}_{21} + \dot{S}_{31}
  	+ \dot{K}_{21} + \dot{K}_{31}
- 	- \dot{R}_{10} 
- 	- \dot{S}_{1} - \dot{S}_{10} 
+ 	- \dot{S}_{1} 
+	- \dot{R}_{10} 
+ 	- \dot{S}_{10} 
  	- \dot{K}_{10},
  \end{equation}
  
@@ -244,7 +250,8 @@ In example C, we differentiate between two production sectors, one produces ener
 	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
  	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
  	=  \dot{R}_{02} + \dot{R}_{22} + \dot{R}_{32}
- 	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} + \dot{S}_{32} 
+ 	+ \dot{S}_{02} + \dot{S}_{12} 
+	+ \dot{S}_{22} + \dot{S}_{32} 
  	+ \dot{K}_{22} + \dot{K}_{32}
  	- \dot{P}_{2}
  	- \dot{R}_{20} 
@@ -257,7 +264,8 @@ In example C, we differentiate between two production sectors, one produces ener
 	+ \frac{\mathrm{d}S_{3}}{\mathrm{d}t}
  	+ \frac{\mathrm{d}K_{3}}{\mathrm{d}t}
  	=  \dot{R}_{03} + \dot{R}_{23} + \dot{R}_{33}
- 	+ \dot{S}_{03} + \dot{S}_{13} + \dot{S}_{23} + \dot{S}_{33} 
+ 	+ \dot{S}_{03} + \dot{S}_{13} 
+	+ \dot{S}_{23} + \dot{S}_{33} 
  	+ \dot{K}_{23} + \dot{K}_{33}
  	- \dot{P}_{3}
  	- \dot{R}_{30} 
@@ -291,15 +299,17 @@ In example C, we differentiate between two production sectors, one produces ener
  	+ \dot{S}_{01} + \dot{S}_{11} 
 	+ \dot{S}_{21} + \dot{S}_{31}
  	+ \dot{K}_{21} + \dot{K}_{31}
- 	- \dot{R}_{10} 
- 	- \dot{S}_{1} - \dot{S}_{10} 
+ 	- \dot{S}_{1} 
+	- \dot{R}_{10} 
+ 	- \dot{S}_{10} 
  	- \dot{K}_{10},
  \end{equation}
  
  \begin{equation} \label{eq:C-CV_R_dot_2b}
  	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
  	=  \dot{R}_{02} + \dot{R}_{22} + \dot{R}_{32}
- 	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} + \dot{S}_{32} 
+ 	+ \dot{S}_{02} + \dot{S}_{12} 
+	+ \dot{S}_{22} + \dot{S}_{32} 
  	+ \dot{K}_{22} + \dot{K}_{32}
  	- \dot{P}_{2}
  	- \dot{R}_{20} 
@@ -312,7 +322,8 @@ In example C, we differentiate between two production sectors, one produces ener
  \begin{equation} \label{eq:C-CV_R_dot_3}
  	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}
  	=  \dot{R}_{03} + \dot{R}_{23} + \dot{R}_{33}
- 	+ \dot{S}_{03} + \dot{S}_{13} + \dot{S}_{23} + \dot{S}_{33} 
+ 	+ \dot{S}_{03} + \dot{S}_{13} 
+	+ \dot{S}_{23} + \dot{S}_{33} 
  	+ \dot{K}_{23} + \dot{K}_{33}
  	- \dot{P}_{3}
  	- \dot{R}_{30} 
