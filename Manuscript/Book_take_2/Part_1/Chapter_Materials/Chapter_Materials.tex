@@ -151,12 +151,12 @@ In example B, we split the society into two components: production and consumpti
 	=  \dot{K}_{22} - \dot{K}_{20},
 \end{equation}
 
-\begin{equation}\label{eq:dR1_dt_zero}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} = \frac{\mathrm{d}S_{1}}{\mathrm{d}t} = 0
+\begin{equation}\label{eq:dR_dt_zero}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} = \frac{\mathrm{d}R_{2}}{\mathrm{d}t} = 0
 \end{equation}
 
-\begin{equation}\label{eq:dR2_dt_zero}
-	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} = \frac{\mathrm{d}S_{2}}{\mathrm{d}t} = 0
+\begin{equation}\label{eq:dS_dt_zero}
+	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} = \frac{\mathrm{d}S_{2}}{\mathrm{d}t} = 0
 \end{equation}
 
 \begin{equation} \label{eq:CV_R_dot_1b}
@@ -188,9 +188,129 @@ In example B, we split the society into two components: production and consumpti
 \label{fig:B_materials}
 \end{figure}
 
+%%%%%%%%%% Materials: Example C %%%%%%%%%%
 \section{Example C: three sector economy}
+\label{sec:C_materials}
+%%%%%%%%%%
 
-In example C, we differentiate between two production sectors, one produces energy and one produces other goods and services. 
+In example C, we differentiate between two production sectors, one produces energy and one produces other goods and services.
+
+
+\begin{equation} \label{eq:C-CV_R_dot_0a}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
+	=  \dot{R}_{10} + \dot{R}_{20} + \dot{R}_{30}
+	+ \dot{S}_{10} + \dot{S}_{20} + \dot{S}_{30}
+	+ \dot{K}_{10} + \dot{K}_{20} + \dot{K}_{30}
+	- \dot{R}_{0} 
+	- \dot{S}_{0},
+\end{equation}
+
+\begin{equation}
+	\dot{R}_{0} = \dot{R}_{02} + \dot{R}_{03}
+\end{equation}
+
+\begin{equation}
+	\dot{S}_{0} = \dot{S}_{01} + \dot{S}_{02} + \dot{S}_{03}
+\end{equation}
+
+ \begin{equation} \label{eq:C-CV_R_dot_0b}
+ 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+ 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+ 	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
+ 	=  \dot{R}_{10} + \dot{R}_{20} + \dot{R}_{30}
+ 	+ \dot{S}_{10} + \dot{S}_{20} + \dot{S}_{30}
+ 	+ \dot{K}_{10} + \dot{K}_{20} + \dot{K}_{30}
+ 	- \dot{R}_{02} - \dot{R}_{03} 
+ 	- \dot{S}_{01} - \dot{S}_{02} - \dot{S}_{03},
+ \end{equation}
+ 
+ \begin{equation} \label{eq:C-CV_R_dot_1}
+ 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
+ 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+ 	=  \dot{R}_{21} + \dot{R}_{31}
+ 	+ \dot{S}_{11} + \dot{S}_{21} + \dot{S}_{31}
+ 	+ \dot{K}_{21} + \dot{K}_{31}
+ 	- \dot{R}_{10} 
+ 	- \dot{S}_{1} - \dot{S}_{10} 
+ 	- \dot{K}_{10},
+ \end{equation}
+ 
+ \begin{equation} \label{eq:C-CV_R_dot_2}
+ 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
+ 	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+ 	=  \dot{R}_{02} + \dot{R}_{22} + \dot{R}_{32}
+ 	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} + \dot{S}_{32} 
+ 	+ \dot{K}_{22} + \dot{K}_{32}
+ 	- \dot{P}_{2}
+ 	- \dot{R}_{20} 
+ 	- \dot{S}_{20} 
+ 	- \dot{K}_{20},
+ \end{equation}
+ 
+ \begin{equation} \label{eq:C-CV_R_dot_3}
+ 	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{3}}{\mathrm{d}t}
+ 	+ \frac{\mathrm{d}K_{3}}{\mathrm{d}t}
+ 	=  \dot{R}_{03} + \dot{R}_{23} + \dot{R}_{33}
+ 	+ \dot{S}_{03} + \dot{S}_{13} + \dot{S}_{23} + \dot{S}_{33} 
+ 	+ \dot{K}_{23} + \dot{K}_{33}
+ 	- \dot{P}_{3}
+ 	- \dot{R}_{30} 
+ 	- \dot{S}_{30} 
+ 	- \dot{K}_{30},
+ \end{equation}
+
+\begin{equation}\label{eq:C-dR_dt_zero}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} = \frac{\mathrm{d}R_{2}}{\mathrm{d}t} = \frac{\mathrm{d}R_{3}}{\mathrm{d}t} = 0
+\end{equation}
+
+\begin{equation}\label{eq:C-dS_dt_zero}
+	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} = \frac{\mathrm{d}S_{2}}{\mathrm{d}t} = \frac{\mathrm{d}S_{3}}{\mathrm{d}t} = 0
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_K_dot_2}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	=  \dot{K}_{22} + \dot{K}_{32} 
+	- \dot{K}_{20},
+\end{equation}
+
+\begin{equation} \label{eq:C-CV_K_dot_3}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	=  \dot{K}_{23} + \dot{K}_{33} 
+	- \dot{K}_{30},
+\end{equation}
+ 
+ \begin{equation} \label{eq:C-CV_R_dot_2b}
+ 	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+ 	=  \dot{R}_{02} + \dot{R}_{22} + \dot{R}_{32}
+ 	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} + \dot{S}_{32} 
+ 	+ \dot{K}_{22} + \dot{K}_{32}
+ 	- \dot{P}_{2}
+ 	- \dot{R}_{20} 
+ 	- \dot{S}_{20} 
+ 	- \dot{K}_{20}
+	=  \dot{K}_{22} + \dot{K}_{32} 
+	- \dot{K}_{20},
+ \end{equation}
+ 
+ \begin{equation} \label{eq:C-CV_R_dot_3}
+ 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}
+ 	=  \dot{R}_{03} + \dot{R}_{23} + \dot{R}_{33}
+ 	+ \dot{S}_{03} + \dot{S}_{13} + \dot{S}_{23} + \dot{S}_{33} 
+ 	+ \dot{K}_{23} + \dot{K}_{33}
+ 	- \dot{P}_{3}
+ 	- \dot{R}_{30} 
+ 	- \dot{S}_{30} 
+ 	- \dot{K}_{30}
+	=  \dot{K}_{23} + \dot{K}_{33} 
+	- \dot{K}_{30},
+ \end{equation}
+
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/3_sector_materials.pdf}
