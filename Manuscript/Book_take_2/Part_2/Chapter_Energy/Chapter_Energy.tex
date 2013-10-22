@@ -340,6 +340,26 @@ $\left(\frac{\mathrm{d}E_{2}}{\mathrm{d}t}\right)$, yields
 \noindent It is notable that the economy (2) consumes ($\dot{E}_{22}$)
 a portion of its gross energy output ($\dot{E}_2$): it takes energy to make energy.
 
+Equation~\ref{eq:CV_E_dot_0} can be represented generally a sum as
+
+\begin{equation} \label{eq:CV_E_biosphere_general}
+	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 
+	= \sum\limits_{i=0}^n \left( \dot{Q}_{i0} - \dot{E}_{0i} \right),
+\end{equation}
+
+\noindent where $n$ is the number of economic sectors in the model.
+Similarly, Equations~\ref{eq:CV_E_dot_1} and \ref{eq:CV_E_dot_2} 
+can be represented with sums as
+
+\begin{equation} \label{eq:CV_E_econ_general}
+	\frac{\mathrm{d}E_{j}}{\mathrm{d}t} 
+	= \sum\limits_{i=0}^n\dot{E}_{ij} 
+	- \dot{E}_{j}  
+	- \dot{Q}_{j0},
+\end{equation}
+
+\noindent where $j \in [1, n]$.
+
 As in Example A, we can set the accumulation of direct energy 
 within each sector to zero to obtain
 
