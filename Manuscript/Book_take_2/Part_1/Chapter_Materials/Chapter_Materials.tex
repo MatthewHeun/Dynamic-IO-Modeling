@@ -39,7 +39,32 @@
 \label{sec:A_materials}
 %%%%%%%%%%
 
+
 Example A looks at the case of a one sector economy that includes both production and consumption together. 
+\begin{align}
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
+	=	\dot{R}_{10}	
+	+	\dot{S}_{10}	+ 0									&
+	+	\dot{K}_{10}											&
+	-	\dot{R}_{0}											&
+	-	\dot{S}_{0}											&
+	- 0															&
+	- 0															&
+	- 0															\\
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
+	= \dot{R}_{01} 
+	+ \dot{S}_{01} + \dot{S}_{11}&
+	+ 0															&
+	+ 0															&
+	- \dot{S}_{1}												&
+	- \dot{R}_{10}											&
+	- \dot{S}_{10}											&
+	- \dot{K}_{10}											
+\end{align}
 
 \begin{equation}\label{eq:dS_0/dt_single_sector}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}
@@ -53,7 +78,8 @@ Example A looks at the case of a one sector economy that includes both productio
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t} 
-	= \dot{R}_{0} + \dot{S}_{0} + \dot{S}_{11}
+	= \dot{R}_{01} 
+	+ \dot{S}_{01} + \dot{S}_{11}
 	- \dot{S}_{1}
 	- \dot{R}_{10}
 	- \dot{S}_{10}
@@ -66,12 +92,13 @@ Example A looks at the case of a one sector economy that includes both productio
 \end{equation}
 
 \begin{equation}\label{eq:A1_self_cons}
-	S_{11} = S_{1}
+	\dot{S}_{11} = \dot{S}_{1}
 \end{equation}
 
 \begin{equation}\label{eq:single_sector_material_steady_state}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
-	= \dot{R}_{0} + \dot{S}_{0} 
+	= \dot{R}_{01} 
+	+ \dot{S}_{01} 
 	- \dot{R}_{10} - \dot{S}_{10} - \dot{K}_{10}
 \end{equation}
 
@@ -131,12 +158,12 @@ In example B, we split the society into two components: production and consumpti
 	- \dot{K}_{10},
 \end{equation}
 
-\begin{equation} \label{eq:B-CV_K_dot_2}
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	=  \dot{K}_{32} - \dot{K}_{21},
+\begin{equation} \label{eq:B-CV_K_dot_1}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	=  \dot{K}_{21} - \dot{K}_{31},
 \end{equation}
 
-[NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{32}$ AS FOOD AND $K_{2}$ AS INCLUDING HUMANS...]
+[NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{31}$ AS FOOD AND $K_{1}$ AS INCLUDING HUMANS... YES, $\dot{R}_{31}$ can be turned into $\dot{K}_{1}$ internally, as the flow of (literall) human capital ]
 
 \begin{equation} \label{eq:B-CV_R_dot_2}
 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} + \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
@@ -184,6 +211,15 @@ In example B, we split the society into two components: production and consumpti
 	- \dot{S}_{20} 
 	- \dot{K}_{20}
 	= \dot{K}_{22} - \dot{K}_{20},
+\end{equation}
+
+\begin{equation} \label{eq:B-CV_R_dot_2c}
+	0
+	=  \dot{R}_{02} + \dot{R}_{22} 
+	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} 
+	- \dot{P}_{2}
+	- \dot{R}_{20} 
+	- \dot{S}_{20} 
 \end{equation}
 
 \begin{figure}[h!]
