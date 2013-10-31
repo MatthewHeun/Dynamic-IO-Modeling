@@ -255,7 +255,7 @@ in the economy as we shall see
 in Chapter \ref{chap:embodied_energy}.) 
 Thus, the accumulation rates for direct energy 
 $\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$ in the above equations 
-can be set to zero to obtain
+could be set to zero as follows:
 
 \begin{equation} \label{eq:biosphere_direct_energy_steady_state}
 	0 
@@ -272,6 +272,11 @@ can be set to zero to obtain
 	- \dot{E}_{1} 
 	- \dot{Q}_{10}.
 \end{equation}
+
+However, we shall see later (in Chapter~\ref{chap:direct_energy}) 
+that keeping direct energy accumulation terms
+$\left( \frac{\mathrm{d}\dot{E}}{\mathrm{d}t} \right)$ 
+provides an advantage when deriving embodied energy accounting equations.
 
 
 %%%%%%%%%% Energy: Example B %%%%%%%%%%
@@ -344,14 +349,15 @@ Equation~\ref{eq:CV_E_dot_0} can be generalized with a sum as
 
 \begin{equation} \label{eq:CV_E_biosphere_general}
 	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 
-	= \sum\limits_{i=0}^n \left( \dot{Q}_{i0} - \dot{E}_{0i} \right),
+	= \sum\limits_{i=1}^n \left( \dot{Q}_{i0} - \dot{E}_{0i} \right),
 \end{equation}
 
-\noindent where $n$ is the number of economic sectors in the model.
+\noindent where $n$ is the number of economic sectors in the model
+(in this example, $n = 2$).
 Similarly, Equations~\ref{eq:CV_E_dot_1} and \ref{eq:CV_E_dot_2} 
 can generalized with sums as
 
-\begin{equation} \label{eq:CV_E_econ_general}
+\begin{equation} \label{eq:B-CV_E_econ_general}
 	\frac{\mathrm{d}E_{j}}{\mathrm{d}t} 
 	= \sum\limits_{i=0}^n\dot{E}_{ij} 
 	- \dot{E}_{j}  
@@ -359,37 +365,6 @@ can generalized with sums as
 \end{equation}
 
 \noindent where $j \in [1, n]$.
-
-**** Do we want to remove this steady-state section? I think we should --MKH **** 
-
-As in Example A, we can set the accumulation of direct energy 
-within each sector to zero to obtain
-
-\begin{equation} \label{eq:CV_E_dot_0_SS}
-	0 
-	= \dot{Q}_{10} 
-	+ \dot{Q}_{20} 
-	- \dot{E}_{02},
-\end{equation}
-
-\begin{equation} \label{eq:CV_E_dot_1_SS}
-	0 
-	= \dot{E}_{11} 
-	+ \dot{E}_{21}
-	- \dot{E}_{1}
-	- \dot{Q}_{10},
-\end{equation}
-
-\noindent and 
-
-\begin{equation} \label{eq:CV_E_dot_2_SS}
-	0 
-	= \dot{E}_{02} 
-	+ \dot{E}_{12}
-	+ \dot{E}_{22} 
-	- \dot{E}_{2} 
-	- \dot{Q}_{20}.
-\end{equation}
 
 
 %%%%%%%%%% Energy: Example C %%%%%%%%%%
@@ -469,6 +444,32 @@ $\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$ yields
 	- \dot{Q}_{30}.
 \end{equation}
 
+Similar to Example~B, we can generalize 
+Equations~\ref{eq:C-CV_E_dot_0}--\ref{eq:C-CV_E_dot_3}
+with sums to obtain
+
+\begin{equation} \label{eq:C-CV_E_biosphere_general}
+	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
+	= \sum\limits_{i=1}^n \left( \dot{Q}_{i0} - \dot{E}_{0i} \right)
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:C-CV_E_econ_general}
+	\frac{\mathrm{d}E_{j}}{\mathrm{d}t} 
+	= \sum\limits_{i=0}^n\dot{E}_{ij} 
+	- \dot{E}_{j}  
+	- \dot{Q}_{j0},
+\end{equation}
+
+\noindent where $j \in [1, n]$. 
+Equations~\ref{eq:C-CV_E_biosphere_general} and 
+\ref{eq:C-CV_E_econ_general} are identical to 
+Equations~\ref{eq:CV_E_biosphere_general} and 
+\ref{eq:B-CV_E_econ_general}, 
+indicating that we have successfully generalized 
+the model to any number of sectors.
+
 In this economy, the purpose of the goods and services sector (3) 
 is to produce goods and provide services, 
 it provides no direct energy to society. 
@@ -482,77 +483,9 @@ and (b) $\dot{E}_{03} = 0$,
 because the goods and services sector (3) 
 receives no direct energy from the biosphere (0), 
 except via the energy sector (2).
-Hence:
-
-\begin{equation} \label{eq:C-CV_E_dot_0_simp}
-	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
-	= \dot{Q}_{10} 
-	+ \dot{Q}_{20} 
-	+ \dot{Q}_{30} 
-	- \dot{E}_{02},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_E_dot_1_simp}
-	\frac{\mathrm{d}E_{1}}{\mathrm{d}t}
-	= \dot{E}_{11}
-	+ \dot{E}_{21}
-	- \dot{E}_{1}
-	- \dot{Q}_{10},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_E_dot_2_simp}
-	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 
-	= \dot{E}_{02} 
-	+ \dot{E}_{12}
-	+ \dot{E}_{22} 
-	- \dot{E}_{2} 
-	- \dot{Q}_{20},
-\end{equation}
-
-\noindent and
-
-\begin{equation} \label{eq:C-CV_E_dot_3_simp}
-	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
-	= \dot{E}_{13}
-	+ \dot{E}_{23} 
-	- \dot{Q}_{30}.
-\end{equation}
-
-As in Examples A and B, we can set the accumulation of direct energy to zero.
-
-\begin{equation} \label{eq:C-CV_E_dot_0_SS}
-	0
-	= \dot{Q}_{10} 
-	+ \dot{Q}_{20} 
-	+ \dot{Q}_{30} 
-	- \dot{E}_{02},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_E_dot_1_SS}
-	0
-	= \dot{E}_{11}
-	+ \dot{E}_{21}
-	- \dot{E}_{1}
-	- \dot{Q}_{10},
-\end{equation}
-
-\begin{equation} \label{eq:C-CV_E_dot_2_SS}
-	0
-	= \dot{E}_{02} 
-	+ \dot{E}_{12}
-	+ \dot{E}_{22} 
-	- \dot{E}_{2} 
-	- \dot{Q}_{20},
-\end{equation}
-
-\noindent and 
-
-\begin{equation} \label{eq:C-CV_E_dot_3_SS}
-	0
-	= \dot{E}_{13}
-	+ \dot{E}_{23} 
-	- \dot{Q}_{31}.
-\end{equation}
+Thus, several terms in the sums of
+Equation~\ref{eq:C-CV_E_econ_general}
+will be zero.
 
 
 %%%%%%%%%% Energy: Auto industry example %%%%%%%%%%
