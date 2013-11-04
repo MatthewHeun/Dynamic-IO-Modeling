@@ -21,16 +21,86 @@
 
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
 
-[MIK TEST 09/01/2013]
+In the Introduction, we introduced the idea that economies are
+in many ways like organisms. The job of this chapter is to explore
+this idea further by observing the interchange of materials \emph{within}
+an economy, as well as exchanges of materials between an economy and 
+surrounding environment---the biosphere.
+
+There are many easily observable instances of material flow within an
+economy. I look around my office at my computer screen and coffee cup
+and myriad other items. I look out my window to the street and building
+opposite. All of these goods came originally from natural resources, be it paper or
+petroleum or rock. They were extracted and processed, transported and
+transformed requiring yet more materials and energy inputs in the form of
+electricity or fuels. 
+
+There are also inumerable material flows caused by an economy that we do not observe.
+The extraction of raw materials generates additional overburden---earth that must be
+extracted and processed and ultimately discarded without ever entering the economy proper.
+Other flows occur around us unseen. The cars outside my window suck in nitrogen and oxygen (without which
+the engine would not work) and emit water, carbon dioxide and other more harmful substances. 
+
+Even services which we tend to think of as non-material, require at least some material infrastructure. 
+The hairdresser requires scissors (and to a greater or lesser extent some hair) with which to work.
+Even the internet, often lauded as the exemplar of dematerialization of the economic process, requires
+a whole host of computer infrastructure including electricity, data servers, telephone networks and a
+computer by which to access it.
+
+In this chapter, we will define a mathematical framework by which to track the flow of materials
+within an economy, building from a one-sector economy up to examples of both a two- and 
+three-sector economy. We will finally apply this framework to the illustrative example of the US
+automobile industry that runs through the whole book. First let us outline the basic methodology.
 
 \section{Methodology}
 
+We are all familiar with the notion of accounting of material (and even non-material) entities. In order
+to be rigorous, the first step requires the definition of what we will be counting as well as the place
+(defined in both time and space) for which we will be counting. Engineers often call this a \emph{control volume}.
+For example, I may wish to account the number of apples in my home over a week-long period. In which case,
+I would count the number of apples that enter  and leave my home, as well as any apples that are eaten and, just 
+in case I happen to have an apple tree, any apples that grow inside my home. Our accounting equation would look
+something like:
 
+\begin{equation}
+	\Delta\textrm{apples} = \textrm{apples in} - \textrm{apples out} + \textrm{apples grown} - \textrm{apples eaten}
+\end{equation}
+
+\noindent More generally, we may say:
+
+\begin{equation}
+	\textrm{Accumulation}
+	= \textrm{Transfers in} 
+	- \textrm{Transfers out}
+	+ \textrm{Creation}
+	- \textrm{Destruction}
+\end{equation}
+
+Instead of looking at the total amount of apples over our week-long period, we may instead be interested in the
+flow of apples, $A$, per unit time, e.g. apples per day, in which case our accounting equation would look like:
+
+\begin{equation}
+	\frac{\mathrm{d}A}{\mathrm{d}t}
+	= \dot{A}_{in}
+	- \dot{A}_{out}
+	+ \dot{A}_{grown}
+	- \dot{A}_{eaten}
+\end{equation}
+
+\noindent where the dot above the variable simply means the flow rate per unit time and $\frac{\mathrm{d}}{\mathrm{d}t}$
+is the rate of change of accumulation.
+
+In the discussion that follows, we will be making great use of the First Law of Thermodynamics, which is a
+fancy way of saying that, when we discuss \emph{mass}, i.e. materials, and \emph{energy} the First Law tells
+us that these can neither be created or destroyed. In other words, the last two terms of our accounting
+equation will always be equal to zero. We also distinguish between three different types of materials flowing
+into or out of a production sector: resources (R), short-lived goods (S) and capital goods (K), as shown in Figure
+\ref{fig:PERKS_materials}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
-\caption{XXXX}
+\caption{[NEED TO REMOVE ENERGY FLOW TO BIOSPHERE]}
 \label{fig:PERKS_materials}
 \end{figure}
 
@@ -45,46 +115,23 @@ Example A looks at the case of a one sector economy that includes both productio
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
-	=	\dot{R}_{10}	
-	+	\dot{S}_{10}	+ 0									&
-	+	\dot{K}_{10}											&
-	-	\dot{R}_{0}											&
-	-	\dot{S}_{0}											&
-	- 0															&
-	- 0															&
-	- 0															\\
+	=	\dot{R}_{10}		
+	+	\dot{S}_{10}	
+	+	\dot{K}_{10}											
+	-	\dot{R}_{0}											
+	-	\dot{S}_{0}								\\
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
+	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
-	+ \dot{S}_{01} + \dot{S}_{11}&
-	+ 0															&
-	+ 0															&
-	- \dot{S}_{1}												&
-	- \dot{R}_{10}											&
-	- \dot{S}_{10}											&
+	+ \dot{S}_{01} + \dot{S}_{11}
+	- \dot{S}_{1}				
+	- \dot{R}_{10}				
+	- \dot{S}_{10}				
 	- \dot{K}_{10}											
 \end{align}
 
-\begin{equation}\label{eq:dS_0/dt_single_sector}
-	\frac{\mathrm{d}R_0}{\mathrm{d}t}
-	+ \frac{\mathrm{d}S_0}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
-	= \dot{R}_{10} + \dot{S}_{10} + \dot{K}_{10}
-	- \dot{R}_{0} - \dot{S}_{0}
-\end{equation}
 
-\begin{equation} \label{eq:A-dS_1/dt_single_sector}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t} 
-	= \dot{R}_{01} 
-	+ \dot{S}_{01} + \dot{S}_{11}
-	- \dot{S}_{1}
-	- \dot{R}_{10}
-	- \dot{S}_{10}
-	- \dot{K}_{10} .
-\end{equation}
 
 \begin{equation}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t} = 
