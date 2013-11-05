@@ -37,30 +37,34 @@ electricity or fuels.
 
 There are also inumerable material flows caused by an economy that we do not observe.
 The extraction of raw materials generates additional overburden---earth that must be
-extracted and processed and ultimately discarded without ever entering the economy proper.
-Other flows occur around us unseen. The cars outside my window suck in nitrogen and oxygen (without which
-the engine would not work) and emit water, carbon dioxide and other more harmful substances. 
+extracted and processed and ultimately discarded without ever entering the economy
+proper. Other flows occur around us unseen. The cars outside my window suck in nitrogen
+and oxygen (without which the engine would not work) and emit water, carbon dioxide and
+other more harmful substances. 
 
-Even services which we tend to think of as non-material, require at least some material infrastructure. 
-The hairdresser requires scissors (and to a greater or lesser extent some hair) with which to work.
-Even the internet, often lauded as the exemplar of dematerialization of the economic process, requires
-a whole host of computer infrastructure including electricity, data servers, telephone networks and a
+Even services which we tend to think of as non-material, require at least some material
+infrastructure. The hairdresser requires scissors (and to a greater or lesser extent 
+some hair) with which to work. Even the internet, often lauded as the exemplar of
+dematerialization of the economic process, requires a whole host of computer
+infrastructure including electricity, data servers, telephone networks and a
 computer by which to access it.
 
-In this chapter, we will define a mathematical framework by which to track the flow of materials
-within an economy, building from a one-sector economy up to examples of both a two- and 
-three-sector economy. We will finally apply this framework to the illustrative example of the US
-automobile industry that runs through the whole book. First let us outline the basic methodology.
+In this chapter, we will define a mathematical framework by which to track the flow of
+materials within an economy, building from a one-sector economy up to examples of both a
+two- and three-sector economy. We will finally apply this framework to the illustrative
+example of the US automobile industry that runs through the whole book. First let us
+outline the basic methodology.
 
 \section{Methodology}
 
-We are all familiar with the notion of accounting of material (and even non-material) entities. In order
-to be rigorous, the first step requires the definition of what we will be counting as well as the place
-(defined in both time and space) for which we will be counting. Engineers often call this a \emph{control volume}.
-For example, I may wish to account the number of apples in my home over a week-long period. In which case,
-I would count the number of apples that enter  and leave my home, as well as any apples that are eaten and, just 
-in case I happen to have an apple tree, any apples that grow inside my home. Our accounting equation would look
-something like:
+We are all familiar with the notion of accounting of material (and even non-material)
+entities. In order to be rigorous, the first step requires the definition of what we
+will be counting as well as the place (defined in both time and space) for which we will
+be counting. Engineers often call this a \emph{control volume}. For example, I may wish
+to account the number of apples in my home over a week-long period. In which case,
+I would count the number of apples that enter  and leave my home, as well as any apples
+that are eaten and, just in case I happen to have an apple tree, any apples that grow
+inside my home. Our accounting equation would look something like:
 
 \begin{equation}
 	\Delta\textrm{apples} = \textrm{apples in} - \textrm{apples out} + \textrm{apples grown} - \textrm{apples eaten}
@@ -76,8 +80,9 @@ something like:
 	- \textrm{Destruction}
 \end{equation}
 
-Instead of looking at the total amount of apples over our week-long period, we may instead be interested in the
-flow of apples, $A$, per unit time, e.g. apples per day, in which case our accounting equation would look like:
+Instead of looking at the total amount of apples over our week-long period, we may 
+instead be interested in the flow of apples, $A$, per unit time, e.g. apples per day, in
+which case our accounting equation would look like:
 
 \begin{equation}
 	\frac{\mathrm{d}A}{\mathrm{d}t}
@@ -87,15 +92,45 @@ flow of apples, $A$, per unit time, e.g. apples per day, in which case our accou
 	- \dot{A}_{eaten}
 \end{equation}
 
-\noindent where the dot above the variable simply means the flow rate per unit time and $\frac{\mathrm{d}}{\mathrm{d}t}$
-is the rate of change of accumulation.
+\noindent where the dot above the variable simply means the flow rate per unit time and
+ $\frac{\mathrm{d}}{\mathrm{d}t}$ is the rate of change of accumulation.
 
-In the discussion that follows, we will be making great use of the First Law of Thermodynamics, which is a
-fancy way of saying that, when we discuss \emph{mass}, i.e. materials, and \emph{energy} the First Law tells
-us that these can neither be created or destroyed. In other words, the last two terms of our accounting
-equation will always be equal to zero. We also distinguish between three different types of materials flowing
-into or out of a production sector: resources (R), short-lived goods (S) and capital goods (K), as shown in Figure
-\ref{fig:PERKS_materials}
+In the discussion that follows, we will be making great use of the First Law of 
+Thermodynamics, which is a fancy way of saying that, when we discuss \emph{mass}, i.e.
+materials, and \emph{energy} the First Law tells us that these entities can neither be
+created or destroyed. In other words, the last two terms of our accounting equation
+will always be equal to zero. We also distinguish between four different types of
+materials flowing into or out of a production sector: products (P), resources (R),
+short-lived goods (S) and capital goods (K), as shown in Figure
+\ref{fig:PERKS_materials}. 
+
+Resource materials always enter the sector on the left and comprise those materials that
+are destined to end up \emph{embodied} in the goods produced by the sector (P), except
+for some proportion that are wasted and leave from the bottom of the sector and are
+returned to the biosphere. For example, sheet metal, rubber and glass (as well as
+many, many other materials) enter the automobile sector as resources and end up as part
+of the cars that are produced. Some fraction of these materials may not make it into the
+final product, such as trimming scrap from metal parts stamping, and may be either
+recycled internally, or sent to scrap. Resource materials are not be accumulated within
+a sector.
+
+Short-lived goods include those materials that are necessary for the production
+processes of a sector, but are neither accumulated within the sector, nor make it into
+the products themselves. They enter the sector from above and leave the sector from
+below and return to the biosphere. Examples of these short-lived flows include 
+energy resources needed to run the sector, including the contribution from labor, and
+any water used in processing. A number of material flows, such as production equipment,
+are necessary for the continued operation of a sector but are not counted as short-lived
+goods, since the processes are dependent upon the accumulation of these materials within
+the sector. Such flows are instead counted as capital goods. These flows also enter from
+above, but are stored within the sector (represented by storage tanks) and leave the
+sector as capital depreciation from below to be returned to the biosphere. 
+
+
+All products leave the sector from the right. Some of this flow is returned to the 
+sector as self-consumption of either resources, short-lived or capital goods, the rest
+flows either to be used by other sectors within the economy, or flows to final demand. 
+
 
 \begin{figure}[h!]
 \centering
