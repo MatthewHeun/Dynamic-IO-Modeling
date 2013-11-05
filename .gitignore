@@ -13,9 +13,6 @@
 *.bbl
 *.blg
 
-.DS_Store
-
-
 #
 # Output .pdf files don't need to be updated in the repository
 #
@@ -35,3 +32,4 @@ Manuscript/Book_take_2/Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeli
 Icon?
 ehthumbs.db
 Thumbs.db
+.DS_Store
