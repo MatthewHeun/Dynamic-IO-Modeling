@@ -707,7 +707,8 @@ to obtain
 \begin{equation} \label{eq:B_embodied_energy_accounting_1}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
 	= \dot{B}_{11} 
-	+ \dot{B}_{21} 
+	+ \dot{B}_{21}
+	- \dot{B}_{2} 
 	- \dot{B}_{10}
 	+ \dot{Q}_{10},
 \end{equation}
@@ -718,12 +719,34 @@ to obtain
 	\frac{\mathrm{d}B_2}{\mathrm{d}t} 
 	= \dot{B}_{12} 
 	+ \dot{B}_{22} 
+	- \dot{B}_{2}
 	- \dot{B}_{20} 
 	+ \dot{Q}_{20}.
 \end{equation}
 
+Equations~\ref{eq:B_embodied_energy_accounting_0}--\ref{eq:B_embodied_energy_accounting_2}
+can be simplified using sums:
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_0_sum}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \sum\limits_{i=1}^n\dot{B}_{i0} 
+	- \sum\limits_{i=1}^n\dot{Q}_{i0} 
+\end{equation}
+
+\noindent and
+
+\begin{equation} \label{eq:B_embodied_energy_accounting_12_sum}
+	\frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
+	= \sum\limits_{i=1}^n\dot{B}_{ij} 
+	- \dot{B}_{j}
+	- \dot{B}_{j0} 
+	+ \dot{Q}_{j0},
+\end{equation}
+
+\noindent where $j \in [1, n]$
+
 Similar to Example~A, we observe that the accumulation rate 
-of embodied energy in the economy (2) 
+of embodied energy in the economic sectors (1 and 2) 
 is the sum of the rates of waste heat flowing from the sector 
 ($\dot{Q}_{20}$) and embodied energy into the sector 
 ($\dot{B}_{12} + \dot{B}_{22}$) 
@@ -731,8 +754,10 @@ less the rate of embodied energy leaving the sector
 on its output stream ($\dot{B}_{20}$).
 
 We can replace the waste embodied energy terms in 
-Equations~\ref{eq:B_embodied_energy_accounting_0}--\ref{eq:B_embodied_energy_accounting_2}
+Equations~\ref{eq:B_embodied_energy_accounting_0_sum}--\ref{eq:B_embodied_energy_accounting_12_sum}
 with depreciation terms to obtain
+
+**** Use the sum version of the equations here. ****
 
 \begin{equation} \label{eq:B_embodied_energy_accounting_0_with_depreciation}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
