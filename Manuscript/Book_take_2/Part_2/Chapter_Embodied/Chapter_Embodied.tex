@@ -761,28 +761,16 @@ with depreciation terms to obtain
 
 \begin{equation} \label{eq:B_embodied_energy_accounting_0_with_depreciation}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
-	= \gamma_{1} \dot{B}_{1}  
-	+ \gamma_{2} \dot{B}_{2} 
-	- \dot{Q}_{10} 
-	- \dot{Q}_{20}, 
+	= \sum\limits_{i=1}^n \gamma_{i}B_{i} 
+	- \sum\limits_{i=1}^n\dot{Q}_{i0} 
 \end{equation}
 
-\begin{equation} \label{eq:B_embodied_energy_accounting_1_with_depreciation}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= \dot{B}_{11} 
-	+ \dot{B}_{21} 
-	- \gamma_{1} \dot{B}_{1} 
-	+ \dot{Q}_{10},
-\end{equation}
-
-\noindent and
-
-\begin{equation} \label{eq:B_embodied_energy_accounting_2_with_depreciation}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	= \dot{B}_{12} 
-	+ \dot{B}_{22} 
-	- \gamma_{2} \dot{B}_{2}
-	+ \dot{Q}_{20}.
+\begin{equation} \label{eq:B_embodied_energy_accounting_12_with_depreciation}
+	\frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
+	= \sum\limits_{i=1}^n\dot{B}_{ij} 
+	- \dot{B}_{j}
+	- \gamma_{i} B_{i}
+	+ \dot{Q}_{j0},
 \end{equation}
 
 In the next section, we apply embodied energy accounting to 
