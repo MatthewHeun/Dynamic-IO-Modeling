@@ -598,6 +598,7 @@ We turn now to Example~B, a two-sector economy.
 
 %%%%%%%%%% Embodied Energy: Example B %%%%%%%%%%
 \section{Example B: two-sector economy}
+\label{sec:Embodied_Energy_Example_B}
 %%%%%%%%%%
 
 For the two-sector economy of Figures~\ref{fig:B_materials}
@@ -782,7 +783,7 @@ Example~C, a three-sector economy.
 %%%%%%%%%%
 
 Again, we begin with a diagram showing total energy ($\dot{T}$) flows
-among the economic sectors of Example~C.
+among the economic sectors of Example~C (Figure~\ref{fig:C_total_energy}).
 
 \begin{figure}[h!]
 \includegraphics[width=1.0\linewidth]{Part_2/Chapter_Embodied/images/3_sector_embodied_energy.pdf}
@@ -793,172 +794,107 @@ among the economic sectors of Example~C.
 Accounting for accumulation of total energy and 
 applying the assumption that total energy is conserved, 
 we can write the following equations.
+We build from the derivation in Section~\ref{sec:Embodied_Energy_Example_B}
+and utilize sums for each equation below.
 
 \begin{equation} \label{eq:C-CV_T_0}
 	\frac{\mathrm{d}T_{0}}{\mathrm{d}t} 	 
-	= \dot{T}_{10} 
-	+ \dot{T}_{20} 
-	+ \dot{T}_{30} 
-	- \dot{T}_{02} 
-	- \dot{T}_{03},
+	= \sum\limits_{i=1}^{n} \dot{T}_{i0}
+	- \sum\limits_{j=1}^{n} \dot{T}_{0j}
 \end{equation}
 
-\begin{equation} \label{eq:C-CV_T_1}
-	\frac{\mathrm{d}T_{1}}{\mathrm{d}t} 	 
-	= \dot{T}_{11}
-	+ \dot{T}_{21} 
-	+ \dot{T}_{31} 
-	- \dot{T}_{1}
-	- \dot{T}_{10},
+\noindent and
+
+\begin{equation} \label{eq:C-CV_T_123}
+	\frac{\mathrm{d}T_{j}}{\mathrm{d}t} 	 
+	= \sum\limits_{i=0}^{n} \dot{T}_{ij}
+	- \dot{T}_{j}
+	- \dot{T}_{j0}.
 \end{equation}
 
-\begin{equation} \label{eq:C-CV_T_2}
-	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
-	= \dot{T}_{02} 
-	+ \dot{T}_{12}
-	+ \dot{T}_{22} 
-	+ \dot{T}_{32} 
-	- \dot{T}_{2} 
-	- \dot{T}_{20},
-\end{equation}
-
-\noindent and 
-
-\begin{equation} \label{eq:C-CV_T_3}
-	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 	 
-	= \dot{T}_{03} 
-	+ \dot{T}_{13}
-	+ \dot{T}_{23} 
-	+ \dot{T}_{33} 
-	- \dot{T}_{3} 
-	- \dot{T}_{30}.
-\end{equation}
+\noindent where $j \in [1, n]$.
 
 Substituting Equations~\ref{eq:T_dot_def} 
 and \ref{eq:T_accum_def} into 
-Equations~\ref{eq:C-CV_T_0} through
-\ref{eq:C-CV_T_3} gives
+Equations~\ref{eq:C-CV_T_0} and
+\ref{eq:C-CV_T_123} gives
 
 \begin{equation} \label{eq:C-CV_dB_0}
 	\frac{\mathrm{d}E_{0}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}B_{0}}{\mathrm{d}t}
-	= \dot{E}_{10} 
-	+ \dot{B}_{10} 
-	+ \dot{E}_{20} 
-	+ \dot{B}_{20} 
-	+ \dot{E}_{30} 
-	+ \dot{B}_{30} 
-	- \dot{E}_{02} 
-	- \dot{B}_{02} 
-	- \dot{E}_{03} 
-	- \dot{B}_{03},
+	+ \frac{\mathrm{d}B_{0}}{\mathrm{d}t} 	 
+	= \sum\limits_{i=1}^{n} \dot{E}_{i0}
+	+ \sum\limits_{i=1}^{n} \dot{B}_{i0}
+	- \sum\limits_{j=1}^{n} \dot{E}_{0j}
+	- \sum\limits_{j=1}^{n} \dot{B}_{0j}
 \end{equation}
 
-\begin{equation} \label{eq:C-CV_dB_1}
-	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t} 	 
-	= \dot{E}_{11}
-	+ \dot{B}_{11}
-	+ \dot{E}_{21} 
-	+ \dot{B}_{21} 
-	+ \dot{E}_{31} 
-	+ \dot{B}_{31} 
-	- \dot{E}_{1}
-	- \dot{B}_{1}
-	- \dot{E}_{01} 
-	- \dot{B}_{01},
-\end{equation}
+\noindent and
 
-\begin{equation} \label{eq:C-CV_dB_2}
-	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
-	= \dot{E}_{02} 
-	+ \dot{B}_{02} 
-	+ \dot{E}_{12}
-	+ \dot{B}_{12}
-	+ \dot{E}_{22} 
-	+ \dot{B}_{22} 
-	+ \dot{E}_{23} 
-	+ \dot{B}_{23} 
-	- \dot{E}_{2} 
-	- \dot{B}_{2} 
-	- \dot{E}_{20} 
-	- \dot{B}_{20},
-\end{equation}
-
-\noindent and 
-
-\begin{equation} \label{eq:C-CV_dB_3}
-	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 	 
-	= \dot{E}_{03} 
-	+ \dot{B}_{03}
-	+ \dot{E}_{13} 
-	+ \dot{B}_{13} 
-	+ \dot{E}_{23} 
-	+ \dot{B}_{23}
-	+ \dot{E}_{33} 
-	+ \dot{B}_{33} 
-	- \dot{E}_{3} 
-	- \dot{B}_{3} 
-	- \dot{E}_{30} 
-	- \dot{B}_{30}.
+\begin{equation} \label{eq:C-CV_dB_123}
+	\frac{\mathrm{d}E_{j}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}B_{j}}{\mathrm{d}t} 	 
+	= \sum\limits_{i=0}^{n} \dot{E}_{ij}
+	+ \sum\limits_{i=0}^{n} \dot{B}_{ij}
+	- \dot{E}_{j}
+	- \dot{B}_{j}
+	- \dot{E}_{j0}
+	- \dot{B}_{j0}.
 \end{equation}
 
 Substituting the First Law of Thermodynamics 
-(Equations~\ref{eq:C-CV_E_dot_0} through \ref{eq:C-CV_E_dot_3}) 
+(Equations~\ref{eq:C-CV_E_biosphere_general} and \ref{eq:C-CV_E_econ_general}) 
 into the total energy accounting equations 
-(Equations \ref{eq:C-CV_dB_0} through \ref{eq:C-CV_dB_3}) 
-gives embodied energy accounting equations for Example~C.
-
-**** Should the $\dot{E}_{02}$ term remain in the following equation? ****
+(Equations \ref{eq:C-CV_dB_0} and \ref{eq:C-CV_dB_123}) 
+and recognizing that $\dot{B}_{0j} = 0$ for $j \in [1, n]$
+and $\dot{E}_{i0} = 0$ for $i \in [1, n]$
+gives embodied energy accounting equations for Example~C:
 
 \begin{equation} \label{eq:C-embodied_acct_0}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 	 
-	= \dot{B}_{10} 
-	+ \dot{B}_{20} 
-	+ \dot{B}_{30} 
-	- \dot{E}_{02} 
-	- \dot{Q}_{10} 
-	- \dot{Q}_{20} 
-	- \dot{Q}_{30}
+	= \sum\limits_{i=1}^{n} \dot{B}_{i0}
+	- \sum\limits_{i=1}^{n} \dot{Q}_{i0}
 \end{equation}
 
-\begin{equation} \label{eq:C-embodied_acct_1}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 	 
-	= \dot{B}_{11}
-	+ \dot{B}_{21} 
-	+ \dot{B}_{31} 
-	- \dot{B}_{1}
-	- \dot{B}_{10}
-	+ \dot{Q}_{10} 
+\begin{equation} \label{eq:C-embodied_acct_123}
+	\frac{\mathrm{d}B_{j}}{\mathrm{d}t} 	 
+	= \sum\limits_{i=0}^{n} \dot{B}_{ij}
+	- \dot{B}_{j}
+	- \dot{B}_{j0}
+	+ \dot{Q}_{j0} 
 \end{equation}
 
-\begin{equation} \label{eq:C-embodied_acct_2}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 	 
-	= \dot{B}_{02} 
-	+ \dot{B}_{12}
-	+ \dot{B}_{22} 
-	+ \dot{B}_{23} 
-	- \dot{B}_{2} 
-	- \dot{B}_{20}
-	+ \dot{Q}_{20} 
+We can replace the waste embodied energy terms in 
+Equations~\ref{eq:C-embodied_acct_0} and 
+\ref{eq:C-embodied_acct_123}
+with depreciation terms to obtain
+
+\begin{equation} \label{eq:C_embodied_energy_accounting_0_with_depreciation}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	= \sum\limits_{i=1}^n \gamma_{i}B_{i} 
+	- \sum\limits_{i=1}^n\dot{Q}_{i0} 
 \end{equation}
 
-\begin{equation} \label{eq:C-embodied_acct_3}
-	\frac{\mathrm{d}B_{3}}{\mathrm{d}t}	 
-	= \dot{B}_{03} 
-	+ \dot{B}_{14}
-	+ \dot{B}_{23} 
-	+ \dot{B}_{33} 
-	- \dot{B}_{3} 
-	- \dot{B}_{30}
-	+ \dot{Q}_{30} 
+\noindent and
+
+\begin{equation} \label{eq:C_embodied_energy_accounting_12_with_depreciation}
+	\frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
+	= \sum\limits_{i=1}^n\dot{B}_{ij} 
+	- \dot{B}_{j}
+	- \gamma_{i} B_{i}
+	+ \dot{Q}_{j0}
 \end{equation}
+
+\noindent which are the same as 
+Equations~\ref{eq:B_embodied_energy_accounting_0_with_depreciation}
+and \ref{eq:B_embodied_energy_accounting_12_with_depreciation},
+indicating that we have successfully generalized the embodied energy
+equations to an arbitrarily-large economy.
+
+**** Ended here. Need to do the verification with the sum equation. ****
 
 To verify the above derivation, 
 we sum 
-Equations~\ref{eq:C-embodied_acct_0}--\ref{eq:C-embodied_acct_3},
+Equations~\ref{eq:C-embodied_acct_0} and \ref{eq:C-embodied_acct_123},
 recognize that $\dot{B}_{02} = 0$ and $\dot{B}_{03} = 0$, 
 and use the following identities:
 
