@@ -100,12 +100,12 @@ Thermodynamics, which is a fancy way of saying that, when we discuss \emph{mass}
 materials, and \emph{energy}, the First Law tells us that these entities can neither be
 created or destroyed. In other words, the last two terms of our accounting equation
 will always be equal to zero. We also distinguish between four different types of
-materials flowing into or out of a production sector: products (P), resources (R),
-short-lived goods (S) and capital goods (K), as shown in Figure
+materials flowing into or out of a production sector: products ($\dot{P}$), resources ($\dot{R}$),
+short-lived goods ($\dot{S}$) and capital goods ($\dot{K}$), as shown in Figure
 \ref{fig:PERKS_materials}. 
 
-Resource materials always enter the sector on the left and comprise those materials that
-are destined to end up \emph{embodied} in the goods produced by the sector (P), except
+Resource materials ($\dot{R}$) always enter the sector on the left and comprise those materials that
+are destined to end up \emph{embodied} in the goods produced by the sector ($\dot{P}$), except
 for some proportion that are wasted and leave from the bottom of the sector and are
 returned to the biosphere. For example, sheet metal, rubber and glass (as well as
 many, many other materials) enter the automobile sector as resources and end up as part
@@ -114,7 +114,7 @@ final product, such as trimming scrap from metal parts stamping, and may be eith
 recycled internally, or sent to scrap. Resource materials are not be accumulated within
 a sector.
 
-Short-lived goods include those materials that are necessary for the production
+Short-lived goods ($\dot{S}$) include those materials that are necessary for the production
 processes of a sector, but are neither accumulated within the sector, nor make it into
 the products themselves. They enter the sector from above and leave the sector from
 below and return to the biosphere. Examples of these short-lived flows include 
@@ -122,7 +122,7 @@ energy resources needed to run the sector, including the contribution from labor
 any water used in processing. A number of material flows, such as production equipment,
 are necessary for the continued operation of a sector but are not counted as short-lived
 goods, since the processes are dependent upon the accumulation of these materials within
-the sector. Such flows are instead counted as capital goods. These flows also enter from
+the sector. Such flows are instead counted as capital goods ($\dot{K}$). These flows also enter from
 above, but are stored within the sector (represented by storage tanks) and leave the
 sector as capital depreciation from below to be returned to the biosphere. 
 
@@ -135,7 +135,7 @@ flows either to be used by other sectors within the economy, or flows to final d
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
-\caption{[NEED TO REMOVE ENERGY FLOW TO BIOSPHERE]}
+\caption{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the right and are embodied in products ($\dot{P}$) which leave from the left. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
 \label{fig:PERKS_materials}
 \end{figure}
 
@@ -153,9 +153,9 @@ materials are returned to the biospher without accumulating. Capital goods are r
 to the biosphere upon depreciation.
 
 Drawing control volumes around both the biosphere and the economy, we can consruct
-our material accounting equations, such as:
+our material accounting equations, such that:
 
-\begin{align}
+\begin{align}\label{eq:A_CV_0_to_1}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
@@ -175,22 +175,42 @@ our material accounting equations, such as:
 	- \dot{K}_{10}											
 \end{align}
 
-
+\noindent Remembering that neither resources nor short-lived goods accumulate within economic sectors, tells us that:
 
 \begin{equation}\label{eq:A-dS_1/dt_zero}
-	\frac{\mathrm{d}S_1}{\mathrm{d}t} = 
-	\frac{\mathrm{d}R_1}{\mathrm{d}t} = 0
+	\frac{\mathrm{d}S_1}{\mathrm{d}t}
+	= \frac{\mathrm{d}R_1}{\mathrm{d}t}
+	= 0.
 \end{equation}
 
-\begin{equation}\label{eq:A1_self_cons}
-	\dot{S}_{11} = \dot{S}_{1}
+\noindent Additionally, we may also say that:
+
+\begin{equation}\label{eq:A_S11}
+	\dot{S}_{11} = \dot{S}_{1},
 \end{equation}
 
-\begin{equation}\label{eq:single_sector_material_steady_state}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+\noindent such that our material accumulation equation \ref{eq:A_CV_0_to_1} becomes:
+
+\begin{align}\label{eq:A_CV_0_to_1_b}
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
+	=	\dot{R}_{10}		
+	+	\dot{S}_{10}	
+	+	\dot{K}_{10}											
+	-	\dot{R}_{0}											
+	-	\dot{S}_{0}								\\
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
 	+ \dot{S}_{01} 
-	- \dot{R}_{10} - \dot{S}_{10} - \dot{K}_{10}
+	- \dot{R}_{10}				
+	- \dot{S}_{10}				
+	- \dot{K}_{10}											
+\end{align}
+
+\begin{equation} \label{eq:A_K0_balance}
+	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}		
+	= \dot{K}_{10}
 \end{equation}
 
 \begin{figure}[h!]
@@ -205,113 +225,127 @@ our material accounting equations, such as:
 \label{sec:B_materials}
 %%%%%%%%%%
 
-In example B, we split the society into two components: production and consumption. One sector produces goods and services for consumption in society
+In our second example B, we split society into two sectors: production and consumption as depicted in Figure \ref{fig:B_materials}. Sector 2 produces goods and services for consumption in society (1). Again, setting control volumes around the biosphere and our two sectors, our accumulation equation is now written:
 
-\begin{equation} \label{eq:B-CV_R_dot_0a}
+\begin{align} \label{eq:B_CV_0_to_2}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
-	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}		&
 	=  \dot{R}_{10} + \dot{R}_{20} 
 	+ \dot{S}_{10} + \dot{S}_{20} 
 	+ \dot{K}_{10} + \dot{K}_{20} 
 	- \dot{R}_{0} 
-	- \dot{S}_{0},
-\end{equation}
-
-\begin{equation}
-	\dot{R}_{0} = \dot{R}_{02}
-\end{equation}
-
-\begin{equation}
-	\dot{S}_{0} = \dot{S}_{01} + \dot{S}_{02}
-\end{equation}
-
-\begin{equation} \label{eq:B-CV_R_dot_0b}
-	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	 
-	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
-	=  \dot{R}_{10} + \dot{R}_{20} 
-	+ \dot{S}_{10} + \dot{S}_{20} 
-	+ \dot{K}_{10} + \dot{K}_{20} 
-	- \dot{R}_{02} 
-	- \dot{S}_{01} - \dot{S}_{02},
-\end{equation}
-
-\begin{equation} \label{eq:B-CV_R_dot_1}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} + \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	- \dot{S}_{0} 							\\
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
 	=  \dot{R}_{21} 
-	+ \dot{S}_{01} + \dot{S}_{21} + \dot{S}_{11}
+	+ \dot{S}_{01} 
+	+ \dot{S}_{11} 
+	+ \dot{S}_{21}
 	+ \dot{K}_{21}
 	- \dot{S}_{1} 
 	- \dot{R}_{10} 
 	- \dot{S}_{10} 
-	- \dot{K}_{10},
-\end{equation}
-
-\begin{equation} \label{eq:B-CV_K_dot_1}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
-	=  \dot{K}_{21} - \dot{K}_{31},
-\end{equation}
-
-[NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{31}$ AS FOOD AND $K_{1}$ AS INCLUDING HUMANS... YES, $\dot{R}_{31}$ can be turned into $\dot{K}_{1}$ internally, as the flow of (literall) human capital ]
-
-\begin{equation} \label{eq:B-CV_R_dot_2}
-	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} + \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	=  \dot{R}_{02} + \dot{R}_{22} 
-	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} 
+	- \dot{K}_{10},							\\
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
+	=  \dot{R}_{02} 
+	+ \dot{R}_{22} 
+	+ \dot{S}_{02} 
+	+ \dot{S}_{12} 
+	+ \dot{S}_{22} 
 	+ \dot{K}_{22}
 	- \dot{P}_{2}
 	- \dot{R}_{20} 
 	- \dot{S}_{20} 
 	- \dot{K}_{20},
+\end{align}
+
+\begin{equation}
+	\dot{R}_{0} = \dot{R}_{02}
 \end{equation}
 
-\begin{equation} \label{eq:B-CV_K_dot_2}
+\begin{align}\label{eq:B_S_def}
+	\dot{S}_{0} = 
+	& \dot{S}_{01} + \dot{S}_{02};
+	& \dot{S}_{1} = 
+	\dot{S}_{11} + \dot{S}_{12}
+\end{align}
+
+Since only capital flows ($\dot{K}$) may be accumulated and are dependent only on flows of capital in and depreciation of capital, we may define capital balance equations:
+
+\begin{equation} \label{eq:B_K1_balance}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	=  \dot{K}_{12} - \dot{K}_{20},
+\end{equation}
+
+[NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{12}$ AS FOOD AND $K_{1}$ AS INCLUDING HUMANS... YES, I THINK $\dot{R}_{12}$ CAN BE TURNED INTO  $\dot{K}_{1}$ INTERNALLY, AS THE ACCUMULATION OF (LITERAL) HUMAN CAPITAL, I.E. POPULATION]
+
+\begin{equation} \label{eq:B_K2_balance}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
 	=  \dot{K}_{22} - \dot{K}_{20},
 \end{equation}
 
-\begin{equation}\label{eq:dR_dt_zero}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} = \frac{\mathrm{d}R_{2}}{\mathrm{d}t} = 0
+\begin{equation} \label{eq:B_P_def}
+	\dot{P}_{2}
+	= \dot{R}_{21}
+	+ \dot{R}_{22}
+	+ \dot{S}_{21}
+	+ \dot{S}_{22}
+	+ \dot{K}_{21}	 
+	+ \dot{K}_{22},
 \end{equation}
 
-\begin{equation}\label{eq:dS_dt_zero}
-	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} = \frac{\mathrm{d}S_{2}}{\mathrm{d}t} = 0
+
+\noindent Again, remembering that resources and short-lived
+goods do not accumulate within sectors of the economy:
+
+\begin{equation}\label{eq:dR_and_dS_zero}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
+	= \frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}S_{1}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}S_{2}}{\mathrm{d}t} 
+	= 0,
 \end{equation}
 
-\begin{equation} \label{eq:B-CV_R_dot_1b}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
-	=  \dot{R}_{21} 
-	+ \dot{S}_{01} + \dot{S}_{21} + \dot{S}_{11}
-	+ \dot{K}_{21} 
-	- \dot{S}_{1}
+\noindent and substituting equations \ref{eq:B_S_def},
+\ref{eq:B_K2_balance}  and \ref{eq:B_P_def}, our balance 
+equations may now be written:
+
+
+\begin{align} \label{eq:B_CV_0_to_2_b}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}		
+	& = \dot{R}_{10} + \dot{R}_{20} 
+	+ \dot{S}_{10} + \dot{S}_{20} 
+	+ \dot{K}_{10} + \dot{K}_{20} 
+	- \dot{R}_{0} 
+	- \dot{S}_{0} 							\\
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}	
+	& = \dot{R}_{21} 
+	+ \dot{S}_{01} 
+	+ \dot{S}_{21}
+	+ \dot{K}_{21}
+	- \dot{S}_{12} 
 	- \dot{R}_{10} 
 	- \dot{S}_{10} 
-	- \dot{K}_{10},
-\end{equation}
-
-\begin{equation} \label{eq:B-CV_R_dot_2b}
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	=  \dot{R}_{02} + \dot{R}_{22} 
-	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} 
-	+ \dot{K}_{22}
-	- \dot{P}_{2}
+	- \dot{K}_{10},							\\
+	\dot{K}_{22} - \dot{K}_{20}	
+	& = \dot{R}_{02} 
+	+ \dot{S}_{02} 
+	+ \dot{S}_{12} 
+	- \dot{R}_{21}
+	- \dot{S}_{21}
+	- \dot{K}_{21}
 	- \dot{R}_{20} 
 	- \dot{S}_{20} 
-	- \dot{K}_{20}
-	= \dot{K}_{22} - \dot{K}_{20},
-\end{equation}
+	- \dot{K}_{20}							\\
+\end{align}
 
-\begin{equation} \label{eq:B-CV_R_dot_2c}
-	0
-	=  \dot{R}_{02} + \dot{R}_{22} 
-	+ \dot{S}_{02} + \dot{S}_{12} + \dot{S}_{22} 
-	- \dot{P}_{2}
-	- \dot{R}_{20} 
-	- \dot{S}_{20} 
-\end{equation}
+
 
 \begin{figure}[h!]
 \centering
@@ -466,6 +500,13 @@ In example C, we differentiate between two production sectors, one produces ener
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/3_sector_materials.pdf}
 \caption{XXXX}
 \label{fig:C_materials}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/Matrix.pdf}
+\caption{XXXX}
+\label{fig:C_mat_matrix}
 \end{figure}
 
 %%%%%%%%%% Materials: Auto industry example %%%%%%%%%%

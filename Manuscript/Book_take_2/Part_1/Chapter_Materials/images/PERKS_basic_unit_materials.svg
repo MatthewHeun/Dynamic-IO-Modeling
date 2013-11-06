@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
-   sodipodi:docname="PERKS_basic_unit_materials.svg">
+   sodipodi:docname="PERKS_basic_unit_materials.pdf">
   <defs
      id="defs4">
     <marker
@@ -340,16 +340,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.8741266"
+     inkscape:zoom="0.87651492"
      inkscape:cx="628.05548"
      inkscape:cy="276.97461"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1229"
+     inkscape:window-width="1232"
      inkscape:window-height="756"
-     inkscape:window-x="1920"
-     inkscape:window-y="965"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -483,23 +483,17 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#008000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="m -170.33459,561.34686 -0.41408,93.47929"
-       id="path6816"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
        style="fill:none;stroke:#2a7fff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#EmptyDiamondL);marker-end:url(#Arrow1Lend)"
-       d="m 244.88013,523.67729 0.005,-154.33041 -319.21948,0 -0.41408,31.4793"
+       d="m 244.88013,523.67729 0.005,-166.33041 -319.21948,0 -0.41408,43.4793"
        id="path6820"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#EmptyDiamondL);marker-end:url(#Arrow1Lend)"
-       d="m 233.2862,523.53061 0,-48.32523 -205.4793,-0.41408"
+       d="m 233.2862,523.53061 0,-146.32523 L 75.897536,376.9744 76.07634,474.93291 27.8069,474.7913"
        id="path6822"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
+       sodipodi:nodetypes="ccccc" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -512,27 +506,6 @@
        height="7.6257744"
        width="8.5229244"
        id="rect6828"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       id="rect6830"
-       width="8.5229244"
-       height="7.6257744"
-       x="54.683311"
-       y="348.57187" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       id="rect6832"
-       width="8.5229244"
-       height="7.6257744"
-       x="55.239067"
-       y="339.79312" />
-    <rect
-       y="341.79312"
-       x="55.239067"
-       height="7.6257744"
-       width="8.5229244"
-       id="rect6834"
        style="fill:#ffffff;fill-opacity:1;stroke:none" />
     <rect
        y="339.79312"
@@ -568,13 +541,6 @@
        x="-327.54755"
        y="331.66605" />
     <rect
-       y="333.79312"
-       x="55.239067"
-       height="7.6257744"
-       width="8.5229244"
-       id="rect6854"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
        y="348.57187"
        x="-95.316689"
        height="7.6257744"
@@ -601,12 +567,6 @@
        id="path9595"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
-    <path
-       sodipodi:nodetypes="ccc"
-       inkscape:connector-curvature="0"
-       id="path9819"
-       d="M 59.66565,209.34688 59.33251,461.78956 29.25157,460.82618"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart-7);marker-end:url(#Arrow1Lend)" />
     <rect
        y="333.79312"
        x="-118.76093"
@@ -693,5 +653,39 @@
          x="-756.526"
          id="tspan3138"
          sodipodi:role="line">P: Products</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect6830"
+       width="8.5229244"
+       height="7.6257744"
+       x="54.683311"
+       y="348.57187" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect6832"
+       width="8.5229244"
+       height="7.6257744"
+       x="55.239067"
+       y="339.79312" />
+    <rect
+       y="351.79312"
+       x="55.239067"
+       height="7.6257744"
+       width="8.5229244"
+       id="rect6834"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <rect
+       y="333.79312"
+       x="55.239067"
+       height="7.6257744"
+       width="8.5229244"
+       id="rect6854"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <path
+       sodipodi:nodetypes="ccc"
+       inkscape:connector-curvature="0"
+       id="path9819"
+       d="M 59.66565,209.34688 59.33251,461.78956 29.25157,460.82618"
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart-7);marker-end:url(#Arrow1Lend)" />
   </g>
 </svg>
