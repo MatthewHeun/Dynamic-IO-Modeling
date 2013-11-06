@@ -57,14 +57,36 @@ outline the basic methodology.
 
 \section{Methodology}
 
-We are all familiar with the notion of accounting of material (and even non-material)
-entities. In order to be rigorous, the first step requires the definition of what we
-will be counting as well as the place (defined in both time and space) for which we will
-be counting. Engineers often call this a \emph{control volume}. For example, I may wish
-to account the number of apples in my home over a week-long period. In which case,
-I would count the number of apples that enter  and leave my home, as well as any apples
-that are eaten and, just in case I happen to have an apple tree, any apples that grow
-inside my home. Our accounting equation would look something like:
+% Everyone is familiar with the notion of accounting of material (and even non-material)
+% things. In order to be rigorous, the first step requires the definition of what we
+% will be counting as well as the place (defined in both time and space) for which we will
+% be counting. Engineers often call this a \emph{control volume}. For example, I may wish
+% to account the number of apples in my home over a week-long period. In which case,
+% I would count the number of apples that enter  and leave my home, as well as any apples
+% that are eaten and, just in case I happen to have an apple tree, any apples that grow
+% inside my home. Our accounting equation would look something like:
+
+This book is about counting both money and energy:
+both are important for the world in which we live.
+An entire academic discipline and industry is focused on counting money (accounting).
+Energy is an extremely important resource for the economies of the world, 
+And, we believe that money and energy interplay 
+in ways that shaped the past and will influence the future.
+In this section, we define rigorous ``counting'' methods that will be applied
+to money and energy throughout this book.
+
+Everyone counts material (and even non-material) things. 
+Rigorous counting requires precise definition of both 
+what we will be counting
+and the place (defined in both time and space) for which we will be counting. 
+Engineers often call this definition a \emph{control volume}. 
+For example, I may wish to count (or make an accounting of, or simply ``account'') 
+the number of apples in my home over a week-long period. 
+To do so, I would count the number of apples that enter and leave my home, 
+any apples that are eaten (consumed),
+and, in the event that I happen to have an apple tree, 
+any apples that I grow (produce). 
+A rigorous accounting equation for my apples would be:
 
 \begin{equation}
 	\Delta\textrm{apples} = \textrm{apples in} - \textrm{apples out} + \textrm{apples grown} - \textrm{apples eaten}
@@ -80,9 +102,9 @@ inside my home. Our accounting equation would look something like:
 	- \textrm{Consumption}
 \end{equation}
 
-Instead of looking at the total amount of apples over our week-long period, we may 
-instead be interested in the flow of apples, $A$, per unit time, e.g. apples per day, in
-which case our accounting equation would look like:
+Rather than looking at the total amount of apples over our week-long period, 
+we may consider the flow of apples ($A$), per unit time, e.g. apples per day, 
+in which case our accounting equation would look like:
 
 \begin{equation}
 	\frac{\mathrm{d}A}{\mathrm{d}t}
@@ -92,8 +114,9 @@ which case our accounting equation would look like:
 	- \dot{A}_{eaten}
 \end{equation}
 
-\noindent where the dot above the variable simply means the flow rate per unit time and
- $\frac{\mathrm{d}}{\mathrm{d}t}$ is the rate of change of accumulation.
+\noindent where the dot above the variable indicates the flow rate per unit time and
+$\frac{\mathrm{d}}{\mathrm{d}t}$ is the rate of change of the quantity
+being counted, or the accumulation rate.
 
 In the discussion that follows, we will be making great use of the First Law of 
 Thermodynamics, which is a fancy way of saying that, when we discuss \emph{mass}, i.e.
