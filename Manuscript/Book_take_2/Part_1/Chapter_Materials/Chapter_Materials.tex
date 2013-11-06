@@ -66,30 +66,34 @@ outline the basic methodology.
 % that are eaten and, just in case I happen to have an apple tree, any apples that grow
 % inside my home. Our accounting equation would look something like:
 
-This book is about counting both money and energy:
-both are important for the world in which we live.
-An entire academic discipline and industry is focused on counting money (accounting).
-Energy is an extremely important resource for the economies of the world, 
-And, we believe that money and energy interplay 
-in ways that shaped the past and will influence the future.
+This book is about counting with a focus on counting both money and energy.
+That an entire academic discipline and industry are focused on counting money (accounting)
+is evidence of its importance in today's economies.
+That energy is required to do \emph{anything} is evidence 
+of its importance in the economic activity of our daily lives.
+And, we believe that the interplay between money and energy
+has shaped the past and will continue to influence the future.
 In this section, we define rigorous ``counting'' methods that will be applied
 to money and energy throughout this book.
 
 Everyone counts material (and even non-material) things. 
 Rigorous counting requires precise definition of both 
 what we will be counting
-and the place (defined in both time and space) for which we will be counting. 
-Engineers often call this definition a \emph{control volume}. 
-For example, I may wish to count (or make an accounting of, or simply ``account'') 
+and the place (defined in both time and space) in which we will be counting. 
+Engineers often call this definition a ``control volume.'' 
+For example, I may wish to count (or ``make an accounting of,'' or simply ``account'') 
 the number of apples in my home over a week-long period. 
-To do so, I would count the number of apples that enter and leave my home, 
-any apples that are eaten (consumed),
-and, in the event that I happen to have an apple tree, 
-any apples that I grow (produce). 
-A rigorous accounting equation for my apples would be:
+To do so, I would count the apples that enter and leave my home, 
+apples that are eaten (consumed),
+and, if I own an apple tree, apples that I grow (produce). 
+A rigorous apple accounting equation is:
 
 \begin{equation}
-	\Delta\textrm{apples} = \textrm{apples in} - \textrm{apples out} + \textrm{apples grown} - \textrm{apples eaten}
+	\Delta\textrm{apples} 
+	= \textrm{apples in} 
+	- \textrm{apples out} 
+	+ \textrm{apples grown} 
+	- \textrm{apples eaten}.
 \end{equation}
 
 \noindent More generally, we may say:
@@ -99,14 +103,15 @@ A rigorous accounting equation for my apples would be:
 	= \textrm{Transfers in} 
 	- \textrm{Transfers out}
 	+ \textrm{Production}
-	- \textrm{Consumption}
+	- \textrm{Consumption}.
 \end{equation}
 
-Rather than looking at the total amount of apples over our week-long period, 
-we may consider the flow of apples ($A$), per unit time, e.g. apples per day, 
-in which case our accounting equation would look like:
+Rather than looking at the total amount of apples over a week-long period, 
+we may consider the flow of apples per unit time ($\dot{A}$), 
+e.g. in units of apples per day, 
+in which case our accounting equation would become:
 
-\begin{equation}
+\begin{equation} \label{eq:apple_rate_accounting}
 	\frac{\mathrm{d}A}{\mathrm{d}t}
 	= \dot{A}_{in}
 	- \dot{A}_{out}
@@ -115,58 +120,133 @@ in which case our accounting equation would look like:
 \end{equation}
 
 \noindent where the dot above the variable indicates the flow rate per unit time and
-$\frac{\mathrm{d}}{\mathrm{d}t}$ is the rate of change of the quantity
+the time derivative $\left( \frac{\mathrm{d}A}{\mathrm{d}t} \right)$ 
+is the rate of change of the quantity
 being counted, or the accumulation rate.
 
-In the discussion that follows, we will be making great use of the First Law of 
-Thermodynamics, which is a fancy way of saying that, when we discuss \emph{mass}, i.e.
-materials, and \emph{energy}, the First Law tells us that these entities can neither be
-created or destroyed. In other words, the last two terms of our accounting equation
-will always be equal to zero. We also distinguish between four different types of
-materials flowing into or out of a production sector: products ($\dot{P}$), resources ($\dot{R}$),
-short-lived goods ($\dot{S}$) and capital goods ($\dot{K}$), as shown in Figure
-\ref{fig:PERKS_materials}. 
+**** Auto industry example here? Perhaps steel? ****
 
-Resource materials ($\dot{R}$) always enter the sector on the left and comprise those materials that
-are destined to end up \emph{embodied} in the goods produced by the sector ($\dot{P}$), except
-for some proportion that are wasted and leave from the bottom of the sector and are
-returned to the biosphere. For example, sheet metal, rubber and glass (as well as
-many, many other materials) enter the automobile sector as resources and end up as part
-of the cars that are produced. Some fraction of these materials may not make it into the
-final product, such as trimming scrap from metal parts stamping, and may be either
-recycled internally, or sent to scrap. Resource materials are not be accumulated within
-a sector.
+Throughout this book, we will illustrate theoretical concepts with
+a running example of the auto industry. We choose the auto industry,
+because it remains a large portion of most industrialized economies, 
+because is very resource intensive,
+because it has been used in the literature (Reference Bullard and Herendeen here)
+to illustrate input-output accounting methods, 
+because its links with energy are obvious,
+because its health is sensitive to disruptions in energy supplies, and
+because it shows evidence of post-industrial decline (shrinking profit margins, etc.).
 
-Short-lived goods ($\dot{S}$) include those materials that are necessary for the production
-processes of a sector, but are neither accumulated within the sector, nor make it into
-the products themselves. They enter the sector from above and leave the sector from
-below and return to the biosphere. Examples of these short-lived flows include 
-energy resources needed to run the sector, including the contribution from labor, and
-any water used in processing. A number of material flows, such as production equipment,
-are necessary for the continued operation of a sector but are not counted as short-lived
-goods, since the processes are dependent upon the accumulation of these materials within
-the sector. Such flows are instead counted as capital goods ($\dot{K}$). These flows also enter from
-above, but are stored within the sector (represented by storage tanks) and leave the
-sector as capital depreciation from below to be returned to the biosphere. 
+If we want to account for steel in the auto industry, 
+we might write an equation like this:
 
+**** Steel equation for auto industry. ****
 
-All products ($\dot{P}$) leave the sector from the right. Some of this flow is returned to the 
-sector as self-consumption of either resources ($\dot{R}$), short-lived ($\dot{S}$) or capital goods ($\dot{K}$), the rest
-flows either to be used by other sectors within the economy, or flows to final demand. 
+**** Compare to apple equation. 
+Discuss how steel is neither created nor destroyed within the sector. ****
 
+**** Discuss the steel industry. 
+Show how stell is actually formed from other materials.
+Show that \emph{mass} is neither created nor destroyed, 
+but it may change form. ****
+
+**** Tie to the First Law below. ****
+
+In the discussion that follows, we will make use 
+of the First Law of Thermodynamics, 
+which says that \emph{mass}, i.e.
+materials, and \emph{energy}
+can neither be created nor destroyed. 
+An eaten apple is no longer an apple, 
+but wasted mass and energy are still mass and energy,
+even if they change form (apples to compost or 
+chemical potential energy to thermal energy).
+Thus, the apple accounting equation
+(Equation~\ref{eq:apple_rate_accounting}) can include
+terms for processes that create and destroy apples, 
+but mass and energy equations applied to 
+sectors of economies will \emph{not} include terms for the 
+production or destruction of materials and energy. 
+Rather, any addition of material or energy \emph{to} the economy
+or waste of material or energy \emph{from} the economy
+will occur as an interaction between the economy and the biosphere.
+
+**** I tried to clear up potential confusion in the paragraph above. 
+Apples can be eaten and rotted.
+However, mass and energy cannot. 
+I'm not entirely convinced that I succeeded. 
+If Mik wants to take another crack at this, 
+I'll be pleased. 
+Also: perhaps we should follow the apple example with 
+an auto sector example. 
+Thereafter, discuss generalities.
+Doing so might bring greater clarity to the consumption/production
+issues here.
+--Matt ****
+
+When applying accounting equations to economic sectors,
+we distinguish between four different types of
+materials flowing into or out of a production sector: 
+products ($\dot{P}$), 
+resources ($\dot{R}$),
+short-lived goods ($\dot{S}$),
+and capital goods ($\dot{K}$), 
+as shown in Figure \ref{fig:PERKS_materials}.
+
+Resource materials ($\dot{R}$) enter the sector on the left 
+and comprise those materials that are destined to be \emph{embodied} 
+in the goods produced by the sector ($\dot{P}$), 
+except for some proportion that are wasted.
+Wastes depart from the bottom of the sector and are
+returned to the biosphere. 
+For example, sheet metal, rubber, and glass
+(as well as many other materials) 
+enter the automobile sector as resources 
+and end up as material parts of the cars that are produced. 
+Some fraction of these resources ($\dot{R}$) may not make it into the final product, 
+such as trimming scrap from metal parts stamping, 
+and may be either recycled internally, 
+or wasted to the biosphere. 
+Resource materials are not be accumulated within a sector.
+
+Short-lived goods ($\dot{S}$) include those materials 
+that are necessary for the production processes of a sector, 
+but are neither accumulated within the sector, 
+nor destined to be materially part of the product of the sector. 
+They enter the sector from above and leave the sector from
+below and return to the biosphere. 
+Examples of these short-lived flows include energy resources needed to run the sector,
+including the contribution from labor, 
+and any water used by the sector. 
+
+A number of material flows, such as production equipment,
+are necessary for the continued operation of a sector 
+but are not counted as short-lived goods, 
+because the operation of the sector is dependent 
+upon the accumulation of these materials within the sector. 
+Such flows are counted as capital goods ($\dot{K}$).
+Capital flows also enter from above, 
+but are stored within the sector (represented by storage tanks) 
+and are returned to the biosphere as capital depreciation from below. 
+
+All products ($\dot{P}$) leave the right of the sector. 
+Some of this $\dot{P}$ flow is returned to the sector as self-consumption 
+counted as resources ($\dot{R}$), 
+short-lived ($\dot{S}$), or 
+capital goods ($\dot{K}$); 
+the remainder flows to other sectors within the economy or final demand. 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
-\caption{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the right and are embodied in products ($\dot{P}$) which leave from the left. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
+\caption{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the left and are embodied in products ($\dot{P}$) which leave from the right. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
 \label{fig:PERKS_materials}
 \end{figure}
+
 
 %%%%%%%%%% Materials: Example A %%%%%%%%%%
 \section{Example A: one sector economy}
 \label{sec:A_materials}
 %%%%%%%%%%
-
 
 Our first example looks at the case where all processes within the economy occur within
 one sector, we do not distinguish between production and consumption, as depicted in
