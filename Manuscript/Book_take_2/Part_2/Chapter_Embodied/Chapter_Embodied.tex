@@ -876,11 +876,11 @@ with depreciation terms to obtain
 
 \noindent and
 
-\begin{equation} \label{eq:C_embodied_energy_accounting_12_with_depreciation}
+\begin{equation} \label{eq:C_embodied_energy_accounting_123_with_depreciation}
 	\frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
 	= \sum\limits_{i=1}^n\dot{B}_{ij} 
 	- \dot{B}_{j}
-	- \gamma_{i} B_{i}
+	- \gamma_{j} B_{j}
 	+ \dot{Q}_{j0}
 \end{equation}
 
@@ -890,44 +890,44 @@ and \ref{eq:B_embodied_energy_accounting_12_with_depreciation},
 indicating that we have successfully generalized the embodied energy
 equations to an arbitrarily-large economy.
 
-**** Ended here. Need to do the verification with the sum equation. ****
-
 To verify the above derivation, 
 we sum 
-Equations~\ref{eq:C-embodied_acct_0} and \ref{eq:C-embodied_acct_123},
-recognize that $\dot{B}_{02} = 0$ and $\dot{B}_{03} = 0$, 
-and use the following identities:
+Equations~\ref{eq:C_embodied_energy_accounting_0_with_depreciation} and \ref{eq:C_embodied_energy_accounting_123_with_depreciation} 
+for sectors of the economy to obtain
 
-\begin{equation} \label{eq:C-B_sum_1_output}
-	\dot{B}_{1} 
-	= \dot{B}_{11} 
-	+ \dot{B}_{12} 
-	+ \dot{B}_{13},
+\begin{equation} \label{eq:C_big_sums}
+	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+	+ \sum\limits_{j=1}^n \frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
+	= \sum\limits_{i=1}^n \gamma_{i} B_{i}
+	- \sum\limits_{i=1}^n \dot{Q}_{i0}
+	+ \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{B}_{ij}
+	- \sum\limits_{j=1}^n \dot{B}_{j}
+	- \sum\limits_{j=1}^n \gamma_{j} B_{j}
+	+ \sum\limits_{j=1}^n \dot{Q}_{j0}.
 \end{equation}
 
-\begin{equation} \label{eq:C-B_sum_2_output}
-	\dot{B}_{2} 
-	= \dot{B}_{21} 
-	+ \dot{B}_{22} 
-	+ \dot{B}_{23},
+\noindent Using the identities
+
+\begin{equation} \label{eq:B_identity_1}
+	\dot{B}_{j}  
+	= \sum\limits_{k=1}^n \dot{B}_{jk}
 \end{equation}
 
 \noindent and
 
-\begin{equation} \label{eq:C-B_sum_3_output}
-	\dot{B}_{3} 
-	= \dot{B}_{31} 
-	+ \dot{B}_{32} 
-	+ \dot{B}_{33};
+\begin{equation} \label{eq:B_identity_2}
+	\sum\limits_{j=1}^n\dot{B}_{j}  
+	= \sum\limits_{j=1}^n \sum\limits_{k=1}^n \dot{B}_{jk}
+	= \sum\limits_{i=1}^n \sum\limits_{k=1}^n \dot{B}_{ik}
+	= \sum\limits_{i=1}^n \sum\limits_{j=1}^n \dot{B}_{ij}
+	= \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{B}_{ij},
 \end{equation}
 
-\noindent to obtain
+\noindent yields
 
 \begin{equation} \label{eq:C-B_sums_to_zero}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
+	+ \sum\limits_{j=1}^n \frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
 	= 0,
 \end{equation}
 
@@ -935,8 +935,6 @@ and use the following identities:
 (biosphere~(0), society~(1), energy sector~(2), 
 and goods and services sector~(3)) 
 remains constant with respect to time.
-
-**** Add a depreciation section. ****
 
 
 %%%%%%%%%% Embodied Energy: Auto industry example %%%%%%%%%%
