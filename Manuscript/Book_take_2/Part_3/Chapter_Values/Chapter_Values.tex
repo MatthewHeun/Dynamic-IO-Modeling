@@ -53,6 +53,9 @@ and final products within an economy.
 % There is significant debate on the relationship between currency and value. 
 % The meaning of currency\index{currency} is straightforward: currency is the 
 % monetary medium of exchange for goods and services. 
+% Furthermore, we can state that currency flows are equal in magnitude 
+% and opposite in direction 
+% to the value flows within an economy. 
 % The \emph{value} of goods and services is, however, 
 % fraught with complication.
 % 
@@ -246,22 +249,43 @@ use and wastes (i.e., measures impact of of economic activity on the biosphere).
 
 \end{outline}
 
-**** Remove $\dot{C}$ equations and figures from the following sections. ****
-
 
 %%%%%%%%%% Example A: single-sector economy %%%%%%%%%%
 \section{Example A: one sector economy}
 %%%%%%%%%%
 
-[NO VALUE OR CASH EXCHANGE BETWEEN SOCIETY AND NATURAL ENVIRONMENT]
+Figure~\ref{fig:A_value} shows flows of value in the single-sector economy.
+When considering flows of value, the economy is \emph{completely isolated}
+from the biosphere.
+The contrast between Figure~\ref{fig:A_value} and Figure~\ref{fig:A_energy}
+is striking. 
+Figure~\ref{fig:A_energy}'s picture of energy flows indicates a dependence
+upon the biosphere that is not reflected in Figure~\ref{fig:A_value}'s
+picture of value flows.
+The isloation of the value flows from the biosphere is a consequence
+of the subjective theory of value underlying modern economies.
+The biosphere is akin to a third party without a voice 
+in determining the value of a transaction:
+it is neither buyer nor seller.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/1_sector_value.pdf}
-\caption{Flows of value ($\dot{X}$) within a one-sector economy.}
+\caption{Flows of value ($\dot{X}$) for a one-sector economy.}
 \label{fig:A_value}
 \end{figure}
 
+An equation that describes the accumulation of value in Society (1) is
+
+\begin{equation} \label{eq:A_X_acct}
+	\frac{\mathrm{d}X_{1}}{\mathrm{d}t} 
+	= \dot{X}_{11} 
+	- \dot{X}_{1}.
+\end{equation}
+
+********** Is this right? The figure says $\dot{X}_{11} = \dot{X}_1$,
+but in that case, $\frac{\mathrm{d}X_1}{\mathrm{d}t} = 0$, too, and
+growth is impossible. *************
 
 
 %%%%%%%%%% Example B: two-sector economy %%%%%%%%%%
@@ -270,9 +294,7 @@ use and wastes (i.e., measures impact of of economic activity on the biosphere).
 
 Figure~\ref{fig:B_value} shows flows of value ($\dot{X}$) 
 within a two-sector economy. 
-Following the neoclassical interpreation of value, we note that
-value flows are equal in magnitude and opposite in direction 
-to the currency flows within an economy. 
+Again, we note the isloation of value from the biosphere.
 
 \begin{figure}[h!]
 \centering
@@ -305,14 +327,25 @@ the following equations:
 \section{Example C: three sector economy}
 %%%%%%%%%%
 
-[SOME TEXT HERE]
+Figure~\ref{fig:C_value} shows flows of value ($\dot{X}$) 
+within a three-sector economy. 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/3_sector_value.pdf}
-\caption{XXXX}
+\caption{Flows of value ($\dot{X}$) within a three-sector economy.}
 \label{fig:C_value}
 \end{figure}
+
+We can account for value flows in Example~C with the following equation:
+
+\begin{equation}
+	\frac{\mathrm{d}X_{j}}{\mathrm{d}t}
+	= \sum\limits_{i=1}^{n} \dot{X}_{ij}
+	- \dot{X}_{j},
+\end{equation}
+
+\noindent where $n$ is the number of sectors in the economy, and $j \in (1, n)$.
 
 
 %%%%%%%%%% Value: Auto industry example %%%%%%%%%%
