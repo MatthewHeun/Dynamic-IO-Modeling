@@ -66,6 +66,11 @@ outline the basic methodology.
 % that are eaten and, just in case I happen to have an apple tree, any apples that grow
 % inside my home. Our accounting equation would look something like:
 
+**** The idea that we are "counting money" does not seem exactly 
+right to me. Isn't it that we are accounting for value and energy flows? 
+Later on we will use currency flows to approximate the value flows? BRH ****
+
+
 This book is about counting with a focus on counting both money and energy.
 That an entire academic discipline and industry are focused on counting money (accounting)
 is evidence of its importance in today's economies.
@@ -80,12 +85,15 @@ Everyone counts material (and even non-material) things.
 Rigorous counting requires precise definition of both 
 what we will be counting
 and the place (defined in both time and space) in which we will be counting. 
-Engineers often call this definition a ``control volume.'' 
-For example, I may wish to count (or ``make an accounting of,'' or simply ``account'') 
-the number of apples in my home over a week-long period. 
-To do so, I would count the apples that enter and leave my home, 
+Engineers often call this definition a ``control volume.'' Another way to think of
+control volume is drawing a boundary. What gets counted is 
+what passes through the boundary.
+For example, I may wish to count (or ``make an accounting of") 
+what happens to the stock  of apples in my home over a week-long period. 
+I've drawn a boundary around my home and around a week-long time period.
+I  count the apples that enter and leave my home, 
 apples that are eaten (consumed),
-and, if I own an apple tree, apples that I grow (produce). 
+and, if I own an apple tree, apples that I grow (produce) during a week. 
 A rigorous apple accounting equation is:
 
 \begin{equation}
@@ -113,8 +121,10 @@ We are doing material accounting in units of mass.
 We will later do material accounting in units of energy.
 Even later, we will do material accouting in units of dollars. ****
 
-Rather than looking at the total amount of apples over a week-long period, 
-we may consider the flow of apples per unit time ($\dot{A}$), 
+Once I account for how much the stock of apples changes in a weekly period,
+I can reframe my question to ask, "how fast does the stock of
+apples change." That is, I can examine the rate of
+change of the apple stock per time unit in relation to the flow of apples per time unit ($\dot{A}$), 
 e.g. in units of apples per day, 
 in which case our accounting equation would become:
 
@@ -128,8 +138,8 @@ in which case our accounting equation would become:
 
 \noindent where the dot above the variable indicates the flow rate per unit time and
 the time derivative $\left( \frac{\mathrm{d}A}{\mathrm{d}t} \right)$ 
-is the rate of change of the quantity
-being counted, or the accumulation rate.
+is the rate of change of the stock per time unit, or more simply,
+ the accumulation rate.
 
 **** Auto industry example here? Perhaps steel? ****
 
@@ -190,6 +200,14 @@ Doing so might bring greater clarity to the consumption/production
 issues here.
 --Matt ****
 
+***BRH says, This now makes sense to me. It think 
+the paragraph above is clear. I retract what
+I said earlier in our meeting...that is, I would not
+add an equation that illustrates the difference between
+accounting for apples vs. accounting for 
+mass and energy. AFter adding in the auto or steel industry
+examples we can double check, though. ***
+
 When applying accounting equations to economic sectors,
 we distinguish between four different types of
 materials flowing into or out of a production sector: 
@@ -198,6 +216,13 @@ resources ($\dot{R}$),
 short-lived goods ($\dot{S}$),
 and capital goods ($\dot{K}$), 
 as shown in Figure \ref{fig:PERKS_materials}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
+\caption{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the left and are embodied in products ($\dot{P}$) which leave from the right. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
+\label{fig:PERKS_materials}
+\end{figure}
 
 Resource materials ($\dot{R}$) enter the sector on the left 
 and comprise those materials that are destined to be \emph{embodied} 
@@ -240,14 +265,10 @@ Some of this $\dot{P}$ flow is returned to the sector as self-consumption
 counted as resources ($\dot{R}$), 
 short-lived ($\dot{S}$), or 
 capital goods ($\dot{K}$); 
-the remainder flows to other sectors within the economy or final demand. 
+the remainder flows to other sectors within the economy or final demand. ****BRH says, we should say something
+about Energy here.****
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
-\caption{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the left and are embodied in products ($\dot{P}$) which leave from the right. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
-\label{fig:PERKS_materials}
-\end{figure}
+
 
 
 %%%%%%%%%% Materials: Example A %%%%%%%%%%
@@ -257,15 +278,26 @@ the remainder flows to other sectors within the economy or final demand.
 
 Our first example looks at the case where all processes within the economy occur within
 one sector, we do not distinguish between production and consumption, as depicted in
-Figure \ref{fig:A_materials}. Resources ($\dot{R}$) and short-lived materials ($\dot{S}$) flow into the economy (1) from the bioshpere (2). These materials are processed within the economy into
+Figure \ref{fig:A_materials}. 
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/1_sector_materials.pdf}
+\caption{XXXX}
+\label{fig:A_materials}
+\end{figure}
+
+Resources ($\dot{R}$) and short-lived materials ($\dot{S}$) flow into the economy (1) from the biosphere (0). These materials are processed within the economy into
 capital goods ($\dot{K}$) which are able to be accumulated. Waste resources and used short-lived
 materials are returned to the biosphere without accumulating. Capital goods are returned
 to the biosphere upon depreciation.
 
-Drawing control volumes around both the biosphere and the economy, we can consruct
+Drawing control volumes around both the biosphere (0) and the economy (1), we can consruct
 our material accounting equations, such that:
 
-\begin{align}\label{eq:A_CV_0_to_1}
+\begin{align}
+\label{eq:A_CV_0_to_1}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
@@ -274,6 +306,7 @@ our material accounting equations, such that:
 	+	\dot{K}_{10}											
 	-	\dot{R}_{0}											
 	-	\dot{S}_{0}								\\
+\label{eq:A_CV_0_to_1a}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
@@ -299,7 +332,12 @@ our material accounting equations, such that:
 	\dot{S}_{11} = \dot{S}_{1},
 \end{equation}
 
-\noindent such that our material accumulation equation \ref{eq:A_CV_0_to_1} becomes:
+\noindent such that our material accumulation ****BRH says, shouldn't this word be
+"accounting" -- not accumulation -- given that is what we
+called it in the sentence introducing eq. 2.4. Or, should we change "accounting" above to accumulation?
+Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
+label for eqn. 2.5**** equations \ref{eq:A_CV_0_to_1} and \ref{eq:A_CV_0_to_1a} 
+become:
 
 \begin{align}\label{eq:A_CV_0_to_1_b}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
@@ -318,24 +356,31 @@ our material accounting equations, such that:
 	- \dot{K}_{10}											
 \end{align}
 
+\noindent Because the only "capital" that accumulates in the biosphere is that which is a waste flow (capital depreciation)
+from the economy, e.g. worn-out machines in the scrap yard, we may say that:
+
 \begin{equation} \label{eq:A_K0_balance}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}		
 	= \dot{K}_{10}
 \end{equation}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/1_sector_materials.pdf}
-\caption{XXXX}
-\label{fig:A_materials}
-\end{figure}
 
 %%%%%%%%%% Materials: Example B %%%%%%%%%%
+\newpage
 \section{Example B: two sector economy}
 \label{sec:B_materials}
 %%%%%%%%%%
 
-In our second example B, we split society into two sectors: production and consumption as depicted in Figure \ref{fig:B_materials}. Sector 2 produces goods and services for consumption in society (1). Again, setting control volumes around the biosphere and our two sectors, our accumulation equation is now written:
+In our second example B, we split society into two sectors: production and consumption as depicted in Figure \ref{fig:B_materials}. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/2_sector_materials.pdf}
+\caption{XXXX}
+\label{fig:B_materials}
+\end{figure}
+
+Sector 2 produces goods and services for consumption in society (1). Again, setting control volumes around the biosphere and our two sectors, our accumulation equations are now written:
 
 \begin{align} \label{eq:B_CV_0_to_2}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
@@ -457,20 +502,22 @@ equations may now be written:
 
 
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/2_sector_materials.pdf}
-\caption{XXXX}
-\label{fig:B_materials}
-\end{figure}
+
 
 %%%%%%%%%% Materials: Example C %%%%%%%%%%
+\newpage
 \section{Example C: three sector economy}
 \label{sec:C_materials}
 %%%%%%%%%%
 
 In example C, we differentiate between two production sectors, one produces energy and one produces other goods and services.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/3_sector_materials.pdf}
+\caption{XXXX}
+\label{fig:C_materials}
+\end{figure}
 
 \begin{equation} \label{eq:C-CV_R_dot_0a}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
@@ -605,12 +652,7 @@ In example C, we differentiate between two production sectors, one produces ener
  \end{equation}
 
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/3_sector_materials.pdf}
-\caption{XXXX}
-\label{fig:C_materials}
-\end{figure}
+
 
 \begin{figure}[h!]
 \centering
@@ -650,11 +692,11 @@ In example C, we differentiate between two production sectors, one produces ener
 %
 %% however, for multiline equations we recommend to use the \verb|eqnarray|
 %% environment\footnote{In physics texts please activate the class option \texttt{vecphys} to depict your vectors in \textbf{\itshape boldface-italic} type - as is customary for a wide range of physical jects.}.
-%% \begin{eqnarray}
-%% a \times b = c \nonumber\\
+%%\begin{eqnarray}
+%%a \times b = c \nonumber\\
 %% \vec{a} \cdot \vec{b}=\vec{c}
 %% \label{eq:01}
-%% \end{eqnarray}
+%%\end{eqnarray}
 
 %% \section{section Heading}
 %% \label{sec:2}
