@@ -36,7 +36,7 @@ we noted that energy is the currency of Thermodynamics,
 and we developed accounting equations for flows of 
 direct ($\dot{E}$) and embodied ($\dot{B}$) energy through an economy.
 In this chapter, we develop a framework for accounting
-value flows ($\dot{X}$) through economies.
+value flows\index{economic value!flow of} ($\dot{X}$) through economies.
 Accounting flows of value is a necessary step along
 the path to developing equations (in Chapter~\ref{chap:intensity}) 
 that describe the energy intensity of intermediate
@@ -45,6 +45,7 @@ and final products within an economy.
 
 %%%%%%%%%% Methodology %%%%%%%%%%
 \section{Methodology}
+\label{sec:Value_Methodology}
 %%%%%%%%%%
 
 % 
@@ -184,7 +185,8 @@ and final products within an economy.
 
 	\2 econmists rejected energy analysis for two reasons: 
 		\3 economists thought that energy analylsis offered no addition useful information
-		\3 economists rejected intrinsic theory of value promomted by energy analysts (Costanza, 1980) because it was too reductive and narrow.
+		\3 economists rejected intrinsic theory of value\index{theory of value!intrinsic}
+		promomted by energy analysts (Costanza, 1980) because it was too reductive and narrow.
 		
 	\2 we agree that an energy theory of value is too reductive and narrow.
 	
@@ -192,7 +194,8 @@ and final products within an economy.
 	
 	\2 The baby was thrown out with the bathwater.
 
-\1 what we are doing: using subjective theory of value combined with a technique 
+\1 what we are doing: using subjective 
+theory of value\index{theory of value!subjective} combined with a technique 
 that quantifies an intrinsic measure of economic activity in terms of resource
 use and wastes (i.e., measures impact of of economic activity on the biosphere).
 
@@ -255,16 +258,26 @@ use and wastes (i.e., measures impact of of economic activity on the biosphere).
 %%%%%%%%%%
 
 Figure~\ref{fig:A_value} shows flows of value in the single-sector economy.
-When considering flows of value, the economy is \emph{completely isolated}
-from the biosphere.
+The economy is \emph{completely isolated} from the biosphere,
+both in terms of material inputs and wastes.
+In other words, the value flows of an economy are \emph{independent from}
+material inputs and wastes.
+Value flows are independent from material inputs
+because raw materials have no economic value 
+until they have entered the economy.
+Value flows are independent from wastes
+because wastes, by definition, have no economic value 
+when they leave the economy.
+
 The contrast between Figure~\ref{fig:A_value} and Figure~\ref{fig:A_energy}
-is striking. 
-Figure~\ref{fig:A_energy}'s picture of energy flows indicates a dependence
-upon the biosphere that is not reflected in Figure~\ref{fig:A_value}'s
-picture of value flows.
+is striking. **** Also refer to one of the material diagrams here? ****
+The picture of energy flows in Figure~\ref{fig:A_energy} indicates a dependence
+upon the biosphere that is not reflected in the picture of
+value flows in Figure~\ref{fig:A_value}.
 The isloation of the value flows from the biosphere is a consequence
-of the subjective theory of value underlying modern economies.
-The biosphere is akin to a third party without a voice 
+of the subjective theory of value\index{theory of value!subjective} 
+underlying modern economies.
+The biosphere is akin to a third party with no voice 
 in determining the value of a transaction:
 it is neither buyer nor seller. 
 ********** Repeat Figure~\ref{fig:A_energy} here? *********
@@ -272,34 +285,108 @@ it is neither buyer nor seller.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/1_sector_value.pdf}
-\caption{Flows of value ($\dot{X}$) for a one-sector economy.}
-\label{fig:A_value}
+\caption{Flows of value ($\dot{X}$) for a one-sector economy. 
+**** Mik: please add an $\dot{X}_{gen}$ term \emph{inside} the sector.}
+\label{fig:A_value} 
 \end{figure}
 
-An equation that describes the accumulation of value in Society (1) is
+Equation~\ref{eq:A_X_acct_1} describes the accumulation 
+of value\index{economic value!accumulation}
+($X$) in Society (1).
 
-\begin{equation} \label{eq:A_X_acct}
+\begin{equation} \label{eq:A_X_acct_1}
 	\frac{\mathrm{d}X_{1}}{\mathrm{d}t} 
 	= \dot{X}_{11} 
-	- \dot{X}_{1}.
+	- \dot{X}_{1}
+	+ \dot{X}_{gen}.
 \end{equation}
 
-********** Is this right? The figure says $\dot{X}_{11} = \dot{X}_1$,
-but in that case, $\frac{\mathrm{d}X_1}{\mathrm{d}t} = 0$, too, and
-growth is impossible. 
+The following subsections discuss the terms in Equation~\ref{eq:A_X_acct_1}.
 
-If you sell a good for more than you paid for its inputs, 
-you have created value and sold it away. 
-You now have more currency, and therefore, 
-you have a claim on value from the economy.
 
-*************
+%+++++++++ Example A: value generation ++++++++++
+\subsection{Value Generation ($\dot{X}_{gen}$)}
+%+++++++++
 
-**** Note: $\dot{X}_1$ is GDP. What is $X_1$? 
-$X_1$ is the value of everything
-that has accumulated in society. Is there an 
-$\dot{X}_{gen}$ term? 
-Does it represent value added? ****
+\noindent In Equation~\ref{eq:A_X_acct_1}, 
+the $\dot{X}_{gen}$ term is akin to growing apples: 
+value is generated, seemingly out of nothing
+(see Section~\ref{sec:Materials_Methodology}).
+The factors that lead to value generation\index{economic value!generation of} 
+($\dot{X}_{gen}$) include:
+
+\begin{itemize}
+	\item{solar energy\index{solar energy} \index{energy!solar|see{solar energy}}
+	input to the economy,
+	as in the example of growing apples,}
+	\item{extraction of resources (e.g., water\index{water}, minerals\index{minerals}, 
+	and fossil fuels\index{fossil fuels}) from the biosphere, and}
+	\item{human ingenuity\index{ingenuity!human}, which leads to
+	increasingly efficient and novel uses of factors of production
+	(capital stock, labor, and energy)
+	to create interesting and useful products and services.}
+\end{itemize}
+
+The above factors indicate that the process of value generation
+has both direct and indirect impacts on the biosphere.
+The direct impacts are obvious: 
+extraction of non-renewable resources from the biosphere 
+represents unsustainable overuse of natural capital.
+The indirect impacts are less obvious: 
+human ingenuity can lead to more wealth,
+leading to higher demand rates for goods and services, 
+whose production requires ever-increasing rates of natural resource extraction.
+
+**** Is this right? ****
+
+$\dot{X}_{gen}$ is accounted as ``value added'' in the BEA tables.
+**** Becky: is this correct? Or, is ``value added'' only appropriate when 
+looking at a firm rather than the entire economy? ****
+
+
+
+%+++++++++ Example A: Economic Transactions ++++++++++
+\subsection{Economic Transactions}
+%+++++++++
+
+The returning arrow in Figure~\ref{fig:A_value} 
+represents transactions between 
+\begin{itemize}
+	\item{buyers (who receive things of value, $\dot{X}_{11}$,
+	in exchange for currency, $\dot{X}_{1}$), and}
+	\item{sellers (who give up things of value, $\dot{X}_{1}$,
+	in exchange for currency, $\dot{X}_{11}$).}
+\end{itemize}
+
+The subjective theory of value\index{theory of value!subjective}
+(Section~\ref{sec:Value_Methodology})
+posits that buyers and sellers agree on value at the 
+time of the transaction.
+Thus, $\dot{X}_{1} = \dot{X}_{11}$, and Equation~\ref{eq:A_X_acct_1}
+simplifies to
+
+\begin{equation} \label{eq:A_X_acct_2}	
+	\frac{\mathrm{d}X_{1}}{\mathrm{d}t}	
+	= \dot{X}_{gen},
+\end{equation}
+
+\noindent which indicates that value accumulates in the economy
+$\left( \frac{\mathrm{d}X_{1}}{\mathrm{d}t} \right)$
+due to value generation processes ($\dot{X}_{gen}$).
+
+
+%+++++++++ Example A: GDP and Value Add ++++++++++
+\subsection{GDP, Value, and Value Add}
+%+++++++++
+
+If Society (1) in Figure~\ref{fig:A_value} represents 
+the economy of an entire country, 
+$\dot{X}_{1}$ is its gross domestic product (GDP)\index{gross domestic product}
+in units of \$/year.
+The stock of value, $X_1$, is the total value of everything that 
+has accumulated in society.
+
+**** Becky: anything to add to the above sections? ****
 
 
 %%%%%%%%%% Example B: two-sector economy %%%%%%%%%%
@@ -335,6 +422,15 @@ the following equations:
 	+ \dot{X}_{22}
 	- \dot{X}_{2}.
 \end{equation}
+
+**********
+If you sell a good for more than you paid for its inputs, 
+you have created value and sold it away. 
+You now have more currency, and therefore, 
+you have a claim on value from the economy.
+*************
+
+
 
 
 %%%%%%%%%% Example C: three-sector economy %%%%%%%%%%
