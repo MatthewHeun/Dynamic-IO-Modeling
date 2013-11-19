@@ -38,18 +38,18 @@ cd Appendix_Proof_2;    rm -f *.aux; cd ..
 # We'll use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
-# Make the table of contents
-
 # Make the index
-makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
+makeindex  Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
 # Make the nomenclature section
-makeindex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
+makeindex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
 
 # Make the bibliobraphy
 bibtex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
 
 # Run again to include all the index, toc, and nomenclature information
+# Need to run 3 times to get index and nomenclature to appear.
+pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
