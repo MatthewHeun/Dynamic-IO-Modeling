@@ -25,6 +25,7 @@
 \usepackage{natbib}
 \usepackage{chapterbib}
 \usepackage{makeidx}         % allows index generation
+\usepackage{nomencl}         % allows nomenclature generation
 \usepackage{graphicx}        % standard LaTeX graphics tool
                              % when including figure files
 \usepackage{multicol}        % used for the two-column index
@@ -48,6 +49,7 @@
 \makeindex             % used for the subject index
                        % please use the style svind.ist with
                        % your makeindex program
+\makenomenclature      % generates the nomenclature table
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -66,6 +68,8 @@
 %\include{acknow}
 
 \tableofcontents
+
+\printnomenclature   % Put the nomenclature section here.
 
 %\include{acronym}
 

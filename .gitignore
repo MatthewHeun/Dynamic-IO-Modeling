@@ -12,6 +12,7 @@
 *.pdfsync
 *.bbl
 *.blg
+*.nlo
 
 #
 # Output .pdf files don't need to be updated in the repository
