@@ -22,6 +22,8 @@ rm -f *.nls
 rm -f *.pdf
 rm -f *.synctex.gz
 rm -f *.toc
+rm -f *.lof
+rm -f *.lot
 
 cd Part_0; cd Chapter_Introduction; rm -f *.aux; cd ..; cd ..
 cd Part_1; cd Chapter_Materials;    rm -f *.aux; cd ..; cd ..
@@ -39,7 +41,7 @@ cd Appendix_Proof_2;    rm -f *.aux; cd ..
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
 # Make the index
-makeindex  Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+makeindex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
 # Make the nomenclature section
 makeindex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
