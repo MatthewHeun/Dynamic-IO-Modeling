@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -145,7 +145,7 @@
              y="596.23132"
              x="-619.69458"
              id="tspan3927"
-             sodipodi:role="line">EMISSION</tspan></text>
+             sodipodi:role="line">WASTE</tspan></text>
       </g>
       <g
          id="g3948">
