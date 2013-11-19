@@ -6,19 +6,34 @@
 # This script does multiple passes to capture all
 # dependencies.
 
+# Invoke the script by cd'ing into the directory that contains this file.
+# Then, type "./typeset.bash"
+
 # Ensure a fresh build by deleting all auxiliary files
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.bbl
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.blg
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.idx
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.ilg
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.ind
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.log
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.synctex.gz
-rm -f Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.toc
+rm -f *.aux
+rm -f *.bbl
+rm -f *.blg
+rm -f *.idx
+rm -f *.ilg
+rm -f *.ind
+rm -f *.log
+rm -f *.nlo
+rm -f *.nls
+rm -f *.pdf
+rm -f *.synctex.gz
+rm -f *.toc
+
+cd Part_0; cd Chapter_Introduction; rm -f *.aux; cd ..; cd ..
+cd Part_1; cd Chapter_Materials;    rm -f *.aux; cd ..; cd ..
+cd Part_2; cd Chapter_Energy;       rm -f *.aux; cd ..; cd ..
+cd Part_2; cd Chapter_Embodied;     rm -f *.aux; cd ..; cd ..
+cd Part_3; cd Chapter_Values;       rm -f *.aux; cd ..; cd ..
+cd Part_3; cd Chapter_Intensity;    rm -f *.aux; cd ..; cd ..
+cd Part_4; cd Chapter_Implications; rm -f *.aux; cd ..; cd ..
+# Add Chapter 5 stuff here.
+cd Appendix_Derivation; rm -f *.aux; cd ..
+cd Appendix_Proof_1;    rm -f *.aux; cd ..
+cd Appendix_Proof_2;    rm -f *.aux; cd ..
 
 # We'll use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
