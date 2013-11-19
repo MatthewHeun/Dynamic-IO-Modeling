@@ -286,7 +286,7 @@ it is neither buyer nor seller.
 \centering
 \includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/1_sector_value.pdf}
 \caption{Flows of value ($\dot{X}$) for a one-sector economy. 
-**** Mik: please add an $\dot{X}_{gen}$ term \emph{inside} the sector. ****}
+**** Mik: please add an $\dot{X}_{gen}$ and destruction terms \emph{inside} the sector. ****}
 \label{fig:A_value} 
 \end{figure}
 
@@ -298,7 +298,8 @@ of value\index{economic value!accumulation}
 	\frac{\mathrm{d}X_{1}}{\mathrm{d}t} 
 	= \dot{X}_{11} 
 	- \dot{X}_{1}
-	+ \dot{X}_{gen}.
+	+ \dot{X}_{gen}
+	- \dot{X}_{dest}.
 \end{equation}
 
 The following subsections discuss the terms in Equation~\ref{eq:A_X_acct_1}.
@@ -309,7 +310,7 @@ The following subsections discuss the terms in Equation~\ref{eq:A_X_acct_1}.
 %+++++++++
 
 \noindent In Equation~\ref{eq:A_X_acct_1}, 
-the $\dot{X}_{gen}$ term is akin to growing apples: 
+the value generation term ($\dot{X}_{gen}$) is akin to growing apples: 
 value is generated, seemingly out of nothing
 (see Section~\ref{sec:Materials_Methodology}).
 The factors that lead to value generation\index{economic value!generation of} 
@@ -339,12 +340,33 @@ human ingenuity can lead to more wealth,
 leading to higher demand rates for goods and services, 
 whose production requires ever-increasing rates of natural resource extraction.
 
-**** Is this next sentence right? ****
+$\dot{X}_{gen}$ is accounted as ``value added'' to an industry in the BEA tables.
+**** Becky: is this correct? 
+Becky: look at the BEA tables' definition of ``value added'' to 
+see if there is another sentence that can be added for clarification. ****
 
-$\dot{X}_{gen}$ is accounted as ``value added'' in the BEA tables.
-**** Becky: is this correct? Or, is ``value added'' only appropriate when 
-looking at a firm rather than the entire economy? ****
 
+%+++++++++ Example A: value destruction ++++++++++
+\subsection{Value Destruction ($\dot{X}_{dest}$)}
+%+++++++++
+
+\noindent In Equation~\ref{eq:A_X_acct_1}, 
+the value destruction term ($\dot{X}_{dest}$) is akin to consuming apples: 
+value is destroyed by a some process that consumes, or otherwise
+renders unusable, previously-valuable things in the economy
+(see Section~\ref{sec:Materials_Methodology}).
+The factors that lead to value destruction\index{economic value!destruction of} 
+($\dot{X}_{dest}$) include:
+
+\begin{itemize}
+	\item{depreciation, usually associated with disposal of 
+	materials and equipment to the biosphere at end of life and}
+	\item{natural disasters such as hurricanes and typhoons
+	that destroy equipment and property.}
+\end{itemize}
+
+$\dot{X}_{dest}$ is accounted as **** what **** to an industry in the BEA tables.
+**** Becky: What do we write here? ****
 
 
 %+++++++++ Example A: Economic Transactions ++++++++++
@@ -355,9 +377,9 @@ The returning arrow in Figure~\ref{fig:A_value}
 represents transactions between 
 \begin{itemize}
 	\item{buyers (who receive things of value, $\dot{X}_{11}$,
-	in exchange for currency, $\dot{X}_{1}$), and}
+	in exchange for currency), and}
 	\item{sellers (who give up things of value, $\dot{X}_{1}$,
-	in exchange for currency, $\dot{X}_{11}$).}
+	in exchange for currency).}
 \end{itemize}
 
 The subjective theory of value\index{theory of value!subjective}
