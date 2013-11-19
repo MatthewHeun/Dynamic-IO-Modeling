@@ -41,10 +41,10 @@ cd Appendix_Proof_2;    rm -f *.aux; cd ..
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
 # Make the index
-makeindex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
 # Make the nomenclature section
-makeindex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
+makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
 
 # Make the bibliobraphy
 bibtex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
