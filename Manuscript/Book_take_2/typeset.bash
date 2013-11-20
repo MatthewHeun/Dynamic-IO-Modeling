@@ -9,7 +9,7 @@
 # Invoke the script by cd'ing into the directory that contains this file.
 # Then, type "./typeset.bash"
 
-# Ensure a fresh build by deleting all auxiliary files
+Ensure a fresh build by deleting all auxiliary files
 rm -f *.aux
 rm -f *.bbl
 rm -f *.blg
@@ -32,7 +32,7 @@ cd Part_2; cd Chapter_Embodied;     rm -f *.aux; cd ..; cd ..
 cd Part_3; cd Chapter_Values;       rm -f *.aux; cd ..; cd ..
 cd Part_3; cd Chapter_Intensity;    rm -f *.aux; cd ..; cd ..
 cd Part_4; cd Chapter_Implications; rm -f *.aux; cd ..; cd ..
-# Add Chapter 5 stuff here.
+# Add Chapter 5 stuff here, when we make the chapter.
 cd Appendix_Derivation; rm -f *.aux; cd ..
 cd Appendix_Proof_1;    rm -f *.aux; cd ..
 cd Appendix_Proof_2;    rm -f *.aux; cd ..
@@ -41,12 +41,16 @@ cd Appendix_Proof_2;    rm -f *.aux; cd ..
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
-# Make the index and nomenclature sections -- twice, not sure why!
+# Make the index section -- twice, not sure why!
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
-makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+
+# Make the nomenclature section -- twice, not sure why!
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
+pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
+makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
+
 
 # Make the bibliobraphy
 bibtex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
