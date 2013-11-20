@@ -85,7 +85,7 @@ outline the basic methodology.
 % that are eaten and, just in case I happen to have an apple tree, any apples that grow
 % inside my home. Our accounting equation would look something like:
 
-**** The idea that we are "counting money" does not seem exactly 
+**** The idea that we are ``counting money'' does not seem exactly 
 right to me. Isn't it that we are accounting for value and energy flows? 
 Later on we will use currency flows to approximate the value flows? BRH ****
 
@@ -136,7 +136,7 @@ A rigorous apple accounting equation is:
 Once I account for how much the stock of apples changes in a weekly period,
 I can reframe my question to ask, "how fast does the stock of
 apples change." That is, I can examine the rate of
-change of the apple stock per time unit in relation to the flow of apples per time unit ($\dot{a}$), 
+change of the apple stock per time unit in relation to the flow of apples per time unit ($\dot{a}$)\nomenclature[a]{$\dot{a}$}{rate of apples [apples/time]}, 
 e.g. in units of apples per day, 
 in which case our accounting equation would become:
 
@@ -147,6 +147,8 @@ in which case our accounting equation would become:
 	+ \dot{a}_{grown}
 	- \dot{a}_{eaten}
 \end{equation}
+\nomenclature[a]{$a$}{stock of apples [apples]}
+\nomenclature[t]{$t$}{time [s]}
 
 \noindent where the dot above the variable indicates the flow rate per unit time and
 the time derivative $\left( \frac{\mathrm{d}a}{\mathrm{d}t} \right)$ 
@@ -194,14 +196,16 @@ we might write an equation like this:
 
 Note that the production and consumption terms are zero
 since steel is not created or destroyed within the automobile
-sector. Tracking the rate flows of steel, $\dot{s}$, we would write the following 
-equation:
+sector. Tracking the rate flows of steel, 
+$\dot{s}$\nomenclature[s]{$\dot{s}$}{steel flow rate [kg/s]},
+we would write the following equation:
 
 \begin{equation}
 	\frac{\mathrm{d}s}{\mathrm{d}t}
 	= \dot{s}_{in}
 	- \dot{s}_{out}
 \end{equation}
+\nomenclature[s]{$s$}{stock of steel [kg]}
 
 Again, the last two terms are zero. This is in direct contrast with the apple 
 accounting equation outlined in equation \ref{eq:apple_rate_accounting}. Despite 
