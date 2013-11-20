@@ -32,7 +32,7 @@ cd Part_2; cd Chapter_Embodied;     rm -f *.aux; cd ..; cd ..
 cd Part_3; cd Chapter_Values;       rm -f *.aux; cd ..; cd ..
 cd Part_3; cd Chapter_Intensity;    rm -f *.aux; cd ..; cd ..
 cd Part_4; cd Chapter_Implications; rm -f *.aux; cd ..; cd ..
-# Add Chapter 5 stuff here, when we make the chapter.
+# Delete Chapter 5 .aux files here, when we make the chapter.
 cd Appendix_Derivation; rm -f *.aux; cd ..
 cd Appendix_Proof_1;    rm -f *.aux; cd ..
 cd Appendix_Proof_2;    rm -f *.aux; cd ..
@@ -45,12 +45,13 @@ pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_model
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
 # Make the nomenclature section -- twice, not sure why!
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
-
+pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
 # Make the bibliobraphy
 bibtex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
