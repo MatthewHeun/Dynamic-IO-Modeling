@@ -27,6 +27,9 @@ this idea further by observing the interchange of materials \emph{within}
 an economy, as well as exchanges of materials between an economy and 
 surrounding environment---the biosphere. 
 
+% [THE FOLLOWING PARAGRAPH CONNECTS MORE WITH THE METABOLISM METAPHOR,
+% NEED TO DECIDE BETWEEN THAT AND THE ONE AFTER OR MAYBE MIX THE TWO]
+
 % Just as a living organism takes
 % in food, water and air, so too an
 % economy must take in raw materials from its environment. To a large extent,
@@ -177,7 +180,7 @@ hydrogen as carbohydrates make up most of the remaining mass)---will not be
 consumed. They will instead be subsumed within my body, or leave my house as
 waste or via the air.
 
-**** Auto industry example here? Perhaps steel? ****
+%**** Auto industry example here? Perhaps steel? ****
 
 Throughout this book, we will illustrate theoretical concepts with
 a running example of the auto industry. We choose the auto industry,
@@ -191,8 +194,6 @@ because it shows evidence of post-industrial decline (shrinking profit margins, 
 
 If we want to account for steel in the auto industry, 
 we might write an equation like this:
-% I changed this to iron, since steel is produced within some
-% sectors of the economy
 
 \begin{equation}
 	\Delta\textrm{steel} 
@@ -230,12 +231,18 @@ with these nuclear plants is negligible compared with total materials flows, we
 shall assume that the law holds.} 
 
 
+
 % **** Discuss the steel industry. 
 % Show how steel is actually formed from other materials.
 % Show that \emph{mass} is neither created nor destroyed, 
 % but it may change form. ****
 
-This conservation of mass is a statement of the First Law of Thermodynamics, 
+Indeed, within the car industry, inputs of steel, glass, plastic, rubber, etc. are used
+to produce cars, such that cars are created within the automobile industry. Were we to
+have an accounting equation tracking cars within the economy, we would have to 
+have terms in the equation for production and destruction of cars. Again, focussing on
+mass flows of the chemical elements avoids this necessity, since mass is \emph{conserved} in
+physical processes. This conservation of mass is a statement of the First Law of Thermodynamics, 
 which says that \emph{mass}, i.e. materials, and \emph{energy}
 can neither be created nor destroyed. 
 
@@ -365,27 +372,35 @@ not} travel through the electricity transmission lines.
 %%%%%%%%%%
 
 Our first example looks at the case where all processes within the economy occur within
-one sector, we do not distinguish between production and consumption, as depicted in
-Figure \ref{fig:A_materials}. 
+one sector---society (1)---which exchanges materials with the biosphere (0) as depicted in
+Figure \ref{fig:A_materials}.  We do not distinguish between production and consumption.
+
 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/1_sector_materials.pdf}
-\caption{XXXX}
+\caption{Flows of materials for a one-sector economy}{Flows of materials for a one-sector economy. 
+Resources ($\dot{R}_{01}$) and short-lived materials ($\dot{S}_{01}$) flow into the economy (1) 
+from the biosphere (0). Waste resources ($\dot{R}_{10}$) short-lived materials/goods 
+($\dot{S}_{10}$) and capital goods ($\dot{K}_{10}$) are returned to the biosphere.}
 \label{fig:A_materials}
 \end{figure}
 
-Resources ($\dot{R}$) and short-lived materials ($\dot{S}$) flow into the economy (1) from the biosphere (0). These materials are processed within the economy into
-capital goods ($\dot{K}$) which are able to be accumulated. Waste resources and used short-lived
-materials are returned to the biosphere without accumulating. Capital goods are returned
+Resources, or perhaps more accurately raw materials, ($\dot{R}_{01}$), such as crude oil or iron ore, 
+and short-lived materials ($\dot{S}_{01}$), such as oxygen or water that flow \emph{through} economic
+processes but are not embodied in the product output, flow into the economy (1) from the biosphere (0). 
+These materials are processed within the economy into resource goods, short-lived goods and
+capital goods ($\dot{K}$) which are able to be accumulated at some rate $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
+Waste resources ($\dot{R}_{10}$) and used short-lived materials/goods ($\dot{S}_{10}$)
+are returned to the biosphere without accumulating. Capital goods ($\dot{K}_{10}$) are returned
 to the biosphere upon depreciation.
 
 Drawing control volumes around both the biosphere (0) and the economy (1), we can consruct
 our material accounting equations, such that:
 
 \begin{align}
-\label{eq:A_CV_0_to_1}
+\label{eq:A_CV_0}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
@@ -394,7 +409,7 @@ our material accounting equations, such that:
 	+	\dot{K}_{10}											
 	-	\dot{R}_{0}											
 	-	\dot{S}_{0}								\\
-\label{eq:A_CV_0_to_1a}
+\label{eq:A_CV_1}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
@@ -406,7 +421,7 @@ our material accounting equations, such that:
 	- \dot{K}_{10}											
 \end{align}
 
-\noindent Remembering that neither resources nor short-lived goods accumulate within economic sectors, tells us that:
+\noindent Remembering that neither resources ($R$) nor short-lived goods ($S$) accumulate within economic sectors, tells us that:
 
 \begin{equation}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}
@@ -414,13 +429,13 @@ our material accounting equations, such that:
 	= 0.
 \end{equation}
 
-\noindent Additionally, we may also say that:
+\noindent Additionally, since mass is conserved, we may also say that:
 
 \begin{equation}\label{eq:A_S11}
 	\dot{S}_{11} = \dot{S}_{1},
 \end{equation}
 
-\noindent such that our material balance equations \ref{eq:A_CV_0_to_1} and \ref{eq:A_CV_0_to_1a} 
+\noindent such that our material balance equations \ref{eq:A_CV_0} and \ref{eq:A_CV_1} 
 become:
 
 %****BRH says, shouldn't this word be
@@ -429,7 +444,7 @@ become:
 %Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
 %label for eqn. 2.5**** MIK - Agreed, changed to 'material balance'
 
-\begin{align}\label{eq:A_CV_0_to_1_b}
+\begin{align}\label{eq:A_CV_0b}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
@@ -438,15 +453,19 @@ become:
 	+	\dot{K}_{10}											
 	-	\dot{R}_{0}											
 	-	\dot{S}_{0}								\\
+	\label{eq:A_CV_1b}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
 	+ \dot{S}_{01} 
 	- \dot{R}_{10}				
 	- \dot{S}_{10}				
-	- \dot{K}_{10}											
+	- \dot{K}_{10}.										
 \end{align}
 
-\noindent Because the only ``capital'' that accumulates in the biosphere is that which is a waste flow (capital depreciation)
+Equation \ref{eq:A_CV_1b} tells us that the accumulation of capital within society is the imbalance 
+between the flow of materials pulled from the biosphere ($\dot{R}_{01} + \dot{S}_{01}$) and the 
+flow rate of materials disposed back to the biosphere ($\dot{R}_{10} + \dot{S}_{10} + \dot{K}_{10}$). 
+Because the only ``capital'' that accumulates in the biosphere is that which is a waste flow (capital depreciation)
 from the economy, e.g. worn-out machines in the scrap yard, we may say that:
 
 \begin{equation} \label{eq:A_K0_balance}
@@ -455,18 +474,19 @@ from the economy, e.g. worn-out machines in the scrap yard, we may say that:
 \end{equation}
 
 
+
 %%%%%%%%%% Materials: Example B %%%%%%%%%%
 \newpage
 \section{Example B: two sector economy}
 \label{sec:B_materials}
 %%%%%%%%%%
 
-In our second example B, we split society into two sectors: production and consumption as depicted in Figure \ref{fig:B_materials}. 
+In our second example B, we split society into two sectors: a sector that produces energy---sector (2)---and society---sector (1)---which acts as a consumer, as depicted in Figure \ref{fig:B_materials}. 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/2_sector_materials.pdf}
-\caption{XXXX}
+\caption{Flows of materials for a two-sector economy}{Flows of materials for a two-sector economy}
 \label{fig:B_materials}
 \end{figure}
 
@@ -605,7 +625,7 @@ In example C, we differentiate between two production sectors, one produces ener
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/3_sector_materials.pdf}
-\caption{XXXX}
+\caption{Flows of materials for a three-sector economy}{Flows of materials for a three-sector economy}
 \label{fig:C_materials}
 \end{figure}
 
@@ -711,7 +731,7 @@ Again, we can say that:
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/Matrix.pdf}
-\caption{XXXX}
+\caption{The matrix of biosphere-economy flows}{The matrix of biosphere-economy flows}
 \label{fig:C_mat_matrix}
 \end{figure}
 
