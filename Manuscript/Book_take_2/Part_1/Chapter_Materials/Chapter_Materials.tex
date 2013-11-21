@@ -179,7 +179,7 @@ hydrogen as carbohydrates make up most of the remaining mass)---will not be
 consumed. They will instead be subsumed within my body, or leave my house as
 waste or via the air.
 
-**** Auto industry example here? Perhaps steel? ****
+%**** Auto industry example here? Perhaps steel? ****
 
 Throughout this book, we will illustrate theoretical concepts with
 a running example of the auto industry. We choose the auto industry,
@@ -193,8 +193,6 @@ because it shows evidence of post-industrial decline (shrinking profit margins, 
 
 If we want to account for steel in the auto industry, 
 we might write an equation like this:
-% I changed this to iron, since steel is produced within some
-% sectors of the economy
 
 \begin{equation}
 	\Delta\textrm{steel} 
@@ -230,12 +228,18 @@ with these nuclear plants is negligible compared with total materials flows, we
 shall assume that the law holds.} 
 
 
+
 % **** Discuss the steel industry. 
 % Show how steel is actually formed from other materials.
 % Show that \emph{mass} is neither created nor destroyed, 
 % but it may change form. ****
 
-This conservation of mass is a statement of the First Law of Thermodynamics, 
+Indeed, within the car industry, inputs of steel, glass, plastic, rubber, etc. are used
+to produce cars, such that cars are created within the automobile industry. Were we to
+have an accounting equation tracking cars within the economy, we would have to 
+have terms in the equation for production and destruction of cars. Again, focussing on
+mass flows of the chemical elements avoids this necessity, since mass is \emph{conserved} in
+physical processes. This conservation of mass is a statement of the First Law of Thermodynamics, 
 which says that \emph{mass}, i.e. materials, and \emph{energy}
 can neither be created nor destroyed. 
 
@@ -393,7 +397,7 @@ Drawing control volumes around both the biosphere (0) and the economy (1), we ca
 our material accounting equations, such that:
 
 \begin{align}
-\label{eq:A_CV_0_to_1}
+\label{eq:A_CV_0}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
@@ -402,7 +406,7 @@ our material accounting equations, such that:
 	+	\dot{K}_{10}											
 	-	\dot{R}_{0}											
 	-	\dot{S}_{0}								\\
-\label{eq:A_CV_0_to_1a}
+\label{eq:A_CV_1}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
@@ -414,7 +418,7 @@ our material accounting equations, such that:
 	- \dot{K}_{10}											
 \end{align}
 
-\noindent Remembering that neither resources nor short-lived goods accumulate within economic sectors, tells us that:
+\noindent Remembering that neither resources ($R$) nor short-lived goods ($S$) accumulate within economic sectors, tells us that:
 
 \begin{equation}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}
@@ -422,13 +426,13 @@ our material accounting equations, such that:
 	= 0.
 \end{equation}
 
-\noindent Additionally, we may also say that:
+\noindent Additionally, since mass is conserved, we may also say that:
 
 \begin{equation}\label{eq:A_S11}
 	\dot{S}_{11} = \dot{S}_{1},
 \end{equation}
 
-\noindent such that our material balance equations \ref{eq:A_CV_0_to_1} and \ref{eq:A_CV_0_to_1a} 
+\noindent such that our material balance equations \ref{eq:A_CV_0} and \ref{eq:A_CV_1} 
 become:
 
 %****BRH says, shouldn't this word be
@@ -437,7 +441,7 @@ become:
 %Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
 %label for eqn. 2.5**** MIK - Agreed, changed to 'material balance'
 
-\begin{align}\label{eq:A_CV_0_to_1_b}
+\begin{align}\label{eq:A_CV_0b}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
@@ -446,15 +450,19 @@ become:
 	+	\dot{K}_{10}											
 	-	\dot{R}_{0}											
 	-	\dot{S}_{0}								\\
+	\label{eq:A_CV_1b}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
 	+ \dot{S}_{01} 
 	- \dot{R}_{10}				
 	- \dot{S}_{10}				
-	- \dot{K}_{10}											
+	- \dot{K}_{10}.										
 \end{align}
 
-\noindent Because the only "capital" that accumulates in the biosphere is that which is a waste flow (capital depreciation)
+Equation \ref{eq:A_CV_1b} tells us that the accumulation of capital within society is the imbalance 
+between the flow of materials pulled from the biosphere ($\dot{R}_{01} + \dot{S}_{01}$) and the 
+flow rate of materials disposed back to the biosphere ($\dot{R}_{10} + \dot{S}_{10} + \dot{K}_{10}$). 
+Because the only "capital" that accumulates in the biosphere is that which is a waste flow (capital depreciation)
 from the economy, e.g. worn-out machines in the scrap yard, we may say that:
 
 \begin{equation} \label{eq:A_K0_balance}
@@ -463,13 +471,14 @@ from the economy, e.g. worn-out machines in the scrap yard, we may say that:
 \end{equation}
 
 
+
 %%%%%%%%%% Materials: Example B %%%%%%%%%%
 \newpage
 \section{Example B: two sector economy}
 \label{sec:B_materials}
 %%%%%%%%%%
 
-In our second example B, we split society into two sectors: production and consumption as depicted in Figure \ref{fig:B_materials}. 
+In our second example B, we split society into two sectors: a sector that produces energy---sector (2)---and society---sector (1)---which acts as a consumer, as depicted in Figure \ref{fig:B_materials}. 
 
 \begin{figure}[h!]
 \centering
