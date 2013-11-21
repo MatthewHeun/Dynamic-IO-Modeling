@@ -85,12 +85,12 @@ outline the basic methodology.
 % that are eaten and, just in case I happen to have an apple tree, any apples that grow
 % inside my home. Our accounting equation would look something like:
 
-**** The idea that we are ``counting money'' does not seem exactly 
-right to me. Isn't it that we are accounting for value and energy flows? 
-Later on we will use currency flows to approximate the value flows? BRH ****
+% **** The idea that we are ``counting money'' does not seem exactly 
+% right to me. Isn't it that we are accounting for value and energy flows? 
+% Later on we will use currency flows to approximate the value flows? BRH ****
 
-
-This book is about counting with a focus on counting both money and energy.
+This book is about tracking (accounting) flows through the 
+economy with a focus on counting materials, energy and value.
 That an entire academic discipline and industry are focused on counting money (accounting)
 is evidence of its importance in today's economies.
 That energy is required to do \emph{anything} is evidence 
@@ -132,6 +132,12 @@ A rigorous apple accounting equation is:
 	+ \textrm{Production}
 	- \textrm{Consumption}.
 \end{equation}
+
+Notice that, when discussing apples we use the specific terms, ``grown'' and
+``eaten'' instead of the more general terms, ``produced'' and ``consumed''.
+Later, in Chapter \ref{chap:value}, when discussing value, we will use the terms
+``generated'' and ``destroyed''. In reality, these terms all have the equivalent
+sets of meaning and we use them inter-changeably.
 
 Once I account for how much the stock of apples changes in a weekly period,
 I can reframe my question to ask, "how fast does the stock of
@@ -252,6 +258,8 @@ Rather, any addition of material or energy \emph{to} the economy
 or waste of material or energy \emph{from} the economy
 will occur as an interaction between the economy and the biosphere.
 
+
+
 % **** I tried to clear up potential confusion in the paragraph above. 
 % Apples can be eaten and rotted.
 % However, mass and energy cannot. 
@@ -276,22 +284,23 @@ will occur as an interaction between the economy and the biosphere.
 When applying accounting equations to economic sectors,
 we distinguish between four different types of
 materials flowing into or out of a production sector: 
-products ($\dot{P}$), 
-resources ($\dot{R}$),
-short-lived goods ($\dot{S}$),
-and capital goods ($\dot{K}$), 
+products ($P$) \nomenclature{$P$}{products}, 
+resources ($\dot{R}$)\nomenclature{$R$}{resources},
+short-lived goods ($\dot{S}$)\nomenclature{$S$}{short-lived goods},
+and capital goods ($\dot{K}$)\nomenclature{$K$}{capital goods}, 
 as shown in Figure \ref{fig:PERKS_materials}.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
-\caption{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the left and are embodied in products ($\dot{P}$) which leave from the right. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
+\caption[Material flows into and out of a single sector of the economy.]{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the left and are embodied in products ($\dot{P}$) which leave from the right. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
 \label{fig:PERKS_materials}
 \end{figure}
 
-Resource materials ($\dot{R}$) enter the sector on the left 
+Resource materials ($\dot{R}$)\nomenclature{$\dot{R}$}{resource flow rate} 
+enter the sector on the left 
 and comprise those materials that are destined to be \emph{embodied} 
-in the goods produced by the sector ($\dot{P}$), 
+in the goods produced by the sector ($\dot{P}$)\nomenclature{$\dot{P}$}{product flow rate} , 
 except for some proportion that are wasted.
 Wastes depart from the bottom of the sector and are
 returned to the biosphere. 
@@ -305,7 +314,8 @@ and may be either recycled internally,
 or wasted to the biosphere. 
 Resource materials are not accumulated within a sector.
 
-Short-lived goods ($\dot{S}$) include those materials 
+Short-lived goods ($\dot{S}$)\nomenclature{$\dot{S}$}{short-lived goods flow rate}  
+include those materials 
 that are necessary for the production processes of a sector, 
 but are neither accumulated within the sector, 
 nor destined to be materially part of the product of the sector. 
@@ -321,8 +331,8 @@ are necessary for the continued operation of a sector
 but are not counted as short-lived goods, 
 because the operation of the sector is dependent 
 upon the accumulation of these materials within the sector. 
-Such flows are counted as capital goods ($\dot{K}$).
-Capital flows also enter from above, 
+Such flows are counted as capital goods ($\dot{K}$)
+\nomenclature{$\dot{K}$}{capital goods flow rate} . Capital flows also enter from above, 
 but are stored within the sector (represented by storage tanks) 
 and are returned to the biosphere as capital depreciation from below.
 Examples of these capital flows would be the factory and office buildings or
@@ -410,12 +420,14 @@ our material accounting equations, such that:
 	\dot{S}_{11} = \dot{S}_{1},
 \end{equation}
 
-\noindent such that our material accumulation ****BRH says, shouldn't this word be
-"accounting" -- not accumulation -- given that is what we
-called it in the sentence introducing eq. 2.4. Or, should we change "accounting" above to accumulation?
-Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
-label for eqn. 2.5**** equations \ref{eq:A_CV_0_to_1} and \ref{eq:A_CV_0_to_1a} 
+\noindent such that our material balance equations \ref{eq:A_CV_0_to_1} and \ref{eq:A_CV_0_to_1a} 
 become:
+
+%****BRH says, shouldn't this word be
+%"accounting" -- not accumulation -- given that is what we
+%called it in the sentence introducing eq. 2.4. Or, should we change "accounting" above to accumulation?
+%Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
+%label for eqn. 2.5**** MIK - Agreed, changed to 'material balance'
 
 \begin{align}\label{eq:A_CV_0_to_1_b}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
@@ -434,7 +446,7 @@ become:
 	- \dot{K}_{10}											
 \end{align}
 
-\noindent Because the only "capital" that accumulates in the biosphere is that which is a waste flow (capital depreciation)
+\noindent Because the only ``capital'' that accumulates in the biosphere is that which is a waste flow (capital depreciation)
 from the economy, e.g. worn-out machines in the scrap yard, we may say that:
 
 \begin{equation} \label{eq:A_K0_balance}
@@ -588,7 +600,7 @@ equations may now be written:
 \label{sec:C_materials}
 %%%%%%%%%%
 
-In example C, we differentiate between two production sectors, one produces energy and one produces other goods and services.
+In example C, we differentiate between two production sectors, one produces energy products and one produces other goods and services.
 
 \begin{figure}[h!]
 \centering
@@ -597,138 +609,102 @@ In example C, we differentiate between two production sectors, one produces ener
 \label{fig:C_materials}
 \end{figure}
 
-\begin{equation} \label{eq:C-CV_R_dot_0a}
+Accounting for the material flows into and out of the biosphere (sector 0) gives the following equation:
+
+\begin{align} \label{eq:C_CV_0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
-	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
-	=  \dot{R}_{10} + \dot{R}_{20} + \dot{R}_{30}
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}		
+	& =  \dot{R}_{10} + \dot{R}_{20} + \dot{R}_{30}
 	+ \dot{S}_{10} + \dot{S}_{20} + \dot{S}_{30}
 	+ \dot{K}_{10} + \dot{K}_{20} + \dot{K}_{30}
 	- \dot{R}_{0} 
 	- \dot{S}_{0},
-\end{equation}
+\end{align}
 
-\begin{equation}
-	\dot{R}_{0} = \dot{R}_{02} + \dot{R}_{03}
-\end{equation}
+\noindent which may be rewritten as:
 
-\begin{equation}
-	\dot{S}_{0} = \dot{S}_{01} + \dot{S}_{02} + \dot{S}_{03}
-\end{equation}
+\begin{align} \label{eq:C_CV_0_b}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}		
+	& =  \sum_{i = 1}^{3}\dot{R}_{i0}
+	+ \sum_{i = 1}^{3}\dot{S}_{i0}
+	+ \sum_{i = 1}^{3}\dot{K}_{i0}
+	- \dot{R}_{0} 
+	- \dot{S}_{0},
+\end{align}
 
- \begin{equation} \label{eq:C-CV_R_dot_0b}
- 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
- 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
- 	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}
- 	=  \dot{R}_{10} + \dot{R}_{20} + \dot{R}_{30}
- 	+ \dot{S}_{10} + \dot{S}_{20} + \dot{S}_{30}
- 	+ \dot{K}_{10} + \dot{K}_{20} + \dot{K}_{30}
- 	- \dot{R}_{02} - \dot{R}_{03} 
- 	- \dot{S}_{01} - \dot{S}_{02} - \dot{S}_{03},
- \end{equation}
- 
- \begin{equation} \label{eq:C-CV_R_dot_1}
- 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
- 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
- 	=  \dot{R}_{21} + \dot{R}_{31}
- 	+ \dot{S}_{01} + \dot{S}_{11} 
-	+ \dot{S}_{21} + \dot{S}_{31}
- 	+ \dot{K}_{21} + \dot{K}_{31}
- 	- \dot{S}_{1} 
+Similarly, flows for the other sectors may be written:
+
+\begin{align} \label{eq:C_CV_1_to_3}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
+	& =  \dot{R}_{01} 
+	+ \dot{S}_{01}
+	+ \sum_{i = 1}^{3}\dot{R}_{i1}
+	+ \sum_{i = 1}^{3}\dot{S}_{i1}
+	+ \sum_{i = 1}^{3}\dot{K}_{i1}
+	- \dot{P}_{1}
 	- \dot{R}_{10} 
- 	- \dot{S}_{10} 
- 	- \dot{K}_{10},
- \end{equation}
- 
- \begin{equation} \label{eq:C-CV_R_dot_2}
- 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
- 	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
- 	=  \dot{R}_{02} + \dot{R}_{22} + \dot{R}_{32}
- 	+ \dot{S}_{02} + \dot{S}_{12} 
-	+ \dot{S}_{22} + \dot{S}_{32} 
- 	+ \dot{K}_{22} + \dot{K}_{32}
- 	- \dot{P}_{2}
- 	- \dot{R}_{20} 
- 	- \dot{S}_{20} 
- 	- \dot{K}_{20},
- \end{equation}
- 
- \begin{equation} \label{eq:C-CV_R_dot_3}
- 	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}S_{3}}{\mathrm{d}t}
- 	+ \frac{\mathrm{d}K_{3}}{\mathrm{d}t}
- 	=  \dot{R}_{03} + \dot{R}_{23} + \dot{R}_{33}
- 	+ \dot{S}_{03} + \dot{S}_{13} 
-	+ \dot{S}_{23} + \dot{S}_{33} 
- 	+ \dot{K}_{23} + \dot{K}_{33}
- 	- \dot{P}_{3}
- 	- \dot{R}_{30} 
- 	- \dot{S}_{30} 
- 	- \dot{K}_{30},
- \end{equation}
+	- \dot{S}_{10}
+	- \dot{K}_{10},										\\
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}		
+	& =  \dot{R}_{02} 
+	+ \dot{S}_{02}
+	+ \sum_{i = 1}^{3}\dot{R}_{i2}
+	+ \sum_{i = 1}^{3}\dot{S}_{i2}
+	+ \sum_{i = 1}^{3}\dot{K}_{i2}
+	- \dot{P}_{2}
+	- \dot{R}_{20} 
+	- \dot{S}_{20}
+	- \dot{K}_{20},										\\	
+	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
+	& =  \dot{R}_{03} 
+	+ \dot{S}_{03}
+	+ \sum_{i = 1}^{3}\dot{R}_{i3}
+	+ \sum_{i = 1}^{3}\dot{S}_{i3}
+	+ \sum_{i = 1}^{3}\dot{K}_{i3}
+	- \dot{P}_{3}
+	- \dot{R}_{30} 
+	- \dot{S}_{30}
+	- \dot{K}_{30}.										
+\end{align}
 
-\begin{equation}\label{eq:C-dR_dt_zero}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} = \frac{\mathrm{d}R_{2}}{\mathrm{d}t} = \frac{\mathrm{d}R_{3}}{\mathrm{d}t} = 0
-\end{equation}
+These equations may be summarized in one single equation as:
 
-\begin{equation}\label{eq:C-dS_dt_zero}
-	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} = \frac{\mathrm{d}S_{2}}{\mathrm{d}t} = \frac{\mathrm{d}S_{3}}{\mathrm{d}t} = 0
-\end{equation}
+\begin{align} \label{eq:C_CV_1_to_3_b}
+	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
+	& =  \dot{R}_{0j} 
+	+ \dot{S}_{0j}
+	+ \sum_{i = 1}^{3}\dot{R}_{ij}
+	+ \sum_{i = 1}^{3}\dot{S}_{ij}
+	+ \sum_{i = 1}^{3}\dot{K}_{ij}
+	- \dot{P}_{j}
+	- \dot{R}_{j0} 
+	- \dot{S}_{j0}
+	- \dot{K}_{j0};
+	& j \in \left[1,3\right].
+\end{align}
 
-\begin{equation} \label{eq:C-CV_K_dot_2}
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	=  \dot{K}_{22} + \dot{K}_{32} 
-	- \dot{K}_{20},
-\end{equation}
+Again, we can say that:
 
-\begin{equation} \label{eq:C-CV_K_dot_3}
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	=  \dot{K}_{23} + \dot{K}_{33} 
-	- \dot{K}_{30},
-\end{equation}
+\begin{align} \label{eq:C_CV_K_balance}
+	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
+	& =  \sum_{i = 1}^{3}\dot{K}_{ij}
+	- \dot{K}_{j0};
+\end{align}
 
- \begin{equation} \label{eq:C-CV_R_dot_1b}
- 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
- 	=  \dot{R}_{21} + \dot{R}_{31}
- 	+ \dot{S}_{01} + \dot{S}_{11} 
-	+ \dot{S}_{21} + \dot{S}_{31}
- 	+ \dot{K}_{21} + \dot{K}_{31}
- 	- \dot{S}_{1} 
-	- \dot{R}_{10} 
- 	- \dot{S}_{10} 
- 	- \dot{K}_{10},
- \end{equation}
- 
- \begin{equation} \label{eq:C-CV_R_dot_2b}
- 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
- 	=  \dot{R}_{02} + \dot{R}_{22} + \dot{R}_{32}
- 	+ \dot{S}_{02} + \dot{S}_{12} 
-	+ \dot{S}_{22} + \dot{S}_{32} 
- 	+ \dot{K}_{22} + \dot{K}_{32}
- 	- \dot{P}_{2}
- 	- \dot{R}_{20} 
- 	- \dot{S}_{20} 
- 	- \dot{K}_{20}
-	=  \dot{K}_{22} + \dot{K}_{32} 
-	- \dot{K}_{20},
- \end{equation}
- 
- \begin{equation} \label{eq:C-CV_R_dot_3}
- 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}
- 	=  \dot{R}_{03} + \dot{R}_{23} + \dot{R}_{33}
- 	+ \dot{S}_{03} + \dot{S}_{13} 
-	+ \dot{S}_{23} + \dot{S}_{33} 
- 	+ \dot{K}_{23} + \dot{K}_{33}
- 	- \dot{P}_{3}
- 	- \dot{R}_{30} 
- 	- \dot{S}_{30} 
- 	- \dot{K}_{30}
-	=  \dot{K}_{23} + \dot{K}_{33} 
-	- \dot{K}_{30},
- \end{equation}
+\noindent hence we may say that:
 
+\begin{align} \label{eq:C_CV_1_to_3_b}
+	\dot{R}_{0j} 
+	+ \dot{S}_{0j}
+	+ \sum_{i = 1}^{3}\dot{R}_{ij}
+	+ \sum_{i = 1}^{3}\dot{S}_{ij}
+	& = \dot{P}_{j}
+	- \dot{R}_{j0} 
+	- \dot{S}_{j0}.
+\end{align}
 
 
 
