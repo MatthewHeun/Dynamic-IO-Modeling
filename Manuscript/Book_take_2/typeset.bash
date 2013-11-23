@@ -25,17 +25,19 @@ rm -f *.toc
 rm -f *.lof
 rm -f *.lot
 
-cd Part_0; cd Chapter_Introduction; rm -f *.aux; cd ..; cd ..
-cd Part_1; cd Chapter_Materials;    rm -f *.aux; cd ..; cd ..
-cd Part_2; cd Chapter_Energy;       rm -f *.aux; cd ..; cd ..
-cd Part_2; cd Chapter_Embodied;     rm -f *.aux; cd ..; cd ..
-cd Part_3; cd Chapter_Values;       rm -f *.aux; cd ..; cd ..
-cd Part_3; cd Chapter_Intensity;    rm -f *.aux; cd ..; cd ..
-cd Part_4; cd Chapter_Implications; rm -f *.aux; cd ..; cd ..
+cd Part_0; cd Chapter_Introduction; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_1; cd Chapter_Materials;    rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_2; cd Chapter_Energy;       rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_2; cd Chapter_Embodied;     rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_3; cd Chapter_Values;       rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_3; cd Chapter_Intensity;    rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_4; cd Chapter_Implications; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 # Delete Part 5's .aux files here, if we make a Part 5.
 cd Appendix_Derivation; rm -f *.aux; cd ..
 cd Appendix_Proof_1;    rm -f *.aux; cd ..
 cd Appendix_Proof_2;    rm -f *.aux; cd ..
+
+exit
 
 # We'll use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
