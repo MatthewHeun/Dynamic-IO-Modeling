@@ -10,7 +10,7 @@
 # Then, type "./typeset.bash"
 
 # Close the pdf file first. This guarantees that you'll see any changes.
-osascript -e 'tell application "Skim" to close every window'
+osascript -e 'tell application "Skim" to close document named "Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf"'
 
 # Ensure a fresh build by deleting all auxiliary files created by LaTeX.
 rm -f *.aux
