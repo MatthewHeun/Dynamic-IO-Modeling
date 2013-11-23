@@ -1,13 +1,13 @@
 #! /bin/bash
 
-# This bash script cleans all the auxilliary files created by LaTex,
+# This bash script cleans all the auxiliary files created by LaTex,
 # thereby ensureing a fresh build of the book.
 
 # Invoke the script by cd'ing into the directory that contains this file.
 # Then, type "./clean.bash"
 
 # Ensure a fresh build by deleting all auxiliary files created by LaTeX.
-cd ..
+cd .. # Move up one level from the scripts folder to begin the cleaning process.
 rm -f *.aux
 rm -f *.bbl
 rm -f *.blg
