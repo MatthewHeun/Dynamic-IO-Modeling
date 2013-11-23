@@ -54,9 +54,10 @@ cd Part_2; cd Chapter_Embodied;     bibtex Chapter_Embodied;     cd ../..;
 cd Part_3; cd Chapter_Values;       bibtex Chapter_Values;       cd ../..;
 cd Part_3; cd Chapter_Intensity;    bibtex Chapter_Intensity;    cd ../..;
 cd Part_4; cd Chapter_Implications; bibtex Chapter_Implications; cd ../..;
-cd Appendix_Derivation; bibtex Appendix_Derivation; cd ..;
-cd Appendix_Proof_1;    bibtex Appendix_Proof_1;    cd ..;
-cd Appendix_Proof_2;    bibtex Appendix_Proof_2;    cd ..;
+# No bibliographies in the appendices at this point.
+# cd Appendix_Derivation; bibtex Appendix_Derivation; cd ..;
+# cd Appendix_Proof_1;    bibtex Appendix_Proof_1;    cd ..;
+# cd Appendix_Proof_2;    bibtex Appendix_Proof_2;    cd ..;
 
 # Run again to include all the index, toc, and nomenclature information
 # Need to run 3 times to get index and nomenclature to appear.
