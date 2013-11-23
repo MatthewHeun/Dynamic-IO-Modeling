@@ -9,6 +9,9 @@
 # Invoke the script by cd'ing into the directory that contains this file.
 # Then, type "./typeset.bash"
 
+# Close the pdf file first. This guarantees that you'll see any changes.
+osascript -e 'tell application "Skim" to close every window'
+
 # Ensure a fresh build by deleting all auxiliary files
 rm -f *.aux
 rm -f *.bbl
@@ -36,8 +39,6 @@ cd Part_4; cd Chapter_Implications; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Derivation; rm -f *.aux; cd ..
 cd Appendix_Proof_1;    rm -f *.aux; cd ..
 cd Appendix_Proof_2;    rm -f *.aux; cd ..
-
-exit
 
 # We'll use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
