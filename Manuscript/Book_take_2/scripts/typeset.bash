@@ -1,21 +1,22 @@
 #! /bin/bash
 
-# This bash script will build the book, including all 
+# This bash script will build the book
+# _The_Metabolic_Economy_, including all 
 # references, indexes, and nomenclature,
 # on MacOSX.
 # This script does multiple passes to capture all
 # dependencies.
-
 # Invoke the script by cd'ing into the directory that contains this file.
 # Then, type "./typeset.bash"
+# --Matthew Kuperus Heun, November 2013.
 
-# Close the pdf file first. This guarantees that you'll see any changes.
+# Close the pdf file first. Doing so guarantees that changes will be visible in the generated file.
 osascript -e 'tell application "Skim" to close document named "Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf"'
 
 # Ensure a fresh build by deleting all auxiliary files created by LaTeX.
 cd ..; ./clean.bash
 
-# We'll use the pdflatex engine.
+# Use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
 # Make the bibliobraphy. Need to do each chapter individually.
@@ -37,7 +38,7 @@ makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeli
 # Make the nomenclature section.
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
 
-# Run again to include all the index, toc, and nomenclature information
+# Run again--twice--to include all the index, toc, and nomenclature information
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
