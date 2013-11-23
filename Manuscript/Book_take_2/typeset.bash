@@ -32,29 +32,31 @@ cd Part_2; cd Chapter_Embodied;     rm -f *.aux; cd ..; cd ..
 cd Part_3; cd Chapter_Values;       rm -f *.aux; cd ..; cd ..
 cd Part_3; cd Chapter_Intensity;    rm -f *.aux; cd ..; cd ..
 cd Part_4; cd Chapter_Implications; rm -f *.aux; cd ..; cd ..
-# Delete Chapter 5 .aux files here, when we make the chapter.
+# Delete Part 5's .aux files here, if we make a Part 5.
 cd Appendix_Derivation; rm -f *.aux; cd ..
 cd Appendix_Proof_1;    rm -f *.aux; cd ..
 cd Appendix_Proof_2;    rm -f *.aux; cd ..
 
 # We'll use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
-pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
-# Make the index section -- twice, not sure why!
+# Make the index section.
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
-pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
-makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
-pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
-# Make the nomenclature section -- twice, not sure why!
+# Make the nomenclature section.
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
-pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
-makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
-pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
-# Make the bibliobraphy
-bibtex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.aux
+# Make the bibliobraphy. Do each chapter individually.
+cd Part_0; cd Chapter_Introduction; bibtex Chapter_Introduction; cd ../..;
+cd Part_1; cd Chapter_Materials;    bibtex Chapter_Materials;    cd ../..;
+cd Part_2; cd Chapter_Energy;       bibtex Chapter_Energy;       cd ../..;
+cd Part_2; cd Chapter_Embodied;     bibtex Chapter_Embodied;     cd ../..;
+cd Part_3; cd Chapter_Values;       bibtex Chapter_Values;       cd ../..;
+cd Part_3; cd Chapter_Intensity;    bibtex Chapter_Intensity;    cd ../..;
+cd Part_4; cd Chapter_Implications; bibtex Chapter_Implications; cd ../..;
+cd Appendix_Derivation; bibtex Appendix_Derivation; cd ..;
+cd Appendix_Proof_1;    bibtex Appendix_Proof_1;    cd ..;
+cd Appendix_Proof_2;    bibtex Appendix_Proof_2;    cd ..;
 
 # Run again to include all the index, toc, and nomenclature information
 # Need to run 3 times to get index and nomenclature to appear.
