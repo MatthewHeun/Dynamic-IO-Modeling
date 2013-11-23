@@ -12,7 +12,7 @@
 # Close the pdf file first. This guarantees that you'll see any changes.
 osascript -e 'tell application "Skim" to close every window'
 
-# Ensure a fresh build by deleting all auxiliary files
+# Ensure a fresh build by deleting all auxiliary files created by LaTeX.
 rm -f *.aux
 rm -f *.bbl
 rm -f *.blg
@@ -43,7 +43,7 @@ cd Appendix_Proof_2;    rm -f *.aux; cd ..
 # We'll use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
-# Make the bibliobraphy. Do each chapter individually.
+# Make the bibliobraphy. Need to do each chapter individually.
 cd Part_0; cd Chapter_Introduction; bibtex Chapter_Introduction; cd ../..;
 cd Part_1; cd Chapter_Materials;    bibtex Chapter_Materials;    cd ../..;
 cd Part_2; cd Chapter_Energy;       bibtex Chapter_Energy;       cd ../..;
