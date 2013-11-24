@@ -488,8 +488,10 @@ can be generalized as
 	= \sum\limits_{i=1}^n \dot{X}_{ij}
 	- \dot{X}_{j}
 	+ \dot{X}_{gen,j}
-	- \dot{X}_{dest,j}
+	- \dot{X}_{dest,j},
 \end{equation}
+
+\noindent{}where $n$ is the number of sectors in the economy, and $j \in [1, n]$.
 
 
 
@@ -515,19 +517,53 @@ within a three-sector economy.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/3_sector_value.pdf}
-\caption{Flows of value within a three-sector economy.}{Flows of value ($\dot{X}$) within a three-sector economy.}
+\caption[Flows of value within a three-sector economy.]{Flows of value ($\dot{X}$) within a three-sector economy.}
 \label{fig:C_value}
 \end{figure}
 
-We can account for value flows in Example~C with the following equation:
+The equations representing flows of value in Example~C are:
 
-\begin{equation}
+\begin{equation}\label{eq:C-value-generalized}
 	\frac{\mathrm{d}X_{j}}{\mathrm{d}t}
 	= \sum\limits_{i=1}^{n} \dot{X}_{ij}
-	- \dot{X}_{j},
+	- \dot{X}_{j}
+	+ \dot{X}_{gen,j}
+	- \dot{X}_{dest,j},
 \end{equation}
 
-\noindent where $n$ is the number of sectors in the economy, and $j \in (1, n)$.
+\noindent{}where $n$ is the number of sectors in the economy, and $j \in [1, n]$.
+Equation~\ref{eq:C-value-generalized} is identical to Equation~\ref{eq:B-value-generalized}.
+If we sum the value accounting equations for the entire economy, 
+we obtain
+
+\begin{equation}\label{eq:C-value-economy-a}
+	\sum\limits_{j=1}^{n} \frac{\mathrm{d}X_{j}}{\mathrm{d}t}
+	= \sum\limits_{j=1}^{n} \sum\limits_{i=1}^{n} \dot{X}_{ij}
+	- \sum\limits_{j=1}^{n} \dot{X}_{j}
+	+ \sum\limits_{j=1}^{n} \dot{X}_{gen,j}
+	- \sum\limits_{j=1}^{n} \dot{X}_{dest,j}.
+\end{equation}
+
+\noindent{}Realizing that ******* Need to do this derivation! ********* yields
+
+\begin{equation}\label{eq:value-identity}
+	\sum\limits_{j=1}^{n} \sum\limits_{i=1}^{n} \dot{X}_{ij}
+	= \sum\limits_{j=1}^{n} \dot{X}_{j},
+\end{equation}
+
+\noindent{}and Equation~\ref{eq:C-value-economy-a} becomes
+
+\begin{equation}\label{eq:C-value-economy-b}
+	\sum\limits_{j=1}^{n} \frac{\mathrm{d}X_{j}}{\mathrm{d}t}
+	= \sum\limits_{j=1}^{n} \dot{X}_{gen,j}
+	- \sum\limits_{j=1}^{n} \dot{X}_{dest,j},
+\end{equation}
+
+\noindent{}indicating that value generation ($\dot{X}_{gen,j}$) 
+and destruction ($\dot{X}_{dest,j}$)
+are the mechanisms by which value is accumulated or lost
+$\left( \frac{\mathrm{d}X_{j}}{\mathrm{d}t} \right)$
+within the economy.
 
 
 %%%%%%%%%% Value: Auto industry example %%%%%%%%%%
