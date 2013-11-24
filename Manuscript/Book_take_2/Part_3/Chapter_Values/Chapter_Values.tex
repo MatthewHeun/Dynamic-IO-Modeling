@@ -272,7 +272,7 @@ use and wastes (i.e., measures impact of of economic activity on the biosphere).
 %%%%%%%%%%
 
 Figure~\ref{fig:A_value} shows flows of value in the single-sector economy.
-Following typical economic modeling, 
+Following typical assumptions in economic modeling, 
 the economy is \emph{completely isolated} from the biosphere
 in terms of both material inputs and wastes.
 In other words, the value flows of an economy are \emph{independent from}
@@ -284,10 +284,20 @@ Value flows are independent from wastes,
 because wastes, by definition, have no economic value 
 after they leave the economy.
 
-The contrast between Figure~\ref{fig:A_value} and Figure~\ref{fig:A_materials}
-or Figure~\ref{fig:A_energy} is striking.  
-The picture of energy flows in Figures~\ref{fig:A_materials} 
-and \ref{fig:A_energy} indicates a dependence upon the biosphere 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/1_sector_value.pdf}
+\caption[Flows of value for a one-sector economy]{Flows of value ($\dot{X}$) for a one-sector economy.}
+\label{fig:A_value} 
+\end{figure}
+
+The contrast between Figures~\ref{fig:A_materials} and \ref{fig:A_energy}, 
+on the one hand, 
+and Figure \ref{fig:A_value}, 
+on the other, is striking.  
+The picture of material and energy flows in 
+Figures~\ref{fig:A_materials} and \ref{fig:A_energy} 
+indicates a dependence upon the biosphere 
 that is not reflected in the value flows of Figure~\ref{fig:A_value}.
 The isloation of the value flows from the biosphere is a consequence
 of the subjective theory of value\index{theory of value!subjective} 
@@ -295,13 +305,6 @@ that underpins modern economics.
 The biosphere is akin to a third party with no voice 
 in determining the value of a transaction:
 it is neither buyer nor seller. 
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/1_sector_value.pdf}
-\caption[Flows of value for a one-sector economy]{Flows of value ($\dot{X}$) for a one-sector economy.}
-\label{fig:A_value} 
-\end{figure}
 
 Equation~\ref{eq:A_X_acct_1} describes the accumulation 
 of value\index{economic value!accumulation}
@@ -311,14 +314,14 @@ of value\index{economic value!accumulation}
 	\frac{\mathrm{d}X_{1}}{\mathrm{d}t} 
 	= \dot{X}_{11} 
 	- \dot{X}_{1}
-	+ \dot{X}_{gen}
-	- \dot{X}_{dest}.
+	+ \dot{X}_{gen,1}
+	- \dot{X}_{dest,1}.
 \end{equation}
 \nomenclature[X]{$\dot{X}$}{economic value flow rate [\$/s]}
 \nomenclature[Xgen]{$\dot{X}_{gen}$}{rate of generation of economic value [\$/s]}
 \nomenclature[Xdest]{$\dot{X}_{dest}$}{rate of destruction of economic value [\$/s]}
 
-The following subsections discuss the terms in Equation~\ref{eq:A_X_acct_1}.
+\noindent{} The following subsections discuss the terms in Equation~\ref{eq:A_X_acct_1}.
 
 
 %+++++++++ Example A: value generation ++++++++++
@@ -326,11 +329,12 @@ The following subsections discuss the terms in Equation~\ref{eq:A_X_acct_1}.
 %+++++++++
 
 \noindent In Equation~\ref{eq:A_X_acct_1}, 
-the value generation term ($\dot{X}_{gen}$) is akin to growing apples: 
-value is generated, seemingly out of nothing
-(see Section~\ref{sec:Materials_Methodology}).
-The factors that lead to value generation\index{economic value!generation of} 
-($\dot{X}_{gen}$) include:
+the value generation term ($\dot{X}_{gen}$) is akin to growing apples
+in Section~\ref{sec:Materials_Methodology}: 
+value is generated, seemingly out of nothing.
+But, in fact, value is not created out of nothing. 
+Rather, value is created from a variety of factors that have no apparent cost
+to producers, including:
 
 \begin{itemize}
 	\item{flow of solar energy\index{solar energy} \index{energy!solar|see{solar energy}}
@@ -345,6 +349,10 @@ The factors that lead to value generation\index{economic value!generation of}
 	and innovation\index{innovation}, 
 	which lead to increasingly efficient production processes.}
 \end{itemize}
+
+\noindent{}The subjective theory of value indicates that 
+there is no economic value associated with these ``transactions,''
+because no currency is exchanged. 
 
 The above factors indicate that the process of value generation
 has both direct and indirect impacts on the biosphere.
@@ -410,12 +418,14 @@ simplifies to
 
 \begin{equation} \label{eq:A_X_acct_2}	
 	\frac{\mathrm{d}X_{1}}{\mathrm{d}t}	
-	= \dot{X}_{gen},
+	= \dot{X}_{gen,1}
+	- \dot{X}_{dest,1},
 \end{equation}
 
 \noindent which indicates that value accumulates in the economy
 $\left( \frac{\mathrm{d}X_{1}}{\mathrm{d}t} \right)$
-due to value generation processes ($\dot{X}_{gen}$).
+due to value generation ($\dot{X}_{gen,1}$) 
+and destruction ($\dot{X}_{dest,1}$) processes.
 
 
 %+++++++++ Example A: GDP and Stock of Value ++++++++++
@@ -450,21 +460,40 @@ Again, we note the isloation of value from the biosphere.
 We can account for value flows by writing
 the following equations:
 
-\begin{equation}
+\begin{equation}\label{eq:B-value-1}
 	\frac{\mathrm{d}X_{1}}{\mathrm{d}t}
 	= \dot{X}_{11}
 	+ \dot{X}_{21}
 	- \dot{X}_{1}
+	+ \dot{X}_{gen,1}
+	- \dot{X}_{dest,1}
 \end{equation}
 
-\noindent and
+\noindent{}and
 
-\begin{equation}
+\begin{equation}\label{eq:B-value-2}
 	\frac{\mathrm{d}X_{2}}{\mathrm{d}t}
 	= \dot{X}_{12}
 	+ \dot{X}_{22}
-	- \dot{X}_{2}.
+	- \dot{X}_{2}
+	+ \dot{X}_{gen,2}
+	- \dot{X}_{dest,2}.
 \end{equation}
+
+Equations~\ref{eq:B-value-1} and \ref{eq:B-value-2}
+can be generalized as
+
+\begin{equation}\label{eq:B-value-generalized}
+	\frac{\mathrm{d}X_{j}}{\mathrm{d}t}
+	= \sum\limits_{i=1}^n \dot{X}_{ij}
+	- \dot{X}_{j}
+	+ \dot{X}_{gen,j}
+	- \dot{X}_{dest,j}
+\end{equation}
+
+
+
+
 
 **********
 If you sell a good for more than you paid for its inputs, 
