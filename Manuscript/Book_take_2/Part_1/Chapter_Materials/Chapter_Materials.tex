@@ -300,7 +300,17 @@ as shown in Figure \ref{fig:PERKS_materials}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials.pdf}
-\caption[Material flows into and out of a single sector of the economy.]{Material flows into and out of a single sector of the economy. Resource flows ($\dot{R}$) enter the sector from the left and are embodied in products ($\dot{P}$) which leave from the right. Some waste resources are leave the sector at the bottom and are returned to the biosphere. Short-lived material flows ($\dot{S}$) enter the sector from above and leave from below to return to the biosphere.  Only capital flows ($\dot{K}$) may accumulate within the sector, depicted by the storage tank. These also enter the sector from above. Depreciated capital leaves the sector from below and is returned to the biosphere.}
+\caption[Material flows into and out of a single sector 
+of the economy.]{Material flows into and out of 
+a single sector of the economy. 
+Resource flows ($\dot{R}$) enter the sector from the left 
+and are embodied in products ($\dot{P}$) which leave from the right. 
+Some waste resources are leave the sector at the bottom and are returned to the biosphere.
+Short-lived material flows ($\dot{S}$) 
+enter the sector from above and leave from below to return to the biosphere. 
+Only capital stock ($\dot{K}$) may accumulate within the sector, depicted by the storage tank.
+These also enter the sector from above. 
+Depreciated capital leaves the sector from below and is returned to the biosphere.}
 \label{fig:PERKS_materials}
 \end{figure}
 
@@ -375,26 +385,29 @@ Our first example looks at the case where all processes within the economy occur
 one sector---society (1)---which exchanges materials with the biosphere (0) as depicted in
 Figure \ref{fig:A_materials}.  We do not distinguish between production and consumption.
 
-
-
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/1_sector_materials.pdf}
-\caption{Flows of materials for a one-sector economy}{Flows of materials for a one-sector economy. 
+\caption{Flows of materials for a one-sector economy}{Flows of materials 
+for a one-sector economy. 
 Resources ($\dot{R}_{01}$) and short-lived materials ($\dot{S}_{01}$) flow into the economy (1) 
 from the biosphere (0). Waste resources ($\dot{R}_{10}$) short-lived materials/goods 
 ($\dot{S}_{10}$) and capital goods ($\dot{K}_{10}$) are returned to the biosphere.}
 \label{fig:A_materials}
 \end{figure}
 
-Resources, or perhaps more accurately raw materials, ($\dot{R}_{01}$), such as crude oil or iron ore, 
-and short-lived materials ($\dot{S}_{01}$), such as oxygen or water that flow \emph{through} economic
-processes but are not embodied in the product output, flow into the economy (1) from the biosphere (0). 
-These materials are processed within the economy into resource goods, short-lived goods and
-capital goods ($\dot{K}$) which are able to be accumulated at some rate $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
+Resources, or perhaps more accurately raw materials, 
+($\dot{R}_{01}$), such as crude oil or iron ore, 
+and short-lived materials ($\dot{S}_{01}$), 
+such as oxygen or water that flow \emph{through} economic
+processes but are not embodied in the product output, 
+flow into the economy (1) from the biosphere (0). 
+These materials are processed within the economy into resource goods, 
+short-lived goods and capital goods ($\dot{K}$) 
+which are able to be accumulated at some rate $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
 Waste resources ($\dot{R}_{10}$) and used short-lived materials/goods ($\dot{S}_{10}$)
-are returned to the biosphere without accumulating. Capital goods ($\dot{K}_{10}$) are returned
-to the biosphere upon depreciation.
+are returned to the biosphere without accumulating. Capital goods ($\dot{K}_{10}$) 
+are returned to the biosphere upon depreciation.
 
 Drawing control volumes around both the biosphere (0) and the economy (1), we can consruct
 our material accounting equations, such that:
@@ -421,7 +434,8 @@ our material accounting equations, such that:
 	- \dot{K}_{10}											
 \end{align}
 
-\noindent Remembering that neither resources ($R$) nor short-lived goods ($S$) accumulate within economic sectors, tells us that:
+\noindent Remembering that neither resources ($R$) 
+nor short-lived goods ($S$) accumulate within economic sectors, tells us that:
 
 \begin{equation}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}
@@ -429,7 +443,7 @@ our material accounting equations, such that:
 	= 0.
 \end{equation}
 
-\noindent Additionally, since mass is conserved, we may also say that:
+\noindent{}Additionally, since mass is conserved, we may also say that:
 
 \begin{equation}\label{eq:A_S11}
 	\dot{S}_{11} = \dot{S}_{1},
