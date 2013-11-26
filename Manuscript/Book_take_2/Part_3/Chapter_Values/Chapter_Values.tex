@@ -544,14 +544,24 @@ we obtain
 	- \sum\limits_{j=1}^{n} \dot{X}_{dest,j}.
 \end{equation}
 
-\noindent{}Realizing that ******* Need to do this derivation! ********* yields
+\noindent{}With the identities
 
-\begin{equation}\label{eq:value-identity}
-	\sum\limits_{j=1}^{n} \sum\limits_{i=1}^{n} \dot{X}_{ij}
-	= \sum\limits_{j=1}^{n} \dot{X}_{j},
+\begin{equation} \label{eq:X_identity_1}
+	\dot{X}_{j}  
+	= \sum\limits_{k=1}^n \dot{X}_{jk}
 \end{equation}
 
-\noindent{}and Equation~\ref{eq:C-value-economy-a} becomes
+\noindent{}and
+
+\begin{equation} \label{eq:X_identity_2}
+	\sum\limits_{j=1}^n\dot{X}_{j}  
+	= \sum\limits_{j=1}^n \sum\limits_{k=1}^n \dot{X}_{jk}
+	= \sum\limits_{i=1}^n \sum\limits_{k=1}^n \dot{X}_{ik}
+	= \sum\limits_{i=1}^n \sum\limits_{j=1}^n \dot{X}_{ij}
+	= \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{X}_{ij},
+\end{equation}
+
+\noindent{}Equation~\ref{eq:C-value-economy-a} becomes
 
 \begin{equation}\label{eq:C-value-economy-b}
 	\sum\limits_{j=1}^{n} \frac{\mathrm{d}X_{j}}{\mathrm{d}t}
@@ -559,9 +569,10 @@ we obtain
 	- \sum\limits_{j=1}^{n} \dot{X}_{dest,j},
 \end{equation}
 
-\noindent{}indicating that value generation ($\dot{X}_{gen,j}$) 
+\noindent{}for $j \in [1, n]$, indicating that 
+value generation ($\dot{X}_{gen,j}$) 
 and destruction ($\dot{X}_{dest,j}$)
-are the mechanisms by which value is accumulated or lost
+are the only mechanisms by which value is accumulated or lost
 $\left( \frac{\mathrm{d}X_{j}}{\mathrm{d}t} \right)$
 within the economy.
 
