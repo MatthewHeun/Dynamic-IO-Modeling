@@ -23,7 +23,7 @@
 %Use the template \emph{appendix.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style appendix of your book in the Springer layout.
 
 
-We begin with a restatement of Equation \ref{eq:Xdifference2}.
+We begin with a restatement of Equation~\ref{eq:Xdifference2}.
 
 \begin{equation} \label{eq:Xdifference2_inverse_Proof-1}
 	\hat{\vec{X}} - \vec{X}_t^\mathrm{T} = \hat{\vec{X}}(\vec{I} - \vec{A}^\mathrm{T})
@@ -32,19 +32,22 @@ We begin with a restatement of Equation \ref{eq:Xdifference2}.
 \noindent We take the inverse of both sides of the equation to obtain
 
 \begin{equation} \label{eq:Xdifference2_inverse_Proof-2}
-	\left(\hat{\vec{X}} - \vec{X}_t^\mathrm{T}\right)^{-1} = \left(\hat{\vec{X}}(\vec{I} - \vec{A}^\mathrm{T})\right)^{-1}.
+	{\left(\hat{\vec{X}} - \vec{X}_t^\mathrm{T}\right)}^{-1} 
+	= {\left(\hat{\vec{X}}(\vec{I} - \vec{A}^\mathrm{T})\right)}^{-1}.
 \end{equation}
 
-\noindent We now apply the following matrix identity \cite[Formula 6.2, p. 308]{Beyer:1991vd}
+\noindent We now apply the following matrix identity~\cite[Formula 6.2, p. 308]{Beyer:1991vd}
 
 \begin{equation} \label{eq:Xdifference2_inverse_Proof-3}
-	\left(\vec{A}\vec{B}\vec{C}\right)^{-1} = \vec{C}^{-1} \vec{B}^{-1} \vec{A}^{-1}
+	{\left(\vec{A}\vec{B}\vec{C}\right)}^{-1} 
+	= {\vec{C}^{-1} \vec{B}}^{-1} \vec{A}^{-1}
 \end{equation}
 
-\noindent to the right side of Equation \ref{eq:Xdifference2_inverse_Proof-2} to obtain
+\noindent to the right side of Equation~\ref{eq:Xdifference2_inverse_Proof-2} to obtain
 
 \begin{equation} \label{eq:Xdifference2_inverse_Proof-4}
-	\left(\hat{\vec{X}} - \vec{X}_t^\mathrm{T}\right)^{-1} = (\vec{I} - \vec{A}^{\mathrm{T}})^{-1} \hat{\vec{X}}^{-1},
+	{\left(\hat{\vec{X}} - \vec{X}_t^\mathrm{T}\right)}^{-1} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1} \hat{\vec{X}}^{-1},
 \end{equation}
 
 \noindent which is identical to Equation~\ref{eq:Xdifference2_inverse}.
