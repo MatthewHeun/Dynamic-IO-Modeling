@@ -42,5 +42,8 @@ makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeli
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
+# Finally, run chktex to highlight any problems
+chktex -n12 -n13 Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex 
+
 # Now open the resulting .pdf file.
 open -a Skim Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf
