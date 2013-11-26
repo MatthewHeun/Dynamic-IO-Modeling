@@ -69,10 +69,11 @@ of good $i$ required to produce a unit of output from sector $j$.
 
 Input-output ratios are given in mixed units, 
 depending on both the purpose of each sector of the economy 
-and the type of input as shown in Table \ref{table: A_matrix_units}.
+and the type of input as shown in Table~\ref{table: A_matrix_units}.
 
 \begin{table}
-\caption{Units for input-output ratios ($a$).}
+\caption{Units for input-output ratios ($a$). ********** Mik: convert
+this to a diagram like Figure~\ref{fig:C_mat_matrix}. **********}
 \begin{center}
   \begin{tabular}{ ll | c  c | }
  			& 							& \multicolumn{2}{|c|}{Output of} \\
@@ -88,7 +89,7 @@ and the type of input as shown in Table \ref{table: A_matrix_units}.
 \section{Example B: energy intensity ($\varepsilon$)}
 %%%%%%%%%%
 
-With reference to Figures~\ref{fig:B_total_energy} and \ref{fig:B_value}, 
+With reference to Figures~\ref{fig:B_total_energy} and~\ref{fig:B_value}, 
 the energy intensity ($\varepsilon$) 
 of the energy sector (2) is given by
 
@@ -120,18 +121,20 @@ Realizing that
 because $\frac{\mathrm{d}E_3}{\mathrm{d}t} = 0$, 
 (b) $\dot{T}_{13} = \dot{E}_{13}$ because $\dot{B}_{13} = 0$ 
 due to processing of raw energy carriers occurring \emph{within} the economic sector (3), and
-(c) substituting Equations \ref{eq:T_dot_1_single_sector} 
-and \ref{eq:T_dot_11_single_sector} into Equation \ref{eq:CV_T_3} gives
+(c) substituting Equations~\ref{eq:T_dot_1_single_sector} 
+and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_3} gives
 
 \begin{equation} \label{eq:dB1/dt_single_sector_after_substituting_eps_and_a}
 	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} = \varepsilon_{2}a_{22}\dot{X}_{2} + \dot{E}_{02} - \varepsilon_{2}\dot{X}_{2} - \gamma_{2}B_{2}.
 \end{equation}
 
-We can estimate the energy intensity of the economy by solving Equation \ref{eq:dB1/dt_single_sector_after_substituting_eps_and_a} for $\varepsilon_{2}$.
+We can estimate the energy intensity of the economy by solving 
+Equation~\ref{eq:dB1/dt_single_sector_after_substituting_eps_and_a} 
+for $\varepsilon_{2}$.
 
 \begin{equation} \label{eq:eps3_ss_IO}
 	\varepsilon_{2} 
-	= (1 - a_{22})^{-1} \dot{X}_{2}^{-1} 
+	= {(1 - a_{22})}^{-1} \dot{X}_{2}^{-1} 
 	\left[\dot{E}_{02} 
 	      - \left(\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 		          + \gamma_{2}B_{2}
@@ -139,14 +142,14 @@ We can estimate the energy intensity of the economy by solving Equation \ref{eq:
 	\right]
 \end{equation}
 
-Equation \ref{eq:eps3_ss_IO} is similar 
+Equation~\ref{eq:eps3_ss_IO} is similar 
 to the typical energy intensity equation 
 found in the I-O literature [REFERENCE BULLARD AND OTHERS HERE. --MKH], 
-except that Equation \ref{eq:eps3_ss_IO} applies 
+except that Equation~\ref{eq:eps3_ss_IO} applies 
 to a single economic sector and contains scalar 
 (as opposed to matrix) terms. 
 Using Example C below, we will derive 
-a matrix representation of Equation \ref{eq:eps3_ss_IO} 
+a matrix representation of Equation~\ref{eq:eps3_ss_IO} 
 that is directly comparable 
 to energy intensity equations found in the I-O literature.
 
@@ -156,11 +159,11 @@ to energy intensity equations found in the I-O literature.
 
 At this point, we will take a small aside 
 to demonstrate that the single-sector economy 
-of Figures \ref{fig:direct_energy_flows} through \ref{fig:economic_value_flows} 
-can be re-drawn as shown in Figure \ref{fig:single_sector_flows_3}.
+of Figures~\ref{fig:direct_energy_flows} through~\ref{fig:economic_value_flows} 
+can be re-drawn as shown in Figure~\ref{fig:single_sector_flows_3}.
 
 \begin{figure}[h!]
-\centering
+\centering\
 \includegraphics[width=1.0\linewidth]{Part_3/Chapter_Intensity/images/I-O_Process_Equivalence.pdf}
 \caption{Process flows in a single-sector economy}{Process flows in a single-sector economy}
 \label{fig:single_sector_flows_3}
@@ -200,13 +203,13 @@ Realizing that $\sum_{n=0}^{\infty}a_{22}^{n}
 = \frac{\dot{E}_{02}}{\dot{X}_{2}}$ gives
 
 \begin{equation} \label{eq:epsilon_process_SS}
-	\varepsilon_{2} = (1-a_{22})^{-1} \dot{X}^{-1} \dot{E}_{02}.
+	\varepsilon_{2} = {(1-a_{22})}^{-1} \dot{X}^{-1} \dot{E}_{02}.
 \end{equation}
 
 Neglecting accumulation of embodied energy in the economy
 $\left(\frac{\mathrm{d}B_{2}}{\mathrm{d}t}\right)$ 
 and depreciation $\left(\gamma_{2}B_{2}\right)$, 
-Equations \ref{eq:eps3_ss_IO} and \ref{eq:epsilon_process_SS} are identical 
+Equations~\ref{eq:eps3_ss_IO} and~\ref{eq:epsilon_process_SS} are identical 
 (assuming $\frac{\mathrm{d}B_{2}}{\mathrm{d}t} =\gamma_{2} = 0$), 
 indicating that the I-O approach accounts 
 for the infinite recursion of energy demand by the economy.
@@ -218,7 +221,10 @@ for the infinite recursion of energy demand by the economy.
 \section{Matrix Formulation}
 %%%%%%%%%%
 
-We can use Equations \ref{eq:epsilon_output_def} through \ref{eq:epsilon_equiv_1} to rewrite Equations \ref{eq:C-CV_B_1_depreciation} and \ref{eq:C-CV_B_2_depreciation} as
+We can use Equations~\ref{eq:epsilon_output_def} 
+through~\ref{eq:epsilon_equiv_1} to rewrite 
+Equations~\ref{eq:C-CV_B_1_depreciation} 
+and~\ref{eq:C-CV_B_2_depreciation} as
 
 \begin{equation} \label{eq:CV_B_3_with_eps}
 	\dot{X}_{33}\varepsilon_{3} + \dot{X}_{43}\varepsilon_{4} + \dot{E}_{13} - \frac{\mathrm{d}B_{3}}{\mathrm{d}t} - \gamma_{3}B_{3} = \dot{X}_{3}\varepsilon_{3}
@@ -230,7 +236,8 @@ We can use Equations \ref{eq:epsilon_output_def} through \ref{eq:epsilon_equiv_1
 	\dot{X}_{34}\varepsilon_{3} + \dot{X}_{44}\varepsilon_{4} + \dot{E}_{14} - \frac{\mathrm{d}B_{4}}{\mathrm{d}t} - \gamma_{4}B_{4} = \dot{X}_{4}\varepsilon_{4}.
 \end{equation}
 
-We can rewrite Equations \ref{eq:CV_B_3_with_eps} and \ref{eq:CV_B_4_with_eps} in matrix notation with the following definitions:
+We can rewrite Equations~\ref{eq:CV_B_3_with_eps} 
+and~\ref{eq:CV_B_4_with_eps} in matrix notation with the following definitions:
 
 \begin{equation} \label{eq:eps_vec_def}
 	\vec{\varepsilon} =		\begin{Bmatrix} 	\varepsilon_{3}	\\
@@ -288,7 +295,7 @@ We can rewrite Equations \ref{eq:CV_B_3_with_eps} and \ref{eq:CV_B_4_with_eps} i
 						\end{cases},
 \end{equation}
 
-\noindent such that:
+\noindent{}such that:
 
 \begin{equation} \label{eq:matrix_leontief}
 	\vec{X}_{t}^{\mathrm{T}}\vec{\varepsilon} + \vec{E} - \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B}\right) = \hat{\vec{X}}\vec{\varepsilon}.
@@ -311,7 +318,8 @@ Additional relationships that will be helpful later include (derived in Appendix
 \noindent and
 
 \begin{equation} \label{eq:Xdifference2_inverse}
-	\left(\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}}\right)^{-1} = (\vec{I} - \vec{A}^{\mathrm{T}})^{-1}\hat{\vec{X}}^{-1}.
+	{\left(\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}}\right)}^{-1} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}.
 \end{equation}
 
 
@@ -319,7 +327,10 @@ Additional relationships that will be helpful later include (derived in Appendix
 \section{Estimating $\vec{\varepsilon}$ and $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$}
 %%%%%%%%%%
 
-With Equation \ref{eq:matrix_leontief}, we can solve for either the energy accumulation vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) or the energy intensity vector ($\vec{\varepsilon}$), but not both. 
+With Equation~\ref{eq:matrix_leontief}, we can solve for either 
+the energy accumulation vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
+or the energy intensity vector ($\vec{\varepsilon}$), 
+but not both. 
 
 Solving for the accumulation vector gives
 
@@ -327,29 +338,49 @@ Solving for the accumulation vector gives
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} = (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\vec{\varepsilon} + \vec{E} - \hat{\vec{\gamma}}\vec{B}.
 \end{equation}
 
-\noindent Finally, we can substutute Equation \ref{eq:Xdifference1} which gives
+\noindent Finally, we can substutute Equation~\ref{eq:Xdifference1} which gives
 
 \begin{equation} \label{eq:dB_dt_leontief_with_A}
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} = \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \vec{\varepsilon} + \vec{E} - \hat{\vec{\gamma}}\vec{B},
 \end{equation}
 
-\noindent which allows estimation of the embodied energy accumulation in economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ knowing only sector outputs ($\hat{\vec{X}}$), sector input-output ratios ($\vec{A}$), sector energy intensities ($\vec{\varepsilon}$), energy input to the economy ($\vec{E}$), and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{b}$). In theory, the transaction matrix ($\vec{X}_{t}$) is not required if the input-ouput ratios ($\vec{A}$) are known, though in reality, knowledge of input-output ratios would be derived from the transaction matrix $\vec{X}_{t}$ .
+\noindent{}which allows estimation of the embodied energy accumulation 
+in economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
+knowing only sector outputs ($\hat{\vec{X}}$), 
+sector input-output ratios ($\vec{A}$), 
+sector energy intensities ($\vec{\varepsilon}$), 
+energy input to the economy ($\vec{E}$), 
+and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{b}$). 
+In theory, the transaction matrix ($\vec{X}_{t}$) is not required 
+if the input-ouput ratios ($\vec{A}$) are known, 
+though in practice, knowledge of input-output ratios 
+would be derived from the transaction matrix $\vec{X}_{t}$.
 
 Solving for the energy intensity vector gives
 
 \begin{equation} \label{eq:epsilon_leontief}
-	\vec{\varepsilon} = (\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}})^{-1}\left[\vec{E} - \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B}\right)\right].
+	\vec{\varepsilon} 
+	= {(\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}})}^{-1}
+		\left[\vec{E} 
+				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+				+ \hat{\vec{\gamma}}\vec{B}\right)
+		\right].
 \end{equation}
 
-\noindent Substituting Equation \ref{eq:Xdifference2_inverse} gives
+\noindent{}Substituting Equation~\ref{eq:Xdifference2_inverse} gives
 
 \begin{equation} \label{eq:epsilon_leontief_with_A}
-	\vec{\varepsilon} = (\vec{I} - \vec{A}^{\mathrm{T}})^{-1}\hat{\vec{X}}^{-1}\left[\vec{E} - \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B}\right)\right],
+	\vec{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E} 
+				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+				+ \hat{\vec{\gamma}}\vec{B}\right)
+		\right],
 \end{equation}
 
-\noindent which allows estimation of the energy intensity of economic sectors ($\vec{\varepsilon}$) knowing only sector input-output ratios ($\vec{A}$), sector outputs ($\hat{\vec{X}}$), energy input to the economy ($\vec{E}$), sector embodied energy accumulation rates $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$, and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$).
+\noindent{}which allows estimation of the energy intensity of economic sectors ($\vec{\varepsilon}$) knowing only sector input-output ratios ($\vec{A}$), sector outputs ($\hat{\vec{X}}$), energy input to the economy ($\vec{E}$), sector embodied energy accumulation rates $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$, and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$).
 
-Comparison of Equations \ref{eq:eps1_ss_IO} and \ref{eq:epsilon_leontief_with_A} shows the similarities between the single-sector algebraic formulation and the multi-sector matrix formulation of the I-O analysis method. This newly developed multi-sector matrix formulation can be extended to any desired level of economic and energy sector disaggregation as shown by Bullard (1975, 1978) and others.
+Comparison of Equations~\ref{eq:eps1_ss_IO} and~\ref{eq:epsilon_leontief_with_A} shows the similarities between the single-sector algebraic formulation and the multi-sector matrix formulation of the I-O analysis method. This newly developed multi-sector matrix formulation can be extended to any desired level of economic and energy sector disaggregation as shown by Bullard (1975, 1978) and others.
 
 ************************** MATT ENDED HERE *************************
 
