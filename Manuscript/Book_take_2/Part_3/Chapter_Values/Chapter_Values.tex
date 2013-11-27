@@ -51,14 +51,25 @@ and final products within an economy.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/PERKS_basic_unit_value_all.pdf}
-\caption[Flows of value for a single sector]{Flows of value ($\dot{X}$) for a single sector. The value flows are associated with each of the different material and energy flows outlined in previous chapters.}
+\caption[Flows of value for a single sector]{Flows of value ($\dot{X}$) 
+for a single sector. 
+The value flows are associated with each of the different 
+material and energy flows outlined in previous chapters.}
 \label{fig:basic_value} 
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_3/Chapter_Values/images/PERKS_basic_unit_value.pdf}
-\caption[Aggregated flows of value for a single sector]{Aggregated flows of value ($\dot{X}$) for a single sector. Distinction is made between value flows that enter the sector and are accumulated (i.e. capital goods) and value flows that are not accumulated. Within the sector there is destruction of value $\dot{X}_{dest}$, represented by the downward arrow flowing into the black sink and generation of value, represented by the arrow flowing out of a source. }
+\caption[Aggregated flows of value for a single sector]{Aggregated flows of value ($\dot{X}$) 
+for a single sector. 
+Distinction is made between value flows that 
+enter the sector and are accumulated (i.e.\ capital goods) 
+and value flows that are not accumulated. 
+Within the sector there is destruction of value $\dot{X}_{dest}$, 
+represented by the downward arrow flowing 
+into the black sink and generation of value, 
+represented by the arrow flowing out of a source. }
 \label{fig:basic_value_aggregated} 
 \end{figure}
 
@@ -236,7 +247,7 @@ use and wastes (i.e., measures impact of of economic activity on the biosphere).
 		\3 A measure of the external system is needed for control ``feedback.''
 		\3 Even if ``feedback'' were available, subjective value wouldn't help.
 
-\1 To obtain an intrinsic measure of economic activity, you need a bridge between currency flows and physical flows.  (prev. sentence: Instrinsic measures of economic impact must include some theory of value of economic output.)
+\1 To obtain an intrinsic measure of economic activity, you need a bridge between currency flows and physical flows.  (previous sentence: Instrinsic measures of economic impact must include some theory of value of economic output.)
 
 	\2 we use subjective theory of value, the mainstream economic approach to measuring economic output using market prices
 
@@ -268,7 +279,7 @@ use and wastes (i.e., measures impact of of economic activity on the biosphere).
 
 
 %%%%%%%%%% Example A: single-sector economy %%%%%%%%%%
-\section{Example A: one sector economy}
+\section{Example A: one sector economy} % chktex 13
 %%%%%%%%%%
 
 Figure~\ref{fig:A_value} shows flows of value in the single-sector economy.
@@ -443,7 +454,7 @@ is accumulated in society.
 
 
 %%%%%%%%%% Example B: two-sector economy %%%%%%%%%%
-\section{Example B: two sector economy}
+\section{Example B: two sector economy} % chktex 13
 %%%%%%%%%%
 
 Figure~\ref{fig:B_value} shows flows of value ($\dot{X}$) 
@@ -508,7 +519,7 @@ you have a claim on value from the economy.
 
 
 %%%%%%%%%% Example C: three-sector economy %%%%%%%%%%
-\section{Example C: three sector economy}
+\section{Example C: three sector economy} % chktex 13
 %%%%%%%%%%
 
 Figure~\ref{fig:C_value} shows flows of value ($\dot{X}$) 
@@ -544,14 +555,24 @@ we obtain
 	- \sum\limits_{j=1}^{n} \dot{X}_{dest,j}.
 \end{equation}
 
-\noindent{}Realizing that ******* Need to do this derivation! ********* yields
+\noindent{}With the identities
 
-\begin{equation}\label{eq:value-identity}
-	\sum\limits_{j=1}^{n} \sum\limits_{i=1}^{n} \dot{X}_{ij}
-	= \sum\limits_{j=1}^{n} \dot{X}_{j},
+\begin{equation} \label{eq:X_identity_1}
+	\dot{X}_{j}  
+	= \sum\limits_{k=1}^n \dot{X}_{jk}
 \end{equation}
 
-\noindent{}and Equation~\ref{eq:C-value-economy-a} becomes
+\noindent{}and
+
+\begin{equation} \label{eq:X_identity_2}
+	\sum\limits_{j=1}^n\dot{X}_{j}  
+	= \sum\limits_{j=1}^n \sum\limits_{k=1}^n \dot{X}_{jk}
+	= \sum\limits_{i=1}^n \sum\limits_{k=1}^n \dot{X}_{ik}
+	= \sum\limits_{i=1}^n \sum\limits_{j=1}^n \dot{X}_{ij}
+	= \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{X}_{ij},
+\end{equation}
+
+\noindent{}Equation~\ref{eq:C-value-economy-a} becomes
 
 \begin{equation}\label{eq:C-value-economy-b}
 	\sum\limits_{j=1}^{n} \frac{\mathrm{d}X_{j}}{\mathrm{d}t}
@@ -559,11 +580,12 @@ we obtain
 	- \sum\limits_{j=1}^{n} \dot{X}_{dest,j},
 \end{equation}
 
-\noindent{}indicating that value generation ($\dot{X}_{gen,j}$) 
+\noindent{}for $j \in [1, n]$, indicating that 
+value generation ($\dot{X}_{gen,j}$) 
 and destruction ($\dot{X}_{dest,j}$)
-are the mechanisms by which value is accumulated or lost
+are the only mechanisms by which value is accumulated or lost
 $\left( \frac{\mathrm{d}X_{j}}{\mathrm{d}t} \right)$
-within the economy.
+within economic sectors of the economy.
 
 
 %%%%%%%%%% Value: Auto industry example %%%%%%%%%%
