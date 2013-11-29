@@ -31,6 +31,7 @@ cd Part_3; cd Chapter_Values;       rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Part_3; cd Chapter_Intensity;    rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_4; cd Chapter_Implications; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 # Delete Part 5's .aux files here, if we make a Part 5.
-cd Appendix_Derivation; rm -f *.aux; cd ..
-cd Appendix_Proof_1;    rm -f *.aux; cd ..
-cd Appendix_Proof_2;    rm -f *.aux; cd ..
+cd Appendix_Infinite_Series;        rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
+cd Appendix_Derivation;             rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
+cd Appendix_Proof_1;                rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
+cd Appendix_Proof_2;                rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
