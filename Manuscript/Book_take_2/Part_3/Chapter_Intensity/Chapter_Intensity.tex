@@ -13,7 +13,8 @@
 % to alter or adjust the chapter heading in the running head
 \chaptermark{intensity}
 
-In Chapter~\ref{chap:value}, we defined flows of value in an economy.
+In Chapters~\ref{chap:direct_energy},~\ref{chap:embodied_energy}, and~\ref{chap:value}, 
+we defined flows of direct energy, embodied energy, and value in an economy.
 In this chapter, we merge energy and value together to estimate
 the energy intensity of economic sectors.
 
@@ -23,44 +24,36 @@ the energy intensity of economic sectors.
 %%%%%%%%%%
 
 Energy intensity ($\varepsilon$) is the ratio 
-of total energy and value outflow rates from an economic sector, 
+of total energy ($\dot{T}$) and value ($\dot{X}$) outflow rates 
+from an economic sector, 
 such that for the $j^{\mathrm{th}}$ goods and services sector,
 
 \begin{equation} \label{eq:epsilon_output_def_g_and_s}
-	\varepsilon_{j} \equiv \frac{\dot{T}_{j}}{\dot{X}_{j}}.
+	\varepsilon_{j} \equiv \frac{\dot{T}_{j}}{\dot{X}_{j}},
 \end{equation}
 
-\noindent and $\varepsilon$ is in units of J/\$. 
-For an energy sector, energy intensity is defined as
-******** Is this next equation correct? ************
-
-\begin{equation} \label{eq:epsilon_output_def_energy}
-	\varepsilon_{j} \equiv \frac{\dot{T}_{j}}{\dot{E}_{j}} 
-	= 1 + \frac{\dot{B}_{j}}{\dot{E}_{j}}.
-\end{equation}
-
-\noindent and the units of $\varepsilon$ are J/J. 
+\noindent{}and $\varepsilon$ is in units of J/\$. 
 For inter-sector flows, we have
 
 \begin{equation} \label{eq:epsilon_transfers_1}
-	\varepsilon_{ij} = \frac{\dot{T}_{ij}}{\dot{X}_{ij}}.
+	\varepsilon_{jk} = \frac{\dot{T}_{jk}}{\dot{X}_{jk}}.
 \end{equation}
 
 Furthermore, we note that 
 
 \begin{equation} \label{eq:epsilon_equiv_1}
-	\varepsilon_{i} = \varepsilon_{ij}
+	\varepsilon_{j} = \varepsilon_{jk}
 \end{equation}
 
-\noindent for all $j$, because the energy intensity 
-of sector $i$'s output is the same regardless of its destination ($j$). 
+\noindent{}for all $k$, because the energy intensity 
+of sector $j$'s output is independent of its destination ($k$). 
 I.e., we assume that all goods produced by a sector 
 are produced at the average energy intensity 
 of that sector.\footnote{If this approach is unsatisfactory, 
 the sector may be divided into sub-sectors 
 with different energy intensities.}
 
-We define parameter $a_{ij}$ that represents the input 
+We define the input-ouput ratio ($a_{ij}$) that represents the input 
 of good $i$ required to produce a unit of output from sector $j$.
 
 \begin{equation} \label{eq:aij_def}
@@ -81,47 +74,76 @@ row and column 1 represents energy, and the rest represent goods and services? *
 \end{figure}
 
 
+%%%%%%%%%% Example A %%%%%%%%%%
+\section{Example A: single-sector economy ($\varepsilon$)} % chktex 13
+%%%%%%%%%%
+
+With reference to Figures~\ref{fig:A_energy}, 
+\ref{fig:A_total_energy_T_dot}, 
+and~\ref{fig:A_value},
+the energy intensity ($\varepsilon_{1}$) of a single-sector economy is calculated by
+
+\begin{equation} \label{eq:A-energy_intensity}
+	\varepsilon_{1} 
+	= \frac{\dot{T}_{1}}{\dot{X}_{1}} 
+	= \frac{\dot{T}_{11}}{\dot{X}_{11}}.
+\end{equation}
+
+The simplicity of Equation~\ref{eq:A-energy_intensity}
+evaporates when we look at two-sector and three-sector economies
+in the following sections.
+
+
 %%%%%%%%%% Example B %%%%%%%%%%
 \section{Example B: energy intensity ($\varepsilon$)} % chktex 13
 %%%%%%%%%%
 
-With reference to Figures~\ref{fig:B_total_energy} and~\ref{fig:B_value}, 
-the energy intensity ($\varepsilon$) 
-of the energy sector (2) is given by
+With reference to Figures~\ref{fig:B_energy}, 
+\ref{fig:B_total_energy},
+and~\ref{fig:B_value}, 
+the energy intensity ($\varepsilon_{2}$) 
+of the production sector is given by
 
 \begin{equation} \label{eq:single_sector_energy_intensity}
-	\varepsilon_{2} = \frac{\dot{T}_{2}}{\dot{X}_{2}} = \frac{\dot{T}_{22}}{\dot{X}_{22}}.
+	\varepsilon_{2} 
+	= \frac{\dot{T}_{2}}{\dot{X}_{2}} 
+	= \frac{\dot{T}_{22}}{\dot{X}_{22}}.
 \end{equation}
 
-The input-output ratio ($a$) for the economic sector (2) is
+The input-output ratio ($a_{2}$) for the production sector is
 
 \begin{equation} \label{eq:io_ratio_single_sector}
 	a_{22} = \frac{\dot{X}_{22}}{\dot{X}_{2}}.
 \end{equation}
 
-\noindent Thus,
+\noindent{}Thus,
 
 \begin{equation} \label{eq:T_dot_1_single_sector}
 	\dot{T}_{2} = \varepsilon_{2}\dot{X}_{2},
 \end{equation}
 
-\noindent and
+\noindent{}and
 
 \begin{equation} \label{eq:T_dot_11_single_sector}
 	\dot{T}_{22} = \varepsilon_{2}a_{22}\dot{X}_{2}.
 \end{equation}
 
-************** Need to check the following equation. ***************
 Realizing that 
-(a) $\frac{\mathrm{d}T_3}{\mathrm{d}t} = \frac{\mathrm{d}B_3}{\mathrm{d}t}$ 
-because $\frac{\mathrm{d}E_3}{\mathrm{d}t} = 0$, 
-(b) $\dot{T}_{13} = \dot{E}_{13}$ because $\dot{B}_{13} = 0$ 
-due to processing of raw energy carriers occurring \emph{within} the economic sector (3), and
+(a) $\frac{\mathrm{d}T_2}{\mathrm{d}t} = \frac{\mathrm{d}B_2}{\mathrm{d}t}$ 
+due to $\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$, because direct energy
+does not accumulate within economic sectors, 
+(b) $\dot{T}_{02} = \dot{E}_{02}$ due to $\dot{B}_{02} = 0$, 
+because embodied energy appears only in the \emph{output} of a sector, and
 (c) substituting Equations~\ref{eq:T_dot_1_single_sector} 
-and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_3} gives
+and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2} gives
 
 \begin{equation} \label{eq:dB1/dt_single_sector_after_substituting_eps_and_a}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} = \varepsilon_{2}a_{22}\dot{X}_{2} + \dot{E}_{02} - \varepsilon_{2}\dot{X}_{2} - \gamma_{2}B_{2}.
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	= \varepsilon_{2}a_{22}\dot{X}_{2} 
+	+ \dot{E}_{02} 
+	+ \dot{T}_{12}
+	- \varepsilon_{2}\dot{X}_{2} 
+	- \gamma_{2}B_{2}.
 \end{equation}
 
 We can estimate the energy intensity of the economy by solving 
@@ -130,34 +152,52 @@ for $\varepsilon_{2}$.
 
 \begin{equation} \label{eq:eps3_ss_IO}
 	\varepsilon_{2} 
-	= {(1 - a_{22})}^{-1} \dot{X}_{2}^{-1} 
-	\left[\dot{E}_{02} 
+	= \left[\dot{E}_{02} 
+	      + \dot{T}_{12}
 	      - \left(\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
 		          + \gamma_{2}B_{2}
 			\right)
-	\right]
+	  \right]
+	\dot{X}_{2}^{-1} {(1 - a_{22})}^{-1}
 \end{equation}
 
 Equation~\ref{eq:eps3_ss_IO} is similar 
 to the typical energy intensity equation 
-found in the I-O literature~\cite{Bullard1975,Bullard1976,Bullard1976a,Bullard1976b,Herendeen1978,Casler1984,Herendeen2004},
-except that Equation~\ref{eq:eps3_ss_IO} applies 
-to a single economic sector and contains scalar 
-(as opposed to matrix) terms. 
-Using Example C below, we will derive 
-a matrix representation of Equation~\ref{eq:eps3_ss_IO} 
-that is directly comparable 
-to energy intensity equations found in the I-O literature.
+found in the I-O literature~\cite[Equation 6]{Casler1984},
+with the following exceptions:
+
+\begin{itemize}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes scalar terms, 
+	but the I-O literature utilizes a matrix
+	formulation (see Section~\ref{sec:C-intensity_and_matrix} below),}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for 
+	energy input to the economy from society ($\dot{T}_{12}$), 
+	but the I-O literature typically does not,}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
+	accumulation of embodied energy in the economy 
+	$\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} \right)$,
+	but the I-O literature typically does not, and}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
+	depreciation ($\gamma_{2}B_{2}$),
+	but the I-O literature typically does not.}
+\end{itemize}
+
+To extend the example above to a matrix formulation,
+we turn to Example~C.
 
 
 %%%%%%%%%% Example C %%%%%%%%%%
-\section{Matrix Formulation}
+\section{Example~C: three-sector economy and matrix formulation}
+\label{sec:C-intensity_and_matrix}
 %%%%%%%%%%
 
-We can use Equations~\ref{eq:epsilon_output_def} 
-through~\ref{eq:epsilon_equiv_1} to rewrite 
-Equations~\ref{eq:C-CV_B_1_depreciation} 
-and~\ref{eq:C-CV_B_2_depreciation} as
+We can apply \ref{eq:C-CV_T_123} to the three-sector
+economy shown in 
+Figures~\ref{fig:C_energy}, \ref{fig:C_total_energy}, and~\ref{fig:C_value}
+to obtain the following total energy accounting equations
+for the three-sector economy:
+
+************ Matt ended here ****************
 
 \begin{equation} \label{eq:CV_B_3_with_eps}
 	\dot{X}_{33}\varepsilon_{3} + \dot{X}_{43}\varepsilon_{4} + \dot{E}_{13} - \frac{\mathrm{d}B_{3}}{\mathrm{d}t} - \gamma_{3}B_{3} = \dot{X}_{3}\varepsilon_{3}
