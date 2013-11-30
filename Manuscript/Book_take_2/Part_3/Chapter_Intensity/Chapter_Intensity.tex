@@ -241,6 +241,8 @@ and~\ref{eq:C-Total_Energy_Sec_3-a} to obtain
 	- \gamma_{2} B_{2}
 \end{equation}
 
+\noindent{}and
+
 \begin{equation} \label{eq:C-Total_Energy_Sec_3-b}
 	\frac{\mathrm{d}B_{3}}{\mathrm{d}t}
 	= \dot{E}_{03}
@@ -248,47 +250,19 @@ and~\ref{eq:C-Total_Energy_Sec_3-a} to obtain
 	+ \varepsilon_{2} \dot{X}_{23}
 	+ \varepsilon_{3} \dot{X}_{33}
 	- \varepsilon_{3} \dot{X}_{3}
-	- \gamma_{3} B_{3}
+	- \gamma_{3} B_{3}.
 \end{equation}
 
-\noindent{}Next, we rearrange Equations~\ref{eq:C-Total_Energy_Sec_2-b} 
-and~\ref{eq:C-Total_Energy_Sec_3-b} into a form
-that is a precursor to a matrix form.
-
-\begin{equation} \label{eq:C-Total_Energy_Sec_2-c}
-	\dot{X}_{22} \varepsilon_{2}
-	+ \dot{X}_{32} \varepsilon_{3}
-	+ \dot{E}_{02}
-	+ \dot{T}_{12}
-	- \frac{\mathrm{d}B_{2}}{\mathrm{d}t}
-	- \gamma_{2} B_{2}
-	= \dot{X}_{2} \varepsilon_{2}
-\end{equation}
-
-\begin{equation} \label{eq:C-Total_Energy_Sec_3-c}
-	\dot{X}_{23} \varepsilon_{2}
-	+ \dot{X}_{33} \varepsilon_{3}
-	+ \dot{E}_{03}
-	+ \dot{T}_{13}
-	- \frac{\mathrm{d}B_{3}}{\mathrm{d}t}
-	- \gamma_{3} B_{3}
-	= \dot{X}_{3} \varepsilon_{3}
-\end{equation}
-
-\noindent{}Equations~\ref{eq:C-Total_Energy_Sec_2-c} 
-and~\ref{eq:C-Total_Energy_Sec_3-c} can be rewritten 
+\noindent{}Equations~\ref{eq:C-Total_Energy_Sec_2-b} 
+and~\ref{eq:C-Total_Energy_Sec_3-b} can be rewritten 
 in matrix notation as
 
 \begin{equation} \label{eq:C-Expanded_Matrix_Form}
-	\begin{bmatrix}
-		\dot{X}_{22} & \dot{X}_{32}\\
-		\dot{X}_{23} & \dot{X}_{33}
-	\end{bmatrix}
 	\begin{Bmatrix}
-		\varepsilon_{2}\\
-		\varepsilon_{3}
+		\frac{\mathrm{d}B_{2}}{\mathrm{d}t} \\
+		\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
 	\end{Bmatrix}
-	+
+	=
 	\begin{Bmatrix}
 		\dot{E}_{02}\\
 		\dot{E}_{03}
@@ -298,11 +272,24 @@ in matrix notation as
 		\dot{T}_{12}\\
 		\dot{T}_{13}
 	\end{Bmatrix}
-	-
+	+
+	\begin{bmatrix}
+		\dot{X}_{22} & \dot{X}_{32}\\
+		\dot{X}_{23} & \dot{X}_{33}
+	\end{bmatrix}
 	\begin{Bmatrix}
-		\frac{\mathrm{d}B_{2}}{\mathrm{d}t} \\
-		\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
+		\varepsilon_{2}\\
+		\varepsilon_{3}
 	\end{Bmatrix}
+	-
+	\begin{bmatrix}
+		\dot{X}_{2} & 0          \\
+		0           & \dot{X}_{3}
+	\end{bmatrix}
+	\begin{Bmatrix}
+		\varepsilon_{2}\\
+		\varepsilon_{3}
+	\end{Bmatrix}	
 	-
 	\begin{bmatrix}
 		\gamma_{2} & 0          \\
@@ -312,15 +299,6 @@ in matrix notation as
 		B_{2}\\
 		B_{3}
 	\end{Bmatrix}
-	=
-	\begin{bmatrix}
-		\dot{X}_{2} & 0          \\
-		0           & \dot{X}_{3}
-	\end{bmatrix}
-	\begin{Bmatrix}
-		\varepsilon_{2}\\
-		\varepsilon_{3}
-	\end{Bmatrix}	
 \end{equation}
 
 \noindent{}If we define the following matrices and vectors:
@@ -418,26 +396,27 @@ in matrix notation as
 compactly as
 
 \begin{equation} \label{eq:matrix_leontief}
-	\vec{X}_{t}^{\mathrm{T}}\vec{\varepsilon} 
-	+ \vec{E}_{0}
-	+ \vec{T}_{1} 
-	- \left(
-		\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-		+ \hat{\vec{\gamma}}\vec{B} 
-	  \right) 
-	= \hat{\vec{X}}\vec{\varepsilon}
+	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	= \vec{E}_{0}
+	+ \vec{T}_{1}
+	+ \vec{X}_{t}^{\mathrm{T}}\vec{\varepsilon} 
+	- \hat{\vec{X}}\vec{\varepsilon}
+	- \hat{\vec{\gamma}}\vec{B},
 \end{equation}
 
 \noindent{}which is the matrix version 
 of the total energy accounting equation
 written in terms of energy intensity ($\vec{\varepsilon}$).
-Equation~\ref{eq:matrix_leontief} was derived 
-from a three-sector economy, 
-but it is extendable to any number of sectors and firms.
+Equation~\ref{eq:C-Expanded_Matrix_Form} applies 
+for the three-sector economy of Example~C, 
+but the equivalent matrix formulation (Equation~\ref{eq:matrix_leontief}) 
+is extendable to any number of economic sectors.
 
 
 ************** Matt ended here **************
 
+******* Say that Equation~\ref{eq:matrix_leontief}
+is similar to Equation~\ref{eq:eps3_ss_IO}.
 
 ******** Discuss differences between Equation~\ref{eq:matrix_leontief}
 and the literature. ***********
