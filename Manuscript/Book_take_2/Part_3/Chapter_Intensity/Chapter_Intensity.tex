@@ -131,10 +131,10 @@ The input-output ratio ($a_{2}$) for the production sector is
 Realizing that 
 (a) $\frac{\mathrm{d}T_2}{\mathrm{d}t} = \frac{\mathrm{d}B_2}{\mathrm{d}t}$ 
 due to $\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$, because direct energy
-does not accumulate within economic sectors, 
+does not accumulate within economic sectors and
 (b) $\dot{T}_{02} = \dot{E}_{02}$ due to $\dot{B}_{02} = 0$, 
 because embodied energy appears only in the \emph{output} of a sector, and
-(c) substituting Equations~\ref{eq:T_dot_1_single_sector} 
+substituting Equations~\ref{eq:T_dot_1_single_sector} 
 and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2} gives
 
 \begin{equation} \label{eq:dB1/dt_single_sector_after_substituting_eps_and_a}
@@ -191,90 +191,274 @@ we turn to Example~C.
 \label{sec:C-intensity_and_matrix}
 %%%%%%%%%%
 
-We can apply Equation~\ref{eq:C-CV_T_123} to the three-sector
+We apply Equation~\ref{eq:C-CV_T_123} to the three-sector
 economy shown in 
 Figures~\ref{fig:C_energy},~\ref{fig:C_total_energy}, and~\ref{fig:C_value}
 to obtain the following total energy accounting equations
-for the three-sector economy:
+for the Energy~(2) and Goods and Services~(3) sectors 
+of the three-sector economy:
 
-************ Matt ended here ****************
-
-\begin{equation} \label{eq:CV_B_3_with_eps}
-	\dot{X}_{33}\varepsilon_{3} + \dot{X}_{43}\varepsilon_{4} + \dot{E}_{13} - \frac{\mathrm{d}B_{3}}{\mathrm{d}t} - \gamma_{3}B_{3} = \dot{X}_{3}\varepsilon_{3}
+\begin{equation} \label{eq:C-Total_Energy_Sec_2-a}
+	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 
+	= \dot{T}_{02}  
+	+ \dot{T}_{12}
+	+ \dot{T}_{22}
+	+ \dot{T}_{32}
+	- \dot{T}_{2}
+	- \dot{T}_{20}
 \end{equation}
 
-\noindent and 
+\noindent{}and
 
-\begin{equation} \label{eq:CV_B_4_with_eps}
-	\dot{X}_{34}\varepsilon_{3} + \dot{X}_{44}\varepsilon_{4} + \dot{E}_{14} - \frac{\mathrm{d}B_{4}}{\mathrm{d}t} - \gamma_{4}B_{4} = \dot{X}_{4}\varepsilon_{4}.
+\begin{equation} \label{eq:C-Total_Energy_Sec_3-a}
+	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 
+	= \dot{T}_{03}  
+	+ \dot{T}_{13}
+	+ \dot{T}_{23}
+	+ \dot{T}_{33}
+	- \dot{T}_{3}
+	- \dot{T}_{30}.
 \end{equation}
 
-We can rewrite Equations~\ref{eq:CV_B_3_with_eps} 
-and~\ref{eq:CV_B_4_with_eps} in matrix notation with the following definitions:
+\noindent{}Similar to Example~B, we realize that 
+(a) $\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$ 
+due to $\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$, because direct energy
+does not accumulate within economic sectors and
+(b) $\dot{T}_{0j} = \dot{E}_{0j}$ due to $\dot{B}_{0j} = 0$, 
+because embodied energy appears only in the \emph{output} of a sector, and
+we substitute $\dot{T}_{j} = \varepsilon_{j} \dot{X}_{j}$ 
+and $\dot{T}_{jk} = \varepsilon_{j} \dot{X}_{jk}$ 
+into Equations~\ref{eq:C-Total_Energy_Sec_2-a}
+and~\ref{eq:C-Total_Energy_Sec_3-a} to obtain
+
+\begin{equation} \label{eq:C-Total_Energy_Sec_2-b}
+	\frac{\mathrm{d}B_{2}}{\mathrm{d}t}
+	= \dot{E}_{02}
+	+ \dot{T}_{12}
+	+ \varepsilon_{2} \dot{X}_{22}
+	+ \varepsilon_{3} \dot{X}_{32}
+	- \varepsilon_{2} \dot{X}_{2}
+	- \gamma_{2} B_{2}
+\end{equation}
+
+\begin{equation} \label{eq:C-Total_Energy_Sec_3-b}
+	\frac{\mathrm{d}B_{3}}{\mathrm{d}t}
+	= \dot{E}_{03}
+	+ \dot{T}_{13}
+	+ \varepsilon_{2} \dot{X}_{23}
+	+ \varepsilon_{3} \dot{X}_{33}
+	- \varepsilon_{3} \dot{X}_{3}
+	- \gamma_{3} B_{3}
+\end{equation}
+
+\noindent{}Next, we rearrange Equations~\ref{eq:C-Total_Energy_Sec_2-b} 
+and~\ref{eq:C-Total_Energy_Sec_3-b} into a form
+that is a precursor to a matrix form.
+
+\begin{equation} \label{eq:C-Total_Energy_Sec_2-c}
+	\dot{X}_{22} \varepsilon_{2}
+	+ \dot{X}_{32} \varepsilon_{3}
+	+ \dot{E}_{02}
+	+ \dot{T}_{12}
+	- \frac{\mathrm{d}B_{2}}{\mathrm{d}t}
+	- \gamma_{2} B_{2}
+	= \dot{X}_{2} \varepsilon_{2}
+\end{equation}
+
+\begin{equation} \label{eq:C-Total_Energy_Sec_3-c}
+	\dot{X}_{23} \varepsilon_{2}
+	+ \dot{X}_{33} \varepsilon_{3}
+	+ \dot{E}_{03}
+	+ \dot{T}_{13}
+	- \frac{\mathrm{d}B_{3}}{\mathrm{d}t}
+	- \gamma_{3} B_{3}
+	= \dot{X}_{3} \varepsilon_{3}
+\end{equation}
+
+\noindent{}Equations~\ref{eq:C-Total_Energy_Sec_2-c} 
+and~\ref{eq:C-Total_Energy_Sec_3-c} can be rewritten 
+in matrix notation as
+
+\begin{equation} \label{eq:C-Expanded_Matrix_Form}
+	\begin{bmatrix}
+		\dot{X}_{22} & \dot{X}_{32}\\
+		\dot{X}_{23} & \dot{X}_{33}
+	\end{bmatrix}
+	\begin{Bmatrix}
+		\varepsilon_{2}\\
+		\varepsilon_{3}
+	\end{Bmatrix}
+	+
+	\begin{Bmatrix}
+		\dot{E}_{02}\\
+		\dot{E}_{03}
+	\end{Bmatrix}
+	+
+	\begin{Bmatrix}
+		\dot{T}_{12}\\
+		\dot{T}_{13}
+	\end{Bmatrix}
+	-
+	\begin{Bmatrix}
+		\frac{\mathrm{d}B_{2}}{\mathrm{d}t} \\
+		\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
+	\end{Bmatrix}
+	-
+	\begin{bmatrix}
+		\gamma_{2} & 0          \\
+		0          & \gamma_{3}
+	\end{bmatrix}
+	\begin{Bmatrix}
+		B_{2}\\
+		B_{3}
+	\end{Bmatrix}
+	=
+	\begin{bmatrix}
+		\dot{X}_{2} & 0          \\
+		0           & \dot{X}_{3}
+	\end{bmatrix}
+	\begin{Bmatrix}
+		\varepsilon_{2}\\
+		\varepsilon_{3}
+	\end{Bmatrix}	
+\end{equation}
+
+\noindent{}If we define the following matrices and vectors:
+
+\begin{equation} \label{eq:X_t_matrix_def}
+	\vec{X}_{t} 
+	=
+	\begin{bmatrix}
+		\dot{X}_{22} & \dot{X}_{23} \\
+		\dot{X}_{32} & \dot{X}_{33}
+	\end{bmatrix},
+\end{equation}
 
 \begin{equation} \label{eq:eps_vec_def}
-	\vec{\varepsilon} =		\begin{Bmatrix} 	\varepsilon_{3}	\\
-																\varepsilon_{4}	\\
-									\end{Bmatrix},
+	\vec{\varepsilon} 
+	=
+	\begin{Bmatrix}
+		\varepsilon_{3}	\\
+		\varepsilon_{4}
+	\end{Bmatrix},
 \end{equation}
 
 \begin{equation} \label{eq:E_vec_def}
-	\vec{E} =		\begin{Bmatrix} 	\dot{E}_{13}	\\
-													\dot{E}_{14}\\
-						\end{Bmatrix},
+	\vec{E}_{0} 
+	=
+	\begin{Bmatrix}
+		\dot{E}_{02} \\
+		\dot{E}_{03}
+	\end{Bmatrix},
+\end{equation}
+
+\begin{equation} \label{eq:T_vec_def}
+	\vec{T}_{1} 
+	=
+	\begin{Bmatrix}
+		\dot{T}_{12} \\
+		\dot{T}_{13}
+	\end{Bmatrix},
 \end{equation}
 
 \begin{equation} \label{eq:dBdt_vec_def}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} =	\begin{Bmatrix}	\frac{\mathrm{d}B_{3}}{\mathrm{d}t}	\\
-																									\frac{\mathrm{d}B_{4}}{\mathrm{d}t}\\
-																		\end{Bmatrix},
+	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	=
+	\begin{Bmatrix}	
+		\frac{\mathrm{d}B_{2}}{\mathrm{d}t}	\\
+		\frac{\mathrm{d}B_{3}}{\mathrm{d}t}
+	\end{Bmatrix},
 \end{equation}
 
 \begin{equation} \label{eq:B_vec_def}
-	\vec{B} =			\begin{Bmatrix}	B_{3}\\
-														B_{4}\\
-							\end{Bmatrix},
+	\vec{B} 
+	=
+	\begin{Bmatrix}	
+		B_{2} \\
+		B_{3}
+	\end{Bmatrix},
 \end{equation}
 
-\begin{equation} \label{eq:A_matrix_def}
-	\vec{A} =	\begin{bmatrix} 	a_{33} & a_{34}	\\
-												a_{43} & a_{44}	\\
-					\end{bmatrix},
+\begin{equation}
+	\hat{\vec{\gamma}}
+	=
+	\delta_{ij} \gamma_{j}
+	=
+	\begin{bmatrix}
+		\gamma_{2} & 0         \\
+		0          & \gamma_{3}
+	\end{bmatrix},
 \end{equation}
 
-\begin{equation} \label{eq:X_t_matrix_def}
-	\vec{X}_{t} =		\begin{bmatrix} 	\dot{X}_{33}		&	\dot{X}_{34}	\\
-														\dot{X}_{43}		&	\dot{X}_{44}\\
-							\end{bmatrix},
-\end{equation}
+\noindent{}and
 
 \begin{equation} \label{eq:X_hat_matrix_def}
-	\hat{\vec{X}} = \delta_{ij}\dot{X}_{j} = \begin{bmatrix} 	\dot{X}_{33}		&	0					\\
-																								0					&	\dot{X}_{44}	\\
-																							\end{bmatrix},
+	\hat{\vec{X}} 
+	= 
+	\delta_{ij} \dot{X}_{j} 
+	= 
+	\begin{bmatrix}
+		\dot{X}_{2}		&	0	  \\
+		0				&	\dot{X}_{3}	\\
+	\end{bmatrix},
 \end{equation}
 
-\begin{equation} \label{eq:B_hat_matrix_def}
-	\hat{\vec{\gamma}} = \delta_{ij}\gamma_{j},
-\end{equation}
-
-[CAN WE MAKE THIS EQUATION EXPLICIT]
-
-\noindent and
+\noindent{}with
 
 \begin{equation}\label{eq:k_delta}
-	\delta_{ij} = \begin{cases}	1 	& 	\text{if  } i = j		\\
-												0	&	\text{if  } i \neq j	\\
-						\end{cases},
+	\delta_{ij} 
+	= 
+	\begin{cases}	
+		1 	& 	\text{if  } i = j		\\
+		0	&	\text{if  } i \neq j	\\
+	\end{cases},
 \end{equation}
 
-\noindent{}such that:
+\noindent{}we can write Equation~\ref{eq:C-Expanded_Matrix_Form}
+compactly as
 
 \begin{equation} \label{eq:matrix_leontief}
-	\vec{X}_{t}^{\mathrm{T}}\vec{\varepsilon} + \vec{E} - \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B}\right) = \hat{\vec{X}}\vec{\varepsilon}.
+	\vec{X}_{t}^{\mathrm{T}}\vec{\varepsilon} 
+	+ \vec{E}_{0}
+	+ \vec{T}_{1} 
+	- \left(
+		\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+		+ \hat{\vec{\gamma}}\vec{B} 
+	  \right) 
+	= \hat{\vec{X}}\vec{\varepsilon}
 \end{equation}
 
-Additional relationships that will be helpful later include (derived in Appendix):
+\noindent{}which is the matrix version 
+of the total energy accounting equation
+written in terms of energy intensity ($\vec{\varepsilon}$).
+Equation~\ref{eq:matrix_leontief} was derived 
+from a three-sector economy, 
+but it is extendable to any number of sectors and firms.
+
+
+************** Matt ended here **************
+
+
+******** Discuss differences between Equation~\ref{eq:matrix_leontief}
+and the literature. ***********
+
+*************** Move the following relationships to the point where we use them **************
+
+We shall see later that the following
+definitions will be useful. The input-output matrix ($\vec{A}$)
+is defined as
+
+\begin{equation} \label{eq:A_matrix_def}
+	\vec{A} 
+	=
+	\begin{bmatrix}
+		a_{22} & a_{23}	\\
+		a_{32} & a_{33}	
+	\end{bmatrix},
+\end{equation}
+
+\noindent{}and some additional relationships 
+that will be helpful later include:
 
 \begin{equation} \label{eq:Xhat_X_and_A}
 	\hat{\vec{X}}^{-1}\vec{X}_{t} = \vec{A}^{\mathrm{T}},
@@ -295,6 +479,10 @@ Additional relationships that will be helpful later include (derived in Appendix
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}.
 \end{equation}
 
+Equations~\ref{eq:Xdifference1} and~\ref{eq:Xdifference2}
+are proved in Appendices~\ref{app:A} and~\ref{app:B}.
+Equation~\ref{eq:Xdifference2_inverse} is derived 
+in Appendix~\ref{app:C}. 
 
 %%%%%%%%%% Example C %%%%%%%%%%
 \section{Estimating $\vec{\varepsilon}$ and $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$}
