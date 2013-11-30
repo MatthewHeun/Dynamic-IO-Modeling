@@ -395,37 +395,26 @@ in matrix notation as
 \noindent{}we can write Equation~\ref{eq:C-Expanded_Matrix_Form}
 compactly as
 
-\begin{equation} \label{eq:matrix_leontief}
+\begin{equation} \label{eq:matrix_leontief_pre_1}
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ \vec{X}_{t}^{\mathrm{T}}\vec{\varepsilon} 
 	- \hat{\vec{X}}\vec{\varepsilon}
-	- \hat{\vec{\gamma}}\vec{B},
+	- \hat{\vec{\gamma}}\vec{B}.
 \end{equation}
 
-\noindent{}which is the matrix version 
-of the total energy accounting equation
-written in terms of energy intensity ($\vec{\varepsilon}$).
-Equation~\ref{eq:C-Expanded_Matrix_Form} applies 
-for the three-sector economy of Example~C, 
-but the equivalent matrix formulation (Equation~\ref{eq:matrix_leontief}) 
-is extendable to any number of economic sectors.
+\noindent{}Equation~\ref{eq:matrix_leontief_pre_1} can be simplified to
 
+\begin{equation} \label{eq:matrix_leontief_pre_2}
+	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	= \vec{E}_{0}
+	+ \vec{T}_{1}
+	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\vec{\varepsilon} 
+	- \hat{\vec{\gamma}}\vec{B}.
+\end{equation}
 
-************** Matt ended here **************
-
-******* Say that Equation~\ref{eq:matrix_leontief}
-is similar to Equation~\ref{eq:eps3_ss_IO}.
-
-******** Discuss differences between Equation~\ref{eq:matrix_leontief}
-and the literature. ***********
-
-*************** Move the following relationships to the point where we use them **************
-
-We shall see later that the following
-definitions will be useful. The input-output matrix ($\vec{A}$)
-is defined as
+\noindent{}We can define the input-output matrix ($\vec{A}$) as
 
 \begin{equation} \label{eq:A_matrix_def}
 	\vec{A} 
@@ -433,96 +422,148 @@ is defined as
 	\begin{bmatrix}
 		a_{22} & a_{23}	\\
 		a_{32} & a_{33}	
-	\end{bmatrix},
+	\end{bmatrix}.
 \end{equation}
 
-\noindent{}and some additional relationships 
-that will be helpful later include:
-
-\begin{equation} \label{eq:Xhat_X_and_A}
-	\hat{\vec{X}}^{-1}\vec{X}_{t} = \vec{A}^{\mathrm{T}},
-\end{equation}
+\noindent{}Appendix~\ref{app:A} shows that
 
 \begin{equation} \label{eq:Xdifference1}
-	\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}} = \hat{\vec{X}}(\vec{A}^{\mathrm{T}} - \vec{I}),
+	\vec{X}_{t}^{\mathrm{T}} 
+	- \hat{\vec{X}} 
+	= \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}),
 \end{equation}
 
-\begin{equation} \label{eq:Xdifference2}
-	\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}} = \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}}),
+\noindent{}which allows Equation~\ref{eq:matrix_leontief_pre_2}
+to be simplified to
+
+\begin{equation} \label{eq:matrix_leontief}
+	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	= \vec{E}_{0}
+	+ \vec{T}_{1}
+	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\vec{\varepsilon} 
+	- \hat{\vec{\gamma}}\vec{B},
 \end{equation}
 
-\noindent and
+\noindent{}which is the matrix version 
+of the total energy accounting equation
+written in terms of energy intensities ($\vec{\varepsilon}$)
+and input-output ratios ($\vec{A}$).
+Equation~\ref{eq:C-Expanded_Matrix_Form} applies 
+for the three-sector economy of Example~C, 
+but the equivalent matrix formulation (Equation~\ref{eq:matrix_leontief}) 
+can be extended to any desired level 
+of economic and energy sector disaggregation 
+as shown by Bullard~\cite{Bullard1976a}, 
+Cassler~\cite{Casler1984}, and others.
 
-\begin{equation} \label{eq:Xdifference2_inverse}
-	{\left(\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}}\right)}^{-1} 
-	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}.
-\end{equation}
-
-Equations~\ref{eq:Xdifference1} and~\ref{eq:Xdifference2}
-are proved in Appendices~\ref{app:A} and~\ref{app:B}.
-Equation~\ref{eq:Xdifference2_inverse} is derived 
-in Appendix~\ref{app:C}. 
 
 %%%%%%%%%% Example C %%%%%%%%%%
-\section{Estimating $\vec{\varepsilon}$ and $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$}
+\section{Estimating $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ and $\vec{\varepsilon}$}
 %%%%%%%%%%
 
-With Equation~\ref{eq:matrix_leontief}, we can solve for either 
-the energy accumulation vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
-or the energy intensity vector ($\vec{\varepsilon}$), 
-but not both. 
-
-Solving for the accumulation vector gives
-
-\begin{equation} \label{eq:dB_dt_leontief}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} = (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\vec{\varepsilon} + \vec{E} - \hat{\vec{\gamma}}\vec{B}.
-\end{equation}
-
-\noindent Finally, we can substutute Equation~\ref{eq:Xdifference1} which gives
-
-\begin{equation} \label{eq:dB_dt_leontief_with_A}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} = \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \vec{\varepsilon} + \vec{E} - \hat{\vec{\gamma}}\vec{B},
-\end{equation}
-
-\noindent{}which allows estimation of the embodied energy accumulation 
+Equation~\ref{eq:matrix_leontief} provides a means to 
+estimate the embodied energy accumulation rate
 in economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-knowing only sector outputs ($\hat{\vec{X}}$), 
+knowing only 
+direct energy inputs to the economy from the biosphere ($\vec{E}_{0}$), 
+total energy inputs from society to the economy ($\vec{T}_{1}$),
+sector outputs ($\hat{\vec{X}}$), 
 sector input-output ratios ($\vec{A}$), 
 sector energy intensities ($\vec{\varepsilon}$), 
-energy input to the economy ($\vec{E}$), 
-and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{b}$). 
+and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$). 
 In theory, the transaction matrix ($\vec{X}_{t}$) is not required 
 if the input-ouput ratios ($\vec{A}$) are known, 
 though in practice, knowledge of input-output ratios 
 would be derived from the transaction matrix $\vec{X}_{t}$.
 
-Solving for the energy intensity vector gives
+Equation~\ref{eq:matrix_leontief_pre_2} can be solved 
+for the energy intensity vector ($\vec{\varepsilon}$):
 
 \begin{equation} \label{eq:epsilon_leontief}
 	\vec{\varepsilon} 
 	= {(\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}})}^{-1}
-		\left[\vec{E} 
+		\left[\vec{E}_{0}
+			 	+ \vec{T}_{1}
 				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 				+ \hat{\vec{\gamma}}\vec{B}\right)
 		\right].
 \end{equation}
 
-\noindent{}Substituting Equation~\ref{eq:Xdifference2_inverse} gives
+\noindent{}Appendix~\ref{app:C} shows that 
+
+\begin{equation} \label{eq:Xdifference2_inverse}
+	{\left(
+		\hat{\vec{X}} 
+		- \vec{X}_{t}^{\mathrm{T}}
+		\right)}^{-1} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1},
+\end{equation}
+
+\noindent{}which allows simplification 
+of Equation~\ref{eq:epsilon_leontief} to
 
 \begin{equation} \label{eq:epsilon_leontief_with_A}
 	\vec{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
-		\left[\vec{E} 
+		\left[\vec{E}_{0} 
+				+ \vec{T}_{1} 
 				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 				+ \hat{\vec{\gamma}}\vec{B}\right)
-		\right],
+		\right].
 \end{equation}
 
-\noindent{}which allows estimation of the energy intensity of economic sectors ($\vec{\varepsilon}$) knowing only sector input-output ratios ($\vec{A}$), sector outputs ($\hat{\vec{X}}$), energy input to the economy ($\vec{E}$), sector embodied energy accumulation rates $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$, and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$).
+\noindent{}Equation~\ref{eq:epsilon_leontief_with_A} allows estimation 
+of the energy intensity 
+of economic sectors ($\vec{\varepsilon}$) 
+knowing only 
+sector input-output ratios ($\vec{A}$), 
+sector outputs ($\hat{\vec{X}}$), 
+energy input to the economy ($\vec{E}$), 
+sector embodied energy accumulation rates $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$,
+and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$).
 
-Comparison of Equations~\ref{eq:eps1_ss_IO} and~\ref{eq:epsilon_leontief_with_A} shows the similarities between the single-sector algebraic formulation and the multi-sector matrix formulation of the I-O analysis method. This newly developed multi-sector matrix formulation can be extended to any desired level of economic and energy sector disaggregation as shown by Bullard (1975, 1978) and others.
+Equations~\ref{eq:matrix_leontief} and~\ref{eq:epsilon_leontief_with_A}
+are two versions of the same total energy 
+accounting equation (Equation~\ref{eq:matrix_leontief_pre_2}).
+It is clear that we can solve Equation~\ref{eq:matrix_leontief_pre_2} 
+for either the embodied energy accumulation vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
+as in Equation~\ref{eq:matrix_leontief} 
+or the energy intensity vector ($\vec{\varepsilon}$) as in
+Equation~\ref{eq:epsilon_leontief_with_A}, 
+but not both. 
 
-************************** MATT ENDED HERE *************************
+
+
+************** Matt ended here **************
+
+********* Maybe these discussions should go in Chapter~\ref{chap:implications}. ********
+
+******* Discuss similarities of the scalar and matrix
+versions of the equations. ************
+
+******** Discuss differences between Equation~\ref{eq:epsilon_leontief_with_A}
+and the literature. ***********
+
+******** Discuss that I-O literature focused on estimating $\varepsilon$ *********
+
+*********** Tie back to our discussion of value and the fact that
+$\varepsilon$ is an interesting intrinsic measure of the 
+output of an economic sector, even within the existing
+subjective process of determining economic value that underlies
+all economics. In other words, $\varepsilon$ doesn't 
+need to be the basis for determining value for it to be an important
+measure of economic activity. *********
+
+*************** Decide if we need the following relationships. 
+If not, consolidate the derivations in the appendices. **************
+
+\begin{equation} \label{eq:Xhat_X_and_A}
+	\hat{\vec{X}}^{-1}\vec{X}_{t} = \vec{A}^{\mathrm{T}},
+\end{equation}
+
+\begin{equation} \label{eq:Xdifference2}
+	\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}} = \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}}),
+\end{equation}
 
 
 %%%%%%%%%% Intensity: Auto industry example %%%%%%%%%%
