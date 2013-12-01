@@ -259,7 +259,7 @@ in matrix notation as
 
 \begin{equation} \label{eq:C-Expanded_Matrix_Form}
 	\begin{Bmatrix}
-		\frac{\mathrm{d}B_{2}}{\mathrm{d}t} \\
+		\frac{\mathrm{d}B_{2}}{\mathrm{d}t} \\[0.4em] % Adds some vertical space.
 		\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
 	\end{Bmatrix}
 	=
@@ -343,7 +343,7 @@ in matrix notation as
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 	=
 	\begin{Bmatrix}	
-		\frac{\mathrm{d}B_{2}}{\mathrm{d}t}	\\
+		\frac{\mathrm{d}B_{2}}{\mathrm{d}t}	\\[0.4em] % Adds some vertical space.
 		\frac{\mathrm{d}B_{3}}{\mathrm{d}t}
 	\end{Bmatrix},
 \end{equation}
@@ -456,11 +456,6 @@ of economic and energy sector disaggregation
 as shown by Bullard~\cite{Bullard1976a}, 
 Cassler~\cite{Casler1984}, and others.
 
-
-%%%%%%%%%% Example C %%%%%%%%%%
-\section{Estimating $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ and $\vec{\varepsilon}$}
-%%%%%%%%%%
-
 Equation~\ref{eq:matrix_leontief} provides a means to 
 estimate the embodied energy accumulation rate
 in economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
@@ -475,6 +470,11 @@ In theory, the transaction matrix ($\vec{X}_{t}$) is not required
 if the input-ouput ratios ($\vec{A}$) are known, 
 though in practice, knowledge of input-output ratios 
 would be derived from the transaction matrix $\vec{X}_{t}$.
+
+
+%%%%%%%%%% Example C %%%%%%%%%%
+\section{Estimating $\vec{\varepsilon}$}
+%%%%%%%%%%
 
 Equation~\ref{eq:matrix_leontief_pre_2} can be solved 
 for the energy intensity vector ($\vec{\varepsilon}$):
@@ -518,7 +518,8 @@ of economic sectors ($\vec{\varepsilon}$)
 knowing only 
 sector input-output ratios ($\vec{A}$), 
 sector outputs ($\hat{\vec{X}}$), 
-energy input to the economy ($\vec{E}$), 
+energy input to the economy from the biosphere ($\vec{E}_{0}$), 
+total energy input from society to the economy ($\vec{T}_{1}$),
 sector embodied energy accumulation rates $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$,
 and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$).
 
@@ -526,12 +527,12 @@ Equations~\ref{eq:matrix_leontief} and~\ref{eq:epsilon_leontief_with_A}
 are two versions of the same total energy 
 accounting equation (Equation~\ref{eq:matrix_leontief_pre_2}).
 It is clear that we can solve Equation~\ref{eq:matrix_leontief_pre_2} 
-for either the embodied energy accumulation vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
+for either~(a)~the embodied energy accumulation
+vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
 as in Equation~\ref{eq:matrix_leontief} 
-or the energy intensity vector ($\vec{\varepsilon}$) as in
+or~(b)~the energy intensity vector ($\vec{\varepsilon}$) as in
 Equation~\ref{eq:epsilon_leontief_with_A}, 
-but not both. 
-
+but not both.
 
 
 ************** Matt ended here **************
