@@ -34,4 +34,4 @@ cd Part_4; cd Chapter_Implications; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Infinite_Series;        rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Derivation;             rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Proof_1;                rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
-cd Appendix_Proof_2;                rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
+# cd Appendix_Proof_2;                rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..

@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Proof of Equation~\ref{eq:Xdifference1}}
 % Always give a unique label
-\label{app:A} 
+\label{app:Proof} 
 % use \chaptermark{} to alter or adjust the chapter heading in the running head
 \chaptermark{Appendix A}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,44 +32,52 @@ We begin with a restatement of Equation~\ref{eq:Xdifference1}.
 \noindent We expand the matrices to obtain
 
 \begin{equation} \label{eq:Xdifference1Proof-2}
-\begin{bmatrix} 	\dot{X}_{22} & \dot{X}_{23}	\\
-				\dot{X}_{23} & \dot{X}_{33}	\\
-\end{bmatrix} \\
-- \\
-\begin{bmatrix} 	\dot{X}_{2} & 0	\\
-				0 & \dot{X}_{3}	\\
-\end{bmatrix} \\
-= \\
-\begin{bmatrix} 	\dot{X}_{2} & 0	\\
-				0 & \dot{X}_{3}	\\
-\end{bmatrix} \\
-\begin{bmatrix} 	a_{22}-1 & a_{32}	\\
-				a_{23} & a_{33}-1	\\
-\end{bmatrix}.
+	\begin{bmatrix}
+		\dot{X}_{22} & \dot{X}_{32}	\\
+		\dot{X}_{23} & \dot{X}_{33}
+	\end{bmatrix}
+	-
+	\begin{bmatrix}
+		\dot{X}_{2} & 0	\\
+		0           & \dot{X}_{3}
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		\dot{X}_{2} & 0	\\
+		0           & \dot{X}_{3}
+	\end{bmatrix}
+	\begin{bmatrix}
+		a_{22}-1 & a_{32}	\\
+		a_{23}   & a_{33}-1
+	\end{bmatrix}.
 \end{equation}
 
-\noindent Multiplication of the matrices provides
+\noindent Subtracting and multiplying matrices gives
 
 \begin{equation} \label{eq:Xdifference1Proof-3}
-\begin{bmatrix} 	\dot{X}_{22} - \dot{X}_2 & \dot{X}_{32}	\\
-				\dot{X}_{23} & \dot{X}_{33} - \dot{X}_{3}	\\
-\end{bmatrix} \\
-= \\
-\begin{bmatrix} 	\dot{X}_3 a_{22} - \dot{X}_{2} & \dot{X}_{2} a_{32}	\\
-				\dot{X}_4 a_{23} & \dot{X}_{3} a_{33} - \dot{X}_{3}	\\
-\end{bmatrix}.
+	\begin{bmatrix} 	
+		\dot{X}_{22} - \dot{X}_{2} & \dot{X}_{32}	\\
+		\dot{X}_{23}               & \dot{X}_{33} - \dot{X}_{3}
+	\end{bmatrix}
+	=
+	\begin{bmatrix} 	
+		\dot{X}_{2} a_{22} - \dot{X}_{2} & \dot{X}_{2} a_{32}	\\
+		\dot{X}_{3} a_{23}               & \dot{X}_{3} a_{33} - \dot{X}_{3}
+	\end{bmatrix}.
 \end{equation}
 
 \noindent Using $\dot{X}_j a_{ij} = \dot{X}_{ij}$ (see Equation~\ref{eq:aij_def}) gives
 
 \begin{equation} \label{eq:Xdifference1Proof-4}
-\begin{bmatrix} 	\dot{X}_{22} - \dot{X}_{2} & \dot{X}_{32}	\\
-				\dot{X}_{23} & \dot{X}_{33} - \dot{X}_{3}	\\
-\end{bmatrix} \\
-= \\
-\begin{bmatrix} 	\dot{X}_{22} - \dot{X}_{2} & \dot{X}_{32}	\\
-				\dot{X}_{23} & \dot{X}_{33} - \dot{X}_{3}	\\
-\end{bmatrix}
+	\begin{bmatrix} 	
+		\dot{X}_{22} - \dot{X}_{2} & \dot{X}_{32}	\\
+		\dot{X}_{23}               & \dot{X}_{33} - \dot{X}_{3}
+	\end{bmatrix} 
+	= 
+	\begin{bmatrix} 	
+		\dot{X}_{22} - \dot{X}_{2} & \dot{X}_{32}	\\
+		\dot{X}_{23}               & \dot{X}_{33} - \dot{X}_{3}
+	\end{bmatrix}
 \end{equation}
 
 \noindent to complete the proof.
