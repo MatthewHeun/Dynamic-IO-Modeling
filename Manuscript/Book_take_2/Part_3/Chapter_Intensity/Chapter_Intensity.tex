@@ -305,7 +305,7 @@ in matrix notation as
 
 \begin{equation} \label{eq:X_t_matrix_def}
 	\vec{X}_{t} 
-	=
+	\equiv
 	\begin{bmatrix}
 		\dot{X}_{22} & \dot{X}_{23} \\
 		\dot{X}_{32} & \dot{X}_{33}
@@ -313,17 +313,17 @@ in matrix notation as
 \end{equation}
 
 \begin{equation} \label{eq:eps_vec_def}
-	\vec{\varepsilon} 
-	=
+	\bm{\varepsilon} 
+	\equiv
 	\begin{Bmatrix}
-		\varepsilon_{3}	\\
-		\varepsilon_{4}
+		\varepsilon_{2}	\\
+		\varepsilon_{3}
 	\end{Bmatrix},
 \end{equation}
 
 \begin{equation} \label{eq:E_vec_def}
 	\vec{E}_{0} 
-	=
+	\equiv
 	\begin{Bmatrix}
 		\dot{E}_{02} \\
 		\dot{E}_{03}
@@ -332,7 +332,7 @@ in matrix notation as
 
 \begin{equation} \label{eq:T_vec_def}
 	\vec{T}_{1} 
-	=
+	\equiv
 	\begin{Bmatrix}
 		\dot{T}_{12} \\
 		\dot{T}_{13}
@@ -341,7 +341,7 @@ in matrix notation as
 
 \begin{equation} \label{eq:dBdt_vec_def}
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-	=
+	\equiv
 	\begin{Bmatrix}	
 		\frac{\mathrm{d}B_{2}}{\mathrm{d}t}	\\[0.4em] % Adds some vertical space.
 		\frac{\mathrm{d}B_{3}}{\mathrm{d}t}
@@ -350,7 +350,7 @@ in matrix notation as
 
 \begin{equation} \label{eq:B_vec_def}
 	\vec{B} 
-	=
+	\equiv
 	\begin{Bmatrix}	
 		B_{2} \\
 		B_{3}
@@ -358,8 +358,8 @@ in matrix notation as
 \end{equation}
 
 \begin{equation}
-	\hat{\vec{\gamma}}
-	=
+	\hat{\bm{\gamma}}
+	\equiv
 	\delta_{ij} \gamma_{j}
 	=
 	\begin{bmatrix}
@@ -372,36 +372,36 @@ in matrix notation as
 
 \begin{equation} \label{eq:X_hat_matrix_def}
 	\hat{\vec{X}} 
-	= 
+	\equiv
 	\delta_{ij} \dot{X}_{j} 
 	= 
 	\begin{bmatrix}
 		\dot{X}_{2}		&	0	  \\
 		0				&	\dot{X}_{3}	\\
-	\end{bmatrix},
+	\end{bmatrix};
 \end{equation}
 
-\noindent{}with
+\noindent{}where the Kronecker delta is
 
 \begin{equation}\label{eq:k_delta}
 	\delta_{ij} 
-	= 
+	=
 	\begin{cases}	
-		1 	& 	\text{if  } i = j		\\
 		0	&	\text{if  } i \neq j	\\
-	\end{cases},
+		1 	& 	\text{if  } i = j
+	\end{cases};
 \end{equation}
 
-\noindent{}we can write Equation~\ref{eq:C-Expanded_Matrix_Form}
+\noindent{}we can rewrite Equation~\ref{eq:C-Expanded_Matrix_Form}
 compactly as
 
 \begin{equation} \label{eq:matrix_leontief_pre_1}
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
-	+ \vec{X}_{t}^{\mathrm{T}}\vec{\varepsilon} 
-	- \hat{\vec{X}}\vec{\varepsilon}
-	- \hat{\vec{\gamma}}\vec{B}.
+	+ \vec{X}_{t}^{\mathrm{T}}\bm{\varepsilon} 
+	- \hat{\vec{X}}\bm{\varepsilon}
+	- \hat{\bm{\gamma}}\vec{B}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:matrix_leontief_pre_1} can be simplified to
@@ -410,15 +410,15 @@ compactly as
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
-	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\vec{\varepsilon} 
-	- \hat{\vec{\gamma}}\vec{B}.
+	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\bm{\varepsilon} 
+	- \hat{\bm{\gamma}}\vec{B}.
 \end{equation}
 
 \noindent{}We can define the input-output matrix ($\vec{A}$) as
 
 \begin{equation} \label{eq:A_matrix_def}
 	\vec{A} 
-	=
+	\equiv
 	\begin{bmatrix}
 		a_{22} & a_{23}	\\
 		a_{32} & a_{33}	
@@ -440,21 +440,23 @@ to be simplified to
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
-	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\vec{\varepsilon} 
-	- \hat{\vec{\gamma}}\vec{B},
+	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
+	- \hat{\bm{\gamma}}\vec{B}.
 \end{equation}
 
-\noindent{}which is the matrix version 
+\noindent{}Equation~\ref{eq:matrix_leontief} is the matrix version 
 of the total energy accounting equation
-written in terms of energy intensities ($\vec{\varepsilon}$)
+written in terms of energy intensities ($\bm{\varepsilon}$)
 and input-output ratios ($\vec{A}$).
 Equation~\ref{eq:C-Expanded_Matrix_Form} applies 
 for the three-sector economy of Example~C, 
 but the equivalent matrix formulation (Equation~\ref{eq:matrix_leontief}) 
 can be extended to any desired level 
 of economic and energy sector disaggregation 
-as shown by Bullard~\cite{Bullard1976a}, 
-Cassler~\cite{Casler1984}, and others.
+by expanding the vectors and matrices in 
+Equations~\ref{eq:X_t_matrix_def}--\ref{eq:X_hat_matrix_def}
+and~\ref{eq:A_matrix_def} to include
+all sectors of the economy.\cite{Casler1984,Bullard1976a}
 
 Equation~\ref{eq:matrix_leontief} provides a means to 
 estimate the embodied energy accumulation rate
@@ -464,8 +466,8 @@ direct energy inputs to the economy from the biosphere ($\vec{E}_{0}$),
 total energy inputs from society to the economy ($\vec{T}_{1}$),
 sector outputs ($\hat{\vec{X}}$), 
 sector input-output ratios ($\vec{A}$), 
-sector energy intensities ($\vec{\varepsilon}$), 
-and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$). 
+sector energy intensities ($\bm{\varepsilon}$), 
+and sector physical depreciation rates ($\hat{\bm{\gamma}}\vec{B}$). 
 In theory, the transaction matrix ($\vec{X}_{t}$) is not required 
 if the input-ouput ratios ($\vec{A}$) are known, 
 though in practice, knowledge of input-output ratios 
@@ -473,19 +475,19 @@ would be derived from the transaction matrix $\vec{X}_{t}$.
 
 
 %%%%%%%%%% Example C %%%%%%%%%%
-\section{Estimating $\vec{\varepsilon}$}
+\section{Estimating $\bm{\varepsilon}$}
 %%%%%%%%%%
 
 Equation~\ref{eq:matrix_leontief_pre_2} can be solved 
-for the energy intensity vector ($\vec{\varepsilon}$):
+for the energy intensity vector ($\bm{\varepsilon}$):
 
 \begin{equation} \label{eq:epsilon_leontief}
-	\vec{\varepsilon} 
+	\bm{\varepsilon} 
 	= {(\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}})}^{-1}
 		\left[\vec{E}_{0}
 			 	+ \vec{T}_{1}
 				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-				+ \hat{\vec{\gamma}}\vec{B}\right)
+				+ \hat{\bm{\gamma}}\vec{B}\right)
 		\right].
 \end{equation}
 
@@ -503,25 +505,25 @@ for the energy intensity vector ($\vec{\varepsilon}$):
 of Equation~\ref{eq:epsilon_leontief} to
 
 \begin{equation} \label{eq:epsilon_leontief_with_A}
-	\vec{\varepsilon} 
+	\bm{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-				+ \hat{\vec{\gamma}}\vec{B}\right)
+				+ \hat{\bm{\gamma}}\vec{B}\right)
 		\right].
 \end{equation}
 
 \noindent{}Equation~\ref{eq:epsilon_leontief_with_A} allows estimation 
 of the energy intensity 
-of economic sectors ($\vec{\varepsilon}$) 
+of economic sectors ($\bm{\varepsilon}$) 
 knowing only 
 sector input-output ratios ($\vec{A}$), 
 sector outputs ($\hat{\vec{X}}$), 
 energy input to the economy from the biosphere ($\vec{E}_{0}$), 
 total energy input from society to the economy ($\vec{T}_{1}$),
 sector embodied energy accumulation rates $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$,
-and sector physical depreciation rates ($\hat{\vec{\gamma}}\vec{B}$).
+and sector physical depreciation rates ($\hat{\bm{\gamma}}\vec{B}$).
 
 Equations~\ref{eq:matrix_leontief} and~\ref{eq:epsilon_leontief_with_A}
 are two versions of the same total energy 
@@ -530,7 +532,7 @@ It is clear that we can solve Equation~\ref{eq:matrix_leontief_pre_2}
 for either~(a)~the embodied energy accumulation
 vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
 as in Equation~\ref{eq:matrix_leontief} 
-or~(b)~the energy intensity vector ($\vec{\varepsilon}$) as in
+or~(b)~the energy intensity vector ($\bm{\varepsilon}$) as in
 Equation~\ref{eq:epsilon_leontief_with_A}, 
 but not both.
 
