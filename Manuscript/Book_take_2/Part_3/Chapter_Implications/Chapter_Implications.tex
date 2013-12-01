@@ -30,6 +30,185 @@
 
 Several implications can be drawn from the above detailed development of the I-O method equations in a manner that includes both embodied energy accumulation and depreciation.
 
+%%%%%%%%%% Implications for the I-O method %%%%%%%%%%
+\section{Implications for the I-O method}
+%%%%%%%%%%
+
+One of the historical benefits of the I-O method
+has been the ability to estimate energy intensity
+for economic sectors. 
+The I-O literature (examples include Bullard (1975) and Cassler (1983)) 
+****** Need real references here. *********
+usually writes Equation~\ref{eq:epsilon_leontief_with_A} as
+
+\begin{equation} \label{eq:epsilon_leontief_with_A_literature}
+	\bm{\varepsilon} 
+	= \vec{E}
+	\hat{\vec{X}}^{-1}
+	{(\vec{I} - \vec{A}^{T})}^{-1}.
+\end{equation}
+
+****** Need to verify the equation comparisons here. 
+Why do I have a different order for \ref{eq:epsilon_leontief_with_A}
+compared to the literature? ******
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Equations~\ref{eq:matrix_leontief} and~\ref{eq:epsilon_leontief_with_A}
+are two versions of the total energy 
+accounting equation (Equation~\ref{eq:matrix_leontief_pre_2}).
+It is clear that we can solve Equation~\ref{eq:matrix_leontief_pre_2} 
+for either~(a)~the embodied energy accumulation
+vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
+as in Equation~\ref{eq:matrix_leontief} 
+or~(b)~the energy intensity vector ($\bm{\varepsilon}$) as in
+Equation~\ref{eq:epsilon_leontief_with_A}, 
+but not both.
+
+******* Discuss similarities of the scalar and matrix
+versions of the equations. ************
+
+******** Discuss differences between Equation~\ref{eq:epsilon_leontief_with_A}
+and the literature. ***********
+
+******** Discuss that I-O literature focused on estimating $\varepsilon$ *********
+
+*********** Tie back to our discussion of value and the fact that
+$\varepsilon$ is an interesting intrinsic measure of the 
+output of an economic sector, even within the existing
+subjective process of determining economic value that underlies
+all economics. In other words, $\varepsilon$ doesn't 
+need to be the basis for determining value for it to be an important
+measure of economic activity. *********
+
+**** The following equation references don't work, 
+because I deleted the scalar version of the equation. 
+Refer to the vector version instead. ****
+Equation~\ref{eq:eps3_ss_IO} is similar 
+to the typical energy intensity equation 
+found in the I-O literature~\cite[Equation 6, e.g.]{Casler1984},
+with the following exceptions:
+
+\begin{itemize}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes scalar terms, 
+	but the I-O literature utilizes a matrix
+	formulation (see Section~\ref{sec:C-intensity_and_matrix} below),}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for 
+	energy input to the economy from society ($\dot{T}_{12}$), 
+	but the I-O literature typically does not,}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
+	accumulation of embodied energy in the economy 
+	$\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} \right)$,
+	but the I-O literature typically does not, and}
+	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
+	depreciation ($\gamma_{2}B_{2}$),
+	but the I-O literature typically does not.}
+\end{itemize}
+
+\noindent{}It is clear from comparison 
+of Equations\ref{eq:epsilon_leontief_with_A} 
+and~\ref{eq:epsilon_leontief_with_A_literature} 
+that the literature is not accounting for accumulation of energy 
+in the economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$, 
+nor does it account for physical depreciation ($\hat{\vec{\gamma}}\vec{B}$). 
+To be precise, the literature assumes
+
+\begin{equation} \label{eq:dB_dt_plus_gamma_zero_assumption}
+	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	+ \hat{\vec{\gamma}}\vec{B} 
+	= \vec{0}.
+\end{equation}
+
+Examining Equation~\ref{eq:epsilon_leontief_with_A}, 
+we see that to the extent that 
+$\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B} \ll \vec{E}$, 
+estimates of energy intensity ($\vec{\varepsilon}$) 
+obtained with the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
+contain little error. 
+However, when the sum of the accumulation and depreciation rates 
+$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B}\right)$ 
+becomes significant relative to the rate of energy extracted 
+from the Earth ($\vec{E}$), 
+estimates of economic sector energy intensities ($\vec{\varepsilon}$) 
+using the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
+have a high-side bias (assuming that $\frac{dB}{dt} >0$ and $\gamma B > 0$). 
+As discussed above, the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
+can be violated in developing economies 
+because accumulation $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
+is large or in developed economies because depreciation ($\hat{\gamma}\vec{B}$) is large. 
+
+The assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
+may cause another challenge for energy analysts. 
+The I-O method is often used to estimate energy intensities 
+for each sector of the economy ($\vec{\varepsilon}$) 
+with Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption}. 
+With $\vec{\varepsilon}$ values in hand, 
+one can estimate changes in energy demand from the Earth ($\vec{E}$) 
+as the output of economic sectors ($\hat{\vec{X}}$) 
+increases or decreases by solving 
+Equation~\ref{eq:epsilon_leontief_with_A_literature} for $\vec{E}$.
+
+\begin{equation} \label{eq:Leontief_lit_solved_for_E}
+	\vec{E} 
+	= \hat{\vec{X}}(\vec{I} 
+	- \vec{A}^{\mathrm{T}})\vec{\varepsilon}
+\end{equation}
+
+When accumulation and depreciation terms are included, 
+we see that the energy demands ($\vec{E}$) must be calculated differently. 
+Solving Equation~\ref{eq:epsilon_leontief_with_A} 
+for $\vec{E}$ gives 
+
+\begin{equation} \label{eq:Leontief_solved_for_E_with_embodied_depreciation}
+	\vec{E} = \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}})\varepsilon + \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\gamma}\vec{B}\right).
+\end{equation}
+
+\noindent{}By comparing Equations~\ref{eq:Leontief_lit_solved_for_E} 
+and~\ref{eq:Leontief_solved_for_E_with_embodied_depreciation}, 
+we see that to the extent that 
+accumulation $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
+and depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
+are non-zero, 
+estimates of energy demand are too low. 
+If the sum of accumulation 
+$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
+and depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
+are small relative to total energy demand ($\vec{E}$), 
+then neglecting these effects causes little error. 
+Economies with fast growth rates 
+$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
+or large sizes ($\vec{B}$) 
+are more likely to violate the typical assumptions in the literature.
+
+
 %%%%%%%%%% Implications %%%%%%%%%%
 \section{Implications for economic ``development''}
 %%%%%%%%%%
@@ -139,146 +318,6 @@ requires ever increasing embodied energy input rates
 to society ($Y_{\dot{T}}$) as the society ``develops.'' 
 This mechanism provides a natural restraint
 to the continued growth of physical economies.
-
-
-%%%%%%%%%% Implications %%%%%%%%%%
-\section{Implications for the I-O method}
-%%%%%%%%%%
-
-Equations~\ref{eq:matrix_leontief} and~\ref{eq:epsilon_leontief_with_A}
-are two versions of the total energy 
-accounting equation (Equation~\ref{eq:matrix_leontief_pre_2}).
-It is clear that we can solve Equation~\ref{eq:matrix_leontief_pre_2} 
-for either~(a)~the embodied energy accumulation
-vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
-as in Equation~\ref{eq:matrix_leontief} 
-or~(b)~the energy intensity vector ($\bm{\varepsilon}$) as in
-Equation~\ref{eq:epsilon_leontief_with_A}, 
-but not both.
-
-******* Discuss similarities of the scalar and matrix
-versions of the equations. ************
-
-******** Discuss differences between Equation~\ref{eq:epsilon_leontief_with_A}
-and the literature. ***********
-
-******** Discuss that I-O literature focused on estimating $\varepsilon$ *********
-
-*********** Tie back to our discussion of value and the fact that
-$\varepsilon$ is an interesting intrinsic measure of the 
-output of an economic sector, even within the existing
-subjective process of determining economic value that underlies
-all economics. In other words, $\varepsilon$ doesn't 
-need to be the basis for determining value for it to be an important
-measure of economic activity. *********
-
-**** The following equation references don't work, 
-because I deleted the scalar version of the equation. 
-Refer to the vector version instead. ****
-Equation~\ref{eq:eps3_ss_IO} is similar 
-to the typical energy intensity equation 
-found in the I-O literature~\cite[Equation 6, e.g.]{Casler1984},
-with the following exceptions:
-
-\begin{itemize}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes scalar terms, 
-	but the I-O literature utilizes a matrix
-	formulation (see Section~\ref{sec:C-intensity_and_matrix} below),}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for 
-	energy input to the economy from society ($\dot{T}_{12}$), 
-	but the I-O literature typically does not,}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
-	accumulation of embodied energy in the economy 
-	$\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} \right)$,
-	but the I-O literature typically does not, and}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
-	depreciation ($\gamma_{2}B_{2}$),
-	but the I-O literature typically does not.}
-\end{itemize}
-
-The I-O literature (examples include Bullard (1975) and Cassler (1983)) 
-****** Need real references here. *********
-usually writes Equation~\ref{eq:epsilon_leontief_with_A} as
-
-\begin{equation} \label{eq:epsilon_leontief_with_A_literature}
-	\vec{\varepsilon} 
-	= {(\vec{I} - \vec{A}^{T})}^{-1}\hat{\vec{X}}^{-1}\vec{E}.
-\end{equation}
-
-\noindent{}It is clear from comparison 
-of Equations\ref{eq:epsilon_leontief_with_A} 
-and~\ref{eq:epsilon_leontief_with_A_literature} 
-that the literature is not accounting for accumulation of energy 
-in the economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$, 
-nor does it account for physical depreciation ($\hat{\vec{\gamma}}\vec{B}$). 
-To be precise, the literature assumes
-
-\begin{equation} \label{eq:dB_dt_plus_gamma_zero_assumption}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-	+ \hat{\vec{\gamma}}\vec{B} 
-	= \vec{0}.
-\end{equation}
-
-Examining Equation~\ref{eq:epsilon_leontief_with_A}, 
-we see that to the extent that 
-$\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B} \ll \vec{E}$, 
-estimates of energy intensity ($\vec{\varepsilon}$) 
-obtained with the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
-contain little error. 
-However, when the sum of the accumulation and depreciation rates 
-$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B}\right)$ 
-becomes significant relative to the rate of energy extracted 
-from the Earth ($\vec{E}$), 
-estimates of economic sector energy intensities ($\vec{\varepsilon}$) 
-using the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
-have a high-side bias (assuming that $\frac{dB}{dt} >0$ and $\gamma B > 0$). 
-As discussed above, the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
-can be violated in developing economies 
-because accumulation $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-is large or in developed economies because depreciation ($\hat{\gamma}\vec{B}$) is large. 
-
-The assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
-may cause another challenge for energy analysts. 
-The I-O method is often used to estimate energy intensities 
-for each sector of the economy ($\vec{\varepsilon}$) 
-with Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption}. 
-With $\vec{\varepsilon}$ values in hand, 
-one can estimate changes in energy demand from the Earth ($\vec{E}$) 
-as the output of economic sectors ($\hat{\vec{X}}$) 
-increases or decreases by solving 
-Equation~\ref{eq:epsilon_leontief_with_A_literature} for $\vec{E}$.
-
-\begin{equation} \label{eq:Leontief_lit_solved_for_E}
-	\vec{E} 
-	= \hat{\vec{X}}(\vec{I} 
-	- \vec{A}^{\mathrm{T}})\vec{\varepsilon}
-\end{equation}
-
-When accumulation and depreciation terms are included, 
-we see that the energy demands ($\vec{E}$) must be calculated differently. 
-Solving Equation~\ref{eq:epsilon_leontief_with_A} 
-for $\vec{E}$ gives 
-
-\begin{equation} \label{eq:Leontief_solved_for_E_with_embodied_depreciation}
-	\vec{E} = \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}})\varepsilon + \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\gamma}\vec{B}\right).
-\end{equation}
-
-\noindent{}By comparing Equations~\ref{eq:Leontief_lit_solved_for_E} 
-and~\ref{eq:Leontief_solved_for_E_with_embodied_depreciation}, 
-we see that to the extent that 
-accumulation $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-and depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
-are non-zero, 
-estimates of energy demand are too low. 
-If the sum of accumulation 
-$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-and depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
-are small relative to total energy demand ($\vec{E}$), 
-then neglecting these effects causes little error. 
-Economies with fast growth rates 
-$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-or large sizes ($\vec{B}$) 
-are more likely to violate the typical assumptions in the literature.
 
 
 %%%%%%%%%% Implications %%%%%%%%%%
