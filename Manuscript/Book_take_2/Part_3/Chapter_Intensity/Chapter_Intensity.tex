@@ -75,7 +75,7 @@ row and column 1 represents energy, and the rest represent goods and services? *
 
 
 %%%%%%%%%% Example A %%%%%%%%%%
-\section{Example A: single-sector economy ($\varepsilon$)} % chktex 13
+\section{Example A: single-sector economy energy intensity ($\varepsilon$)} % chktex 13
 %%%%%%%%%%
 
 With reference to Figures~\ref{fig:A_energy}, 
@@ -89,13 +89,18 @@ the energy intensity ($\varepsilon_{1}$) of a single-sector economy is calculate
 	= \frac{\dot{T}_{11}}{\dot{X}_{11}}.
 \end{equation}
 
-The simplicity of Equation~\ref{eq:A-energy_intensity}
-evaporates when we look at two-sector and three-sector economies
-in the following sections.
+Appendix~\ref{chap:infinite_series} illustrates that the energy 
+intensity of a single-sector economy ($\varepsilon_{1}$) 
+is comprised of the sum of the infinite recursions
+of energy consumed during production of output ($\dot{X}_{1}$).
+
+To estimate energy intensities
+when more than one economic sector is involved, 
+we move to Examples~B and~C in the following sections.
 
 
 %%%%%%%%%% Example B %%%%%%%%%%
-\section{Example B: energy intensity ($\varepsilon$)} % chktex 13
+\section{Example B: two-sector economy energy intensity ($\varepsilon$)} % chktex 13
 %%%%%%%%%%
 
 With reference to Figures~\ref{fig:B_energy}, 
@@ -187,8 +192,8 @@ we turn to Example~C.
 
 
 %%%%%%%%%% Example C %%%%%%%%%%
-\section{Example~C: three-sector economy and matrix formulation} % chktex 13
-\label{sec:C-intensity_and_matrix}
+\section{Example~C: three-sector economy energy intensity ($\varepsilon$)} % chktex 13
+\label{sec:C-intensity}
 %%%%%%%%%%
 
 We apply Equation~\ref{eq:C-CV_T_123} to the three-sector
@@ -253,11 +258,18 @@ and~\ref{eq:C-Total_Energy_Sec_3-a} to obtain
 	- \gamma_{3} B_{3}.
 \end{equation}
 
+
+%%%%%%%%%% Example C %%%%%%%%%%
+\section{Example~C: Matrix formulation} % chktex 13
+\label{sec:C-matrix}
+%%%%%%%%%%
+
 \noindent{}Equations~\ref{eq:C-Total_Energy_Sec_2-b} 
 and~\ref{eq:C-Total_Energy_Sec_3-b} can be rewritten 
 in matrix notation as
 
 \begin{equation} \label{eq:C-Expanded_Matrix_Form}
+	\begin{split}
 	\begin{Bmatrix}
 		\frac{\mathrm{d}B_{2}}{\mathrm{d}t} \\[0.4em] % Adds some vertical space.
 		\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
@@ -267,7 +279,7 @@ in matrix notation as
 		\dot{E}_{02}\\
 		\dot{E}_{03}
 	\end{Bmatrix}
-	+
+	& +
 	\begin{Bmatrix}
 		\dot{T}_{12}\\
 		\dot{T}_{13}
@@ -280,8 +292,8 @@ in matrix notation as
 	\begin{Bmatrix}
 		\varepsilon_{2}\\
 		\varepsilon_{3}
-	\end{Bmatrix}
-	-
+	\end{Bmatrix} \\
+	& -
 	\begin{bmatrix}
 		\dot{X}_{2} & 0          \\
 		0           & \dot{X}_{3}
@@ -289,7 +301,7 @@ in matrix notation as
 	\begin{Bmatrix}
 		\varepsilon_{2}\\
 		\varepsilon_{3}
-	\end{Bmatrix}	
+	\end{Bmatrix}
 	-
 	\begin{bmatrix}
 		\gamma_{2} & 0          \\
@@ -298,7 +310,8 @@ in matrix notation as
 	\begin{Bmatrix}
 		B_{2}\\
 		B_{3}
-	\end{Bmatrix}
+	\end{Bmatrix}		
+	\end{split}
 \end{equation}
 
 \noindent{}If we define the following matrices and vectors:
