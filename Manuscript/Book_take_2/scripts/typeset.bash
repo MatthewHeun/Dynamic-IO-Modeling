@@ -29,7 +29,8 @@ cd Part_2; cd Chapter_Intensity;    bibtex Chapter_Intensity;    cd ../..;
 cd Part_3; cd Chapter_Implications; bibtex Chapter_Implications; cd ../..;
 cd Appendix_Casler;                 bibtex Appendix_Casler;      cd ..;
 # These appendices do not contain any references.
-# cd Appendix_Proof_1;    bibtex Appendix_Proof_1;    cd ..;
+# cd Appendix_Proof_1;       bibtex Appendix_Proof_1;         cd ..;
+# cd Appendix_Estimating_A;  bibtex Appendix_Estimating_A;    cd ..;
 
 # Make the index section.
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
