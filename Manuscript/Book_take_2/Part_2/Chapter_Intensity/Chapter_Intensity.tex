@@ -7,11 +7,26 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Energy Intensity %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&&&&%%%
 \chapter{Energy intensity}
-\label{chap:intensity} % Always give a unique label
-% use \chaptermark{}
-% to alter or adjust the chapter heading in the running head
+% Always give a unique label
+\label{chap:intensity} 
+% use \chaptermark{} to alter or adjust the chapter heading in the running head
 \chaptermark{intensity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract*{[NEED TO ADD ABSTRACT HERE]}
+
+%% \abstract{Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\newline\indent
+%% Please use the 'starred' version of the new Springer \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
+
+%% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
+
 
 In Chapters~\ref{chap:direct_energy},~\ref{chap:embodied_energy}, and~\ref{chap:value}, 
 we defined flows of direct energy, embodied energy, and value in an economy.
@@ -448,7 +463,7 @@ of economic and energy sector disaggregation
 by expanding the vectors and matrices in 
 Equations~\ref{eq:dBdt_vec_def}--\ref{eq:B_vec_def}
 and~\ref{eq:A_matrix_def} to include
-all sectors of the economy.\cite{Casler1984,Bullard1976a}
+all sectors of the economy.\cite{Casler1984,Bullard:1978vd}
 
 Equation~\ref{eq:matrix_leontief} provides a means to 
 estimate the embodied energy accumulation rate
@@ -523,8 +538,8 @@ of Equation~\ref{eq:epsilon_derivation_2} gives
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
-				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-				+ \hat{\bm{\gamma}}\vec{B}\right)
+				- \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+				- \hat{\bm{\gamma}}\vec{B}
 		\right].
 \end{equation}
 
@@ -560,12 +575,6 @@ as shown by Equation~\ref{eq:Xdifference1Proof-9}.
 \label{sec:intensity_summary}
 %%%%%%%%%%
 
-\abstract*{[NEED TO ADD ABSTRACT HERE]}
-
-%% \abstract{Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\newline\indent
-%% Please use the 'starred' version of the new Springer \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
-
-%% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
 
 
 
