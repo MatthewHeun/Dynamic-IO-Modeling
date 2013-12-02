@@ -470,31 +470,51 @@ would be derived from the transaction matrix ($\vec{X}_{t}$).
 \section{Estimating $\bm{\varepsilon}$}
 %%%%%%%%%%
 
-Equation~\ref{eq:matrix_leontief_pre_2} can be solved 
-for the energy intensity vector ($\bm{\varepsilon}$):
+Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 
-\begin{equation} \label{eq:epsilon_leontief}
-	\bm{\varepsilon} 
-	= {(\hat{\vec{X}} - \vec{X}_{t}^{\mathrm{T}})}^{-1}
-		\left[\vec{E}_{0}
-			 	+ \vec{T}_{1}
-				- \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-				+ \hat{\bm{\gamma}}\vec{B}\right)
+\begin{equation} \label{eq:epsilon_derivation_1}
+	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \bm{\epsilon}
+	= \frac{\mathrm{d}\vec{B}}{\mathrm{d}t}
+	+ \hat{\bm{\gamma}} \vec{B}
+	- \vec{E}_{0}
+	- \vec{T}_{1} 
+\end{equation}
+
+\noindent{}and
+
+\begin{equation} \label{eq:epsilon_derivation_2}
+	\bm{\epsilon}
+	= {\left[ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \right]}^{-1}
+		\left[
+			\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}
+			+ \hat{\bm{\gamma}} \vec{B}
+			- \vec{E}_{0}
+			- \vec{T}_{1} 
 		\right].
 \end{equation}
 
-\noindent{}Appendix~\ref{app:Derivation} shows that 
+\noindent{}We apply the matrix identity~\cite[Formula 6.2, p. 308]{Beyer:1991vd}
 
-\begin{equation} \label{eq:Xdifference2_inverse}
-	{\left(
-		\hat{\vec{X}} 
-		- \vec{X}_{t}^{\mathrm{T}}
-		\right)}^{-1} 
-	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1},
+\begin{equation} \label{eq:matrix_identity_Beyer}
+	{\left(\vec{A}\vec{B}\vec{C}\right)}^{-1} 
+	= \vec{C}^{-1} \vec{B}^{-1} \vec{A}^{-1}
 \end{equation}
 
-\noindent{}which allows simplification 
-of Equation~\ref{eq:epsilon_leontief} to
+\noindent{}to the right side of Equation~\ref{eq:epsilon_derivation_2} to obtain
+
+\begin{equation} \label{eq:epsilon_derivation_3}
+	\bm{\epsilon}
+	= {(\vec{A}^{\mathrm{T}} - \vec{I})}^{-1} {\hat{\vec{X}}}^{-1} 
+		\left[
+			\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}
+			+ \hat{\bm{\gamma}} \vec{B}
+			- \vec{E}_{0}
+			- \vec{T}_{1} 
+		\right].
+\end{equation}
+
+\noindent{}Changing signs on the right side 
+of Equation~\ref{eq:epsilon_derivation_3} gives
 
 \begin{equation} \label{eq:epsilon_leontief_with_A}
 	\bm{\varepsilon} 
