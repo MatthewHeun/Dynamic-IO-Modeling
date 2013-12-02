@@ -34,12 +34,40 @@ Several implications can be drawn from the above detailed development of the I-O
 \section{Implications for the I-O method}
 %%%%%%%%%%
 
-One of the historical benefits of the I-O method
-has been its ability to estimate energy intensity
-for economic sectors. 
-The I-O literature~\cite{Bullard1975,Casler1984} 
+The extension of the Leontief Input-Output method
+to energy analysis allowed analysts to estimate 
+the energy intensity 
+of economic products ($\bm{\varepsilon}$). 
+As discussed in Section~\ref{sec:Value_Methodology},
+we do not take this important result as a license
+to declare an intrinsic ``energy theory of value.''
+Rather, we belive that energy intensity is an 
+important metric to assess the energy performance of economies,
+even within the prevailing subjective theory of value
+that underlies modern economics. 
+Thus, it is important to consider the assumptions behind
+the literature's presentation of the I-O method 
+for estimating the energy intensity economic output.
+
+In this manuscript, Equation~\ref{eq:epsilon_leontief_with_A} 
+provides the means of estimating the energy intensity:
+
+\begin{equation*}
+	\bm{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E}_{0} 
+				+ \vec{T}_{1} 
+				- \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+				- \hat{\bm{\gamma}}\vec{B}
+		\right].
+\end{equation*}
+
+\noindent{}The I-O literature~\cite{Bullard1975,Casler1984}, 
+on the other hand, 
 writes Equation~\ref{eq:epsilon_leontief_with_A} 
-as
+as\footnote{For a discussion of other, more-subtle, differences
+between the energy intensity equations in the literature
+and this manuscript, see Appendix~\ref{chap:Casler}.}
 
 \begin{equation} \label{eq:epsilon_leontief_with_A_literature}
 	\bm{\varepsilon} 
@@ -47,6 +75,36 @@ as
 	\hat{\vec{X}}^{-1}
 	\vec{E}_{0}.
 \end{equation}
+
+The differences between Equations~\ref{eq:epsilon_leontief_with_A}
+and~\ref{eq:epsilon_leontief_with_A_literature} are obvious. 
+We have extended the literature to include:
+
+\begin{itemize}
+	\item{energy input to the economy from society ($\vec{T}_{1}$),}
+	\item{accumulation of embodied energy in the economy 
+	$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$, and}
+	\item{depreciation ($\hat{\bm{\gamma}}\vec{B}$).}
+\end{itemize}
+
+\noindent{}Comparison of 
+Equations~\ref{eq:epsilon_leontief_with_A}
+and~\ref{eq:epsilon_leontief_with_A_literature}
+shows that the literature is effectively assuming
+
+\begin{equation} \label{eq:literature_assumption}
+	\vec{T}_{1}
+	- \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	- \hat{\bm{\gamma}}\vec{B} 
+	= \vec{0}
+\end{equation}
+
+\noindent{}when estimating the energy intensity ($\bm{\varepsilon}$) 
+of economic sectors. 
+The following subsections discuss these assumptions.
+
+
+
 
 ******** Matt stopped here. *********
 
@@ -61,59 +119,8 @@ or~(b)~the energy intensity vector ($\bm{\varepsilon}$) as in
 Equation~\ref{eq:epsilon_leontief_with_A}, 
 but not both.
 
-******* Discuss similarities of the scalar and matrix
-versions of the equations. ************
 
-******** Discuss differences between Equation~\ref{eq:epsilon_leontief_with_A}
-and the literature. ***********
 
-******** Discuss that I-O literature focused on estimating $\varepsilon$ *********
-
-*********** Tie back to our discussion of value and the fact that
-$\varepsilon$ is an interesting intrinsic measure of the 
-output of an economic sector, even within the existing
-subjective process of determining economic value that underlies
-all economics. In other words, $\varepsilon$ doesn't 
-need to be the basis for determining value for it to be an important
-measure of economic activity. *********
-
-**** The following equation references don't work, 
-because I deleted the scalar version of the equation. 
-Refer to the vector version instead. ****
-Equation~\ref{eq:eps3_ss_IO} is similar 
-to the typical energy intensity equation 
-found in the I-O literature~\cite[Equation 6, e.g.]{Casler1984},
-with the following exceptions:
-
-\begin{itemize}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes scalar terms, 
-	but the I-O literature utilizes a matrix
-	formulation (see Section~\ref{sec:C-intensity_and_matrix} below),}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for 
-	energy input to the economy from society ($\dot{T}_{12}$), 
-	but the I-O literature typically does not,}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
-	accumulation of embodied energy in the economy 
-	$\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} \right)$,
-	but the I-O literature typically does not, and}
-	\item{Equation~\ref{eq:eps3_ss_IO} includes a term for
-	depreciation ($\gamma_{2}B_{2}$),
-	but the I-O literature typically does not.}
-\end{itemize}
-
-\noindent{}It is clear from comparison 
-of Equations\ref{eq:epsilon_leontief_with_A} 
-and~\ref{eq:epsilon_leontief_with_A_literature} 
-that the literature is not accounting for accumulation of energy 
-in the economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$, 
-nor does it account for physical depreciation ($\hat{\vec{\gamma}}\vec{B}$). 
-To be precise, the literature assumes
-
-\begin{equation} \label{eq:dB_dt_plus_gamma_zero_assumption}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-	+ \hat{\vec{\gamma}}\vec{B} 
-	= \vec{0}.
-\end{equation}
 
 Examining Equation~\ref{eq:epsilon_leontief_with_A}, 
 we see that to the extent that 
