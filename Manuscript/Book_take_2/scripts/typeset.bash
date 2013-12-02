@@ -27,6 +27,7 @@ cd Part_1; cd Chapter_Embodied;     bibtex Chapter_Embodied;     cd ../..;
 cd Part_2; cd Chapter_Values;       bibtex Chapter_Values;       cd ../..;
 cd Part_2; cd Chapter_Intensity;    bibtex Chapter_Intensity;    cd ../..;
 cd Part_3; cd Chapter_Implications; bibtex Chapter_Implications; cd ../..;
+cd Appendix_Casler;                 bibtex Appendix_Casler;      cd ..;
 # These appendices do not contain any references.
 # cd Appendix_Proof_1;    bibtex Appendix_Proof_1;    cd ..;
 

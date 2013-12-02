@@ -33,5 +33,5 @@ cd Part_3; cd Chapter_Implications; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 # Delete Part 4's .aux files here, if we make a Part 4.
 # Delete Part 5's .aux files here, if we make a Part 5.
 cd Appendix_Infinite_Series;        rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
-cd Appendix_Derivation;             rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Proof_1;                rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
+cd Appendix_Casler;                 rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
