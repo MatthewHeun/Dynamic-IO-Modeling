@@ -11,7 +11,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Appendix A %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Proof of Equation~\ref{eq:Xdifference1}}
+\chapter{Proof of Equation~\ref{eq:Xdifference1} 
+and method for estimating the input-output matrix ($\vec{A}$)}
 % Always give a unique label
 \label{app:Proof} 
 % use \chaptermark{} to alter or adjust the chapter heading in the running head
@@ -85,7 +86,7 @@ We begin with a restatement of Equation~\ref{eq:Xdifference1}.
 \noindent to complete the proof.
 
 Using Equation~\ref{eq:Xdifference1Proof-1}, 
-we can derive an expression to find the input-output matrix ($\vec{A}$)
+we can derive an expression for estimating the input-output matrix ($\vec{A}$)
 given sector outputs ($\hat{\vec{X}}$) and the transaction matrix ($\vec{X}_{t}$).
 Premultiplying Equation~\ref{eq:Xdifference1Proof-1} by $\hat{\vec{X}}^{-1}$ gives
 
@@ -124,15 +125,34 @@ Premultiplying Equation~\ref{eq:Xdifference1Proof-1} by $\hat{\vec{X}}^{-1}$ giv
 	+ \vec{I},	
 \end{equation}
 
-\noindent{}and
-
 \begin{equation}\label{eq:Xdifference1Proof-9}
 	\vec{A}^\mathrm{T} 
-	= \hat{\vec{X}}^{-1} \vec{X}_{t}^\mathrm{T}. 
+	= \hat{\vec{X}}^{-1} 
+	\vec{X}_{t}^\mathrm{T},
 \end{equation}
 
-Equation~\ref{eq:Xdifference1Proof-9} shows that it would be possible
-to calculate the input-output matrix~($\vec{A}$) using
+\noindent{}and
+
+\begin{equation}\label{eq:Xdifference1Proof-10}
+	\vec{A} 
+	= \vec{X}_{t}
+	\left( {\hat{\vec{X}}^{-1}} \right) ^\mathrm{T}.
+\end{equation}
+
+\noindent{}Realizing that $\hat{\vec{X}}$ and $\hat{\vec{X}}^{-1}$
+are diagonal matrices gives
+
+\begin{equation}\label{eq:Xdifference1Proof-11}
+	\vec{A} 
+	= \vec{X}_{t}
+	\hat{\vec{X}}^{-1},
+\end{equation}
+
+\noindent{}which is not a surprising result 
+given the definition of the input-output ratio ($a$) in Equation~\ref{eq:aij_def}.
+
+Equation~\ref{eq:Xdifference1Proof-11} provides a method 
+of estimating the input-output matrix~($\vec{A}$) using
 sector outputs~($\hat{\vec{X}}$) and the transaction matrix~($\vec{X}_{t}$).
 
 
