@@ -26,7 +26,9 @@
 We begin with a restatement of Equation~\ref{eq:Xdifference1}.
 
 \begin{equation} \label{eq:Xdifference1Proof-1}
-	\vec{X}_t^\mathrm{T} - \hat{\vec{X}} = \hat{\vec{X}}(\vec{A}^\mathrm{T} - \vec{I})
+	\vec{X}_{t}^\mathrm{T} 
+	- \hat{\vec{X}} 
+	= \hat{\vec{X}}(\vec{A}^\mathrm{T} - \vec{I})
 \end{equation}
 
 \noindent We expand the matrices to obtain
@@ -81,6 +83,57 @@ We begin with a restatement of Equation~\ref{eq:Xdifference1}.
 \end{equation}
 
 \noindent to complete the proof.
+
+Using Equation~\ref{eq:Xdifference1Proof-1}, 
+we can derive an expression to find the input-output matrix ($\vec{A}$)
+given sector outputs ($\hat{\vec{X}}$) and the transaction matrix ($\vec{X}_{t}$).
+Premultiplying Equation~\ref{eq:Xdifference1Proof-1} by $\hat{\vec{X}}^{-1}$ gives
+
+\begin{equation} \label{eq:Xdifference1Proof-5}
+	\hat{\vec{X}}^{-1}
+	\left( 
+		\vec{X}_{t}^\mathrm{T} 
+		- \hat{\vec{X}} 
+	\right)
+	= \vec{A}^\mathrm{T} - \vec{I}
+\end{equation}
+
+\noindent{}Further rearranging gives
+
+\begin{equation}\label{eq:Xdifference1Proof-6}
+	\vec{A}^\mathrm{T} 
+	= \hat{\vec{X}}^{-1}
+	\left( 
+		\vec{X}_{t}^\mathrm{T} 
+		- \hat{\vec{X}} 
+	\right)
+	+ \vec{I},
+\end{equation}
+
+\begin{equation}\label{eq:Xdifference1Proof-7}
+	\vec{A}^\mathrm{T} 
+	= \hat{\vec{X}}^{-1} \vec{X}_{t}^\mathrm{T} 
+	- \hat{\vec{X}}^{-1} \hat{\vec{X}}
+	+ \vec{I},	
+\end{equation}
+
+\begin{equation}\label{eq:Xdifference1Proof-8}
+	\vec{A}^\mathrm{T} 
+	= \hat{\vec{X}}^{-1} \vec{X}_{t}^\mathrm{T} 
+	- \vec{I}
+	+ \vec{I},	
+\end{equation}
+
+\noindent{}and
+
+\begin{equation}\label{eq:Xdifference1Proof-9}
+	\vec{A}^\mathrm{T} 
+	= \hat{\vec{X}}^{-1} \vec{X}_{t}^\mathrm{T}. 
+\end{equation}
+
+Equation~\ref{eq:Xdifference1Proof-9} shows that it would be possible
+to calculate the input-output matrix~($\vec{A}$) using
+sector outputs~($\hat{\vec{X}}$) and the transaction matrix~($\vec{X}_{t}$).
 
 
 
