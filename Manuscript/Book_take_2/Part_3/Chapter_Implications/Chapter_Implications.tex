@@ -28,7 +28,11 @@
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
 
 
-Several implications can be drawn from the above detailed development of the I-O method equations in a manner that includes both embodied energy accumulation and depreciation.
+Several implications can be drawn from the detailed development 
+of the I-O method in Chapters~\ref{chap:materials}--\ref{chap:intensity}
+that includes energy input from society to the economy,
+embodied energy accumulation, and depreciation.
+
 
 %%%%%%%%%% Implications for the I-O method %%%%%%%%%%
 \section{Implications for the I-O method}
@@ -43,7 +47,8 @@ As discussed in Section~\ref{sec:Value_Methodology},
 we do not take this important result as a license
 to declare an intrinsic ``energy theory of value.''
 Rather, we belive that energy intensity is an 
-important metric to assess the energy performance of economies,
+important and useful metric that can assess 
+the energy performance of economies,
 even within the prevailing subjective theory of value
 that underlies modern economics. 
 Thus, it is important to consider the assumptions behind
@@ -85,7 +90,7 @@ We have extended the literature to include:
 	\item{energy input to the economy from society ($\vec{T}_{1}$),}
 	\item{accumulation of embodied energy in the economy 
 	$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$, and}
-	\item{depreciation ($\hat{\bm{\gamma}}\vec{B}$).}
+	\item{the embodied energy of depreciated capital ($\hat{\bm{\gamma}}\vec{B}$).}
 \end{itemize}
 
 \noindent{}Comparison of 
@@ -95,42 +100,50 @@ shows that the literature neglects
 energy input from society ($\vec{T}_{1}$),
 accumulation of embodied energy in the economy 
 $\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$,
-and depreciation ($\hat{\bm{\gamma}}\vec{B}$).
-To be precise, the literature effectively assumes
-
-\begin{equation} \label{eq:literature_assumption}
+and depreciation ($\hat{\bm{\gamma}}\vec{B}$)
+when estimating the energy intensity ($\bm{\varepsilon}$) 
+of economic sectors.\footnote{To be precise, 
+the literature effectively assumes
+$
 	\vec{T}_{1}
 	- \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
 	- \hat{\bm{\gamma}}\vec{B} 
 	= \vec{0}
-\end{equation}
-
-\noindent{}when estimating the energy intensity ($\bm{\varepsilon}$) 
-of economic sectors. 
-The following subsections discuss each term.
+$}
+In other words, energy analysts using the input-output method
+have, to date, and perhaps unwittingly, assumed 
+a developed-world ($\vec{T}_{1} \ll \vec{E}_{0}$), 
+steady state economy 
+$\left( \frac{\mathrm{d}\mathrm{\vec{B}}}{\mathrm{d}t} = \vec{0} \right)$
+wherein capital stock is never discarded ($\hat{\bm{\gamma}}\vec{B} = \vec{0}$).
+The following subsections discuss each of these assumptions.
 
 %+++++++++ Energy input from society ++++++++++
-\subsection{Energy input from society ($\vec{T}_{1}$)}
+\subsection{Negligible energy input from society $\left( \vec{T}_{1} = 0 \right)$}
 %+++++++++
 
 The energy input from society to the economy ($\vec{T}_{1}$)
-is the ``muscle work'' supplied by working humans 
+is ``muscle work'' supplied by working humans 
 and draught animals.\cite{Ayres:2003ec,Warr:2012cg} 
 For developed economies, muscle work is a small fraction
-of the energy input by fossil fuels ($\vec{E}_{0}$),
+of the energy input from fossil fuels ($\vec{E}_{0}$),
 so neglecting $\vec{T}_{1}$ causes negligible error when
 estimating energy intensity ($\bm{\varepsilon}$) by
-Equation~\ref{eq:epsilon_leontief_with_A}.
+Equation~\ref{eq:epsilon_leontief_with_A_literature}.
 However, for some agrarian and developing economies, 
 where $\vec{T}_{1}$ and $\vec{E}_{0}$ 
 could be on the same order of magnitude,
-neglecting $\vec{T}_{1}$ could cause significant error
+neglecting $\vec{T}_{1}$ could cause errors
 in estimates of $\bm{\varepsilon}$.
+To the extent that $\vec{T}_{1}$ 
+is significant relative to $\vec{E}_{0}$,
+Equation~\ref{eq:epsilon_leontief_with_A_literature}
+will underpredict the energy intensity of the economy.
 
 
 %+++++++++ Accumulation of embodied energy ++++++++++
-\subsection{Accumulation of embodied energy
-$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$}
+\subsection{Negligible accumulation of embodied energy
+$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} = 0 \right)$}
 %+++++++++
 
 Neglecting this term is worse for rapidly growing economies.
@@ -138,7 +151,7 @@ Neglecting this term is worse for rapidly growing economies.
 
 
 %+++++++++ Depreciation ++++++++++
-\subsection{Depreciation ($\hat{\bm{\gamma}}\vec{B}$)}
+\subsection{Negligible depreciation $\left( \hat{\bm{\gamma}}\vec{B} = 0 \right)$}
 %+++++++++
 
 Neglecting this term is worse for developed economies.
