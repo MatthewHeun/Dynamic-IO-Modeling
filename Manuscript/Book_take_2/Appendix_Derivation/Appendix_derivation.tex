@@ -1,0 +1,189 @@
+%!TEX root = ../Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
+%%%%%%%%%%%%%%%%%%%%% appendix.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample appendix
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\motto{All's well that ends well}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Appendix C %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Derivation of Equation~\ref{eq:Xdifference2_inverse}}
+% Always give a unique label
+\label{app:Derivation} 
+% use \chaptermark{} to alter or adjust the chapter heading in the running head
+\chaptermark{Appendix C}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Use the template \emph{appendix.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style appendix of your book in the Springer layout.
+
+
+%%%%%%%%%% Proof %%%%%%%%%%
+\section{Proof}
+%%%%%%%%%%
+
+We begin by proving the following equation.
+
+\begin{equation} \label{eq:Xdifference2Proof-1}
+	\hat{\vec{X}} 
+	- \vec{X}_t^\mathrm{T} 
+	= \hat{\vec{X}}(\vec{I} 
+	- \vec{A}^\mathrm{T})
+\end{equation}
+
+\noindent{}We expand the matrices to obtain
+
+\begin{equation} \label{eq:Xdifference2Proof-2}
+	\begin{bmatrix} 	
+		\dot{X}_{2} & 0	\\
+		0           & \dot{X}_{3}
+	\end{bmatrix}
+	 -
+	\begin{bmatrix} 	
+		\dot{X}_{22} & \dot{X}_{32}	\\
+		\dot{X}_{23} & \dot{X}_{33}
+	\end{bmatrix}
+	=
+	\begin{bmatrix} 	
+		\dot{X}_{2} & 0	\\
+		0           & \dot{X}_{3}
+	\end{bmatrix}
+	\begin{bmatrix} 	
+		1 - a_{22} & -a_{32}	\\
+		-a_{23}    & 1 - a_{33}
+	\end{bmatrix}.
+\end{equation}
+
+\noindent{}Subtracting and multiplying the matrices provides
+
+\begin{equation} \label{eq:Xdifference2Proof-3}
+	\begin{bmatrix} 	
+		\dot{X}_{2} - \dot{X}_{22} & - \dot{X}_{32}	\\
+		- \dot{X}_{23}             & \dot{X}_{3} - \dot{X}_{33}
+	\end{bmatrix} 
+	= 
+	\begin{bmatrix} 	
+		\dot{X}_{2} - \dot{X}_2 a_{22} & - \dot{X}_2 a_{32}	\\
+		- \dot{X}_3 a_{23}             & \dot{X}_{3} - \dot{X}_3 a_{33}
+	\end{bmatrix}.
+\end{equation}
+
+\noindent{}Using $\dot{X}_j a_{ij} = \dot{X}_{ij}$ (see Equation~\ref{eq:aij_def}) gives
+
+\begin{equation} \label{eq:Xdifference2Proof-4}
+	\begin{bmatrix} 	
+		\dot{X}_{2} - \dot{X}_{22} & - \dot{X}_{32}	\\
+		- \dot{X}_{23}             & \dot{X}_{3} - \dot{X}_{33}
+	\end{bmatrix} 
+	= 
+	\begin{bmatrix} 	
+		\dot{X}_{2} - \dot{X}_{22} & - \dot{X}_{32}	\\
+		- \dot{X}_{23}             & \dot{X}_{3} - \dot{X}_{33}
+	\end{bmatrix}
+\end{equation}
+
+\noindent{}to complete the proof.
+
+
+%%%%%%%%%% Proof %%%%%%%%%%
+\section{Derivation}
+%%%%%%%%%%
+
+To derive Equation~\ref{eq:Xdifference2_inverse}, 
+we take the matrix inverse of both sides 
+of Equation~\ref{eq:Xdifference2Proof-1} to obtain
+
+\begin{equation} \label{eq:Xdifference2_inverse_Proof-5}
+	{\left(\hat{\vec{X}} - \vec{X}_t^\mathrm{T}\right)}^{-1} 
+	= {\left(\hat{\vec{X}}(\vec{I} - \vec{A}^\mathrm{T})\right)}^{-1}.
+\end{equation}
+
+\noindent We apply the matrix identity~\cite[Formula 6.2, p. 308]{Beyer:1991vd}
+
+\begin{equation} \label{eq:Xdifference2_inverse_Proof-6}
+	{\left(\vec{A}\vec{B}\vec{C}\right)}^{-1} 
+	= \vec{C}^{-1} \vec{B}^{-1} \vec{A}^{-1}
+\end{equation}
+
+\noindent to the right side of Equation~\ref{eq:Xdifference2_inverse_Proof-5} to obtain
+
+\begin{equation} \label{eq:Xdifference2_inverse_Proof-7}
+	{\left(\hat{\vec{X}} - \vec{X}_t^\mathrm{T}\right)}^{-1} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1} \hat{\vec{X}}^{-1},
+\end{equation}
+
+\noindent which is identical to Equation~\ref{eq:Xdifference2_inverse}.
+
+\bibliographystyle{unsrt}
+\bibliography{../EROI_review_v2}
+
+
+%\section{Section Heading}
+%\label{sec:A1}
+%% Always give a unique label
+%% and use \ref{<label>} for cross-references
+%% and \cite{<label>} for bibliographic references
+%% use \sectionmark{}
+%% to alter or adjust the section heading in the running head
+%Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations.
+%
+%
+%\subsection{Subsection Heading}
+%\label{sec:A2}
+%Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:A1}.
+%
+%For multiline equations we recommend to use the \verb|eqnarray| environment.
+%\begin{eqnarray}
+%\vec{a}\times\vec{b}=\vec{c} \nonumber\\
+%\vec{a}\times\vec{b}=\vec{c}
+%\label{eq:A01}
+%\end{eqnarray}
+%
+%\subsubsection{Subsubsection Heading}
+%Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:A2}.
+%
+%Please note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
+%
+%% For figures use
+%%
+%\begin{figure}[t]
+%\sidecaption[t]
+%%\centering
+%% Use the relevant command for your figure-insertion program
+%% to insert the figure file.
+%% For example, with the option graphics use
+%\includegraphics[scale=.65]{figure}
+%%
+%% If not, use
+%%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%%
+%\caption{Please write your figure caption here}
+%\label{fig:A1}       % Give a unique label
+%\end{figure}
+%
+%% For tables use
+%%
+%\begin{table}
+%\caption{Please write your table caption here}
+%\label{tab:A1}       % Give a unique label
+%%
+%% For LaTeX tables use
+%%
+%\begin{tabular}{p{2cm}p{2.4cm}p{2cm}p{4.9cm}}
+%\hline\noalign{\smallskip}
+%Classes & Subclass & Length & Action Mechanism  \\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%Translation & mRNA$^a$  & 22 (19--25) & Translation repression, mRNA cleavage\\
+%Translation & mRNA cleavage & 21 & mRNA cleavage\\
+%Translation & mRNA  & 21--22 & mRNA cleavage\\
+%Translation & mRNA  & 24--26 & Histone and DNA Modification\\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%\end{tabular}
+%$^a$ Table foot note (with superscript)
+%\end{table}
+%%
