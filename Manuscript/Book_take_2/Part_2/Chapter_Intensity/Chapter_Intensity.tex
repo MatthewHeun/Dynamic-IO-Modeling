@@ -38,16 +38,16 @@ the energy intensity of economic sectors.
 \section{Methodology}
 %%%%%%%%%%
 
-Energy intensity ($\varepsilon$) is the ratio 
-of total energy ($\dot{T}$) and value ($\dot{X}$) outflow rates 
+Energy intensity ($\varepsilon$)\nomenclature[e]{$\varepsilon$}{energy intensity [J/\$]}
+is the ratio 
+of total energy ($\dot{T}$) 
+and value ($\dot{X}$) outflow rates 
 from an economic sector, 
 such that for the $j^{\mathrm{th}}$ goods and services sector,
 
 \begin{equation} \label{eq:epsilon_output_def_g_and_s}
 	\varepsilon_{j} \equiv \frac{\dot{T}_{j}}{\dot{X}_{j}},
-\end{equation} \nomenclature[e]{$\varepsilon$}{energy intensity, J/\$}
-
-****** Add more nomenclature from this Chapter *********
+\end{equation} 
 
 \noindent{}and $\varepsilon$ is in units of J/\$. 
 For inter-sector flows, we have
@@ -70,7 +70,8 @@ of that sector.\footnote{If this approach is unsatisfactory,
 the sector may be divided into sub-sectors 
 with different energy intensities.}
 
-We define the input-ouput ratio ($a_{ij}$) that represents the input 
+We define the input-ouput ratio ($a_{ij}$)\nomenclature[a]{$a$}{input-output ratio [-]}
+that represents the input 
 of good $i$ required to produce a unit of output from sector $j$.
 
 \begin{equation} \label{eq:aij_def}
@@ -178,7 +179,7 @@ to a matrix formulation, we turn to Example~C.
 \label{sec:C-intensity}
 %%%%%%%%%%
 
-The three-sector economy of Example~C affords an opportunity 
+The three-sector economy of Example~C affords the opportunity 
 to develop a matrix version 
 of the total energy accounting equation (\ref{eq:C-CV_T_123})
 and to develop an equation that estimates the
@@ -223,7 +224,7 @@ of the three-sector economy:
 (a) $\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$ 
 due to $\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$, because direct energy
 does not accumulate within economic sectors and
-(b) $\dot{T}_{0j} = \dot{E}_{0j}$ due to $\dot{B}_{0j} = 0$, 
+(b) $\dot{T}_{0j} = \dot{E}_{0j}$ due to $\dot{B}_{0j}~=~0$, 
 because embodied energy appears only in the \emph{output} of a sector, and
 we substitute $\dot{T}_{j} = \varepsilon_{j} \dot{X}_{j}$ 
 and $\dot{T}_{jk} = \varepsilon_{j} \dot{X}_{jk}$ 
@@ -325,7 +326,8 @@ in matrix notation as
 	\begin{Bmatrix}
 		\dot{E}_{02} \\
 		\dot{E}_{03}
-	\end{Bmatrix},
+	\end{Bmatrix},\nomenclature[E]{$\vec{E}_{0}$}{vector of direct energy inputs 
+													from the biosphere [W]}
 \end{equation}
 
 \begin{equation} \label{eq:T_vec_def}
@@ -334,7 +336,8 @@ in matrix notation as
 	\begin{Bmatrix}
 		\dot{T}_{12} \\
 		\dot{T}_{13}
-	\end{Bmatrix},
+	\end{Bmatrix},\nomenclature[T]{$\vec{T}_{1}$}{vector of total energy inputs 
+													from society to the economy [W]}
 \end{equation}
 
 \begin{equation} \label{eq:X_t_matrix_def}
@@ -343,7 +346,7 @@ in matrix notation as
 	\begin{bmatrix}
 		\dot{X}_{22} & \dot{X}_{23} \\
 		\dot{X}_{32} & \dot{X}_{33}
-	\end{bmatrix},
+	\end{bmatrix},\nomenclature[X]{$\vec{X}_{t}$}{transaction matrix [\$/year]}
 \end{equation}
 
 \begin{equation} \label{eq:eps_vec_def}
@@ -352,7 +355,8 @@ in matrix notation as
 	\begin{Bmatrix}
 		\varepsilon_{2}	\\
 		\varepsilon_{3}
-	\end{Bmatrix},
+	\end{Bmatrix},\nomenclature[e]{$\bm{\varepsilon}$}{column vector 
+														of sector energy intensities [J/\$]}
 \end{equation}
 
 \begin{equation} \label{eq:X_hat_matrix_def}
@@ -363,7 +367,7 @@ in matrix notation as
 	\begin{bmatrix}
 		\dot{X}_{2}		&	0	  \\
 		0				&	\dot{X}_{3}	\\
-	\end{bmatrix},
+	\end{bmatrix},\nomenclature[X]{$\hat{\vec{X}}$}{matrix of sector outputs [\$/year]}
 \end{equation}
 
 \begin{equation} \label{eq:gamma_hat_matrix_def}
@@ -375,7 +379,7 @@ in matrix notation as
 		\gamma_{2} & 0         \\
 		0          & \gamma_{3}
 	\end{bmatrix},
-\end{equation}
+\end{equation}\nomenclature[g]{$\hat{\bm{\gamma}}$}{matrix of depreciation rates [\$/year]}
 
 \noindent{}and
 
@@ -397,7 +401,7 @@ in matrix notation as
 		0	&	\text{if  } i \neq j	\\
 		1 	& 	\text{if  } i = j
 	\end{cases};
-\end{equation}
+\end{equation}\nomenclature[d]{$\delta_{ij}$}{Kronecker delta}
 
 \noindent{}we can rewrite Equation~\ref{eq:C-Expanded_Matrix_Form}
 compactly as
@@ -430,7 +434,7 @@ compactly as
 		a_{22} & a_{23}	\\
 		a_{32} & a_{33}	
 	\end{bmatrix}.
-\end{equation}
+\end{equation}\nomenclature[A]{$\vec{A}$}{input-output matrix}
 
 \noindent{}Appendix~\ref{app:Proof} shows that
 
@@ -463,7 +467,7 @@ of economic and energy sector disaggregation
 by expanding the vectors and matrices in 
 Equations~\ref{eq:dBdt_vec_def}--\ref{eq:B_vec_def}
 and~\ref{eq:A_matrix_def} to include
-all sectors of the economy.\cite{Casler1984,Bullard:1978vd}
+all sectors of the economy.~\cite{Casler1984,Bullard:1978vd}
 
 Equation~\ref{eq:matrix_leontief} provides a means to 
 estimate the embodied energy accumulation rate
@@ -480,7 +484,7 @@ if the input-ouput matrix ($\vec{A}$) is known,
 though in practice, 
 knowledge of input-output matrix ($\vec{A}$) 
 would be derived from the transaction matrix ($\vec{X}_{t}$),
-as shown by Equation~\ref{eq:Xdifference1Proof-9}.
+as shown in Appendix~\ref{chap:Estimating_A}.
 
 
 %%%%%%%%%% Example C %%%%%%%%%%
@@ -549,10 +553,10 @@ of economic sectors ($\bm{\varepsilon}$)
 knowing only 
 sector input-output ratios ($\vec{A}$), 
 sector outputs ($\hat{\vec{X}}$), 
-energy input to the economy from the biosphere ($\vec{E}_{0}$), 
-total energy input from society to the economy ($\vec{T}_{1}$),
-sector embodied energy accumulation rates $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$,
-and sector physical depreciation rates ($\hat{\bm{\gamma}}\vec{B}$).
+energy input to the economy from the biosphere~($\vec{E}_{0}$), 
+total energy input from society to the economy~($\vec{T}_{1}$),
+sector embodied energy accumulation rates~$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$,
+and sector physical depreciation rates~($\hat{\bm{\gamma}}\vec{B}$).
 
 Again, the transaction matrix ($\vec{X}_{t}$) is not required 
 for estimating the energy intensity of economic sectors ($\bm{\varepsilon}$)
@@ -560,7 +564,7 @@ if the input-ouput matrix ($\vec{A}$) is known,
 though in practice, 
 knowledge of input-output matrix ($\vec{A}$) 
 would be derived from the transaction matrix ($\vec{X}_{t}$),
-as shown by Equation~\ref{eq:Xdifference1Proof-9}.
+as shown in Appendix~\ref{chap:Estimating_A}.
 
 
 %%%%%%%%%% Intensity: Auto industry example %%%%%%%%%%

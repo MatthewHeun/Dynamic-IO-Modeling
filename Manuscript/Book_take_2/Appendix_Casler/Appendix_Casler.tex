@@ -16,7 +16,7 @@
 
 In this manuscript, we choose to define 
 energy intensity ($\bm{\varepsilon}$) and 
-energy input ($\vec{E}_{0}$, $\vec{T}_{1}$)
+energy input ($\vec{E}_{0}$~and~$\vec{T}_{1}$)
 as a column vectors (see Equations~\ref{eq:eps_vec_def},~\ref{eq:E_vec_def}, 
 and~\ref{eq:T_vec_def}, respectively),
 because it natural to solve a system of equations
@@ -36,8 +36,8 @@ This appendix derives a column vector version of the energy intensity equation
 that is often found in the literature.
 The point of comparison is Casler~\cite{Casler1984}.
 Casler's energy intensity equation~\cite[Equation 6]{Casler1984} 
-was derived from row vectors and 
-is given as\footnote{Equation~\ref{eq:Casler6-converted} is written according
+was derived from row vectors 
+as\footnote{Equation~\ref{eq:Casler6-converted} is written according
 to the variable naming conventions in this manuscript.
 The literal Equation~6 in Casler~\cite{Casler1984} is
 $
@@ -70,7 +70,8 @@ converted to overdot notation for rates.
 \end{equation}
 
 \noindent{}Adding an $\dot{E}_{01}$ term\footnote{Note that 
-$\dot{E}_{01} = 0$ for Casler~\cite{Casler1984}.} 
+$\dot{E}_{01} = 0$ for Casler~\cite{Casler1984}, 
+so $\dot{E}_{0}$ can be included without changing the equation.} 
 and utilizing matrix notation with column vectors 
 (instead of row vectors) gives
 
@@ -180,10 +181,15 @@ we can rewrite Equation~\ref{eq:Casler34-matrix-expanded} as
 		\vec{E}_{0}.
 \end{equation}
 
-The difference between Equations~\ref{eq:Casler6-converted}
-and~\ref{eq:Casler6-column-vector} is the use 
+The differences between Equations~\ref{eq:Casler6-converted}
+and~\ref{eq:Casler6-column-vector} arise from the use 
 of row vectors (for Equation~\ref{eq:Casler6-converted})
-and column vectors (for Equation~\ref{eq:Casler6-column-vector}) only.
+or column vectors (for Equation~\ref{eq:Casler6-column-vector}) only.
+Note that Equation~\ref{eq:Casler6-column-vector} is similar
+to Equation~\ref{eq:epsilon_leontief_with_A}.
+A detailed discussion of the differences 
+between Equations~\ref{eq:Casler6-column-vector} and~\ref{eq:epsilon_leontief_with_A}
+can be found in Section~\ref{sec:Implications_for_IO}.
 
 
 \bibliographystyle{unsrt}
