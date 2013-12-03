@@ -31,7 +31,7 @@
 In Chapters~\ref{chap:direct_energy},~\ref{chap:embodied_energy}, and~\ref{chap:value}, 
 we defined flows of direct energy, embodied energy, and value in an economy.
 In this chapter, we merge energy and value together to estimate
-the energy intensity of economic sectors.
+the energy intensity ($\varepsilon$) of economic sectors.
 
 
 %%%%%%%%%% Methodology %%%%%%%%%%
@@ -39,6 +39,7 @@ the energy intensity of economic sectors.
 %%%%%%%%%%
 
 Energy intensity ($\varepsilon$)\nomenclature[e]{$\varepsilon$}{energy intensity [J/\$]}
+\index{energy intensity}
 is the ratio 
 of total energy ($\dot{T}$) 
 and value ($\dot{X}$) outflow rates 
@@ -326,9 +327,9 @@ in matrix notation as
 	\begin{Bmatrix}
 		\dot{E}_{02} \\
 		\dot{E}_{03}
-	\end{Bmatrix},\nomenclature[E]{$\vec{E}_{0}$}{vector of direct energy inputs 
-													from the biosphere [W]}
-\end{equation}
+	\end{Bmatrix},
+\end{equation} \nomenclature[E]{$\vec{E}_{0}$}{vector of direct energy inputs 
+												from the biosphere [W]}
 
 \begin{equation} \label{eq:T_vec_def}
 	\vec{T}_{1} 
@@ -336,9 +337,9 @@ in matrix notation as
 	\begin{Bmatrix}
 		\dot{T}_{12} \\
 		\dot{T}_{13}
-	\end{Bmatrix},\nomenclature[T]{$\vec{T}_{1}$}{vector of total energy inputs 
-													from society to the economy [W]}
-\end{equation}
+	\end{Bmatrix},
+\end{equation} \nomenclature[T]{$\vec{T}_{1}$}{vector of total energy inputs 
+												from society to the economy [W]}
 
 \begin{equation} \label{eq:X_t_matrix_def}
 	\vec{X}_{t} 
@@ -346,8 +347,9 @@ in matrix notation as
 	\begin{bmatrix}
 		\dot{X}_{22} & \dot{X}_{23} \\
 		\dot{X}_{32} & \dot{X}_{33}
-	\end{bmatrix},\nomenclature[X]{$\vec{X}_{t}$}{transaction matrix [\$/year]}
-\end{equation}
+	\end{bmatrix},
+\end{equation} \nomenclature[X]{$\vec{X}_{t}$}{transaction matrix [\$/year]}
+\index{transaction matrix}\index{matrix!transaction|see{transaction matrix}}
 
 \begin{equation} \label{eq:eps_vec_def}
 	\bm{\varepsilon} 
@@ -355,9 +357,9 @@ in matrix notation as
 	\begin{Bmatrix}
 		\varepsilon_{2}	\\
 		\varepsilon_{3}
-	\end{Bmatrix},\nomenclature[e]{$\bm{\varepsilon}$}{column vector 
-														of sector energy intensities [J/\$]}
-\end{equation}
+	\end{Bmatrix},
+\end{equation} \nomenclature[e]{$\bm{\varepsilon}$}{column vector 
+								of sector energy intensities [J/\$]}
 
 \begin{equation} \label{eq:X_hat_matrix_def}
 	\hat{\vec{X}} 
@@ -367,8 +369,8 @@ in matrix notation as
 	\begin{bmatrix}
 		\dot{X}_{2}		&	0	  \\
 		0				&	\dot{X}_{3}	\\
-	\end{bmatrix},\nomenclature[X]{$\hat{\vec{X}}$}{matrix of sector outputs [\$/year]}
-\end{equation}
+	\end{bmatrix},
+\end{equation} \nomenclature[X]{$\hat{\vec{X}}$}{matrix of sector outputs [\$/year]}
 
 \begin{equation} \label{eq:gamma_hat_matrix_def}
 	\hat{\bm{\gamma}}
@@ -434,7 +436,8 @@ compactly as
 		a_{22} & a_{23}	\\
 		a_{32} & a_{33}	
 	\end{bmatrix}.
-\end{equation}\nomenclature[A]{$\vec{A}$}{input-output matrix [-]}
+\end{equation} \nomenclature[A]{$\vec{A}$}{input-output matrix [-]}
+\index{input-output matrix}\index{matrix!input-output|see{input-output matrix}}
 
 \noindent{}Appendix~\ref{app:Proof} shows that
 
@@ -547,19 +550,89 @@ of Equation~\ref{eq:epsilon_derivation_2} gives
 		\right].
 \end{equation}
 
-\noindent{}Equation~\ref{eq:epsilon_leontief_with_A} allows estimation 
-of the energy intensity 
+Physical depreciation\index{depreciation!physical} ($\hat{\bm{\gamma}}\vec{B}$)
+occurs due to wear and tear, obsolescence, and end-of-life
+of material and capital stock\index{capital stock} 
+within economic sectors and society.\footnote{Physical depreciation
+is different from financial depreciation. 
+Financial depreciation occurs during the useful life of material, 
+while physical depreciation occurs at end of life, 
+when material is discarded from an economic sector to the biosphere.}
+Equation~\ref{eq:epsilon_leontief_with_A} shows that 
+depreciation decreases the energy intensity of economic products,
+all other things being equal.
+
+%%%%%%%%%% Example C %%%%%%%%%%
+\section{The effect of capital depreciation}
+%%%%%%%%%%
+
+There has been some attempt in the literature to 
+account for the effect
+of capital depreciation on estimates 
+of $\bm{\varepsilon}$. 
+Casler~\cite{Casler:1983uy} attempted to correct the BEA's
+input-output tables,
+but the present analysis provides an opportunity
+to develop a mathematically-rigorous approach to the 
+effects of depreciation based on fundamentals.
+
+First, we note that depreciation ($\hat{\bm{\gamma}}\vec{B}$) 
+and accumulation of embodied energy 
+$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$
+should be considered in tandem,
+because the rate of outflow of embodied energy due to depreciation
+($\hat{\bm{\gamma}}\vec{B}$)
+will cause an equal reduction of the net accumulation rate of embodied energy
+$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$.
+We can split the embodied energy accumulation rate 
+$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$
+into a portion due to depreciation and a portion due to 
+all other factors (exclusive of physical depreciation) as follows:
+
+\begin{equation} \label{eq:dB_dt_split}
+	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	= \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} 
+	+ \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{depreciation}}.
+\end{equation}
+
+\noindent{}When physical depreciation occurs,
+$\hat{\gamma}B > 0$ and 
+$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{depreciation}} < 0$.
+In fact,
+
+\begin{equation} \label{eq:dB_dt_dep_equals_dep}
+	\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{depreciation}} 
+	+ \hat{\bm{\gamma}}\vec{B}
+	= 0.
+\end{equation}
+
+\noindent{}Substituting Equations~\ref{eq:dB_dt_split} and~\ref{eq:dB_dt_dep_equals_dep}
+into Equation~\ref{eq:epsilon_leontief_with_A} yields
+
+\begin{equation} \label{eq:epsilon_leontief_depreciation_simplification}
+	\bm{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E}_{0} 
+				+ \vec{T}_{1} 
+				- \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}
+		\right].
+\end{equation}
+
+\noindent{}Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
+allows estimation of the energy intensity 
 of economic sectors ($\bm{\varepsilon}$) 
 knowing only 
 sector input-output ratios ($\vec{A}$), 
 sector outputs ($\hat{\vec{X}}$), 
 energy input to the economy from the biosphere~($\vec{E}_{0}$), 
-total energy input from society to the economy~($\vec{T}_{1}$),
-sector embodied energy accumulation rates~$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$,
-and sector physical depreciation rates~($\hat{\bm{\gamma}}\vec{B}$).
+total energy input from society to the economy~($\vec{T}_{1}$), and
+sector embodied energy accumulation rates
+exclusive of the effects of physical
+depreciation~$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$.
 
-Again, the transaction matrix ($\vec{X}_{t}$) is not required 
-for estimating the energy intensity of economic sectors ($\bm{\varepsilon}$)
+Again, the transaction matrix\index{transaction matriux} ($\vec{X}_{t}$) 
+is not required for estimating the energy intensity 
+of economic sectors ($\bm{\varepsilon}$)
 if the input-ouput matrix ($\vec{A}$) is known, 
 though in practice, 
 knowledge of input-output matrix ($\vec{A}$) 

@@ -39,17 +39,20 @@ embodied energy accumulation, and depreciation.
 \label{sec:Implications_for_IO}
 %%%%%%%%%%
 
-The extension of the Leontief Input-Output method
-for energy analysis allowed analysts to estimate 
-the energy intensity 
+Extension of the Leontief\index{Leontief} 
+Input-Output method\index{input-output method}
+for energy analysis has allowed energy analysts to estimate 
+the energy intensity\index{energy intensity}
 of economic products ($\bm{\varepsilon}$). 
 As discussed in Section~\ref{sec:Value_Methodology},
 we do not take this important result as a license
 to declare an intrinsic ``energy theory of value.''
+\index{theory of value!energy}
 Rather, we belive that energy intensity is an 
 important and useful metric that can assess 
 the energy performance of economies,
 even within the prevailing subjective theory of value
+\index{theory of value!subjective}
 that underlies modern economics. 
 Thus, it is important to consider the assumptions behind
 the literature's presentation of the I-O method 
@@ -58,15 +61,14 @@ for estimating the energy intensity economic output.
 In this manuscript, Equation~\ref{eq:epsilon_leontief_with_A} 
 provides the means of estimating the energy intensity:
 
-\begin{equation*}
+\begin{equation}
 	\bm{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
-				- \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-				- \hat{\bm{\gamma}}\vec{B}
-		\right].
-\end{equation*}
+				- \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}
+		\right]. \tag{\ref{eq:epsilon_leontief_with_A}}
+\end{equation}
 
 \noindent{}The I-O literature~\cite{Bullard1975,Casler1984}, 
 on the other hand, 
@@ -82,41 +84,41 @@ and this manuscript, see Appendix~\ref{chap:Casler}.}
 	\vec{E}_{0}.
 \end{equation}
 
-The differences between Equations~\ref{eq:epsilon_leontief_with_A}
+The differences between Equations~\ref{eq:epsilon_leontief_depreciation_simplification}
 and~\ref{eq:epsilon_leontief_with_A_literature} are obvious. 
 We have extended the literature to include:
 
 \begin{itemize}
-	\item{energy input to the economy from society ($\vec{T}_{1}$),}
-	\item{accumulation of embodied energy in the economy 
-	$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$, and}
-	\item{the embodied energy of depreciated capital ($\hat{\bm{\gamma}}\vec{B}$).}
+	\item{energy input to the economy from society ($\vec{T}_{1}$) and}
+	\item{accumulation of embodied energy in the economy,
+	exclusive of depreciation
+	$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$.}
 \end{itemize}
 
 \noindent{}Comparison of 
-Equations~\ref{eq:epsilon_leontief_with_A}
+Equations~\ref{eq:epsilon_leontief_depreciation_simplification}
 and~\ref{eq:epsilon_leontief_with_A_literature}
 shows that the literature neglects
-energy input from society ($\vec{T}_{1}$),
-accumulation of embodied energy in the economy 
-$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$,
-and depreciation ($\hat{\bm{\gamma}}\vec{B}$)
+energy input from society ($\vec{T}_{1}$)
+and accumulation of embodied energy in the economy,
+exclusive of depreciation 
+$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
 when estimating the energy intensity ($\bm{\varepsilon}$) 
 of economic sectors.\footnote{To be precise, 
 the literature effectively assumes
 $
 	\vec{T}_{1}
-	- \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
-	- \hat{\bm{\gamma}}\vec{B} 
+	- \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}
 	= \vec{0}
 $}
 In other words, energy analysts using the input-output method
 have, to date, and perhaps unwittingly, assumed 
 a developed-world ($\vec{T}_{1} \ll \vec{E}_{0}$), 
-steady state economy 
-$\left( \frac{\mathrm{d}\mathrm{\vec{B}}}{\mathrm{d}t} = \vec{0} \right)$
-wherein capital stock is never discarded ($\hat{\bm{\gamma}}\vec{B} = \vec{0}$).
+steady state economy\index{steady-state economy}
+$\left( \left. \frac{\mathrm{d}\mathrm{\vec{B}}}{\mathrm{d}t} \right|_{\mathrm{other}} 
+= \vec{0} \right)$.
 The following subsections discuss each of these assumptions.
+
 
 %+++++++++ Energy input from society ++++++++++
 \subsection{Negligible energy input from society $\left( \vec{T}_{1} = 0 \right)$}
@@ -130,7 +132,8 @@ of the energy input from fossil fuels ($\vec{E}_{0}$),
 so neglecting $\vec{T}_{1}$ causes negligible error when
 estimating energy intensity ($\bm{\varepsilon}$) by
 Equation~\ref{eq:epsilon_leontief_with_A_literature}.
-However, for some agrarian and developing economies, 
+However, for some agrarian\index{economy!agrarian} 
+and developing economies\index{economy!developing}, 
 where $\vec{T}_{1}$ and $\vec{E}_{0}$ 
 could be on the same order of magnitude,
 neglecting $\vec{T}_{1}$ could cause errors
@@ -146,19 +149,33 @@ will underpredict the energy intensity of the economy.
 $\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} = 0 \right)$}
 %+++++++++
 
-Neglecting this term is worse for rapidly growing economies.
+As discussed in detail below (Section~\ref{sec:implications_for_development}),
+the accumulation of embodied energy 
+$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$ 
+in society and the economy
+can be considered a marker of economic ``development.''
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
+shows that embodied energy accumulation within economic sectors 
+exclusive of depreciation
+$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$ 
+decreases the energy intensity of products ($\bm{\varepsilon}$),
+because incoming energy is embodied within capital stock rather than products.
+Comparison with Equation~\ref{eq:epsilon_leontief_with_A_literature}
+shows that the literature's method will overestimate the energy intensity
+of economic products ($\bm{\varepsilon}$) when 
+$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} > 0$.
 
-
-
-%+++++++++ Depreciation ++++++++++
-\subsection{Negligible depreciation $\left( \hat{\bm{\gamma}}\vec{B} = 0 \right)$}
-%+++++++++
-
-Neglecting this term is worse for developed economies.
-
-
-
-
+Rapidly growing economies, such as China and India today,
+are expected to have rather large values of 
+$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
+while developed economies, 
+such as the United States and the United Kingdom,
+are expected to have rather smaller values of 
+$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$.
+Applying Equation~\ref{eq:epsilon_leontief_with_A_literature} 
+(i.e., assuming a steady-state economy\index{economy!steady-state})
+will tend to overestimate the energy intensity 
+of economic products for countries such as China and India.
 
 
 ******** Matt stopped here. *********
@@ -241,6 +258,7 @@ are more likely to violate the typical assumptions in the literature.
 
 %%%%%%%%%% Implications %%%%%%%%%%
 \section{Implications for economic ``development''}
+\label{sec:implications_for_development}
 %%%%%%%%%%
 
 [IT WOULD BE GOOD TO HAVE A COMPARISON BETWEEN $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ 
