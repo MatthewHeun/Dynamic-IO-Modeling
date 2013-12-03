@@ -39,6 +39,14 @@ embodied energy accumulation, and depreciation.
 \label{sec:Implications_for_IO}
 %%%%%%%%%%
 
+The first set of implications are for the process of estimating
+the energy intensity of economic output ($\bm{\varepsilon}$).
+
+
+%%%%%%%%%% I-O implications: estimating epsilon %%%%%%%%%%
+\subsection{Estimating $\bm{\varepsilon}$}
+%%%%%%%%%%
+
 Extension of the Leontief\index{Leontief} 
 Input-Output method\index{input-output method}
 for energy analysis has allowed energy analysts to estimate 
@@ -117,14 +125,21 @@ a developed-world ($\vec{T}_{1} \ll \vec{E}_{0}$),
 steady state economy\index{steady-state economy}
 $\left( \left. \frac{\mathrm{d}\mathrm{\vec{B}}}{\mathrm{d}t} \right|_{\mathrm{other}} 
 = \vec{0} \right)$.
-The following subsections discuss each of these assumptions.
+
+and the rate at which 
+embodied energy is accumulating within economic sectors
+$\left( \left. \frac{\mathrm{d}\mathrm{\vec{B}}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$.
+But, at present, we know of no way to obtain estimates of
+$\left( \left. \frac{\mathrm{d}\mathrm{\vec{B}}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$.
+
+The following subsections discuss the assumptions made by the I-O literature.
 
 
 %+++++++++ Energy input from society ++++++++++
-\subsection{Negligible energy input from society $\left( \vec{T}_{1} = 0 \right)$}
+\subsubsection{Negligible energy input from society $\left( \vec{T}_{1} = 0 \right)$}
 %+++++++++
 
-The energy input from society to the economy ($\vec{T}_{1}$)
+Energy input from society to the economy ($\vec{T}_{1}$)
 is ``muscle work'' supplied by working humans 
 and draught animals.\cite{Ayres:2003ec,Ayres:2010ug,Warr:2012cg} 
 For developed economies, muscle work is a small fraction
@@ -143,9 +158,15 @@ is significant relative to $\vec{E}_{0}$,
 Equation~\ref{eq:epsilon_leontief_with_A_literature}
 will underpredict the energy intensity of the economy.
 
+Accurate estimation of the energy intensity of economic output ($\bm{\varepsilon}$)
+requires independent knowledge of the rate at which society supplies
+energy to the economy ($\vec{T}_{1}$). 
+Ayres and Warr have estimated human and animal muscle work
+input to the economy for a few developed countries.\cite{Ayres:2010ug}
+
 
 %+++++++++ Accumulation of embodied energy ++++++++++
-\subsection{Negligible accumulation of embodied energy
+\subsubsection{Negligible accumulation of embodied energy
 $\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} = 0 \right)$}
 %+++++++++
 
@@ -177,40 +198,23 @@ Applying Equation~\ref{eq:epsilon_leontief_with_A_literature}
 will tend to overestimate the energy intensity 
 of economic products for countries such as China and India.
 
+Accurate estimation of the energy intensity of economic output ($\bm{\varepsilon}$)
+requires independent knowledge of the rate 
+at which embodied energy accumulates in the economy 
+$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$. 
+To our knowledge, there are no examples of estimating the accumulation 
+of embodied energy in the economy.
+
+A second set of implications for the I-O method 
+comes from one of the ways that $\bm{\varepsilon}$
+is often used: to estimate $\vec{E}_{0}$.
+
+
+%%%%%%%%%% I-O implications: estimating E %%%%%%%%%%
+\subsection{Estimating $\vec{E}_{0}$}
+%%%%%%%%%%
 
 ******** Matt stopped here. *********
-
-Equations~\ref{eq:matrix_leontief} and~\ref{eq:epsilon_leontief_with_A}
-are two versions of the total energy 
-accounting equation (Equation~\ref{eq:matrix_leontief_pre_2}).
-It is clear that we can solve Equation~\ref{eq:matrix_leontief_pre_2} 
-for either~(a)~the embodied energy accumulation
-vector ($\vec{\frac{\mathrm{d}B}{\mathrm{d}t}}$) 
-as in Equation~\ref{eq:matrix_leontief} 
-or~(b)~the energy intensity vector ($\bm{\varepsilon}$) as in
-Equation~\ref{eq:epsilon_leontief_with_A}, 
-but not both.
-
-
-
-
-Examining Equation~\ref{eq:epsilon_leontief_with_A}, 
-we see that to the extent that 
-$\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B} \ll \vec{E}$, 
-estimates of energy intensity ($\vec{\varepsilon}$) 
-obtained with the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
-contain little error. 
-However, when the sum of the accumulation and depreciation rates 
-$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\vec{\gamma}}\vec{B}\right)$ 
-becomes significant relative to the rate of energy extracted 
-from the Earth ($\vec{E}$), 
-estimates of economic sector energy intensities ($\vec{\varepsilon}$) 
-using the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
-have a high-side bias (assuming that $\frac{dB}{dt} >0$ and $\gamma B > 0$). 
-As discussed above, the assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
-can be violated in developing economies 
-because accumulation $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-is large or in developed economies because depreciation ($\hat{\gamma}\vec{B}$) is large. 
 
 The assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
 may cause another challenge for energy analysts. 
@@ -254,6 +258,10 @@ Economies with fast growth rates
 $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
 or large sizes ($\vec{B}$) 
 are more likely to violate the typical assumptions in the literature.
+
+
+
+
 
 
 %%%%%%%%%% Implications %%%%%%%%%%
