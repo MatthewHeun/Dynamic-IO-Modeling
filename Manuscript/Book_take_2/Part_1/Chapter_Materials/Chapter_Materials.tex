@@ -392,9 +392,12 @@ Figure~\ref{fig:A_materials}.  We do not distinguish between production and cons
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/1_sector_materials.pdf}
 \caption{Flows of materials for a one-sector economy}{Flows of materials 
 for a one-sector economy. 
-Resources ($\dot{R}_{01}$) and short-lived materials ($\dot{S}_{01}$) flow into the economy (1) 
-from the biosphere\index{biosphere} (0). Waste resources ($\dot{R}_{10}$) short-lived materials/goods 
-($\dot{S}_{10}$) and capital goods\index{capital goods} ($\dot{K}_{10}$) are returned to the biosphere.}
+Resources ($\dot{R}_{01}$) and short-lived materials 
+($\dot{S}_{01}$) flow into the economy (1) 
+from the biosphere\index{biosphere} (0). Waste resources 
+($\dot{R}_{10}$) short-lived materials/goods 
+($\dot{S}_{10}$) and capital goods\index{capital goods} 
+($\dot{K}_{10}$) are returned to the biosphere.}
 \label{fig:A_materials}
 \end{figure}
 
@@ -404,11 +407,16 @@ and short-lived materials ($\dot{S}_{01}$),
 such as oxygen or water that flow \emph{through} economic
 processes but are not \emph{embodied} in the product output, 
 flow into the economy (1) from the biosphere\index{biosphere} (0). 
-These materials are processed within the economy into resource goods, 
-short-lived goods and also capital goods\index{capital goods} ($\dot{K}$), 
-which are able to be accumulated at some rate $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
-Waste resources ($\dot{R}_{10}$) and used short-lived materials/goods ($\dot{S}_{10}$)
-are returned to the biosphere\index{biosphere} without accumulating. Capital goods ($\dot{K}_{10}$) 
+These materials are processed within the economy into products ($\dot{P}_{1}$) 
+consisting of resource goods ($\dot{R}_{11}$), 
+short-lived goods ($\dot{S}_{11}$) and also capital 
+goods\index{capital goods} ($\dot{K}_{11}$), 
+which are able to be accumulated at some rate 
+$\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
+Waste resources ($\dot{R}_{10}$) and used short-lived 
+materials/goods ($\dot{S}_{10}$)
+are returned to the biosphere\index{biosphere} without 
+accumulating. Capital goods ($\dot{K}_{10}$) 
 are returned to the biosphere\index{biosphere} upon depreciation.
 
 
@@ -431,8 +439,11 @@ our material accounting equations, such that:
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
-	+ \dot{S}_{01} + \dot{S}_{11}
-	- \dot{S}_{1}				
+	+ \dot{S}_{01} 
+	+ \dot{R}_{11}
+	+ \dot{S}_{11}
+	+ \dot{K}_{11}
+	- \dot{P}_{1}				
 	- \dot{R}_{10}				
 	- \dot{S}_{10}				
 	- \dot{K}_{10}											
