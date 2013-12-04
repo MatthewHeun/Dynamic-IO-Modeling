@@ -45,6 +45,7 @@ the energy intensity of economic output ($\bm{\varepsilon}$).
 
 %%%%%%%%%% I-O implications: estimating epsilon %%%%%%%%%%
 \subsection{Estimating $\bm{\varepsilon}$}
+\label{sec:estimating_epsilon-implications_chapter}
 %%%%%%%%%%
 
 Extension of the Leontief\index{Leontief} 
@@ -87,7 +88,7 @@ and this manuscript, see Appendix~\ref{chap:Casler}.}
 
 \begin{equation} \label{eq:epsilon_leontief_with_A_literature}
 	\bm{\varepsilon} 
-	= {(\vec{I} - \vec{A}^{T})}^{-1}
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}
 	\hat{\vec{X}}^{-1}
 	\vec{E}_{0}.
 \end{equation}
@@ -203,65 +204,78 @@ requires independent knowledge of the rate
 at which embodied energy accumulates in the economy 
 $\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$. 
 To our knowledge, there are no examples of estimating the accumulation 
-of embodied energy in the economy.
+of embodied energy in the economy. 
+Further work focused on estimating the relative magnitudes of 
+$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$
+and $\vec{T}_{1}$ will benefit energy analysts who utilize the I-O method.
 
 A second set of implications for the I-O method 
-comes from one of the ways that $\bm{\varepsilon}$
-is often used: to estimate $\vec{E}_{0}$.
+comes from one of the ways that 
+the energy intensity vector ($\bm{\varepsilon}$)
+is often used: to estimate energy demand from the biosphere ($\vec{E}_{0}$).
 
 
 %%%%%%%%%% I-O implications: estimating E %%%%%%%%%%
 \subsection{Estimating $\vec{E}_{0}$}
 %%%%%%%%%%
 
-******** Matt stopped here. *********
-
-The assumption of Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption} 
+The assumptions of Equation~\ref{eq:epsilon_leontief_with_A_literature}
 may cause another challenge for energy analysts. 
-The I-O method is often used to estimate energy intensities 
-for each sector of the economy ($\vec{\varepsilon}$) 
-with Equation~\ref{eq:dB_dt_plus_gamma_zero_assumption}. 
-With $\vec{\varepsilon}$ values in hand, 
-one can estimate changes in energy demand from the Earth ($\vec{E}$) 
+As discussed in Sections~\ref{sec:estimating_epsilon-intensity_chapter} 
+and~\ref{sec:estimating_epsilon-implications_chapter} above, 
+the I-O method can be used to estimate energy intensities 
+for each sector of the economy ($\bm{\varepsilon}$). 
+With $\bm{\varepsilon}$ values in hand,
+and assuming that $\bm{\varepsilon}$ is constant with respect to time,
+energy analysts can estimate changes in energy demand 
+from the biosphere ($\vec{E}_{0}$) 
 as the output of economic sectors ($\hat{\vec{X}}$) 
 increases or decreases by solving 
-Equation~\ref{eq:epsilon_leontief_with_A_literature} for $\vec{E}$.
+Equation~\ref{eq:epsilon_leontief_with_A_literature} 
+for $\vec{E}_{0}$:
 
 \begin{equation} \label{eq:Leontief_lit_solved_for_E}
-	\vec{E} 
-	= \hat{\vec{X}}(\vec{I} 
-	- \vec{A}^{\mathrm{T}})\vec{\varepsilon}
+	\vec{E}_{0} 
+	= \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}})\bm{\varepsilon}.
 \end{equation}
 
-When accumulation and depreciation terms are included, 
+When Equation~\ref{eq:epsilon_leontief_with_A_literature}
+is modified to account for accumulation of embodied energy 
+in the economy 
+$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$
+and energy supplied by society to the economy ($\vec{T}_{1}$),
 we see that the energy demands ($\vec{E}$) must be calculated differently. 
-Solving Equation~\ref{eq:epsilon_leontief_with_A} 
-for $\vec{E}$ gives 
+Solving Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
+for $\vec{E}_{0}$ gives 
 
 \begin{equation} \label{eq:Leontief_solved_for_E_with_embodied_depreciation}
-	\vec{E} = \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}})\varepsilon + \left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} + \hat{\gamma}\vec{B}\right).
+	\vec{E}_{0} 
+	= \hat{\vec{X}}
+		(\vec{I} - \vec{A}^{\mathrm{T}})
+		\bm{\varepsilon} 
+	+ \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}
+	- \vec{T}_{1}.
 \end{equation}
 
-\noindent{}By comparing Equations~\ref{eq:Leontief_lit_solved_for_E} 
+\noindent{}Comparing Equations~\ref{eq:Leontief_lit_solved_for_E} 
 and~\ref{eq:Leontief_solved_for_E_with_embodied_depreciation}, 
-we see that to the extent that 
-accumulation $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-and depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
-are non-zero, 
-estimates of energy demand are too low. 
-If the sum of accumulation 
-$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-and depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
-are small relative to total energy demand ($\vec{E}$), 
-then neglecting these effects causes little error. 
-Economies with fast growth rates 
-$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-or large sizes ($\vec{B}$) 
-are more likely to violate the typical assumptions in the literature.
+shows that to the extent that embodied energy accumulation,
+exclusive of physical depreciation,
+$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$
+is non-zero, estimates of energy demand ($\vec{E}_{0}$) using 
+Equation~\ref{eq:Leontief_lit_solved_for_E} are too low. 
+And, if energy input from society to the economy ($\vec{T}_{1}$) is significant,
+estimates of energy demand ($\vec{E}_{0}$) using 
+Equation~\ref{eq:Leontief_lit_solved_for_E} are too high. 
+
+At this time, the relative magnitudes of $\vec{E}_{0}$,
+$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
+and $\vec{T}_{1}$ are unknown. 
+Further work to clarify these magnitudes will be beneficial
+for energy analysts who employ the I-O method.
 
 
-
-
+******** Matt stopped here. *********
 
 
 %%%%%%%%%% Implications %%%%%%%%%%

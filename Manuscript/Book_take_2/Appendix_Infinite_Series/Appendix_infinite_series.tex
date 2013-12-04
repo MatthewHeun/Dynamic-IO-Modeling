@@ -22,62 +22,62 @@ can be re-drawn as shown in Figure~\ref{fig:single_sector_flows_3}.
 \centering\
 \includegraphics[width=1.0\linewidth]{Appendix_Infinite_Series/images/I-O_Process_Equivalence.pdf}
 \caption{Process flows in a single-sector economy. ***** Mik: please update 
-to include Biopshere (0), change ``Sector (2)'' to ``Production (1)'', 
+to include Biopshere (0), change ``Sector (2)'' to ``Production (2)'', 
 and change all subscripts accordingly. ******}
 \label{fig:single_sector_flows_3}
 \end{figure}
 
-The economy produces output at a rate of $\dot{X}_{1}$, 
+The economy produces output at a rate of $\dot{X}_{2}$, 
 but it requires energy from the biosphere 
-($\dot{E}_{01} = a_{01}\dot{X}_{1}$) to do so. 
+($\dot{E}_{02} = a_{02}\dot{X}_{2}$) to do so. 
 The economy also consumes a fraction 
 of its own gross output 
-($\dot{X}_{11} = a_{11}\dot{X}_{1}$). 
-To produce $a_{11}\dot{X}_{1}$, 
-the economy requires an additional $a_{01}a_{11}\dot{X}_{1}$ 
+($\dot{X}_{22} = a_{22}\dot{X}_{2}$). 
+To produce $a_{22}\dot{X}_{2}$, 
+the economy requires an additional $a_{02}a_{22}\dot{X}_{2}$ 
 of energy from the biosphere. 
 The sum of all direct energy ($\dot{E}$) required for the economy 
-to produce at a rate of $\dot{X}_{1}$ is an infinite sum.
+to produce at a rate of $\dot{X}_{2}$ is an infinite sum.
 
 \begin{equation} \label{eq:E_dot_demand_SS}
 	\dot{E}_{demand,tot} 
-	= a_{01}\dot{X}_{1} 
-	+ a_{01}a_{11}\dot{X}_{1} 
-	+ a_{01}a_{11}^2\dot{X}_{1} 
+	= a_{02}\dot{X}_{2} 
+	+ a_{02}a_{22}\dot{X}_{2} 
+	+ a_{02}a_{22}^2\dot{X}_{2} 
 	+ \ldots
 \end{equation}
 
-The energy intensity of the economy ($\varepsilon_{1}$) is 
+The energy intensity of the economy ($\varepsilon_{2}$) is 
 
 \begin{equation} \label{eq:epsilon_process_SS_intermediate}
-	\varepsilon_{1} 
-	= \frac{\dot{E}_{demand,tot}}{\dot{X}_{1}} 
-	= a_{01}(1 + a_{11} + a_{11}^2 + \ldots) 
-	= a_{01}\sum_{n=0}^{\infty}a_{11}^{n}.
+	\varepsilon_{2} 
+	= \frac{\dot{E}_{demand,tot}}{\dot{X}_{2}} 
+	= a_{02}(1 + a_{22} + a_{22}^2 + \ldots) 
+	= a_{02}\sum_{n=0}^{\infty}a_{22}^{n}.
 \end{equation}
 
 Realizing that 
-$\sum\limits_{n=0}^{\infty}a_{11}^{n} 
-= \frac{1}{1-a_{11}}$ 
+$\sum\limits_{n=0}^{\infty}a_{22}^{n} 
+= \frac{1}{1-a_{22}}$ 
 and 
-$a_{01} 
-= \frac{\dot{E}_{01}}{\dot{X}_{1}}$ 
+$a_{02} 
+= \frac{\dot{E}_{02}}{\dot{X}_{2}}$ 
 (direct energy can be considered the output of the biosphere
 in this situation) gives
 
 \begin{equation} \label{eq:epsilon_process_SS}
-	\varepsilon_{1} = {(1-a_{11})}^{-1} \dot{X}^{-1} \dot{E}_{01}.
+	\varepsilon_{2} = {(1-a_{22})}^{-1} \dot{X}^{-1} \dot{E}_{02}.
 \end{equation}
 
-Neglecting 
+Accounting for the differences between scalar and matrix equations 
+and neglecting energy flows from society to the economy ($T_{12} = 0$), 
 accumulation of embodied energy in the economy
-$\left( \frac{\mathrm{d}B_{1}}{\mathrm{d}t} = 0 \right)$
-and depreciation $\left( \gamma_{1}B_{1} = 0 \right)$,
+$\left( \frac{\mathrm{d}B_{2}}{\mathrm{d}t} = 0 \right)$,
+and physical depreciation $\left( \gamma_{2}B_{2} = 0 \right)$,
 \index{depreciation}
-Equations~\ref{eq:eps3_ss_IO} and~\ref{eq:epsilon_process_SS} are identical, 
+Equations~\ref{eq:epsilon_leontief_with_A} and~\ref{eq:epsilon_process_SS} are identical, 
 indicating that the I-O approach accounts 
 for the infinite recursion of energy demand by the economy.
-****** Fix this paragraph after editing Chapter 6. *****
 
 
 \bibliographystyle{unsrt}
