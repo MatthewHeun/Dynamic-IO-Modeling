@@ -10,9 +10,6 @@
 # Then, type "./typeset.bash"
 # --Matthew Kuperus Heun, November 2013.
 
-# Close the pdf file first. Doing so guarantees that changes will be visible in the generated file.
-osascript -e 'tell application "Skim" to close document named "Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf"'
-
 # Ensure a fresh build by deleting all auxiliary files created by LaTeX.
 cd ..; ./clean.bash
 
@@ -30,6 +27,7 @@ cd Part_3; cd Chapter_Implications; bibtex Chapter_Implications; cd ../..;
 cd Appendix_Casler;                 bibtex Appendix_Casler;      cd ..;
 # These appendices do not contain any references.
 # cd Appendix_Proof_1;       bibtex Appendix_Proof_1;         cd ..;
+# cd Appendix_Derivation;    bibtex Appendix_Derivation;      cd ..;
 # cd Appendix_Estimating_A;  bibtex Appendix_Estimating_A;    cd ..;
 
 # Make the index section.
@@ -45,5 +43,9 @@ pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_model
 # Finally, run chktex to highlight any problems
 chktex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex 
 
+# Tell Skim to "revert" the file, thereby reloading the new version from disk.
+# Doing this eliminates the need to close the file at the top of the script and re-open it here.
+# Another benefit of this approach is that Skim does not lose your place in the file!
+osascript -e 'tell application "Skim" to revert document named "Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf"'
 # Now open the resulting .pdf file.
 open -a Skim Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.pdf
