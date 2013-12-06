@@ -50,14 +50,25 @@ such that for the $j^{\mathrm{th}}$ goods and services sector,
 	\varepsilon_{j} \equiv \frac{\dot{T}_{j}}{\dot{X}_{j}},
 \end{equation} 
 
-\noindent{}and $\varepsilon$ is in units of J/\$. 
+\noindent{}and $\varepsilon$ is in units of J/\$.
+This definition 
+of energy intensity (Equation~\ref{eq:epsilon_output_def_g_and_s}) 
+includes the embodied energy of products in the $\dot{T}_{j}$ term. 
+A narrower definition would be 
+$\varepsilon \equiv \frac{\dot{Q}_{j0}}{\dot{X}_{j}}$,
+which would include only direct energy consumed by the sector
+and would exclude the energy demanded upstream by the 
+resource flows ($\dot{R}$) that comprise the product of the sector ($\dot{P}$).
+We choose the broader definition shown in
+Equation~\ref{eq:epsilon_output_def_g_and_s},
+because it accounts for upstream energy consumption.
 For inter-sector flows, we have
 
 \begin{equation} \label{eq:epsilon_transfers_1}
 	\varepsilon_{jk} = \frac{\dot{T}_{jk}}{\dot{X}_{jk}}.
 \end{equation}
 
-Furthermore, we note that 
+\noindent{}Furthermore, we note that 
 
 \begin{equation} \label{eq:epsilon_equiv_1}
 	\varepsilon_{j} = \varepsilon_{jk}
@@ -65,7 +76,7 @@ Furthermore, we note that
 
 \noindent{}for all $k$, because the energy intensity 
 of sector $j$'s output is independent of its destination ($k$). 
-I.e., we assume that all goods produced by a sector 
+All goods produced by a sector 
 are produced at the average energy intensity 
 of that sector.\footnote{If this approach is unsatisfactory, 
 the sector may be divided into sub-sectors 
@@ -153,12 +164,26 @@ for the production sector's self-use of output ($a_{22}$) is
 	\dot{T}_{22} = \varepsilon_{2}a_{22}\dot{X}_{2}.
 \end{equation}
 
-Realizing that 
+We can rewrite the total energy accounting equation 
+for the two-sector economy
+
+\begin{equation}
+	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
+	= \dot{T}_{02} 
+	+ \dot{T}_{12}
+	+ \dot{T}_{22} 
+	- \dot{T}_{2} 
+	- \dot{T}_{20} \tag{\ref{eq:CV_T_2}}
+\end{equation}
+
+\noindent{}using energy intensity by realizing that 
 (a) $\frac{\mathrm{d}T_2}{\mathrm{d}t} = \frac{\mathrm{d}B_2}{\mathrm{d}t}$ 
 due to $\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$, because direct energy
-does not accumulate within economic sectors and
-(b) $\dot{T}_{02} = \dot{E}_{02}$ due to $\dot{B}_{02} = 0$, 
-because embodied energy appears only in the \emph{output} of a sector, and
+does not accumulate within economic sectors,
+(b) $\dot{T}_{02} = \dot{E}_{02}$ due to $\dot{B}_{02} = 0$,
+because embodied energy appears only in the \emph{output} of a sector, 
+(c) $\dot{T}_{20} = \dot{B}_{02} = \gamma_{2}B_{2}$, 
+because direct energy is not wasted to the biosphere at any significant rate, and
 substituting Equations~\ref{eq:T_dot_1_single_sector} 
 and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2} gives
 
@@ -223,9 +248,9 @@ of the three-sector economy:
 
 \noindent{}Similar to Example~B, we realize that 
 (a) $\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$ 
-due to $\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$, because direct energy
+because $\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$, because direct energy
 does not accumulate within economic sectors and
-(b) $\dot{T}_{0j} = \dot{E}_{0j}$ due to $\dot{B}_{0j}~=~0$, 
+(b) $\dot{T}_{0j} = \dot{E}_{0j}$ because $\dot{B}_{0j}~=~0$, 
 because embodied energy appears only in the \emph{output} of a sector, and
 we substitute $\dot{T}_{j} = \varepsilon_{j} \dot{X}_{j}$ 
 and $\dot{T}_{jk} = \varepsilon_{j} \dot{X}_{jk}$ 
@@ -518,7 +543,8 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 		\right].
 \end{equation}
 
-\noindent{}We apply the matrix identity~\cite[Formula 6.2, p. 308]{Beyer:1991vd}
+\noindent{}We apply the matrix identity 
+from Beyer~\cite[Formula 6.2, p. 308]{Beyer:1991vd}
 
 \begin{equation} \label{eq:matrix_identity_Beyer}
 	{\left(\vec{A}\vec{B}\vec{C}\right)}^{-1} 
@@ -538,8 +564,18 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 		\right].
 \end{equation}
 
-\noindent{}Changing signs on the right side 
-of Equation~\ref{eq:epsilon_derivation_2} gives
+\noindent{}Finally, we can multiply both parenthetical terms\footnote{The parenthetical
+terms on the right side of Equation~\ref{eq:epsilon_derivation_3} 
+are $(\vec{A}^{\mathrm{T}} - \vec{I})$ and
+$
+\left[
+	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}
+	+ \hat{\bm{\gamma}} \vec{B}
+	- \vec{E}_{0}
+	- \vec{T}_{1} 
+\right]
+$.} 
+on the right side of Equation~\ref{eq:epsilon_derivation_3} by $-1$ to obtain
 
 \begin{equation} \label{eq:epsilon_leontief_with_A}
 	\bm{\varepsilon} 
@@ -551,8 +587,14 @@ of Equation~\ref{eq:epsilon_derivation_2} gives
 		\right].
 \end{equation}
 
+Equation~\ref{eq:epsilon_leontief_with_A} provides a means 
+to estimate energy intensity ($\bm{\varepsilon}$). 
+But, the effect of physical depreciation ($\hat{\bm{\gamma}}\vec{B}$) 
+can be clarified.
+We do so in the following section.
+
 %%%%%%%%%% Example C %%%%%%%%%%
-\section{The effect of capital depreciation}
+\section{The effect of physical depreciation}
 %%%%%%%%%%
 
 There has been some attempt in the literature to 
@@ -563,7 +605,9 @@ Casler~\cite{Casler:1983uy} attempted to correct the BEA's
 input-output tables,
 but the present analysis provides an opportunity
 to develop a mathematically-rigorous approach to the 
-effects of depreciation based on fundamentals.
+effects of physical depreciation based on 
+the model of material, energy, and value flows presented 
+in Chapters~\ref{chap:materials}--\ref{chap:value}.
 
 Physical depreciation\index{depreciation!physical} ($\hat{\bm{\gamma}}\vec{B}$)
 occurs due to wear and tear, obsolescence, and end-of-life
