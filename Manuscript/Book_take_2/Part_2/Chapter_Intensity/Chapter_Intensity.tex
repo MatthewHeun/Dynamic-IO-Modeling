@@ -51,12 +51,12 @@ such that for the $j^{\mathrm{th}}$ goods and services sector,
 \end{equation} 
 
 \noindent{}and $\varepsilon$ is in units of J/\$.
-This definition 
-of energy intensity (Equation~\ref{eq:epsilon_output_def_g_and_s}) 
-includes the embodied energy of products in the $\dot{T}_{j}$ term. 
-A narrower definition would be 
+Equation~\ref{eq:epsilon_output_def_g_and_s}
+includes the embodied energy of products in the numerator ($\dot{T}_{j}$) term. 
+A narrower definition ef energy intensity would be 
 $\varepsilon \equiv \frac{\dot{Q}_{j0}}{\dot{X}_{j}}$,
 which would include only direct energy consumed by the sector
+in the numerator
 and would exclude the energy demanded upstream by the 
 resource flows ($\dot{R}$) that comprise the product of the sector ($\dot{P}$).
 We choose the broader definition shown in
@@ -175,10 +175,12 @@ for the two-sector economy
 \end{equation}
 
 \noindent{}using energy intensity by realizing that 
-(a) $\frac{\mathrm{d}T_2}{\mathrm{d}t} = \frac{\mathrm{d}B_2}{\mathrm{d}t}$ 
-due to $\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$, because direct energy
+(a) $\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$
+and
+$\frac{\mathrm{d}T_2}{\mathrm{d}t} = \frac{\mathrm{d}B_2}{\mathrm{d}t}$, 
+because direct energy
 does not accumulate within economic sectors,
-(b) $\dot{T}_{02} = \dot{E}_{02}$ due to $\dot{B}_{02} = 0$,
+(b) $\dot{B}_{02} = 0$ and $\dot{T}_{02} = \dot{E}_{02}$,
 because embodied energy appears only in the \emph{output} of a sector, 
 (c) $\dot{T}_{20} = \dot{B}_{02} = \gamma_{2}B_{2}$, 
 because direct energy is not wasted to the biosphere at any significant rate, and
@@ -245,12 +247,14 @@ of the three-sector economy:
 \end{equation}
 
 \noindent{}Similar to Example~B, we realize that 
-(a) $\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$ 
-because $\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$, because direct energy
+(a) $\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$
+and
+$\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$, 
+because direct energy
 does not accumulate within economic sectors and
-(b) $\dot{T}_{0j} = \dot{E}_{0j}$ because $\dot{B}_{0j}~=~0$, 
-because embodied energy appears only in the \emph{output} of a sector, and
-we substitute $\dot{T}_{j} = \varepsilon_{j} \dot{X}_{j}$ 
+(b) $\dot{B}_{0j}~=~0$ and $\dot{T}_{0j} = \dot{E}_{0j}$,
+because embodied energy appears only in the \emph{output} of a sector.
+We substitute $\dot{T}_{j} = \varepsilon_{j} \dot{X}_{j}$ 
 and $\dot{T}_{jk} = \varepsilon_{j} \dot{X}_{jk}$ 
 into Equations~\ref{eq:C-Total_Energy_Sec_2-a}
 and~\ref{eq:C-Total_Energy_Sec_3-a} to obtain
@@ -542,7 +546,7 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 \end{equation}
 
 \noindent{}We apply the matrix identity 
-from Beyer~\cite[Formula 6.2, p. 308]{Beyer:1991vd}
+from Formula 6.2, p. 308 in Beyer~\cite{Beyer:1991vd}
 
 \begin{equation} \label{eq:matrix_identity_Beyer}
 	{\left(\vec{A}\vec{B}\vec{C}\right)}^{-1} 
@@ -630,7 +634,7 @@ $\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$.
 We can split the embodied energy accumulation rate 
 $\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$
 into a portion due to depreciation and a portion due to 
-all other factors (exclusive of physical depreciation) as follows:
+factors such as growth that are exclusive of physical depreciation as follows:
 
 \begin{equation} \label{eq:dB_dt_split}
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
@@ -681,6 +685,12 @@ though in practice,
 knowledge of input-output matrix ($\vec{A}$) 
 would be derived from the transaction matrix ($\vec{X}_{t}$),
 as shown in Appendix~\ref{chap:Estimating_A}.
+
+The following section examines energy intensity 
+in the context of our running example, the auto industry.
+Then, in Chapter~\ref{chap:implications}, we will compare
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+with similar equations in found in the literature.
 
 
 %%%%%%%%%% Intensity: Auto industry example %%%%%%%%%%
