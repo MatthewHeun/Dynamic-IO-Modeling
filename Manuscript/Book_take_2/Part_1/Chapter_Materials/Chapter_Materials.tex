@@ -524,7 +524,7 @@ from the economy, e.g.\ worn-out machines in the scrap yard, we may say that:
 We may also say that accumulation of capital in society\footnote{There is an open
 question as to what sort of \emph{stuff} should be included as the capital
 that accumulates within society. Should the material constituting literal
-\emph{human capital}, i.e. human bodies, be included. If humans are to be
+\emph{human capital}, i.e.~human bodies, be included. If humans are to be
 included within $K_{1}$, the resource needed to produce the necessary capital
 flow ($\dot{K}_{11}$) is food. Food itself represents a large `resource'
 flow and has a large associated energy content. Additionally, within industrial
@@ -555,8 +555,8 @@ and depreciation of capital to the biosphere ($\dot{K}_{10}$) such that:
 	- \dot{K}_{10}
 \end{equation}
 
-Plugging equations~\ref{eq:A_K0_balance} and ~\ref{eq:A_K1_balance} 
-into equations~\ref{eq:A_CV_0b} and ~\ref{eq:A_CV_1b}, respectively, we obtain:
+Plugging equations~\ref{eq:A_K0_balance}~and~\ref{eq:A_K1_balance}
+into equations~\ref{eq:A_CV_0b}~and~\ref{eq:A_CV_1b}, respectively, we obtain:
 
 \begin{align}\label{eq:A_CV_0c}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
@@ -587,7 +587,7 @@ occurring accumulations that are far from equilibrium with their surroundings,
 e.g.{}fossil fuel reservoirs or seams of high ore grade. As these high quality
 material reserves are depleted and society must turn to lower grade reserves, 
 more energy and other economic factors (labor, capital, money) \emph{must} be 
-expended  in material extraction \cite{Mudd2010}. It is likely that the quality
+expended  in material extraction~\cite{Mudd2010}. It is likely that the quality
 of flow $R_{01}$ is higher than flow $R_{10}$. If this were not the case,
 it could be substituted into the production process (i.e.{}recycled) thus
 offsetting the need for primary resource extraction. This relationship between 
@@ -596,7 +596,7 @@ quality waste is a general truth for any thermodynamic process but is especially
 true for open systems operating far from thermodynamic equilibrium (of which every
 living systems is an example). Such systems maintain their internal structure by
 importing high quality energy and materials (negentropy) and exporting low quality
-energy and materials (entropy) \cite{Schroedinger1944}. 
+energy and materials (entropy)~\cite{Schroedinger1944}. 
 
 ************ these paragraphs may be better in the introduction **************
 
@@ -670,12 +670,12 @@ The short-lived goods flow ($\dot{S}_{12}$) from society to the production secto
 specifically, the material flow associated with labor which is `consumed' within the production
 sector.\footnote{We assume that this flow is the adenosine triphosphate (ATP), used as an energy
 carrier within the cells of organisms.} Flow $\dot{S}_{12}$ could also represent the flow of 
-\emph{financial capital}, i.e. savings, ****** Becky, is this right? ****** from consumption to 
+\emph{financial capital}, i.e.~savings, ****** Is this right? ****** from consumption to 
 production.\footnote{In this case, the material flow would depend upon how this information was 
 encoded---a paper check, photons on a screen, etc.}
 
-Again, setting control volumes around the biosphere\index{biosphere} 
-and our two economic sectors, material accounting equations become:
+As in Example~A, we set control volumes around the biosphere\index{biosphere} 
+and our two economic sectors, such that the material accounting equations become:
 
 \begin{align} \label{eq:B_CV_0_to_2}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
@@ -724,17 +724,17 @@ and would be represented within flow $\dot{K}_{21}$, whereas other short-lived g
 flow $\dot{S}_{21}$.
 
 Resource flow $\dot{R}_{21}$ into society represents the material flow that will be embodied
-within the `product' of society---the human population---i.e.\ food produced by the agriculture
-industry. [WE NEED TO DISCUSS IF WE WANT TO ACCOUNT IT IN THIS WAY]
+within the `product' of society---human labor---i.e.~food produced by the agriculture
+industry. %[WE NEED TO DISCUSS IF WE WANT TO ACCOUNT IT IN THIS WAY]
 Since no resources flow directly into society from the biosphere\index{biosphere}, we may say:
 
 \begin{equation}
 	\dot{R}_{0} = \dot{R}_{02}.
 \end{equation}
 
-In contrast, short-lived materials may flow directly into society from the biosphere\index{biosphere}; 
-e.g.\ the flow of photons in sunlight or oxygen into car engines and lungs; 
-we can redefine flows $\dot{S}_{0}$ and $\dot{S}_{1}$:
+In contrast, short-lived materials may flow directly into society from the biosphere\index{biosphere}, 
+e.g.\ the flow of photons in sunlight or oxygen into car engines and lungs. 
+We can redefine flows $\dot{S}_{0}$ and $\dot{S}_{1}$:
 
 \begin{align}\label{eq:B_S_def}
 	\dot{S}_{0} = 
@@ -743,24 +743,32 @@ we can redefine flows $\dot{S}_{0}$ and $\dot{S}_{1}$:
 	\dot{S}_{11} + \dot{S}_{12}
 \end{align}
 
-Since only capital flows ($\dot{K}$) may be accumulated and are dependent only on flows of capital in and depreciation of capital, we may define capital balance equations:
+Since only capital flows ($\dot{K}$) may be accumulated and are dependent only on flows of 
+capital in and depreciation of capital, we may define capital balance equations:
 
-\begin{equation} \label{eq:B_K1_balance}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
-	=  \dot{K}_{12} - \dot{K}_{20},
-\end{equation}
+\begin{align}\label{eq:B_K_def}
+	& \frac{\mathrm{d}K_{0}}{\mathrm{d}t}
+	= \dot{K}_{10}
+	+ \dot{K}_{20};
+	& \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+ 	= \dot{K}_{11}
+	+ \dot{K}_{12}
+	- \dot{K}_{10};							&
+	& \frac{\mathrm{d}K_{2}}{\mathrm{d}t} =
+	\dot{K}_{22} 
+	- \dot{K}_{20},
+\end{align}
 
-[NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{12}$ AS FOOD AND $K_{1}$ 
-AS INCLUDING HUMANS\ldots 
-YES, I THINK $\dot{R}_{12}$ CAN BE TURNED INTO  $\dot{K}_{1}$ INTERNALLY, 
-AS THE ACCUMULATION OF (LITERAL) HUMAN CAPITAL, I.E. POPULATION]
+************ Are flows $\dot{R}_{11} = \dot{K}_{11} = 0$ ***************
 
-\begin{equation} \label{eq:B_K2_balance}
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	=  \dot{K}_{22} - \dot{K}_{20},
-\end{equation}
+% [NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{12}$ AS FOOD AND $K_{1}$ 
+% AS INCLUDING HUMANS\ldots 
+% YES, I THINK $\dot{R}_{12}$ CAN BE TURNED INTO  $\dot{K}_{1}$ INTERNALLY, 
+% AS THE ACCUMULATION OF (LITERAL) HUMAN CAPITAL, I.E. POPULATION]
 
-We can also redefine product flow $\dot{P}_{2}$:
+
+
+We can also redefine product flow $\dot{P}_{2}$ as:
 
 \begin{equation} \label{eq:B_P_def}
 	\dot{P}_{2}
@@ -785,7 +793,7 @@ goods do not accumulate within sectors of the economy:
 \end{equation}
 
 \noindent{}and substituting
-Equations~\ref{eq:B_S_def},~\ref{eq:B_K2_balance}~and~\ref{eq:B_P_def}, 
+Equations~\ref{eq:B_S_def},~\ref{eq:B_K_def}~and~\ref{eq:B_P_def}, 
 our balance equations may now be written:
 
 \begin{align} \label{eq:B_CV_0_to_2_b}
@@ -795,17 +803,16 @@ our balance equations may now be written:
 	& = \dot{R}_{10} + \dot{R}_{20} 
 	+ \dot{S}_{10} + \dot{S}_{20} 
 	+ \dot{K}_{10} + \dot{K}_{20} 
-	- \dot{R}_{0} 
-	- \dot{S}_{0} 							\\
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}	
+	- \dot{R}_{02} 
+	- \dot{S}_{01}
+	- \dot{S}_{02}, 							\\
+	\dot{K}_{11}
 	& = \dot{R}_{21} 
 	+ \dot{S}_{01} 
 	+ \dot{S}_{21}
-	+ \dot{K}_{21}
-	- \dot{S}_{12} 
 	- \dot{R}_{10} 
-	- \dot{S}_{10} 
-	- \dot{K}_{10},							\\
+	- \dot{S}_{10}
+	- \dot{S}_{12},							\\
 	\dot{K}_{22}
 	& = \dot{R}_{02} 
 	+ \dot{S}_{02} 
@@ -817,8 +824,17 @@ our balance equations may now be written:
 	- \dot{S}_{20} 
 \end{align}
 
+Combining and simplifying these three equations we arrive at the equation:
 
-[NOT SURE IF THIS IS THE BEST WAY TO WRITE THESE]
+\begin{equation}\label{eq:B_CV_all}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	= - \left(\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}\right)
+\end{equation}
+
+[NEED TO DOUBLE-CHECK THIS RESULT AS IT IS DIFFERENT TO EQUATION~\ref{eq:A_dK_1/dt}]
 
 
 %%%%%%%%%% Materials: Example C %%%%%%%%%%
