@@ -452,20 +452,27 @@ our material accounting equations, such that:
 \noindent{}Remembering that neither resources ($R$) 
 nor short-lived goods ($S$) accumulate within economic sectors, we may state:
 
-\begin{equation}\label{eq:A-dS_1/dt_zero}
-	\frac{\mathrm{d}S_1}{\mathrm{d}t}
+\begin{align}\label{eq:A-dS_1/dt_zero}
+	\frac{\mathrm{d}S_1}{\mathrm{d}t}		&
 	= \frac{\mathrm{d}R_1}{\mathrm{d}t}
 	= 0.
-\end{equation}
+\end{align}
 
 \noindent{}Additionally, since mass is conserved, we may also say that:
 
-\begin{equation}\label{eq:A_S11}
-	\dot{P}_{1} 
+\begin{align}
+	\label{eq:A_P1}
+	\dot{P}_{1} 			&
 	= \dot{R}_{11} 
 	+ \dot{S}_{11}
-	+ \dot{K}_{11},
-\end{equation}
+	+ \dot{K}_{11},			\\
+	\label{eq:A_R0}
+	\dot{R}_{0}				&
+	= \dot{R}_{01},			\\
+	\label{eq:A_S0}
+	\dot{S}_{0}				&
+	= \dot{S}_{01}
+\end{align}
 
 \noindent{}such that Equations~\ref{eq:A_CV_0}~and~\ref{eq:A_CV_1} 
 become:
@@ -483,8 +490,8 @@ become:
 	=	\dot{R}_{10}		
 	+	\dot{S}_{10}	
 	+	\dot{K}_{10}											
-	-	\dot{R}_{0}											
-	-	\dot{S}_{0}								\\
+	-	\dot{R}_{01}											
+	-	\dot{S}_{01}								\\
 	\label{eq:A_CV_1b}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
@@ -510,8 +517,8 @@ from the economy, e.g.\ worn-out machines in the scrap yard, we may say that:
 	= \dot{K}_{10}
 \end{equation}
 
-We may also say that accumulation of capital in society ($\dot{K}_{1}$)
-is dependent only on inflows of capital ($\dot{K}_{11}$) and depreciation
+We may also say that accumulation of capital in society ($K_{1}$)
+is dependent only on inflows of capital into society ($\dot{K}_{11}$) and depreciation
 of capital to the biosphere ($\dot{K}_{10}$) such that:
 
 \begin{equation}\label{eq:A_K1_balance}
@@ -520,7 +527,71 @@ of capital to the biosphere ($\dot{K}_{10}$) such that:
 	- \dot{K}_{10}
 \end{equation}
 
-****** mik ended here 12/6/2013 ******
+Plugging equations~\ref{eq:A_K0_balance} and ~\ref{eq:A_K1_balance} 
+into equations~\ref{eq:A_CV_0b} and ~\ref{eq:A_CV_1b}, respectively, we obtain:
+
+\begin{align}\label{eq:A_CV_0c}
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}		&	
+	=	\dot{R}_{10}		
+	+	\dot{S}_{10}	
+	-	\dot{R}_{01}											
+	-	\dot{S}_{01},							\\
+	\label{eq:A_CV_1c}
+	\dot{K}_{11}								&
+	= \dot{R}_{01} 
+	+ \dot{S}_{01} 
+	- \dot{R}_{10}				
+	- \dot{S}_{10}.
+\end{align}
+
+Equation~\ref{eq:A_CV_0c} states that the rate of ``accumulation'' 
+(or more accurately depletion) of natural capital ($R_{0}$ and $S_{0}$) 
+is dependent on the rates at which society extracts these materials
+from the biosphere ($\dot{R}_{01}$ and $\dot{S}_{01}$) and the rates
+of disposal of waste materials back to the biosphere ($\dot{R}_{10}$ 
+and $\dot{S}_{10}$). 
+
+Notice however, that although this is true for total mass of materials,
+this equation makes no comparison of the \emph{quality} of these materials.
+Society relies heavily on extraction of resources from naturally
+occurring accumulations that are far from equilibrium with their surroundings,
+e.g.{}fossil fuel reservoirs or seams of high ore grade. As these high quality
+material reserves are depleted and society must turn to lower grade reserves, 
+more energy and other economic factors (labor, capital, money) \emph{must} be 
+expended  in material extraction \cite{Mudd2010}. It is likely that the quality
+of flow $R_{01}$ is higher than flow $R_{10}$. If this were not the case,
+it could be substituted into the production process (i.e.{}recycled) thus
+offsetting the need for primary resource extraction. This relationship between 
+incoming high quality resources and emission of low
+quality waste is a general truth for any thermodynamic process but is especially
+true for open systems operating far from thermodynamic equilibrium (of which every
+living systems is an example). Such systems maintain their internal structure by
+importing high quality energy and materials (negentropy) and exporting low quality
+energy and materials (entropy) \cite{Schroedinger1944}. 
+
+************ these paragraphs may be better in the introduction **************
+
+We may also derive two equations defining the rates of creation and accumulation
+of man-made capital ($\dot{K}_{11}$ and $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$) within
+society:
+
+\begin{align}
+	\label{eq:A_K_11}
+	\dot{K}_{11}									&
+	= - \left(\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}\right),	\\
+	\label{eq:A_dK_1/dt}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}				&
+	= - \left(\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}\right)
+	- \dot{K}_{10}.
+\end{align}
+
+Equation~\ref{eq:A_K_11} states that the rate of production of man-made capital
+($\dot{K}_{11}$) is proportional to the rate of depletion of natural capital. 
+
+
 
 %%%%%%%%%% Materials: Example B %%%%%%%%%%
 \section{Example B: two-sector economy} % chktex 13
