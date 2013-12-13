@@ -1,5 +1,5 @@
 REM This bash script cleans all the auxiliary files created by LaTex,
-REM thereby ensureing a fresh build of the book.
+REM thereby ensuring a fresh build of the book.
 
 REM Invoke the script by cd'ing into the directory that contains this file.
 REM Then, type "./clean.bash"
@@ -73,4 +73,4 @@ erase *.aux
 erase *.bbl
 erase *.blg    
 
-cd..
+cd ..
