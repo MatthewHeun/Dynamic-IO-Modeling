@@ -22,10 +22,18 @@
 
 %Use the template \emph{appendix.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style appendix of your book in the Springer layout.
 
-Using Equation~\ref{eq:Xdifference1} (which is proved in Appendix~\ref{app:Proof}), 
-we can derive an expression for estimating the input-output matrix ($\vec{A}$)
+Using Equation~\ref{eq:Xdifference1}, which is proved in Appendix~\ref{app:Proof}
+
+\begin{equation}
+	\vec{X}_{t}^\mathrm{T} 
+	- \hat{\vec{X}} 
+	= \hat{\vec{X}}(\vec{A}^\mathrm{T} - \vec{I});
+	\tag{\ref{eq:Xdifference1}}
+\end{equation}
+
+\noindent{}we can derive an expression for estimating the input-output matrix ($\vec{A}$)
 given sector outputs ($\hat{\vec{X}}$) and the transaction matrix ($\vec{X}_{t}$).
-Premultiplying Equation~\ref{eq:Xdifference1} by $\hat{\vec{X}}^{-1}$ gives
+Premultiplying both sides of Equation~\ref{eq:Xdifference1} by $\hat{\vec{X}}^{-1}$ gives
 
 \begin{equation} \label{eq:Xdifference1Proof-5}
 	\hat{\vec{X}}^{-1}
@@ -76,8 +84,10 @@ Premultiplying Equation~\ref{eq:Xdifference1} by $\hat{\vec{X}}^{-1}$ gives
 	{\left( {\hat{\vec{X}}^{-1}} \right)}^\mathrm{T}.
 \end{equation}
 
-\noindent{}Realizing that $\hat{\vec{X}}$ and $\hat{\vec{X}}^{-1}$
-are diagonal matrices gives
+\noindent{}Both $\hat{\vec{X}}$ and $\hat{\vec{X}}^{-1}$
+are diagonal matrices. Therefore, 
+$\left( \hat{\vec{X}}^{-1} \right)^{\mathrm{T}} = \hat{\vec{X}}^{-1}$, 
+and Equation~\ref{eq:Xdifference1Proof-10} becomes
 
 \begin{equation}\label{eq:Estimating_A_matrix} 
 	\vec{A} 
@@ -99,18 +109,6 @@ are diagonal matrices gives
 		1/\dot{X}_{1} & 0             & \cdots \\
 		0             & 1/\dot{X}_{2} & \cdots \\
 		\vdots        & \vdots        & \ddots
-	\end{bmatrix}
-\end{equation}
-
-\noindent{}and
-
-\begin{equation}
-	\vec{A}
-	\equiv
-	\begin{bmatrix}
-		a_{11} & a_{12} & \cdots \\
-		a_{21} & a_{22} & \cdots \\
-		\vdots & \vdots & \ddots
 	\end{bmatrix}
 	=
 	\begin{bmatrix}
