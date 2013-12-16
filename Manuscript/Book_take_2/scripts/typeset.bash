@@ -11,7 +11,10 @@
 # --Matthew Kuperus Heun, November 2013.
 
 # Ensure a fresh build by deleting all auxiliary files created by LaTeX.
-cd ..; ./clean.bash
+./clean.bash
+
+# Move up one level and get started.
+cd ..
 
 # Use the pdflatex engine.
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
