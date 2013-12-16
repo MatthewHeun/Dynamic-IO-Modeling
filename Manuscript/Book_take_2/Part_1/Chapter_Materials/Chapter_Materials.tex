@@ -112,46 +112,50 @@ Everyone counts material (and even non-material) things.
 Rigorous counting requires precise definition of both 
 what we will be counting
 and the place (defined in both time and space) in which we will be counting. 
-Engineers often call the definition of space a ``control volume.'' 
+Engineers often call the spatial definition a ``control volume.'' 
 Another way to think of creating a
-control volume is drawing a boundary. What gets counted is 
-what passes through the boundary.
-For example, I may wish to count (or ``make an accounting of'') 
-what happens to the stock of apples in my home over a week-long period. 
-I've drawn a boundary around my home and around a week-long time period.
+control volume is drawing a boundary. 
+What gets counted is what passes through the boundary.
+For example, I 
+
+**** Do we want to write in the first person? ****
+
+may wish to count (or ``make an accounting of'') 
+the stock of apples in my home over the course of a week. 
+I've drawn a spatial boundary (control volume) around my home 
+and a temporal boundary ``around'' the week.
 I  count the apples that enter and leave my home, 
 apples that are eaten (consumed),
 and, if I own an apple tree, apples that I grow (produce) during a week. 
-A rigorous apple accounting equation, in units of [apples], is:
-
+A rigorous apple accounting equation, in units of apples, is:
 \begin{equation}
-	\Delta\textrm{apples} 
-	= \textrm{apples in} 
-	- \textrm{apples out} 
-	+ \textrm{apples grown} 
-	- \textrm{apples eaten}.
+	\mathrm{\Delta}\mathrm{apples} 
+	= \mathrm{apples~in} 
+	- \mathrm{apples~out} 
+	+ \mathrm{apples~grown} 
+	- \mathrm{apples~eaten}.
 \end{equation}
 
 \noindent{}More generally, we may say:
 \begin{equation}
-	\textrm{Accumulation}
-	= \textrm{Transfers in} 
-	- \textrm{Transfers out}
-	+ \textrm{Production}
-	- \textrm{Consumption}.
+	\mathrm{Accumulation}
+	= \mathrm{Transfers~in} 
+	- \mathrm{Transfers~out}
+	+ \mathrm{Production}
+	- \mathrm{Consumption}.
 \end{equation}
 
-Notice that, when discussing apples we use the specific terms, ``grown'' and
+Notice that, when discussing apples we use the specific terms ``grown'' and
 ``eaten'' instead of the more general terms, ``produced'' and ``consumed.''
 Later, in Chapter~\ref{chap:value}, when discussing value, we will use the terms
 ``generated'' and ``destroyed.'' For our purposes, these terms all have the equivalent
-sets of meaning and we use them inter-changeably.
+meanings and we use them interchangeably.
 
-Once I account for how much the stock of apples changes in a weekly period,
-I can reframe my question to ask, ``how fast does the stock of
-apples change.'' That is, I can examine the rate of
-change of the apple stock per time unit in relation to the flow of apples 
-per time unit ($\dot{a}$)\nomenclature[ab]{$\dot{a}$}{flow rate of apples [apples/time]}, 
+After accounting for the stock of apples in a week,
+I can reframe the questionL ``at what rate does the stock of
+apples change?'' That is, I can examine the rate of
+change of the apple stock per unit of time relative to the flow of apples 
+($\dot{a}$)\nomenclature[ab]{$\dot{a}$}{flow rate of apples [apples/time]}, 
 e.g.\ in units of apples per day, 
 in which case our accounting equation would become:
 
@@ -166,10 +170,10 @@ in which case our accounting equation would become:
 \nomenclature[t]{$t$}{time [s]}
 
 \noindent{}where the dot above the variable ($\dot{a}$) indicates 
-the flow rate per unit time [apples/time] and
+a flow rate per unit time [apples/time] and
 the time derivative $\left( \frac{\mathrm{d}a}{\mathrm{d}t} \right)$ 
 is the rate of change of the stock of apples per time unit, or more simply,
- the accumulation\index{accumulation} rate.
+the accumulation\index{accumulation} rate.
  
 % ***** Take a moment to tie apples to mass or material. 
 % Clearly note that material is measured kg rather than dollars.
@@ -178,40 +182,47 @@ is the rate of change of the stock of apples per time unit, or more simply,
 % We will later do material accounting in units of energy.
 % Even later, we will do material accouting in units of dollars. ****
 
-Notice, that instead of focusing on apples as our unit of accounting, we
-could track the mass flow, measured in kg, of the main chemical elements
-within the apples. From this perspective, although an apple may be consumed,
+Notice, that instead of focusing on apples as our unit of accounting, 
+we could track the mass flow, e.g.\ measured in kg/sec, 
+of the main chemical elements within the apples. 
+From this perspective, although an apple may be consumed,
 the elements within the apple---hydrogen, oxygen (coupled together as water
-for the overwhelming majority of the mass) and carbon (which, bonded with
-hydrogen as carbohydrates make up most of the remaining mass)---will not be
-consumed. They will instead be subsumed within my body, or leave my house as
-waste\index{waste} or via the air.
+for the overwhelming majority of the mass), 
+and carbon (which, bonded with hydrogen as carbohydrates make up most 
+of the remaining mass)---will not be consumed. 
+The chemical elements will instead be stored within my body, 
+leave the house as waste\index{waste}, 
+or leave the house via the air as exhaled carbon dioxide (CO$_2$).
 
 %**** Auto industry example here? Perhaps steel? ****
 
-Throughout this book, we will illustrate theoretical concepts with
-a running example of the auto industry. We choose the auto industry,
+If, instead of a home, we drew a spatial control volume 
+around a sector of an economy, 
+similar accounting methods can be applied. 
+In fact, throughout this book, we will illustrate theoretical concepts with
+a running example of the auto industry. 
+We choose the auto industry,
 because it remains a large portion of most industrialized economies, 
 because is very resource intensive,
-because it has been used in the literature (Reference Bullard and Herendeen here)
+because it has been used in the literature~\cite{Bullard:1978vd}
 to illustrate input-output accounting methods, 
 because its links with energy are obvious,
 because its health is sensitive to disruptions in energy supplies, and
 because it shows evidence of post-industrial decline (shrinking profit margins, etc.).
 
-If we want to account for steel [kg] in the auto industry, 
+If we account for steel (in units of kg) in the auto industry, 
 we might write an equation like this:
 
 \begin{equation}
-	\Delta\textrm{steel} 
-	= \textrm{steel in} 
-	- \textrm{steel out} 
+	\mathrm{\Delta}\mathrm{steel} 
+	= \mathrm{steel~in} 
+	- \mathrm{steel~out} 
 \end{equation}
 
 Note that the production and consumption terms are zero
 since steel is not created or destroyed within the automobile
 sector. Tracking the rate flows of steel, 
-$\dot{s}$ [kg/s]\nomenclature[sd]{$\dot{s}$}{steel mass flow rate [kg/s]},
+$\dot{s}$ (in kg/s)\nomenclature[sd]{$\dot{s}$}{steel mass flow rate [kg/s]},
 we would write the following equation:
 
 \begin{equation}
@@ -221,22 +232,27 @@ we would write the following equation:
 \end{equation}
 \nomenclature[sc]{$s$}{stock of steel [kg]}
 
-Again, the last two terms are zero. This is in direct contrast with the apple 
-accounting equation outlined in Equation~\ref{eq:apple_rate_accounting}. Despite 
-the fact that steel is not produced or consumed within the automobile sector, 
-there are sectors of the economy that \emph{do} produce steel. They do this by mixing molten
-iron with varying amounts of carbon. This illustrates that while certain material
-products, e.g.\ steel, may be produced or, in some circumstances destroyed, the
-\emph{mass} of iron, and other chemical elements, cannot be created or distroyed,
-though it may change form through the process.\footnote{For the sake of
+Again, the last two terms are zero. 
+This is in direct contrast with the apple 
+accounting equation outlined in Equation~\ref{eq:apple_rate_accounting}. 
+**** Do the previous two sentences make sense? The equation has only 2 terms. ****
+Despite the fact that steel is neither produced nor consumed within the automobile sector, 
+there are sectors of the economy that \emph{do} produce steel
+by mixing molten
+iron with varying amounts of carbon. 
+The flow of steel through an economy illustrates that although certain economic
+products, e.g.\ steel, may be produced or, in some circumstances, destroyed, the
+\emph{mass} of iron, and other chemical elements, is constant,
+even as the mass changes form (e.g.\ from iron to steel) 
+through many economic processes.\footnote{For the sake of
 absolute rigor, we must point out that, in actuality, iron \emph{is} created within
 the core of silicon-burning stars. Mass and energy may also be converted in such processes, 
 such that only mass-energy is conserved. However, for the purposes of terrestrial
-processes, the amount of iron is constant. There are, additionally, some economic
+processes, the total mass (in kg) of iron is constant. There are, additionally, some economic
 processes, within nuclear reactors, that change the atomic structure of elements
-and thus violate the accounting law presented here. Since the mass flows involved
+and thus violate the accounting law presented here. Because the mass flows involved
 with these nuclear plants is negligible compared with total materials flows, we
-shall assume that the law holds.} 
+shall assume that the law holds.}
 
 % **** Discuss the steel industry. 
 % Show how steel is actually formed from other materials.
@@ -244,19 +260,25 @@ shall assume that the law holds.}
 % but it may change form. ****
 
 Indeed, within the car industry, inputs of steel, glass, plastic, rubber, etc.\ are used
-to produce cars, such that cars are created within the automobile industry. Were we to
-have an accounting equation tracking cars within the economy, we would have to 
-have terms in the equation for production and destruction of cars. Again, focussing on
-mass flows of the chemical elements avoids this necessity, since mass is \emph{conserved} in
-physical processes. This conservation of mass is a statement of the 
-First Law of Thermodynamics\index{First Law of Thermodynamics}, 
-which says that \emph{mass}, i.e.\ materials, and \emph{energy}
-can neither be created nor destroyed. 
+to produce cars, such that cars are created within the automobile industry. 
+An accounting equation for cars within the economy
+must include terms for production and destruction\footnote{In economic terms,
+destruction of physical goods is often called ``depreciation.'' We shall 
+explore the importance of and distinctions between 
+physical depreciation and economic depreciation 
+in Chapters~\ref{chap:embodied_energy}--\ref{chap:implications}.}
+of cars.
+Again, focussing on mass flows of the chemical elements avoids this necessity, 
+because mass is \emph{conserved} in physical processes. 
+Conservation of mass is expressed in equations such as the ones above
+for apples and steel. 
 
-% **** Tie to the First Law below. ****
-
+Another important conservation principle is the conservation of energy.
+Similar to the principle of the conservation of mass,
+the First Law of Thermodynamics\index{First Law of Thermodynamics},
+says that \emph{energy} can neither be created nor destroyed. 
 In the discussion that follows, we will make great use 
-of this law.
+of the First Law.
 If I eat an apple, it is no longer an apple, 
 but the materials (i.e.\ chemical elements) and energy contained
 within the apple can still be traced via their mass and energy,
@@ -264,36 +286,23 @@ even if they change form (apples into compost or
 chemical potential energy to thermal energy).
 Thus, the apple accounting equation
 (Equation~\ref{eq:apple_rate_accounting}) can include
-terms accounting for the production and consumption of apples, 
-but mass and energy equations applied to 
+terms accounting for the production and consumption of apples. 
+However, mass and energy accounting equations applied to 
 sectors of economies will \emph{not} include terms for the 
-production or destruction of materials and energy. 
-Rather, any addition of material or energy \emph{to} the economy
+production or destruction of mass or energy. 
+Rather, any addition of material or energy added \emph{to} the economy
 or waste\index{waste} of material or energy \emph{from} the economy
 will occur as an interaction between the economy and the biosphere\index{biosphere}.
+Chapters~\ref{chap:materials}--\ref{chap:embodied_energy} cover mass and energy
+accounting for economies.
+Accounting for economic value, in contrast, 
+\emph{will} require terms that both create and destroy economic value,
+as discussed in Chapter~\ref{chap:value}.
 
 
-
-% **** I tried to clear up potential confusion in the paragraph above. 
-% Apples can be eaten and rotted.
-% However, mass and energy cannot. 
-% I'm not entirely convinced that I succeeded. 
-% If Mik wants to take another crack at this, 
-% I'll be pleased. 
-% Also: perhaps we should follow the apple example with 
-% an auto sector example. 
-% Thereafter, discuss generalities.
-% Doing so might bring greater clarity to the consumption/production
-% issues here.
-% --Matt ****
-
-% ***BRH says, This now makes sense to me. It think 
-% the paragraph above is clear. I retract what
-% I said earlier in our meeting...that is, I would not
-% add an equation that illustrates the difference between
-% accounting for apples vs. accounting for 
-% mass and energy. Atter adding in the auto or steel industry
-% examples we can double check, though. ***
+%%%%%%%%%% Materials: Example A %%%%%%%%%%
+\section{Product, resource, short-lived, and capital flows}
+%%%%%%%%%%
 
 When applying accounting equations to economic sectors,
 we distinguish among four types of
@@ -336,7 +345,7 @@ Some fraction of these resources ($\dot{R}$) may not make it into the final prod
 such as trimming scrap from metal parts stamping, 
 and may be either recycled internally, 
 or wasted\index{waste} to the biosphere\index{biosphere}. 
-Resource materials are not accumulated\index{accumulation} within a sector.
+In this model, resource materials are not accumulated\index{accumulation} within a sector.
 
 Short-lived goods ($\dot{S}$)\nomenclature[Sb]{$\dot{S}$}{short-lived goods mass flow rate [kg/s]}  
 include those materials 
@@ -347,39 +356,51 @@ They enter the sector from above and leave the sector from
 below and return to the biosphere. 
 Examples of these short-lived flows include energy resources, such as
 the electricity needed to run automobile factories,
-including any contribution from labor, 
+including any contribution from labor, **** contribution from labor seems out of place here --MKH ****
 and water used by the sector. 
 
-A number of material flows, such as production equipment,
+Many material flows into the sector, such as production equipment,
 are necessary for the continued operation of a sector 
 but are not counted as short-lived goods, 
 because the operation of the sector is dependent 
 upon the accumulation\index{accumulation} of these materials within the sector. 
-Such flows are counted as capital goods\index{capital goods} ($\dot{K}$)
-\nomenclature[Kb]{$\dot{K}$}{capital goods mass flow rate [kg/s]}. 
+Such flows are counted as capital goods\index{capital goods} 
+($\dot{K}$).\nomenclature[Kb]{$\dot{K}$}{capital goods mass flow rate [kg/s]}
 Capital flows also enter from above, 
-but are stored within the sector (represented by storage tanks) 
-and are returned to the biosphere as capital depreciation\index{depreciation} from below.
+but are stored within the sector (represented by a storage tank) 
+and are returned to the biosphere as 
+physical capital depreciation\index{physical depreciation} from below.
 Examples of these capital flows would be the factory and office buildings or
 manufacturing equipment within the automobile industry.
 
 All products ($\dot{P}$) leave the right of the sector. 
-Some of this $\dot{P}$ flow is returned to the sector as self-consumption 
-counted as resources ($\dot{R}$), 
-short-lived ($\dot{S}$), or 
+A fraction of the $\dot{P}$ flow may be returned to the sector as self-consumption 
+counted as resources destined to be embodied in the product ($\dot{R}$), 
+short-lived materials ($\dot{S}$), or 
 capital goods\index{capital goods} ($\dot{K}$); 
 the remainder flows to other sectors within the economy or final demand. 
-Within this view, focussing solely on material flows, energy may be accounted
-as either an $\dot{R}$ flow, when the energy inflow is \emph{literally} embodied
-within the outflowing product $\dot{P}$, such as crude oil converted into
-gasoline within a refinery, or as an $\dot{S}$ flow, when the inflowing energy
-is not literally embodied within the product. Examples include the electricity
-use by an automobile factor, but also the coal or natural gas flowing into a
-power plant, since the incoming chemical elements (carbon and hydrogen) \emph{do
-not} travel through the electricity transmission lines.
+In this model, energy may be accounted
+as either an $\dot{R}$ flow or an $\dot{S}$ flow.
+An example of energy as an $\dot{R}$ flow is crude oil converted into
+gasoline within a refinery: the resource inflow (crude oil) is
+\emph{literally} embodied within the outflowing product (gasoline).
+An example of energy as an $\dot{S}$ flow is electricity
+used by an automobile factory: the resource inflow (electrons)
+is not embodied \emph{literally} in the outflowing product (automobiles).
+Similarly, the coal or natural gas flowing into a
+power plant is accounted as an $\dot{S}$ flow, 
+because the incoming chemical elements (carbon and hydrogen) \emph{do
+not} depart the plant as the product.  
+(The product of a power plant is electrons that travel through
+electricity transmission lines.)
 
-% ****BRH says, we should say something
-% about Energy here.****
+Throughout this book, we illustrate concepts with three example economies, 
+with increasing levels of disaggregation. 
+Example~A includes a single economic sector (1) and the biosphere (0).
+Example~B includes a production sector (2), society (1, which provides final demand),
+and the biosphere (0). 
+Example~C adds an energy sector (3) to Exammple~B.
+We begin with materials accounting for Example~A.
 
 
 %%%%%%%%%% Materials: Example A %%%%%%%%%%
@@ -409,27 +430,27 @@ Resources, or perhaps more accurately raw materials,
 ($\dot{R}_{01}$), such as crude oil or iron ore, 
 and short-lived materials ($\dot{S}_{01}$), 
 such as oxygen or water that flow \emph{through} economic
-processes but are not \emph{embodied} in the product output, 
+processes but are not literally \emph{embodied} within the output, 
 flow into the economy (1) from the biosphere\index{biosphere} (0). 
 These materials are processed within the economy into products ($\dot{P}_{1}$) 
 consisting of resource goods ($\dot{R}_{11}$), 
-short-lived goods ($\dot{S}_{11}$) and also capital 
+short-lived goods ($\dot{S}_{11}$) and capital 
 goods\index{capital goods} ($\dot{K}_{11}$)
 which are able to be accumulated at some rate 
 $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
-Waste resources ($\dot{R}_{10}$) and used short-lived 
+Waste resources ($\dot{R}_{10}$) and used **** consumed? --MKH **** short-lived 
 materials/goods ($\dot{S}_{10}$)
 are returned to the biosphere\index{biosphere} without 
-accumulating. Capital goods ($\dot{K}_{10}$) 
-are returned to the biosphere\index{biosphere} upon depreciation\index{depreciation}.
-
-
+accumulating in society (1). **** Need to sort out whether we'll call (1)
+``society'' or ``the economy'' --MKH ****
+Capital goods ($\dot{K}_{10}$) 
+are returned to the biosphere\index{biosphere} 
+when they are physically depreciated\index{depreciation}.
 
 Drawing control volumes around both the biosphere\index{biosphere} (0) and the economy (1), we can consruct
 our material accounting equations, such that:
 
-\begin{align}
-\label{eq:A_CV_0}
+\begin{align} \label{eq:A_CV_0}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
@@ -450,11 +471,11 @@ our material accounting equations, such that:
 	- \dot{P}_{1}				
 	- \dot{R}_{10}				
 	- \dot{S}_{10}				
-	- \dot{K}_{10}											
+	- \dot{K}_{10}.
 \end{align}
 
-\noindent{}Remembering that neither resources ($R$) 
-nor short-lived goods ($S$) accumulate within economic sectors, we may state:
+\noindent{}In this model, neither resources ($R$) 
+nor short-lived goods ($S$) accumulate within economic sectors, so we may state:
 
 \begin{align}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}		&
@@ -462,10 +483,9 @@ nor short-lived goods ($S$) accumulate within economic sectors, we may state:
 	= 0.
 \end{align}
 
-\noindent{}Additionally, since mass is conserved, we may also say that:
+\noindent{}Additionally, because mass is conserved, we find that:
 
-\begin{align}
-	\label{eq:A_P1}
+\begin{align} \label{eq:A_P1}
 	\dot{P}_{1} 			&
 	= \dot{R}_{11} 
 	+ \dot{S}_{11}
@@ -567,7 +587,7 @@ and depreciation of capital to the biosphere ($\dot{K}_{10}$) such that:
 	- \dot{K}_{10}
 \end{equation}
 
-Plugging equations~\ref{eq:A_K0_balance}~and~\ref{eq:A_K1_balance}
+Substituting equations~\ref{eq:A_K0_balance}~and~\ref{eq:A_K1_balance}
 into equations~\ref{eq:A_CV_0b}~and~\ref{eq:A_CV_1b}, respectively, we obtain:
 
 \begin{align}\label{eq:A_CV_0c}
@@ -585,6 +605,17 @@ into equations~\ref{eq:A_CV_0b}~and~\ref{eq:A_CV_1b}, respectively, we obtain:
 	- \dot{S}_{10}.
 \end{align}
 
+**** Would we not also say that $\dot{S}_{01} = \dot{S}_{10}$? 
+The idea of the short-lived materials is that they are ``flow-through.''
+Think of water as the prototypical $\dot{S}$ flow. 
+The flow rate of water into society is probably very nearly equal
+to the flow rate of water out of society. 
+If this is right, the equations above simplify even further, right? 
+A counterpoint to this approach would be an argument that society
+``makes'' $\dot{S}_{11}$ material for use by society (i.e.\ in the $\dot{P}_{11}$ flow).
+If society makes an $\dot{S}_{11}$, do we have
+$\dot{S}_{01} + \dot{S}_{11} = \dot{S}_{10}$?  --MKH ****
+
 Equation~\ref{eq:A_CV_0c} states that the rate of ``accumulation'' 
 (or more accurately depletion) of natural capital ($R_{0}$ and $S_{0}$) 
 is dependent on the rates at which society extracts these materials
@@ -592,29 +623,32 @@ from the biosphere ($\dot{R}_{01}$ and $\dot{S}_{01}$) and the rates
 of disposal of waste materials back to the biosphere ($\dot{R}_{10}$ 
 and $\dot{S}_{10}$). 
 
-Notice however, that although this is true for total mass of materials,
-this equation makes no comparison of the \emph{quality} of these materials.
-Society relies heavily on extraction of resources from naturally
+Notice however, that although Equation~\ref{eq:A_CV_0c} is true for total mass of materials,
+it makes no comparison of the \emph{quality} of these materials.
+Society relies heavily on extracted resources from naturally
 occurring accumulations that are far from equilibrium with their surroundings,
-e.g.{}fossil fuel reservoirs or seams of high ore grade. As these high quality
+e.g.\ fossil fuel reservoirs or seams of high-grade ore. As these high quality
 material reserves are depleted and society must turn to lower grade reserves, 
 more energy and other economic factors (labor, capital, money) \emph{must} be 
-expended  in material extraction~\cite{Mudd2010}. It is likely that the quality
+expended  in material extraction.\cite{Mudd2010} It is likely that the quality
 of flow $R_{01}$ is higher than flow $R_{10}$. If this were not the case,
-it could be substituted into the production process (i.e.{}recycled) thus
+$\dot{R}_{10}$ could be easily substituted into the production process (i.e., recycled) thus
 offsetting the need for primary resource extraction. This relationship between 
 incoming high quality resources and emission of low
 quality waste is a general truth for any thermodynamic process but is especially
 true for open systems operating far from thermodynamic equilibrium (of which every
-living systems is an example). Such systems maintain their internal structure by
+living system is an example). Such systems maintain their internal structure by
 importing high quality energy and materials (negentropy) and exporting low quality
-energy and materials (entropy)~\cite{Schroedinger1947}. 
+energy and materials (entropy).\cite{Schroedinger1947} 
 
 ************ these paragraphs may be better in the introduction **************
 
+**** I like where they are. Implications drawn from the equations are a good thing. --MKH ****
+
 We may also derive two equations defining the rates of creation and accumulation
 of man-made capital ($\dot{K}_{11}$ and $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$) within
-society:
+society: **** Need to show a bit more where these equations are coming from. 
+I don't get it. --MKH ****
 
 \begin{align}
 	\label{eq:A_K_11}
