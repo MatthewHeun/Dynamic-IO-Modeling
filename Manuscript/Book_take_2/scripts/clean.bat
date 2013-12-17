@@ -53,6 +53,11 @@ erase *.aux
 erase *.bbl
 erase *.blg    
 
+cd ..\..\Part_3\Chapter_Unfinished
+erase *.aux
+erase *.bbl
+erase *.blg    
+
 cd ..\..\Appendix_Casler
 erase *.aux
 erase *.bbl

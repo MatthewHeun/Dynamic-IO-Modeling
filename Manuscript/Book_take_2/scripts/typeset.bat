@@ -52,6 +52,11 @@ cd Chapter_Implications
 bibtex Chapter_Implications
 cd ..\..
 
+cd Part_3
+cd Chapter_Unfinished
+bibtex Chapter_Unfinished
+cd ..\..
+
 cd Appendix_Casler
 bibtex Appendix_Casler
 cd ..
