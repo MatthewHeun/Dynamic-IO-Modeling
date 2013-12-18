@@ -780,8 +780,9 @@ energy and materials (entropy).\cite{Schroedinger1947}
 We may also derive two equations defining the rates of creation and accumulation
 of man-made capital ($\dot{K}_{11}$ and $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$) within
 society. % **** Need to show a bit more where these equations are coming from. I don't get it. --MKH ****
+
 Firstly,
-noticing that Equation~\ref{eq:A_CV_0c}~=~Equation~\ref{eq:A_CV_1c},
+noticing that Equation~\ref{eq:A_CV_0c}~=~--~Equation~\ref{eq:A_CV_1c},
 we may say that:
 
 \begin{equation}
@@ -811,6 +812,24 @@ Equation~\ref{eq:A_K_11} states that the rate of production of man-made capital
 Equation~\ref{eq:A_dK_1/dt} states that the rate of accumulation of man-made capital
 ($\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$) is equal to the rate of depletion of natural
 capital \emph{less} depreciation of man-made capital back to the biosphere.
+This depreciation term may be rewritten as the total stock
+of man-made capital ($\dot{K}_{1}$) 
+multiplied by some depreciation rate, $\gamma_{K}$ with units of
+inverse time (e.g.\ 1/year), such that we may re-write
+Equation~\ref{eq:A_dK_1/dt} as:
+
+\begin{equation}
+\label{eq:A_dK_1/dt_b}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	= - \left(
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+	\right)
+	- \gamma_{K}K_{1}.
+\end{equation}
+
+This depreciation term will be discussed in more depth in
+Chapter~\ref{chap:embodied_energy}.
 
 %%%%%%%%%% Materials: Example B %%%%%%%%%%
 \section{Example B: two-sector economy} % chktex 13
@@ -832,40 +851,75 @@ within society but stay within the production sector, e.g.\ manufacturing equipm
 \label{fig:B_materials}
 \end{figure}
 
-As can be seen in Figure~\ref{fig:B_materials}, Sector~(2) resembles very closely the basic unit
-outlined in Figure~\ref{fig:PERKS_materials}. Resource flows from the biosphere ($\dot{R}_{02}$)
-and those produced by Sector~(2) itself ($\dot{R}_{22}$) are \emph{transformed} into product flow
-($\dot{P}_{2}$). Flows of short-lived goods ($\dot{S}$) and capital ($\dot{K}$) are required to
-support this transformative process. Much of the product flow from Sector~(2) enters Society (3)
-as resource ($\dot{R}_{21}$), short-lived good ($\dot{S}_{21}$) and capital good ($\dot{K}_{21}$)
-flows\footnote{This is a somewhat different conception of ``capital goods'' than is often used by
-economists, wherein capital goods are used only within production sectors of the economy. What we
-are here labelling as ``capital goods'' might be termed \emph{consumer durables} by economists. For
-our intention, consumer durables in society serve the same purpose as capital equipment in the
-economy---they are necessary to support the goal of the sector: production in one case
-and consumption in the other. [MAYBE REPHRASE AS ``production of goods in one case and production
-of labor in the other.'']}. 
+As can be seen in Figure~\ref{fig:B_materials}, 
+Sector~(2) resembles very closely the basic unit
+outlined in Figure~\ref{fig:PERKS_materials}. 
+Resource flows from the biosphere ($\dot{R}_{02}$)
+and those produced by Sector~(2) itself ($\dot{R}_{22}$) 
+are \emph{transformed} into product flow
+($\dot{P}_{2}$). 
+Flows of short-lived goods ($\dot{S}$) 
+and capital ($\dot{K}$) are required to
+support this transformative process. 
+Much of the product flow from Sector~(2) 
+enters Society (3) as resource ($\dot{R}_{21}$), 
+short-lived good ($\dot{S}_{21}$) 
+and capital good ($\dot{K}_{21}$)
+flows.
+% \footnote{This is a somewhat different conception of ``capital goods'' than is often used by
+% economists, wherein capital goods are used only within production sectors of the economy. What we
+% are here labelling as ``capital goods'' might be termed \emph{consumer durables} by economists. For
+% our intention, consumer durables in society serve the same purpose as capital equipment in the
+% economy---they are necessary to support the goal of the sector: production in one case
+% and consumption in the other. [MAYBE REPHRASE AS ``production of goods in one case and production
+% of labor in the other.'']}
 
-There is also a product outflow from society ($\dot{P}_{1}$) some of which is returned to society
-as resource ($\dot{R}_{11}$), short-lived good ($\dot{S}_{11}$) and capital good ($\dot{K}_{11}$)
-flows. A flow of short-lived goods ($\dot{S}_{12}$) flows from society (1) to production (2) 
-associated with the flow of labor. There is no resource ($\dot{R}_{12}$) nor capital good 
-($\dot{K}_{12}$) flow from society (1) to production (2). This is because the `product' of society
-is the production of labor services and the ``consumption'' of final goods. No materials flow from
-society to be \emph{transformed} into or \emph{embodied} in the production goods of Sector~(2), 
-therefore $\dot{R}_{12} = 0$. Additionally, no capital \emph{goods} flow from society to accumalate
-within the production sector, therefore $\dot{K}_{12} = 0$.
+There is also a product outflow 
+from society ($\dot{P}_{1}$), 
+some of which is returned to society
+as resource ($\dot{R}_{11}$), 
+short-lived good ($\dot{S}_{11}$) 
+and capital good ($\dot{K}_{11}$) flows. 
+A flow of short-lived goods ($\dot{S}_{12}$)
+flows from society (1) to production (2) 
+associated with the flow of labor. 
+There is no resource ($\dot{R}_{12}$) nor 
+capital good ($\dot{K}_{12}$) flow from 
+society (1) to production (2). 
+This is because the `product' of society
+is the production of labor services 
+and the ``consumption'' of final goods. 
+No materials flow from society to be 
+\emph{transformed} into or \emph{embodied} 
+in the production goods of Sector~(2), 
+therefore $\dot{R}_{12} = 0$. 
+Additionally, no capital \emph{goods} flow 
+from society to accumalate
+within the production sector, 
+therefore $\dot{K}_{12} = 0$.
 
-The short-lived goods flow ($\dot{S}_{12}$) from society to the production sector represents labor
-specifically, the material flow associated with labor which is `consumed' within the production
-sector.\footnote{We assume that this flow is the adenosine triphosphate (ATP), used as an energy
-carrier within the cells of organisms.} Flow $\dot{S}_{12}$ could also represent the flow of 
-\emph{financial capital}, i.e.\ savings, ****** Is this right? ****** from consumption to 
-production.\footnote{In this case, the material flow would depend upon how this information was 
-encoded---a paper check, photons on a screen, etc.}
+The short-lived goods flow ($\dot{S}_{12}$)
+from society to the production sector 
+represents labor specifically, 
+the material flow associated with labor 
+which is `consumed' within the production sector.
+\footnote{We assume that this flow is the 
+adenosine triphosphate (ATP), 
+used as an energy
+carrier within the cells of organisms.} 
+Flow $\dot{S}_{12}$ could also represent the flow of 
+\emph{financial capital}, 
+i.e.\ savings, ****** Becky - Is this right? ****** 
+from consumption to production.
+\footnote{In this case, 
+the material flow would depend upon how 
+this information was encoded---a paper check, 
+photons on a screen, etc.}
 
-As in Example~A, we set control volumes around the biosphere\index{biosphere} 
-and our two economic sectors, such that the material accounting equations become:
+As in Example~A, 
+we set control volumes around the biosphere\index{biosphere} 
+and our two economic sectors, 
+such that the material accounting equations become:
 
 \begin{align} \label{eq:B_CV_0_to_2}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
