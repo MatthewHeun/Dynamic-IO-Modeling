@@ -292,37 +292,35 @@ Further work to clarify these magnitudes will be beneficial
 for energy analysts who employ the I-O method.
 
 
-******** Matt stopped here. *********
-
-
 %%%%%%%%%% Implications %%%%%%%%%%
 \section{Implications for economic ``development''}
 \label{sec:implications_for_development}
 %%%%%%%%%%
 
-[IT WOULD BE GOOD TO HAVE A COMPARISON BETWEEN $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ 
-AND STANDARD METRIC OF DEVELOPMENT, 
-I.E. GDP WHICH I GUESS WOULD BE SOMETHING LIKE $\sum_{i}\dot{X}_{i}$. 
-WE CAN CERTAINLY ENVISION SITUATIONS WHERE $\sum_{i}\dot{X}_{i}$ IS INCREASING AND]
+Economic ``development'' is usually measured 
+by Gross Domestic Product\index{Gross Domestic Product} (GDP).
+With reference to Figure~\ref{fig:C_value}, $GDP$ is calculated by
 
-One consequence of economic ``progress'' or ``development'' is that embodied energy accumulates 
+\begin{equation} \label{eq:GDP_def}
+	GDP
+	= \sum\limits_{i=2}^{n} \dot{X}_{i}
+\end{equation}
+
+\noindent{}where $n$ is the number of sectors in the economy.
+Equation~\ref{eq:GDP_def} clearly shows that 
+$GDP$ is a \emph{flow} of value.
+
+However, one consequence of economic ``development'' 
+is that embodied energy accumulates 
 in economic sectors and society. 
-In fact, accumulation of embodied energy in economic sectors and society 
-could be considered a \emph{proxy} for development. 
-This proxy for development is overly materialistic, one-dimensional, and reductionist, 
-but alternatives such as GDP can be similarly criticized. 
-In fact, GDP could continue to increase whilst accumulation 
-of embodied energy or value actually decreased.
-
-Figure~\ref{fig:total_energy_flows_2S} shows that energy extraction 
-from the Earth is what ultimately drives development 
-as measured by the accumulation of embodied energy in the economy and society. 
-Development occurs over time. 
-If embodied energy is the measure, 
-development can be expressed as 
-the integral of $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ for economic sectors
-
-***************** Need to edit the following equations for index changes. ************
+If we turn this around, 
+accumulation of embodied energy in economic sectors and society 
+could be considered a \emph{proxy} for development.\footnote{Embodied energy 
+as a proxy for development is overly materialistic, 
+one-dimensional, and reductive, 
+but GDP and other measures can be similarly criticized.}
+Equation~\ref{eq:Dev_Integral_Economy} indicates how total accumulated
+energy in the economy could be calculated:
 
 \begin{equation} \label{eq:Dev_Integral_Economy}
 	\vec{B}(t) 
@@ -330,20 +328,33 @@ the integral of $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ for economic sectors
 	+ \int_{t=0}^{t=t} \frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\mathrm{d}t,
 \end{equation}
 
-\noindent{}or, using Equation~\ref{eq:compare_demand_and_accumulation}, 
-as the integral of $\frac{\mathrm{d}B_{2}}{\mathrm{d}t}$ for society,
+\noindent{}with
 
-\begin{equation} \label{eq:Dev_Integral_Society}
-	B_{2}(t) 
-	= B_{2}(0) 
-	+ \int_{t=0}^{t=t} \frac{\mathrm{d}B_{2}}{\mathrm{d}t}\mathrm{d}t 
-	= B_{2}(0) 
-	+ \int_{t=0}^{t=t} (Y_{\dot{T}} 
-	- \gamma_{2}B_{2} 
-	- \dot{Q}_{21})\mathrm{d}t.
+\begin{equation}
+	\vec{B}
+	\equiv 
+	\begin{Bmatrix}
+		B_{2}	\\
+		B_{3}	\\
+		\vdots
+	\end{Bmatrix}.
 \end{equation}
 
-%[I ADDED IN A $\dot{Q}_{21}$ TERM HERE - MD]
+\noindent{}Equation~\ref{eq:Dev_Integral_Economy} clearly shows
+that embodied energy ($\vec{B}$) is a \emph{stock}, not a flow.
+
+During a period of industrialization and infrastructure build-out, 
+we expect both $GDP$ and energy embodied in the economy ($\vec{B}$)
+to increase.
+But, there is no expectation that $GDP$ and $\vec{B}$ move 
+in the same direction at all times.
+Industrialized economies may experience $GDP$ growth while 
+the stock of embodied energy in the economy ($\vec{B}$) remains nearly constant.
+In times of infrastructure decline (such as occurred in post-colonial Africa)
+the stock of energy embodied in the economy ($\vec{B}$) may decrease while
+$GDP$ increases due to the flow of economic ``aid.''
+
+******** Matt stopped here. *********
 
 Using embodied energy is obviously an incomplete measure of development. 
 We might also use $X(t) = X(0) + \int\frac{dX}{dt}dt$. 
