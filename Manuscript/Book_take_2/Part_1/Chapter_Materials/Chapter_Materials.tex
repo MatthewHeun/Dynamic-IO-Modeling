@@ -686,6 +686,7 @@ Some of coal is destined for electricity generation
 and so re-enters the economy as part of flow $\dot{S}_{11}$,
 since the coal is \emph{not} physically embodied
 in the electricity and leaves the economy
+(in the form of carbon dioxide and ash)
 as part of flow $\dot{S}_{10}$.
 In summary, we may say that resources are destined
 to end up either as products or waste `resources'
@@ -772,26 +773,38 @@ living system is an example). Such systems maintain their internal structure by
 importing high quality energy and materials (negentropy) and exporting low quality
 energy and materials (entropy).\cite{Schroedinger1947} 
 
-************ these paragraphs may be better in the introduction **************
+% ************ these paragraphs may be better in the introduction **************
 
-**** I like where they are. Implications drawn from the equations are a good thing. --MKH ****
+% **** I like where they are. Implications drawn from the equations are a good thing. --MKH ****
 
 We may also derive two equations defining the rates of creation and accumulation
 of man-made capital ($\dot{K}_{11}$ and $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$) within
-society: **** Need to show a bit more where these equations are coming from. 
-I don't get it. --MKH ****
+society. % **** Need to show a bit more where these equations are coming from. I don't get it. --MKH ****
+Firstly,
+noticing that Equation~\ref{eq:A_CV_0c}~=~Equation~\ref{eq:A_CV_1c},
+we may say that:
 
-\begin{align}
-	\label{eq:A_K_11}
-	\dot{K}_{11}									&
-	= - \left(\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}\right),	\\
-	\label{eq:A_dK_1/dt}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}				&
-	= - \left(\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}\right)
+\begin{equation}
+\label{eq:A_K_11}
+	\dot{K}_{11}
+	= - \left(
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+	\right).
+\end{equation}
+
+We may now combine Equation~\ref{eq:A_K_11} with
+Equation~\ref{eq:A_K1_balance} to state:
+
+\begin{equation}
+\label{eq:A_dK_1/dt}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	= - \left(
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+	\right)
 	- \dot{K}_{10}.
-\end{align}
+\end{equation}
 
 Equation~\ref{eq:A_K_11} states that the rate of production of man-made capital
 ($\dot{K}_{11}$) is equal to the rate of depletion of natural capital. 
