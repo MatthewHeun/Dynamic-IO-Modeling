@@ -447,13 +447,13 @@ goods\index{capital goods} ($\dot{K}_{11}$)
 which are able to be accumulated at some rate 
 $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
 Waste resources ($\dot{R}_{10}$) and used **** consumed? --MKH **** 
-**** I don't think we want to use ``consumed'' as we are accounting
+I don't think we want to use ``consumed'' as we are accounting
 mass that is specifically not consumed. --MCD ****
 short-lived materials/goods ($\dot{S}_{10}$)
 are returned to the biosphere\index{biosphere} without 
 accumulating in society (1). **** Need to sort out whether we'll call (1)
 ``society'' or ``the economy'' --MKH **** 
-**** I would argue that sector (1) is always ``society''
+I would argue that sector (1) is always ``society''
 however in Example A it also includes the ``economy'' which is
 split out in later Examples. --MCD ****
 Capital goods ($\dot{K}_{10}$) 
@@ -487,8 +487,55 @@ our material accounting equations, such that:
 	- \dot{K}_{10}.
 \end{align}
 
+
+
+Because mass is conserved, we find that:
+
+\begin{align} 
+\label{eq:A_R0}
+	\dot{R}_{0}				&
+	= \dot{R}_{01},			\\
+\label{eq:A_S0}
+	\dot{S}_{0}				&
+	= \dot{S}_{01},			\\
+\label{eq:A_P1}
+	\dot{P}_{1} 			&
+	= \dot{R}_{11} 
+	+ \dot{S}_{11}
+	+ \dot{K}_{11},	
+\end{align}
+
+\noindent{}such that Equations~\ref{eq:A_CV_0}~and~\ref{eq:A_CV_1} 
+become:
+
+\begin{align} \label{eq:A_CV_0a}
+	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
+	=	\dot{R}_{10}		
+	+	\dot{S}_{10}	
+	+	\dot{K}_{10}											
+	-	\dot{R}_{01}											
+	-	\dot{S}_{01}								\\
+\label{eq:A_CV_1a}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
+	= \dot{R}_{01} 
+	+ \dot{S}_{01} 
+	- \dot{R}_{10}				
+	- \dot{S}_{10}				
+	- \dot{K}_{10}.
+\end{align}
+
+%****BRH says, shouldn't this word be
+%"accounting" -- not accumulation -- given that is what we
+%called it in the sentence introducing eq. 2.4. Or, should we change "accounting" above to accumulation?
+%Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
+%label for eqn. 2.5**** MIK - Agreed, changed to 'material balance'
+
 \noindent{}In this model, neither resources ($R$) 
-nor short-lived goods ($S$) accumulate within economic sectors, so we may state:
+nor short-lived goods ($S$) accumulate within economic sectors, so we may also state:
 
 \begin{align}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}		&
@@ -496,29 +543,9 @@ nor short-lived goods ($S$) accumulate within economic sectors, so we may state:
 	= 0.
 \end{align}
 
-\noindent{}Additionally, because mass is conserved, we find that:
-
-\begin{align} \label{eq:A_P1}
-	\dot{P}_{1} 			&
-	= \dot{R}_{11} 
-	+ \dot{S}_{11}
-	+ \dot{K}_{11},			\\
-	\label{eq:A_R0}
-	\dot{R}_{0}				&
-	= \dot{R}_{01},			\\
-	\label{eq:A_S0}
-	\dot{S}_{0}				&
-	= \dot{S}_{01}
-\end{align}
-
-\noindent{}such that Equations~\ref{eq:A_CV_0}~and~\ref{eq:A_CV_1} 
+\noindent{}which means that 
+Equations~\ref{eq:A_CV_0a}~and~\ref{eq:A_CV_1a}
 become:
-
-%****BRH says, shouldn't this word be
-%"accounting" -- not accumulation -- given that is what we
-%called it in the sentence introducing eq. 2.4. Or, should we change "accounting" above to accumulation?
-%Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
-%label for eqn. 2.5**** MIK - Agreed, changed to 'material balance'
 
 \begin{align}\label{eq:A_CV_0b}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
@@ -537,6 +564,8 @@ become:
 	- \dot{S}_{10}				
 	- \dot{K}_{10}.										
 \end{align}
+
+
 
 Equation~\ref{eq:A_CV_1b} indicates that the accumulation 
 of capital\index{capital accumulation}\index{accumulation!capital|see{capital accumulation}}
@@ -604,6 +633,48 @@ and depreciation of capital to the biosphere ($\dot{K}_{10}$) such that:
 	- \dot{K}_{10}
 \end{equation}
 
+Looking deeper at flows of resources and short-lived goods,
+we can make some further observations. 
+Imagine following a kilogram of coal on its journey
+through the economy. It is pulled out of the earth as part
+of flow $\dot{R}_{01}$. 
+It enters the economy and is transformed into useful
+products (part of $\dot{P}_{1}$) and some is wasted ($\dot{R}_{10}$).
+Some of the coal is destined for metalurgical processes 
+(such as the production of steel)
+and so re-enters the economy within flow $\dot{R}_{11}$,
+since the carbon in the coal ends up physically
+\emph{embodied} within the steel however,
+again,
+some of the coal is wasted,
+leaving the economy as flow $\dot{R}_{10}$. 
+Some of coal is destined for electricity generation
+and so re-enters the economy as part of flow $\dot{S}_{11}$,
+since the coal is \emph{not} physically embodied
+in the electricity and leaves the economy
+as part of flow $\dot{S}_{10}$.
+In summary, we may say that resources are destined
+to end up either as products or waste `resources'
+and that short-lived materials flow `straight through'
+the economy. 
+As such,
+we may state that:
+
+\begin{align}
+\label{eq:A_R1_balance}
+	\frac{\mathrm{d}R_1}{\mathrm{d}t}		&
+	= 0
+	= \dot{R}_{01}
+	+ \dot{R}_{11}
+	- \dot{R}_{10},							\\
+\label{eq:A_S1_balance}
+	\frac{\mathrm{d}S_1}{\mathrm{d}t}		&
+	= 0
+	= \dot{S}_{01}
+	+ \dot{S}_{11}
+	- \dot{S}_{10}.
+\end{align}
+
 Substituting equations~\ref{eq:A_K0_balance}~and~\ref{eq:A_K1_balance}
 into equations~\ref{eq:A_CV_0b}~and~\ref{eq:A_CV_1b}, respectively, we obtain:
 
@@ -632,6 +703,13 @@ A counterpoint to this approach would be an argument that society
 ``makes'' $\dot{S}_{11}$ material for use by society (i.e.\ in the $\dot{P}_{11}$ flow).
 If society makes an $\dot{S}_{11}$, do we have
 $\dot{S}_{01} + \dot{S}_{11} = \dot{S}_{10}$?  --MKH ****
+I would definitely say that we are converting $\dot{R}_{01}$
+flows into $\dot{S}_{11}$ (and consequently $\dot{S}_{10}$ flows)
+in quite significant proportions, such as the large quantities of
+plastic packaging, paper, etc. waste that flows through but is never accumulated.
+How large this flow is (in mass terms) in comparison to,
+say water,
+is an open question. --MCD ****
 
 Equation~\ref{eq:A_CV_0c} states that the rate of ``accumulation'' 
 (or more accurately depletion) of natural capital ($R_{0}$ and $S_{0}$) 
