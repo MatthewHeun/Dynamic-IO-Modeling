@@ -972,7 +972,7 @@ within the `product' of society---human labor---i.e.~food produced by the agricu
 industry. %[WE NEED TO DISCUSS IF WE WANT TO ACCOUNT IT IN THIS WAY]
 Since no resources flow directly into society from the biosphere\index{biosphere}, we may say:
 
-\begin{equation}
+\begin{equation}\label{eq:B_R0}
 	\dot{R}_{0} = \dot{R}_{02}.
 \end{equation}
 
@@ -980,12 +980,10 @@ In contrast, short-lived materials may flow directly into society from the biosp
 e.g.\ the flow of photons in sunlight or oxygen into car engines and lungs. 
 We can redefine flows $\dot{S}_{0}$ and $\dot{S}_{1}$:
 
-\begin{align}\label{eq:B_S_def}
-	\dot{S}_{0} = 
-	& \dot{S}_{01} + \dot{S}_{02};
-	& \dot{S}_{1} = 
-	\dot{S}_{11} + \dot{S}_{12}
-\end{align}
+\begin{equation}\label{eq:B_S_def}
+	\dot{S}_{0} 
+	= \dot{S}_{01} + \dot{S}_{02};
+\end{equation}
 
 Since only capital flows ($\dot{K}$) may be accumulated and are dependent only on flows of 
 capital in and depreciation of capital, we may define capital balance equations:
@@ -1003,7 +1001,27 @@ capital in and depreciation of capital, we may define capital balance equations:
 	- \dot{K}_{20},
 \end{align}
 
-************ Are flows $\dot{R}_{11} = \dot{K}_{11} = 0$ ***************
+Since we are assuming that only man-made capital
+is accounted within the physical stock within society ($K_{1}$)
+and that the `product' of society is labor\footnote{If
+we were assuming that the human population
+was accounted within $\dot{K}_{1}$,
+then the `product' of society would be human beings
+(and the labor they provide),
+resource flow $\dot{R}_{11}$ would be material resources
+provided to human reproduction and
+`capital goods' flow $\dot{K}_{11}$ would be material
+added to the human population stock.},
+then we may also state that:
+
+\begin{equation}\label{eq:B_R11_K11}
+	\dot{R}_{11} = \dot{K}_{11} = 0
+\end{equation}
+
+\noindent{}since all capital goods are produced within
+the production sector (2).
+
+% **** Are flows $\dot{R}_{11} = \dot{K}_{11} = 0$ *****
 
 % [NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{12}$ AS FOOD AND $K_{1}$ 
 % AS INCLUDING HUMANS\ldots 
@@ -1012,17 +1030,23 @@ capital in and depreciation of capital, we may define capital balance equations:
 
 
 
-We can also redefine product flow $\dot{P}_{2}$ as:
+We can also redefine product flows
+$\dot{P}_{1}$ and $\dot{P}_{2}$ as:
 
-\begin{equation} \label{eq:B_P_def}
-	\dot{P}_{2}
+\begin{align}
+\label{eq:B_P1_def}
+	\dot{P}_{1}				&
+	= \dot{S}_{11}
+	+ \dot{S}_{12},			\\
+\label{eq:B_P2_def}
+	\dot{P}_{2}				&
 	= \dot{R}_{21}
 	+ \dot{R}_{22}
 	+ \dot{S}_{21}
 	+ \dot{S}_{22}
 	+ \dot{K}_{21}	 
 	+ \dot{K}_{22},
-\end{equation}
+\end{align}
 
 
 \noindent Again, remembering that resources and short-lived
@@ -1036,7 +1060,42 @@ goods do not accumulate within sectors of the economy:
 	= 0,
 \end{equation}
 
-\noindent{}and substituting
+As in Example~A,
+we may also define the resource-product
+and short-lived goods flows balances separately
+for each of the sectors of the economy:
+
+\begin{align}
+\label{eq:B_dR1}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 	&
+	= 0
+	= \dot{R}_{21}
+	- \dot{P}_{1}
+	- \dot{R}_{10},							\\
+\label{eq:B_dS1}
+	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 	&
+	= 0
+	= \dot{S}_{01}
+	+ \dot{S}_{11}
+	+ \dot{S}_{21}
+	- \dot{S}_{10},							\\
+\label{eq:B_dR2}
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 	&
+	= 0
+	= \dot{R}_{02}
+	+ \dot{R}_{22}
+	- \dot{P}_{2}
+	- \dot{R}_{20},							\\
+\label{eq:B_dS2}
+	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 	&
+	= 0
+	= \dot{S}_{02}
+	+ \dot{S}_{12}
+	+ \dot{S}_{22}
+	- \dot{S}_{20},							\\
+\end{align}
+
+Substituting
 Equations~\ref{eq:B_S_def},~\ref{eq:B_K_def}~and~\ref{eq:B_P_def}, 
 our balance equations may now be written:
 
