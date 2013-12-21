@@ -449,8 +449,6 @@ whereas the waste from the sector produces an embodied
 energy outflow ($\dot{B}_{10}$) that reduces 
 the energy embodied within the sector. 
 
-% subsection sec:A_simplified_embodied (end)
-
 
 %+++++++++ First Law embodied energy ++++++++++
 \subsection{Substitution of First Law into the embodied energy accounting equation} % (fold)
@@ -526,25 +524,57 @@ to obtain
 
 \noindent and
 
-\begin{equation} \label{eq:A_dB1/dt_simp}
+\begin{equation} \label{eq:A_dB1/dt_simp_prelim}
 	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
 	= \dot{B}_{11}
 	- \dot{B}_{1}
 	- \dot{B}_{10}
-	+ \dot{Q}_{10},
+	+ \dot{Q}_{10}.
 \end{equation}
 
-\noindent the embodied energy accounting equations for 
-Example~A.
+\noindent{}The material model of this framework (see Chapter~\ref{chap:materials})
+indicates that materials are comprised of 
+resources ($R$), 
+short-lived materials ($S$), and
+capital ($K$).
+Thus, we can write 
+
+\begin{equation}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}B_{R,1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{S,1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}B_{K,1}}{\mathrm{d}t},
+\end{equation}
+
+\noindent{}but neither resources ($R$) nor short-lived
+materials ($S$) accumulate in economic sectors at a significant rate.
+Thus, 
+
+\begin{equation} \label{eq:A-dBdt_simplification}
+	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}B_{K_{1}}}{\mathrm{d}t}.
+\end{equation}
+
+\noindent{}We can substitute Equation~\ref{eq:A-dBdt_simplification}
+into Equation~\ref{eq:A_dB1/dt_simp_prelim} to obtain
+
+\begin{equation} \label{eq:A_dB1/dt_simp}
+	\frac{\mathrm{d}B_{K,1}}{\mathrm{d}t}
+	= \dot{B}_{11}
+	- \dot{B}_{1}
+	- \dot{B}_{10}
+	+ \dot{Q}_{10}.
+\end{equation}
+
+\noindent{}Equations~\ref{eq:A_dB0/dt_simp} and~\ref{eq:A_dB1/dt_simp} are 
+the embodied energy accounting equations for Example~A.
 
 In Examples~B and C following, we will choose the approach of 
 this section, namely substitution of the 
 First Law of Thermodynamics into the total energy accounting equation
 (instead of simplifying the total energy equation 
 as discussed in Section~\ref{sec:A_simplified_embodied}),
-because of the benefit of canceling direct energy terms. 
-
-% subsection sec:A_first_law_embodied (end)
+because of the benefit of canceling direct energy flow terms ($\dot{E}$). 
 
 
 %+++++++++ Depreciation ++++++++++
@@ -553,55 +583,98 @@ because of the benefit of canceling direct energy terms.
 
 The term $\dot{B}_{10}$ in Equation~\ref{eq:A_dB1/dt_simp}
 represents the disposal rate 
-of embodied energy from the economy to the biosphere, 
-akin to depreciation of physical assets. 
-This physical depreciation\index{depreciation!physical} 
-is different from, 
-but related to, financial depreciation\index{depreciation!financial}: 
-financial depreciation is usually faster than physical depreciation.
-Embodied energy depreciation ($\dot{B}_{10}$ in Example~A) 
+of embodied energy from Society (1) to the Biosphere (0). 
+Figure~\ref{fig:A_materials} shows that the outgoing material flow
+from Society (1) is comprised of 
+resources ($\dot{R}_{10}$),
+short-lived materials ($\dot{S}_{10}$), and 
+capital ($\dot{K}_{10}$). 
+Each of these material flows will have associated embodied energy such that
+
+\begin{equation} \label{eq:A-depreciation-of-B}
+	\dot{B}_{10}
+	= \dot{B}_{\dot{R}_{10}}
+	+ \dot{B}_{\dot{S}_{10}}
+	+ \dot{B}_{\dot{K}_{10}}.
+\end{equation}
+
+The term $\dot{B}_{\dot{K}_{10}}$ represents the energy embodied
+in depreciated phyiscal assets.
+Physical depreciation\index{depreciation!physical} 
+is counted at the moment when material physically departs an economic sector 
+and enters the biosphere, presumably a landfill, 
+where the material in the wasted assets will decay.
+Financial depreciation\index{depreciation!financial}
+is usually faster than physical depreciation
+according to rates set by accounting rules.
+The embodied energy associated with physical depreciation ($\dot{B}_{\dot{K}_{10}}$)
 can be represented by a depreciation term such as
 
 \begin{equation} \label{eq:depreciation_term_defined}
-	\dot{B}_{10} 
-	= \gamma_{1} B_{1},
+	\dot{B}_{\dot{K}_{10}} 
+	= \gamma_{B,1} B_{K_{1}},
 \end{equation}
 
-\noindent{}where $\gamma$ represents the depreciation rate 
-in units of inverse time (e.g., 1/year) and $\gamma > 0$. 
-The depreciation rate ($\gamma$) indicates that 
-a fraction of the total stock of embodied energy 
-is disposed over a period of time (e.g, $\gamma = 0.05$/year). 
+\noindent{}where $\gamma_{B}$ represents the depreciation rate 
+of embodied energy in units of inverse time (e.g., 1/year) 
+with $\gamma_{B} > 0$.\footnote{Note that $\gamma_B$ will, in general,
+be different from $\gamma_{K}$ defined in Section~\ref{sec:A_materials}.
+$\gamma_{B}$ will equal $\gamma_{K}$ if and only if 
+the capital being disposed has an embodied energy content that is 
+identical to the average embodied content of the sector on a per-unit-mass basis.}
+The depreciation rate ($\gamma_{B}$) indicates that 
+a fraction of the energy embodied in capital stock
+is disposed over a period of time (e.g., $\gamma_{B} = 0.05$/year). 
 In the absence of other inputs or outputs, 
 this depreciation function provides exponential decay 
 of embodied energy ($B$) in an economic sector. 
-$\gamma$ is, in general, a function of time.
+$\gamma_{B}$ is, in general, a function of time.
 
-Equation~\ref{eq:depreciation_term_defined} 
+Equation~\ref{eq:depreciation_term_defined} can be substituted into
+Equation~\ref{eq:A-depreciation-of-B} to obtain
+
+\begin{equation} \label{eq:B_10_term}
+	\dot{B}_{10}
+	= \dot{B}_{\dot{R}_{10}}
+	+ \dot{B}_{\dot{S}_{10}}
+	+ \gamma_{B,1} B_{K_{1}}.	
+\end{equation}
+
+\noindent{}Equation~\ref{eq:B_10_term} 
 can be substituted into Equations~\ref{eq:A_dB0/dt_simp}
 and~\ref{eq:A_dB1/dt_simp} to obtain 
 
 \begin{equation} \label{eq:A-dB0/dt_with_depreciation_gamma}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
-	= \gamma_{1}B_{1}
+	= \dot{B}_{\dot{R}_{10}}
+	+ \dot{B}_{\dot{S}_{10}}
+	+ \gamma_{B,1} B_{K_{1}}
 	- \dot{Q}_{10} 
 \end{equation}
 
 \noindent{}and
 
 \begin{equation} \label{eq:A-dB1/dt_with_depreciation_gamma}
-	\frac{\mathrm{d}B_{1}}{\mathrm{d}t} 
-	= - \gamma_{1}B_{1}
+	\frac{\mathrm{d}B_{K_{1}}}{\mathrm{d}t} 
+	= \dot{B}_{11}
+	- \dot{B}_{1}
+	- \dot{B}_{\dot{R}_{10}}
+	- \dot{B}_{\dot{S}_{10}}
+	- \gamma_{B,1} B_{K_{1}}
 	+ \dot{Q}_{10}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:A-dB1/dt_with_depreciation_gamma} 
 indicates that the accumulation rate 
 of embodied energy in an economic sector 
-$\left( \frac{\mathrm{d}B_{1}}{\mathrm{d}t} \right)$
-is equal to the sum of the waste heat from the economic sector 
-($\dot{Q}_{10}$) less the rate of disposal of embodied energy 
-($\gamma_{1}B_{1}$).
+$\left( \frac{\mathrm{d}B_{K_{1}}}{\mathrm{d}t} \right)$
+is equal to the sum of the embodied energy input to the sector~($\dot{B}_{11}$)
+and waste heat from the economic sector~($\dot{Q}_{10}$),
+less embodied energy the leaves the sector in its products~($\dot{B}_{1}$), 
+less the rate of disposal of embodied energy associated with 
+scrap resources~($\dot{B}_{\dot{R}_{10}}$),
+short-lived material~($\dot{B}_{\dot{S}_{10}}$), and
+depreciated capital stock~($\gamma_{B,1} B_{K_{1}}$).
 
 We turn now to Example~B, a two-sector economy.
 
@@ -735,6 +808,14 @@ to obtain
 	+ \dot{Q}_{20}.
 \end{equation}
 
+Similar to Example~A, we observe that the accumulation rate 
+of embodied energy in the economic sectors (1 and 2) 
+is the sum of the rates of waste heat flowing from the sector 
+($\dot{Q}_{20}$) and embodied energy into the sector 
+($\dot{B}_{12} + \dot{B}_{22}$) 
+less the rate of embodied energy leaving the sector 
+on its output streams ($\dot{B}_{2} + \dot{B}_{20}$).
+
 Equations~\ref{eq:B_embodied_energy_accounting_0}--\ref{eq:B_embodied_energy_accounting_2}
 can be simplified using sums:
 
@@ -756,31 +837,31 @@ can be simplified using sums:
 
 \noindent where $j \in [1, n]$.
 
-Similar to Example~A, we observe that the accumulation rate 
-of embodied energy in the economic sectors (1 and 2) 
-is the sum of the rates of waste heat flowing from the sector 
-($\dot{Q}_{20}$) and embodied energy into the sector 
-($\dot{B}_{12} + \dot{B}_{22}$) 
-less the rate of embodied energy leaving the sector 
-on its output stream ($\dot{B}_{20}$).
-
-We can replace the waste embodied energy terms in 
-Equations~\ref{eq:B_embodied_energy_accounting_0_sum}--\ref{eq:B_embodied_energy_accounting_12_sum}
-with depreciation terms to obtain
+As in Example~A, 
+we can disaggregate the accumulation and waste embodied energy terms 
+and express physical waste of capital stock as depreciation 
+in Equations~\ref{eq:B_embodied_energy_accounting_0_sum}
+and \ref{eq:B_embodied_energy_accounting_12_sum}
+to obtain
 
 \begin{equation} \label{eq:B_embodied_energy_accounting_0_with_depreciation}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
-	= \sum\limits_{i=1}^n \gamma_{i}B_{i} 
+	= \sum\limits_{i=1}^n 
+		\left( \dot{B}_{\dot{R}_{i0}} 
+				+ \dot{B}_{\dot{S}_{i0}} 
+				+ \gamma_{B,i} B_{K_{i}} \right)
 	- \sum\limits_{i=1}^n\dot{Q}_{i0} 
 \end{equation}
 
 \noindent and
 
 \begin{equation} \label{eq:B_embodied_energy_accounting_12_with_depreciation}
-	\frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
+	\frac{\mathrm{d}B_{K,j}}{\mathrm{d}t} 
 	= \sum\limits_{i=1}^n\dot{B}_{ij} 
 	- \dot{B}_{j}
-	- \gamma_{i} B_{i}
+	- \left( \dot{B}_{\dot{R}_{j0}}
+		+ \dot{B}_{\dot{S}_{j0}}
+		+ \gamma_{B,j} B_{K_{j}} \right)
 	+ \dot{Q}_{j0}.
 \end{equation}
 
@@ -792,7 +873,7 @@ Example~C, a three-sector economy.
 \section{Example C: three-sector economy} % chktex 13
 %%%%%%%%%%
 
-Again, we begin with a diagram showing total energy ($\dot{T}$) flows
+Again, we begin with the diagram showing total energy ($\dot{T}$) flows
 among the economic sectors of Example~C (Figure~\ref{fig:C_total_energy}).
 
 \begin{figure}[!ht]
@@ -873,25 +954,32 @@ gives embodied energy accounting equations for Example~C: % chktex 13
 	+ \dot{Q}_{j0} 
 \end{equation}
 
-We can replace the waste embodied energy terms in 
-Equations~\ref{eq:C-embodied_acct_0} and 
-\ref{eq:C-embodied_acct_123}
-with depreciation terms to obtain
+As in Example~B, 
+we can disaggregate the accumulation and waste embodied energy terms 
+and express physical waste of capital stock as depreciation 
+in Equations~\ref{eq:C-embodied_acct_0}
+and \ref{eq:C-embodied_acct_123}
+to obtain
 
 \begin{equation} \label{eq:C_embodied_energy_accounting_0_with_depreciation}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
-	= \sum\limits_{i=1}^n \gamma_{i}B_{i} 
+	= \sum\limits_{i=1}^n 
+		\left( \dot{B}_{\dot{R}_{i0}} 
+				+ \dot{B}_{\dot{S}_{i0}} 
+				+ \gamma_{B,i} B_{K_{i}} \right)
 	- \sum\limits_{i=1}^n\dot{Q}_{i0} 
 \end{equation}
 
 \noindent and
 
 \begin{equation} \label{eq:C_embodied_energy_accounting_123_with_depreciation}
-	\frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
+	\frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} 
 	= \sum\limits_{i=1}^n\dot{B}_{ij} 
 	- \dot{B}_{j}
-	- \gamma_{j} B_{j}
-	+ \dot{Q}_{j0}
+	- \left( \dot{B}_{\dot{R}_{j0}}
+		+ \dot{B}_{\dot{S}_{j0}}
+		+ \gamma_{B,j} B_{K_{j}} \right)
+	+ \dot{Q}_{j0}.
 \end{equation}
 
 \noindent which are the same as 
@@ -904,27 +992,36 @@ To verify the above derivation,
 we sum 
 Equations~\ref{eq:C_embodied_energy_accounting_0_with_depreciation} 
 and~\ref{eq:C_embodied_energy_accounting_123_with_depreciation} 
-for sectors of the economy to obtain
+for all sectors of the economy $\left( j \in [1,n] \right)$ to obtain
 
 \begin{equation} \label{eq:C_big_sums}
-	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
-	+ \sum\limits_{j=1}^n \frac{\mathrm{d}B_{j}}{\mathrm{d}t} 
-	= \sum\limits_{i=1}^n \gamma_{i} B_{i}
-	- \sum\limits_{i=1}^n \dot{Q}_{i0}
-	+ \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{B}_{ij}
-	- \sum\limits_{j=1}^n \dot{B}_{j}
-	- \sum\limits_{j=1}^n \gamma_{j} B_{j}
-	+ \sum\limits_{j=1}^n \dot{Q}_{j0}.
+	\begin{split}
+		\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
+		+ \sum\limits_{j=1}^n \frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} 
+		= & 
+		 \sum\limits_{i=1}^n 
+			\left( \dot{B}_{\dot{R}_{i0}} 
+					+ \dot{B}_{\dot{S}_{i0}} 
+					+ \gamma_{B,i} B_{K,i} \right)
+		- \sum\limits_{i=1}^n \dot{Q}_{i0} \\
+		& + \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{B}_{ij}
+		- \sum\limits_{j=1}^n \dot{B}_{j}	\\
+		& - \sum\limits_{j=1}^n
+				\left( \dot{B}_{\dot{R}_{j0}}
+					+ \dot{B}_{\dot{S}_{j0}}
+					+ \gamma_{B,j} B_{K,j} \right)
+		+ \sum\limits_{j=1}^n \dot{Q}_{j0}.
+	\end{split}
 \end{equation}
 
 \noindent{}Using the identities
 
 \begin{equation} \label{eq:B_identity_1}
 	\dot{B}_{j}  
-	= \sum\limits_{k=1}^n \dot{B}_{jk}
+	= \sum\limits_{k=1}^n \dot{B}_{jk},
 \end{equation} \nomenclature[k]{$k$}{economic sector index}
 
-\noindent and
+\noindent{}and
 
 \begin{equation} \label{eq:B_identity_2}
 	\sum\limits_{j=1}^n\dot{B}_{j}  
@@ -934,7 +1031,7 @@ for sectors of the economy to obtain
 	= \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{B}_{ij},
 \end{equation}
 
-\noindent Equation~\ref{eq:C_big_sums} becomes
+\noindent{}Equation~\ref{eq:C_big_sums} becomes
 
 \begin{equation} \label{eq:C-B_sums_to_zero}
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
@@ -942,7 +1039,7 @@ for sectors of the economy to obtain
 	= 0,
 \end{equation}
 
-\noindent as expected. The total embodied energy content of the system 
+\noindent{}as expected. The total embodied energy content of the system 
 remains constant with respect to time in this model.
 
 
@@ -951,7 +1048,10 @@ remains constant with respect to time in this model.
 \label{sec:embodied_energy_auto}
 %%%%%%%%%%
 
-Develop an example here.
+**** Who writes this? ****
+
+Develop an example here. 
+
 
 \begin{figure}[!ht]
 \centering
