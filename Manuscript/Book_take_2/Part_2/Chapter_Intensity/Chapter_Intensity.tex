@@ -191,25 +191,43 @@ for the two-sector economy
 \end{equation}
 
 \noindent{}using energy intensity by realizing that 
-(a) $\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$
-and
-$\frac{\mathrm{d}T_2}{\mathrm{d}t} = \frac{\mathrm{d}B_2}{\mathrm{d}t}$, 
-because direct energy
-does not accumulate within economic sectors,
-(b) $\dot{B}_{02} = 0$ and $\dot{T}_{02} = \dot{E}_{02}$,
-because embodied energy appears only in the \emph{output} of a sector, 
-(c) $\dot{T}_{20} = \dot{B}_{02} = \gamma_{2}B_{2}$, 
-because direct energy is not wasted to the biosphere at any significant rate, and
-substituting Equations~\ref{eq:T_dot_1_single_sector} 
-and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2} gives
+
+\begin{itemize}
+	\item{$\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$
+		and
+		$\frac{\mathrm{d}T_2}{\mathrm{d}t} = \frac{\mathrm{d}B_2}{\mathrm{d}t}$, 
+		because direct energy
+		does not accumulate within economic sectors,}
+	\item{$\frac{\mathrm{d}B_2}{\mathrm{d}t} = \frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t}$,
+		because resources ($R$) and short-lived materials ($S$) do not 
+		accumulate at appreciable rates in economic sectors,}
+	\item{$\dot{B}_{02} = 0$ and $\dot{T}_{02} = \dot{E}_{02}$,
+		because embodied energy appears only in the \emph{output} of a sector,}
+	\item{$\dot{E}_{20} = 0$ and $\dot{T}_{20} = \dot{B}_{20}$, 
+	because direct energy is not wasted to the biosphere at any significant rate, and} 
+	\item{$\dot{B}_{20} = \left( \dot{B}_{\dot{R}_{20}} 
+							+ \dot{B}_{\dot{S}_{20}}
+							+ \dot{B}_{\dot{K}_{20}}
+							\right)
+						= \left( \dot{B}_{\dot{R}_{20}} 
+							+ \dot{B}_{\dot{S}_{20}}
+							+ \gamma_{K,2} B_{K_{2}}
+							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
+\end{itemize}
+
+\noindent{}If we substitute Equations~\ref{eq:T_dot_1_single_sector} 
+and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2}, we obtain
 
 \begin{equation} \label{eq:dB1/dt_single_sector_after_substituting_eps_and_a}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t} 
+	\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t} 
 	= \dot{E}_{02} 
 	+ \dot{T}_{12}
 	+ \varepsilon_{2}a_{22}\dot{X}_{2} 
 	- \varepsilon_{2}\dot{X}_{2} 
-	- \gamma_{2}B_{2}.
+	- \left( \dot{B}_{\dot{R}_{20}} 
+							+ \dot{B}_{\dot{S}_{20}}
+							+ \gamma_{K,2} B_{K_{2}}
+							\right).
 \end{equation}
 
 To extend Equation~\ref{eq:dB1/dt_single_sector_after_substituting_eps_and_a}
@@ -263,38 +281,58 @@ of the three-sector economy:
 \end{equation}
 
 \noindent{}Similar to Example~B, we realize that 
-(a) $\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$
-and
-$\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$, 
-because direct energy
-does not accumulate within economic sectors and
-(b) $\dot{B}_{0j}~=~0$ and $\dot{T}_{0j} = \dot{E}_{0j}$,
-because embodied energy appears only in the \emph{output} of a sector.
-We substitute $\dot{T}_{j} = \varepsilon_{j} \dot{X}_{j}$ 
-and $\dot{T}_{jk} = \varepsilon_{j} \dot{X}_{jk}$ 
-into Equations~\ref{eq:C-Total_Energy_Sec_2-a}
-and~\ref{eq:C-Total_Energy_Sec_3-a} to obtain
+
+\begin{itemize}
+	\item{$\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$
+		and
+		$\frac{\mathrm{d}T_i}{\mathrm{d}t} = \frac{\mathrm{d}B_i}{\mathrm{d}t}$, 
+		because direct energy
+		does not accumulate within economic sectors,}
+	\item{$\frac{\mathrm{d}B_i}{\mathrm{d}t} = \frac{\mathrm{d}B_{K_{i}}}{\mathrm{d}t}$,
+		because resources ($R$) and short-lived materials ($S$) do not 
+		accumulate at appreciable rates in economic sectors,}
+	\item{$\dot{B}_{0j} = 0$ and $\dot{T}_{0j} = \dot{E}_{0j}$,
+		because embodied energy appears only in the \emph{output} of a sector,}
+	\item{$\dot{E}_{j0} = 0$ and $\dot{T}_{j0} = \dot{B}_{j0}$, 
+	because direct energy is not wasted to the biosphere at any significant rate, and} 
+	\item{$\dot{B}_{j0} = \left( \dot{B}_{\dot{R}_{j0}} 
+							+ \dot{B}_{\dot{S}_{j0}}
+							+ \dot{B}_{\dot{K}_{j0}}
+							\right)
+						= \left( \dot{B}_{\dot{R}_{j0}} 
+							+ \dot{B}_{\dot{S}_{j0}}
+							+ \gamma_{K,j} B_{K_{j}}
+							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
+\end{itemize}
+
+\noindent{}to obtain
 
 \begin{equation} \label{eq:C-Total_Energy_Sec_2-b}
-	\frac{\mathrm{d}B_{2}}{\mathrm{d}t}
+	\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t}
 	= \dot{E}_{02}
 	+ \dot{T}_{12}
 	+ \varepsilon_{2} \dot{X}_{22}
 	+ \varepsilon_{3} \dot{X}_{32}
 	- \varepsilon_{2} \dot{X}_{2}
-	- \gamma_{2} B_{2}
+	- \left( \dot{B}_{\dot{R}_{20}} 
+							+ \dot{B}_{\dot{S}_{20}}
+							+ \gamma_{K,2} B_{K_{2}}
+							\right)
 \end{equation}
 
 \noindent{}and
 
 \begin{equation} \label{eq:C-Total_Energy_Sec_3-b}
-	\frac{\mathrm{d}B_{3}}{\mathrm{d}t}
+	\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t}
 	= \dot{E}_{03}
 	+ \dot{T}_{13}
 	+ \varepsilon_{2} \dot{X}_{23}
 	+ \varepsilon_{3} \dot{X}_{33}
 	- \varepsilon_{3} \dot{X}_{3}
-	- \gamma_{3} B_{3}.
+	- \left( \dot{B}_{\dot{R}_{30}} 
+							+ \dot{B}_{\dot{S}_{30}}
+							+ \gamma_{K,3} B_{K_{3}}
+							\right).
 \end{equation}
 
 
