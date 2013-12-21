@@ -369,8 +369,8 @@ in matrix and vector notation as
 		\begin{Bmatrix}
 			\varepsilon_{2}\\
 			\varepsilon_{3}
-		\end{Bmatrix} \\                                  % \\ gives line break
-		& -                                               % & aligns to previous tab
+		\end{Bmatrix}   
+		- 
 		\begin{bmatrix}
 			\dot{X}_{2} & 0          \\
 			0           & \dot{X}_{3}
@@ -378,20 +378,39 @@ in matrix and vector notation as
 		\begin{Bmatrix}
 			\varepsilon_{2}\\
 			\varepsilon_{3}
+		\end{Bmatrix} \\                                 % \\ gives line break
+		& -                                              % & aligns to previous tab
+		\begin{Bmatrix}
+			\dot{B}_{\dot{R}_{20}}  \\
+			\dot{B}_{\dot{R}_{30}} 
+		\end{Bmatrix}
+		-
+		\begin{Bmatrix}
+			\dot{B}_{\dot{S}_{20}}  \\
+			\dot{B}_{\dot{S}_{30}} 
 		\end{Bmatrix}
 		-
 		\begin{bmatrix}
-			\gamma_{2} & 0          \\
-			0          & \gamma_{3}
+			\gamma_{K,2} & 0          \\
+			0            & \gamma_{K,3}
 		\end{bmatrix}
 		\begin{Bmatrix}
-			B_{2}\\
-			B_{3}
+			B_{K_{2}}\\
+			B_{K_{3}}
 		\end{Bmatrix}		
 	\end{split}
 \end{equation}
 
 \noindent{}If we define the following matrices and vectors:
+
+\begin{equation} \label{eq:B_vec_def}
+	\vec{B} 
+	\equiv
+	\begin{Bmatrix}	
+		B_{2} \\
+		B_{3}
+	\end{Bmatrix},
+\end{equation}
 
 \begin{equation} \label{eq:dBdt_vec_def}
 	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
@@ -441,6 +460,22 @@ in matrix and vector notation as
 	\end{Bmatrix},
 \end{equation} \nomenclature[e]{$\bm{\varepsilon}$}{column vector 
 								of sector energy intensities [J/\$]}
+								
+\begin{equation} \label{eq:waste_vec_def}
+	\dot{\vec{B}}_{waste} 
+	\equiv
+	\begin{Bmatrix}
+		\dot{B}_{\dot{R}_{20}}	\\
+		\dot{B}_{\dot{R}_{30}}	\\
+	\end{Bmatrix}
+	+
+	\begin{Bmatrix}
+		\dot{B}_{\dot{S}_{20}}	\\
+		\dot{B}_{\dot{B}_{30}}	\\
+	\end{Bmatrix},
+\end{equation} \nomenclature[B]{$\dot{\vec{B}}_{waste}$}{column vector 
+								of waste embodied energy from resource ($\dot{R}$)
+								and short-lived material ($\dot{S}$) flow [J/s]}
 
 \begin{equation} \label{eq:X_hat_matrix_def}
 	\hat{\vec{X}} 
@@ -453,6 +488,8 @@ in matrix and vector notation as
 	\end{bmatrix},
 \end{equation} \nomenclature[X]{$\hat{\vec{X}}$}{matrix of sector outputs [\$/year]}
 
+\noindent{}and
+
 \begin{equation} \label{eq:gamma_hat_matrix_def}
 	\hat{\bm{\gamma}}
 	\equiv
@@ -461,19 +498,8 @@ in matrix and vector notation as
 	\begin{bmatrix}
 		\gamma_{2} & 0         \\
 		0          & \gamma_{3}
-	\end{bmatrix},
+	\end{bmatrix};
 \end{equation}\nomenclature[g]{$\hat{\bm{\gamma}}$}{matrix of depreciation rates [\$/year]}
-
-\noindent{}and
-
-\begin{equation} \label{eq:B_vec_def}
-	\vec{B} 
-	\equiv
-	\begin{Bmatrix}	
-		B_{2} \\
-		B_{3}
-	\end{Bmatrix};
-\end{equation}
 
 \noindent{}with the ``Kronecker delta''
 
