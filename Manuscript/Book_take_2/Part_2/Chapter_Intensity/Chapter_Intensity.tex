@@ -341,15 +341,15 @@ of the three-sector economy:
 \label{sec:C-matrix}
 %%%%%%%%%%
 
-\noindent{}Equations~\ref{eq:C-Total_Energy_Sec_2-b} 
+Equations~\ref{eq:C-Total_Energy_Sec_2-b} 
 and~\ref{eq:C-Total_Energy_Sec_3-b} can be rewritten 
-in matrix and vector notation as
+in vector notation as
 
 \begin{equation} \label{eq:C-Expanded_Matrix_Form}
 	\begin{split}
 		\begin{Bmatrix}
-			\frac{\mathrm{d}B_{2}}{\mathrm{d}t} \\[0.4em] % Adds some vertical space.
-			\frac{\mathrm{d}B_{3}}{\mathrm{d}t} 
+			\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t} \\[0.4em] % Adds some vertical space.
+			\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t} 
 		\end{Bmatrix}
 		=
 		\begin{Bmatrix}
@@ -397,27 +397,27 @@ in matrix and vector notation as
 		\begin{Bmatrix}
 			B_{K_{2}}\\
 			B_{K_{3}}
-		\end{Bmatrix}		
+		\end{Bmatrix}.
 	\end{split}
 \end{equation}
 
 \noindent{}If we define the following matrices and vectors:
 
 \begin{equation} \label{eq:B_vec_def}
-	\vec{B} 
+	\vec{B}_{K} 
 	\equiv
 	\begin{Bmatrix}	
-		B_{2} \\
-		B_{3}
+		B_{K_{2}} \\
+		B_{K_{3}}
 	\end{Bmatrix},
 \end{equation}
 
 \begin{equation} \label{eq:dBdt_vec_def}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	\frac{\mathrm{d}\vec{B}_K}{\mathrm{d}t} 
 	\equiv
 	\begin{Bmatrix}	
-		\frac{\mathrm{d}B_{2}}{\mathrm{d}t}	\\[0.4em] % Adds some vertical space.
-		\frac{\mathrm{d}B_{3}}{\mathrm{d}t}
+		\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t}	\\[0.4em] % Adds some vertical space.
+		\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t}
 	\end{Bmatrix},
 \end{equation}
 
@@ -491,13 +491,13 @@ in matrix and vector notation as
 \noindent{}and
 
 \begin{equation} \label{eq:gamma_hat_matrix_def}
-	\hat{\bm{\gamma}}
+	\hat{\bm{\gamma}}_{K}
 	\equiv
-	\delta_{ij} \gamma_{j}
+	\delta_{ij} \gamma_{K,j}
 	=
 	\begin{bmatrix}
-		\gamma_{2} & 0         \\
-		0          & \gamma_{3}
+		\gamma_{K,2} & 0         \\
+		0            & \gamma_{K,3}
 	\end{bmatrix};
 \end{equation}\nomenclature[g]{$\hat{\bm{\gamma}}$}{matrix of depreciation rates [\$/year]}
 
@@ -505,7 +505,7 @@ in matrix and vector notation as
 
 \begin{equation}\label{eq:k_delta}
 	\delta_{ij} 
-	=
+	\equiv
 	\begin{cases}	
 		0	&	\text{if  } i \neq j	\\
 		1 	& 	\text{if  } i = j
@@ -516,22 +516,24 @@ in matrix and vector notation as
 compactly as
 
 \begin{equation} \label{eq:matrix_leontief_pre_1}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ \vec{X}_{t}^{\mathrm{T}}\bm{\varepsilon} 
 	- \hat{\vec{X}}\bm{\varepsilon}
-	- \hat{\bm{\gamma}}\vec{B}.
+	- \dot{\vec{B}}_{waste}
+	- \hat{\bm{\gamma}}_{K} \vec{B}_{K}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:matrix_leontief_pre_1} can be simplified to
 
 \begin{equation} \label{eq:matrix_leontief_pre_2}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\bm{\varepsilon} 
-	- \hat{\bm{\gamma}}\vec{B}.
+	- \dot{\vec{B}}_{waste}
+	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}.
 \end{equation}
 
 \noindent{}We can define the input-output matrix ($\vec{A}$) as
@@ -558,11 +560,12 @@ compactly as
 to be recast as
 
 \begin{equation} \label{eq:matrix_leontief}
-	\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} 
+	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
-	- \hat{\bm{\gamma}}\vec{B}.
+	- \dot{\vec{B}}_{waste}
+	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:matrix_leontief} is the matrix version 
@@ -582,14 +585,15 @@ all sectors of the economy.~\cite{Casler1984,Bullard:1978vd}
 
 Equation~\ref{eq:matrix_leontief} provides a means to 
 estimate the embodied energy accumulation rate
-in economic sectors $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
+in economic sectors $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 knowing only 
 direct energy inputs to the economy from the biosphere ($\vec{E}_{0}$), 
 total energy inputs from society to the economy ($\vec{T}_{1}$),
 sector outputs ($\hat{\vec{X}}$), 
 sector input-output ratios ($\vec{A}$), 
 sector energy intensities ($\bm{\varepsilon}$), 
-and sector physical depreciation rates ($\hat{\bm{\gamma}}\vec{B}$). 
+energy embodied in wastes from the economy ($\dot{\vec{B}}_{waste}$),
+and physical depreciation rates of capital stock ($\hat{\bm{\gamma}}_{K}\vec{B}_{K}$). 
 In theory, the transaction matrix ($\vec{X}_{t}$) is not required 
 if the input-ouput matrix ($\vec{A}$) is known, 
 though in practice, 
