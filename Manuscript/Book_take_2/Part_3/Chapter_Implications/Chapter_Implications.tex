@@ -76,7 +76,8 @@ provides a means of estimating the energy intensity of economic sectors:
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
-				- \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}
+				- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
+				- \dot{\vec{B}}_{waste}
 		\right]. \tag{\ref{eq:epsilon_leontief_depreciation_simplification}}
 \end{equation}
 
@@ -97,29 +98,36 @@ and this manuscript, see Appendix~\ref{chap:Casler}.}
 The differences between Equations~\ref{eq:epsilon_leontief_depreciation_simplification}
 and~\ref{eq:epsilon_leontief_with_A_literature} are obvious. 
 The literature neglects
-energy input from society ($\vec{T}_{1}$)
-and accumulation of embodied energy in the economy,
-exclusive of physical depreciation 
-$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
-when estimating the energy intensity ($\bm{\varepsilon}$) 
-of economic sectors.\footnote{To be precise, 
+\begin{itemize}
+	\item{energy input from society ($\vec{T}_{1}$),}
+	\item{accumulation of embodied energy in the economy,
+			exclusive of physical depreciation 
+			$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
+			and}
+	\item{the embodied energy of scrap resource and short-lived material flows 
+			($\dot{\vec{B}}_{waste}$)}
+\end{itemize}
+
+\noindent{}when estimating the energy intensity  
+of economic sectors ($\bm{\varepsilon}$).\footnote{To be precise, 
 the literature effectively assumes
 $
 	\vec{T}_{1}
-	- \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}
+	- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
+	- \dot{\vec{B}}_{waste}
 	= \vec{0}
 $}
 In other words, energy analysts using the input-output method
 have, to date, and perhaps unwittingly, assumed 
 a developed-world ($\vec{T}_{1} \ll \vec{E}_{0}$), 
 steady state economy\index{steady-state economy}
-$\left( \left. \frac{\mathrm{d}\mathrm{\vec{B}}}{\mathrm{d}t} \right|_{\mathrm{other}} 
-= \vec{0} \right)$.
+$\left( \left. \frac{\mathrm{d}\mathrm{\vec{B}}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} 
+= \vec{0} \right)$ with no waste ($\dot{\vec{B}}_{waste} = \vec{0}$).
 
-The following subsections discuss the assumptions made by the I-O literature.
+The following subsections discuss each of these assumptions in turn.
 
 
-%+++++++++ Energy input from society ++++++++++
+%+++++++++ Negligible energy input from society ++++++++++
 \subsubsection{Negligible energy input from society $\left( \vec{T}_{1} = 0 \right)$}
 %+++++++++
 
@@ -160,14 +168,14 @@ We recommend that more of this work be done
 in the future for many more countries.
 
 
-%+++++++++ Accumulation of embodied energy ++++++++++
+%+++++++++ Negligible accumulation of embodied energy ++++++++++
 \subsubsection{Negligible accumulation of embodied energy
-$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} = 0 \right)$}
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} = 0 \right)$}
 %+++++++++
 
 As discussed in detail below (Section~\ref{sec:implications_for_development}),
 the accumulation of embodied energy 
-$\left( \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right)$ 
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$
 in society and the economy
 can be considered a marker of economic ``development.''
 
@@ -179,21 +187,21 @@ of Odum's B/P vs P/B ratios for growing vs.\ steady systems.
 Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
 shows that embodied energy accumulation within economic sectors 
 exclusive of depreciation
-$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$ 
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$ 
 decreases the energy intensity of products~($\bm{\varepsilon}$),
 because incoming energy is embodied within capital stock rather than products.
 Comparison with Equation~\ref{eq:epsilon_leontief_with_A_literature}
 shows that the method in the literature will overestimate the energy intensity
 of economic products ($\bm{\varepsilon}$) when 
-$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} > 0$.
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} > 0$.
 
 Rapidly growing economies (as measured by GDP), such as China and India today,
 are expected to have rather large positive values of 
-$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
 while slowly-growing, industrialized economies, 
 such as the United States and the United Kingdom,
 are expected to have rather smaller values of 
-$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$.
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$.
 Applying Equation~\ref{eq:epsilon_leontief_with_A_literature} 
 (i.e., assuming a steady-state economy\index{economy!steady-state})
 will tend to overestimate the energy intensity 
@@ -202,69 +210,23 @@ of economic products for rapidly growing economies such as China and India.
 Accurate estimation of the energy intensity of economic output ($\bm{\varepsilon}$)
 requires independent knowledge of the rate 
 at which embodied energy accumulates in the economy 
-$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$. 
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$. 
 To our knowledge, there are no examples of estimating the accumulation 
 of embodied energy in the economy. 
 Further work focused on estimating the relative magnitudes of 
-$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$
-and $\vec{T}_{1}$ will benefit energy analysts who utilize the I-O method.
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
+$\vec{T}_{1}$, and $\dot{\vec{B}}_{waste}$ 
+will benefit energy analysts who utilize the I-O method.
 
-**** Need to edit the rest of this section heavily when 
-we settle on the form of the depreciation terms. ****
 
-Table~\ref{tab:embodied_energy_accumulation_factors} 
-describes some of the dynamics that can be observed from 
-Equation~\ref{eq:epsilon_leontief_depreciation_simplification}. 
-It is quite possible that, especially for regions like the U.S. and Western Europe, 
-the rate of embodied energy accumulation in the economy 
-$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
-will be small relative to the rate of energy extraction 
-from the Earth ($\vec{E}$). 
-On the other hand, in rapidly developing countries, 
-like China or India, the rate of embodied energy accumulation 
-in the economy may be significantly higher than in a developed economy.
+%+++++++++ Negligible embodied energy in waste ++++++++++
+\subsubsection{Negligible energy embodied in waste ($\dot{\vec{B}}_{waste} = 0$)}
+%+++++++++
 
-\begin{table}
-\caption[Factors affecting the accumulation rate of embodied energy in the economy.]{Factors from Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
-affecting the rate of embodied energy accumulation in the economy.}
-\begin{center}
-  \begin{tabular}{c @{\hspace{2em}} l}
-    \toprule
-    Term & Implication \\ 
-	\midrule
-    $\hat{\vec{X}}$ & As economic output increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up (as will $\vec{E})$  \\
-    $\vec{A}$ & As input-ouput ratios increase, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up  \\
-    $\bm{\varepsilon}$ & As the energy intensity of the economy increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up  \\ 
-   $ \vec{E}_{0}$ & As the rate of energy flow from the Earth increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up  \\ 
-    $\hat{\bm{\gamma}}$ & As the depreciation rate increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes down  \\ 
-    $\vec{B}$ & As the embodied energy in the economy increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes down  \\ \bottomrule
-  \end{tabular}
-\end{center}
-\label{tab:embodied_energy_accumulation_factors}
-\end{table}
+**** Matt needs to complete this discussion. ****
 
-The behavior of $\vec{B}$ with $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ 
-is vitally important. 
-A developed economy has significantly higher embodied energy ($\vec{B}$) 
-than a developing economy, and, thus, 
-the outflow rate of embodied energy 
-due to depreciation ($\hat{\vec{\gamma}}\vec{B}$) will be higher. 
-As increasingly large amounts of energy are embodied in the economy, 
-increasingly large energy extraction rates ($\vec{E}$) 
-are required to offset depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
-and maintain positive growth $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} > 0\right)$ 
-in the sectors of the economy. 
-Depreciation may also be, temporarily, 
-offset by increasing energy efficiency, i.e.\ by decreasing energy intensity, $\varepsilon$.
 
-In a similar manner, 
-Equation~\ref{eq:compare_demand_and_accumulation} 
-indicates that maintaining a positive rate of societal development 
-$\left(\frac{\mathrm{d}B_{2}}{\mathrm{d}t} > 0\right)$ 
-requires ever increasing embodied energy input rates 
-to society ($Y_{\dot{T}}$) as the society ``develops.'' 
-This mechanism provides a natural restraint
-to the continued growth of physical economies.
+
 
 A second set of implications for the I-O method 
 comes from one of the ways that 
@@ -299,9 +261,9 @@ for $\vec{E}_{0}$:
 When Equation~\ref{eq:epsilon_leontief_with_A_literature}
 is modified to account for accumulation of embodied energy 
 in the economy 
-$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$
 and energy supplied by society to the economy ($\vec{T}_{1}$),
-we see that the energy demands ($\vec{E}$) must be calculated differently. 
+we see that the energy demands ($\vec{E}_{0}$) must be calculated differently. 
 Solving Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
 for $\vec{E}_{0}$ gives 
 
@@ -310,7 +272,8 @@ for $\vec{E}_{0}$ gives
 	= \hat{\vec{X}}
 		(\vec{I} - \vec{A}^{\mathrm{T}})
 		\bm{\varepsilon} 
-	+ \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}
+	+ \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
+	+ \dot{\vec{B}}_{waste}
 	- \vec{T}_{1}.
 \end{equation}
 
@@ -318,7 +281,7 @@ for $\vec{E}_{0}$ gives
 and~\ref{eq:Leontief_solved_for_E_with_embodied_depreciation}, 
 shows that to the extent that embodied energy accumulation,
 exclusive of physical depreciation,
-$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$
 is non-zero, estimates of energy demand ($\vec{E}_{0}$) using 
 Equation~\ref{eq:Leontief_lit_solved_for_E} are too low. 
 And, if energy input from society to the economy ($\vec{T}_{1}$) is significant,
@@ -326,8 +289,8 @@ estimates of energy demand ($\vec{E}_{0}$) using
 Equation~\ref{eq:Leontief_lit_solved_for_E} are too high. 
 
 At this time, the relative magnitudes of $\vec{E}_{0}$,
-$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
-and $\vec{T}_{1}$ are unknown. 
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
+$\dot{\vec{B}}_{waste}$, and $\vec{T}_{1}$ are unknown. 
 Further work to clarify these magnitudes will be beneficial
 for energy analysts who employ the I-O method.
 
@@ -363,24 +326,24 @@ Equation~\ref{eq:Dev_Integral_Economy} indicates how total accumulated
 energy in the economy could be calculated:
 
 \begin{equation} \label{eq:Dev_Integral_Economy}
-	\vec{B}(t) 
-	= \vec{B}(0) 
-	+ \int_{t=0}^{t=t} \frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\mathrm{d}t,
+	\vec{B}_{K}(t) 
+	= \vec{B}_{K}(0) 
+	+ \int_{t=0}^{t=t} \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\mathrm{d}t,
 \end{equation}
 
-\noindent{}where $\vec{B}$ is given by Equation~\ref{eq:B_vec_def}.
+\noindent{}where $\vec{B}_{K}$ is given by Equation~\ref{eq:B_vec_def}.
 Equation~\ref{eq:Dev_Integral_Economy} clearly shows
-that embodied energy ($\vec{B}$) is a \emph{stock}, not a flow.
+that embodied energy ($\vec{B}_{K}$) is a \emph{stock}, not a flow.
 
 During a period of industrialization and infrastructure build-out, 
-we expect both $GDP$ and energy embodied in the economy ($\vec{B}$)
+we expect both $GDP$ and energy embodied in the economy ($\vec{B}_{K}$)
 to increase.
-But, there is no expectation that $GDP$ and $\vec{B}$ move 
+But, there is no expectation that $GDP$ and $\vec{B}_{K}$ move 
 in the same direction at all times.
 Industrialized economies may experience $GDP$ growth while 
-the stock of embodied energy in the economy ($\vec{B}$) remains nearly constant.
+the stock of embodied energy in the economy ($\vec{B}_{K}$) remains nearly constant.
 In times of infrastructure decline (such as occurred in post-colonial Africa)
-the stock of energy embodied in the economy ($\vec{B}$) may decrease while
+the stock of energy embodied in the economy ($\vec{B}_{K}$) may decrease while
 $GDP$ increases due to the flow of ``aid'' into an economy.
 **** Probably need a better example here.
 I'm not sure that post-colonial Africa is correct, 
@@ -397,16 +360,16 @@ Another possible measure of economic ``development'' is wealth ($X_{i}$):
 
 \noindent{}where $i=1$ for societal wealth 
 and $i \in [2,n]$ for corporate wealth.
-In fact, capital (as represented by energy embodied in infrastructure, $\vec{B}$) and 
+In fact, capital (as represented by energy embodied in infrastructure, $\vec{B}_{K}$) and 
 financial resources (as represeted by $X_{2 \ldots n}$) 
 are complimentary factors for economic processes. 
-For capital~($\vec{B}$) to be useful, we need financial resources
+For capital~($\vec{B}_{K}$) to be useful, we need financial resources
 or currency~($\dot{X}$) to purchase 
 direct energy~($\dot{E}$) to power the capital,
 resources~($\dot{R}$) to feed the capital, and
 workers~(as represented by societal energy input to the economy,~$\vec{T}_{1}$) 
 to operate the capital.
-Each of these factors alone ($\vec{B}$, $\dot{E}$, $\dot{R}$, and $\vec{T}_{1}$)
+Each of these factors alone ($\vec{B}_{K}$, $\dot{E}$, $\dot{R}$, and $\vec{T}_{1}$)
 is necessary, but not sufficient, for economic growth.
 
 ******** Matt stopped here. *********

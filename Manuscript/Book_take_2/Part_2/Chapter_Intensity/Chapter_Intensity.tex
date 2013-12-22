@@ -771,7 +771,6 @@ exclusive of the effects of physical
 depreciation~$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
 and the waste rate of embodied energy due to scrapped resources and short-lived material flows
 ($\dot{\vec{B}}_{waste}$).
-
 Again, the transaction matrix\index{transaction matriux} ($\vec{X}_{t}$) 
 is not required for estimating the energy intensity 
 of economic sectors ($\bm{\varepsilon}$)
@@ -781,11 +780,76 @@ knowledge of input-output matrix ($\vec{A}$)
 would be derived from the transaction matrix ($\vec{X}_{t}$),
 as shown in Appendix~\ref{chap:Estimating_A}.
 
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+is an important result that is directly comparable with the I-O literature,
+and we will do so in Chapter~\ref{chap:implications}.
+But first, the following section discusses each of the factors in 
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification}.
+
+
+%%%%%%%%%% Example C %%%%%%%%%%
+\section{Factors in Equation~\ref{eq:epsilon_leontief_depreciation_simplification}}
+%%%%%%%%%%
+
+**** Need to edit the rest of this section heavily when 
+we settle on the form of the depreciation terms. ****
+
+Table~\ref{tab:embodied_energy_accumulation_factors} 
+describes some of the dynamics that can be observed from 
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification}. 
+It is quite possible that, especially for regions like the U.S. and Western Europe, 
+the rate of embodied energy accumulation in the economy 
+$\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}\right)$ 
+will be small relative to the rate of energy extraction 
+from the Earth ($\vec{E}$). 
+On the other hand, in rapidly developing countries, 
+like China or India, the rate of embodied energy accumulation 
+in the economy may be significantly higher than in a developed economy.
+
+\begin{table}
+\caption[Factors affecting the accumulation rate of embodied energy in the economy.]{Factors from Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
+affecting the rate of embodied energy accumulation in the economy.}
+\begin{center}
+  \begin{tabular}{c @{\hspace{2em}} l}
+    \toprule
+    Factor & Implication \\ 
+	\midrule
+    $\hat{\vec{X}}$ & As economic output increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up (as will $\vec{E})$  \\
+    $\vec{A}$ & As input-ouput ratios increase, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up  \\
+    $\bm{\varepsilon}$ & As the energy intensity of the economy increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up  \\ 
+   $ \vec{E}_{0}$ & As the rate of energy flow from the Earth increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes up  \\ 
+    $\hat{\bm{\gamma}}$ & As the depreciation rate increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes down  \\ 
+    $\vec{B}$ & As the embodied energy in the economy increases, $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ goes down  \\ \bottomrule
+  \end{tabular}
+\end{center}
+\label{tab:embodied_energy_accumulation_factors}
+\end{table}
+
+The behavior of $\vec{B}$ with $\frac{\mathrm{d}\vec{B}}{\mathrm{d}t}$ 
+is vitally important. 
+A developed economy has significantly higher embodied energy ($\vec{B}$) 
+than a developing economy, and, thus, 
+the outflow rate of embodied energy 
+due to depreciation ($\hat{\vec{\gamma}}\vec{B}$) will be higher. 
+As increasingly large amounts of energy are embodied in the economy, 
+increasingly large energy extraction rates ($\vec{E}$) 
+are required to offset depreciation ($\hat{\vec{\gamma}}\vec{B}$) 
+and maintain positive growth $\left(\frac{\mathrm{d}\vec{B}}{\mathrm{d}t} > 0\right)$ 
+in the sectors of the economy. 
+Depreciation may also be, temporarily, 
+offset by increasing energy efficiency, i.e.\ by decreasing energy intensity, $\varepsilon$.
+
+In a similar manner, 
+Equation~\ref{eq:compare_demand_and_accumulation} 
+indicates that maintaining a positive rate of societal development 
+$\left(\frac{\mathrm{d}B_{2}}{\mathrm{d}t} > 0\right)$ 
+requires ever increasing embodied energy input rates 
+to society ($Y_{\dot{T}}$) as the society ``develops.'' 
+This mechanism provides a natural restraint
+to the continued growth of physical economies.
+
 The following section examines energy intensity 
 in the context of our running example, the auto industry.
-Then, in Chapter~\ref{chap:implications}, we will compare
-Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
-with similar equations in found in the literature.
 
 
 %%%%%%%%%% Intensity: Auto industry example %%%%%%%%%%
