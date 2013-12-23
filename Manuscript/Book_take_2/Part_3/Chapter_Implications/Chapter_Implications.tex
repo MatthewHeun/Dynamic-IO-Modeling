@@ -104,7 +104,7 @@ The literature neglects
 			exclusive of physical depreciation 
 			$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
 			and}
-	\item{the embodied energy of scrap resource and short-lived material flows 
+	\item{the embodied energy of scrap resource	and short-lived material flows 
 			($\dot{\vec{B}}_{waste}$)}
 \end{itemize}
 
@@ -143,7 +143,8 @@ This is important because, in NEA, labor is often used
 as a HUGE lever to produce whatever result is desired.
 ****
 
-For developed economies, muscle work is a small fraction
+For industrialized economies, muscle work 
+is likely to provide only a small fraction
 of the energy input from fossil fuels ($\vec{E}_{0}$),
 so neglecting $\vec{T}_{1}$ causes negligible error when
 estimating energy intensity ($\bm{\varepsilon}$) by
@@ -223,10 +224,69 @@ will benefit energy analysts who utilize the I-O method.
 \subsubsection{Negligible energy embodied in waste ($\dot{\vec{B}}_{waste} = 0$)}
 %+++++++++
 
-**** Matt needs to complete this discussion. ****
+If the energy embodied in waste resources ($\dot{R}$)
+and short-lived materials ($\dot{S}$) are ignored,
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+shows that estimates of the energy intensity of economic products 
+($\bm{\varepsilon}$) will be too high.
+We are unaware of any estimates of the energy embodied in wasted
+material in an economy.  
+But, one might develop a metric for the resource material effiency of an 
+economic sector ($\eta_{\dot{R}}$)\nomenclature[h]{$\eta_{\dot{R}}$}{resource efficiency [kg/kg]} 
+such that
 
+\begin{equation}
+	\eta_{\dot{R},j}
+	\equiv \frac{\dot{P}_{j}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
+\end{equation}
 
+\noindent{}With the above definition, 
+the scrap rate for resources could be expressed as
+$(1~-~\eta_{\dot{R}}) \dot{R}$.
 
+Furthermore, one could assume that the rate
+of short-lived materials ($\dot{S}$) used by a sector could be given as a 
+fraction of the resource ($\dot{R}$) use rate such that:
+
+\begin{equation}
+	\xi_{\dot{S},j}
+	\equiv \frac{\dot{S}_{j0}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
+\end{equation} \nomenclature[x]{$\xi_{\dot{S}}$}{ratio of short-lived material
+flow to resource inputs [kg/kg]}
+
+\noindent{}Resource-intensive sectors are expected to have small values of $\xi_{\dot{S}}$,
+but service sectors would have large values of of $\xi_{\dot{S}}$.
+
+With the above definitions, the waste resource rate from an economic sector
+can be given as
+$(1 - \eta_{\dot{R}_{j}} + \xi_{\dot{S},j}) \sum\limits_{i=1}^{n} \dot{R}_{ij}$,
+in units of mass per time.
+The energy embodied in the waste materials would need to be estimated
+from the energy embodied in the incoming resource and short-lived material flows.
+
+However, it is arguable that the embodied energy content 
+of waste from the production process should be 
+assigned to the products of a sector.\footnote{This approach 
+is similar to assigning waste heat energy from an
+economic sector to the embodied energy of its products.
+See Section~\ref{subsec:A_first_law_embodied} and
+Equation~\ref{eq:A_dB1/dt} for a discussion of this approach.}
+If so, Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+could be modified as
+
+\begin{equation} \label{eq:epsilon_leontief_without_waste}
+	\bm{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E}_{0} 
+				+ \vec{T}_{1} 
+				- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
+		\right].
+\end{equation}
+
+Further work focused on estimating values for 
+$\eta_{\dot{S}}$ and $\xi_{\dot{S}}$
+and the the energy embodied in waste flows 
+will benefit energy analysts who utilize the I-O method.
 
 A second set of implications for the I-O method 
 comes from one of the ways that 
@@ -240,13 +300,14 @@ is often used: to estimate energy demand from the biosphere ($\vec{E}_{0}$).
 
 The assumptions of Equation~\ref{eq:epsilon_leontief_with_A_literature}
 may cause another challenge for energy analysts. 
-As discussed in Sections~\ref{sec:estimating_epsilon-intensity_chapter} 
-and~\ref{sec:estimating_epsilon-implications_chapter} above, 
+As shown in 
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+and discussed in Section~\ref{sec:estimating_epsilon-implications_chapter} above, 
 the I-O method can be used to estimate energy intensities 
 for each sector of the economy ($\bm{\varepsilon}$). 
 With $\bm{\varepsilon}$ values in hand,
 and assuming that $\bm{\varepsilon}$ is constant with respect to time,
-energy analysts can estimate changes in energy demand 
+energy analysts have estimated changes in energy demand 
 from the biosphere ($\vec{E}_{0}$) 
 as the output of economic sectors ($\hat{\vec{X}}$) 
 increases or decreases by solving 
@@ -261,9 +322,10 @@ for $\vec{E}_{0}$:
 When Equation~\ref{eq:epsilon_leontief_with_A_literature}
 is modified to account for accumulation of embodied energy 
 in the economy 
-$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$
-and energy supplied by society to the economy ($\vec{T}_{1}$),
-we see that the energy demands ($\vec{E}_{0}$) must be calculated differently. 
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
+energy supplied by society to the economy ($\vec{T}_{1}$), and
+waste materials ($\dot{\vec{B}}_{waste}$),
+we see that energy demands ($\vec{E}_{0}$) must be calculated differently. 
 Solving Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
 for $\vec{E}_{0}$ gives 
 
@@ -277,16 +339,19 @@ for $\vec{E}_{0}$ gives
 	- \vec{T}_{1}.
 \end{equation}
 
-\noindent{}Comparing Equations~\ref{eq:Leontief_lit_solved_for_E} 
-and~\ref{eq:Leontief_solved_for_E_with_embodied_depreciation}, 
+\noindent{}Comparison of Equations~\ref{eq:Leontief_lit_solved_for_E} 
+and~\ref{eq:Leontief_solved_for_E_with_embodied_depreciation}
 shows that to the extent that embodied energy accumulation,
-exclusive of physical depreciation,
-$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$
+exclusive of physical depreciation
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$
 is non-zero, estimates of energy demand ($\vec{E}_{0}$) using 
 Equation~\ref{eq:Leontief_lit_solved_for_E} are too low. 
-And, if energy input from society to the economy ($\vec{T}_{1}$) is significant,
+If energy input from society to the economy ($\vec{T}_{1}$) is significant,
 estimates of energy demand ($\vec{E}_{0}$) using 
-Equation~\ref{eq:Leontief_lit_solved_for_E} are too high. 
+Equation~\ref{eq:Leontief_lit_solved_for_E} will be too high. 
+And, if wastes ($\dot{\vec{B}}_{waste}$) are ignored, 
+estimates of energy demand ($\vec{E}_{0}$) using 
+Equation~\ref{eq:Leontief_lit_solved_for_E} will be too low. 
 
 At this time, the relative magnitudes of $\vec{E}_{0}$,
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
@@ -300,7 +365,7 @@ for energy analysts who employ the I-O method.
 \label{sec:implications_for_development}
 %%%%%%%%%%
 
-Economic ``development'' is usually measured 
+Economic ``development'' is usually ``measured''
 by Gross Domestic Product\index{Gross Domestic Product} (GDP).
 With reference to Figure~\ref{fig:C_value}, $GDP$ is calculated by
 
@@ -351,7 +416,7 @@ increasingly large energy extraction rates ($\vec{E}_{0}$)
 are required to maintain capital stock 
 in the sectors of the economy
 by offsetting the effects of depreciation 
-$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
 assuming that $\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \ge 0$ 
 is desired. 
 
@@ -369,7 +434,8 @@ while the stock of energy embodied in the economy ($\vec{B}_{K}$) increases
 due to foreign aid focused on infrastructure enhancement.
 **** May need a better example here.
 Did this occur for any country in post-colonial Africa? 
-Are there other examples? --MKH ****
+Are there other examples or GDP and capital stock 
+moving in opposite directions? --MKH ****
 
 A second possible measure of economic ``development'' is another \emph{stock}, 
 wealth ($X_{i}$):
@@ -385,25 +451,33 @@ and $i \in [2,n]$ for corporate wealth.
 In fact, capital (as represented by energy embodied in infrastructure, $\vec{B}_{K}$) and 
 financial resources (as represeted by $X_{2 \ldots n}$) 
 are complimentary factors for economic processes. 
-For capital~($\vec{B}_{K}$) to be useful, we need financial resources
-or currency~($\dot{X}$) to purchase 
-direct energy~($\dot{E}$) to power the capital,
-resources~($\dot{R}$) to feed the capital, and
-workers~(as represented by societal energy input to the economy,~$\vec{T}_{1}$) 
-to operate the capital.
+But, we can go further than linking capital with financial resources.
+If capital~($\vec{B}_{K}$) is to be useful, we need financial resources
+or currency~($\dot{X}$) to 
+\begin{itemize}
+	\item{purchase direct energy~($\dot{E}$) to power the capital,
+	\item{purchase resources~($\dot{R}$) to feed the capital, and}
+	\item{pay workers~(represented 
+	by societal energy input to the economy,~$\vec{T}_{1}$) 
+	to operate the capital.}
+} 
+\end{itemize}
 
-Economic growth could be considered a ``fully coupled'' problem:
+Thus, economic growth could be considered a ``fully coupled'' problem:
 understanding it requires breadth of knowledge and appreciation for 
 interactions among many important factors.
 Each of the factors discussed above 
-($\vec{B}_{K}$, $\dot{E}$, $\dot{R}$, and $\vec{T}_{1}$)
+($\dot{X}$, $\vec{B}_{K}$, $\dot{E}$, $\dot{R}$, and $\vec{T}_{1}$)
 is necessary, but not sufficient, for economic growth.
-There are many pieces of unfinished business here:
-whether ``growth'' should be considered a stock or a flow, 
-measures of economic ``growth,'' 
-and the role of capital stock, labor, currency, and energy in economic processes
+
+As any economist will say, 
+there are many pieces of unfinished business here:
+whether ``growth'' should be measured by a stock or a flow, 
+various alternative measures of economic ``growth,'' 
+and the roles of currency, capital stock, energy, resources, and labor
+in economic processes
 are overlapping and complementary areas of inquiry.
-We encourage further research in these areas.
+We encourage further research in all of these areas.
 
 ******** Matt stopped here. *********
 
@@ -467,7 +541,7 @@ no change in growth $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
 \section{Comparison to a Steady-state Economy}
 %%%%%%%%%%
 
-****** Finish this section. 
+****** Mik: Finish this section. 
 In terms of what a SSE would look like in the I-O framework, 
 at first blush, I would think that dB/dt = 0 is one aspect.  
 Also, with no growth, inflow rates = depreciation rates.  
