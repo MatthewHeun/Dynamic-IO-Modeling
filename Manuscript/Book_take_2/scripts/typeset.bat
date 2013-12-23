@@ -81,7 +81,8 @@ makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeli
 REM Make the nomenclature section.
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
 
-REM Run again--twice--to include all the index, toc, and nomenclature information
+REM Run again--thrice--to include all the index, toc, and nomenclature information
+pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 

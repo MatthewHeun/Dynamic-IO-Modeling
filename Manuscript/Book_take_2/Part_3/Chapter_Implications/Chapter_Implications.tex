@@ -29,9 +29,10 @@
 
 
 Several implications can be drawn from the detailed development 
-of the I-O method in Chapters~\ref{chap:materials}--\ref{chap:intensity}
+of the I-O method 
+(in Chapters~\ref{chap:materials}--\ref{chap:intensity})
 that includes energy input from society to the economy,
-embodied energy accumulation, and depreciation.
+embodied energy accumulation, waste material flows, and depreciation.
 
 
 %%%%%%%%%% Implications for the I-O method %%%%%%%%%%
@@ -128,7 +129,7 @@ The following subsections discuss each of these assumptions in turn.
 
 
 %+++++++++ Negligible energy input from society ++++++++++
-\subsubsection{Negligible energy input from society $\left( \vec{T}_{1} = 0 \right)$}
+\subsubsection{Negligible energy input from society $\left( \vec{T}_{1} = \vec{0} \right)$}
 %+++++++++
 
 Energy input from society to the economy ($\vec{T}_{1}$)
@@ -171,7 +172,7 @@ in the future for many more countries.
 
 %+++++++++ Negligible accumulation of embodied energy ++++++++++
 \subsubsection{Negligible accumulation of embodied energy
-$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} = 0 \right)$}
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} = \vec{0} \right)$}
 %+++++++++
 
 As discussed in detail below (Section~\ref{sec:implications_for_development}),
@@ -491,50 +492,57 @@ is reuse and recycling of materials.
 The impact of recycling can be seen in the I-O formulation 
 only when depreciation and accumulation terms are included. 
 
-******** Matt stopped here. *********
-
 One effect of recycling is to reduce the magnitude 
-of the disposal rate 
-($\hat{\bm{\gamma}}_{K}$). 
-Equation~\ref{eq:dB_dt_leontief_with_A} indicates that 
+of the depreciation ($\hat{\bm{\gamma}}_{K}$)
+and waste ($\dot{\vec{B}}_{waste}$) terms. 
+Equation~\ref{eq:matrix_leontief}:
+
+\begin{equation} \label{eq:matrix_leontief}
+	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
+	= \vec{E}_{0}
+	+ \vec{T}_{1}
+	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
+	- \dot{\vec{B}}_{waste}
+	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}\tag{\ref{eq:matrix_leontief}}
+\end{equation}
+
+\noindent{}indicates that 
 recycling of material in an economy, 
-thereby reducing $\hat{\bm{\gamma}}_{K}$, 
-will slow the effect of depreciation 
-$\left(\hat{\bm{\gamma}}_{K} \vec{B}_{K} \right)$ 
-and put upward pressure on growth 
+thereby reducing both $\dot{\vec{B}}_{waste}$ 
+and~$\hat{\bm{\gamma}}_{K}$, 
+put upward pressure on the accumulation of energy embodied 
+in capital stock
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$. 
 
 Recycling has a mixed effect on energy demand ($\vec{E}_{0}$). 
 Because recycled material displaces newly-produced material 
 in the economy and society, 
 recycling will tend to reduce energy demand ($\vec{E}_{0}$). 
-Equation~\ref{eq:dB_dt_leontief_with_A} indicates that 
-this displacement effect will put downward pressure on growth 
-$\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$. 
 However, recycling processes require energy to operate, 
-thereby increasing energy demand ($\vec{E}$). 
-Equation~\ref{eq:dB_dt_leontief_with_A} indicates that 
-additional energy demand will put upward pressure on growth 
+thereby increasing energy demand ($\vec{E}_{0}$). 
+If recycling results in a net reduction of energy demand 
+from the biosphere ($\vec{E}_{0}$), 
+recycling will put downward pressure on the growth 
+of embodied energy in the economy
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$. 
 
 If recycling produces a net reduction in energy demand ($\vec{E}_{0}$), 
-that is if the effect of displaced production dominates over the effect 
+i.e.\ if the effect of displaced production dominates over the effect 
 of energy consumed in recycling processes, 
 the upward pressure on growth $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 from decrease in $\hat{\bm{\gamma}}_{K}$ and 
 the downward pressure on growth from net reduction of $\vec{E}_{0}$ 
-offset each other, 
-the growth rate $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
+can offset each other.
+Under those conditions, 
+the accumulation rate of embodied energy in capital stock
+$\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 will remain near zero, 
 and total embodied energy $(\vec{B}_{K})$ will remain constant. 
 In that scenario, dematerialization can develop: 
 reduced material and energy input ($\vec{E}_{0}$) can be accompanied by 
-no change in growth $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
-
-Depreciation may be offset, temporarily, 
-by increasing energy efficiency, i.e.\ by decreasing energy intensity, $\varepsilon$.
-
-
+no change in
+the growth of the economy
+$\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
 
 
 %%%%%%%%%% Implications %%%%%%%%%%
