@@ -29,7 +29,7 @@
 
 
 Several implications can be drawn from the detailed development 
-of the I-O method 
+of a framework for materials and energy accounting 
 (in Chapters~\ref{chap:materials}--\ref{chap:intensity})
 that includes energy input from society to the economy,
 embodied energy accumulation, waste material flows, and depreciation.
@@ -191,31 +191,61 @@ shows that embodied energy accumulation within economic sectors
 exclusive of depreciation
 $\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$ 
 decreases the energy intensity of products~($\bm{\varepsilon}$),
-because incoming energy is embodied within capital stock rather than products.
+because incoming energy becomes embodied within capital stock rather than products.
 Comparison with Equation~\ref{eq:epsilon_leontief_with_A_literature}
 shows that the method in the literature will overestimate the energy intensity
 of economic products ($\bm{\varepsilon}$) when 
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} > 0$.
 
 Rapidly growing economies (as measured by GDP), such as China and India today,
-are expected to have rather large positive values of 
-$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
+are expected to have rather large positive values in the  
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$ vector,
 while slowly-growing, industrialized economies, 
 such as the United States and the United Kingdom,
-are expected to have rather smaller values of 
-$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$.
+are expected to have rather smaller values in the 
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$ vector.
 Applying Equation~\ref{eq:epsilon_leontief_with_A_literature} 
 (i.e., assuming a steady-state economy\index{economy!steady-state})
 will tend to overestimate the energy intensity 
 of economic products for rapidly growing economies such as China and India.
+The approximate magnitude of mis-estimation remains unknown, because
+estimates of the magnitude of
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$
+have yet to be made.
 
-Accurate estimation of the energy intensity of economic output ($\bm{\varepsilon}$)
-requires independent knowledge of the rate 
-at which embodied energy accumulates in the economy 
-$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$. 
-To our knowledge, there are no examples of estimating the accumulation 
-of embodied energy in the economy. 
-Further work focused on estimating the relative magnitudes of 
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification} shows that 
+accurate estimation of the energy intensity of economic output ($\bm{\varepsilon}$)
+requires \emph{independent} knowledge of the rate 
+at which embodied energy accumulates in the capital stock of the economy 
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
+and all estimates of energy intensity ($\bm{\varepsilon}$) to date have assumed 
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} = 0$.\footnote{To 
+our knowledge, there are no independent estimates 
+of the accumulation rate of embodied energy in the economy
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$.}
+Furthermore, Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
+cannot be used to estimate the accumulation rate of energy embodied in 
+capital stock by solving for 
+$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
+because that approach would require independent knowledge
+of the energy intensity of economic sectors ($\bm{\varepsilon}$).
+Alternatively, Equation~\ref{eq:C_embodied_energy_accounting_123_with_depreciation} 
+could be simplified using the 
+methods of Section~\ref{sec:depreciation} to obtain
+
+\begin{equation} \label{eq:C_embodied_energy_accounting_123_with_depreciation_simplified}
+	\left. \frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} \right|_{\mathrm{other}}
+	= \sum\limits_{i=1}^n\dot{B}_{ij} 
+	- \dot{B}_{j}
+	- \dot{B}_{waste,j0}
+	+ \dot{Q}_{j0},
+\end{equation}
+
+\noindent{}but this approach would require independent knowledge of the 
+embodied energy of all inter-sectoral material transfers in the entire economy.
+
+At present, this situation appears to be a catch-22. 
+Clearly, further work focused on estimating the relative magnitudes of 
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
 $\vec{T}_{1}$, and $\dot{\vec{B}}_{waste}$ 
 will benefit energy analysts who utilize the I-O method.
@@ -243,29 +273,31 @@ such that
 
 \noindent{}With the above definition, 
 the scrap rate for resources could be expressed as
-$(1~-~\eta_{\dot{R}}) \dot{R}$.
+$(1~-~\eta_{\dot{R}}) \sum\limits_{i=1}^{n} \dot{R}_{ij}$.
 
 Furthermore, one could assume that the rate
 of short-lived materials ($\dot{S}$) used by a sector could be given as a 
 fraction of the resource ($\dot{R}$) use rate such that:
 
 \begin{equation}
-	\xi_{\dot{S},j}
-	\equiv \frac{\dot{S}_{j0}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
-\end{equation} \nomenclature[x]{$\xi_{\dot{S}}$}{ratio of short-lived material
+	\rho_{\dot{S},j}
+	\equiv \frac{\dot{S}_{j0}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}
+	= \frac{\sum\limits_{i=1}^{n} \dot{S}_{ij}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
+\end{equation} \nomenclature[r]{$\rho_{\dot{S}}$}{ratio of short-lived material
 flow to resource inputs [kg/kg]}
-
-\noindent{}Resource-intensive sectors are expected to have small values of $\xi_{\dot{S}}$,
-but service sectors would have large values of of $\xi_{\dot{S}}$.
 
 With the above definitions, the waste resource rate from an economic sector
 can be given as
-$(1 - \eta_{\dot{R}_{j}} + \xi_{\dot{S},j}) \sum\limits_{i=1}^{n} \dot{R}_{ij}$,
-in units of mass per time.
-The energy embodied in the waste materials would need to be estimated
-from the energy embodied in the incoming resource and short-lived material flows.
 
-However, it is arguable that the embodied energy content 
+\begin{equation}
+	\dot{R}_{j0} + \dot{S}_{j0}
+	= (1 - \eta_{\dot{R}_{j}} + \rho_{\dot{S},j}) \sum\limits_{i=1}^{n} \dot{R}_{ij}.
+\end{equation}
+
+\noindent{}The embodied energy in the waste materials would need to be estimated
+from the embodied energy of the incoming resource and short-lived material flows.
+
+However, it could be argued that the embodied energy content 
 of waste from the production process should be 
 assigned to the products of a sector.\footnote{This approach 
 is similar to assigning waste heat energy from an
@@ -433,13 +465,13 @@ In times of economic decline (such as occurred in post-colonial Africa),
 $GDP$ may decrease 
 while the stock of energy embodied in the economy ($\vec{B}_{K}$) increases 
 due to foreign aid focused on infrastructure enhancement.
-**** May need a better example here.
-Did this occur for any country in post-colonial Africa? 
+**** We may want a better example here.
+Did this actually occur for any country in post-colonial Africa? 
 Are there other examples or GDP and capital stock 
 moving in opposite directions? --MKH ****
 
 A second possible measure of economic ``development'' is another \emph{stock}, 
-wealth ($X_{i}$):
+wealth:
 
 \begin{equation} \label{eq:Dev_Integral_Wealth}
 	X_{i}(t) 
@@ -497,7 +529,7 @@ of the depreciation ($\hat{\bm{\gamma}}_{K}$)
 and waste ($\dot{\vec{B}}_{waste}$) terms. 
 Equation~\ref{eq:matrix_leontief}:
 
-\begin{equation} \label{eq:matrix_leontief}
+\begin{equation}
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}

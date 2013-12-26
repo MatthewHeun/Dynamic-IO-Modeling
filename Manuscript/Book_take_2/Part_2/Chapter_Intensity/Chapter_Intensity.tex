@@ -479,7 +479,7 @@ in vector notation as
 								of sector energy intensities [J/\$]}
 								
 \begin{equation} \label{eq:waste_vec_def}
-	\dot{\vec{B}}_{waste} 
+	\vec{B}_{waste} 
 	=
 	\begin{Bmatrix}
 		\dot{B}_{waste,{20}}	\\
@@ -495,7 +495,7 @@ in vector notation as
 		\dot{B}_{\dot{S}_{20}}	\\
 		\dot{B}_{\dot{B}_{30}}	\\
 	\end{Bmatrix},
-\end{equation} \nomenclature[B]{$\dot{\vec{B}}_{waste}$}{column vector 
+\end{equation} \nomenclature[B]{$\vec{B}_{waste}$}{column vector 
 								of waste embodied energy from resource ($\dot{R}$)
 								and short-lived material ($\dot{S}$) flow [J/s]}
 
@@ -543,7 +543,7 @@ compactly as
 	+ \vec{T}_{1}
 	+ \vec{X}_{t}^{\mathrm{T}}\bm{\varepsilon} 
 	- \hat{\vec{X}}\bm{\varepsilon}
-	- \dot{\vec{B}}_{waste}
+	- \vec{B}_{waste}
 	- \hat{\bm{\gamma}}_{K} \vec{B}_{K}.
 \end{equation}
 
@@ -554,7 +554,7 @@ compactly as
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\bm{\varepsilon} 
-	- \dot{\vec{B}}_{waste}
+	- \vec{B}_{waste}
 	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}.
 \end{equation}
 
@@ -586,7 +586,7 @@ to be recast as
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
-	- \dot{\vec{B}}_{waste}
+	- \vec{B}_{waste}
 	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}.
 \end{equation}
 
@@ -614,7 +614,7 @@ total energy inputs from society to the economy ($\vec{T}_{1}$),
 sector outputs ($\hat{\vec{X}}$), 
 sector input-output ratios ($\vec{A}$), 
 sector energy intensities ($\bm{\varepsilon}$), 
-energy embodied in wastes from the economy ($\dot{\vec{B}}_{waste}$),
+energy embodied in wastes from the economy ($\vec{B}_{waste}$),
 and physical depreciation rates of capital stock ($\hat{\bm{\gamma}}_{K}\vec{B}_{K}$). 
 In theory, the transaction matrix ($\vec{X}_{t}$) is not required 
 if the input-ouput matrix ($\vec{A}$) is known, 
@@ -634,7 +634,7 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 \begin{equation} \label{eq:epsilon_derivation_1}
 	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \bm{\epsilon}
 	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
-	+ \dot{\vec{B}}_{waste}
+	+ \vec{B}_{waste}
 	+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
 	- \vec{E}_{0}
 	- \vec{T}_{1} 
@@ -647,7 +647,7 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 	= {\left[ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \right]}^{-1}
 		\left[
 			\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
-			+ \dot{\vec{B}}_{waste}
+			+ \vec{B}_{waste}
 			+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
 			- \vec{E}_{0}
 			- \vec{T}_{1} 
@@ -669,7 +669,7 @@ from Formula 6.2, p. 308 in Beyer~\cite{Beyer:1991vd}
 	= {(\vec{A}^{\mathrm{T}} - \vec{I})}^{-1} {\hat{\vec{X}}}^{-1} 
 		\left[
 			\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
-			+ \dot{\vec{B}}_{waste}
+			+ \vec{B}_{waste}
 			+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
 			- \vec{E}_{0}
 			- \vec{T}_{1} 
@@ -682,7 +682,7 @@ are $(\vec{A}^{\mathrm{T}} - \vec{I})$ and
 $
 \left[
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
-	+ \dot{\vec{B}}_{waste}
+	+ \vec{B}_{waste}
 	+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
 	- \vec{E}_{0}
 	- \vec{T}_{1} 
@@ -696,7 +696,7 @@ on the right side of Equation~\ref{eq:epsilon_derivation_3} by $-1$ to obtain
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
-				- \dot{\vec{B}}_{waste}
+				- \vec{B}_{waste}
 				- \hat{\bm{\gamma}}_{K}\vec{B}_{K}
 		\right].
 \end{equation}
@@ -711,6 +711,7 @@ We do so in the following section.
 
 %%%%%%%%%% Example C %%%%%%%%%%
 \section{The effect of physical depreciation}
+\label{sec:depreciation}
 %%%%%%%%%%
 
 There has been some attempt in the literature to 
@@ -760,13 +761,13 @@ factors such as growth that are exclusive of physical depreciation as follows:
 \end{equation}
 
 \noindent{}When physical depreciation occurs,
-$\hat{\gamma}_{K,i} B_{K_{i}} > 0$ and 
+$\gamma_{K,i} B_{K_{i}} > 0$ and 
 $\left. \frac{\mathrm{d}B_{K_{i}}}{\mathrm{d}t} \right|_{\mathrm{depreciation}} < 0$.
 To be specific,
 
 \begin{equation} \label{eq:dB_dt_dep_equals_dep}
 	\left. \frac{\mathrm{d}B_{K_{i}}}{\mathrm{d}t} \right|_{\mathrm{depreciation}} 
-	+ \hat{\gamma}_{K,i} B_{K_{i}}
+	+ \gamma_{K,i} B_{K_{i}}
 	= 0.
 \end{equation}
 
@@ -779,7 +780,7 @@ into Equation~\ref{eq:epsilon_leontief_with_A} and extending to matrix notation 
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
-				- \dot{\vec{B}}_{waste}
+				- \vec{B}_{waste}
 		\right].
 \end{equation}
 
@@ -795,7 +796,7 @@ sector embodied energy accumulation rates
 exclusive of the effects of physical
 depreciation~$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
 and the waste rate of embodied energy due to scrapped resources and short-lived material flows
-($\dot{\vec{B}}_{waste}$).
+($\vec{B}_{waste}$).
 Again, the transaction matrix\index{transaction matriux} ($\vec{X}_{t}$) 
 is not required for estimating the energy intensity 
 of economic sectors ($\bm{\varepsilon}$)
@@ -805,22 +806,8 @@ knowledge of input-output matrix ($\vec{A}$)
 would be derived from the transaction matrix ($\vec{X}_{t}$),
 as shown in Appendix~\ref{chap:Estimating_A}.
 
-Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
-is an important result that is directly comparable with the I-O literature,
-and we will do so in Chapter~\ref{chap:implications}.
-But first, the following section discusses each of the factors in 
-Equation~\ref{eq:epsilon_leontief_depreciation_simplification}.
-
-
-%%%%%%%%%% Example C %%%%%%%%%%
-\section{Factors in Equation~\ref{eq:epsilon_leontief_depreciation_simplification}}
-%%%%%%%%%%
-
-**** Need to edit the rest of this section heavily when 
-we settle on the form of the depreciation terms. ****
-
 Table~\ref{tab:embodied_energy_accumulation_factors} 
-describes the importance of the terms in 
+describes the importance of each term in 
 Equation~\ref{eq:epsilon_leontief_depreciation_simplification}. 
 
 \begin{table}
@@ -875,48 +862,53 @@ affecting the energy intensity of economic output ($\vec{\bm{\varepsilon}}$).}
 \label{tab:embodied_energy_accumulation_factors}
 \end{table}
 
-The following section examines energy intensity 
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+is an important result that is directly comparable with the I-O literature,
+and we will do so in Chapter~\ref{chap:implications}.
+But first, the following section examines energy intensity 
 in the context of our running example, the auto industry.
-
 
 %%%%%%%%%% Intensity: Auto industry example %%%%%%%%%%
 \section{Energy intensity of the auto industry}
 \label{sec:intensity_auto}
 %%%%%%%%%%
 
-***** Matt complete this section. Refer to Costanza (1980) and (1984)
-for discussion of energy intensity that assumed steady-state.
-Not the need for additional data on embodied energy. 
-This is a bit of a catch-22. Need one of ((dB/dt and Bj0) or epsilon) to determine
-the other. But, historically, dB/dt and Bj0 have been assumed 0. 
-Does the data even exist?
-Stopped collecting satellite account data in 2000?
-*****
-
-Equation~\ref{eq:epsilon_leontief_with_A} shows 
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification} shows 
 that it is possible to estimate the energy intensity 
 of products of economic sectors using input-putput data.\footnote{For a discussion
-of differences between Equation~\ref{eq:epsilon_leontief_with_A} and
-similar equations in the literature, 
-see Section~\ref{sec:estimating_epsilon-implications_chapter}.}
+of differences between Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
+and similar equations in the literature, 
+see Appendix~\ref{chap:Casler}.}
 Costanza~\cite{Costanza:1980ww} was among the first to estimate 
 the energy intensity of economic sectors of the U.S.\ economy.
 Unfortunately, the energy intensity 
-of the Motor Vehicles and Equipment sector (63) was not reported.
+of the Motor Vehicles and Equipment sector (63) was not reported
+in~\cite{Costanza:1980ww}.
 Later, Costanza and Herendeen~\cite{Costanza:1984tq} re-estimated
 energy intensity and reported the energy intensity 
-of all 87 Bureau of Economic Affairs\index{Bureau of Economic Affairs} 
+of outputs from all 87 Bureau of Economic Affairs\index{Bureau of Economic Affairs} 
 (BEA) sectors.
 The energy intensity of the Motor Vehicles and Equipment sector (63) 
-was reported as\footnote{The values given here are the averages of the 
+was found to be\footnote{The values given here are the average of the 
 DIRECT and DEC methods of accounting for energy inputs. 
+The percentage difference between energy intensity estimates
+for the DIRECT and DEC methods amounts
+to less than 10\% in all cases.
 See Section~\ref{sec:energy_input_vector} for more details.} 
-$1.1\times10^{5}$ BTU/\$ (for 1963),
-$9.8\times10^{4}$ BTU/\$ (1967), and
-$9.8\times10^{4}$ BTU/\$ (1972).
-**** Actually do the average calculations and report here. ****
+$1.10\times10^{5}$ BTU/\$ (for 1963),
+$1.05\times10^{5}$ BTU/\$ (1967), and
+$9.81\times10^{4}$ BTU/\$ (1972).
 
-
+However, the Costanza results~\cite{Costanza:1984tq} 
+(and many others in the literature)
+assume negligible energy input from society 
+(which is probably a good assumption for the U.S.), 
+steady-state economic conditions with negligible accumulation 
+of embodied energy in economic sectors 
+(which probably didn't exist in the U.S. in the late 1960s), and 
+negligible energy embodied in wastes (which is untrue).
+See Section~\ref{sec:Implications_for_IO} for a complete discussion
+of the importance of these assumptions.
 
 
 %%%%%%%%%% Intensity: Summary %%%%%%%%%%
