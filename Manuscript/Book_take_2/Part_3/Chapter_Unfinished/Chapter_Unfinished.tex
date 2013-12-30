@@ -36,10 +36,53 @@ There is much unfinished business.
 \label{sec:Data}
 %%%%%%%%%%
 
-We need more data. 
+At several points in this manuscript,
+we have noted the need for additional data.
+In particular, Chapter~\ref{chap:intensity} identified the need
+for a method of independently determining of the rate of embodied energy 
+accumulation in capital stock for the purposes of 
+estimating the energy intensity of economic products,
+especially for rapidly industrializing economies.
+Chapter~\ref{chap:intensity} also noted the need to collect
+data on human and draught animal physical work input to 
+sectors of economies, espeically for those economies where 
+muscle work is on the same order of magnitude 
+as fossil fuel energy input.
 
-Stopped collecting satellite account data in 2000?
+Unfortunately, the U.S.\ stopped collecting 
+satellite account data in 2000. 
+Beyond the U.S., few countries collect and disseminate
+the kind of data required as inputs to the framework
+developed herein.
 
+In Chapter~\ref{chap:intro}, we indicated that this book was 
+about ``counting'' materials, energy, and value 
+as each flows through economies.  
+Unfortunately, unless data on these flows 
+is collected and disseminated routinely, 
+such counting will be difficult to do well.
+The adage ``you can't control what you don't measure''
+seems appropriate here. 
+As the world confronts significant challenges
+with regard to material and energy supplies in the coming years,
+it will be impossible to make wise decisions about
+which materials to use,
+which energy sources to develop, and 
+which products to incentivize.
+
+Another adage, ``we count what we value and we value what we count,''
+points out that we are not presently valuing highly enough
+the important flows of which our economies are comprised.
+We add our voices to those encouraging governments and 
+institutions to collect high-quality data on material 
+and energy flows.
+**** Becky, are there references that call for a renewed focus on 
+collecting satellite account data? 
+We should point to those references here. ****
+ 
+**** Becky: review the above paragraphs.
+Can you provide additional context on the decision
+to stop this data collection? ****
 
 
 %%%%%%%%%% Metabolic Economy Models %%%%%%%%%%
@@ -65,7 +108,7 @@ Second Law of Materials?
 \label{sec:make-use}
 %%%%%%%%%%
 
-The intersection between our materials and energy accounting framework 
+The intersection between our materials, energy, and value accounting framework 
 and the I-O literature has been developed under the assumption 
 that each economic sector makes a single product ($\dot{P}$).
 In particular, the matrix mathematics of Chapter~\ref{chap:intensity}
@@ -79,7 +122,7 @@ To do so, both ``make'' and ``use'' data are employed.
 We decided to leverage the older,
 single-product formulation of the I-O method
 for the purposes of simplicity. 
-The materials and energy accounting framework
+The materials, energy, and value accounting framework
 presented herein is more easily understood 
 without the complexity of the ``make-use'' formulation 
 of the I-O method.
@@ -93,37 +136,53 @@ to the ``make-use'' formulation of the I-O method.
 %%%%%%%%%%
 
 Consistent with traditional I-O methods, 
-the derivation presented above counts energy at the point of inflow to the economy. 
+the derivation of the materials, energy, and value framework
+presented herein counts energy at the point of inflow to the economy. 
 That is, elements of the energy input vector to the economy
-($\vec{E}$) are zero except for those sectors 
+($\vec{E}_{0}$) are zero except for those sectors 
 that receive energy directly from the Earth. 
-With the traditional approach, 
-energy input to energy sectors is non-zero, 
-and energy input to non-energy sectors is zero. 
-So, in the two-sector example C above, 
-$\dot{E}_{14} = 0$ and $\dot{E}_{13} \neq 0$. 
+So, in Figure~\ref{fig:C_energy} from Example~C, 
+$\dot{E}_{03} = 0$ and $\dot{E}_{02} \ge 0$. 
 
 Costanza (1984) suggests an alternative approach, 
 namely to count energy input to the economy 
 at the point of conversion to useful work. 
-Theoretical justification for this direct energy conversion~(DEC) 
+Theoretical justification for Costanza's Direct Energy Conversion~(DEC) 
 approach comes from both thermodynamic and economic considerations. 
 The thermodynamic justification derives from the purpose 
 of energy consumption in an economy, 
 namely to produce useful work. 
 If energy flows \emph{through} a sector, 
 it should not be counted ``against'' that sector: 
-only energy that is converted to useful work \emph{in} 
-the sector should be counted against that sector.
-
-**** Also, discuss the ``useful work'' ideas of Ayres and Warr. ****
-
+only energy that is converted to useful work \emph{within} 
+a sector should be counted against that sector.
 The economic justification derives 
-from the typical treatment of transportation sectors of the economy. 
-****** More here. See Costanza (1984) for the transportation analogy. ******
+from the typical treatment of transportation sectors of the economy.
+Costanza notes:
 
-The DEC approach implicitly redefines energy intensity 
-to be the required amount of fossil fuel energy to produce a unit of economic output. 
+\begin{quote}
+	The primary energy sectors functions are like the transportation sectors, 
+	which alse require special treatment in I-O analysis 
+	based on the difference between the services they provide 
+	and their physical inputs and outputs. 
+	If a strictly physical interpretation were applied to the transportation sectors, 
+	they would receive almost all goods produced in the whole economy as inputs 
+	and redistribute them as output, 
+	masking information on transfers of goods between sectors. 
+	For this reason, the transportation sectors in I-O analysis 
+	are thought of as providing transportation services 
+	that are purchased by the producing sector, 
+	preserving the connection between the producing and consuming sector 
+	but adding a `transportation margin.' 
+	For analogous reasons, 
+	the primary energy sectors should be thought of as providing a 
+	`transportation service' in moving primary energy 
+	from nature to the consuming sectors. 
+	The DEC energy input vector incorporates this interpretation.\cite{Costanza:1984tq}
+\end{quote}
+
+The DEC approach implicitly redefines energy intensity ($\bm{\varepsilon}$)
+to be the consumed amount of fossil fuel energy to produce a unit of economic output. 
 
 ****** Equation redefining $\varepsilon$ here.
 
