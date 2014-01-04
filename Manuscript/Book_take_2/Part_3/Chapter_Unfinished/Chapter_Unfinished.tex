@@ -415,59 +415,151 @@ in the framework developed herein.
 \section{What is Endogenous?}
 %%%%%%%%%%
 
-Are government and households endogenous? 
-Costanza (1980) was the first to endogenize government and households, 
+There is debate in the literature about whether government and households 
+(so-called ``final consumption'' Figure~\ref{fig:B_materials}) 
+should be endogenous to economic models.
+This debate is a discussion about the appropriate boundary
+for analysis.
+Costanza~\cite{Costanza:1980ww} was the first to endogenize government and households, 
 because households provide services to the economy (labor) 
 in exchange for wages and government provides services 
 to the economy in exchange for taxes, both of which require energy. 
-Costanza (1980) showed that by including government and households 
-as sectors in the economy, 
+Costanza~\cite{Costanza:1980ww} showed that energy intensity results
+are a function of boundary selection. 
+By including government and households 
+as sectors in the model, 
 the variation of energy intensity is significantly reduced 
 across all sectors of the economy. 
 
-**** Idea: Re-derive the energy intensity equation,
-Equation~\ref{eq:epsilon_leontief_depreciation_simplification},
-including Final Demand (1). ****
+The key energy intensity equation in this book
+(Equation~\ref{eq:epsilon_leontief_depreciation_simplification})
+was derived under the assumption that ``final consumption''
+is exogenous to energy intensity calculation.
+However, Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+could be re-derived to endogenize 
+``final consumption.''
+
+The total energy accounting equation for final consumption (1)
+in Figure~\ref{fig:C_total_energy} can be written 
+analogously to Equations~\ref{eq:C-Total_Energy_Sec_2-b}
+and \ref{eq:C-Total_Energy_Sec_3-b} as
+
+\begin{equation} \label{eq:C-Total_Energy_Sec_1-unfinished}
+	\frac{\mathrm{d}B_{K_{1}}}{\mathrm{d}t}
+	= \dot{E}_{01}
+	+ \varepsilon_{1} \dot{X}_{11}
+	+ \varepsilon_{2} \dot{X}_{21}
+	+ \varepsilon_{3} \dot{X}_{31}
+	- \varepsilon_{1} \dot{X}_{1}
+	- \left( \dot{B}_{\dot{R}_{10}} 
+							+ \dot{B}_{\dot{S}_{10}}
+							+ \gamma_{K,1} B_{K_{1}}
+							\right).
+\end{equation}
+
+\noindent{}Furthermore, Equations~\ref{eq:C-Total_Energy_Sec_2-b}
+and \ref{eq:C-Total_Energy_Sec_3-b}
+can be rewritten as 
+
+\begin{equation} \label{eq:C-Total_Energy_Sec_2-unfinished}
+	\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t}
+	= \dot{E}_{02}
+	+ \varepsilon_{1} \dot{X}_{12}
+	+ \varepsilon_{2} \dot{X}_{22}
+	+ \varepsilon_{3} \dot{X}_{32}
+	- \varepsilon_{2} \dot{X}_{2}
+	- \left( \dot{B}_{\dot{R}_{20}} 
+							+ \dot{B}_{\dot{S}_{20}}
+							+ \gamma_{K,2} B_{K_{2}}
+							\right)
+\end{equation}
+
+\noindent{}and
+
+\begin{equation} \label{eq:C-Total_Energy_Sec_3-unfinished}
+	\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t}
+	= \dot{E}_{03}
+	+ \varepsilon_{1} \dot{X}_{13}
+	+ \varepsilon_{2} \dot{X}_{23}
+	+ \varepsilon_{3} \dot{X}_{33}
+	- \varepsilon_{3} \dot{X}_{3}
+	- \left( \dot{B}_{\dot{R}_{30}} 
+							+ \dot{B}_{\dot{S}_{30}}
+							+ \gamma_{K,3} B_{K_{3}}
+							\right).
+\end{equation}
+
+\noindent{}Following the derivation of Chapter~\ref{chap:intensity},
+we can obtain an updated version 
+of Equation~\ref{eq:epsilon_leontief_depreciation_simplification}:
+
+\begin{equation} \label{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}
+	\bm{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E}_{0} 
+				- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
+				- \vec{B}_{waste}
+		\right],
+\end{equation}
+
+\noindent{}wherein ``final demand'' has been endogenized
+(the $\vec{T}_{1}$ term of Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
+has been subsumed into the 
+${(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}$
+term of Equation~\ref{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}),
+and the vectors and matrices of Equations~\ref{eq:B_vec_def}--\ref{eq:gamma_hat_matrix_def}
+and~\ref{eq:A_matrix_def} have been extended to include ``final consumption,'' sector (1).
+
+Future work could estimate energy intensity~($\bm{\varepsilon}$) 
+using Equations~\ref{eq:epsilon_leontief_depreciation_simplification}
+and~\ref{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}
+and updated economic data. 
+Doing so could provide further insight on Costanza's result~\cite{Costanza:1980ww}
+that endogenizing ``final consumption'' reduces variation 
+of energy intensity across all sectors of the economy ($\bm{\varepsilon}$).
 
 
 %%%%%%%%%% The Sun %%%%%%%%%%
 \section{What About the Sun?}
 %%%%%%%%%%
 
-Costanza (1980) includes an option to consider 
+Costanza~\cite{Costanza:1978vd} included an option to consider 
 the sun as an input to the economy, 
 thereby significantly increasing the energy intensity 
 of agricultural sectors and other sectors 
-that depend upon agricultural outputs, 
-however Costanza (1984) did not include 
-the sun.~\cite{Costanza:1980ww,Costanza:1984tq}
+that depend upon agricultural outputs. 
+However later work by Costanza~\cite{Costanza:1984tq,Costanza:1980ww} 
+did not include the solar to the economy.
 Whether solar input to the economy 
 should be considered is probably dependent upon 
 the objectives of the analysis. 
-In this framework, we are primarily interested 
-in the effects of declining energy resource quality in industrial economies, 
+
+The motivation for this book is primarily 
+the effects of declining energy resource quality in industrial economies 
 due to depletion of fossil fuels. 
-As such, inclusion of solar flows is unnecessary. 
-However, expanding the framework to include non-industrial 
-or more agrarian societies would probably require accounting for these flows. 
-Additionally, similar concerns might be raised 
-in dealing with a society that is largely reliant on solar or wind energy.   
-[EARLIER FOOTNOTE ON INDUSTRIAL VS.\ 
-NON-INDUSTRIAL ECONOMIES COULD BE BROUGHT IN HERE---MD]
+As such, inclusion of solar flows is probably unnecessary. 
+However, expanding the framework to include non-industrialized 
+or agrarian societies may require accounting for solar energy flows. 
 
 There are a number of means by which solar flows can be accounted. 
-Short-term solar flows could be accounted 
-in the output of agricultural and forestry sectors, 
-as well as some of the renewable energy producers, 
-such as solar thermal and PV, 
+Solar energy flows could be accounted as short-term flows ($\dot{S}$)
+for agricultural and forestry sectors, 
+as well as 
+solar thermal, 
+solar photovoltaic, 
 wind, 
 ocean thermal, 
 hydro-power, and 
-biomass. 
-This method does not account for longer-term flows 
-of solar energy used to form fossil fuels. 
-The \emph{emergy} accounting method puts all flows 
-in terms of \emph{em}bodied en\emph{ergy} flows.~\cite{Odum1975, Odum1996}
+biomass
+renewable energy production sectors.
+Doing so would not account for longer-term storage
+of solar energy used to form fossil fuels, 
+but fossil fuels are already accounted by the $\dot{E}_{0}$ vector.
+
+An approach that fully-integrates solar energy 
+into an energy framework is \emph{emergy} accounting.
+The emergy method counts \emph{all} material flows 
+in terms of \emph{em}bodied solar en\emph{ergy}.\cite{Odum1975, Odum1996}
 The basic unit of measure is 
 the \emph{em}joule which is often given in terms 
 of flows of solar energy embodied in 
@@ -476,7 +568,7 @@ abbreviated to seJ/J for energy resources,
 or seJ/g for materials. 
 As such, even fossil fuels, e.g.\ coal, 
 extracted from the earth have an embodied energy 
-of around 67,000~seJ/J.~\cite{Brown2004} 
+of around 67,000~seJ/J.\cite{Brown2004} 
 
 
 \bibliographystyle{unsrt}
