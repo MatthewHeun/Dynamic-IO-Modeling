@@ -78,7 +78,7 @@ provides a means of estimating the energy intensity of economic sectors:
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
-				- \dot{\vec{B}}_{waste}
+				- \vec{B}_{waste}
 		\right]. \tag{\ref{eq:epsilon_leontief_depreciation_simplification}}
 \end{equation}
 
@@ -123,7 +123,7 @@ have, to date, and perhaps unwittingly, assumed
 a developed-world ($\vec{T}_{1} \ll \vec{E}_{0}$), 
 steady state economy\index{steady-state economy}
 $\left( \left. \frac{\mathrm{d}\mathrm{\vec{B}}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} 
-= \vec{0} \right)$ with no waste ($\dot{\vec{B}}_{waste} = \vec{0}$).
+= \vec{0} \right)$ with no waste ($\vec{B}_{waste} = \vec{0}$).
 
 The following subsections discuss each of these assumptions in turn.
 
@@ -250,12 +250,12 @@ embodied energy of all inter-sectoral material transfers in the entire economy.
 At present, this situation appears to be a catch-22. 
 Clearly, further work focused on estimating the relative magnitudes of 
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
-$\vec{T}_{1}$, and $\dot{\vec{B}}_{waste}$ 
+$\vec{T}_{1}$, and $\vec{B}_{waste}$ 
 will benefit energy analysts who utilize the I-O method.
 
 
 %+++++++++ Negligible embodied energy in waste ++++++++++
-\subsubsection{Negligible energy embodied in waste ($\dot{\vec{B}}_{waste} = 0$)}
+\subsubsection{Negligible energy embodied in waste ($\vec{B}_{waste} = 0$)}
 %+++++++++
 
 If the energy embodied in waste resources ($\dot{R}$)
@@ -360,7 +360,7 @@ is modified to account for accumulation of embodied energy
 in the economy 
 $\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
 energy supplied by society to the economy ($\vec{T}_{1}$), and
-waste materials ($\dot{\vec{B}}_{waste}$),
+waste materials ($\vec{B}_{waste}$),
 we see that energy demands ($\vec{E}_{0}$) must be calculated differently. 
 Solving Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
 for $\vec{E}_{0}$ gives 
@@ -371,7 +371,7 @@ for $\vec{E}_{0}$ gives
 		(\vec{I} - \vec{A}^{\mathrm{T}})
 		\bm{\varepsilon} 
 	+ \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
-	+ \dot{\vec{B}}_{waste}
+	+ \vec{B}_{waste}
 	- \vec{T}_{1}.
 \end{equation}
 
@@ -385,13 +385,13 @@ Equation~\ref{eq:Leontief_lit_solved_for_E} are too low.
 If energy input from society to the economy ($\vec{T}_{1}$) is significant,
 estimates of energy demand ($\vec{E}_{0}$) using 
 Equation~\ref{eq:Leontief_lit_solved_for_E} will be too high. 
-And, if wastes ($\dot{\vec{B}}_{waste}$) are ignored, 
+And, if wastes ($\vec{B}_{waste}$) are ignored, 
 estimates of energy demand ($\vec{E}_{0}$) using 
 Equation~\ref{eq:Leontief_lit_solved_for_E} will be too low. 
 
 At this time, the relative magnitudes of $\vec{E}_{0}$,
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
-$\dot{\vec{B}}_{waste}$, and $\vec{T}_{1}$ are unknown. 
+$\vec{B}_{waste}$, and $\vec{T}_{1}$ are unknown. 
 Further work to clarify these magnitudes will be beneficial
 for energy analysts who employ the I-O method.
 
@@ -529,7 +529,7 @@ only when depreciation and accumulation terms are included.
 
 One effect of recycling is to reduce the magnitude 
 of the depreciation ($\hat{\bm{\gamma}}_{K}$)
-and waste ($\dot{\vec{B}}_{waste}$) terms. 
+and waste ($\vec{B}_{waste}$) terms. 
 Equation~\ref{eq:matrix_leontief}:
 
 \begin{equation}
@@ -537,13 +537,13 @@ Equation~\ref{eq:matrix_leontief}:
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
-	- \dot{\vec{B}}_{waste}
+	- \vec{B}_{waste}
 	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}\tag{\ref{eq:matrix_leontief}}
 \end{equation}
 
 \noindent{}indicates that 
 recycling of material in an economy, 
-thereby reducing both $\dot{\vec{B}}_{waste}$ 
+thereby reducing both $\vec{B}_{waste}$ 
 and~$\hat{\bm{\gamma}}_{K}$, 
 put upward pressure on the accumulation of energy embodied 
 in capital stock
