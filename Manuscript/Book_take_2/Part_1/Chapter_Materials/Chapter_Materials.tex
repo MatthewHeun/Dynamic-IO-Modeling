@@ -790,7 +790,8 @@ Firstly,
 noticing that the right-hand side
 of Equation~\ref{eq:A_CV_0c} is the negation 
 of the right-hand side of Equation~\ref{eq:A_CV_1c},
-we may say that:
+we may substitute Equation~\ref{eq:A_CV_0c} into 
+Equation~\ref{eq:A_CV_1c} to obtain:
 
 \begin{equation}
 \label{eq:A_K_11}
@@ -904,7 +905,7 @@ from society to accumalate
 within the production sector, 
 therefore $\dot{K}_{12} = 0$.
 
-**** Rewrite this paragraph below ****
+% **** Rewrite this paragraph below ****
 
 
 The short-lived goods flow ($\dot{S}_{12}$)
@@ -923,7 +924,8 @@ we set control volumes around the biosphere\index{biosphere}
 and our two economic sectors, 
 such that the material accounting equations become:
 
-\begin{align} \label{eq:B_CV_0_to_2}
+\begin{align} 
+\label{eq:B_CV_0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
 	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}		&
@@ -932,6 +934,7 @@ such that the material accounting equations become:
 	+ \dot{K}_{10} + \dot{K}_{20} 
 	- \dot{R}_{0} 
 	- \dot{S}_{0} 							\\
+\label{eq:B_CV_1}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}	
 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
@@ -946,6 +949,7 @@ such that the material accounting equations become:
 	- \dot{R}_{10} 
 	- \dot{S}_{10} 
 	- \dot{K}_{10},							\\
+\label{eq:B_CV_2}
 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
@@ -1102,49 +1106,73 @@ for each of the sectors of the economy:
 \end{align}
 
 Substituting
-Equations~\ref{eq:B_S_def},~\ref{eq:B_K_def}~and~\ref{eq:B_P_def}, 
+Equations~\ref{eq:B_R0}-\ref{eq:B_P2_def}
+into Equations~\ref{eq:B_CV_0}-\ref{eq:B_CV_2}, 
 our balance equations may now be written:
 
 \begin{align} \label{eq:B_CV_0_to_2_b}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
-	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}		
-	& = \dot{R}_{10} + \dot{R}_{20} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}		& 
+	= \dot{R}_{10} + \dot{R}_{20} 
 	+ \dot{S}_{10} + \dot{S}_{20} 
-	+ \dot{K}_{10} + \dot{K}_{20} 
 	- \dot{R}_{02} 
 	- \dot{S}_{01}
 	- \dot{S}_{02}, 							\\
-	\dot{K}_{11}
-	& = \dot{R}_{21} 
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}			& 
+	=  \dot{R}_{21}
 	+ \dot{S}_{01} 
 	+ \dot{S}_{21}
+	+ \dot{K}_{21}
+	- \dot{S}_{12}
 	- \dot{R}_{10} 
-	- \dot{S}_{10}
-	- \dot{S}_{12},							\\
-	\dot{K}_{22}
-	& = \dot{R}_{02} 
+	- \dot{S}_{10} 
+	- \dot{K}_{10},								\\
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}			&
+	=  \dot{R}_{02} 
 	+ \dot{S}_{02} 
 	+ \dot{S}_{12} 
 	- \dot{R}_{21}
 	- \dot{S}_{21}
-	- \dot{K}_{21}
+	- \dot{K}_{21}	 
 	- \dot{R}_{20} 
 	- \dot{S}_{20} 
+	- \dot{K}_{20}.
 \end{align}
 
-Combining and simplifying these three equations we arrive at the equation:
+Combining and simplifying these three equations we arrive at the result:
 
 \begin{equation}\label{eq:B_CV_all}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
-	= - \left(\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	= - \left(
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
-	+ \frac{\mathrm{d}K_0}{\mathrm{d}t}\right)
+	\right)
+	- \dot{K}_{10}
+	- \dot{K}_{20}.
 \end{equation}
 
-[NEED TO DOUBLE-CHECK THIS RESULT AS IT IS DIFFERENT TO EQUATION~\ref{eq:A_dK_1/dt}]
+As in Equation~\ref{eq:A_dK_1/dt_b},
+we may define the disposal of man-made capital
+to the biosphere using a depreciation rate,
+such that:
 
+\begin{equation}\label{eq:B_CV_all_a}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	= - \left(
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+	\right)
+	- \gamma_{K_{1}}K_{1}
+	- \gamma_{K_{2}}K_{2}.
+\end{equation}
+
+Equation~\ref{eq:B_CV_all_a} states that 
+the accumulation of man-made capital
+within the production and final consumption sectors
+is equal to the depletion of natural resources
+less the depreciation of man-made capital to the biosphere.
 
 %%%%%%%%%% Materials: Example C %%%%%%%%%%
 \section{Example C: three-sector economy} % chktex 13
