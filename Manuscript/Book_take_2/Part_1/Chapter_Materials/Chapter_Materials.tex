@@ -446,7 +446,10 @@ consisting of resource goods ($\dot{R}_{11}$),
 short-lived goods ($\dot{S}_{11}$) and capital 
 goods\index{capital goods} ($\dot{K}_{11}$)
 which are able to be accumulated at some rate 
-$\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$.
+$\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$ within the
+stock of materials within society\footnote{See
+Section \ref{sec:people_as_stock} for more discussion on
+the inclusion of human beings as societal capital stock.}.
 Waste resources ($\dot{R}_{10}$) and used 
 % **** consumed? --MKH **** 
 % I don't think we want to use ``consumed'' as we are accounting
@@ -513,28 +516,28 @@ Because mass is conserved, we find that:
 	+ \dot{K}_{11},	
 \end{align}
 
-\noindent{}such that Equations~\ref{eq:A_CV_0}~and~\ref{eq:A_CV_1} 
-become:
+% \noindent{}such that Equations~\ref{eq:A_CV_0}~and~\ref{eq:A_CV_1} 
+% become:
 
-\begin{align} \label{eq:A_CV_0a}
-	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
-	=	\dot{R}_{10}		
-	+	\dot{S}_{10}	
-	+	\dot{K}_{10}											
-	-	\dot{R}_{01}											
-	-	\dot{S}_{01}								\\
-\label{eq:A_CV_1a}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
-	= \dot{R}_{01} 
-	+ \dot{S}_{01} 
-	- \dot{R}_{10}				
-	- \dot{S}_{10}				
-	- \dot{K}_{10}.
-\end{align}
+% \begin{align} \label{eq:A_CV_0a}
+% 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+% 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+% 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
+% 	=	\dot{R}_{10}		
+% 	+	\dot{S}_{10}	
+% 	+	\dot{K}_{10}											
+% 	-	\dot{R}_{01}											
+% 	-	\dot{S}_{01}								\\
+% \label{eq:A_CV_1a}
+% 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
+% 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
+% 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
+% 	= \dot{R}_{01} 
+% 	+ \dot{S}_{01} 
+% 	- \dot{R}_{10}				
+% 	- \dot{S}_{10}				
+% 	- \dot{K}_{10}.
+% \end{align}
 
 Clearly, $\dot{R}_{01} \neq \dot{R}_{10}$ 
 since some resources are converted into
@@ -568,8 +571,6 @@ such that:
 	\neq 0.
 \end{equation}
 
-
-
 %****BRH says, shouldn't this word be
 %"accounting" -- not accumulation -- given that is what we
 %called it in the sentence introducing eq. 2.4. Or, should we change "accounting" above to accumulation?
@@ -585,95 +586,49 @@ nor short-lived goods ($S$) accumulate within economic sectors, so we may also s
 	= 0.
 \end{align}
 
-\noindent{}which means that 
-Equations~\ref{eq:A_CV_0a}~and~\ref{eq:A_CV_1a}
-become:
+% \noindent{}which means that 
+% Equations~\ref{eq:A_CV_0a}~and~\ref{eq:A_CV_1a}
+% become:
 
-\begin{align}\label{eq:A_CV_0b}
-	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
-	=	\dot{R}_{10}		
-	+	\dot{S}_{10}	
-	+	\dot{K}_{10}											
-	-	\dot{R}_{01}											
-	-	\dot{S}_{01}								\\
-	\label{eq:A_CV_1b}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
-	= \dot{R}_{01} 
-	+ \dot{S}_{01} 
-	- \dot{R}_{10}				
-	- \dot{S}_{10}				
-	- \dot{K}_{10}.										
-\end{align}
+% \begin{align}\label{eq:A_CV_0b}
+% 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
+% 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+% 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
+% 	=	\dot{R}_{10}		
+% 	+	\dot{S}_{10}	
+% 	+	\dot{K}_{10}											
+% 	-	\dot{R}_{01}											
+% 	-	\dot{S}_{01}								\\
+% 	\label{eq:A_CV_1b}
+% 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
+% 	= \dot{R}_{01} 
+% 	+ \dot{S}_{01} 
+% 	- \dot{R}_{10}				
+% 	- \dot{S}_{10}				
+% 	- \dot{K}_{10}.										
+% \end{align}
 
+% Equation~\ref{eq:A_CV_1b} indicates that the accumulation 
+% of capital\index{capital accumulation}\index{accumulation!capital|see{capital accumulation}}
+% within society is the imbalance 
+% between the flow of materials pulled from the biosphere\index{biosphere}
+% ($\dot{R}_{01} + \dot{S}_{01}$) and the 
+% flow rate of materials disposed back to the biosphere 
+% ($\dot{R}_{10} + \dot{S}_{10} + \dot{K}_{10}$). 
 
-
-Equation~\ref{eq:A_CV_1b} indicates that the accumulation 
-of capital\index{capital accumulation}\index{accumulation!capital|see{capital accumulation}}
-within society is the imbalance 
-between the flow of materials pulled from the biosphere\index{biosphere}
-($\dot{R}_{01} + \dot{S}_{01}$) and the 
-flow rate of materials disposed back to the biosphere 
-($\dot{R}_{10} + \dot{S}_{10} + \dot{K}_{10}$). 
-Because the only ``capital'' that accumulates in the biosphere\index{biosphere}
-is that which is a waste\index{waste} flow (capital depreciation\index{depreciation!capital})
-from the economy, e.g.\ worn-out machines in the scrap yard, we may say that:
+Because the only ``capital'' that accumulates 
+in the biosphere\index{biosphere}
+is that which is a waste\index{waste} flow 
+(capital depreciation\index{depreciation!capital})
+from the economy,
+e.g.\ worn-out machines in the scrap yard,
+we may say that:
 
 \begin{equation} \label{eq:A_K0_balance}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}		
 	= \dot{K}_{10}
 \end{equation}
 
-We may also say that accumulation of capital in society\footnote{There is an open
-question as to what sort of \emph{stuff} should be included as the capital
-that accumulates within society. 
-Should the material constituting literal
-\emph{human capital}, i.e.~human bodies, be included. 
-If humans are to be
-included within $K_{1}$, the resource needed to produce the necessary capital
-flow ($\dot{K}_{11}$) is food. 
-Food itself represents a large ``resource''
-flow and has a large associated energy content. 
-Additionally, within industrial
-economies, a large amount of 
-energy resources are channeled toward the production of food, meaning that
-the \emph{embodied energy} of food may actually be several times larger than
-the actual energy content of the food itself. 
-Further questions arise. 
-What is the ``product'' of society? 
-A materialistic view might hold that the product of
-society is human bodies and the labor they can accomplish. 
-If so, should
-the agriculture industry be accounted as part of the energy sector becuase its 
-aim is to provide an energy sevice (labor)? 
-For non-industrial, agrarian societies, 
-the proportion of total energy flow comprised by manual (or draught) energy may be
-large. 
-In industrialized societies it may be negligible, however, the energy flows
-necessary to support agriculture may be many times larger than the food energy (and
-certainly many times larger than the labor energy) delivered. 
-Agrarian societies
-are necessarily constrained by the fact that the energy content of the food delivered 
-\emph{must be} greater than the labor (and draught) energy required to produce it.
-Another view is that societal capital ($K_{1}$) includes only man-made capital, 
-i.e.\ items manufactured by humans,
-but not humans themselves. 
-For the purposes of the framework outlined in this book, 
-we shall favor the latter view.
-Other researchers favor the opposing view~\cite{Giampietro2013}
-However,
-the framework presented is general enough to encompass either point of view.
-% **** Refer to Giampietro (who includes stocks of people). ****
-} 
-($K_{1}$) is dependent only on inflows of capital into society ($\dot{K}_{11}$) 
-and depreciation of capital to the biosphere ($\dot{K}_{10}$) such that:
-
-\begin{equation}\label{eq:A_K1_balance}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
-	= \dot{K}_{11}
-	- \dot{K}_{10}
-\end{equation}
 
 Looking deeper at flows of resources and short-lived goods,
 we can make some further observations. 
@@ -719,6 +674,8 @@ we may state that:
 	- \dot{S}_{10}.
 \end{align}
 
+
+
 Substituting equations~\ref{eq:A_K0_balance}~and~\ref{eq:A_K1_balance}
 into equations~\ref{eq:A_CV_0b}~and~\ref{eq:A_CV_1b}, respectively, we obtain:
 
@@ -736,6 +693,18 @@ into equations~\ref{eq:A_CV_0b}~and~\ref{eq:A_CV_1b}, respectively, we obtain:
 	- \dot{R}_{10}				
 	- \dot{S}_{10}.
 \end{align}
+
+
+
+\begin{equation}\label{eq:A_K1_balance}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
+	= \dot{K}_{11}
+	- \dot{K}_{10}
+\end{equation}
+
+We may also say that accumulation of capital in society 
+($K_{1}$) is dependent only on inflows of capital into society ($\dot{K}_{11}$) 
+and depreciation of capital to the biosphere ($\dot{K}_{10}$) such that:
 
 % **** Would we not also say that $\dot{S}_{01} = \dot{S}_{10}$? 
 % The idea of the short-lived materials is that they are ``flow-through.''
