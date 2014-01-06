@@ -16,6 +16,7 @@
 *.nls
 *.lof
 *.lot
+*.out
 
 #
 # Output .pdf files don't need to be updated in the repository
