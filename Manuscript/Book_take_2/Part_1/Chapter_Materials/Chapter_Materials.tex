@@ -448,7 +448,15 @@ goods\index{capital goods} ($\dot{K}_{11}$)
 which are able to be accumulated at some rate 
 $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$ within the
 stock of materials within society\footnote{See
-Section \ref{sec:people_as_stock} for more discussion on
+<<<<<<< HEAD
+<<<<<<< HEAD
+Section~\ref{sec:people_as_stock} for more discussion on
+=======
+Section!\ref{sec:people_as_stock} for more discussion on
+>>>>>>> 8aabfbe420ef86f10877b0efa422037b62fd3c25
+=======
+Section!\ref{sec:people_as_stock} for more discussion on
+>>>>>>> 8aabfbe420ef86f10877b0efa422037b62fd3c25
 the inclusion of human beings as societal capital stock.}.
 Waste resources ($\dot{R}_{10}$) and used 
 % **** consumed? --MKH **** 
@@ -470,7 +478,7 @@ when they are physically depreciated\index{depreciation}.
 
 Drawing control volumes around both the 
 biosphere\index{biosphere}~(0) and society~(1)
-in Figure \ref{fig:A_materials}, 
+in Figure~\ref{fig:A_materials}, 
 we can consruct material accounting equations,
 such that:
 
@@ -549,6 +557,8 @@ we may say that:
 
 \begin{equation}\label{eq:A_dR0_neq_0}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}
+	= \dot{R}_{10}
+	- \dot{R}_{01}
 	\neq 0.
 \end{equation}
 
@@ -568,6 +578,8 @@ such that:
 
 \begin{equation}\label{eq:A_dS0_neq_0}
 	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+	= \dot{S}_{10}
+	- \dot{S}_{01}
 	\neq 0.
 \end{equation}
 
@@ -659,52 +671,57 @@ As such,
 we may state that:
 
 \begin{align}
-\label{eq:A_R1_balance}
+% \label{eq:A_R1_balance}
 	\frac{\mathrm{d}R_1}{\mathrm{d}t}		&
-	= 0
 	= \dot{R}_{01}
 	+ \dot{R}_{11}
 	- \dot{P}_{1}
-	- \dot{R}_{10},							\\
+	- \dot{R}_{10}
+	= 0,										\nonumber	\\
+\label{eq:A_P1a}
+																	&
+	\Longrightarrow 										
+	\dot{P}_{1}
+	= \dot{R}_{01}
+	+ \dot{R}_{11}
+	- \dot{R}_{10}	,										\\									
 \label{eq:A_S1_balance}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}		&
-	= 0
 	= \dot{S}_{01}
 	+ \dot{S}_{11}
-	- \dot{S}_{10}.
+	- \dot{S}_{10}
+	= 0,															\\
+\label{eq:A_S11}
+																	&
+	\Longrightarrow 										
+	\dot{S}_{11}
+	= \dot{S}_{10}
+	- \dot{S}_{01}.
 \end{align}
 
 
 
-Substituting equations~\ref{eq:A_K0_balance}~and~\ref{eq:A_K1_balance}
-into equations~\ref{eq:A_CV_0b}~and~\ref{eq:A_CV_1b}, respectively, we obtain:
+Substituting equations~\ref{eq:A_R0},~\ref{eq:A_S0}~and~\ref{eq:A_K0_balance}
+into equation~\ref{eq:A_CV_0} we obtain:
 
-\begin{align}\label{eq:A_CV_0c}
+\begin{align}\label{eq:A_CV_0a}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}		&	
 	=	\dot{R}_{10}		
 	+	\dot{S}_{10}	
 	-	\dot{R}_{01}											
-	-	\dot{S}_{01},							\\
-	\label{eq:A_CV_1c}
-	\dot{K}_{11}								&
-	= \dot{R}_{01} 
-	+ \dot{S}_{01} 
-	- \dot{R}_{10}				
-	- \dot{S}_{10}.
+	-	\dot{S}_{01},							% \\
+%	\label{eq:A_CV_1c}
+%	\dot{K}_{11}								&
+%	= \dot{R}_{01} 
+%	+ \dot{S}_{01} 
+%	- \dot{R}_{10}				
+%	- \dot{S}_{10}.
 \end{align}
 
 
 
-\begin{equation}\label{eq:A_K1_balance}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
-	= \dot{K}_{11}
-	- \dot{K}_{10}
-\end{equation}
 
-We may also say that accumulation of capital in society 
-($K_{1}$) is dependent only on inflows of capital into society ($\dot{K}_{11}$) 
-and depreciation of capital to the biosphere ($\dot{K}_{10}$) such that:
 
 % **** Would we not also say that $\dot{S}_{01} = \dot{S}_{10}$? 
 % The idea of the short-lived materials is that they are ``flow-through.''
@@ -725,14 +742,14 @@ and depreciation of capital to the biosphere ($\dot{K}_{10}$) such that:
 % say water,
 % is an open question. --MCD ****
 
-Equation~\ref{eq:A_CV_0c} states that the rate of ``accumulation'' 
+Equation~\ref{eq:A_CV_0a} states that the rate of ``accumulation'' 
 (or more accurately depletion) of natural capital ($R_{0}$ and $S_{0}$) 
 is dependent on the rates at which society extracts these materials
 from the biosphere ($\dot{R}_{01}$ and $\dot{S}_{01}$) and the rates
 of disposal of waste materials back to the biosphere ($\dot{R}_{10}$ 
 and $\dot{S}_{10}$). 
 
-Notice however, that although Equation~\ref{eq:A_CV_0c} is true for total mass of materials,
+Notice however, that although Equation~\ref{eq:A_CV_0a} is true for total mass of materials,
 it makes no comparison of the \emph{quality} of these materials.
 Society relies heavily on extracted resources from naturally
 occurring accumulations that are far from equilibrium with their surroundings,
@@ -742,7 +759,10 @@ more energy and other economic factors (labor, capital, money) \emph{must} be
 expended  in material extraction.\cite{Mudd2010} It is likely that the quality
 of flow $R_{01}$ is higher than flow $R_{10}$. If this were not the case,
 $\dot{R}_{10}$ could be easily substituted into the production process (i.e., recycled) thus
-offsetting the need for primary resource extraction. This relationship between 
+offsetting the need for primary resource extraction\footnote{The
+issue of recycling is discussed in more detail in Section~\ref{sec:recycling}.
+The issue of material (and energy) quality is discussed in more detail in 
+Section~\ref{sec:material_and_energy_quality}.}. This relationship between 
 incoming high quality resources and emission of low
 quality waste is a general truth for any thermodynamic process but is especially
 true for open systems operating far from thermodynamic equilibrium (of which every
@@ -754,64 +774,107 @@ energy and materials (entropy).\cite{Schroedinger1947}
 
 % **** I like where they are. Implications drawn from the equations are a good thing. --MKH ****
 
-We may also derive two equations defining the rates of creation and accumulation
-of man-made capital ($\dot{K}_{11}$ and $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$) within
-society. % **** Need to show a bit more where these equations are coming from. I don't get it. --MKH ****
+Substituting equation~\ref{eq:A_S1_balance} 
+into equation~\ref{eq:A_CV_1}, we obtain:
 
-Firstly,
-noticing that the right-hand side
-of Equation~\ref{eq:A_CV_0c} is the negation 
-of the right-hand side of Equation~\ref{eq:A_CV_1c},
-we may substitute Equation~\ref{eq:A_CV_0c} into 
-Equation~\ref{eq:A_CV_1c} to obtain:
-
-\begin{equation}
-\label{eq:A_K_11}
-	\dot{K}_{11}
-	= - \left(
-	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-	\right).
-\end{equation}
-
-We may now combine Equation~\ref{eq:A_K_11} with
-Equation~\ref{eq:A_K1_balance} to state:
-
-\begin{equation}
-\label{eq:A_dK_1/dt}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
-	= - \left(
-	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-	\right)
+\begin{align}\label{eq:A_CV_1b}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
+	= \dot{R}_{01} 
+	+ \dot{R}_{11}
+	+ \dot{K}_{11}
+	- \dot{P}_{1}				
+	- \dot{R}_{10}				
 	- \dot{K}_{10}.
+\end{align}
+
+Since we have two different formulations for $\dot{P}_{1}$,
+represented by equations~\ref{eq:A_P1}~and~\ref{eq:A_P1a}, 
+we may substitute either into equation~\ref{eq:A_CV_1b}.
+Substituting equation~\ref{eq:A_P1a} 
+into equation~\ref{eq:A_CV_1b}, we obtain:
+
+\begin{equation}\label{eq:A_CV_1c}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
+	= \dot{K}_{11}
+	- \dot{K}_{10}
 \end{equation}
 
-Equation~\ref{eq:A_K_11} states that the rate of production of man-made capital
-($\dot{K}_{11}$) is equal to the rate of depletion of natural capital. 
-Equation~\ref{eq:A_dK_1/dt} states that the rate of accumulation of man-made capital
-($\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$) is equal to the rate of depletion of natural
-capital \emph{less} depreciation of man-made capital back to the biosphere.
-This depreciation term may be rewritten as the total stock
+\noindent{}which tells us that accumulation of capital in society 
+($K_{1}$) is dependent only on inflows of capital into society ($\dot{K}_{11}$) 
+and depreciation of capital to the biosphere ($\dot{K}_{10}$).
+
+Substituting instead equation~\ref{eq:A_P1} 
+into equation~\ref{eq:A_CV_1b}, we obtain:
+
+ \begin{align}\label{eq:A_CV_1d}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
+	= \dot{R}_{01} 
+	- \dot{R}_{10}
+	- \dot{S}_{11}
+	- \dot{K}_{10}.
+\end{align}
+
+The last depreciation term\footnote{This
+depreciation term will be discussed in more depth in
+Section~\ref{sec:depreciation}.} 
+($\dot{K}_{10}$)
+may be rewritten as the total stock
 of man-made capital ($\dot{K}_{1}$) 
-multiplied by some depreciation rate ($\gamma_{K}$) in units of
-inverse time (e.g.\ 1/year), such that we may re-write
-Equation~\ref{eq:A_dK_1/dt} as:
+multiplied by some depreciation rate ($\gamma_{K_{1}}$)
+in units of inverse time (e.g.\ 1/year),
+such that equation~\ref{eq:A_CV_1d} becomes:
 
-\begin{equation} \label{eq:A_dK_1/dt_b}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
-	= - \left(
-	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-	\right)
-	- \gamma_{K}K_{1}.
-\end{equation}
+ \begin{align}\label{eq:A_CV_1e}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
+	= \dot{R}_{01} 
+	- \dot{R}_{10}
+	- \dot{S}_{11}
+	- \gamma_{K_{1}}{K}_{1}.
+\end{align}
 
-This depreciation term will be discussed in more depth in
-Chapter~\ref{chap:embodied_energy}.
+\noindent{}which we may rearrange as:
+
+ \begin{align}\label{eq:A_CV_1f}
+	\dot{R}_{01} 
+	- \dot{R}_{10}												&
+	= 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	+ \dot{S}_{11}
+	+ \gamma_{K_{1}}{K}_{1}.
+\end{align}
+
+Noticing that the left-hand side
+of Equation~\ref{eq:A_CV_1f} is the negation 
+of the right-hand side of Equation~\ref{eq:A_dR0_neq_0},
+we may rewrite Equation~\ref{eq:A_CV_1f}
+in terms of the accumulation 
+(or more accurately, depletion)
+of natural resources: 
+
+ \begin{align}\label{eq:A_CV_1g}
+	- 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
+	= 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	+ \dot{S}_{11}
+	+ \gamma_{K_{1}}{K}_{1}.
+\end{align}
+
+Equation~\ref{eq:A_CV_1g} tells us that depletion of
+natural resources~$\left(-\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
+are used within society in order to:
+
+\begin{itemize}
+	\item build up societal capital stock 
+	$\left(\frac{\mathrm{d}K_{1}}{\mathrm{d}t}\right)$,
+	\item provide short-lived goods and energy to 
+	run society ($\dot{S}_{11}$), and
+	\item overcome depreciation
+	($\gamma_{K_{1}}{K}_{1}$).
+\end{itemize}
+
+
+
 
 %%%%%%%%%% Materials: Example B %%%%%%%%%%
-\section{Example B: two-sector economy} % chktex 13
+\section{Example~B: two-sector economy} % chktex 13
 \label{sec:B_materials}
 %%%%%%%%%%
 
