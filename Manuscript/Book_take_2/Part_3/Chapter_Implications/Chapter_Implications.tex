@@ -372,8 +372,8 @@ When Equation~\ref{eq:epsilon_leontief_with_A_literature}
 is modified to account for accumulation of embodied energy 
 in the economy 
 $\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
-energy supplied by society to the economy ($\vec{T}_{1}$), and
-waste materials ($\vec{B}_{waste}$),
+waste materials ($\vec{B}_{waste}$), and
+energy supplied by society to the economy ($\vec{T}_{1}$),
 we see that energy demands ($\vec{E}_{0}$) must be calculated differently. 
 Solving Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
 for $\vec{E}_{0}$ gives 
@@ -395,12 +395,12 @@ exclusive of physical depreciation
 $\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$
 is non-zero, estimates of energy demand ($\vec{E}_{0}$) using 
 Equation~\ref{eq:Leontief_lit_solved_for_E} are too low. 
-If energy input from society to the economy ($\vec{T}_{1}$) is significant,
-estimates of energy demand ($\vec{E}_{0}$) using 
-Equation~\ref{eq:Leontief_lit_solved_for_E} will be too high. 
-And, if wastes ($\vec{B}_{waste}$) are ignored, 
+If wastes ($\vec{B}_{waste}$) are ignored, 
 estimates of energy demand ($\vec{E}_{0}$) using 
 Equation~\ref{eq:Leontief_lit_solved_for_E} will be too low. 
+And, if energy input from society to the economy ($\vec{T}_{1}$) is significant,
+estimates of energy demand ($\vec{E}_{0}$) using 
+Equation~\ref{eq:Leontief_lit_solved_for_E} will be too high. 
 
 At this time, the relative magnitudes of $\vec{E}_{0}$,
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$,
@@ -415,10 +415,17 @@ for energy analysts who employ the I-O method.
 %%%%%%%%%%
 
 **** Becky, write a paragraph here about alternative measures of development. 
-Discuss Daly's Genuine Progress Indicator (which include natural capital, Mik to verify)
+Discuss Daly's Genuine Progress Indicator (which includes natural capital, Mik to verify)
 and Gross National Happiness and other. ****
 
-Economic ``development'' is usually ``measured''
+Economic ``development''\footnote{We choose to use the word ``development'' to
+describe expanding economies, despite significant misgivings about the term. 
+The unambiguously positive connotations of the words ``development'' and ``developed''
+fail to capture the nuances of travel along economic development paths:
+there are so many ways in which life experience in ``developed'' countries 
+is both better and worse than life in ``developing'' countries.
+We hope to convey our misgivings by surrounding these words with quotation marks in this text.}
+is usually ``measured''
 by Gross Domestic Product\index{Gross Domestic Product} (GDP).
 With reference to Figure~\ref{fig:C_value}, $GDP$ is calculated by
 
@@ -429,18 +436,16 @@ With reference to Figure~\ref{fig:C_value}, $GDP$ is calculated by
 
 \noindent{}where $n$ is the number of sectors in the economy.
 Equation~\ref{eq:GDP_def} clearly shows that 
-$GDP$ is a \emph{flow} of value.
+$GDP$ is a \emph{flow} of value in units of \$/year.
 
-However, one consequence of increased $GDP$ is often
-increased capital stock ($K$) and associated
-accumulation of embodied energy ($B_K$)
-in economic sectors and society.\footnote{**** Say something about the difference 
-between the flow of GDP and the stock of capital. Which is more important to count?
-Or should we track both? Admit that we're not comfortable using
-the term development or developed. ****} 
+As a given economy moves along its ``development'' path,
+sectors within the economy accumulate capital stock 
+($K$, typically expressed in units of dollars)
+and associated embodied energy 
+($B_{K}$, expressed in units of joules).
 If we turn this around, 
 accumulation of embodied energy in economic sectors and society 
-could be considered a \emph{proxy} for development.\footnote{Embodied energy 
+could be considered a \emph{proxy} for ``development.''\footnote{Embodied energy 
 as a proxy for development may be overly focused on capital stock, 
 therefore one-dimensional, and reductive, 
 but GDP and other measures are open to similar criticism.}
@@ -457,25 +462,24 @@ of an economy ($\vec{B}_{K}$) could be calculated:
 \noindent{}where $\vec{B}_{K}$ is given by Equation~\ref{eq:B_vec_def}.
 Equation~\ref{eq:Dev_Integral_Economy} clearly shows
 that energy embodied energy in capital stock ($\vec{B}_{K}$) 
-is a \emph{stock}, not a flow. 
-**** Discuss units here to illuminate the stock vs.\ flow issue. ****
+is a \emph{stock} (in units of joules), not a flow.
 
 The behavior of $\vec{B}_{K}$ with respect to
-$\left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}}$ 
+$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$ 
 is vitally important. 
-An industrialized economy has significantly larger embodied energy ($\vec{B}_{K}$) 
-than an agrarian economy, and, thus, 
-the outflow rate of embodied energy 
-due to depreciation ($\hat{\bm{\gamma}}_{K}\vec{B}_{K}$) will be larger, too. 
-**** Discuss this in terms of the development path followed in the West for a given economy. ****
+As an economy transitions from agrarian to industrialized, 
+its capital stock ($K$) and associated embodied energy ($B_{K}$)
+grows ever larger. 
+The outflow of depreciated capital stock and its associated embodied energy 
+will occur at a faster rate, too.
 As increasingly large amounts of energy are embodied 
-in the capital stock of an economy, 
+in the capital stock of an economy ($B_{K}$), 
 Equation~\ref{eq:matrix_leontief} shows that
 increasingly large energy extraction rates ($\vec{E}_{0}$) 
 are required to maintain capital stock 
 in the sectors of the economy
-by offsetting the effects of depreciation 
-$\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
+to offset the effects of depreciation 
+($\hat{\bm{\gamma}}_{K} \vec{B}_{K}$),
 assuming that $\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \ge 0$ 
 is desired. 
 
@@ -487,18 +491,22 @@ in the same direction at all times.
 Industrialized economies may experience $GDP$ growth while 
 the stock of embodied energy in the economy ($\vec{B}_{K}$) remains nearly constant,
 because the economy is running circles to overcome the effects of depreciation.
-In times of economic decline (such as occurred in post-colonial Africa),
-$GDP$ may decrease 
+There can be a time lag between movements of GDP and $\vec{B}_{K}$, too.
+At the beginning of an economic downturn (defined as prolonged GDP reduction),
+capital stock and associated embodied energy ($\vec{B}_{K}$) will remain approximately constant:
+GDP moves but $\vec{B}_{K}$ doesn't.
+But as the GDP decline continues, 
+maintenance flows for capital stock will be reduced
+and depreciation will overtake maintenance leading to a decline in $\vec{B}_{K}$. 
+If economic decline is associated with significant external 
+infrastructure investment (such as occurred in post-colonial Africa),
+GDP may decrease 
 while the stock of energy embodied in the economy ($\vec{B}_{K}$) increases 
 due to foreign aid focused on infrastructure enhancement.
 **** We may want a better example here.
+Do foreign aid inflows count toward GDP?
 Did this actually occur for any country in post-colonial Africa? 
-Are there other examples or GDP and capital stock 
-moving in opposite directions? --MKH ****
-
-**** Discuss the above this in terms of a phase lag, 
-between value crash, maintenance flows decline, 
-then infrastructure will decline. ****
+--MKH ****
 
 A second possible measure of economic ``development'' is another \emph{stock}, 
 wealth:
@@ -510,10 +518,10 @@ wealth:
 \end{equation}
 
 \noindent{}where $i=1$ for societal wealth 
-and $i \in [2,n]$ for corporate wealth.
+and $i \in [2,n]$ for corporate wealth, both measured in dollars.
 In fact, capital (as represented by energy embodied in infrastructure, $\vec{B}_{K}$) and 
 financial resources (as represeted by $X_{2 \ldots n}$) 
-are complimentary factors for economic processes. 
+are complimentary factors of production for economic processes. 
 But, we can go further than linking capital with financial resources.
 If capital~($\vec{B}_{K}$) is to be useful, we need financial resources
 or currency~($\dot{X}$) to 
@@ -533,28 +541,28 @@ Each of the factors discussed above
 ($\dot{X}$, $\vec{B}_{K}$, $\dot{E}$, $\dot{R}$, and $\vec{T}_{1}$)
 is necessary, but not sufficient, for economic growth.
 
-**** Consider moving this paragraph to the end of the Chapter. ****
-As any economist will say, 
-there are many pieces of unfinished business here:
-whether ``growth'' should be measured by a stock or a flow, 
-various alternative measures of economic ``growth,'' 
-and the roles of currency, capital stock, energy, resources, and labor
-in economic processes
-are overlapping and complementary areas of inquiry.
+Our framework serves highlight to several issues in economic ``growth.'' 
+Should it be measured by a stock or a flow? 
+Which measure is most appropriate? 
+What roles do currency, capital stock, energy, resources, and labor
+play in economic processes?
+These are overlapping and complementary areas of inquiry.
 We encourage further research in all of these areas.
 
 
 %%%%%%%%%% Implications %%%%%%%%%%
 \section{Implications for recycling, reuse, and dematerialization}
+\label{sec:recycling}
 %%%%%%%%%%
 
 Dematerialization is the idea that economic activity can be unlinked 
 from material or energy demands.\cite{FischerKowalski:2011uo} 
 One method for dematerializing an economy 
-is reuse and recycling of materials.\footnote{**** MKH discuss technological 
-substitution as another factor in dematerialzation. 
-Substitution toward information and services and away from production
-of material goods. ****}
+is reuse and recycling of materials.\footnote{Another method 
+of dematerialization is 
+substitution away from production of material goods 
+and toward information and services
+in an economy.}
 The impact of recycling can be seen in the I-O formulation 
 only when depreciation and accumulation terms are included. 
 
@@ -579,6 +587,8 @@ and~$\hat{\bm{\gamma}}_{K}$,
 put upward pressure on the accumulation of energy embodied 
 in capital stock
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$. 
+Berry and Fells found that recycling one automobile
+would result in 12,640 kW-hr of free energy savings.\cite[p. 15]{Berry:1973vo}
 
 **** Mik: take a shot a rewriting. ***** 
 Recycling has a mixed effect on energy demand ($\vec{E}_{0}$). 
