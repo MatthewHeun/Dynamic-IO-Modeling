@@ -282,7 +282,7 @@ But, one might develop a metric for the resource material effiency of an
 economic sector ($\eta_{\dot{R}}$)\nomenclature[h]{$\eta_{\dot{R}}$}{resource efficiency [kg/kg]} 
 such that
 
-\begin{equation}
+\begin{equation} \label{eq:manufacturing_effiency}
 	\eta_{\dot{R},j}
 	\equiv \frac{\dot{P}_{j}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
 \end{equation}
@@ -290,6 +290,28 @@ such that
 \noindent{}With the above definition, 
 the scrap rate for resources could be expressed as
 $(1~-~\eta_{\dot{R}}) \sum\limits_{i=1}^{n} \dot{R}_{ij}$.
+Allwood et.\ al.~\cite[p. 193]{allwood2012sustainable} 
+used a process-based approach to manufacturing efficiencies
+for metals used in manufacturing. 
+The data are summarized in Table~\ref{tab:scrap_rates}.
+
+\begin{table}
+\caption{Manufacturing efficiencies (Equation~\ref{eq:manufacturing_effiency}) 
+for selected manufactured goods.\cite{allwood2012sustainable}}
+\begin{center}
+\begin{tabular} {r @{\hspace{2em}} l}
+	\toprule
+	Product & Manufacturing Efficiency [\%] \\
+	\midrule
+	Steel I-beam             & 90 \\
+	Car Door Panel           & 50 \\
+	Aluminium Drink Can      & 50 \\
+	Aircraft Wing Skin Panel & 10 \\
+	\bottomrule
+\end{tabular}
+\end{center}
+\label{tab:scrap_rates}
+\end{table}
 
 Furthermore, one could assume that the rate
 of short-lived materials ($\dot{S}$) used by a sector could be given as a 
@@ -329,11 +351,13 @@ could be modified as
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
-		\right].
+		\right],
 \end{equation}
 
+\noindent{}and the waste rates are unneeded.
+
 Further work focused on estimating values for 
-$\eta_{\dot{S}}$ and $\xi_{\dot{S}}$
+$\eta_{\dot{R}}$ and $\rho_{\dot{S}}$
 and the the energy embodied in waste flows 
 will benefit energy analysts who utilize the I-O method.
 
