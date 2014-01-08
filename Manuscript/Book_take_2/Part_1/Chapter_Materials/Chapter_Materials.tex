@@ -749,18 +749,28 @@ e.g.\ fossil fuel reservoirs or seams of high-grade ore. As these high quality
 material reserves are depleted and society must turn to lower grade reserves, 
 more energy and other economic factors (labor, capital, money) \emph{must} be 
 expended  in material extraction.\cite{Mudd2010} It is likely that the quality
-of flow $R_{01}$ is higher than flow $R_{10}$. If this were not the case,
-$\dot{R}_{10}$ could be easily substituted into the production process (i.e., recycled) thus
+of flow $R_{01}$ is higher than flow $R_{10}$ 
+(e.g.\ overburden from mining operations). 
+If this were not the case,
+$\dot{R}_{10}$ could be easily substituted 
+into the production process (i.e.\ recycled) thus
 offsetting the need for primary resource extraction\footnote{The
-issue of recycling is discussed in more detail in Section~\ref{sec:recycling}.
-The issue of material (and energy) quality is discussed in more detail in 
-Section~\ref{sec:material_and_energy_quality}.}. This relationship between 
+issue of recycling is discussed in more detail in 
+Section~\ref{sec:recycling}.
+The issue of material (and energy) quality 
+is discussed in more detail in 
+Section~\ref{sec:material_and_energy_quality}.}. 
+This relationship between 
 incoming high quality resources and emission of low
-quality waste is a general truth for any thermodynamic process but is especially
-true for open systems operating far from thermodynamic equilibrium (of which every
-living system is an example). Such systems maintain their internal structure by
-importing high quality energy and materials (negentropy) and exporting low quality
-energy and materials (entropy).\cite{Schroedinger1947} 
+quality waste is a general truth 
+for any thermodynamic process but is especially
+true for open systems operating far from 
+thermodynamic equilibrium 
+(of which every living system is an example). 
+Such systems maintain their internal structure by
+importing high quality energy and 
+materials~(negentropy) and exporting low quality
+energy and materials~(entropy)~\cite{Schroedinger1947}.
 
 % ************ these paragraphs may be better in the introduction **************
 
@@ -1029,7 +1039,7 @@ from the biosphere\index{biosphere},
 e.g.\ the flow of photons in sunlight or oxygen into car engines and lungs. 
 We can redefine flows $\dot{S}_{0}$ and $\dot{S}_{1}$:
 
-\begin{equation}\label{eq:B_S_def}
+\begin{equation}\label{eq:B_S0}
 	\dot{S}_{0} 
 	= \dot{S}_{01} + \dot{S}_{02};
 \end{equation}
@@ -1039,18 +1049,18 @@ the balance of resources ($\dot{R}$),
 short-lived materials ($\dot{S}$) and
 capital ($\dot{K}$) within the biosphere:
 
-\begin{align}\label{eq:B_R0}
+\begin{align}\label{eq:B_dR0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
 	= \dot{R}_{10}
 	+ \dot{R}_{20}
 	- \dot{R}_{02},										\\
-\label{eq:B_S0}
+\label{eq:B_dS0}
 	\frac{\mathrm{d}S_{0}}{\mathrm{d}t}	&
 	= \dot{S}_{10}
 	+ \dot{S}_{20}
 	- \dot{S}_{01}
 	- \dot{S}_{02},										\\	
-\label{eq:B_K0}
+\label{eq:B_dK0}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}	&
 	= \dot{K}_{10}
 	+ \dot{K}_{20}.
@@ -1093,7 +1103,7 @@ the production sector (2).
 
 
 From conservation of mass,
-we can also redefine product flows
+we can also define product flows
 $\dot{P}_{1}$ and $\dot{P}_{2}$ as:
 
 \begin{align}
@@ -1183,38 +1193,55 @@ for each of the sectors of the economy:
 \end{align}
 
 Substituting
-Equations~\ref{eq:B_R0}-\ref{eq:B_P2_def}
-into Equations~\ref{eq:B_CV_0}-\ref{eq:B_CV_2}, 
-our balance equations may now be written:
+Equations~\ref{eq:B_R0}-\ref{eq:B_dK0}
+into Equation~\ref{eq:B_CV_0}, 
+we obtain:
 
-\begin{align} \label{eq:B_CV_0_to_2_b}
+\begin{align} \label{eq:B_CV_0a}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}		& 
 	= \dot{R}_{10} + \dot{R}_{20} 
 	+ \dot{S}_{10} + \dot{S}_{20} 
 	- \dot{R}_{02} 
 	- \dot{S}_{01}
-	- \dot{S}_{02}, 							\\
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}			& 
-	=  \dot{R}_{21}
-	+ \dot{S}_{01} 
-	+ \dot{S}_{21}
-	+ \dot{K}_{21}
-	- \dot{S}_{12}
-	- \dot{R}_{10} 
-	- \dot{S}_{10} 
-	- \dot{K}_{10},								\\
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}			&
-	=  \dot{R}_{02} 
-	+ \dot{S}_{02} 
-	+ \dot{S}_{12} 
-	- \dot{R}_{21}
-	- \dot{S}_{21}
-	- \dot{K}_{21}	 
-	- \dot{R}_{20} 
-	- \dot{S}_{20} 
-	- \dot{K}_{20}.
+	- \dot{S}_{02}.
 \end{align}
+
+Substituting Equations~\ref{eq:dR_and_dS_zero},~\ref{eq:B_dS1}~and~\ref{eq:B_dS2}
+into Equations~\ref{eq:B_CV_1}~and~\ref{eq:B_CV_2},
+respectively,
+we obtain:
+
+\begin{align} 
+\label{eq:B_CV_1a}
+	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
+	=  \dot{R}_{11} 
+	+ \dot{R}_{21}
+	+ \dot{K}_{11}
+	+ \dot{K}_{21}
+	- \dot{P}_{1} 
+	- \dot{R}_{10} 
+	- \dot{K}_{10},							\\
+\label{eq:B_CV_2a}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
+	=  \dot{R}_{02} 
+	+ \dot{R}_{22} 
+	+ \dot{K}_{22}
+	- \dot{P}_{2}
+	- \dot{R}_{20} 
+	- \dot{K}_{20},
+\end{align}
+
+
+As in Example~A,
+we again have two definitions for $\dot{P}_{1}$
+(Equations~\ref{eq:B_P1_def}~and~\ref{eq:B_P1a})
+and $\dot{P}_{2}$ 
+(Equations~\ref{eq:B_P2_def}~and~\ref{eq:B_P2a})
+which may be substituted into
+Equations~\ref{eq:B_CV_1}~and~\ref{eq:B_CV_2},
+respectively.
+First, let us substitute Equations~ 
 
 Combining and simplifying these three equations we arrive at the result:
 
