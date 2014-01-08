@@ -1027,7 +1027,12 @@ the material flow that will be embodied within the
 i.e.\ food produced by the agriculture industry
  %[WE NEED TO DISCUSS IF WE WANT TO ACCOUNT IT IN THIS WAY]
 Since no resources flow directly to final consumption 
-from the biosphere\index{biosphere}, we may say:
+from the biosphere\footnote{A counter-example
+to this assumption is the production of food
+outside of the agricultural industry, 
+i.e.\ by households. 
+This may be large in agrarian economies.}
+\index{biosphere}, we may say:
 
 \begin{equation}\label{eq:B_R0}
 	\dot{R}_{0} = \dot{R}_{02}.
@@ -1468,24 +1473,84 @@ Similarly, flows for the other sectors may be written:
 	- \dot{K}_{30}.										
 \end{align}
 
-Equations~\ref{eq:C_CV_1}~through~\ref{eq:C_CV_3} may be summarized
-in one single equation as:
+%Equations~\ref{eq:C_CV_1}~through~\ref{eq:C_CV_3} may be summarized
+%in one single equation as:
+%
+%\begin{align} \label{eq:C_CV_1_to_3_b}
+%	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
+%	& =  \dot{R}_{0j} 
+%	+ \dot{S}_{0j}
+%	+ \sum_{i = 1}^{3}\dot{R}_{ij}
+%	+ \sum_{i = 1}^{3}\dot{S}_{ij}
+%	+ \sum_{i = 1}^{3}\dot{K}_{ij}
+%	- \dot{P}_{j}
+%	- \dot{R}_{j0} 
+%	- \dot{S}_{j0}
+%	- \dot{K}_{j0};
+%	& j \in \left[1,3\right].
+%\end{align}
 
-\begin{align} \label{eq:C_CV_1_to_3_b}
-	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
-	& =  \dot{R}_{0j} 
-	+ \dot{S}_{0j}
-	+ \sum_{i = 1}^{3}\dot{R}_{ij}
-	+ \sum_{i = 1}^{3}\dot{S}_{ij}
-	+ \sum_{i = 1}^{3}\dot{K}_{ij}
-	- \dot{P}_{j}
-	- \dot{R}_{j0} 
-	- \dot{S}_{j0}
-	- \dot{K}_{j0};
-	& j \in \left[1,3\right].
+Similarly to Example~B, we can say that:
+
+\begin{align}
+\label{eq:C_R0}
+	\dot{R}_{0} 										&
+	= \dot{R}_{02}
+	+ \dot{R}_{03},									\\
+\label{eq:B_S0}
+	\dot{S}_{0} 										&
+	= \dot{S}_{01} 
+	+ \dot{S}_{02}
+	+ \dot{S}_{03}.
+\end{equation}
+
+As in previous examples,
+we can define the resource, 
+short-lived material and capital goods balance for
+the biosphere:
+
+As in Example A, we may define 
+the balance of resources ($\dot{R}$),
+short-lived materials ($\dot{S}$) and
+capital ($\dot{K}$) within the biosphere:
+
+\begin{align}\label{eq:C_dR0}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
+	= \dot{R}_{10}
+	+ \dot{R}_{20}
+	+ \dot{R}_{30}
+	- \dot{R}_{02}
+	- \dot{R}_{03},										\\
+\label{eq:C_dS0}
+	\frac{\mathrm{d}S_{0}}{\mathrm{d}t}	&
+	= \dot{S}_{10}
+	+ \dot{S}_{20}
+	+ \dot{S}_{30}	
+	- \dot{S}_{01}
+	- \dot{S}_{02}
+	- \dot{S}_{03},										\\	
+\label{eq:C_dK0}
+	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}	&
+	= \dot{K}_{10}
+	+ \dot{K}_{20}
+	+ \dot{K}_{30}.
 \end{align}
 
-Again, we can say that:
+\noindent{}which may be rewritten:
+
+\begin{align}
+\label{eq:C_dR0a}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
+	= \sum_{i = 1}^{3}\dot{R}_{i0}
+	- \sum_{j = 1}^{3}\dot{R}_{0j},				\\
+\label{eq:C_dS0a}
+	\frac{\mathrm{d}S_{0}}{\mathrm{d}t}	&
+	= \sum_{i = 1}^{3}\dot{S}_{i0}
+	- \sum_{j = 1}^{3}\dot{S}_{0j},				\\
+\label{eq:C_dK0a}
+	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}	&
+	= \sum_{i = 1}^{3}\dot{K}_{i0}.
+\end{align}
 
 \begin{align} \label{eq:C_CV_K_balance}
 	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
