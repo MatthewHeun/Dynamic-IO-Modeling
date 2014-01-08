@@ -1215,9 +1215,7 @@ we obtain:
 \begin{align} 
 \label{eq:B_CV_1a}
 	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
-	=  \dot{R}_{11} 
-	+ \dot{R}_{21}
-	+ \dot{K}_{11}
+	=  \dot{R}_{21}
 	+ \dot{K}_{21}
 	- \dot{P}_{1} 
 	- \dot{R}_{10} 
@@ -1239,9 +1237,115 @@ we again have two definitions for $\dot{P}_{1}$
 and $\dot{P}_{2}$ 
 (Equations~\ref{eq:B_P2_def}~and~\ref{eq:B_P2a})
 which may be substituted into
-Equations~\ref{eq:B_CV_1}~and~\ref{eq:B_CV_2},
-respectively.
-First, let us substitute Equations~ 
+Equations~\ref{eq:B_CV_1a}~and~\ref{eq:B_CV_2a},
+respectively. 
+Let us start by substituting Equations~\ref{eq:B_P1a}~and~\ref{eq:B_P2a},
+in which case we obtain:
+
+\begin{align} 
+\label{eq:B_CV_1b}
+	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
+	= \dot{K}_{21}
+	- \dot{K}_{10},							\\
+\label{eq:B_CV_2b}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
+	=  \dot{K}_{22}
+	- \dot{K}_{20},
+\end{align}
+
+\noindent{}which tells us that accumulation 
+of man-made capital ($K$) is dependent
+only on inflows of capital goods into the 
+sector~($\dot{K}_{2j}$) and depreciation
+of capital to the biosphere ($\dot{K}_{j0}$).
+
+Now, substituting
+Equations~\ref{eq:B_P1_def}~and~\ref{eq:B_P2_def},
+we obtain:
+
+\begin{align} 
+\label{eq:B_CV_1c}
+	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
+	=  \dot{R}_{21}
+	+ \dot{K}_{21}
+	- \dot{S}_{11}
+	- \dot{S}_{12} 
+	- \dot{R}_{10} 
+	- \dot{K}_{10},							\\
+\label{eq:B_CV_2c}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
+	=  \dot{R}_{02} 
+	- \dot{R}_{21}
+	- \dot{S}_{21}
+	- \dot{S}_{22}
+	- \dot{K}_{21}	 
+	- \dot{R}_{20} 
+	- \dot{K}_{20},
+\end{align}
+
+\noindent{}to which we may make the 
+substitution of the depreciation term (as before)
+and rearrange to obtain:
+
+\begin{align} 
+\label{eq:B_CV_1d}
+	- \dot{R}_{10} 	 										&
+	 = \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	-  \dot{R}_{21}
+	- \dot{K}_{21}
+	+ \dot{S}_{11}
+	+ \dot{S}_{12} 
+	+ \gamma_{K_{1}}K_{1},											\\
+\label{eq:B_CV_2d}
+	\dot{R}_{02}
+	- \dot{R}_{20} 											&
+	= \frac{\mathrm{d}K_{2}}{\mathrm{d}t}	
+	+ \left(\dot{R}_{21}
+	+ \dot{S}_{21}
+	+ \dot{K}_{21}\right)	 
+	+ \dot{S}_{22}
+	+ \gamma_{K_{2}}K_{2}.
+\end{align}
+
+Equation~\ref{eq:B_CV_2d} tells us that the resources
+extracted and used by 
+the production sector~($\dot{R}_{02} - \dot{R}_{20}$)
+are for the purpose of:
+
+\begin{itemize}
+	\item building up capital stock
+	in the production sector
+	$\left(\frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$
+	\item manufactured goods 
+	for final consumption
+	$\left(\dot{R}_{21}
+	+ \dot{S}_{21}
+	+ \dot{K}_{21}\right)	$,
+	\item providing short-lived goods
+	to support the 
+	production sector ($\dot{S}_{22}$), and
+	\item overcoming depreciation of production 
+	capital stock ($\gamma_{K_{2}}K_{2}$).
+\end{itemize}
+
+Adding these two equations together,
+we obtain:
+
+\begin{align} 
+\label{eq:B_CV_1and2}
+	\dot{R}_{02}
+	- \dot{R}_{10}
+	- \dot{R}_{20}
+	= - \frac{\mathrm{d}R_{0}}{\mathrm{d}t}
+	= \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	+ \dot{S}_{11}
+	+ \dot{S}_{12} 
+	+ \dot{S}_{21}
+	+ \dot{S}_{22}
+	+ \gamma_{K_{1}}K_{1}
+	+ \gamma_{K_{2}}K_{2}.
+\end{align}
 
 Combining and simplifying these three equations we arrive at the result:
 
