@@ -818,8 +818,7 @@ into equation~\ref{eq:A_CV_1b}, we obtain:
 
 The last depreciation term\footnote{This
 depreciation term will be discussed in more depth in
-Sections~\ref{sec:depreciation_embodied}
-and~\ref{sec:depreciation_intensity}.} 
+Section~\ref{sec:depreciation}.} 
 ($\dot{K}_{10}$)
 may be rewritten as the total stock
 of man-made capital ($\dot{K}_{1}$) 
@@ -1508,14 +1507,10 @@ Similarly to Example~B, we can say that:
 \end{align}
 
 As in previous examples,
-we can define the resource, 
-short-lived material and capital goods balance for
-the biosphere:
-
-As in Example A, we may define 
-the balance of resources ($\dot{R}$),
-short-lived materials ($\dot{S}$) and
-capital ($\dot{K}$) within the biosphere:
+we may define the balance of 
+resources ~($\dot{R}$),
+short-lived materials~($\dot{S}$) and
+capital~($\dot{K}$) within the biosphere:
 
 \begin{align}\label{eq:C_dR0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
@@ -1563,6 +1558,136 @@ Again, as in Example~B, we may state that:
 
 \noindent{}since food and capital goods
 are not produced within sector~(1).
+
+Applying conservation of mass
+allows us to define the
+product flows~($\dot{P}$) as:
+
+\begin{align}
+\label{eq:C_P1_def}
+	\dot{P}_{1}										&
+	= \dot{S}_{11}
+	+ \dot{S}_{12}
+	+ \dot{S}_{13}
+	= \sum_{j = 1}^{3}\dot{S}_{1j},	\\
+\label{eq:C_P2_def}
+	\dot{P}_{2}										&
+	= \dot{R}_{22}
+	+ \dot{R}_{23}	
+	+ \dot{S}_{21}
+	+ \dot{S}_{22}
+	+ \dot{S}_{23}	 
+	= \sum_{j = 1}^{3}\dot{S}_{2j},	\\
+	\dot{P}_{3}										&
+	= \dot{R}_{31}
+	+ \dot{R}_{33}
+	+ \dot{S}_{31}
+	+ \dot{S}_{32}
+	+ \dot{S}_{33}
+	+ \dot{K}_{31}	 
+	+ \dot{K}_{32}
+	+ \dot{K}_{33}		\nonumber		\\
+\label{eq:C_P3_def}							&
+	= \sum_{j = 1}^{2}\dot{R}_{3j}
+	+ \sum_{j = 1}^{3}\dot{S}_{3j}
+	+ \sum_{j = 1}^{3}\dot{K}_{3j}
+\end{align}
+
+As in Example~B, final consumption (1) provides 
+only labor (represented by $\dot{S}$ flows)
+to the other sectors of the economy.
+The energy sector (2) provides 
+energy products~($\dot{S}_{2j}$) to the other
+sectors of the economy. 
+It may also provide resources to itself ($\dot{R}_{22}$)
+and to the goods and services sector (3), 
+as in the case of metallurgical coke or 
+natural gas for fertilizer.
+The energy sector does not produce capital goods,
+hence,
+for $j \in [1,3]: \dot{K}_{2j} = 0$.
+The goods and services (3) sector does not provide
+resources for the energy sector (2)\footnote{There
+may be some exceptions to this, as in the case of
+energy from industrial waste streams.},
+hence $\dot{R}_{32} = 0$.
+
+Since we do not allow accumulation of either
+resources~(R) or short-lived capital goods~(S) in
+economic sectors,
+then we may say:
+
+\begin{equation}\label{eq:C_dR_and_dS_zero}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
+	= \frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}R_{3}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}S_{1}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}S_{2}}{\mathrm{d}t} 
+	= \frac{\mathrm{d}S_{3}}{\mathrm{d}t} 
+	= 0,
+\end{equation}
+
+As before,
+we may also define the resource-product
+and short-lived goods flows balances separately
+for each of the sectors of the economy:
+
+\begin{align}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 	&
+	= \dot{R}_{31}
+	- \dot{P}_{1}
+	- \dot{R}_{10}
+	= 0,										\nonumber	\\
+\label{eq:C_P1a}
+																	&
+	\Longrightarrow
+	\dot{P}_{1}
+	= \dot{R}_{31}
+	- \dot{R}_{10}											\\
+\label{eq:C_dS1}
+	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 	&
+	= \dot{S}_{01}
+	+ \dot{S}_{11}
+	+ \dot{S}_{21}
+	+ \dot{S}_{31}
+	- \dot{S}_{10}
+	= 0,															\\
+\label{eq:C_S11}
+																	&
+	\Longrightarrow
+	\dot{S}_{11}
+	= \dot{S}_{21}
+	+ \dot{S}_{31}
+	- \dot{S}_{10},										\\
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 	&
+	= \dot{R}_{02}
+	+ \dot{R}_{22}
+	- \dot{P}_{2}
+	- \dot{R}_{20}
+	= 0,															\\
+\label{eq:B_P2a}
+																	&
+	\Longrightarrow
+	\dot{P}_{2}
+	= \dot{R}_{02}
+	+ \dot{R}_{22}
+	- \dot{R}_{20},										\\
+\label{eq:B_dS2}
+	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 	&
+	= \dot{S}_{02}
+	+ \dot{S}_{12}
+	+ \dot{S}_{22}
+	- \dot{S}_{20}
+	= 0,															\\
+\label{eq:B_S22}
+																	&
+	\Longrightarrow
+	\dot{S}_{22}
+	= \dot{S}_{02}
+	+ \dot{S}_{12} 
+	- \dot{S}_{20}.	
+\end{align}
+
 
 \begin{align} \label{eq:C_CV_K_balance}
 	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
