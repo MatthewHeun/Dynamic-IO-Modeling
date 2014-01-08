@@ -58,6 +58,11 @@ erase *.aux
 erase *.bbl
 erase *.blg    
 
+cd ..\..\Part_3\Chapter_Summary
+erase *.aux
+erase *.bbl
+erase *.blg    
+
 cd ..\..\Appendix_Casler
 erase *.aux
 erase *.bbl

@@ -58,8 +58,8 @@ bibtex Chapter_Unfinished
 cd ..\..
 
 cd Part_3
-cd Chapter_Conclusion
-bibtex Chapter_Conclusion
+cd Chapter_Summary
+bibtex Chapter_Summary
 cd ..\..
 
 cd Appendix_Casler
