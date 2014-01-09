@@ -817,11 +817,12 @@ into equation~\ref{eq:A_CV_1b}, we obtain:
 	- \dot{K}_{10}.
 \end{align}
 
-The last term ($\dot{K}_{10}$) represents depreciation\footnote{This
+The last depreciation term\footnote{This
 depreciation term will be discussed in more depth in
-Sections~\ref{sec:depreciation_embodied} and~\ref{sec:depreciation_intensity}.} 
-and may be rewritten as the total stock
-of man-made capital ($K_{1}$) 
+Section~\ref{sec:depreciation}.} 
+($\dot{K}_{10}$)
+may be rewritten as the total stock
+of man-made capital ($\dot{K}_{1}$) 
 multiplied by some depreciation rate ($\gamma_{K_{1}}$)
 in units of inverse time (e.g.\ 1/year),
 such that equation~\ref{eq:A_CV_1d} becomes:
@@ -1513,7 +1514,7 @@ Similarly to Example~B, we can say that:
 
 As in previous examples,
 we may define the balance of 
-resources~($\dot{R}$),
+resources ~($\dot{R}$),
 short-lived materials~($\dot{S}$) and
 capital~($\dot{K}$) within the biosphere:
 
@@ -1808,7 +1809,7 @@ into Equations~\ref{eq:C_CV_1a}~-~\ref{eq:C_CV_3a},
 respectively,
 we obtain:
 
-\begin{align} \label{eq:C_CV_1a}
+\begin{align} \label{eq:C_CV_1c}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
 	= \dot{R}_{01}
 	+ \sum_{i = 1}^{3}\dot{R}_{i1}
@@ -1818,24 +1819,62 @@ we obtain:
 	- \sum_{j = 1}^{3}\dot{K}_{1j}
 	- \dot{R}_{10} 
 	- \dot{K}_{10},										\\
-	\label{eq:C_CV_2a}
+	\label{eq:C_CV_2c}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	& 
 	=  \dot{R}_{02} 
 	+ \sum_{i = 1}^{3}\dot{R}_{i2}
 	+ \sum_{i = 1}^{3}\dot{K}_{i2}
-	- \dot{P}_{2}
+	- \sum_{j = 1}^{3}\dot{R}_{2j}
+	- \sum_{j = 1}^{3}\dot{S}_{2j}
+	- \sum_{j = 1}^{3}\dot{K}_{2j}
 	- \dot{R}_{20} 
 	- \dot{K}_{20},										\\	
-	\label{eq:C_CV_3a}
+	\label{eq:C_CV_3c}
 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}	&
 	=  \dot{R}_{03} 
 	+ \sum_{i = 1}^{3}\dot{R}_{i3}
 	+ \sum_{i = 1}^{3}\dot{K}_{i3}
-	- \dot{P}_{3}
+	- \sum_{j = 1}^{3}\dot{R}_{3j}
+	- \sum_{j = 1}^{3}\dot{S}_{3j}
+	- \sum_{j = 1}^{3}\dot{K}_{3j}
 	- \dot{R}_{30} 
 	- \dot{K}_{30}.										
 \end{align}
 
+As before, we can rearrange these equations
+to obtain:
+
+\begin{align} \label{eq:C_CV_1d}
+	\dot{R}_{01}
+	- \dot{R}_{10} 											&
+	=\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	- \sum_{i = 1}^{3}\dot{R}_{i1}
+	- \sum_{i = 1}^{3}\dot{K}_{i1}
+	+ \sum_{j = 1}^{3}\dot{R}_{1j}
+	+ \sum_{j = 1}^{3}\dot{S}_{1j}
+	+ \sum_{j = 1}^{3}\dot{K}_{1j}
+	+ \dot{K}_{10},											\\
+	\label{eq:C_CV_2d}
+	\dot{R}_{02} 
+	- \dot{R}_{20} 											&
+	= \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	- \sum_{i = 1}^{3}\dot{R}_{i2}
+	- \sum_{i = 1}^{3}\dot{K}_{i2}
+	+ \sum_{j = 1}^{3}\dot{R}_{2j}
+	+ \sum_{j = 1}^{3}\dot{S}_{2j}
+	+ \sum_{j = 1}^{3}\dot{K}_{2j}
+	+ \dot{K}_{20},											\\	
+	\label{eq:C_CV_3d}
+	\dot{R}_{03}
+	- \dot{R}_{30} 											&
+	= \frac{\mathrm{d}K_{3}}{\mathrm{d}t}
+	- \sum_{i = 1}^{3}\dot{R}_{i3}
+	- \sum_{i = 1}^{3}\dot{K}_{i3}
+	+ \sum_{j = 1}^{3}\dot{R}_{3j}
+	+ \sum_{j = 1}^{3}\dot{S}_{3j}
+	+ \sum_{j = 1}^{3}\dot{K}_{3j}
+	+ \dot{K}_{30}.										
+\end{align}
 
 %%%%%%%%%%%%% MIK END HERE %%%%%%%%%%
 
