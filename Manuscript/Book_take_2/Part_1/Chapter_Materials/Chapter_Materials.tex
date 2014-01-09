@@ -669,28 +669,29 @@ we may state that:
 	+ \dot{R}_{11}
 	- \dot{P}_{1}
 	- \dot{R}_{10}
-	= 0,										\nonumber	\\
-\label{eq:A_P1a}
-																	&
-	\Longrightarrow 										
-	\dot{P}_{1}
-	= \dot{R}_{01}
-	+ \dot{R}_{11}
-	- \dot{R}_{10}	,										\\									
+	= 0,															\\
 \label{eq:A_S1_balance}
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}		&
 	= \dot{S}_{01}
 	+ \dot{S}_{11}
 	- \dot{S}_{10}
-	= 0,															\\
+	= 0,
+\end{align}
+
+We may rearrange these equations in terms of
+the important variable as:
+
+\begin{align}
+\label{eq:A_P1a}
+	\dot{P}_{1}												&
+	= \dot{R}_{01}
+	+ \dot{R}_{11}
+	- \dot{R}_{10}	,										\\									
 \label{eq:A_S11}
-																	&
-	\Longrightarrow 										
-	\dot{S}_{11}
+	\dot{S}_{11}											&
 	= \dot{S}_{10}
 	- \dot{S}_{01}.
 \end{align}
-
 
 
 Substituting equations~\ref{eq:A_R0},~\ref{eq:A_S0}~and~\ref{eq:A_K0_balance}
@@ -1148,13 +1149,7 @@ for each of the sectors of the economy:
 	= \dot{R}_{21}
 	- \dot{P}_{1}
 	- \dot{R}_{10}
-	= 0,										\nonumber	\\
-\label{eq:B_P1a}
-																	&
-	\Longrightarrow
-	\dot{P}_{1}
-	= \dot{R}_{21}
-	- \dot{R}_{10}											\\
+	= 0,															\\
 \label{eq:B_dS1}
 	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 	&
 	= \dot{S}_{01}
@@ -1162,40 +1157,45 @@ for each of the sectors of the economy:
 	+ \dot{S}_{21}
 	- \dot{S}_{10}
 	= 0,															\\
-\label{eq:B_S11}
-																	&
-	\Longrightarrow
-	\dot{S}_{11}
-	= \dot{S}_{21}
-	- \dot{S}_{10},										\\
 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 	&
 	= \dot{R}_{02}
 	+ \dot{R}_{22}
 	- \dot{P}_{2}
 	- \dot{R}_{20}
 	= 0,															\\
-\label{eq:B_P2a}
-																	&
-	\Longrightarrow
-	\dot{P}_{2}
-	= \dot{R}_{02}
-	+ \dot{R}_{22}
-	- \dot{R}_{20},										\\
 \label{eq:B_dS2}
 	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 	&
 	= \dot{S}_{02}
 	+ \dot{S}_{12}
 	+ \dot{S}_{22}
 	- \dot{S}_{20}
-	= 0,															\\
-\label{eq:B_S22}
-																	&
-	\Longrightarrow
-	\dot{S}_{22}
-	= \dot{S}_{02}
-	+ \dot{S}_{12} 
-	- \dot{S}_{20}.	
+	= 0,
 \end{align}
+
+We may rearrange these equations in terms of
+the important variable.
+
+\begin{align}
+\label{eq:B_P1a}
+	\dot{P}_{1}												&
+	= \dot{R}_{21}
+	- \dot{R}_{10}											\\
+\label{eq:B_S11}
+	\dot{S}_{11}											&
+	= \dot{S}_{10}
+	- \dot{S}_{21},										\\
+\label{eq:B_P2a}
+	\dot{P}_{2}												&
+	= \dot{R}_{02}
+	+ \dot{R}_{22}
+	- \dot{R}_{20},										\\
+\label{eq:B_S22}
+	\dot{S}_{22}											&
+	= \dot{S}_{20}
+	- \dot{S}_{02} 
+	- \dot{S}_{12}.	
+\end{align}
+
 
 Substituting
 Equations~\ref{eq:B_R0}-\ref{eq:B_dK0}
@@ -1337,11 +1337,11 @@ Adding these two equations together,
 we obtain:
 
 \begin{align} 
-\label{eq:B_CV_1and2}
-	\dot{R}_{02}
+	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}			&
+	= \dot{R}_{02}
 	- \dot{R}_{10}
-	- \dot{R}_{20}
-	= - \frac{\mathrm{d}R_{0}}{\mathrm{d}t}
+	- \dot{R}_{20}									\nonumber	\\
+\label{eq:B_CV_1and2}											&
 	= \frac{\mathrm{d}K_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
 	+ \dot{S}_{11}
@@ -1441,7 +1441,9 @@ into and out of the biosphere\index{biosphere}
 Similarly, flows for the other sectors may be written:
 
 \begin{align} \label{eq:C_CV_1}
-	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
 	& =  \dot{R}_{01} 
 	+ \dot{S}_{01}
 	+ \sum_{i = 1}^{3}\dot{R}_{i1}
@@ -1452,7 +1454,9 @@ Similarly, flows for the other sectors may be written:
 	- \dot{S}_{10}
 	- \dot{K}_{10},										\\
 	\label{eq:C_CV_2}
-	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}		
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{2}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}		
 	& =  \dot{R}_{02} 
 	+ \dot{S}_{02}
 	+ \sum_{i = 1}^{3}\dot{R}_{i2}
@@ -1463,7 +1467,9 @@ Similarly, flows for the other sectors may be written:
 	- \dot{S}_{20}
 	- \dot{K}_{20},										\\	
 	\label{eq:C_CV_3}
-	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
+	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{3}}{\mathrm{d}t}	
+	+ \frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
 	& =  \dot{R}_{03} 
 	+ \dot{S}_{03}
 	+ \sum_{i = 1}^{3}\dot{R}_{i3}
@@ -1630,20 +1636,21 @@ then we may say:
 As before,
 we may also define the resource-product
 and short-lived goods flows balances separately
-for each of the sectors of the economy:
+for each of the sectors of the economy\footnote{It
+is worth remembering here that 
+$\dot{R}_{01} = \dot{R}_{21} = 0$,
+since final consumption only takes resources
+(in the form of food) from the goods and services
+sector~(3) and that $R_{32} = 0$ since
+the goods and services sector does not provide
+resources to the energy sector~(2).}:
 
 \begin{align}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 	&
 	= \dot{R}_{31}
 	- \dot{P}_{1}
 	- \dot{R}_{10}
-	= 0,										\nonumber	\\
-\label{eq:C_P1a}
-																	&
-	\Longrightarrow
-	\dot{P}_{1}
-	= \dot{R}_{31}
-	- \dot{R}_{10}											\\
+	= 0,															\\
 \label{eq:C_dS1}
 	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 	&
 	= \dot{S}_{01}
@@ -1652,42 +1659,145 @@ for each of the sectors of the economy:
 	+ \dot{S}_{31}
 	- \dot{S}_{10}
 	= 0,															\\
-\label{eq:C_S11}
-																	&
-	\Longrightarrow
-	\dot{S}_{11}
-	= \dot{S}_{21}
-	+ \dot{S}_{31}
-	- \dot{S}_{10},										\\
 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 	&
 	= \dot{R}_{02}
 	+ \dot{R}_{22}
 	- \dot{P}_{2}
 	- \dot{R}_{20}
 	= 0,															\\
-\label{eq:B_P2a}
-																	&
-	\Longrightarrow
-	\dot{P}_{2}
-	= \dot{R}_{02}
-	+ \dot{R}_{22}
-	- \dot{R}_{20},										\\
-\label{eq:B_dS2}
+\label{eq:C_dS2}
 	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 	&
 	= \dot{S}_{02}
 	+ \dot{S}_{12}
 	+ \dot{S}_{22}
+	+ \dot{S}_{32}
 	- \dot{S}_{20}
 	= 0,															\\
-\label{eq:B_S22}
-																	&
-	\Longrightarrow
-	\dot{S}_{22}
-	= \dot{S}_{02}
-	+ \dot{S}_{12} 
-	- \dot{S}_{20}.	
+	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} 	&
+	= \dot{R}_{03}
+	+ \dot{R}_{23}
+	+ \dot{R}_{33}
+	- \dot{P}_{3}
+	- \dot{R}_{30}
+	= 0,															\\
+\label{eq:C_dS3}
+	\frac{\mathrm{d}S_{3}}{\mathrm{d}t} 	&
+	= \dot{S}_{03}
+	+ \dot{S}_{13}
+	+ \dot{S}_{23}
+	+ \dot{S}_{33}
+	- \dot{S}_{30}
+	= 0,
 \end{align}
 
+We may rearrange these equations
+in terms of the important variable:
+
+\begin{align}
+\label{eq:C_P1a}
+	\dot{P}_{1}												&
+	= \dot{R}_{31}
+	- \dot{R}_{10}											\\
+\label{eq:C_S11}
+	\dot{S}_{11}											&
+	= \dot{S}_{10}
+	- \dot{S}_{01}
+	- \dot{S}_{21}
+	- \dot{S}_{31},										\\
+\label{eq:C_P2a}
+	\dot{P}_{2}												&
+	= \dot{R}_{02}
+	+ \dot{R}_{22}
+	- \dot{R}_{20},										\\
+\label{eq:C_S22}
+	\dot{S}_{22}											&
+	= \dot{S}_{20}
+	- \dot{S}_{02} 
+	- \dot{S}_{12}
+	- \dot{S}_{32},										\\
+\label{eq:C_P3a}
+	\dot{P}_{3}												&
+	= \dot{R}_{03}
+	+ \dot{R}_{23}
+	+ \dot{R}_{33}
+	- \dot{R}_{30},										\\
+\label{eq:C_S33}
+	\dot{S}_{33}											&
+	= \dot{S}_{20}
+	- \dot{S}_{03}
+	- \dot{S}_{13}
+	- \dot{S}_{23}.	
+\end{align}
+
+We may rewrite Equation~\ref{eq:C_CV_0_b}
+by substituting 
+Equations~\ref{eq:C_dR0}~-~\ref{eq:C_dK0a}
+to obtain:
+
+\begin{align} \label{eq:C_CV_0_c}
+	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+	& =  \sum_{i = 1}^{3}\dot{R}_{i0}
+	+ \sum_{i = 1}^{3}\dot{S}_{i0}
+	- \sum_{j = 2}^{3}\dot{R}_{0j}
+	- \sum_{j = 1}^{3}\dot{S}_{0j},
+\end{align}
+
+We now make use of 
+Equations~\ref{eq:C_dR_and_dS_zero},~\ref{eq:C_dS1},~\ref{eq:C_dS2}~and~\ref{eq:C_dS3},
+in simplifying Equations~\ref{eq:C_CV_1}~-~\ref{eq:C_CV_3},
+to obtain:
+
+\begin{align} \label{eq:C_CV_1a}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
+	& =  \dot{R}_{01} 
+	+ \sum_{i = 1}^{3}\dot{R}_{i1}
+	+ \sum_{i = 1}^{3}\dot{K}_{i1}
+	- \dot{P}_{1}
+	- \dot{R}_{10} 
+	- \dot{K}_{10},										\\
+	\label{eq:C_CV_2a}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}		
+	& =  \dot{R}_{02} 
+	+ \sum_{i = 1}^{3}\dot{R}_{i2}
+	+ \sum_{i = 1}^{3}\dot{K}_{i2}
+	- \dot{P}_{2}
+	- \dot{R}_{20} 
+	- \dot{K}_{20},										\\	
+	\label{eq:C_CV_3a}
+	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
+	& =  \dot{R}_{03} 
+	+ \sum_{i = 1}^{3}\dot{R}_{i3}
+	+ \sum_{i = 1}^{3}\dot{K}_{i3}
+	- \dot{P}_{3}
+	- \dot{R}_{30} 
+	- \dot{K}_{30}.										
+\end{align}
+
+As in previous examples,
+we have two different formulations for
+the $\dot{P}$ terms.
+Substituting, 
+first, 
+Equations~\ref{eq:C_P1a},~\ref{eq:C_P2a}~and~\ref{eq:C_P3a},
+we obtain:
+
+\begin{align} \label{eq:C_CV_1b}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
+	& = \sum_{i = 1}^{3}\dot{K}_{i1}
+	- \dot{K}_{10},										\\
+	\label{eq:C_CV_2b}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}		
+	& = \sum_{i = 1}^{3}\dot{K}_{i2}
+	- \dot{K}_{20},										\\	
+	\label{eq:C_CV_3b}
+	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
+	& = \sum_{i = 1}^{3}\dot{K}_{i3}
+	- \dot{K}_{30},										
+\end{align}
+
+\noindent{}which we may rewrite as the 
+more general result:
 
 \begin{align} \label{eq:C_CV_K_balance}
 	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
@@ -1695,7 +1805,16 @@ for each of the sectors of the economy:
 	- \dot{K}_{j0};
 \end{align}
 
-[AGAIN, NOT SURE IF THIS HOLDS FOR SECTOR (1), AS DISCUSSED EARLIER]
+Equation~\ref{eq:C_CV_K_balance} states that
+for any economic sector,
+the accumulation of man-made capital stock
+is dependent only on inflows of capital stock
+($\dot{K}_{ij}$)
+and depreciation of capital stock back to the
+biosphere ($\dot{K}_{j0}$).
+
+%%%%%%%%%%%%% MIK END HERE %%%%%%%%%%
+
 
 \noindent hence we may say that:
 
