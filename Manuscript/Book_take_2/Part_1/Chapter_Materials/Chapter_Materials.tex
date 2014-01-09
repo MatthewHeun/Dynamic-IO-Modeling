@@ -1410,6 +1410,18 @@ products and sector (3) produces other goods and services, as depicted in Figure
 \label{fig:C_materials}
 \end{figure}
 
+In this example, we will take a slightly different approach
+than in the previous two examples. 
+Instead of discerning whether or not certain flows exist---asking for instance,
+is there a flow of resources ($\dot{R}_{21}$) from
+the energy sector (2) to final consumption (1)?----we
+shall account for all flows,
+\emph{even if} those flows are zero.
+In this way,
+we may build up a completely general
+framework for material accounting within an economy
+of any size.
+
 Accounting for the material flows 
 into and out of the biosphere\index{biosphere} 
 (0) gives the following equation:
@@ -1498,20 +1510,6 @@ Similarly, flows for the other sectors may be written:
 %	& j \in \left[1,3\right].
 %\end{align}
 
-Similarly to Example~B, we can say that:
-
-\begin{align}
-\label{eq:C_R0}
-	\dot{R}_{0} 										&
-	= \dot{R}_{02}
-	+ \dot{R}_{03},									\\
-\label{eq:B_S0}
-	\dot{S}_{0} 										&
-	= \dot{S}_{01} 
-	+ \dot{S}_{02}
-	+ \dot{S}_{03}.
-\end{align}
-
 As in previous examples,
 we may define the balance of 
 resources ~($\dot{R}$),
@@ -1523,6 +1521,7 @@ capital~($\dot{K}$) within the biosphere:
 	= \dot{R}_{10}
 	+ \dot{R}_{20}
 	+ \dot{R}_{30}
+	- \dot{R}_{01}
 	- \dot{R}_{02}
 	- \dot{R}_{03},										\\
 \label{eq:C_dS0}
@@ -1556,15 +1555,6 @@ capital~($\dot{K}$) within the biosphere:
 	= \sum_{i = 1}^{3}\dot{K}_{i0}.
 \end{align}
 
-Again, as in Example~B, we may state that:
-
-\begin{equation}\label{eq:B_R11_K11}
-	\dot{R}_{11} = \dot{K}_{11} = 0
-\end{equation}
-
-\noindent{}since food and capital goods
-are not produced within sector~(1).
-
 Applying conservation of mass
 allows us to define the
 product flows~($\dot{P}$) as:
@@ -1582,7 +1572,7 @@ product flows~($\dot{P}$) as:
 	+ \sum_{j = 1}^{3}\dot{K}_{2j},	\\
 \label{eq:C_P3_def}							
 	\dot{P}_{3}										&
-	= \sum_{j = 1}^{2}\dot{R}_{3j}
+	= \sum_{j = 1}^{3}\dot{R}_{3j}
 	+ \sum_{j = 1}^{3}\dot{S}_{3j}
 	+ \sum_{j = 1}^{3}\dot{K}_{3j}
 \end{align}
@@ -1635,7 +1625,10 @@ resources to the energy sector~(2).}:
 
 \begin{align}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 	&
-	= \dot{R}_{31}
+	= \dot{R}_{01}
+	+ \dot{R}_{11}
+	+ \dot{R}_{21}
+	+ \dot{R}_{31}
 	- \dot{P}_{1}
 	- \dot{R}_{10}
 	= 0,															\\
@@ -1649,7 +1642,9 @@ resources to the energy sector~(2).}:
 	= 0,															\\
 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 	&
 	= \dot{R}_{02}
+	+ \dot{R}_{12}
 	+ \dot{R}_{22}
+	+ \dot{R}_{32}
 	- \dot{P}_{2}
 	- \dot{R}_{20}
 	= 0,															\\
@@ -1663,6 +1658,7 @@ resources to the energy sector~(2).}:
 	= 0,															\\
 	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} 	&
 	= \dot{R}_{03}
+	+ \dot{R}_{13}
 	+ \dot{R}_{23}
 	+ \dot{R}_{33}
 	- \dot{P}_{3}
@@ -1684,7 +1680,10 @@ in terms of the important variable:
 \begin{align}
 \label{eq:C_P1a}
 	\dot{P}_{1}												&
-	= \dot{R}_{31}
+	= \dot{R}_{01}
+	+ \dot{R}_{11}
+	+ \dot{R}_{21}
+	+ \dot{R}_{31}
 	- \dot{R}_{10}											\\
 \label{eq:C_S11}
 	\dot{S}_{11}											&
@@ -1695,7 +1694,9 @@ in terms of the important variable:
 \label{eq:C_P2a}
 	\dot{P}_{2}												&
 	= \dot{R}_{02}
+	+ \dot{R}_{12}
 	+ \dot{R}_{22}
+	+ \dot{R}_{32}
 	- \dot{R}_{20},										\\
 \label{eq:C_S22}
 	\dot{S}_{22}											&
@@ -1706,6 +1707,7 @@ in terms of the important variable:
 \label{eq:C_P3a}
 	\dot{P}_{3}												&
 	= \dot{R}_{03}
+	+ \dot{R}_{13}
 	+ \dot{R}_{23}
 	+ \dot{R}_{33}
 	- \dot{R}_{30},										\\
@@ -1717,19 +1719,19 @@ in terms of the important variable:
 	- \dot{S}_{23}.	
 \end{align}
 
-We may rewrite Equation~\ref{eq:C_CV_0_b}
-by substituting 
-Equations~\ref{eq:C_dR0}~-~\ref{eq:C_dK0a}
-to obtain:
-
-\begin{align} \label{eq:C_CV_0_c}
-	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
-	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
-	& =  \sum_{i = 1}^{3}\dot{R}_{i0}
-	+ \sum_{i = 1}^{3}\dot{S}_{i0}
-	- \sum_{j = 2}^{3}\dot{R}_{0j}
-	- \sum_{j = 1}^{3}\dot{S}_{0j},
-\end{align}
+%We may rewrite Equation~\ref{eq:C_CV_0_b}
+%by substituting 
+%Equations~\ref{eq:C_dR0}~-~\ref{eq:C_dK0a}
+%to obtain:
+%
+%\begin{align} \label{eq:C_CV_0_c}
+%	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
+%	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
+%	& =  \sum_{i = 1}^{3}\dot{R}_{i0}
+%	+ \sum_{i = 1}^{3}\dot{S}_{i0}
+%	- \sum_{j = 2}^{3}\dot{R}_{0j}
+%	- \sum_{j = 1}^{3}\dot{S}_{0j},
+%\end{align}
 
 We now make use of 
 Equations~\ref{eq:C_dR_and_dS_zero},~\ref{eq:C_dS1},~\ref{eq:C_dS2}~and~\ref{eq:C_dS3},
@@ -1789,15 +1791,15 @@ more general result:
 
 \begin{align} \label{eq:C_CV_K_balance}
 	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
-	& =  \sum_{i = 1}^{3}\dot{K}_{ij}
-	- \dot{K}_{j0};
-	& j \in [1,3].
+	& =  \sum_{i}\dot{K}_{ij}
+	- \dot{K}_{j0}.
 \end{align}
 
 Equation~\ref{eq:C_CV_K_balance} states that
 for any economic sector,
 the accumulation of man-made capital stock
 is dependent only on inflows of capital stock
+from other economic sectors
 ($\dot{K}_{ij}$)
 and depreciation of capital stock back to the
 biosphere ($\dot{K}_{j0}$).
