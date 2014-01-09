@@ -1571,28 +1571,16 @@ product flows~($\dot{P}$) as:
 \begin{align}
 \label{eq:C_P1_def}
 	\dot{P}_{1}										&
-	= \dot{S}_{11}
-	+ \dot{S}_{12}
-	+ \dot{S}_{13}
-	= \sum_{j = 1}^{3}\dot{S}_{1j},	\\
+	= \sum_{j = 1}^{3}\dot{R}_{1j}
+	+ \sum_{j = 1}^{3}\dot{S}_{1j}
+	+ \sum_{j = 1}^{3}\dot{K}_{1j},	\\
 \label{eq:C_P2_def}
 	\dot{P}_{2}										&
-	= \dot{R}_{22}
-	+ \dot{R}_{23}	
-	+ \dot{S}_{21}
-	+ \dot{S}_{22}
-	+ \dot{S}_{23}	 
-	= \sum_{j = 1}^{3}\dot{S}_{2j},	\\
+	= \sum_{j = 1}^{3}\dot{R}_{2j}
+	+ \sum_{j = 1}^{3}\dot{S}_{2j}
+	+ \sum_{j = 1}^{3}\dot{K}_{2j},	\\
+\label{eq:C_P3_def}							
 	\dot{P}_{3}										&
-	= \dot{R}_{31}
-	+ \dot{R}_{33}
-	+ \dot{S}_{31}
-	+ \dot{S}_{32}
-	+ \dot{S}_{33}
-	+ \dot{K}_{31}	 
-	+ \dot{K}_{32}
-	+ \dot{K}_{33}		\nonumber		\\
-\label{eq:C_P3_def}							&
 	= \sum_{j = 1}^{2}\dot{R}_{3j}
 	+ \sum_{j = 1}^{3}\dot{S}_{3j}
 	+ \sum_{j = 1}^{3}\dot{K}_{3j}
@@ -1802,6 +1790,7 @@ more general result:
 	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
 	& =  \sum_{i = 1}^{3}\dot{K}_{ij}
 	- \dot{K}_{j0};
+	& j \in [1,3].
 \end{align}
 
 Equation~\ref{eq:C_CV_K_balance} states that
@@ -1812,10 +1801,45 @@ is dependent only on inflows of capital stock
 and depreciation of capital stock back to the
 biosphere ($\dot{K}_{j0}$).
 
+Instead,
+substituting the alternative formulation for $\dot{P}$
+from Equations~\ref{eq:C_P1_def}~-~\ref{eq:C_P3_def}
+into Equations~\ref{eq:C_CV_1a}~-~\ref{eq:C_CV_3a},
+respectively,
+we obtain:
+
+\begin{align} \label{eq:C_CV_1a}
+	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
+	= \dot{R}_{01}
+	+ \sum_{i = 1}^{3}\dot{R}_{i1}
+	+ \sum_{i = 1}^{3}\dot{K}_{i1}
+	- \sum_{j = 1}^{3}\dot{R}_{1j}
+	- \sum_{j = 1}^{3}\dot{S}_{1j}
+	- \sum_{j = 1}^{3}\dot{K}_{1j}
+	- \dot{R}_{10} 
+	- \dot{K}_{10},										\\
+	\label{eq:C_CV_2a}
+	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	& 
+	=  \dot{R}_{02} 
+	+ \sum_{i = 1}^{3}\dot{R}_{i2}
+	+ \sum_{i = 1}^{3}\dot{K}_{i2}
+	- \dot{P}_{2}
+	- \dot{R}_{20} 
+	- \dot{K}_{20},										\\	
+	\label{eq:C_CV_3a}
+	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}	&
+	=  \dot{R}_{03} 
+	+ \sum_{i = 1}^{3}\dot{R}_{i3}
+	+ \sum_{i = 1}^{3}\dot{K}_{i3}
+	- \dot{P}_{3}
+	- \dot{R}_{30} 
+	- \dot{K}_{30}.										
+\end{align}
+
+
 %%%%%%%%%%%%% MIK END HERE %%%%%%%%%%
 
 
-\noindent hence we may say that:
 
 \begin{align} \label{eq:C_CV_1_to_3_c}
 	\dot{R}_{0j} 
