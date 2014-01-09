@@ -1876,26 +1876,77 @@ to obtain:
 	+ \dot{K}_{30}.										
 \end{align}
 
-%%%%%%%%%%%%% MIK END HERE %%%%%%%%%%
+Summing Equations~\ref{eq:C_CV_1d}~-~\ref{eq:C_CV_3d},
+we obtain:
 
-
-
-\begin{align} \label{eq:C_CV_1_to_3_c}
-	\dot{R}_{0j} 
-	+ \dot{S}_{0j}
-	+ \sum_{i = 1}^{3}\dot{R}_{ij}
-	+ \sum_{i = 1}^{3}\dot{S}_{ij}
-	& = \dot{P}_{j}
-	- \dot{R}_{j0} 
-	- \dot{S}_{j0}.
+\begin{align}\label{eq:C_CV_all}
+	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
+	= \sum_{j = 1}^{3}\dot{R}_{0j}
+	- \sum_{i = 1}^{3}\dot{R}_{i0}									\nonumber	\\
+	& =\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}
+	+ \frac{\mathrm{d}K_{3}}{\mathrm{d}t}
+	- \sum_{j = 1}^{3}\sum_{i = 1}^{3}\dot{R}_{ij}
+	- \sum_{j = 1}^{3}\sum_{i = 1}^{3}\dot{K}_{ij}
+	+ \sum_{j = 1}^{3}\sum_{i = 1}^{3}\dot{R}_{ij}		\nonumber	\\
+	& \qquad {} + \sum_{j = 1}^{3}\sum_{i = 1}^{3}\dot{S}_{ij}
+	+ \sum_{j = 1}^{3}\sum_{i = 1}^{3}\dot{K}_{ij}
+	+ \dot{K}_{10}
+	+ \dot{K}_{20}
+	+ \dot{K}_{30}.
 \end{align}
 
-The flows of resources ($\dot{R}$) and short-lived goods ($\dot{S}$) between each of the biosphere\index{biosphere} and three economic sectors may be thought of as four matrices (as depicted in Figure~\ref{fig:C_mat_matrix} for $\dot{S}$ flows): one $3\times3$ matrix of flows within the economy, a $3\times1$ vector of flows from the biosphere\index{biosphere} into the economy (extraction), a $1\times3$ vector of flows from the economy into the biosphere\index{biosphere} (waste\index{waste}) and a $1\times1$ matrix of flows solely within the biosphere\index{biosphere} (environment), that do not enter the economy.
+\noindent{}which,
+after substituting for 
+the depreciation term ($\dot{K}_{i0}$),
+simplifies to:
+
+\begin{align}\label{eq:C_CV_all_a}
+	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
+	=\sum_{j = 1}^{3}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}
+	+ \sum_{j = 1}^{3}\sum_{i = 1}^{3}\dot{S}_{ij}
+	+ \sum_{j = 1}^{3}\gamma_{K_{j}}K_{j}
+\end{align}
+
+\noindent{}or,
+more generally:
+
+\begin{align}\label{eq:C_CV_all_b}
+	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
+	=\sum_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}
+	+ \sum_{i,j}\dot{S}_{ij}
+	+ \sum_{j}\gamma_{K_{j}}K_{j}.
+\end{align}
+
+Similarly to what we saw in Examples~A~and~B,
+Equation~\ref{eq:C_CV_all_b} tells us that,
+depletion of natural resources in the 
+biosphere~$\left(- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
+by the economy
+are used for the purposes of:
+
+\begin{itemize}
+	\item increasing man-made capital stocks
+	within the economy~$\left(\frac{\mathrm{d}K_{j}}{\mathrm{d}t}\right)$
+	\item providing short-lived goods exchanged within the
+	economy~($\dot{S}_{ij}$), and
+	\item overcoming depreciation of man-made
+	capital stocks~($\sum_{j}\gamma_{K_{j}}K_{j}$).
+\end{itemize}
+
+\noindent{}This issue will be discussed in greater detail
+in Section~\ref{sec:SSE} concerning 
+sustainable scale of the economy and
+the concept of a steady-state economy.
+
+The exchange of resources ($\dot{R}$) and short-lived goods ($\dot{S}$) between each of the four `sectors' (the biosphere\index{biosphere} and the three economic sectors) may be thought of as four matrices (as depicted in Figure~\ref{fig:C_mat_matrix} for $\dot{S}$ flows): one $3\times3$ matrix of flows entirely within the economy, a $3\times1$ vector of flows from the biosphere\index{biosphere} into the economy (extraction), a $1\times3$ vector of flows from the economy into the biosphere\index{biosphere} (waste\index{waste}) and a $1\times1$ matrix of flows solely within the biosphere\index{biosphere} (environment), that do not enter the economy.
 
 \begin{figure}[!ht]
 \centering\
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/Matrix.pdf}
-\caption[The matrix of biosphere\index{biosphere}-economy flows.]{The matrix of biosphere-economy flows. **** Mik: should these be $\dot{S}$ (with the dot)? --MKH ****}
+\caption[The matrix of biosphere\index{biosphere}-economy flows.]{The matrix of biosphere-economy flows. 
+%**** Mik: should these be $\dot{S}$ (with the dot)? --MKH ****
+}
 \label{fig:C_mat_matrix}
 \end{figure}
 
