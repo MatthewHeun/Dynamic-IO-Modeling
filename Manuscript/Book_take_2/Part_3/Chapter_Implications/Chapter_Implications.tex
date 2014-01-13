@@ -438,6 +438,9 @@ for energy analysts who employ the I-O method.
 \label{sec:implications_for_development}
 %%%%%%%%%%
 
+**** MCD - should the $i$ indices on these terms be $j$'s? I thought the flow
+leaving a sector was subscripted as, e.g. $\dot{X}_{j}$. ****
+
 **** Becky, write a paragraph here about alternative measures of development. 
 Discuss Daly's Genuine Progress Indicator (which includes natural capital, Mik to verify)
 and Gross National Happiness and other. ****
@@ -651,6 +654,8 @@ $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
 \label{sec:SSE}
 %%%%%%%%%%
 
+**** MCD - some lead in to why the SSE may be important. ****
+
 There are a number of different
 conditions that we may set
 in order to characterize a system as ``steady-state.''
@@ -672,7 +677,7 @@ The constant population constraint could be
 accommodated with some adaptation of the 
 framework. 
 The issue of human population as part of society's
-capital stock is addressed in Section~\ref{sec:XXXX}
+capital stock is addressed in Section~\ref{sec:people_as_stock}
 
 In Chapter~\ref{chap:materials}, 
 we introduced Equation~\ref{eq:C_CV_all_b}:
@@ -681,7 +686,7 @@ we introduced Equation~\ref{eq:C_CV_all_b}:
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
 	=\sum_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}
 	+ \sum_{i,j}\dot{S}_{ij}
-	+ \sum\{j}\gamma_{K_{j}}K_{j}.
+	+ \sum_{j}\gamma_{K_{j}}K_{j}.
 \end{align}
 
 \noindent{}which tells us that 
@@ -694,24 +699,22 @@ is used for the purposes of:
 	\item increasing man-made capital stocks
 	within the economy~$\left(\frac{\mathrm{d}K_{j}}{\mathrm{d}t}\right)$
 	\item providing short-lived goods exchanged within the
-	economy~($\dot{S}_{ij}$), and
+	economy~$\left(\dot{S}_{ij}\right)$, and
 	\item overcoming depreciation of man-made
-	capital stocks~($\sum\limits_{j}\gamma_{K_{j}}K_{j}$) **** MCD - can j
-	subscript on $\sum$ be put underneath. ****
+	capital stocks~$\left(\sum\limits_{j}\gamma_{K_{j}}K_{j}\right)$ 
 \end{itemize}
 
 Assuming,
 first,
-that a steady-state economy exists when there is the level
+that a steady-state economy exists when the level
 of capital stock remains constant
-$\left(\sum\limits_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}=0\right)$
-is met,\footnote{Note
+$\left(\sum_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}=0\right)$,\footnote{Note
 that,
 any one sector may have a non-zero accumulation rate,
 provided that the  accumulation rate for the economy overall is zero,
 i.e.\ some sectors expand while others decrease.
 As such,
-the steady-state does not proclude development of the economy,
+the steady-state does not preclude development of the economy,
 merely overall growth.}
 we can see that Equation~\ref{eq:C_CV_all_b}
 reduces to:
@@ -728,16 +731,27 @@ relation to Equation~\ref{eq:C_CV_all_c}.
 Firstly,
 if our steady-state economy is to be supported
 sustainably,
-then **** MCD - right out maths in words ****
-$\frac{\mathrm{d}R_{0}}{\mathrm{d}t}$ had
-better be at some rate lower than the biosphere
-can replenish the natural capital stocks.
+then withdrawal of natural resources from the biosphere
+$\left(\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
+had better be at some rate lower than the biosphere
+can replenish the natural capital stocks. 
+In reality, 
+$\frac{\mathrm{d}R_{0}}{\mathrm{d}t}$
+is really the sum of many different resources
+(flora and fauna, water) each of which will have
+its own natural rate of regeneration.
+As such, 
+the sustainability criterion  is a vector of values,
+one for each natural resource.
 
 Secondly,
-both $\sum_{i,j}\dot{S}_{ij}$
-and $\sum_{j}\gamma_{K_{j}}K_{j}$
-may be at high or low levels with the
-economy still operating at steady state.
+both the flow of short-lived goods around the economy
+$\left(\sum_{i,j}\dot{S}_{ij}\right)$
+and the depreciation of capital stock back to the biosphere 
+$\left(\sum_{j}\gamma_{K_{j}}K_{j}\right)$
+may be at higher or lower levels even with the
+economy still operating at a steady state,
+i.e.\ no growth in capital stock.
 The higher the level of these flows,
 the greater the rate of depletion of
 natural resources and the harder it is to
@@ -750,18 +764,24 @@ disposable tableware,
 cutlery,
 and napkins)
 is large.
-**** MCD - define relationship between $\gamma$
-and average lifetime. Capital stock may be constant
-but we are still unsustainable. ****
-Additionally,
-if the average lifetime of capital goods such
-as consumer electronics (cell phones,
-tablets,
-notepads)
-decreases,
-this causes an increase in the need for flows of
+
+As discussed in Chapter~\ref{chap:materials},
+the rate of depreciation ($\gamma$) is inversely
+proportional to the average lifetime of capital stock---as
+the average lifetime of capital stock decreases,
+the rate of depreciation of capital stock increases which
+increases the draw on natural resources.
+It is likely that the average lifetime of capital stock has
+decreased over the last century.
+This is due to a decrease in durability of capital stock
+(the average table built today is not as durable as the average table
+built in the early twentieth century)
+and also to a change in proportion of consumer electronics
+(cell phones, laptops, tablets)
+with short lifetimes.
+This causes an increase in the need for flows of
 replacement materials.
-In the absense of extreme recycling of materials,
+In the absence of extreme recycling of materials,
 these large flows place large demands on
 natural resources.
 
@@ -772,31 +792,55 @@ $\left(\sum_{j}\gamma_{K_{j}}K_{j}\right)$
 are proportional to the size of the capital
 stock $\left(\sum_{j}K_{j}\right)$.
 As such,
-a larger accumulation of capital stock requires
+a larger stock of capital requires
 greater draw on natural resources and is thus harder
 to maintain within any sustainability constraint.
+These points emphasize that constant capital stock
+(or analogously constant population)
+is not a sufficient condition for environmental sustainability.
 
-**** MCD - bring in Daly here ****
-Characterizing a steady-state economy as one
-with a constant material through-put **** MCD - explain in words.
-Be more explicit about throughput as input or output. 
-We are looking at withdrawl from the biosphere (input).  
-Recast as extraction (defined by equation) and then also
-waste. ****,
-could be defined within our framework
-by the constraint:
+Herman Daly has placed great emphasis on a steady-state
+economy as having a constant rate of material through-put 
+\cite{Daly1977, Daly1997}
+which should also lie below biophysical limits,
+in order to meet any sustainability constraint.
+This is often referred to as the ``scale'' issue---how 
+large is the (currently growing) human economy in relation
+to the finite, non-growing biosphere of which it is a sub-system?
+Growth of the human economy must either displace other natural
+ecosystems (replacing old growth forest for crops)
+or deplete natural capital stocks, be they 
+renewable (fisheries) or 
+non-renewable (fossil fuels).
+As shown in Figure~\ref{fig:C_materials},
+material through-put is composed of two distinct processes:
+exchange of material \emph{from} the biosphere 
+\emph{into} the economy (extraction)
+and exchange of material \emph{from} the economy
+\emph{into} biosphere (waste).
+We may characterizing constant material through-put
+as either constant rate of extraction, constant rate of
+waste disposal, or both
+which could be defined within our framework as:
 
-\begin{equation}
-	\frac{\mathrm{d}\dot{R}_{0}}{\mathrm{d}t} 
-	= \frac{\mathrm{d}\dot{S}_{0}}{\mathrm{d}t}
+\begin{equation}\label{eq:const_throughput}
+	\frac{\mathrm{d}\dot{R}_{0}}{\mathrm{d}t}
+	= \ddot{R}_{0}
+	= \ddot{S}_{0}
+	= 	\sum\limits_{i}
+			\left(
+				\ddot{R}_{i0}
+				+ \ddot{S}_{i0}
+				+ \ddot{K}_{i0}
+			\right)
 	= 0.
 \end{equation}
- **** MCD - refer to Figure here ****
+
 Within this constraint,
 more effective use of materials could
 theoretically allow increasing accumulation
 of man-made capital ($K$) 
-and increasing flow of short-lived goods
+and increasing flow of short-lived goods ($\dot{S}$)
 as society learns to use resources better.
 Eventually,
 physical limits would entail that capital
@@ -812,30 +856,52 @@ at the output side---wastes emitted
 at rates below which
 the biosphere can assimilate them.
 
-**** MCD - Discuss short-lived stuff more ****
+The issue of GDP and economic ``development'' 
+has already been discussed in 
+Section~\ref{sec:implications_for_development}. 
+However,
+the case of zero growth in GDP was not.
+Within our framework,
+a condition of constant GDP would be
+characterized by the following equation:
 
-**** MCD - GDP discussion can refer to Section 7.2 ****
+\begin{equation}\label{eq:const_GDP}
+	\frac{\mathrm{d}}{\mathrm{d}t}GDP
+	=	\sum\limits_{j}\ddot{X}_{j}
+	= 0
+\end{equation}
+
+Since,
+under the subjective theory of value,
+no value is attributed to the flow of materials
+to or from the biosphere,
+it is unclear what the impact on capital stock ($K$)
+or material through-put
+(extraction and waste disposal)
+would be from a constraint of constant GDP.
+
+**** Becky, can you speak to this? ****
 
 **** Discuss maintenance vs.\ accumulation flows? 
 Is this a better place to discuss this issue? Can refer to
 Section 6.5 and Odum B/P vs. P/B. ****
 
-****** Mik: Finish this section. 
-In terms of what a SSE would look like in the I-O framework, 
-at first blush, I would think that dB/dt = 0 is one aspect.  
-Also, with no growth, inflow rates = depreciation rates.  
-The larger that B is for any society, the larger E must be (to overcome depreciation).  
-To minimize E, hyper-recycling is probably useful.  
-Those are at least a place to start. ******
-
-****** In our discussion, 
-we also addressed the attempts at SSE from point of view of society. 
-In order to achieve this goal \emph{without} recycling, 
-the goods and services sector should have to increase extraction to offset decreasing ore grade, 
-the energy sector should have to increase extraction of energy 
-to allow increasing extraction (unless efficiency could make up the gap: unlikely) 
-in which case the SSE would be violated from these two and from the POV of the earth.
-******
+%****** Mik: Finish this section. 
+%In terms of what a SSE would look like in the I-O framework, 
+%at first blush, I would think that dB/dt = 0 is one aspect.  
+%Also, with no growth, inflow rates = depreciation rates.  
+%The larger that B is for any society, the larger E must be (to overcome depreciation).  
+%To minimize E, hyper-recycling is probably useful.  
+%Those are at least a place to start. ******
+%
+%****** In our discussion, 
+%we also addressed the attempts at SSE from point of view of society. 
+%In order to achieve this goal \emph{without} recycling, 
+%the goods and services sector should have to increase extraction to offset decreasing ore grade, 
+%the energy sector should have to increase extraction of energy 
+%to allow increasing extraction (unless efficiency could make up the gap: unlikely) 
+%in which case the SSE would be violated from these two and from the POV of the earth.
+%******
 
 
 \bibliographystyle{unsrt}
