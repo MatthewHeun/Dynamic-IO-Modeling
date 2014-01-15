@@ -702,7 +702,7 @@ the important variable as:
 
 
 Substituting equations~\ref{eq:A_R0},~\ref{eq:A_S0}~and~\ref{eq:A_K0_balance}
-into equation~\ref{eq:A_CV_0} we obtain:
+into Equation~\ref{eq:A_CV_0} we obtain:
 
 \begin{align}\label{eq:A_CV_0a}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
@@ -784,8 +784,8 @@ energy and materials~(entropy)~\cite{Schroedinger1947}.
 
 % **** I like where they are. Implications drawn from the equations are a good thing. --MKH ****
 
-Substituting equation~\ref{eq:A_S1_balance} 
-into equation~\ref{eq:A_CV_1}, we obtain:
+Substituting Equation~\ref{eq:A_S1_balance} 
+into Equation~\ref{eq:A_CV_1}, we obtain:
 
 \begin{align}\label{eq:A_CV_1b}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
@@ -799,9 +799,9 @@ into equation~\ref{eq:A_CV_1}, we obtain:
 
 Since we have two different formulations for $\dot{P}_{1}$,
 represented by Equations~\ref{eq:A_P1} and~\ref{eq:A_P1a}, 
-we may substitute either into equation~\ref{eq:A_CV_1b}.
-Substituting equation~\ref{eq:A_P1a} 
-into equation~\ref{eq:A_CV_1b}, we obtain:
+we may substitute either into Equation~\ref{eq:A_CV_1b}.
+Substituting Equation~\ref{eq:A_P1a} 
+into Equation~\ref{eq:A_CV_1b}, we obtain:
 
 \begin{equation}\label{eq:A_CV_1c}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
@@ -813,8 +813,8 @@ into equation~\ref{eq:A_CV_1b}, we obtain:
 ($K_{1}$) is dependent only on inflows of capital into society ($\dot{K}_{11}$) 
 and depreciation of capital to the biosphere ($\dot{K}_{10}$).
 
-Substituting instead equation~\ref{eq:A_P1} 
-into equation~\ref{eq:A_CV_1b}, we obtain:
+Substituting instead Equation~\ref{eq:A_P1} 
+into Equation~\ref{eq:A_CV_1b}, we obtain:
 
  \begin{align}\label{eq:A_CV_1d}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
@@ -829,10 +829,10 @@ depreciation term will be discussed in more depth in
 Sections~\ref{sec:depreciation_embodied} and~\ref{sec:depreciation_intensity}.} 
 ($\dot{K}_{10}$)
 may be rewritten as the total stock
-of man-made capital ($\dot{K}_{1}$) 
+of man-made capital ($K_{1}$) 
 multiplied by some depreciation rate ($\gamma_{K_{1}}$)
 in units of inverse time (e.g.\ 1/year),
-such that equation~\ref{eq:A_CV_1d} becomes:
+such that Equation~\ref{eq:A_CV_1d} becomes:
 
  \begin{align}\label{eq:A_CV_1e}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
@@ -842,7 +842,12 @@ such that equation~\ref{eq:A_CV_1d} becomes:
 	- \gamma_{K_{1}}{K}_{1}.
 \end{align}
 
-\noindent{}which we may rearrange as:
+It is important to note that $\gamma_{K_{1}}$ 
+is inversely proportional to the average lifetime
+of man-made capital ($K_{1}$).
+This will be discussed in more detail in
+Section~\ref{sec:SSE}.
+We may rearrange Equation~\ref{eq:A_CV_1e} as:
 
  \begin{align}\label{eq:A_CV_1f}
 	\dot{R}_{01} 
@@ -1970,7 +1975,6 @@ that do not enter the economy.
 \centering\
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/Matrix.pdf}
 \caption[The matrix of biosphere\index{biosphere}-economy flows.]{The matrix of biosphere-economy flows. 
-%**** Mik: should these be $\dot{S}$ (with the dot)? --MKH ****
 }
 \label{fig:C_mat_matrix}
 \end{figure}
@@ -1979,6 +1983,58 @@ that do not enter the economy.
 \section{Materials in the auto industry}
 \label{sec:materials_auto}
 %%%%%%%%%%
+
+Throughout the book, we shall be applying the methodology
+that has been outlined through the examples to the
+real-world case of the US auto industry.
+In Figure~\ref{fig:PERKS_materials_auto}
+we see the flows of resources,
+short-lived and capital materials
+into the auto industry.
+Since the industry does not
+extract resources directly from the biosphere,
+this flow has a zero value.
+Each of the other flows represented in the diagram is,
+in actuality,
+a vector of hundreds (or even thousands!)
+of elemental material flows,
+each of which must be accounted 
+(and balanced) separately.
+
+Data on the rest of the flows at the industry level
+is very hard to obtain.
+In Europe,
+economy-wide material flow accounts (EW-MFA)
+have been produced for each of the member 
+states~\cite{EUROSTAT2011}. 
+Work is ongoing to characterize the inter-sectoral
+flows of materials~\cite{ConAccount1998}.
+
+A number of studies have looked at 
+the material and energy flows 
+associated with vehicle manufacturing processes~\cite{MacLean1998,McCleese2002,MacLean2003}.
+The US automobile industry is composed
+of many of these manufacturing processes.
+In theory,
+a representation of the industry-level flows
+could be ``built up'' by assuming that the results from
+these process-based models represent average
+processes within the whole industry and 
+scaling the material flows accordingly,
+with appropriately wide uncertainty bounds.
+
+
+**** MCD - I'm not sure what else I can write here.
+% I could talk about process-based models? 
+Talk about other industries
+that may have better data.****
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials_auto_ind.pdf}
+\caption[Material flows for the US Automobile Industry]{Material flows for the US Automobile Industry using data from XXXX}
+\label{fig:PERKS_materials_auto}
+\end{figure}
 
 %%%%%%%%%% Materials: Summary %%%%%%%%%%
 \section{Summary}
