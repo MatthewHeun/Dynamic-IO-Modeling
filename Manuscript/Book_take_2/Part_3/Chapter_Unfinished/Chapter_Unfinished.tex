@@ -269,6 +269,9 @@ we have made the distinction between
 process-based (often called ``bottom-up'') 
 and input-output (often called ``top-down'')
 analyses.
+The advantages and disadvantages of each type
+of analysis are outlined in Figure~\ref{fig:IO_vs_process}.
+
 Process analysis is based on detailed technological
 or engineering models of specific economic processes.
 Model specification and data collection is arduous and
@@ -279,19 +282,55 @@ under study by disaggregating the process into
 several components or sub-processes.
 In reality,
 any economic process exists in a complex network of
-interacting processes that encompass the entire economy.
+interacting processes that encompass the entire economy,
+as stated by Bullard et al. (1978), 
+\begin{quote}
+	each step in a process analysis may be viewed as 
+	an expansion of the system boundary 
+	(around the item being analyzed) 
+	into the economic system~\cite[p.281]{Bullard:1978vd}
+\end{quote}
+and represented diagramatically in Figure~\ref{fig:Hybrid_boundary}.
 Every process calls on every other process within the economy,
 even if only minutely and indirectly at many steps removed.
 Obviously,
 the time, 
-effort and cost involved with trying to model
+effort and cost involved with trying to model and
 measure all of the flows involved become daunting
 for even low numbers of interacting processes.
 The decision of where to draw the boundary of
-a process analysis is know in the 
+a process analysis is known in the 
 lifecycle assessment literature as the 
-\emph{truncation problem}.
+\emph{truncation problem}~\cite{Suh2004}.
+One method to extend the comprehensiveness of process
+analyses is to use a hybrid method,
+utilizing data from an I-O analysis to supplement the
+missing data from the truncation of the process analysis.
+The financial cost of goods and services identified by
+the process analysis are converted to energy
+(or material) flows via the I-O method.
+The truncation error is replaced by a smaller aggregation
+error due to limitations of the I-O 
+method~\cite{Bullard:1978vd}.
+A variety of hybrid methods exist which aim to
+overcome the limitations of either method 
+individually~\cite{Bullard:1978vd, Suh2004, Suh2002, 
+Crawford2008, Zhai2010}
 
+
+\begin{figure}[h!]
+\centering\
+\includegraphics[width=0.8\linewidth]{Part_3/Chapter_Unfinished/images/Top_down_vs_bottom_up.pdf}
+\caption[Top-down vs.\ bottom-up analyses ]{Advantages (pros) and disadvantages (cons) of ``top-down'', I-O and ``bottom-up'', process-based analyses, adapted from \cite{Hendrickson2006}.}
+\label{fig:IO_vs_process}
+\end{figure}
+
+\begin{figure}[h!]
+\centering\
+\includegraphics[width=\linewidth]{Part_3/Chapter_Unfinished/images/Hybrid_boundary.pdf}
+\caption[System boundary for process and I-O analyses]{System boundary for process and I-O analyses, adapted from \cite{Bullard:1978vd}.}
+\label{fig:Hybrid_boundary}
+\end{figure}
 
 
 %%%%%%%%%% Second Law %%%%%%%%%%
