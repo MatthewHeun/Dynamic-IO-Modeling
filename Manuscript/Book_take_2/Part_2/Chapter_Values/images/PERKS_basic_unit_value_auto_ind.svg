@@ -389,9 +389,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
+     inkscape:zoom="0.7"
      inkscape:cx="763.41219"
-     inkscape:cy="153.58019"
+     inkscape:cy="372.24972"
      inkscape:document-units="px"
      inkscape:current-layer="g4157"
      showgrid="false"
@@ -439,74 +439,6 @@
        transform="translate(828.55264,220.62332)"
        id="g4157">
       <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path4159"
-         d="m -831.13994,250.39423 65.4793,-0.41408"
-         style="fill:none;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none"
-         d="m -831.13994,294.39423 65.4793,-0.41408"
-         id="path4161"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;stroke:#008000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none"
-         d="m -831.13994,211.7276 65.4793,-0.41408"
-         id="path4163"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path4165"
-         d="m -831.13994,333.06086 65.4793,-0.41408"
-         style="fill:none;stroke:#2a7fff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none" />
-      <text
-         xml:space="preserve"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         x="-756.526"
-         y="263.26691"
-         id="text4167"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan4169"
-           x="-756.526"
-           y="263.26691">R: Resources</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4171"
-         y="221.20244"
-         x="-756.526"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         xml:space="preserve"><tspan
-           y="221.20244"
-           x="-756.526"
-           id="tspan4173"
-           sodipodi:role="line">E: Energy</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         x="-756.526"
-         y="343.35675"
-         id="text4175"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan4177"
-           x="-756.526"
-           y="343.35675">S: Short-lived goods</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4179"
-         y="305.26691"
-         x="-756.526"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         xml:space="preserve"><tspan
-           y="305.26691"
-           x="-756.526"
-           id="tspan4181"
-           sodipodi:role="line">K: Capital goods</tspan></text>
-      <path
          sodipodi:nodetypes="ccczcc"
          inkscape:connector-curvature="0"
          id="path4183"
@@ -536,12 +468,6 @@
          id="path4191"
          d="m 76.22099,524.0764 150,0.009"
          style="fill:none;stroke:#800080;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path4193"
-         d="m 256.88013,523.67729 0.005,-170.33041 -419.21948,0 -0.41408,47.4793"
-         style="fill:none;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#EmptyDiamondL);marker-end:url(#Arrow1Lend)" />
       <rect
          y="365.79312"
          x="55.239067"
@@ -585,8 +511,8 @@
          x="-94.760933"
          y="341.79312" />
       <path
-         style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#EmptyDiamondL);marker-end:url(#Arrow1Lend)"
-         d="m 268.88013,523.67729 0.005,-186.33041 -603.21948,0 -0.33767,137.52821 61.92359,-0.0489"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99060774px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#EmptyDiamondL);marker-end:url(#Arrow1Lend)"
+         d="m 257.56229,523.68171 0.005,-186.33953 -591.91257,0 -0.33134,137.53494 60.76288,-0.0489"
          id="path4207"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
@@ -759,41 +685,42 @@
            id="flowPara4283">Capital</flowPara><flowPara
            style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4285">$26,474</flowPara></flowRoot>      <flowRoot
-         transform="translate(-92.957182,167.34648)"
-         style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         transform="translate(-90.100039,184.48933)"
+         style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          id="flowRoot4287"
          xml:space="preserve"><flowRegion
            id="flowRegion4289"><rect
-             style="font-size:16px;text-align:center;text-anchor:middle"
+             style="font-size:16px;text-align:center;line-height:100%;text-anchor:middle"
              y="255.22673"
              x="166.94933"
-             height="88.627434"
+             height="80.056007"
              width="191.68256"
              id="rect4291"
-             ry="2.0611029" /></flowRegion><flowPara
-           style="font-size:22px"
-           id="flowPara4293"><flowSpan
-             id="flowSpan4295"
-             style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold">Capital flows</flowSpan></flowPara><flowPara
-           style="font-size:22px"
+             ry="2.0611029"
+             rx="2.0611029" /></flowRegion><flowPara
+           style="font-size:22px;line-height:100%"
            id="flowPara4297"><flowSpan
-             style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-             id="flowSpan4299">from self </flowSpan><flowSpan
-             style="font-weight:bold;-inkscape-font-specification:Sans Bold"
+             id="flowSpan4295"
+             style="font-size:16px;font-weight:bold;line-height:100%;-inkscape-font-specification:Sans Bold">Capital </flowSpan></flowPara><flowPara
+           style="font-size:22px;line-height:100%"
+           id="flowPara3714"><flowSpan
+             style="font-size:16px;font-weight:bold;line-height:100%;-inkscape-font-specification:Sans Bold"
+             id="flowSpan3716">to/from Auto Industry </flowSpan><flowSpan
+             style="font-weight:bold;line-height:100%;-inkscape-font-specification:Sans Bold"
              id="flowSpan4301">$551 </flowSpan></flowPara></flowRoot>      <flowRoot
          transform="matrix(1,0,0,1.0963145,64.652961,317.23544)"
-         style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         style="font-size:16px;font-style:oblique;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Oblique"
          id="flowRoot4303"
          xml:space="preserve"><flowRegion
            id="flowRegion4305"><rect
-             style="font-size:16px;text-align:center;text-anchor:middle"
+             style="font-size:16px;text-align:center;text-anchor:middle;font-weight:normal;-inkscape-font-specification:Sans Oblique;font-style:oblique"
              y="269.65445"
              x="166.94933"
              height="69.046913"
              width="191.68256"
              id="rect4307"
              ry="2.0611029" /></flowRegion><flowPara
-           style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+           style="font-size:16px;font-weight:normal;-inkscape-font-specification:Sans Oblique;font-style:oblique"
            id="flowPara4309">(Includes $441 of output to the waste industry)</flowPara></flowRoot>      <flowRoot
          transform="translate(-102.13058,269.78561)"
          style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -815,18 +742,21 @@
            id="flowPara4321">$467,390 </flowPara></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot4323"
-         style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         transform="matrix(0.98896235,0,0,1,-830.20302,124.74809)"><flowRegion
+         style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;text-anchor:middle;text-align:center"
+         transform="matrix(0.98896235,0,0,1,-830.20302,134.74809)"><flowRegion
            id="flowRegion4325"><rect
              id="rect4327"
-             width="321.76208"
-             height="58.741428"
+             width="171.53249"
+             height="81.598572"
              x="913.06854"
-             y="162.4771" /></flowRegion><flowPara
+             y="162.4771"
+             style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
            id="flowPara4329"
-           style="font-weight:bold;-inkscape-font-specification:Sans Bold">Self-use Resources </flowPara><flowPara
+           style="font-weight:bold;-inkscape-font-specification:Sans Bold;text-anchor:middle;text-align:center">Resources </flowPara><flowPara
+           style="font-weight:bold;-inkscape-font-specification:Sans Bold;text-anchor:middle;text-align:center"
+           id="flowPara3684">to/from Auto Industry </flowPara><flowPara
            id="flowPara4331"
-           style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold">$139,259</flowPara><flowPara
+           style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold;text-anchor:middle;text-align:center">$139,259</flowPara><flowPara
            id="flowPara4333" /></flowRoot>      <flowRoot
          transform="translate(-796.49234,177.82261)"
          xml:space="preserve"
@@ -854,31 +784,103 @@
              style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
            style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4353">2011 US Automobile Manufacturing Sector</flowPara><flowPara
-           id="flowPara4355" /></flowRoot>      <path
-         style="fill:none;stroke:#800080;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none"
-         d="m -831.13994,170.39423 65.4793,-0.41408"
-         id="path4357"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4359"
-         y="183.26691"
-         x="-756.526"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         xml:space="preserve"><tspan
-           y="183.26691"
+           id="flowPara4355" /></flowRoot>      <g
+         id="g3869"
+         transform="translate(11.428571,0)">
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none"
+           d="m -831.13994,250.39423 65.4793,-0.41408"
+           id="path4159"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path4161"
+           d="m -831.13994,294.39423 65.4793,-0.41408"
+           style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none" />
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path4163"
+           d="m -831.13994,211.7276 65.4793,-0.41408"
+           style="fill:none;stroke:#008000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none" />
+        <path
+           style="fill:none;stroke:#2a7fff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none"
+           d="m -831.13994,333.06086 65.4793,-0.41408"
+           id="path4165"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4167"
+           y="263.26691"
            x="-756.526"
-           id="tspan4361"
-           sodipodi:role="line">P: Products</tspan></text>
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           xml:space="preserve"><tspan
+             y="263.26691"
+             x="-756.526"
+             id="tspan4169"
+             sodipodi:role="line">R: Resources</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           x="-756.526"
+           y="221.20244"
+           id="text4171"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4173"
+             x="-756.526"
+             y="221.20244">E: Energy</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text4175"
+           y="343.35675"
+           x="-756.526"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           xml:space="preserve"><tspan
+             y="343.35675"
+             x="-756.526"
+             id="tspan4177"
+             sodipodi:role="line">S: Short-lived goods</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           x="-756.526"
+           y="305.26691"
+           id="text4179"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4181"
+             x="-756.526"
+             y="305.26691">K: Capital goods</tspan></text>
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path4357"
+           d="m -831.13994,170.39423 65.4793,-0.41408"
+           style="fill:none;stroke:#800080;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none" />
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           x="-756.526"
+           y="183.26691"
+           id="text4359"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4361"
+             x="-756.526"
+             y="183.26691">P: Products</tspan></text>
+      </g>
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path4363"
-         d="m 275.24785,524.11193 150,0.009"
+         d="m 262.3907,524.11193 150,0.009"
          style="fill:none;stroke:#800080;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
       <flowRoot
-         transform="translate(67.95626,266.34607)"
+         transform="translate(60.813403,266.34607)"
          style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          id="flowRoot4365"
          xml:space="preserve"><flowRegion
@@ -889,12 +891,54 @@
              height="69.046913"
              width="191.68256"
              id="rect4369"
-             ry="2.0611029" /></flowRegion><flowPara
+             ry="2.0611029"
+             rx="2.0611029" /></flowRegion><flowPara
            style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4371">Net economic </flowPara><flowPara
            style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4373">output:</flowPara><flowPara
            style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-           id="flowPara4375">$328,021 </flowPara></flowRoot>    </g>
+           id="flowPara4375">$328,021 </flowPara></flowRoot>      <text
+         sodipodi:linespacing="125%"
+         id="text4965"
+         y="170.41354"
+         x="-392.84967"
+         style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="170.41354"
+           x="-392.84967"
+           id="tspan4967"
+           sodipodi:role="line">Inputs from other sectors of the economy</tspan></text>
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3686"
+         style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+           id="flowRegion3688"><rect
+             id="rect3690"
+             width="1.4285715"
+             height="37.142857"
+             x="900"
+             y="235" /></flowRegion><flowPara
+           id="flowPara3692"></flowPara></flowRoot>      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3694"
+         style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+           id="flowRegion3696"><rect
+             id="rect3698"
+             width="0"
+             height="22.857143"
+             x="1007.1428"
+             y="197.85715" /></flowRegion><flowPara
+           id="flowPara3700"></flowPara></flowRoot>      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3702"
+         style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+           id="flowRegion3704"><rect
+             id="rect3706"
+             width="0"
+             height="28.571428"
+             x="900"
+             y="207.85715" /></flowRegion><flowPara
+           id="flowPara3708"></flowPara></flowRoot>    </g>
   </g>
 </svg>

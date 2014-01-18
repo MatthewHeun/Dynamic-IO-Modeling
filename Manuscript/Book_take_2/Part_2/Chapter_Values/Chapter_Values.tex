@@ -450,7 +450,7 @@ of value flows for the US auto industry.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1.0\linewidth]{Part_2/Chapter_Values/images/PERKS_basic_unit_value_auto_ind.pdf}
-\caption[Value of Material and Energy flows into and out of the US Automobile Industry]{Value of Material and Energy flows into and out of the US Automobile Industry (2011USD).}
+\caption[Value of Material and Energy flows into and out of the US Automobile Industry]{Value of Material and Energy flows into and out of the US Automobile Industry (in Millions of 2011USD).}
 \label{fig:PERKS_value_auto_ind}
 \end{figure}
 
@@ -462,15 +462,31 @@ and ``used'' by the ``Waste Management Sector'' (NAICS 56).
 [put \$0 instead of 441---there is a lot, but not all, of waste that 
 is routed through the waste industry on its way to the biosphere.]
 Using the automotive industry as an example, the KLEM **** define BRH ****S, Input-Output, 
-and Capital Flow data\footnote{Available from http://bea.gov/iTable/index\_industry.cfm.} could be used to estimate the model as demonstrated in Figure~\ref{fig:Values_data_sources}.
+and Capital Flow data could be used to estimate the model as demonstrated in Table~\ref{tab:data}.
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1.0\linewidth]{Part_2/Chapter_Values/images/Values_data_sources.pdf}
+
+\begin{table}
 \caption[Data Sources for Auto Industry (IOC 3361MV) Example]{Data Sources for Auto Industry (IOC 3361MV) Example.}
-\label{fig:Values_data_sources}
-\end{figure}
+\begin{center}
+  \begin{tabular}{l @{\hspace{2em}} r @{\hspace{2em}} l}
+   \toprule 
+    Value Flow & 2011 USD (millions) & Data Source  \\ 
+	\midrule
+    Resources (other than Energy) & \$207,623            & KLEMS Intermediate Use Estimates 2011\footnote{See Appendix \ref{sec:data} for detailed calculations.} \\
+    Resources (Energy) &   3,367&   KLEMS Intermediate Use Estimates 2011                \\
+    Short-lived Goods &   42,005 &   KLEMS Intermediate Use Estimates 2011    \\
+    Capital &  26,474  &  1997 Capital Flow Table     \\  
+    Capital (to/from Auto Industry) &  551 & BRH check      \\
+    Resources (to/from Auto Industry) &  139,259 &  KLEMS Intermediate Use Estimates 2011     \\
+    Output to Waste Sector & 441  &  KLEMS Intermediate Use Estimates 2011     \\
+    Gross Economic Output & 467,896  &  The Use of Commodities by Industries  \\ 
+    Net Economic Output & 327,580   &  The Use of Commodities by Industries \\
+    \bottomrule
+  \end{tabular}
 
+\end{center}
+\label{tab:data}
+\end{table}
 
 Thus, in contrast to material and energy resource flows through the economy, \emph{dollar values} of the flow of material and energy resource flows through the economy are publicly available from the BEA website. 
 
