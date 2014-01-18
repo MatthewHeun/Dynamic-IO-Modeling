@@ -8,11 +8,10 @@ REM Invoke the script bycd'ing into the directory that contains this file.
 REM Then, type ".\typeset.bash"
 REM --Matthew Kuperus Heun, November 2013.
 
-REM Ensure a fresh build by deleting all auxiliary files created by LaTeX.
 cd ..
-.\clean.bat
 
-REM Use the pdflatex engine.
+
+REM First of several runs of pdflatex
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
 
