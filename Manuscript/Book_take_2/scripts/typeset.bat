@@ -62,11 +62,14 @@ cd Chapter_Summary
 bibtex Chapter_Summary
 cd ..\..
 
+cd Appendix_Auto
+bibtex Appendix_Auto
+cd ..
+
 cd Appendix_Casler
 bibtex Appendix_Casler
 cd ..
 
-REM These appendices do not contain any references.
 cd Appendix_Proof_1
 bibtex Appendix_Proof_1
 cd ..
