@@ -34,6 +34,7 @@ cd Part_3; cd Chapter_Unfinished;   rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Part_3; cd Chapter_Summary;      rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 # Delete Part 4's .aux files here, if we make a Part 4.
 # Delete Part 5's .aux files here, if we make a Part 5.
+cd Appendix_Auto;                   rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Infinite_Series;        rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Proof_1;                rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
 cd Appendix_Estimating_A;           rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..

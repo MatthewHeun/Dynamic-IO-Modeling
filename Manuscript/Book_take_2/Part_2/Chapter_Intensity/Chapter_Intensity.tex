@@ -870,23 +870,29 @@ in the context of our running example, the auto industry.
 \label{sec:intensity_auto}
 %%%%%%%%%%
 
-%%%%%% Below - Imported from Embodied energy chapter %%%%%
-
-Numerous studies have used energy-based, 
-input-output methods to model the energetic
+Equation~\ref{eq:epsilon_leontief_depreciation_simplification} shows 
+that it is possible to estimate the energy intensity 
+of products of economic sectors using the Input-Output method.\footnote{For a discussion
+of differences between Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
+and similar equations in the literature, 
+see Appendix~\ref{chap:Casler}.}
+Several studies have used similar energy-based, 
+input-output methods to estimate the energetic
 cost of goods and services produced by various
-economic sectors.\cite{Bullard1975, Herendeen1978, 
-Herendeen1973, Wright1974, Herendeen1974, 
-Herendeen1974a,  Costanza:1984tq, Lenzen1998, 
-Machado2001, Hendrickson2006}
+economic sectors.\cite{Bullard1975, Herendeen1978, Herendeen1973, 
+Wright1974, Herendeen1974, Herendeen1974a, Costanza:1984tq, 
+Lenzen1998, Machado2001, Hendrickson2006}
+We review a few of these studies below.
 
-**** MCD - do we know of a way to make these references
-appear as [1-10]? biblatex is not compatible with chapterbib. ****
+**** MCD---do we know of a way to make these references
+appear as [1--10]? biblatex is not compatible with chapterbib. ****
+
+**** Mik: do all of the above references use I-O methods? --Matt ****
 
 Using national accounts data for 1967,
 Bullard and Herendeen calculated the
 total energy consumption rate~($\dot{T}$)
-of the automobile industry as 
+of the US automobile industry as 
 $13,240 \times 10^{15}$~joules/year~$= 13.24$~EJ,
 which was around 20\% of the nation's
 energy consumption in that year.\cite{Bullard1975}
@@ -896,101 +902,16 @@ meaning the rest was upstream consumption
 in material processing, 
 entering the auto industry as embodied 
 energy~($\sum_{i}\dot{B}_{ij}$).
-The embodied energy per vehicle was 148 GJ (10$^{9}$~J).\@
-The authors note that this estimate is 11\% higher
-than obtained via process analysis in a
-study by Berry and Fels two years earlier.\cite{Berry:1973vo}
-%Costanza and Herendeen (1984) used a slightly
-%different approach to analyze the energy intensity
-%of economic sectors using national accounts data
-%from 1963, 1967 and 1972.
-%Their values of the energy consumption due to the
-%motor vehicle and equipment manufacturing sector
-%were 
-%**** MCD - Matt, I think I may need your help
-%to interpret the numbers from Costanza. ****
-The Economic Input-Output Life Cycle 
-Assessment~(EIOLCA) online tool allows
-computation of the energy flows through
-the economy based on US national accounts\footnote{The 
-US national accounts
-data has not been updated since 2002.
-The issue of national accounts data is discussed in more
-detail in Section~\ref{sec:Data}} from 1992,
-1997 and 2002~\cite{EIOLCA2014}
-based on the framework outlined
-by Hendrickson and Lave.\cite{Hendrickson2006}
-Using the tool with the 2002 producer price model,
-we find that \$1M worth of output
-from the automobile manufacturing industry
-(NAICS sector 336111) generates
-a total flow of 8.33 TJ (10$^{12}$~J) of energy through the economy,
-2.19 TJ from the power generation and 
-supply sector~(221100) and 1.25 TJ from the
-iron and steel mills sector~(331110).
-Assuming an average vehicle price of \$30,000,
-in 2002 **** MCD - Becky, is this reasonable? ****
-this equates to an embodied energy of
-250 GJ/vehicle---67\% greater than the value
-estimated by Bullard and Herendeen.
-
-As discussed in Section~\ref{sec:total_energy_accounting},
-all of these methods differ from the framework presented
-in this Chapter due to the assumption that embodied energy
-does not accumulate within economic sectors.
-This issue is discussed by 
-Bullard and Herendeen~\cite[p.273]{Bullard1975},
-where they state of capital goods that,
-
-\begin{quote}
-	these are not considered part of the 
-	inter-industry transactions but are 
-	listed as sales to final demand.
-\end{quote}
-
-They later offer calculation of industry
-energy intensity values (which will be discussed
-in greater depth in Chapter~\ref{chap:intensity})
-including and excluding these capital goods
-flows~\cite[p.489]{Bullard1975},
-finding the inclusion of these flows adds
-on average 3-6\% to the sector
-energy intensity.
-
-%%%%%% Above -  Imported from Embodied energy chapter %%%%%
-
-
-
-
-
-Equation~\ref{eq:epsilon_leontief_depreciation_simplification} shows 
-that it is possible to estimate the energy intensity 
-of products of economic sectors using the Input-Output method.\footnote{For a discussion
-of differences between Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
-and similar equations in the literature, 
-see Appendix~\ref{chap:Casler}.}
-However, very few analysts have done so.
-
-In 1973, Berry and Fels, using a process-based analysis 
-(rather an Input-Output analysis),
-to find that the energy ``cost'' of manufacturing a single automobile 
-in the U.S.\ was 37,275 kW-hr, or $1.27\times10^{8}$ BTU.\cite{Berry:1973vo}
-The average cost of a car in 1973 was \$3,650, so the energy intensity
-of automobiles in 1973 can be estimated as $3.5\times10^{4}$ BTU/\$.
-
-**** Becky: I obtained the price of the average car in 1973 from
-
-\url{http://www.thecostofliving.com/index.php?id=97\&a=1}, 
-
-possibly not the most reliable source. 
-Can you find a better number from a better source? --MKH ****
-
-In 1975, Bullard and Herendeen~\cite[p. 274]{Bullard1975} used the Input-Output method
-to estimate the energy cost manufacturing the average car from 1967 data
-and obtained a value that was 11 \% greater than Berry and Fels~\cite{Berry:1973vo}.
+Given the number of autos produced per year, 
+Bullard and Herendeen calculated that 
+the embodied energy per vehicle was 148 GJ (10$^{9}$~J),
+11\% higher than the estimate obtained via process analysis in a
+study by Berry and Fels~\cite{Berry:1973vo} two years earlier.\footnote{See
+Section~\ref{sec:embodied_energy_auto} for discussion 
+of the Berry and Fels~\cite{Berry:1973vo} paper.}
 
 In 1980, Costanza~\cite{Costanza:1980ww} estimated 
-the energy intensity of all economic sectors of the U.S.\ economy
+the energy intensity of all economic sectors of the US economy
 using the Input-Output method.
 Unfortunately, the energy intensity 
 of the Motor Vehicles and Equipment sector (63) was not reported
@@ -1028,7 +949,7 @@ DIRECT method values only.}
 \end{table}
 
 \begin{table}
-\caption{Selected U.S.\ economic sector energy intensities, 1972.\cite{Costanza:1984tq}}
+\caption{Selected US economic sector energy intensities, 1972.\cite{Costanza:1984tq}}
 \begin{center}
 \begin{tabular} {r @{\hspace{2em}} l}
 	\toprule
@@ -1048,11 +969,62 @@ DIRECT method values only.}
 However, the Costanza results~\cite{Costanza:1984tq} 
 (and nearly all I-O results in the literature)
 assume the following: negligible energy input from society 
-(which is probably a reasonable assumption for the U.S.), 
+(which is probably a reasonable assumption for the US), 
 steady-state economic conditions with negligible accumulation 
 of embodied energy in economic sectors 
-(which probably didn't exist in the U.S. in the late 1960s), and 
+(which probably didn't exist in the US in the late 1960s), and 
 negligible energy embodied in wastes (which is untrue).
+
+The Economic Input-Output Life Cycle 
+Assessment~(EIOLCA) online tool~\cite{EIOLCA2014} 
+is based on the framework outlined
+by Hendrickson and Lave\cite{Hendrickson2006}
+and allows computation of the energy flows through
+the economy based on US national accounts data from 1992,
+1997 and 2002.\footnote{The 
+US national accounts
+data has not been updated since 2002.
+The issue of national accounts data is discussed in more
+detail in Section~\ref{sec:Data}.}
+Using the tool with the 2002 producer price model,
+we find that \$1M of output
+from the automobile manufacturing industry
+(NAICS sector 336111) generates
+a total flow of 8.33~TJ (10$^{12}$~J) of energy through the economy,
+2.19~TJ from the power generation and 
+supply sector~(221100) and 1.25~TJ from the
+iron and steel mills sector~(331110).
+**** Mik: instead of estimating embodied energy content, 
+calculate energy intensity. 
+That way, we won't need to deal with the auto price!---MKH ****
+Assuming an average vehicle price of \$30,000,
+in 2002 **** MCD---Becky, is this reasonable? ****
+this equates to an embodied energy of
+250 GJ/vehicle, 67\% greater than the value
+estimated by Bullard and Herendeen.
+
+As discussed in Section~\ref{sec:total_energy_accounting},
+all of these methods differ from the framework presented
+in this Chapter due to the assumption that embodied energy
+does not accumulate within economic sectors.
+This issue is discussed by 
+Bullard and Herendeen~\cite[p.273]{Bullard1975},
+where they state of capital goods that,
+
+\begin{quote}
+	these are not considered part of the 
+	inter-industry transactions but are 
+	listed as sales to final demand.
+\end{quote}
+
+They later offer calculation of industry
+energy intensity values (which will be discussed
+in greater depth in Chapter~\ref{chap:intensity})
+including and excluding these capital goods
+flows~\cite[p.489]{Bullard1975},
+finding the inclusion of these flows adds
+on average 3--6\% to the sector
+energy intensity.
 
 It would be interesting to know 
 how the above energy intensity results 
@@ -1065,26 +1037,11 @@ However, we know of no longitudinal estimates of the energy intensity of automob
 using the Input-Output method.
 In fact, the current account records, upon which the estimates 
 of energy intensity values above are based, are no longer
-maintained by the U.S.\ government. 
+maintained by the US government. 
 So, we could not update these results, even if we wanted to.
 Furthermore, few countries maintain and publish records with enough detail
 to perform these analyses.
 In Section~\ref{sec:Data}, we discuss further the need for additional data.
-
-**** Mik: Do you agree? Are we missing something? 
-I checked Google Scholar and didn't find anything that looked like 
-there were other estimates. --MKH ****
-
-**** Matt: Look for studies of hybrids and battery-electric cars. 
-``Unclean at Any Speed op-ed in IEEE.'' Also, National Academies report 
-on the hidden cost of energy. 
-Also:
-
-Comparative Environmental Life Cycle Assessment of Conventional and Electric Vehicles
-
-in Journal of Industrial Ecology. 
-
-****
 
 
 %%%%%%%%%% Intensity: Summary %%%%%%%%%%

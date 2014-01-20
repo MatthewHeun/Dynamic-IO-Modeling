@@ -1,0 +1,329 @@
+%!TEX root = ../Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Value flows for the US auto sector}
+% Always give a unique label
+\label{chap:auto_value_flows} 
+% use \chaptermark{} to alter or adjust the chapter heading in the running head
+\chaptermark{auto value flows}
+
+
+This Appendix describes the data and calculations used to estimate the value flows to and from the Auto Industry sector in Chapter~\ref{chap:value}. These data are free and available for download from the Bureau of Economic Affairs (BEA) website
+and are described in Table~\ref{tab:data_definitions}. The details of the calculations and assumptions made to calculate 
+each of the value flows is described in 
+Table~\ref{tab:calculations}. **** BRH The following articles will be references in this Appendix.****
+
+Bonds, Belinda, and Tim Aylor. “Investment in New Structures and Equipment in 1992 by Using Industries.” Survey of Current Business, Bureau of Economic Analysis (December 1998): 26–31.
+
+Fraumeni, Barbara. “The Measurement of Depreciation in the U.S. National Income and Product Accounts.” Survey of Current Business (July 1997). 
+
+http://www.bea.gov/scb/pdf/national/niparel/1997/0797fr.pdf.
+
+Katz, Arnold. “Accounting for Obsolescence: An Evaluation of Current NIPA Practice.” Paper prepared for presentation at The 2008 World Congress on National Accounts for Nations  in Arlington, VA, May 12-17, 2008, May 2008.
+
+Lawson, Ann, and et al. “Benchmark Input-Output Accounts of the United States,  1997.” Survey of Current Business, Bureau of Economic Analysis (December 2002): 19–38.
+
+Okubo, Sumiye, Ann Lawson, and Mark Planting. “Annual Input-Output Accounts of the U.S. Economy, 1996.” Survey of Current Business, Bureau of Economic Analysis (January 2000): 37–86.
+
+Strassner, Erich H., Gabriel W. Medeiros, and George M. Smith. “Annual Industry Accounts: Introducing KLEMS Input Estimates for 1997-2003.” Survey of Current Business 85, no. 9 (September 2005): 31–65.
+
+
+
+\begin{table}
+\caption[Data Sources Available from the BEA]{Data Sources Available from the BEA.}
+\begin{center}
+  \begin{tabular}{l @{\hspace{2em}} p{10cm}}
+   \toprule 
+    Dataset & Details  \\ 
+
+	\midrule
+KLEMS &
+(K-capital, L-labor, E-energy, M-materials, and S-purchased services) refers to broad categories of intermediate inputs that are consumed by industries in their production of goods and services.  The detailed estimates of intermediate inputs of an industry are classified into one of three cost categories—energy, materials, and purchased services; the labor cost category equals an industry’s compensation to labor from value added, and the capital cost category equals the industry’s gross operating surplus plus taxes on production and imports less subsidies.  Detailed information on KLEMS can be found in the September 2005 \emph{ Survey of Current Business} article:http://www.bea.gov/scb/pdf/2005/09September/0905\_Industry.pdf. The 1998-2011 KLEMS tables are located at 
+ http://www.bea.gov/industry/more.htm. That page is located at  www.bea.gov, by clicking on the Industry tab then clicking the link to Annual I-O data, then clicking the link to Underlying detail: Additional data from the Industry Economic Accounts. \\
+ & \\
+CFT & 
+The Capital Flow Table shows the use of new structures, equipment and software by industry. The 1997 Capital Flow Table, released in September 2003, is available in an Excel spreadsheet. Several versions of the table are available. The most detailed has 183 6-digit NAICS commodities for rows, and 123 3-digit or 4-digit NAICS industries for columns. In the detailed table, the rows indicate the commodities that comprise the investment, and the columns indicate the using industry. In other versions of the table, NIPA categories for equipment and structures comprise the rows. The 1997, 1992, and 1982 Capital Flow tables are located at http://www.bea.gov/industry/capflow\_data.htm.  BEA did not produce a 2002 capital flow table. Detailed information on CFT can be found in the September 2003 Survey of Current Business article:
+https://www.bea.gov/scb/pdf/2003/11November/1103\%20Investment.pdf\\
+ & \\
+Use Table & 
+The Use of Commodities by Industries shows the inputs to industry production and the commodities that are consumed by final users. The supplementary make and use tables are modified standard make and use tables. The modifications, or redefinitions, consist of moving the outputs and inputs of some secondary production activities between industries. Redefinitions, which are necessary for the derivation of the requirements tables, are made in cases where the production process for the secondary product is very dissimilar to that for the industry’s primary product. For example, the production process for restaurant services provided in hotels is very different from that of lodging services. Therefore, for the supplementary tables, the output and inputs for these restaurant services are moved or redefined from the hotel industry to the restaurant industry. The tables are located at http://www.bea.gov/industry/io\_annual.htm. That page is located at  www.bea.gov, by clicking on the Industry tab then clicking the link to Annual I-O data.\\
+    \bottomrule
+  \end{tabular}
+
+\end{center}
+\label{tab:data_definitions}
+\end{table}
+
+\begin{table}
+\caption[Data Calculations for Auto Industry (IOC 3361MV) Example]{Data Calculations for Auto Industry (IOC 3361MV) Example.}
+\begin{center}
+  \begin{tabular}{l r @{\hspace{2em}} p{7cm}}
+   \toprule 
+     & 2011 USD &   \\ 
+Value Flow & (millions) & Data Calculations \\
+	\midrule
+    Resources \cr (other than Energy) & \$207,623            & KLEMS Intermediate Use Estimates 2011. Total Material Inputs (\$346,882), less those from Motor Vehicles (\$138,077), and Motor Vehicle Bodies, Trailers \& Parts (\$1,182) (IOC 3361 and 336A). Specifically, cell Q107 (less cells Q71 and Q72). \\
+&&\\
+    Resources (Energy) &   3,367&   KLEMS Intermediate Use Estimates 2011. Specifically, cell Q24.                \\
+&&\\
+    Short-lived Goods &   42,005 &   KLEMS Intermediate Use Estimates 2011. Total Inputs from Service Sector (\$42,446), less Water (\$123) and Waste (\$381). Specifically, cell Q185 (less Q123 and Q168).    \\
+&&\\
+    Resources \cr (to/from Auto Industry) &  139,259 &  KLEMS Intermediate Use Estimates 2011. Material resource inputs from Motor Vehicles (\$138,077) and Motor Vehicle Bodies, Trailers \& Parts  (\$1,182) (IOC 3361 and 336A). Specifically, the sum of Cells Q71 and Q72.     \\
+&&\\
+    Output to Waste Sector & 441  &  KLEMS Intermediate Use Estimates 2011. The sum of Cells Q123 and Q168 from the Water \& Sewage (IOC 2213) and Waste Management Services (IOC 5620).    \\
+&&\\
+    Capital &  26,474  &  1997 Capital Flow Table. Authors’ calculations: (a) Restricted attention to Motor Vehicle industuries (Industry Codes 3361 and 336A -  Columns BL \& BM the original table, ``180x123Combined''; (b) Adjusted the amounts for inflation by multiplying them by 1.4 (using the ratio of Current Price Indices from 2011/1997, published by the Bureau of Labor Statistics); (c) Separated out the Capital  flows that came from the automobile industry itself, ``self-use.''  These included flows from:  336211 (Motor Vehicle Bodies), 336120 (Heavy Duty Trucks), and 336110 (Automobiles and Light Trucks); (d) combined the totals for the Motor Vehicle and Motor Vehicle Parts Industries.     \\  
+&&\\
+    Capital (to/from Auto Industry) &  551 & 1997 Capital Flow Table. Capital  flows that came from the automobile industry itself, ``self-use.''  These included flows from:  336211 (Motor Vehicle Bodies), 336120 (Heavy Duty Trucks), and 336110 (Automobiles and Light Trucks)      \\
+&&\\
+    Gross Economic Output & 467,941  &  The Use of Commodities by Industries \& 1997 Capital Flow Table. The sum of Economic Output Destined for Intermediate (e.g. wholesale) and Final (e.g.retail) Uses plus the Capital that was created by the Auto Industry that flowed back into Auto Industry (\$551). ***Question*** What about the Capital that the Auto Industry Created that flowed into other sectors? BRH needs to check this  \\ 
+&&\\
+    Net Economic Output & 327,580   &  The Use of Commodities by Industries. The sum of Economic Output Destined for Intermediate (e.g. wholesale) and Final (e.g.retail) Uses (\$467,896), less Self-Use of Intermediate Output (\$140,316).  \\
+    \bottomrule
+  \end{tabular}
+
+\end{center}
+\label{tab:calculations}
+\end{table}
+
+\bibliographystyle{unsrt}
+\bibliography{../EROI_review_v2}
+
+
+% Always give a unique label
+% and use \ref{<label>} for cross-references
+% and \cite{<label>} for bibliographic references
+% use \sectionmark{}
+% to alter or adjust the section heading in the running head
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% Use the standard \verb|equation| environment to typeset your equations, e.g.
+%
+%% \begin{equation}
+%% a \times b = c\;,
+%% \end{equation}
+%
+%% however, for multiline equations we recommend to use the \verb|eqnarray|
+%% environment\footnote{In physics texts please activate the class option \texttt{vecphys} to depict your vectors in \textbf{\itshape boldface-italic} type - as is customary for a wide range of physical jects.}.
+%% \begin{eqnarray}
+%% a \times b = c \nonumber\\
+%% \vec{a} \cdot \vec{b}=\vec{c}
+%% \label{eq:01}
+%% \end{eqnarray}
+
+%% \section{section Heading}
+%% \label{sec:2}
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references\index{cross-references} and citations\index{citations} as has already been described in Sect.~\ref{sec:2}.
+
+%% \begin{quotation}
+%% Please do not use quotation marks when quoting texts! Simply use the \verb|quotation| environment -- it will automatically render Springer's preferred layout.
+%% \end{quotation}
+
+
+%% \section{section Heading}
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}, see also Fig.~\ref{fig:1}\footnote{If you copy text passages, figures, or tables from other works, you must obtain \textit{permission} from the copyright holder (usually the original publisher). Please enclose the signed permission with the manucript. The sources\index{permission to print} must be acknowledged either in the captions, as footnotes or in a separate section of the book.}
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+% For figures use
+%
+%% \begin{figure}[b]
+%% \sidecaption
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the option graphics use
+%% \includegraphics[scale=.65]{figure}
+%
+% If not, use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+%% \caption{If the width of the figure is less than 7.8 cm use the \texttt{sidecapion} command to flush the caption on the left side of the page. If the figure is positioned at the top of the page, align the sidecaption with the top of the figure -- to achieve this you simply need to use the optional argument \texttt{[t]} with the \texttt{sidecaption} command}
+%% \label{fig:1}       % Give a unique label
+%% \end{figure}
+
+
+%% \paragraph{Paragraph Heading} %
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% For typesetting numbered lists we recommend to use the \verb|enumerate| environment -- it will automatically render Springer's preferred layout.
+
+%% \begin{enumerate}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \begin{enumerate}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{enumerate}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{enumerate}
+
+
+%% \paragraph{paragraph Heading} In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}, see also Fig.~\ref{fig:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% For unnumbered list we recommend to use the \verb|itemize| environment -- it will automatically render Springer's preferred layout.
+
+%% \begin{itemize}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development, cf. Table~\ref{tab:1}.}
+%% \begin{itemize}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{itemize}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{itemize}
+
+%% \begin{figure}[t]
+%% \sidecaption[t]
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the option graphics use
+%% \includegraphics[scale=.65]{figure}
+%
+% If not, use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+%% \caption{Please write your figure caption here}
+%% \label{fig:2}       % Give a unique label
+%% \end{figure}
+
+%% \runinhead{Run-in Heading Boldface Version} Use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% \runinhead{Run-in Heading Italic Version} Use the \LaTeX\ automatism for all your cross-refer\-ences and citations as has already been described in Sect.~\ref{sec:2}\index{paragraph}.
+% Use the \index{} command to code your index words
+%
+% For tables use
+%
+%% \begin{table}
+%% \caption{Please write your table caption here}
+%% \label{tab:1}       % Give a unique label
+%
+% For LaTeX tables use
+%
+%% \begin{tabular}{p{2cm}p{2.4cm}p{2cm}p{4.9cm}}
+%% \hline\noalign{\smallskip}
+%% Classes & class & Length & Action Mechanism  \\
+%% \noalign{\smallskip}\svhline\noalign{\smallskip}
+%% Translation & mRNA$^a$  & 22 (19--25) & Translation repression, mRNA cleavage\\
+%% Translation & mRNA cleavage & 21 & mRNA cleavage\\
+%% Translation & mRNA  & 21--22 & mRNA cleavage\\
+%%Translation & mRNA  & 24--26 & Histone and DNA Modification\\
+%%\noalign{\smallskip}\hline\noalign{\smallskip}
+%%\end{tabular}
+%%$^a$ Table foot note (with superscript)
+%%\end{table}
+%
+%% \section{Section Heading}
+%%\label{sec:3}
+% Always give a unique label
+% and use \ref{<label>} for cross-references
+% and \cite{<label>} for bibliographic references
+% use \sectionmark{}
+% to alter or adjust the section heading in the running head
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%%If you want to list definitions or the like we recommend to use the Springer-enhanced \verb|description| environment -- it will automatically render Springer's preferred layout.
+
+%%\begin{description}[Type 1]
+%%\item[Type 1]{That addresses central themes pertainng to migration, health, and disease. In Sect.~\ref{sec:1}, Wilson discusses the role of human migration in infectious disease distributions and patterns.}
+%%\item[Type 2]{That addresses central themes pertainng to migration, health, and disease. In Sect.~\ref{sec:2}, Wilson discusses the role of human migration in infectious disease distributions and patterns.}
+%%\end{description}
+
+%%\section{section Heading} %
+%% In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Use the \LaTeX\ automatism for all your cross-references and citations citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% \begin{svgraybox}
+%% If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option \verb|graybox| and the newly defined environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
+
+%% If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option and environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
+%% \end{svgraybox}
+
+
+%% \section{section Heading}
+%%Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% \begin{theorem}
+%% Theorem text goes here.
+%% \end{theorem}
+%
+% or
+%
+%% \begin{definition}
+%% Definition text goes here.
+%% \end{definition}
+
+%% \begin{proof}
+%\smartqed
+%% Proof text goes here.
+%% \qed
+%% \end{proof}
+
+%%\paragraph{Paragraph Heading} %
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
+%
+% For built-in environments use
+%
+%%\begin{theorem}
+%%Theorem text goes here.
+%%\end{theorem}
+%
+%%\begin{definition}
+%%Definition text goes here.
+%%\end{definition}
+%
+%%\begin{proof}
+%%\smartqed
+%% Proof text goes here.
+%%\qed
+%%\end{proof}
+%
+%% \begin{acknowledgement}
+%% If you want to include acknowledgments of assistance and the like at the end of an individual chapter please use the \verb|acknowledgement| environment -- it will automatically render Springer's preferred layout.
+%% \end{acknowledgement}
+%
+%% \section*{Appendix}
+%% \addcontentsline{toc}{section}{Appendix}
+%
+%% When placed at the end of a chapter or contribution (as opposed to at the end of the book), the numbering of tables, figures, and equations in the appendix section continues on from that in the main text. Hence please \textit{do not} use the \verb|appendix| command when writing an appendix at the end of your chapter or contribution. If there is only one the appendix is designated ``Appendix'', or ``Appendix 1'', or ``Appendix 2'', etc. if there is more than one.
+
+%% \begin{equation}
+%% a \times b = c
+%% \end{equation}
+% Problems or Exercises should be sorted chapterwise
+%% \section*{Problems}
+%% \addcontentsline{toc}{section}{Problems}
+%
+% Use the following environment.
+% Don't forget to label each problem;
+% the label is needed for the solutions' environment
+%% \begin{prob}
+%% \label{prob1}
+%% A given problem or Excercise is described here. The
+%% problem is described here. The problem is described here.
+%% \end{prob}
+
+%% \begin{prob}
+%% \label{prob2}
+%% \textbf{Problem Heading}\\
+%% (a) The first part of the problem is described here.\\
+%% (b) The second part of the problem is described here.
+%% \end{prob}
+
+

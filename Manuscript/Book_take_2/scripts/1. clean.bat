@@ -63,6 +63,11 @@ erase *.aux
 erase *.bbl
 erase *.blg    
 
+cd ..\..\Appendix_Auto
+erase *.aux
+erase *.bbl
+erase *.blg   
+
 cd ..\..\Appendix_Casler
 erase *.aux
 erase *.bbl

@@ -29,6 +29,7 @@ cd Part_2; cd Chapter_Intensity;    bibtex Chapter_Intensity;     cd ../..;
 cd Part_3; cd Chapter_Implications; bibtex Chapter_Implications;  cd ../..;
 cd Part_3; cd Chapter_Unfinished;   bibtex Chapter_Unfinished;    cd ../..;
 cd Part_3; cd Chapter_Summary;      bibtex Chapter_Summary;       cd ../..;
+cd Appendix_Auto;                   bibtex Appendix_Derivation;   cd ..;
 cd Appendix_Infinite_Series;        bibtex Appendix_Derivation;   cd ..;
 cd Appendix_Proof_1;                bibtex Appendix_Proof_1;      cd ..;
 cd Appendix_Estimating_A;           bibtex Appendix_Estimating_A; cd ..;
