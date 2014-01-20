@@ -592,8 +592,9 @@ In this model, neither resources ($R$)
 nor short-lived goods ($S$) accumulate within economic sectors, so we may also state:
 
 \begin{align}\label{eq:A-dS_1/dt_zero}
-	\frac{\mathrm{d}S_1}{\mathrm{d}t}		&
-	= \frac{\mathrm{d}R_1}{\mathrm{d}t}
+	\frac{\mathrm{d}R_1}{\mathrm{d}t}				&
+	= 0,																	\\
+	\frac{\mathrm{d}S_1}{\mathrm{d}t}				&
 	= 0.
 \end{align}
 
@@ -832,6 +833,14 @@ may be rewritten as the total stock
 of man-made capital ($K_{1}$) 
 multiplied by some depreciation rate ($\gamma_{K_{1}}$)
 in units of inverse time (e.g.\ 1/year),
+where $\gamma_{K_{j}}$ is defined as:
+
+\begin{equation}\label{eq:def_gamma}
+\gamma_{K_{j}} = \frac{\dot{B}_{j0}}{B_{j}},
+\end{equation}
+
+\noindent{}i.e.\ the depreciation \emph{per unit}
+of capital stock,
 such that Equation~\ref{eq:A_CV_1d} becomes:
 
  \begin{align}\label{eq:A_CV_1e}
@@ -1100,9 +1109,12 @@ and that the `product' of final consumption is labor
 (a short-lived material flow, $\dot{S}$),
 then we may also state that:
 
-\begin{equation}\label{eq:B_R11_K11}
-	\dot{R}_{11} = \dot{K}_{11} = 0
-\end{equation}
+\begin{align}\label{eq:B_R11_K11}
+	\dot{R}_{11}				& 
+	= 0,								\\
+	\dot{K}_{11}				& 
+	= 0,
+\end{align}
 
 \noindent{}since all capital goods are produced within
 the production sector (2).
@@ -1143,13 +1155,16 @@ $\dot{P}_{1}$ and $\dot{P}_{2}$ as:
 \noindent Again, remembering that resources and short-lived
 goods do not accumulate within any sectors of the economy:
 
-\begin{equation}\label{eq:dR_and_dS_zero}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
-	= \frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
-	= \frac{\mathrm{d}S_{1}}{\mathrm{d}t} 
-	= \frac{\mathrm{d}S_{2}}{\mathrm{d}t} 
-	= 0,
-\end{equation}
+\begin{align}\label{eq:dR_and_dS_zero}
+	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}			&
+	= 0,																	\\
+	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 			&
+	= 0,																	\\
+	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 			&
+	= 0,																	\\
+	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 			&
+	= 0.
+\end{align}
 
 As in Example~A,
 we may also define the resource-product
@@ -1613,15 +1628,14 @@ resources~(R) or short-lived capital goods~(S) in
 economic sectors,
 then we may say:
 
-\begin{equation}\label{eq:C_dR_and_dS_zero}
-	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
-	= \frac{\mathrm{d}R_{2}}{\mathrm{d}t} 
-	= \frac{\mathrm{d}R_{3}}{\mathrm{d}t} 
-	= \frac{\mathrm{d}S_{1}}{\mathrm{d}t} 
-	= \frac{\mathrm{d}S_{2}}{\mathrm{d}t} 
-	= \frac{\mathrm{d}S_{3}}{\mathrm{d}t} 
-	= 0,
-\end{equation}
+\begin{align}\label{eq:C_dR_and_dS_zero}
+	\frac{\mathrm{d}R_{j}}{\mathrm{d}t}			&
+	= 0,																	&
+	j \in [1,3],														\\
+	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 		&
+	= 0,																	&
+	j \in [1,3].															
+\end{align}
 
 As before,
 we may also define the resource-product
@@ -1993,7 +2007,7 @@ short-lived and capital materials
 into the auto industry.
 Because the industry does not
 extract resources directly from the biosphere,
-the rate of flow of resources ($\dot{R}$) 
+the rate of flow of resources ($\dot{R}_{0j}$) 
 from the biosphere to the auto industry 
 has a zero value.
 Each of the other flows represented in the diagram is,
@@ -2003,12 +2017,57 @@ of elemental material flows,
 each of which must be accounted 
 (and balanced) separately.
 
-**** MCD - Talk about the different materials:
-steel, glass, rubber, concrete, electricity, plastic
-finished product is automobile. 
-Emissions to air and water.
-Talk to financial (value) flows in Section~\ref{sec:value_auto} 
-as proxy for physical flows****
+There are a number of key material inputs into the
+production of automobiles, directly as 
+resources~($\dot{R}$) as well as short-lived 
+materials~($\dot{S}$) and capital goods~($\dot{K}$)
+including: 
+\begin{itemize}
+	\item
+		energy resources (coal, oil, natural gas, electricity) 
+		for processes, heat,
+		and transportation;
+	\item
+		metals:
+			\begin{itemize}
+				\item
+					iron cast in the engine block and as steel in the chassis,
+					and body panels, 
+					as well as for buildings and manufacturing equipment;
+				\item
+					aluminum for body parts;
+				\item
+					copper for wiring;
+				\item
+					other metals for alloying 
+					(zinc, chromium, molybdenum) and 
+					battery cells (lead, nickel, lithium);
+			\end{itemize}
+	\item
+		glass for the windows and wind shields,
+		as well as computer screens;
+	\item
+		rubber for the tires;
+	\item
+		plastics for bodywork, interiors, coatings, seals, wiring 
+		as well as electronic and office equipment;
+	\item
+		other petroleum-based products as lubricants, 
+		paints, and solvents;
+	\item
+		paper for documentation
+\end{itemize}
+The output product from the auto industry is finished
+automobiles. 
+Emissions include waste resources (metal, rubber and plastic trimmings and dust), waste paper, emissions to air (greenhouse gases, NO$_x$, SO$_x$) and emissions to water. 
+
+
+%**** MCD - Talk about the different materials:
+%steel, glass, rubber, concrete, electricity, plastic
+%finished product is automobile. 
+%Emissions to air and water.
+%Talk to financial (value) flows in Section~\ref{sec:value_auto} 
+%as proxy for physical flows****
 
 Data on the rest of the flows at the industry level
 is very hard to obtain.
@@ -2018,11 +2077,19 @@ have been produced for each of the member
 states.\cite{EUROSTAT2011} 
 Work is ongoing to characterize the inter-sectoral
 flows of materials.\cite{ConAccount1998}
+These material flows could be modeled in much the same
+manner as traditional energy IO estimates energy flows by
+converting financial data 
+(which is available, as discussed in 
+Section~\ref{sec:value_auto}) into physical flow data
+via knowledge of the entry points of materials into the economy,
+such as iron or bauxite mining sectors.
 
 A number of studies have looked at 
 the material and energy flows 
-associated with vehicle manufacturing 
-processes.\cite{MacLean1998,McCleese2002,MacLean2003}
+associated with specific or representative vehicle manufacturing 
+processes.\cite{Sullivan1998, MacLean1998,Schweimer2000,
+McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}
 The US automobile industry is composed
 of many of these manufacturing processes.
 In theory,
