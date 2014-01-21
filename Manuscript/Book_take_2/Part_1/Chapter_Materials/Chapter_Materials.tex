@@ -2021,77 +2021,7 @@ There are a number of key material inputs into the
 production of automobiles, directly as 
 resources~($\dot{R}$) as well as short-lived 
 materials~($\dot{S}$) and capital goods~($\dot{K}$)
-including: 
-**** MCD - split list into resources, short-lived and capital flows as table both inputs and outputs. Maybe add annotation to Figure~\ref{fig:PERKS_materials_auto} ****
-
-
-\begin{table}
-\caption[List of material input and output flows for the 
-US auto industry]{List of material input and output flows for 
-the US auto industry 
-as resources ($\dot{R}$),
-short-lived materials ($\dot{S}$),
-and capital goods ($\dot{K}$)
-using data from XXXX.
-This list is illustrative and by no means exhaustive.}
-\begin{center}
- \begin{tabular}{p{4cm}cp{4cm}}
-\toprule 
-Material Flow 					 	& 							& Materials 											\\
-\midrule
-Resources from biosphere	& $\dot{R}_{0j}$		& zero flow 											\\[0.15cm]
-Short-lived from biosphere	&	$\dot{S}_{0j}$	& oxygen, nitrogen								\\
-
-    \bottomrule
-  \end{tabular}
-
-\end{center}
-\label{tab:materials_auto}
-\end{table}
-
-\begin{itemize}
-	\item
-		energy resources (coal, oil, natural gas, electricity) 
-		for processes, heat,
-		and transportation;
-	\item
-		metals:
-			\begin{itemize}
-				\item
-					iron cast in the engine block and as steel in the chassis,
-					and body panels, 
-					as well as for buildings and manufacturing equipment;
-				\item
-					aluminum for body parts;
-				\item
-					copper for wiring;
-				\item
-					other metals for alloying 
-					(zinc, chromium, molybdenum) and 
-					battery cells (lead, nickel, lithium);
-			\end{itemize}
-	\item
-		glass for the windows and wind shields,
-		as well as computer screens;
-	\item
-		rubber for the tires;
-	\item
-		plastics for bodywork, interiors, coatings, seals, wiring 
-		as well as electronic and office equipment;
-	\item
-		other petroleum-based products as lubricants, 
-		paints, and solvents;
-	\item
-		paper for documentation
-	\item 
-		water for processes
-	\item
-		
-\end{itemize}
-The output product from the auto industry is finished
-automobiles. 
-Emissions include waste resources (metal, rubber and plastic trimmings and dust), waste paper, emissions to air (greenhouse gases, NO$_x$, SO$_x$) and emissions to water. 
-
+outlined in Table~\ref{tab:materials_auto}. 
 
 %**** MCD - Talk about the different materials:
 %steel, glass, rubber, concrete, electricity, plastic
@@ -2099,16 +2029,11 @@ Emissions include waste resources (metal, rubber and plastic trimmings and dust)
 %Emissions to air and water.
 %Talk to financial (value) flows in Section~\ref{sec:value_auto} 
 %as proxy for physical flows****
-=======
-**** MCD---Talk about the different materials:
-steel, glass, rubber, concrete, electricity, plastic
-finished product is automobile. 
-Emissions to air and water.
-Talk to financial (value) flows in Section~\ref{sec:value_auto} 
-as proxy for physical flows****
 
 Data on the rest of the flows at the industry level
-is very hard to obtain.
+is very hard to obtain.\footnote{The issue of 
+lack of physical flow data is discussed in 
+Section~\ref{sec:Data}}
 In Europe,
 economy-wide material flow accounts (EW-MFA)
 have been produced for each of the member 
@@ -2116,8 +2041,9 @@ states.\cite{EUROSTAT2011}
 Work is ongoing to characterize the inter-sectoral
 flows of materials.\cite{ConAccount1998}
 These material flows could be modeled in much the same
-manner as traditional energy IO estimates energy flows by
-converting financial data 
+manner as traditional energy IO estimates energy flows
+through the economy,
+by converting financial data 
 (which is available, as discussed in 
 Section~\ref{sec:value_auto}) into physical flow data
 via knowledge of the entry points of materials into the economy,
@@ -2139,19 +2065,75 @@ scaling the material flows accordingly,
 with appropriately wide uncertainty bounds.
 
 
-**** MCD---I'm not sure what else I can write here.
-% I could talk about process-based models? 
-Talk about other industries
-that may have better data.
-Signpost the issue of lack of data in Section~\ref{sec:Data}
-****
+%**** MCD---I'm not sure what else I can write here.
+%% I could talk about process-based models? 
+%Talk about other industries
+%that may have better data.
+%Signpost the issue of lack of data in Section~\ref{sec:Data}
+%****
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials_auto_ind.pdf}
-\caption[Material flows for the US Automobile Industry]{Material flows for the US Automobile Industry using data from XXXX}
+\caption[Material flows for the US Automobile Industry]{Material 
+flows for the US Automobile Industry using data from~\cite{Sullivan1998, 
+MacLean1998,Schweimer2000, McCleese2002,MacLean2003, Burnham2006,
+Sullivan2010, Hawkins2012}.}
 \label{fig:PERKS_materials_auto}
 \end{figure}
+
+\begin{table}
+\caption[List of material input and output flows for the 
+US auto industry]{List of material input and output flows for 
+the US auto industry 
+as resources ($\dot{R}$),
+short-lived materials ($\dot{S}$),
+and capital goods ($\dot{K}$)
+using data from \cite{Sullivan1998, MacLean1998,Schweimer2000,
+McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}.
+This list is illustrative and by no means exhaustive.}
+\begin{center}
+ \begin{tabular}{p{4cm}p{1cm}p{5.2cm}}
+\toprule 
+\textbf{Material Flow}		 		& 								& \textbf{Materials} 									\\
+\midrule
+Resources from biosphere		& $\dot{R}_{0j}$		& none															\\[0.15cm]
+Short-lived from biosphere		&	$\dot{S}_{0j}$	& oxygen, nitrogen, water							\\
+\midrule
+Resources from other sectors	& $\dot{R}_{ij}$		&	 cast iron (engine block);							\\
+												&								&	 steel (chassis, panels);							\\
+												&								&	 aluminum (body parts); 							\\		
+												&								&	 copper (wiring);										\\	
+												&								&	 zinc, chromium, carbon (alloying); 			\\
+												&								&	 lead, nickel (battery cells);		 				\\
+												&								&	 glass (windows, wind shield);					\\
+												&								&	 rubber (tires);											\\
+												&								&	 plastic (bodywork, interiors, seals)			\\
+												&								&	 petroleum (paints, lubricants)					\\[0.15cm]
+Short-lived from other sectors	& $\dot{S}_{ij}$		&	 coal, oil, natural gas, electricity				\\
+												&								&	 water (process)										\\
+												&								&	 petroleum (solvents)								\\
+												&								&	 paper (towels)										\\[0.15cm]
+Capital from other sectors		& $\dot{K}_{ij}$		&	 steel (buildings, equipment)					\\
+												&								&	 concrete (buildings)								\\
+												&								&	 	glass (windows, screens)						\\
+												&								&	 plastic (fixtures, fittings, equipment)		\\
+												&								&	 	petroleum (paints, lubricants)				\\
+												&								&	 paper (documentation)							\\
+\midrule
+Product output							&	$\dot{P}_{j}$		&	finished automobile									\\
+\midrule
+Resources to biosphere			& $\dot{R}_{j0}$		&	trimmings and dust (metal, plastic, rubber)	\\[0.15cm]
+Short-lived to biosphere			& $\dot{S}_{j0}$		&	air emissions (GHG, NO$_x$, SO$_x$)		\\
+												&								& emissions to water									\\[0.15cm]
+Capital to biosphere					& $\dot{K}_{j0}$	&	discarded equipment								\\
+												&								& disused buildings										\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{tab:materials_auto}
+\end{table}
+
 
 %%%%%%%%%% Materials: Summary %%%%%%%%%%
 \section{Summary}
