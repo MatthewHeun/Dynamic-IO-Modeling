@@ -688,11 +688,18 @@ $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
 \label{sec:SSE}
 %%%%%%%%%%
 
-**** MCD---some lead in to why the SSE may be important. ****
-
+As discussed in the Introduction,
+the human economy is a subset of the biosphere---a
+finite, non-growing system,
+\emph{open} to flows of solar energy but \emph{closed}
+to material transfers.
+Because the biosphere is finite in size,
+the human economy cannot physically grow indefinitely.
+The concept of a non-growing or ``steady-state'' economy
+has existed for centuries.
 There are a number of different
 conditions that we may set
-in order to characterize a system as ``steady-state.''
+in order to characterize a system as steady-state.
 In thermodynamics,
 the condition of a zero rate of accumulation
 $\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)$
@@ -857,22 +864,55 @@ as either constant rate of extraction, constant rate of
 waste disposal, or both
 which could be defined within our framework as:
 
-\begin{equation}\label{eq:const_throughput}
-	\frac{\mathrm{d}\dot{R}_{0}}{\mathrm{d}t}
-	= \ddot{R}_{0}
-	= \ddot{S}_{0}
-	= 	\sum\limits_{i}
-			\left(
-				\ddot{R}_{i0}
-				+ \ddot{S}_{i0}
-				+ \ddot{K}_{i0}
-			\right)
+**** MCD---need to compare these three formulations ****
+
+\begin{align}\label{eq:const_throughput}
+	\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{R}_{0}\right)			
+	= \ddot{R}_{0}													&
+	= 0																		\\	
+	\ddot{S}_{0}														&
+	= 0																		\\
+	\sum\limits_{i}
+		\left(
+			\ddot{R}_{i0}
+			+ \ddot{S}_{i0}
+			+ \ddot{K}_{i0}
+		\right)																&
 	= 0.
-\end{equation}
+\end{align}
+
+\begin{align}\label{eq:const_throughput}
+	\frac{\mathrm{d}\dot{R}_{0}}{\mathrm{d}t}					&
+	= 0																						\\
+	\frac{\mathrm{d}\dot{S}_{0}}{\mathrm{d}t}					&
+	= 0																						\\
+	\sum\limits_{i}
+			\left(
+				\frac{\mathrm{d}\dot{R}_{i0}}{\mathrm{d}t}
+				+ \frac{\mathrm{d}\dot{S}_{i0}}{\mathrm{d}t}
+				+ \frac{\mathrm{d}\dot{K}_{0}}{\mathrm{d}t}
+			\right)																			&
+	= 0.
+\end{align}
+
+\begin{align}\label{eq:const_throughput}
+	\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{R}_{0}\right)		&
+	= 0																							\\
+	\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{S}_{0}\right)		&
+	= 0																						\\
+	\sum\limits_{i}
+			\left[
+				\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{R}_{i0}\right)
+				+ \frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{S}_{i0}\right)
+				+ \frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{K}_{i0}\right)
+			\right]																			&
+	= 0.
+\end{align}
 
 **** MCD---maybe change back to d/dt formulation 
 and split into multiple equations. 
 Need to eliminate the appearance that $\dot{R}$ and $\dot{S}$ flows are equivalent. ****
+Matt, you can have final ruling on this, but I think the double dot notation looks better, MCD ****
 
 Within this constraint,
 more effective use of materials could
@@ -903,9 +943,23 @@ Within our framework,
 a condition of constant GDP would be
 characterized by the following equation:
 
+**** MCD---need to compare these three ****
+
 \begin{equation}\label{eq:const_GDP}
 	\frac{\mathrm{d}}{\mathrm{d}t}GDP
 	=	\sum\limits_{j}\ddot{X}_{j}
+	= 0
+\end{equation}
+
+\begin{equation}\label{eq:const_GDP}
+	\frac{\mathrm{d}}{\mathrm{d}t}GDP
+	=	\sum\limits_{j}\frac{\mathrm{d}}{\mathrm{d}t}\dot{X}_{j}
+	= 0
+\end{equation}
+
+\begin{equation}\label{eq:const_GDP}
+	\frac{\mathrm{d}GDP}{\mathrm{d}t}
+	=	\sum\limits_{j}\frac{\mathrm{d}\dot{X}_{j}}{\mathrm{d}t}
 	= 0
 \end{equation}
 
