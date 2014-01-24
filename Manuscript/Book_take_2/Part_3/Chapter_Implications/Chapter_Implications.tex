@@ -83,30 +83,89 @@ provides a means of estimating the energy intensity of economic sectors:
 \end{equation}
 
 \noindent{}The I-O literature~\cite{Bullard1975,Casler1984}, 
-on the other hand, 
-writes Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
-as\footnote{For a discussion of other, more-subtle, differences
-between the energy intensity equations in the literature
-and this manuscript, see Appendix~\ref{chap:Casler}.}
+uses a similar, but different, equation. 
+In this section, we unpack the (often unstated) assumptions from the literature
+and develop an expression that allows translation
+between our analysis and the typical analysis in the literature. 
+
+We begin by noting that 
+flows of capital stock ($\dot{K}$) are not included in the 
+standard I-O tables from the
+Bureau of Economic Analysis (BEA).\footnote{See
+Section~\ref{sec:Data} for a discussion of data needs.}
+Historically, only a few energy analysts attempted to include the effect
+of capital flows on energy intensity ($\bm{\varepsilon}$). 
+Bullard~\cite{Bullard1975} added capital stock purchases as an input
+to each economic sector.
+Casler~\cite{Casler:1983uy} attempted to correct the BEA's
+input-output tables prior to applying the I-O method.
+However, the present analysis affords the opportunity
+to develop a mathematically-rigorous approach to the 
+effects of physical depreciation based on 
+the model of material, energy, and value flows presented 
+in Chapters~\ref{chap:materials}--\ref{chap:value}.
+
+Given that the BEA I-O tables do not include captial flows, 
+the literature is implicitly assuming that 
+
+\begin{equation}
+	a_{ij}^{'} 
+	\equiv \frac{\dot{X}_{ij,\dot{R}} + \dot{X}_{ij,\dot{S}}}
+				{\dot{X}_{j,\dot{R}} + \dot{X}_{j,\dot{S}}}.
+\end{equation}
+
+\noindent{}Comparison with Equation~\ref{eq:aij_def_expanded}
+indicates that the literature neglects capital stock flows 
+($\dot{X}_{\dot{K}}$).\footnote{Variables written with a ``prime''
+(e.g.\ $a^{'}$) indicate definitions and terms as used in the literature.}
+Thus, the the input-output matrix 
+($\vec{A^{'}}$, compare to Equation~\ref{eq:A_matrix_def}) is
+
+\begin{equation} \label{eq:A_matrix_def_literature}
+	\vec{A}^{'} 
+	=
+	\begin{bmatrix}
+		a_{22}^{'} & a_{23}^{'}	\\
+		a_{32}^{'} & a_{33}^{'}	
+	\end{bmatrix}.
+\end{equation}
+
+Furthermore, the literature assumes that production does not include
+capital stock (again, due to the fact that the BEA does not include 
+capital flows in the standard I-O tables) such that
+
+\begin{equation}
+	\hat{\vec{X}}^{'} = \hat{\vec{X}}_{\dot{R}} + \hat{\vec{X}}_{\dot{S}},
+\end{equation}
+
+\noindent{}whereas our formulation (Equation~\ref{eq:X_hat_matrix_def})
+includes capital flows explicitly:
+
+\begin{equation}
+	\hat{\vec{X}} = \hat{\vec{X}}_{\dot{R}} + \hat{\vec{X}}_{\dot{S}} + \hat{\vec{X}}_{\dot{K}}.
+\end{equation}
+
+The literature writes Equation~\ref{eq:epsilon_leontief_with_A} as
 
 \begin{equation} \label{eq:epsilon_leontief_with_A_literature}
-	\bm{\varepsilon} 
-	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}
-	\hat{\vec{X}}^{-1}
+	\bm{\varepsilon^{'}} 
+	= {\left( \vec{I} - {\vec{A}^{'}}^{\mathrm{T}} \right)}^{-1}
+	% {    \hat{  \vec{X}  }  }  ^{-1}
+	\left( \hat{\vec{X}}^{'} \right) ^{-1}
 	\vec{E}_{0}.
 \end{equation}
 
-The differences between Equations~\ref{eq:epsilon_leontief_depreciation_simplification}
+The differences between Equations~\ref{eq:epsilon_leontief_with_A}
 and~\ref{eq:epsilon_leontief_with_A_literature} are obvious. 
-The literature neglects
+Most of the literature neglects
 \begin{itemize}
+	\item{capital flows (by using $\vec{A}^{'}$ and $\hat{\vec{X}}^{'}$),}
 	\item{energy input from society ($\vec{T}_{1}$),}
-	\item{accumulation of embodied energy in the economy,
-			exclusive of physical depreciation 
-			$\left( \left. \frac{\mathrm{d}\vec{B}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
-			and}
+	\item{accumulation of embodied energy in the economy 
+			$\left( \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right)$,}
 	\item{the embodied energy of scrap resource	and short-lived material flows 
-			($\dot{\vec{B}}_{waste}$)}
+			($\dot{\vec{B}}_{waste}$) and}
+	\item{depreciation $\hat{\bm{\gamma}}_{B} \vec{B}_{K}$}
 \end{itemize}
 
 \noindent{}when estimating the energy intensity  
@@ -242,7 +301,7 @@ because that approach would require independent knowledge
 of the energy intensity of economic sectors ($\bm{\varepsilon}$).
 Alternatively, Equation~\ref{eq:C_embodied_energy_accounting_123_with_depreciation} 
 could be simplified using the 
-methods of Section~\ref{sec:depreciation_intensity} to obtain
+methods of Section~\ref{sec:intensity_capital_correction} to obtain
 
 \begin{equation} \label{eq:C_embodied_energy_accounting_123_with_depreciation_simplified}
 	\left. \frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} \right|_{\mathrm{other}}

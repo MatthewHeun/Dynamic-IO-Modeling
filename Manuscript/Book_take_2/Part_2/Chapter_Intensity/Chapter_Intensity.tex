@@ -99,7 +99,15 @@ of good $i$ required to produce a unit of output from sector $j$.
 	a_{ij} \equiv \frac{\dot{X}_{ij}}{\dot{X}_{j}}
 \end{equation}
 
-Input-output ratios are given in mixed units, 
+We note that the value ($\dot{X}$) of all material flows must be counted such that
+
+\begin{equation} \label{eq:aij_def_expanded}
+	a_{ij} =	 
+	\frac{\dot{X}_{ij,\dot{R}} + \dot{X}_{ij,\dot{S}} + \dot{X}_{ij,\dot{K}}}
+		{\dot{X}_{j,\dot{R}} + \dot{X}_{j,\dot{S}} + \dot{X}_{j,\dot{K}}}.
+\end{equation}
+
+Input-output ratios ($a_{ij}$) are given in mixed units, 
 depending on both the purpose of each sector of the economy 
 and the type of input as shown in Figure~\ref{fig:A_matrix_units}.
 
@@ -212,7 +220,7 @@ for the two-sector economy
 							\right)
 						= \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{K,2} B_{K_{2}}
+							+ \gamma_{B,2} B_{K_{2}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
 
@@ -227,7 +235,7 @@ and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2}, we obtain
 	- \varepsilon_{2}\dot{X}_{2} 
 	- \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{K,2} B_{K_{2}}
+							+ \gamma_{B,2} B_{K_{2}}
 							\right).
 \end{equation}
 
@@ -243,7 +251,7 @@ can be solved for energy intensity ($\varepsilon_{2}$) to obtain
 			- \frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t} 
 			- \dot{B}_{\dot{R}_{20}}
 			- \dot{B}_{\dot{S}_{20}}
-			- \gamma_{K,2} B_{K_{2}}
+			- \gamma_{B,2} B_{B_{2}}
 		\right]
 \end{equation}
 
@@ -318,7 +326,7 @@ of the three-sector economy:
 							\right)
 						= \left( \dot{B}_{\dot{R}_{j0}} 
 							+ \dot{B}_{\dot{S}_{j0}}
-							+ \gamma_{K,j} B_{K_{j}}
+							+ \gamma_{B,j} B_{K_{j}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
 
@@ -333,7 +341,7 @@ of the three-sector economy:
 	- \varepsilon_{2} \dot{X}_{2}
 	- \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{K,2} B_{K_{2}}
+							+ \gamma_{B,2} B_{K_{2}}
 							\right)
 \end{equation}
 
@@ -348,7 +356,7 @@ of the three-sector economy:
 	- \varepsilon_{3} \dot{X}_{3}
 	- \left( \dot{B}_{\dot{R}_{30}} 
 							+ \dot{B}_{\dot{S}_{30}}
-							+ \gamma_{K,3} B_{K_{3}}
+							+ \gamma_{B,3} B_{K_{3}}
 							\right).
 \end{equation}
 
@@ -408,8 +416,8 @@ in vector notation as
 		\end{Bmatrix}
 		-
 		\begin{bmatrix}
-			\gamma_{K,2} & 0          \\
-			0            & \gamma_{K,3}
+			\gamma_{B,2} & 0          \\
+			0            & \gamma_{B,3}
 		\end{bmatrix}
 		\begin{Bmatrix}
 			B_{K_{2}}\\
@@ -513,13 +521,13 @@ in vector notation as
 \noindent{}and
 
 \begin{equation} \label{eq:gamma_hat_matrix_def}
-	\hat{\bm{\gamma}}_{K}
+	\hat{\bm{\gamma}}_{B}
 	\equiv
-	\delta_{ij} \gamma_{K,j}
+	\delta_{ij} \gamma_{B,j}
 	=
 	\begin{bmatrix}
-		\gamma_{K,2} & 0         \\
-		0            & \gamma_{K,3}
+		\gamma_{B,2} & 0         \\
+		0            & \gamma_{B,3}
 	\end{bmatrix};
 \end{equation}\nomenclature[g]{$\hat{\bm{\gamma}}$}{matrix of depreciation rates [\$/year]}
 
@@ -544,7 +552,7 @@ compactly as
 	+ \vec{X}_{t}^{\mathrm{T}}\bm{\varepsilon} 
 	- \hat{\vec{X}}\bm{\varepsilon}
 	- \vec{B}_{waste}
-	- \hat{\bm{\gamma}}_{K} \vec{B}_{K}.
+	- \hat{\bm{\gamma}}_{B} \vec{B}_{K}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:matrix_leontief_pre_1} can be simplified to
@@ -555,7 +563,7 @@ compactly as
 	+ \vec{T}_{1}
 	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\bm{\varepsilon} 
 	- \vec{B}_{waste}
-	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}.
+	- \hat{\bm{\gamma}}_{B}\vec{B}_{K}.
 \end{equation}
 
 \noindent{}We can define the input-output matrix ($\vec{A}$) as
@@ -587,7 +595,7 @@ to be recast as
 	+ \vec{T}_{1}
 	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
 	- \vec{B}_{waste}
-	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}.
+	- \hat{\bm{\gamma}}_{B}\vec{B}_{K}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:matrix_leontief} is the matrix version 
@@ -615,7 +623,7 @@ sector outputs ($\hat{\vec{X}}$),
 sector input-output ratios ($\vec{A}$), 
 sector energy intensities ($\bm{\varepsilon}$), 
 energy embodied in wastes from the economy ($\vec{B}_{waste}$),
-and physical depreciation rates of capital stock ($\hat{\bm{\gamma}}_{K}\vec{B}_{K}$). 
+and physical depreciation rates of capital stock ($\hat{\bm{\gamma}}_{B}\vec{B}_{K}$). 
 In theory, the transaction matrix ($\vec{X}_{t}$) is not required 
 if the input-ouput matrix ($\vec{A}$) is known, 
 though in practice, 
@@ -635,7 +643,7 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \bm{\epsilon}
 	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 	+ \vec{B}_{waste}
-	+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
+	+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
 	- \vec{E}_{0}
 	- \vec{T}_{1} 
 \end{equation}
@@ -648,7 +656,7 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 		\left[
 			\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 			+ \vec{B}_{waste}
-			+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
+			+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
 			- \vec{E}_{0}
 			- \vec{T}_{1} 
 		\right].
@@ -670,7 +678,7 @@ from Formula 6.2, p. 308 in Beyer~\cite{Beyer:1991vd}
 		\left[
 			\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 			+ \vec{B}_{waste}
-			+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
+			+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
 			- \vec{E}_{0}
 			- \vec{T}_{1} 
 		\right].
@@ -683,7 +691,7 @@ $
 \left[
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 	+ \vec{B}_{waste}
-	+ \hat{\bm{\gamma}}_{K} \vec{B}_{K}
+	+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
 	- \vec{E}_{0}
 	- \vec{T}_{1} 
 \right]
@@ -697,7 +705,7 @@ on the right side of Equation~\ref{eq:epsilon_derivation_3} by $-1$ to obtain
 				+ \vec{T}_{1} 
 				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 				- \vec{B}_{waste}
-				- \hat{\bm{\gamma}}_{K}\vec{B}_{K}
+				- \hat{\bm{\gamma}}_{B}\vec{B}_{K}
 		\right].
 \end{equation}
 
@@ -705,26 +713,42 @@ Equation~\ref{eq:epsilon_leontief_with_A} provides a means
 to estimate energy intensity ($\bm{\varepsilon}$)
 of the sectors of the economy. 
 But, the effect of physical depreciation of capital stock
-($\hat{\bm{\gamma}}_{K}\vec{B}_{K}$) 
+($\hat{\bm{\gamma}}_{B}\vec{B}_{K}$) 
 can be clarified.
 We do so in the following section.
 
 %%%%%%%%%% Example C %%%%%%%%%%
-\section{The effect of physical depreciation}
-\label{sec:depreciation_intensity}
+\section{The effect of capital flows}
+\label{sec:intensity_capital_correction}
 %%%%%%%%%%
 
-There has been some attempt in the literature to 
-account for the effect
-of capital depreciation on estimates 
-of $\bm{\varepsilon}$. 
+*********** Folding this content into the
+Implications section on the I-O method. 
+Delete this section after completing the Implications section
+on the I-O method. ************
+
+From Equation~\ref{eq:epsilon_leontief_with_A},
+it is clear that flows of capital stock affect
+the embodied energy of products.
+Unfortunately, flows of capital stock ($\dot{K}$) are not logged in the 
+Bureau of Economic Analysis (BEA) standard I-O tables.\footnote{See
+Section~\ref{sec:Data} for a discussion of data needs.}
+Historically, only a few energy analysts attempted to include the effect
+of capital flows on energy intensity ($\bm{\varepsilon}$). 
+Bullard~\cite{Bullard1975} added capital stock purchases as an input
+to each economic sector.
 Casler~\cite{Casler:1983uy} attempted to correct the BEA's
-input-output tables,
-but the present analysis provides an opportunity
+input-output tables prior to applying the I-O method.
+However, the present analysis affords the opportunity
 to develop a mathematically-rigorous approach to the 
 effects of physical depreciation based on 
 the model of material, energy, and value flows presented 
 in Chapters~\ref{chap:materials}--\ref{chap:value}.
+
+Our approach derives
+
+
+
 
 Physical depreciation\index{depreciation!physical} 
 of capital stock ($\hat{\bm{\gamma}}_{K}\vec{B}_{K}$)
@@ -858,6 +882,10 @@ affecting the energy intensity of economic output ($\vec{\bm{\varepsilon}}$).}
 \end{center}
 \label{tab:embodied_energy_accumulation_factors}
 \end{table}
+
+
+
+
 
 Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
 is an important result that is directly comparable with the I-O literature,
