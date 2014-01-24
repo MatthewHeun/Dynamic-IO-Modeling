@@ -1046,6 +1046,45 @@ for all sectors of the economy $\left( j \in [1,n] \right)$ to obtain
 \noindent{}as expected. The total embodied energy content of the system 
 remains constant with respect to time in this model.
 
+We can further simplify the above equations by expressing
+the embodied energy of the inflowing capital ($\sum_{i=1}^{n} \dot{B}_{ij}$)
+as a fraction ($\alpha_{B,j}$) of the energy embodied in the capital stock ($B_{K_{j}}$)
+
+\begin{equation}
+	\alpha_{B,j}
+	\equiv \frac{\sum\limits_{i=1}^n\dot{B}_{ij}}{B_{K_{j}}}
+\end{equation}
+
+\noindent{}and resource and short-lived material flows as waste
+
+\begin{equation}
+	\dot{B}_{waste,j}
+	\equiv \dot{B}_{\dot{R}_{j0}}
+	+ \dot{B}_{\dot{S}_{j0}}.
+\end{equation}
+
+\noindent{}With the above definitions, 
+Equation~\ref{eq:C_embodied_energy_accounting_123_with_depreciation}
+can be expressed as
+
+\begin{equation} \label{eq:dBdt_with_alpha}
+	\frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} 
+	= (\alpha_{B,j} - \gamma_{B,j}) B_{K_{j}}
+	- \dot{B}_{waste,j} 
+	- \dot{B}_{j}
+	+ \dot{Q}_{j0}.
+\end{equation}
+
+With Equation~\ref{eq:dBdt_with_alpha}, we see that
+the rate of accumulation of embodied energy in the capital stock of an economic sector
+$\left( \frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} \right)$
+is affected by the balance between the inflow ($\alpha_{B,j}$) 
+and depreciation ($\gamma_{B,j}$) rates, the rate of wasting
+embodied energy ($\dot{B}_{waste,j}$), 
+the rate at which embodied energy leaves with the products 
+of the sector ($\dot{B}_{j}$), 
+and the waste heat that leaves the sector ($\dot{Q}_{j0}$).
+
 
 %%%%%%%%%% Embodied Energy: Auto industry example %%%%%%%%%%
 \section{Embodied energy in the auto industry}
