@@ -1,4 +1,4 @@
-This file contains options for mottos to lead each chapter.
+This file contains options for opening mottos for each chapter.
 
 
 INTRODUCTION
@@ -14,14 +14,14 @@ and ecologically responsible.
 
 MATERIALS
 
-
+Well, I have my rights, sir, 
+and I’m telling you I intend to go on doing just what I do! 
+And, for your information, you Lorax, 
+I’m figgering on biggering and BIGGERING and BIGGERING and BIGGERING...
+― The Once-ler in Dr. Seuss’s classic, The Lorax 
 
 
 ENERGY
-
-Energy and persistence conquer all things.
-
-\hfill---\emph{Benjamin Franklin}
 
 It takes as much energy to wish as it does to plan.
 
@@ -30,7 +30,8 @@ It takes as much energy to wish as it does to plan.
 
 EMBODIED ENERGY
 
-
+The first law of ecology is that everything is related to everything else.
+Barry Commoner
 
 
 VALUE
@@ -43,12 +44,17 @@ We come to value what we measure.
 
 ENERGY INTENSITY
 
-
+We have the most crude accounting tools. 
+It's tragic because our accounts and our national arithmetic 
+doesn't tell us the things that we need to know.
+Susan George
 
 
 IMPLICATIONS
 
-
+The economy is a wholly owned subsidiary of the environment, not the reverse.
+Herman E. Daly
+https://www.goodreads.com/author/quotes/44187.Herman_E_Daly
 
 
 UNFINISHED BUSINESS
@@ -60,12 +66,30 @@ Accounting systems change behavior.
 
 SUMMARY
 
-
+Only a crisis – actual or perceived – produces real change. 
+When that crisis occurs, the actions that are 
+taken depend on the ideas that are lying around.
+--- Milton Friedman, 1962 in Capitalism and Freedom
+http://steadystate.org/wp-content/uploads/Quotes_Steady_State_Economy.pdf
 
 
 BOOKEND?
 
-“If we apply our minds directly and competently to the needs of the earth, then we will have begun to make fundamental and necessary changes in our minds. We will begin to understand and to mistrust and to change our wasteful economy, which markets not just the produce of the earth, but also the earth's ability to produce. We will see that beauty and utility are alike dependent upon the health of the world. But we will also see through the fads and the fashions of protest. We will see that war and oppression and pollution are not separate issues, but are aspects of the same issue. Amid the outcries for the liberation of this group or that, we will know that no person is free except in the freedom of other persons, and that man's only real freedom is to know and faithfully occupy his place - a much humbler place than we have been taught to think - in the order of creation.” 
+If we apply our minds directly and competently to the needs of the earth, 
+then we will have begun to make fundamental and necessary changes in our minds. 
+We will begin to understand and to mistrust and to change our wasteful economy, 
+which markets not just the produce of the earth, 
+but also the earth's ability to produce. 
+We will see that beauty and utility are alike dependent upon the health of the world. 
+But we will also see through the fads and the fashions of protest. 
+We will see that war and oppression and pollution are not separate issues, 
+but are aspects of the same issue. 
+Amid the outcries for the liberation of this group or that, 
+we will know that no person is free except in the freedom of other persons, 
+and that man's only real freedom 
+is to know and faithfully occupy his place---a much humbler place 
+than we have been taught to think---in the order of creation.
+
 ― Wendell Berry, The Art of the Commonplace: The Agrarian Essays
 (pg.89, "Think Little")
 
@@ -76,10 +100,6 @@ BOOKEND?
 
 
 
-We have the most crude accounting tools. 
-It's tragic because our accounts and our national arithmetic 
-doesn't tell us the things that we need to know.
-Susan George
 
 Markets can't think about anything beyond about three months. 
 This is very long-term for markets, 
@@ -92,9 +112,6 @@ but we spend our natural capital as if it were revenue,
 as if it were going to come back next year without any problems, 
 whereas these renewals in nature can take hundreds of years.
 Susan George
-
-The first law of ecology is that everything is related to everything else.
-Barry Commoner
 
 Maybe just the last part from the G-R quote:
 "[Only economists still put the cart before the horse 
@@ -109,18 +126,5 @@ on a physically finite planet,
 is either mad or an economist.”
 ― Kenneth E. Boulding
 
-"Well, I have my rights, sir, 
-and I’m telling you I intend to go on doing just what I do! 
-And, for your information, you Lorax, 
-I’m figgering on biggering and BIGGERING and BIGGERING and BIGGERING…" 
-― The Once-ler in Dr. Seuss’s classic, The Lorax 
-
-"Only a crisis – actual or perceived – produces real change. 
-When that crisis occurs, the actions that are 
-taken depend on the ideas that are lying around." 
---- Milton Friedman, 1962 in Capitalism and Freedom
-http://steadystate.org/wp-content/uploads/Quotes_Steady_State_Economy.pdf
-
-“The economy is a wholly owned subsidiary of the environment, not the reverse.” 
-Herman E. Daly
-https://www.goodreads.com/author/quotes/44187.Herman_E_Daly
+Energy and persistence conquer all things.
+\hfill---\emph{Benjamin Franklin}
