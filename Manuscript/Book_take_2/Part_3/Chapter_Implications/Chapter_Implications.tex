@@ -158,7 +158,7 @@ The literature writes Equation~\ref{eq:epsilon_leontief_with_A} as
 	\bm{\varepsilon^{'}} 
 	= {\left( \vec{I} - {\vec{A}^{'}}^{\mathrm{T}} \right)}^{-1}
 	% {    \hat{  \vec{X}  }  }  ^{-1}
-	\left( \hat{\vec{X}}^{'} \right) ^{-1}
+	{\left( \hat{\vec{X}}^{'} \right)}^{-1}
 	\vec{E}_{0}.
 \end{equation}
 
@@ -190,7 +190,7 @@ no waste ($\vec{B}_{waste} = \vec{0}$), and
 no depreciation ($\hat{\bm{\gamma}}_{B} = \vec{0}$).
 
 Equations~\ref{eq:epsilon_leontief_with_A} 
-and ~\ref{eq:epsilon_leontief_with_A_literature}
+and~\ref{eq:epsilon_leontief_with_A_literature}
 have one common term, $\vec{E}_{0}$.
 We can solve Equation~\ref{eq:epsilon_leontief_with_A_literature}
 for $\vec{E}_{0}$ 
@@ -207,10 +207,10 @@ and $\bm{\varepsilon}^{'}$
 
 \begin{align}
 	\bm{\varepsilon}
-	=& \left( \vec{I} - \vec{A}^{\mathrm{T}} \right)^{-1} \hat{\vec{X}}^{-1}
+	=& {\left( \vec{I} - \vec{A}^{\mathrm{T}} \right)}^{-1} \hat{\vec{X}}^{-1}
 			\hat{\vec{X}}^{'} \left( \vec{I} - {\vec{A}^{'}}^{\mathrm{T}} \right) 
 			\bm{\varepsilon^{'}} 
-	& + \left( \vec{I} - \vec{A}^{\mathrm{T}} \right)^{-1} \hat{\vec{X}}^{\mathrm{-1}}
+	& + {\left( \vec{I} - \vec{A}^{\mathrm{T}} \right)}^{-1} \hat{\vec{X}}^{\mathrm{-1}}
 	\left[ \vec{T}_{1} - \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}  
 			- \vec{B}_{waste} - \hat{\bm{\gamma}}_{B} \vec{B}_{K} \right].
 \end{align}
