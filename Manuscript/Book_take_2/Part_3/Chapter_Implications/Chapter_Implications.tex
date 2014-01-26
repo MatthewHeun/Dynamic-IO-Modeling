@@ -828,6 +828,12 @@ framework.
 The issue of human population as part of society's
 capital stock is addressed in Section~\ref{sec:people_as_stock}.
 
+
+%+++++++++++++++++++++++++++++++++++++++++++
+%+++++++++ Constant capital stock ++++++++++
+%+++++++++++++++++++++++++++++++++++++++++++
+\subsection{Constant level of capital stock}
+
 In Chapter~\ref{chap:materials}, 
 we introduced Equation~\ref{eq:C_CV_all_b}:
 
@@ -850,7 +856,7 @@ is used for the purposes of:
 	\item{providing short-lived goods exchanged within the
 	economy~$\left(\dot{S}_{ij}\right)$, and}
 	\item{overcoming depreciation of man-made
-	capital stocks~$\left(\sum\limits_{j}\gamma_{K_{j}}K_{j}\right)$.}
+	capital stocks~$\left(\sum_{j}\gamma_{K_{j}}K_{j}\right)$.}
 \end{itemize}
 
 Assuming,
@@ -872,7 +878,6 @@ reduces to:
 
 A number of interesting concepts may be understood in
 relation to Equation~\ref{eq:C_CV_all_c}. 
-
 Firstly,
 if our steady-state economy is to be supported
 sustainably,
@@ -890,17 +895,20 @@ the sustainability criterion  is a vector of values,
 one for each natural resource.
 
 Secondly,
-both the flow of short-lived goods around the economy
-$\left(\sum_{i,j}\dot{S}_{ij}\right)$
-and the depreciation of capital stock back to the biosphere 
-$\left(\sum_{j}\gamma_{K_{j}}K_{j}\right)$
-may be at higher or lower levels even with the
-economy still operating at a steady state,
-i.e.\ no growth in capital stock.
-The higher the level of these flows,
+the steady state condition 
+$\left(\sum_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}=0\right)$
+says nothing about the transfer rates of short-lived goods 
+within in the economy $\left(\sum_{i,j}\dot{S}_{ij}\right)$
+or the depreciation of capital stock back to the biopshere
+$\left(\sum_{j}\gamma_{K_{j}}K_{j}\right)$.
+Equation~\ref{eq:C_CV_all_c} indicates that 
+the higher the rates of these flows,
 the greater the rate of depletion of
-natural resources and the harder it is to
-meet any constraint of sustainability.
+natural resources, and the more difficult it will be to
+meet the sustainability condition 
+(that the withdrawal rate of natural resources from the biosphere
+is lower than the biosphere
+replenishment rate).
 Within industrial society,
 the flow of short-lived goods 
 (packaging,
@@ -908,34 +916,38 @@ paper products,
 disposable tableware,
 cutlery,
 and napkins)
-is large.
+is large,
+and, presumably, attaining a sustainable steady-state economy
+will be difficult.
+This definition of steady state 
+$\left(\sum_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}=0\right)$
+does not necessarily coincide with sustainability.
 
 As discussed in Chapter~\ref{chap:materials},
-the rate of depreciation ($\gamma$) is inversely
+the rate of depreciation ($\gamma_{K}$) is inversely
 proportional to the average lifetime of capital stock---as
 the average lifetime of capital stock decreases,
 the rate of depreciation of capital stock increases which
-increases the draw on natural resources.
+increases the draw on natural resources (by Equation~\ref{eq:C_CV_all_c}).
 It is likely that the average lifetime of capital stock has
-decreased over the last century.
-This is due to a decrease in durability of capital stock
+decreased over the last century, 
+due to a decrease in durability of capital stock
 (the average table built today is not as durable as the average table
 built in the early twentieth century)
-and also to a change in proportion of consumer electronics
-(cell phones, laptops, tablets)
-with short lifetimes.
-This causes an increase in the need for flows of
+and also due to increasing proportions of consumer electronics
+with short lifetimes (cell phones, laptops, tablets).
+Decreasing lifetime causes higher rates of flow for
 replacement materials.
 In the absence of extreme recycling of materials,
-these large flows place large demands on
+these large replacement flows place large demands on
 natural resources.
 
 Thirdly,
 the maintenance flows necessary to overcome
 depreciation
 $\left(\sum_{j}\gamma_{K_{j}}K_{j}\right)$
-are proportional to the size of the capital
-stock $\left(\sum_{j}K_{j}\right)$.
+are proportional to the magnitude of the capital
+stock ($K_{j}$).
 As such,
 a larger stock of capital requires
 greater draw on natural resources and is thus harder
@@ -944,11 +956,17 @@ These points emphasize that constant capital stock
 (or analogously constant population)
 is not a sufficient condition for environmental sustainability.
 
+
+%++++++++++++++++++++++++++++++++++++++++
+%+++++++++ Constant throughput ++++++++++
+%++++++++++++++++++++++++++++++++++++++++
+\subsection{Constant material throughput}
+
 Herman Daly has placed great emphasis on a steady-state
-economy as having a constant rate of material through-put 
+economy as having a constant rate of material throughput 
 \cite{Daly1977, Daly1997}
-which should also lie below biophysical limits,
-in order to meet any sustainability constraint.
+which, as discussed above, should be below biophysical limits
+if sustainability is to be achieved.
 This is often referred to as the ``scale'' issue---how 
 large is the (currently growing) human economy in relation
 to the finite, non-growing biosphere of which it is a sub-system?
@@ -958,16 +976,16 @@ or deplete natural capital stocks, be they
 renewable (fisheries) or 
 non-renewable (fossil fuels).
 As shown in Figure~\ref{fig:C_materials},
-material through-put is composed of two distinct processes:
+material throughput is composed of two distinct processes:
 exchange of material \emph{from} the biosphere 
 \emph{into} the economy (extraction)
 and exchange of material \emph{from} the economy
-\emph{into} biosphere (waste).
-We may characterizing constant material through-put
+\emph{into} biosphere (waste and depreciation).
+We may characterizing constant material throughput
 as either constant rate of extraction, constant rate of
-waste disposal, or both
-which could be defined within our framework as:
-
+waste disposal, or both.
+In the language of our framework, we could write:
+**** I thought you wanted to use $\frac{\mathrm{d}\dot{R}_{0}}{\mathrm{d}t}$, etc. --MKH ****
 
 \begin{align}\label{eq:const_throughput}
 	\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{R}_{0}\right)		&
@@ -983,8 +1001,11 @@ which could be defined within our framework as:
 	= 0.
 \end{align}
 
-Within this constraint,
-more effective use of materials could
+The above equations say nothing about the level 
+of man-made capital stock ($K$)
+or the flow rate of short-lived goods ($\dot{S}$).
+Thus, within the constant throughput constraint,
+increasingly effective use of materials could
 theoretically allow increasing accumulation
 of man-made capital ($K$) 
 and increasing flow of short-lived goods ($\dot{S}$)
@@ -993,15 +1014,21 @@ Eventually,
 physical limits would entail that capital
 stock could no longer be increased.
 Presumably,
-society would desire that the through-put of
+society would desire that the throughput of
 materials would be within levels that could
 be sustained by the biosphere,
 both at the input side---natural 
 resources extracted at rates lower
-than the regeneration rates---and 
+than natural regeneration rates---and 
 at the output side---wastes emitted 
 at rates below which
-the biosphere can assimilate them.
+the biosphere can assimilate.
+
+
+%++++++++++++++++++++++++++++++++++++++++
+%+++++++++ Constant GDP ++++++++++
+%++++++++++++++++++++++++++++++++++++++++
+\subsection{Constant GDP}
 
 The issue of GDP and economic ``development'' 
 has already been discussed in 
@@ -1011,7 +1038,6 @@ the case of zero growth in GDP was not.
 Within our framework,
 a condition of constant GDP would be
 characterized by the following equation:
-
 
 \begin{equation}\label{eq:const_GDP}
 	\frac{\mathrm{d}GDP}{\mathrm{d}t}
@@ -1025,7 +1051,7 @@ no value is attributed to the flow of materials
 to or from the biosphere,
 it is unclear what the impact constant GDP would be
 on capital stock ($K$)
-or material through-put
+or material throughput
 (extraction and waste disposal).
 If we constrained $\dot{R}_{0}$ and
 $\dot{S}_{0}$, it is 
