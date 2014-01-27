@@ -45,11 +45,11 @@ embodied energy accumulation, waste material flows, and depreciation.
 
 The first set of implications are for the I-O method itself;
 specifically, for the process of estimating
-the energy intensity of economic output ($\bm{\varepsilon}$).
+the energy intensity of economic output ($\boldsymbol{\varepsilon}$).
 
 
 %%%%%%%%%% I-O implications: estimating epsilon %%%%%%%%%%
-\subsection{Estimating $\bm{\varepsilon}$}
+\subsection{Estimating $\boldsymbol{\varepsilon}$}
 \label{sec:estimating_epsilon-implications_chapter}
 %%%%%%%%%%
 
@@ -57,7 +57,7 @@ Extension of the Leontief\index{Leontief}
 Input-Output method\index{input-output method}
 for energy analysis has allowed energy analysts to estimate 
 the energy intensity\index{energy intensity}
-of economic products ($\bm{\varepsilon}$). 
+of economic products ($\boldsymbol{\varepsilon}$). 
 As discussed in Section~\ref{sec:Value_Methodology},
 we do not take this important result as a license
 to declare an intrinsic ``energy theory of value.''
@@ -76,13 +76,13 @@ In this manuscript, Equation~\ref{eq:epsilon_leontief_with_A}
 provides a means of estimating the energy intensity of economic sectors:
 
 \begin{equation}
-	\bm{\varepsilon} 
+	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 				- \vec{B}_{waste}
-				- \hat{\bm{\gamma}}_{B}\vec{B}_{K}
+				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
 		\right].\tag{\ref{eq:epsilon_leontief_with_A}}
 \end{equation}
 
@@ -98,7 +98,7 @@ standard I-O tables from the
 Bureau of Economic Analysis (BEA).\footnote{See
 Section~\ref{sec:Data} for a discussion of data needs.}
 Historically, only a few energy analysts attempted to include the effect
-of capital flows on energy intensity ($\bm{\varepsilon}$). 
+of capital flows on energy intensity ($\boldsymbol{\varepsilon}$). 
 Bullard~\cite{Bullard1975} added capital stock purchases as an input
 to each economic sector.
 Casler~\cite{Casler:1983uy} attempted to correct the BEA's
@@ -155,7 +155,7 @@ includes capital flows explicitly:
 The literature writes Equation~\ref{eq:epsilon_leontief_with_A} as
 
 \begin{equation} \label{eq:epsilon_leontief_with_A_literature}
-	\bm{\varepsilon^{'}} 
+	\boldsymbol{\varepsilon^{'}} 
 	= {\left( \vec{I} - {\vec{A}^{'}}^{\mathrm{T}} \right)}^{-1}
 	% {    \hat{  \vec{X}  }  }  ^{-1}
 	{\left( \hat{\vec{X}}^{'} \right)}^{-1}
@@ -173,11 +173,11 @@ Most of the literature neglects
 			$\left( \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right)$,}
 	\item{the embodied energy of scrap resource	and short-lived material flows 
 			($\dot{\vec{B}}_{waste}$) and}
-	\item{depreciation $\hat{\bm{\gamma}}_{B} \vec{B}_{K}$}
+	\item{depreciation $\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$}
 \end{itemize}
 
 \noindent{}when estimating the energy intensity  
-of economic sectors ($\bm{\varepsilon}^{'}$).
+of economic sectors ($\boldsymbol{\varepsilon}^{'}$).
 In other words, most energy analysts using the input-output method
 have, to date, and perhaps unwittingly, assumed 
 a developed-world ($\vec{T}_{1} \ll \vec{E}_{0}$),
@@ -187,7 +187,7 @@ $\left( \frac{\mathrm{d}\mathrm{\vec{B}}_{K}}{\mathrm{d}t}
 with 
 no capital flow (using $\vec{A}^{'}$ and $\hat{\vec{X}}^{'}$),
 no waste ($\vec{B}_{waste} = \vec{0}$), and
-no depreciation ($\hat{\bm{\gamma}}_{B} = \vec{0}$).
+no depreciation ($\hat{\boldsymbol{\gamma}}_{B} = \vec{0}$).
 
 Equations~\ref{eq:epsilon_leontief_with_A} 
 and~\ref{eq:epsilon_leontief_with_A_literature}
@@ -197,22 +197,22 @@ for $\vec{E}_{0}$
 
 \begin{equation}
 	\vec{E}_{0}
-	= \hat{\vec{X}}^{'} \left( \vec{I} - {\vec{A}^{'}}^\mathrm{T} \right) \bm{\varepsilon^{'}} 
+	= \hat{\vec{X}}^{'} \left( \vec{I} - {\vec{A}^{'}}^\mathrm{T} \right) \boldsymbol{\varepsilon^{'}} 
 \end{equation}
 
 \noindent{}and substitute into
 Equation~\ref{eq:epsilon_leontief_with_A}
-to obtain an expression that relates $\bm{\varepsilon}$ 
-and $\bm{\varepsilon}^{'}$
+to obtain an expression that relates $\boldsymbol{\varepsilon}$ 
+and $\boldsymbol{\varepsilon}^{'}$
 
 \begin{align}
-	\bm{\varepsilon}
+	\boldsymbol{\varepsilon}
 	=& {\left( \vec{I} - \vec{A}^{\mathrm{T}} \right)}^{-1} \hat{\vec{X}}^{-1}
 			\hat{\vec{X}}^{'} \left( \vec{I} - {\vec{A}^{'}}^{\mathrm{T}} \right) 
-			\bm{\varepsilon^{'}} 
+			\boldsymbol{\varepsilon^{'}} 
 	& + {\left( \vec{I} - \vec{A}^{\mathrm{T}} \right)}^{-1} \hat{\vec{X}}^{\mathrm{-1}}
 	\left[ \vec{T}_{1} - \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}  
-			- \vec{B}_{waste} - \hat{\bm{\gamma}}_{B} \vec{B}_{K} \right].
+			- \vec{B}_{waste} - \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K} \right].
 \end{align}
 
 **** Next, substitute a dB/dt equation with $\alpha$ into the equation. ****
@@ -261,20 +261,20 @@ For industrialized economies, muscle work
 is likely to provide only a small fraction
 of the energy input from fossil fuels ($\vec{E}_{0}$),
 so neglecting $\vec{T}_{1}$ causes negligible error when
-estimating energy intensity ($\bm{\varepsilon}$) by
+estimating energy intensity ($\boldsymbol{\varepsilon}$) by
 Equation~\ref{eq:epsilon_leontief_with_A_literature}.
 However, for some agrarian\index{economy!agrarian} 
 and developing economies\index{economy!developing}, 
 in which $\vec{T}_{1}$ and $\vec{E}_{0}$ 
 could be on the same order of magnitude,
 neglecting $\vec{T}_{1}$ could cause errors
-in estimates of $\bm{\varepsilon}$.
+in estimates of $\boldsymbol{\varepsilon}$.
 To the extent that $\vec{T}_{1}$ 
 is significant relative to $\vec{E}_{0}$,
 Equation~\ref{eq:epsilon_leontief_with_A_literature}
 will underpredict the energy intensity of the economy.
 
-Accurate estimation of the energy intensity of economic output ($\bm{\varepsilon}$)
+Accurate estimation of the energy intensity of economic output ($\boldsymbol{\varepsilon}$)
 requires independent knowledge of the rate at which society supplies
 energy to the economy~($\vec{T}_{1}$). 
 Ayres and Warr have estimated human and animal muscle work
@@ -303,14 +303,14 @@ Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
 shows that embodied energy accumulation within economic sectors 
 exclusive of depreciation
 $\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$ 
-decreases the energy intensity of products~($\bm{\varepsilon}$),
+decreases the energy intensity of products~($\boldsymbol{\varepsilon}$),
 because incoming energy becomes embodied within capital stock rather than products.
 Costanza points out that traditional
 ``input-output methodology does not include capital stocks explicitly, 
 since a static equillibrium is assumed.''\cite{Costanza:1980ww}
 Comparison with Equation~\ref{eq:epsilon_leontief_with_A_literature}
 shows that the method in the literature will overestimate the energy intensity
-of economic products ($\bm{\varepsilon}$) when 
+of economic products ($\boldsymbol{\varepsilon}$) when 
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} > 0$.
 
 Rapidly growing economies (as measured by GDP), such as China and India today,
@@ -330,11 +330,11 @@ $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$
 have yet to be made.
 
 Equation~\ref{eq:epsilon_leontief_depreciation_simplification} shows that 
-accurate estimation of the energy intensity of economic output ($\bm{\varepsilon}$)
+accurate estimation of the energy intensity of economic output ($\boldsymbol{\varepsilon}$)
 requires \emph{independent} knowledge of the rate 
 at which embodied energy accumulates in the capital stock of the economy 
 $\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
-and all estimates of energy intensity ($\bm{\varepsilon}$) to date have assumed 
+and all estimates of energy intensity ($\boldsymbol{\varepsilon}$) to date have assumed 
 $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} = 0$.\footnote{To 
 our knowledge, there are no independent estimates 
 of the accumulation rate of embodied energy in the economy
@@ -344,7 +344,7 @@ cannot be used to estimate the accumulation rate of energy embodied in
 capital stock by solving for 
 $\left( \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}} \right)$,
 because that approach would require independent knowledge
-of the energy intensity of economic sectors ($\bm{\varepsilon}$).
+of the energy intensity of economic sectors ($\boldsymbol{\varepsilon}$).
 Alternatively, Equation~\ref{eq:C_embodied_energy_accounting_123_with_depreciation} 
 could be simplified using the 
 methods of Section~\ref{sec:intensity_capital_correction} to obtain
@@ -380,7 +380,7 @@ If the energy embodied in waste resources ($\dot{R}$)
 and short-lived materials ($\dot{S}$) are ignored,
 Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
 shows that estimates of the energy intensity of economic products 
-($\bm{\varepsilon}$) will be too high.
+($\boldsymbol{\varepsilon}$) will be too high.
 We are unaware of any estimates of the energy embodied in wasted
 material in an economy.  
 But, one might develop a metric for the resource material effiency of an 
@@ -451,7 +451,7 @@ If so, Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
 could be modified as
 
 \begin{equation} \label{eq:epsilon_leontief_without_waste}
-	\bm{\varepsilon} 
+	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
@@ -468,7 +468,7 @@ will benefit energy analysts who utilize the I-O method.
 
 A second set of implications for the I-O method 
 comes from one of the ways that 
-the energy intensity vector ($\bm{\varepsilon}$)
+the energy intensity vector ($\boldsymbol{\varepsilon}$)
 is often used: to estimate energy demand from the biosphere ($\vec{E}_{0}$).
 
 
@@ -482,9 +482,9 @@ As shown in
 Equation~\ref{eq:epsilon_leontief_depreciation_simplification}
 and discussed in Section~\ref{sec:estimating_epsilon-implications_chapter} above, 
 the I-O method can be used to estimate energy intensities 
-for each sector of the economy ($\bm{\varepsilon}$). 
-With $\bm{\varepsilon}$ values in hand,
-and assuming that $\bm{\varepsilon}$ is constant with respect to time,
+for each sector of the economy ($\boldsymbol{\varepsilon}$). 
+With $\boldsymbol{\varepsilon}$ values in hand,
+and assuming that $\boldsymbol{\varepsilon}$ is constant with respect to time,
 energy analysts have estimated changes in energy demand 
 from the biosphere ($\vec{E}_{0}$) 
 as the output of economic sectors ($\hat{\vec{X}}$) 
@@ -494,7 +494,7 @@ for $\vec{E}_{0}$:
 
 \begin{equation} \label{eq:Leontief_lit_solved_for_E}
 	\vec{E}_{0} 
-	= \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}})\bm{\varepsilon}.
+	= \hat{\vec{X}}(\vec{I} - \vec{A}^{\mathrm{T}})\boldsymbol{\varepsilon}.
 \end{equation}
 
 When Equation~\ref{eq:epsilon_leontief_with_A_literature}
@@ -511,7 +511,7 @@ for $\vec{E}_{0}$ gives
 	\vec{E}_{0} 
 	= \hat{\vec{X}}
 		(\vec{I} - \vec{A}^{\mathrm{T}})
-		\bm{\varepsilon} 
+		\boldsymbol{\varepsilon} 
 	+ \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
 	+ \vec{B}_{waste}
 	- \vec{T}_{1}.
@@ -608,7 +608,7 @@ increasingly large energy extraction rates ($\vec{E}_{0}$)
 are required to maintain capital stock 
 in the sectors of the economy
 to offset the effects of depreciation 
-($\hat{\bm{\gamma}}_{K} \vec{B}_{K}$),
+($\hat{\boldsymbol{\gamma}}_{K} \vec{B}_{K}$),
 assuming that $\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \ge 0$ 
 is desired. 
 
@@ -694,7 +694,7 @@ short-lived goods
 $\left(\vec{B}_{waste}\right)$
 and depreciation of 
 capital 
-stock~$\left(\hat{\bm{\gamma}}_{K}\vec{B}_{K}\right)$
+stock~$\left(\hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}\right)$
 that would otherwise have
 been expended to the biosphere.\footnote{Another 
 method  of dematerialization is 
@@ -715,21 +715,21 @@ by the following equation:
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
-	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
+	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\boldsymbol{\varepsilon} 
 	- \vec{B}_{waste}
-	- \hat{\bm{\gamma}}_{K}\vec{B}_{K}\tag{\ref{eq:matrix_leontief}}
+	- \hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}\tag{\ref{eq:matrix_leontief}}
 \end{equation}
 
 One effect of recycling is to reduce the magnitude 
 of the waste 
 $\left(\vec{B}_{waste}\right)$
 and depreciation 
-$\left(\hat{\bm{\gamma}}_{K}\right)$ 
+$\left(\hat{\boldsymbol{\gamma}}_{K}\right)$ 
 terms,
 since for a given level of capital 
 stock~$\left(\vec{B}_{K}\right)$
 the amount of depreciation to the 
-biosphere $\left(\hat{\bm{\gamma}}_{K}\vec{B}_{K}\right)$
+biosphere $\left(\hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}\right)$
 will be lower due to the fraction that
 is now recycled.
 As can be seen by looking at 
@@ -737,7 +737,7 @@ Equation~\ref{eq:matrix_leontief},
 this indicates that 
 recycling of material in an economy, 
 by reducing both $\vec{B}_{waste}$ 
-and~$\hat{\bm{\gamma}}_{K}$, 
+and~$\hat{\boldsymbol{\gamma}}_{K}$, 
 puts \emph{upward} pressure on the accumulation of 
 energy embodied in capital stock
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
@@ -765,7 +765,7 @@ If recycling produces a net reduction in energy demand ($\vec{E}_{0}$),
 the upward pressure on growth 
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 from decrease in depreciation 
-$\left(\hat{\bm{\gamma}}_{K}\right)$ 
+$\left(\hat{\boldsymbol{\gamma}}_{K}\right)$ 
 and the downward pressure on growth 
 from net reduction in energy demand 
 $\left(\vec{E}_{0}\right)$ 

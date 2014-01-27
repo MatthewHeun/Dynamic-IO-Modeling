@@ -15,14 +15,14 @@
 
 
 In this manuscript, we choose to define 
-energy intensity ($\bm{\varepsilon}$) and 
+energy intensity ($\boldsymbol{\varepsilon}$) and 
 energy input ($\vec{E}_{0}$~and~$\vec{T}_{1}$)
 as a column vectors (see Equations~\ref{eq:eps_vec_def},~\ref{eq:E_vec_def}, 
 and~\ref{eq:T_vec_def}, respectively),
 because it natural to solve a system of equations
 for a column vector rather than a row vector.
 And, Equation~\ref{eq:C-Expanded_Matrix_Form} could not
-be written as neatly if $\bm{\varepsilon}$ and $\vec{E}_{0}$
+be written as neatly if $\boldsymbol{\varepsilon}$ and $\vec{E}_{0}$
 were row vectors.
 
 In contrast, the I-O literature (see, 
@@ -49,7 +49,7 @@ $
 }
 
 \begin{equation} \label{eq:Casler6-converted}
-	\bm{\varepsilon}
+	\boldsymbol{\varepsilon}
 	= \vec{E} 
 		\hat{\vec{X}}^{-1}
 		{(\vec{I} - \vec{A})}^{-1}.
@@ -162,22 +162,22 @@ Equation~\ref{eq:aij_def}) gives
 \end{equation}
 
 \noindent{}With the definitions of $\hat{\vec{X}}$,
-$\vec{A}$, $\bm{\varepsilon}$, and $\vec{E}_{0}$
+$\vec{A}$, $\boldsymbol{\varepsilon}$, and $\vec{E}_{0}$
 from Equations~\ref{eq:X_hat_matrix_def},
 \ref{eq:A_matrix_def},~\ref{eq:E_vec_def}, 
 and~\ref{eq:eps_vec_def}, respectively,
 we can rewrite Equation~\ref{eq:Casler34-matrix-expanded} as
 
 \begin{equation}
-	\hat{\vec{X}} \vec{A}^{\mathrm{T}} \bm{\varepsilon}
+	\hat{\vec{X}} \vec{A}^{\mathrm{T}} \boldsymbol{\varepsilon}
 	+ \vec{E}_{0}
-	= \hat{\vec{X}} \bm{\varepsilon}.
+	= \hat{\vec{X}} \boldsymbol{\varepsilon}.
 \end{equation}
 
-\noindent{}Solving for $\bm{\varepsilon}$ gives
+\noindent{}Solving for $\boldsymbol{\varepsilon}$ gives
 
 \begin{equation} \label{eq:Casler6-column-vector}
-	\bm{\varepsilon}
+	\boldsymbol{\varepsilon}
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1} 
 		\hat{\vec{X}}^{-1} 
 		\vec{E}_{0}.

@@ -477,13 +477,13 @@ in vector notation as
 \index{transaction matrix}\index{matrix!transaction|see{transaction matrix}}
 
 \begin{equation} \label{eq:eps_vec_def}
-	\bm{\varepsilon} 
+	\boldsymbol{\varepsilon} 
 	\equiv
 	\begin{Bmatrix}
 		\varepsilon_{2}	\\
 		\varepsilon_{3}
 	\end{Bmatrix},
-\end{equation} \nomenclature[e]{$\bm{\varepsilon}$}{column vector 
+\end{equation} \nomenclature[e]{$\boldsymbol{\varepsilon}$}{column vector 
 								of sector energy intensities [J/\$]}
 								
 \begin{equation} \label{eq:waste_vec_def}
@@ -521,7 +521,7 @@ in vector notation as
 \noindent{}and
 
 \begin{equation} \label{eq:gamma_hat_matrix_def}
-	\hat{\bm{\gamma}}_{B}
+	\hat{\boldsymbol{\gamma}}_{B}
 	\equiv
 	\delta_{ij} \gamma_{B,j}
 	=
@@ -529,7 +529,7 @@ in vector notation as
 		\gamma_{B,2} & 0         \\
 		0            & \gamma_{B,3}
 	\end{bmatrix};
-\end{equation}\nomenclature[g]{$\hat{\bm{\gamma}}$}{diagonal matrix of depreciation rates [\$/year]}
+\end{equation}\nomenclature[g]{$\hat{\boldsymbol{\gamma}}$}{diagonal matrix of depreciation rates [\$/year]}
 
 \noindent{}with the ``Kronecker delta''
 
@@ -549,10 +549,10 @@ compactly as
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
-	+ \vec{X}_{t}^{\mathrm{T}}\bm{\varepsilon} 
-	- \hat{\vec{X}}\bm{\varepsilon}
+	+ \vec{X}_{t}^{\mathrm{T}}\boldsymbol{\varepsilon} 
+	- \hat{\vec{X}}\boldsymbol{\varepsilon}
 	- \vec{B}_{waste}
-	- \hat{\bm{\gamma}}_{B} \vec{B}_{K}.
+	- \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:matrix_leontief_pre_1} can be simplified to
@@ -561,9 +561,9 @@ compactly as
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
-	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\bm{\varepsilon} 
+	+ (\vec{X}_{t}^{\mathrm{T}} - \hat{\vec{X}})\boldsymbol{\varepsilon} 
 	- \vec{B}_{waste}
-	- \hat{\bm{\gamma}}_{B}\vec{B}_{K}.
+	- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}.
 \end{equation}
 
 \noindent{}We can define the input-output matrix ($\vec{A}$) as
@@ -593,15 +593,15 @@ to be recast as
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
-	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\bm{\varepsilon} 
+	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\boldsymbol{\varepsilon} 
 	- \vec{B}_{waste}
-	- \hat{\bm{\gamma}}_{B}\vec{B}_{K}.
+	- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}.
 \end{equation}
 
 \noindent{}Equation~\ref{eq:matrix_leontief} is the matrix version 
 of the total energy accounting equation
 written in terms of embodied energy ($\vec{B}$), 
-energy intensities ($\bm{\varepsilon}$),
+energy intensities ($\boldsymbol{\varepsilon}$),
 and input-output ratios ($\vec{A}$).
 Equation~\ref{eq:C-Expanded_Matrix_Form} applies 
 for the three-sector economy of Example~C, 
@@ -621,9 +621,9 @@ direct energy inputs to the economy from the biosphere ($\vec{E}_{0}$),
 total energy inputs from society to the economy ($\vec{T}_{1}$),
 sector outputs ($\hat{\vec{X}}$), 
 sector input-output ratios ($\vec{A}$), 
-sector energy intensities ($\bm{\varepsilon}$), 
+sector energy intensities ($\boldsymbol{\varepsilon}$), 
 energy embodied in wastes from the economy ($\vec{B}_{waste}$),
-and physical depreciation rates of capital stock ($\hat{\bm{\gamma}}_{B}\vec{B}_{K}$). 
+and physical depreciation rates of capital stock ($\hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}$). 
 In theory, the transaction matrix ($\vec{X}_{t}$) is not required 
 if the input-ouput matrix ($\vec{A}$) is known, 
 though in practice, 
@@ -633,17 +633,17 @@ as shown in Appendix~\ref{chap:Estimating_A}.
 
 
 % %%%%%%%%%% Example C %%%%%%%%%%
-% \section{Estimating $\bm{\varepsilon}$}
+% \section{Estimating $\boldsymbol{\varepsilon}$}
 % \label{sec:estimating_epsilon-intensity_chapter}
 % %%%%%%%%%%
 
 Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 
 \begin{equation} \label{eq:epsilon_derivation_1}
-	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \bm{\epsilon}
+	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \boldsymbol{\epsilon}
 	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 	+ \vec{B}_{waste}
-	+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
+	+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}
 	- \vec{E}_{0}
 	- \vec{T}_{1} 
 \end{equation}
@@ -651,12 +651,12 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 \noindent{}and
 
 \begin{equation} \label{eq:epsilon_derivation_2}
-	\bm{\epsilon}
+	\boldsymbol{\epsilon}
 	= {\left[ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \right]}^{-1}
 		\left[
 			\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 			+ \vec{B}_{waste}
-			+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
+			+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}
 			- \vec{E}_{0}
 			- \vec{T}_{1} 
 		\right].
@@ -673,12 +673,12 @@ from Formula 6.2, p. 308 in Beyer~\cite{Beyer:1991vd}
 \noindent{}to the right side of Equation~\ref{eq:epsilon_derivation_2} to obtain
 
 \begin{equation} \label{eq:epsilon_derivation_3}
-	\bm{\epsilon}
+	\boldsymbol{\epsilon}
 	= {(\vec{A}^{\mathrm{T}} - \vec{I})}^{-1} {\hat{\vec{X}}}^{-1} 
 		\left[
 			\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 			+ \vec{B}_{waste}
-			+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
+			+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}
 			- \vec{E}_{0}
 			- \vec{T}_{1} 
 		\right].
@@ -691,7 +691,7 @@ $
 \left[
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 	+ \vec{B}_{waste}
-	+ \hat{\bm{\gamma}}_{B} \vec{B}_{K}
+	+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}
 	- \vec{E}_{0}
 	- \vec{T}_{1} 
 \right]
@@ -699,21 +699,21 @@ $.}
 on the right side of Equation~\ref{eq:epsilon_derivation_3} by $-1$ to obtain
 
 \begin{equation} \label{eq:epsilon_leontief_with_A}
-	\bm{\varepsilon} 
+	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 				- \vec{B}_{waste}
-				- \hat{\bm{\gamma}}_{B}\vec{B}_{K}
+				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
 		\right].
 \end{equation}
 
 Equation~\ref{eq:epsilon_leontief_with_A} provides a means 
-to estimate energy intensity ($\bm{\varepsilon}$)
+to estimate energy intensity ($\boldsymbol{\varepsilon}$)
 of the sectors of the economy. 
 But, the effect of physical depreciation of capital stock
-($\hat{\bm{\gamma}}_{B}\vec{B}_{K}$) 
+($\hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}$) 
 can be clarified.
 We do so in the following section.
 
@@ -734,7 +734,7 @@ Unfortunately, flows of capital stock ($\dot{K}$) are not logged in the
 Bureau of Economic Analysis (BEA) standard I-O tables.\footnote{See
 Section~\ref{sec:Data} for a discussion of data needs.}
 Historically, only a few energy analysts attempted to include the effect
-of capital flows on energy intensity ($\bm{\varepsilon}$). 
+of capital flows on energy intensity ($\boldsymbol{\varepsilon}$). 
 Bullard~\cite{Bullard1975} added capital stock purchases as an input
 to each economic sector.
 Casler~\cite{Casler:1983uy} attempted to correct the BEA's
@@ -751,7 +751,7 @@ Our approach derives
 
 
 Physical depreciation\index{depreciation!physical} 
-of capital stock ($\hat{\bm{\gamma}}_{K}\vec{B}_{K}$)
+of capital stock ($\hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}$)
 occurs due to wear and tear, obsolescence, and end-of-life
 of material and capital stock\index{capital stock} 
 within economic sectors and society.\footnote{Physical depreciation
@@ -759,12 +759,12 @@ is different from financial depreciation.
 Financial depreciation occurs during the useful life of material, 
 while physical depreciation occurs at end of life, 
 when material is discarded from an economic sector to the biosphere.}
-But, we note that depreciation ($\hat{\bm{\gamma}}_{K} \vec{B}_{K}$) 
+But, we note that depreciation ($\hat{\boldsymbol{\gamma}}_{K} \vec{B}_{K}$) 
 and accumulation of embodied energy 
 $\left( \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right)$
 should be considered in tandem,
 because the outflow of embodied energy due to depreciation
-($\hat{\bm{\gamma}}_{K} \vec{B}_{K}$)
+($\hat{\boldsymbol{\gamma}}_{K} \vec{B}_{K}$)
 will cause an equal reduction of the net accumulation rate of embodied energy
 $\left( \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right)$
 within economic sectors.
@@ -795,7 +795,7 @@ To be specific,
 into Equation~\ref{eq:epsilon_leontief_with_A} and extending to matrix notation yields
 
 \begin{equation} \label{eq:epsilon_leontief_depreciation_simplification}
-	\bm{\varepsilon} 
+	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
@@ -806,7 +806,7 @@ into Equation~\ref{eq:epsilon_leontief_with_A} and extending to matrix notation 
 
 \noindent{}Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
 allows estimation of the energy intensity 
-of economic output ($\bm{\varepsilon}$) 
+of economic output ($\boldsymbol{\varepsilon}$) 
 knowing only 
 sector input-output ratios ($\vec{A}$), 
 sector outputs ($\hat{\vec{X}}$), 
@@ -819,7 +819,7 @@ and the waste rate of embodied energy due to scrapped resources and short-lived 
 ($\vec{B}_{waste}$).
 Again, the transaction matrix\index{transaction matriux} ($\vec{X}_{t}$) 
 is not required for estimating the energy intensity 
-of economic sectors ($\bm{\varepsilon}$)
+of economic sectors ($\boldsymbol{\varepsilon}$)
 if the input-ouput matrix ($\vec{A}$) is known, 
 though in practice, 
 knowledge of input-output matrix ($\vec{A}$) 
@@ -842,7 +842,7 @@ and $\varepsilon$ increases.}
 \begin{table}
 \caption[Factors affecting the energy intensity of economic output.]{Factors from
 Equation~\ref{eq:epsilon_leontief_depreciation_simplification} 
-affecting the energy intensity of economic output ($\vec{\bm{\varepsilon}}$).}
+affecting the energy intensity of economic output ($\vec{\boldsymbol{\varepsilon}}$).}
 \begin{center}
   \begin{tabular}{r @{\hspace{2em}} l}
 	  
@@ -854,27 +854,27 @@ affecting the energy intensity of economic output ($\vec{\bm{\varepsilon}}$).}
     
 	$\vec{A}$ & As $\vec{A}$$\uparrow$, more energy 
 	flows into sectors per unit output, 
-	and $\bm{\varepsilon}$$\uparrow$.\\
+	and $\boldsymbol{\varepsilon}$$\uparrow$.\\
 	
 	$\hat{\vec{X}}$ & As $\hat{\vec{X}}$$\uparrow$, economic output increases, 
-	and $\bm{\varepsilon}$$\downarrow$.  \\
+	and $\boldsymbol{\varepsilon}$$\downarrow$.  \\
 	
 	$\vec{E}_{0}$ & As $\vec{E}_{0}$$\uparrow$, 
 	the rate of energy flow from the biosphere increases, 
-	and $\bm{\varepsilon}$$\uparrow$.  \\ 
+	and $\boldsymbol{\varepsilon}$$\uparrow$.  \\ 
 	
 	$\vec{T}_{1}$ & As $\vec{T}_{1}$$\uparrow$, 
 	the flow of useful work to the economy increases, 
-	and $\bm{\varepsilon}$$\uparrow$.  \\ 
+	and $\boldsymbol{\varepsilon}$$\uparrow$.  \\ 
 	
 	$\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$ & 
 	As $\left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}$$\uparrow$, 
 	inflowing energy goes into capital instead of products, 
-	and $\bm{\varepsilon}$$\downarrow$. \\
+	and $\boldsymbol{\varepsilon}$$\downarrow$. \\
 	
 	$\vec{B}_{waste}$ & As $\vec{B}_{waste}$$\uparrow$, 
 	energy is wasted rather than embodied in products,
-	and $\bm{\varepsilon}$$\downarrow$. \\
+	and $\boldsymbol{\varepsilon}$$\downarrow$. \\
 
 	\bottomrule
 	
