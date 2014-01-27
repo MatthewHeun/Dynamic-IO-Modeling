@@ -26,18 +26,12 @@ I’m figgering on biggering and BIGGERING and BIGGERING and BIGGERING...
 
 ENERGY
 
-It takes as much energy to wish as it does to plan.
-**** Citation? ****
 
-\hfill---\emph{Eleanor Roosevelt}
 
 
 EMBODIED ENERGY
 
-Everything is related to everything else.
-**** Citation? The Closing Circle, 1971? ****
 
-\hfill---\emph{Barry Commoner's First Law of Ecology}
 
 
 VALUE
@@ -71,11 +65,6 @@ http://books.google.com/books?id=qmp5mPdJ474C&printsec=frontcover&dq=HERMAN+DALY
 ****
 
 \hfill---\emph{Herman E. Daly}
-
-
-You can't control what you don't measure. 
-
-\hfill---\emph{business axiom}
 
 
 UNFINISHED BUSINESS
@@ -152,3 +141,15 @@ is either mad or an economist.”
 
 Energy and persistence conquer all things.
 \hfill---\emph{Benjamin Franklin}
+
+It takes as much energy to wish as it does to plan.
+**** Citation? ****
+\hfill---\emph{Eleanor Roosevelt}
+
+Everything is related to everything else.
+**** Citation? The Closing Circle, 1971? ****
+\hfill---\emph{Barry Commoner's First Law of Ecology}
+
+You can't control what you don't measure. 
+\hfill---\emph{business axiom}
+
