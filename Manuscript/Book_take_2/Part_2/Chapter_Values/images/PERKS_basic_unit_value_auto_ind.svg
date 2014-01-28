@@ -389,9 +389,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
+     inkscape:zoom="1.7527344"
      inkscape:cx="763.41219"
-     inkscape:cy="372.24972"
+     inkscape:cy="509.17863"
      inkscape:document-units="px"
      inkscape:current-layer="g4157"
      showgrid="false"
@@ -629,9 +629,7 @@
              id="rect4247"
              ry="2.0611029" /></flowRegion><flowPara
            style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-           id="flowPara4249">Resources </flowPara><flowPara
-           style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-           id="flowPara4251">(other than Energy) </flowPara><flowPara
+           id="flowPara4251">Resources  </flowPara><flowPara
            style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4253">$207,623</flowPara></flowRoot>      <flowRoot
          transform="translate(-470.08746,-81.721188)"
@@ -648,7 +646,7 @@
              id="rect4259"
              ry="2.0611029" /></flowRegion><flowPara
            style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-           id="flowPara4261">Resources (Energy)</flowPara><flowPara
+           id="flowPara4261">Energy</flowPara><flowPara
            style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4263">$3,637</flowPara></flowRoot>      <flowRoot
          transform="matrix(1,0,0,0.92959659,-281.00708,-46.516322)"
@@ -919,7 +917,7 @@
              height="37.142857"
              x="900"
              y="235" /></flowRegion><flowPara
-           id="flowPara3692"></flowPara></flowRoot>      <flowRoot
+           id="flowPara3692" /></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot3694"
          style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -929,7 +927,7 @@
              height="22.857143"
              x="1007.1428"
              y="197.85715" /></flowRegion><flowPara
-           id="flowPara3700"></flowPara></flowRoot>      <flowRoot
+           id="flowPara3700" /></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot3702"
          style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -939,6 +937,6 @@
              height="28.571428"
              x="900"
              y="207.85715" /></flowRegion><flowPara
-           id="flowPara3708"></flowPara></flowRoot>    </g>
+           id="flowPara3708" /></flowRoot>    </g>
   </g>
 </svg>
