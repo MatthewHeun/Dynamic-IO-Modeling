@@ -38,6 +38,16 @@ The Hidden Connections: A Science for Sustainable Living, p117
 
 EMBODIED ENERGY
 
+One of the main sinks of energy in the “developed” world is the creation of stuff. In its natural life cycle, stuff passes through three stages. First, a new-born stuff is displayed in shiny packaging on a shelf in a shop. At this stage, stuff is called “goods.” As soon as the stuff is taken home and sheds its packaging, it undergoes a transformation from “goods” to its second form, “clutter.” The clutter lives with its owner for a period of months or years. During this period, the clutter is largely ignored by its owner, who is off at the shops buying more goods. Eventually, by a miracle of modern alchemy, the clutter is transformed into its final form, rubbish. To the untrained eye, it can be difficult to distinguish this “rubbish” from the highly desirable “good” that it used to be. Nonetheless, at this stage the discerning owner pays the dustman to transport the stuff away.
+
+\hfil	\emph[p.88]{MacKay2008}
+
+@book{Mackay2008,
+  title={Sustainable Energy-without the hot air},
+  author={MacKay, David},
+  year={2008},
+  publisher={UIT Cambridge}
+}
 
 
 
