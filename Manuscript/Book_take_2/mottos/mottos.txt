@@ -1,4 +1,4 @@
-﻿This file contains options for opening mottos for each chapter.
+This file contains options for opening mottos for each chapter.
 
 
 INTRODUCTION
@@ -29,7 +29,15 @@ Seuss, Dr. The Lorax. New York, N.Y: Random House, 1971.
 
 ENERGY
 
+Living organisms need to be open to a constant flow of resources (energy and matter) to stay alive; human organizations need to be open to a flow of mental resources (information and ideas), as well as to the flows of energy and materials that are part of the production of goods or services.
+\hfill——-\emph{Fritjof Capra}
 
+The Hidden Connections: A Science for Sustainable Living, p117
+
+A nation that can't control its energy sources can't control its future.”
+\hfill—-―\emph{Barack Obama}
+
+The Audacity of Hope: Thoughts on Reclaiming the American Dream 
 
 
 EMBODIED ENERGY
