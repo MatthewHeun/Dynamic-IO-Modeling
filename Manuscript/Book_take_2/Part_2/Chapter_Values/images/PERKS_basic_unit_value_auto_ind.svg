@@ -14,7 +14,7 @@
    id="svg4584"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="PERKS_basic_unit_value_auto_ind.svg">
+   sodipodi:docname="PERKS_basic_unit_value_auto_ind.pdf">
   <defs
      id="defs4586">
     <marker
@@ -426,7 +426,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
