@@ -1,4 +1,4 @@
-This file contains options for opening mottos for each chapter.
+﻿This file contains options for opening mottos for each chapter.
 
 
 INTRODUCTION
@@ -19,7 +19,10 @@ Well, I have my rights, sir,
 and I’m telling you I intend to go on doing just what I do! 
 And, for your information, you Lorax, 
 I’m figgering on biggering and BIGGERING and BIGGERING and BIGGERING...
-**** Do we have a citation for the Lorax? ****
+
+**** Citation below  ****
+
+Seuss, Dr. The Lorax. New York, N.Y: Random House, 1971.
 
 \hfill---\emph{The Once-ler}
 
