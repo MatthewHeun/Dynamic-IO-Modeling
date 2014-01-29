@@ -91,9 +91,9 @@ a materials, energy, and value accounting system.
 %+++++++++
 
 The distinction between product-focused and physical
-accounting system approaches is located in the columns
+accounting frameworks is located in the columns
 of Figure~\ref{fig:coords_of_analysis}.
-A physical accounting system strictly follows materials 
+A physical accounting framework strictly follows materials 
 through the economy. 
 Embodied energy is accounted with the material stock or material flow
 in which it resides.
@@ -101,9 +101,9 @@ For example, energy embodied within wastes ($\vec{B}_{waste}$)
 is not assigned to economic products. 
 Rather, the energy embodied in wastes flows from sectors 
 to the biosphere \emph{with the waste material}.
-In contrast, a product-focused accounting system assigns 
+In contrast, a product-focused accounting framework assigns 
 energy embodied in wastes to the products of the sector.
-Both product-based and physical accounting systems 
+Both product-based and physical accounting frameworks
 assign direct energy ($\dot{E}$) consumed by each sector
 to the products of each sector.
 
@@ -134,9 +134,9 @@ The term is subtracted, because waste material flows are not assigned
 to the product~($\dot{B}_{j}^{'}$) in a physical accounting system.
 
 In contrast, Equation~\ref{eq:B_prod_product_excluding_K} describes the outflow 
-of embodied energy from sector~$j$
+of embodied energy from sector~$j$,
 exclusive of capital stock ($\dot{B}_{j}^{'}$)
-for a product-focused accounting system 
+for a product-focused accounting framework 
 (upper left quadrant of Figure~\ref{fig:coords_of_analysis}).
 
 \begin{equation} \label{eq:B_prod_product_excluding_K}
@@ -146,8 +146,8 @@ for a product-focused accounting system
 \end{equation}
 
 \noindent{}Notice that Equation~\ref{eq:B_prod_product_excluding_K} 
-does not subract the energy embodied in waste resource and short-lived material
-flows ($\dot{B}_{j,waste}$) on the right side, 
+does not subtract the energy embodied in waste resource and short-lived material
+flows ($\dot{B}_{j,waste}$) on the right side of the equation, 
 because product-focused accounting systems assign energy embodied in wastes
 to products.
 
@@ -158,36 +158,18 @@ to products.
 %+++++++++
 
 The rows of Figure~\ref{fig:coords_of_analysis}
-represent the role of capital stock in an accounting system.
-During the earliest years of the I-O method applied to energy analysis 
-(prior to the mid-1970s) capital stocks were ignored, 
-both as flows or as stocks.
+represent the role of capital stock in an accounting framework.
+During the earliest years of the energy-focused I-O method 
+(prior to the mid-1970s) capital was ignored, 
+both as a flow and a stock.
 In essence, the state of the art was located in the upper-left quadrant
 of Figure~\ref{fig:coords_of_analysis}.
 In time, Kirkpatrick~\cite{Kirkpatrick:1974te}, 
 Bullard and Herendeen~\cite{Bullard-III:1975aa},
 and Casler~\cite{Casler:1983uy} attempted to 
 include inflows of capital stock in a product-focused
-accounting system, thereby moving the state of the art 
+accounting framework, thereby moving the state of the art 
 to the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}.
-
-In this manuscript, Equation~\ref{eq:epsilon_leontief_with_A} 
-provides a means of estimating the energy intensity of economic sectors.
-
-\begin{equation}
-	\boldsymbol{\varepsilon} 
-	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
-		\left[\vec{E}_{0} 
-				+ \vec{T}_{1} 
-				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
-				- \vec{B}_{waste}
-				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
-		\right].\tag{\ref{eq:epsilon_leontief_with_A}}
-\end{equation}
-
-\noindent{}Thus, we take Equation~\ref{eq:epsilon_leontief_with_A} as the starting point
-for discussion of the implications of our framework
-for the I-O method.
 
 To see the effect of the move from the upper-left to the lower-left
 quadrant of Figure~\ref{fig:coords_of_analysis}, 
@@ -226,11 +208,11 @@ energy intensity as
 	= \frac{\dot{T}_{j}^{'}}{\dot{X}_{j}^{'}},
 \end{equation}
 
-\noindent{}again, implicitly ignoring both the value and energy embodied within
-flows of capital.
-
-These implicit assumptions lead to the equation for energy intensity
-found in most of the early literature
+\noindent{}again, implicitly ignoring both value and energy embodied within
+flows of capital. 
+These implicit assumptions are consistent with the upper-left quadrant
+of Figure~\ref{fig:coords_of_analysis}. The energy intensity equation
+found in most of the early literature is
 
 \begin{equation} \label{eq:intensity_upper_left}
 	\boldsymbol{\varepsilon}^{'}
@@ -238,10 +220,6 @@ found in most of the early literature
 		{\left( \hat{\vec{X}}^{'}  \right)}^{-1}
 		\vec{E}_{0}.
 \end{equation}
-
-\noindent{}In Figure~\ref{fig:coords_of_analysis}, 
-Equation~\ref{eq:intensity_upper_left} would be located in the upper-left:
-product-focused, excludes captial, neglects energy input from society.
 
 Bullard and Herendeen~\cite{Bullard-III:1975aa}, 
 following Kirkpatrick~\cite{Kirkpatrick:1974te}
@@ -269,24 +247,27 @@ Thus, Equation~\ref{eq:intensity_lower_left} represents
 a partial step toward developing 
 a method for estimating energy intensity ($\boldsymbol{\varepsilon}$)
 that fully accounts for capital stock.
+These early researchers moved from the upper-left quadrant
+to the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}.
 
 We agree with Kirkpatrick~\cite{Kirkpatrick:1974te}, 
 Bullard and Herendeen~\cite{Bullard-III:1975aa},
 and Casler~\cite{Casler:1983uy} that capital stock
-is important and should be included in an accounting system.
+is important and should be included in an accounting system
+(i.e., we should be on the lower row of Figure~\ref{fig:coords_of_analysis}).
 But, we recommend that inclusion of capital stock should
 be done within in a \emph{physical} accounting system, 
 i.e.\ we should move from the lower-left to the lower-right
 quadrant of Figure~\ref{fig:coords_of_analysis}.
 Specifically, capital should be included 
 (a) as a stock that can accumulate and (b) on all outflow streams,
-not just on inflow streams.
+not just inflow streams.
 Furthermore, capital should be included in the definition 
 of the input-output table ($\vec{A}$) and 
 energy intensity ($\boldsymbol{\varepsilon}$).
 
-Our recommendation is based on the believe that
-accounting for stocks of capital is essential for developing a coherent view
+Our recommendation is based on the belief that
+accounting for stocks of capital is important for developing a coherent view
 of the structure of an economy. 
 Stocks of capital are essential to the production process:
 without machines and factories, cars cannot be produced. 
@@ -300,14 +281,15 @@ Finally, maintenance of captial stock becomes an important
 driver of demand, especially in mature economies.
 
 In a physical accounting system that includes capital stock
-(such as the one we propose), 
+(lower-right quadrant of Figure~\ref{fig:coords_of_analysis}), 
 energy embodied within accumulated capital stock
 is not assigned to products ($\vec{P}$); 
 rather, accumulated embodied energy is assigned to a stock of embodied energy
 for each sector ($\vec{B}_{K}$).
 
-A physical accounting system that fully includes capital stock
-yields Equation~\ref{eq:intensity_lower_left}. 
+A physical accounting framework that fully includes capital stock
+(lower-right quadrant of Figure~\ref{fig:coords_of_analysis}) 
+yields Equation~\ref{eq:intensity_lower_right}. 
 
 \begin{equation} \label{eq:intensity_lower_right}
 	\boldsymbol{\varepsilon}
@@ -342,20 +324,22 @@ and Equation~\ref{eq:intensity_lower_left} include:
 
 At this point, it is instructive to look back at the 
 product-focused vs. physical discussion in Section~\ref{sec:prod_vs_physical}.
-We understand the argument for a product-focused accounting system
-that includes capital stock (lower-left quadrant of Figure~\ref{fig:coords_of_analysis}):
-namely that capital stock and waste exist 
+We understand the argument for including capital stock in a product-focused
+accounting framework (lower-left quadrant of Figure~\ref{fig:coords_of_analysis}):
+capital stock and waste exist 
 solely due to product demand, 
 therefore energy embodied in capital and waste should be assigned to products. 
 However, the product-focused system that includes capital stock (lower-left quadrant of
 Figure~\ref{fig:coords_of_analysis})
 masks structural aspects of economies
-that we believe are essential to fully understanding how energy flows 
-through economies, namely the accumulation of capital within sectors.
-The metabolic metaphor provides guidance here.  
+that we believe are essential to fully understanding how and why energy flows 
+through economies, namely the accumulation of capital
+and associated embodied energy within sectors.
+
+The metabolic metaphor provides guidance here. 
 If we create a model of an organism that neglects 
 tissues that accumulate embodied energy,
-the organism has nothing with which to 
+the organism (in the model) has nothing with which to 
 absorb, process, waste, or otherwise exchange
 material with the biosphere.
 The organism doesn't physically exist (in the model)!
@@ -370,7 +354,7 @@ In 1969, Eugene Odum outlined a number of
 defining characteristics of both \emph{developmental},
 i.e.\ growing,
 and \emph{mature} ecosystems in terms of key
-properties of the system.~\cite{Odum1969}
+properties of the system.\cite{Odum1969}
 The main message was that ecosystems cannot
 grow indefinitely in their (photosynthetic)~production~($P$)
 due mainly to the necessity of increasing maintenance
@@ -432,6 +416,30 @@ and may therefore be considered a measure of
 %+++++++++
 
 
+
+
+
+
+
+
+
+In this manuscript, Equation~\ref{eq:epsilon_leontief_with_A} 
+provides a means of estimating the energy intensity of economic sectors.
+
+\begin{equation}
+	\boldsymbol{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E}_{0} 
+				+ \vec{T}_{1} 
+				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
+				- \vec{B}_{waste}
+				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
+		\right].\tag{\ref{eq:epsilon_leontief_with_A}}
+\end{equation}
+
+\noindent{}Thus, we take Equation~\ref{eq:epsilon_leontief_with_A} as the starting point
+for discussion of the implications of our framework
+for the I-O method.
 
 
 
