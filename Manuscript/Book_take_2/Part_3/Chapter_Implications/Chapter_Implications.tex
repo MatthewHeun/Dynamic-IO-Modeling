@@ -123,11 +123,15 @@ that a physical accounting system that neglects capital stock is nonsensical.}
 	+ \dot{Q}_{j0}
 \end{equation}
 
-\noindent{}The term $\dot{B}_{j,waste}$ represents the energy embodied 
-within wasted resource ($\dot{R}_{j0}$) 
-and short-lived ($\dot{S}_{j0}$) material flows.
+\noindent{}Variables written with a ``prime''
+(e.g.~$\dot{B}_{j}^{'}$) indicate definitions and terms that include only 
+resource~($\dot{R}$) and short-lived~($\dot{S}$) flows 
+and exclude capital flows~($\dot{K}$) and stock~($K$).
+The term~$\dot{B}_{j,waste}$ represents the energy embodied 
+within wasted resource~($\dot{R}_{j0}$) 
+and short-lived~($\dot{S}_{j0}$) material flows.
 The term is subtracted, because waste material flows are not assigned 
-to the product ($\dot{B}_{j}^{'}$) in a physical accounting system.
+to the product~($\dot{B}_{j}^{'}$) in a physical accounting system.
 
 In contrast, Equation~\ref{eq:B_prod_product_excluding_K} describes the outflow 
 of embodied energy from sector~$j$
@@ -161,7 +165,7 @@ both as flows or as stocks.
 In essence, the state of the art was located in the upper-left quadrant
 of Figure~\ref{fig:coords_of_analysis}.
 In time, Kirkpatrick~\cite{Kirkpatrick:1974te}, 
-Bullard and Herendeen~\cite{Bullard1975},
+Bullard and Herendeen~\cite{Bullard-III:1975aa},
 and Casler~\cite{Casler:1983uy} attempted to 
 include inflows of capital stock in a product-focused
 accounting system, thereby moving the state of the art 
@@ -187,56 +191,174 @@ for the I-O method.
 
 To see the effect of the move from the upper-left to the lower-left
 quadrant of Figure~\ref{fig:coords_of_analysis}, 
-it is important to clearly define the terms in use at the time.
+it is important to clearly understand both the assumptions and data that were used.
+Energy analysts in the mid-1970s were utilizing the BEA I-O tables,
+which do not include captial flows. 
+Thus, this early literature implicitly assumes that 
 
+\begin{equation} \label{eq:a_prime_lit}
+	a_{ij}^{'} 
+	\equiv \frac{\dot{X}_{ij,\dot{R}} + \dot{X}_{ij,\dot{S}}}
+				{\dot{X}_{j,\dot{R}} + \dot{X}_{j,\dot{S}}}.
+\end{equation}
 
-********* Matt ended here. **************
+\noindent{}Comparison between Equations~\ref{eq:aij_def_expanded}
+and~\ref{eq:a_prime_lit}
+highlights the fact that the early literature neglects flows of capital stock
+($\dot{X}_{\dot{K}}$).
+Thus, the the input-output matrix in the early literature
+($\vec{A^{'}}$) is
 
+\begin{equation} \label{eq:A_matrix_def_literature}
+	\vec{A}^{'} 
+	=
+	\begin{bmatrix}
+		a_{22}^{'} & a_{23}^{'}	\\
+		a_{32}^{'} & a_{33}^{'}	
+	\end{bmatrix}.
+\end{equation}
 
+\noindent{}Furthermore, the early literature implicitly defines 
+energy intensity as
 
+\begin{equation}
+	\varepsilon_{j}^{'} 
+	= \frac{\dot{T}_{j}^{'}}{\dot{X}_{j}^{'}},
+\end{equation}
 
-For a physical accounting system that includes , 
-energy embodied within accumulated capital stock
-is not assigned to products ($\vec{P}$); 
-rather, accumulated embodied energy is assigned to a stock of embodied energy
-for each sector ($\vec{B}_{K}$).
+\noindent{}again, implicitly ignoring both the value and energy embodied within
+flows of capital.
 
+These implicit assumptions lead to the equation for energy intensity
+found in most of the early literature
 
-In contrast, a product-focused accounting system assigns 
-all energy embodied in wastes and captial stock to the products of the sector.
+\begin{equation} \label{eq:intensity_upper_left}
+	\boldsymbol{\varepsilon}^{'}
+	= {\left( \vec{I} - {\vec{A}^{'}}^{\mathrm{T}} \right)}^{-1}
+		{\left( \hat{\vec{X}}^{'}  \right)}^{-1}
+		\vec{E}_{0}.
+\end{equation}
 
+\noindent{}In Figure~\ref{fig:coords_of_analysis}, 
+Equation~\ref{eq:intensity_upper_left} would be located in the upper-left:
+product-focused, excludes captial, neglects energy input from society.
 
+Bullard and Herendeen~\cite{Bullard-III:1975aa}, 
+following Kirkpatrick~\cite{Kirkpatrick:1974te}
+added flows of capital stock as inputs to each sector~\cite[Figure~5]{Bullard-III:1975aa},
+and, in so doing, changed Equation~\ref{eq:intensity_upper_left}
+to Equation~\ref{eq:intensity_lower_left}.
 
+\begin{equation} \label{eq:intensity_lower_left}
+	\boldsymbol{\varepsilon}^{'}
+	= {\left( \vec{I} - {\vec{A}^{'}}^{\mathrm{T}} \right)}^{-1}
+		{\left( \hat{\vec{X}}^{'}  \right)}^{-1}
+		\left[ \vec{E}_{0}
+			  + \sum\limits_{i=1}^{n} \dot{B}_{ij} \right]
+\end{equation}
 
-Product-focused accounting systems do include an embodied energy stock 
+\noindent{}We note that there was no attempt to redefine $\vec{A}^{'}$
+or $\boldsymbol{\varepsilon}^{'}$.
+Their approach to including capital stocks (within a product-focused
+accounting system) assigned
+all energy embodied captial stock to the products of the sector.
+And, their product-focused accounting system
+did not include an embodied energy stock 
 for each economic sector ($\vec{B}$).
+Thus, Equation~\ref{eq:intensity_lower_left} represents 
+a partial step toward developing 
+a method for estimating energy intensity ($\boldsymbol{\varepsilon}$)
+that fully accounts for capital stock.
 
+We agree with Kirkpatrick~\cite{Kirkpatrick:1974te}, 
+Bullard and Herendeen~\cite{Bullard-III:1975aa},
+and Casler~\cite{Casler:1983uy} that capital stock
+is important and should be included in an accounting system.
+But, we recommend that inclusion of capital stock should
+be done within in a \emph{physical} accounting system, 
+i.e.\ we should move from the lower-left to the lower-right
+quadrant of Figure~\ref{fig:coords_of_analysis}.
+Specifically, capital should be included 
+(a) as a stock that can accumulate and (b) on all outflow streams,
+not just on inflow streams.
+Furthermore, capital should be included in the definition 
+of the input-output table ($\vec{A}$) and 
+energy intensity ($\boldsymbol{\varepsilon}$).
 
-We have developed a physical accounting system that accounts for capital stock 
-because we believe that 
+Our recommendation is based on the believe that
 accounting for stocks of capital is essential for developing a coherent view
 of the structure of an economy. 
 Stocks of capital are essential to the production process:
 without machines and factories, cars cannot be produced. 
 Thus, the buildup of capital stock (and associated embodied energy) 
 within economic sectors is an essential aspect of industrialization.
-Carefully tracking (on a physical, as opposed to financial basis) 
+Carefully tracking (on a physical, as opposed to financial, basis) 
 capital stock is essential for understanding the network effects of 
-energy demand as new industries and products arise 
+upstream energy demand as new industries and products arise 
 (e.g., electric vehicles). 
 Finally, maintenance of captial stock becomes an important 
 driver of demand, especially in mature economies.
 
-We understand the argument for a product-focused accounting system:
-namely that because capital stock and waste exist 
-solely because of the products, energy embodied in capital and waste should be
-assigned to products. 
-However, the product-focused approach masks structural aspects of economies
+In a physical accounting system that includes capital stock
+(such as the one we propose), 
+energy embodied within accumulated capital stock
+is not assigned to products ($\vec{P}$); 
+rather, accumulated embodied energy is assigned to a stock of embodied energy
+for each sector ($\vec{B}_{K}$).
+
+A physical accounting system that fully includes capital stock
+yields Equation~\ref{eq:intensity_lower_left}. 
+
+\begin{equation} \label{eq:intensity_lower_right}
+	\boldsymbol{\varepsilon}
+	= {\left( \vec{I} - {\vec{A}}^{\mathrm{T}} \right)}^{-1}
+		{\left( \hat{\vec{X}}  \right)}^{-1}
+		\left[ \vec{E}_{0}
+			  - \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
+			  - \vec{B}_{waste} \right].
+\end{equation}
+
+\noindent{}Differences between Equation~\ref{eq:intensity_lower_right}
+and Equation~\ref{eq:intensity_lower_left} include:
+
+\begin{itemize}
+	\item{$\boldsymbol{\varepsilon}$ appears rather than $\boldsymbol{\varepsilon}^{'}$,
+	because both embodied energy and value of capital is included 
+	in the definition of energy intensity,}
+	\item{Equation~\ref{eq:intensity_lower_right} does not have
+	the $\sum\limits_{i=1}^{n} \dot{B}_{ij}$ term, 
+	because embodied energy flows are already included in $\vec{A}$,}
+	\item{$\hat{\vec{X}}$ appears rather than $\hat{\vec{X}}^{'}$,
+	because energy embodied in product streams is include in $\hat{\vec{X}}$,}
+	\item{Equation~\ref{eq:intensity_lower_right} subtracts
+	$\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}$,
+	because accumulation of energy embodied in the stock of capital ($K$)
+	for a sector
+	is not assigned to products of the sector, and}
+	\item{Equation~\ref{eq:intensity_lower_right} subtracts $\vec{B}_{waste}$,
+	because energy embodied in waste products is not assigned to 
+	products of the sector.}
+\end{itemize}
+
+At this point, it is instructive to look back at the 
+product-focused vs. physical discussion in Section~\ref{sec:prod_vs_physical}.
+We understand the argument for a product-focused accounting system
+that includes capital stock (lower-left quadrant of Figure~\ref{fig:coords_of_analysis}):
+namely that capital stock and waste exist 
+solely due to product demand, 
+therefore energy embodied in capital and waste should be assigned to products. 
+However, the product-focused system that includes capital stock (lower-left quadrant of
+Figure~\ref{fig:coords_of_analysis})
+masks structural aspects of economies
 that we believe are essential to fully understanding how energy flows 
-through economies.
+through economies, namely the accumulation of capital within sectors.
 The metabolic metaphor provides guidance here.  
-Unless we account for the stock of energy embodied within a organism, 
-the organism doesn't exist.
+If we create a model of an organism that neglects 
+tissues that accumulate embodied energy,
+the organism has nothing with which to 
+absorb, process, waste, or otherwise exchange
+material with the biosphere.
+The organism doesn't physically exist (in the model)!
 Neglecting to account for the stock of capital (and its embodied energy) 
 is tantamount to assuming that economic production occurs out of nothing!
 
@@ -367,30 +489,30 @@ of the effects of physical depreciation.
 Given that the BEA I-O tables do not include captial flows, 
 much of the literature implicitly assumes that 
 
-\begin{equation} \label{eq:a_prime_lit}
-	a_{ij}^{'} 
-	\equiv \frac{\dot{X}_{ij,\dot{R}} + \dot{X}_{ij,\dot{S}}}
-				{\dot{X}_{j,\dot{R}} + \dot{X}_{j,\dot{S}}}.
-\end{equation}
-
-\noindent{}Variables written with a ``prime''
-(e.g.\ $a^{'}$) indicate definitions and terms as used in the literature.
-Comparison between Equations~\ref{eq:aij_def_expanded}
-and~\ref{eq:a_prime_lit}
-indicates that the literature neglects capital stock flows 
-($\dot{X}_{\dot{K}}$).
-Thus, the the input-output matrix in the literature
-($\vec{A^{'}}$) is
-
-\begin{equation} \label{eq:A_matrix_def_literature}
-	\vec{A}^{'} 
-	=
-	\begin{bmatrix}
-		a_{22}^{'} & a_{23}^{'}	\\
-		a_{32}^{'} & a_{33}^{'}	
-	\end{bmatrix}.
-\end{equation}
-
+% \begin{equation} \label{eq:a_prime_lit}
+% 	a_{ij}^{'} 
+% 	\equiv \frac{\dot{X}_{ij,\dot{R}} + \dot{X}_{ij,\dot{S}}}
+% 				{\dot{X}_{j,\dot{R}} + \dot{X}_{j,\dot{S}}}.
+% \end{equation}
+% 
+% \noindent{}Variables written with a ``prime''
+% (e.g.\ $a^{'}$) indicate definitions and terms as used in the literature.
+% Comparison between Equations~\ref{eq:aij_def_expanded}
+% and~\ref{eq:a_prime_lit}
+% indicates that the literature neglects capital stock flows 
+% ($\dot{X}_{\dot{K}}$).
+% Thus, the the input-output matrix in the literature
+% ($\vec{A^{'}}$) is
+% 
+% \begin{equation} \label{eq:A_matrix_def_literature}
+% 	\vec{A}^{'} 
+% 	=
+% 	\begin{bmatrix}
+% 		a_{22}^{'} & a_{23}^{'}	\\
+% 		a_{32}^{'} & a_{33}^{'}	
+% 	\end{bmatrix}.
+% \end{equation}
+% 
 Furthermore, the literature assumes that production does not include
 capital stock (again, due to the fact that the BEA does not include 
 capital flows in the standard I-O tables) such that
