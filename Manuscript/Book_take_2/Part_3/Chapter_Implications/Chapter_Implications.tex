@@ -53,9 +53,122 @@ Extension of the Leontief\index{Leontief}
 Input-Output method\index{input-output method}
 for energy analysis has allowed energy analysts to estimate 
 the energy intensity\index{energy intensity}
-of economic products ($\boldsymbol{\varepsilon}$). 
-So, we take Equation~\ref{eq:epsilon_leontief_with_A}
-as our starting point.
+of economic products~($\boldsymbol{\varepsilon}$). 
+As discussed in Section~\ref{sec:Value_Methodology},
+we do not take the ability to estimate energy intensity as a license
+to declare an intrinsic ``energy theory of value.''
+\index{theory of value!energy}
+Rather, we belive that energy intensity~($\boldsymbol{\varepsilon}$) is an 
+important and useful metric that can assess 
+the energy performance of economies,
+even within the prevailing subjective theory of value\index{theory of value!subjective}
+that underlies modern economics.
+For this reason, it is important to consider the assumptions behind
+the literature's presentation of the I-O method 
+for estimating the energy intensity economic output.
+
+As we investigate, we will use the following
+coordinates of analysis:
+product-based vs.\ physical accounting approaches,
+whether capital stock is included, and
+whether society is endogenous to the economy.
+(See Figure~\ref{fig:coords_of_analysis}.)
+We will end with our suggestion for how best to estimate
+$\boldsymbol{\varepsilon}$ within
+a materials, energy, and value accounting system.
+
+\begin{figure}[!ht]
+	\centering{}
+	\includegraphics[width=0.8\linewidth]{Part_3/Chapter_Implications/Images/Grid.pdf}
+	\caption[Coordinates of analysis for implications for the I-O method]{Coordinates of analysis for implications for the I-O method.}
+	\label{fig:coords_of_analysis}
+\end{figure}
+
+
+%+++++++++ I-O implications: product-based vs. physical ++++++++++
+\subsection{Product-based vs.\ physical approaches}
+\label{sec:prod_vs_physical}
+%+++++++++
+
+The distinction between product-focused and physical
+accounting system approaches is located in the columns
+of Figure~\ref{fig:coords_of_analysis}.
+A physical accounting system strictly follows materials 
+through the economy. 
+Embodied energy is accounted with the material stock or material flow
+in which it resides.
+For example, energy embodied within wastes ($\vec{B}_{waste}$) 
+is not assigned to economic products. 
+Rather, the energy embodied in wastes flows from sectors 
+to the biosphere \emph{with the waste material}.
+In contrast, a product-focused accounting system assigns 
+energy embodied in wastes to the products of the sector.
+Both product-based and physical accounting systems 
+assign direct energy ($\dot{E}$) consumed by each sector
+to the products of each sector.
+
+Equation~\ref{eq:B_prod_physical_excluding_K} 
+describes the outflow of embodied energy from sector $j$ 
+exclusive of capital stock 
+for a physical accounting system 
+that neglects capital stock (upper-right quadrant of Figure~\ref{fig:coords_of_analysis}).\footnote{Equation~\ref{eq:B_prod_physical_excluding_K} 
+is used for illustrative purposes only. 
+We argue in Section~\ref{sec:capital_stock}
+that a physical accounting system that neglects capital stock is nonsensical.}
+
+\begin{equation} \label{eq:B_prod_physical_excluding_K}
+	\dot{B}_{j}^{'}
+	= \sum\limits_{i=1}^{n} \dot{B}_{ij}^{'} 
+	- \dot{B}_{j,waste}
+	+ \dot{Q}_{j0}
+\end{equation}
+
+\noindent{}The term $\dot{B}_{j,waste}$ represents the energy embodied 
+within wasted resource ($\dot{R}_{j0}$) 
+and short-lived ($\dot{S}_{j0}$) material flows.
+The term is subtracted, because waste material flows are not assigned 
+to the product ($\dot{B}_{j}^{'}$) in a physical accounting system.
+
+In contrast, Equation~\ref{eq:B_prod_product_excluding_K} describes the outflow 
+of embodied energy from sector~$j$
+exclusive of capital stock ($\dot{B}_{j}^{'}$)
+for a product-focused accounting system 
+(upper left quadrant of Figure~\ref{fig:coords_of_analysis}).
+
+\begin{equation} \label{eq:B_prod_product_excluding_K}
+	\dot{B}_{j}^{'}
+	= \sum\limits_{i=1}^{n} \dot{B}_{ij}^{'} 
+	+ \dot{Q}_{j0}
+\end{equation}
+
+\noindent{}Notice that Equation~\ref{eq:B_prod_product_excluding_K} 
+does not subract the energy embodied in waste resource and short-lived material
+flows ($\dot{B}_{j,waste}$) on the right side, 
+because product-focused accounting systems assign energy embodied in wastes
+to products.
+
+
+%+++++++++ I-O implications: Capital stock ++++++++++
+\subsection{Capital stock}
+\label{sec:capital_stock}
+%+++++++++
+
+The rows of Figure~\ref{fig:coords_of_analysis}
+represent the role of capital stock in an accounting system.
+During the earliest years of the I-O method applied to energy analysis 
+(prior to the mid-1970s) capital stocks were ignored, 
+both as flows or as stocks.
+In essence, the state of the art was located in the upper-left quadrant
+of Figure~\ref{fig:coords_of_analysis}.
+In time, Kirkpatrick~\cite{Kirkpatrick:1974te}, 
+Bullard and Herendeen~\cite{Bullard1975},
+and Casler~\cite{Casler:1983uy} attempted to 
+include inflows of capital stock in a product-focused
+accounting system, thereby moving the state of the art 
+to the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}.
+
+In this manuscript, Equation~\ref{eq:epsilon_leontief_with_A} 
+provides a means of estimating the energy intensity of economic sectors.
 
 \begin{equation}
 	\boldsymbol{\varepsilon} 
@@ -68,39 +181,68 @@ as our starting point.
 		\right].\tag{\ref{eq:epsilon_leontief_with_A}}
 \end{equation}
 
-As discussed in Section~\ref{sec:Value_Methodology},
-we do not take the ability to estimate energy intensity as a license
-to declare an intrinsic ``energy theory of value.''
-\index{theory of value!energy}
-Rather, we belive that energy intensity is an 
-important and useful metric that can assess 
-the energy performance of economies,
-even within the prevailing subjective theory of value
-\index{theory of value!subjective}
-that underlies modern economics. 
-For this reason, it is important to consider the assumptions behind
-the literature's presentation of the I-O method 
-for estimating the energy intensity economic output.
-As we investigate, we will consider
-product-based vs.\ physical accounting approaches,
-the importance of capital stock, and
-how energy input from society to the economy should be treated.
-We will end with our suggestion for how best to estimate
-$\boldsymbol{\varepsilon}$ within
-a materials, energy, and value accounting system.
-We begin with the distinction between product-based 
-and physical accounting approaches.
+\noindent{}Thus, we take Equation~\ref{eq:epsilon_leontief_with_A} as the starting point
+for discussion of the implications of our framework
+for the I-O method.
 
-%+++++++++ I-O implications: product-based vs. physical ++++++++++
-\subsection{Product-based vs.\ physical approaches}
-\label{sec:prod_vs_physical}
-%+++++++++
+To see the effect of the move from the upper-left to the lower-left
+quadrant of Figure~\ref{fig:coords_of_analysis}, 
+it is important to clearly define the terms in use at the time.
 
 
-%+++++++++ I-O implications: Capital stock ++++++++++
-\subsection{Capital stock}
-\label{sec:capital_stock}
-%+++++++++
+********* Matt ended here. **************
+
+
+
+
+For a physical accounting system that includes , 
+energy embodied within accumulated capital stock
+is not assigned to products ($\vec{P}$); 
+rather, accumulated embodied energy is assigned to a stock of embodied energy
+for each sector ($\vec{B}_{K}$).
+
+
+In contrast, a product-focused accounting system assigns 
+all energy embodied in wastes and captial stock to the products of the sector.
+
+
+
+
+Product-focused accounting systems do include an embodied energy stock 
+for each economic sector ($\vec{B}$).
+
+
+We have developed a physical accounting system that accounts for capital stock 
+because we believe that 
+accounting for stocks of capital is essential for developing a coherent view
+of the structure of an economy. 
+Stocks of capital are essential to the production process:
+without machines and factories, cars cannot be produced. 
+Thus, the buildup of capital stock (and associated embodied energy) 
+within economic sectors is an essential aspect of industrialization.
+Carefully tracking (on a physical, as opposed to financial basis) 
+capital stock is essential for understanding the network effects of 
+energy demand as new industries and products arise 
+(e.g., electric vehicles). 
+Finally, maintenance of captial stock becomes an important 
+driver of demand, especially in mature economies.
+
+We understand the argument for a product-focused accounting system:
+namely that because capital stock and waste exist 
+solely because of the products, energy embodied in capital and waste should be
+assigned to products. 
+However, the product-focused approach masks structural aspects of economies
+that we believe are essential to fully understanding how energy flows 
+through economies.
+The metabolic metaphor provides guidance here.  
+Unless we account for the stock of energy embodied within a organism, 
+the organism doesn't exist.
+Neglecting to account for the stock of capital (and its embodied energy) 
+is tantamount to assuming that economic production occurs out of nothing!
+
+
+
+
 
 In 1969, Eugene Odum outlined a number of 
 defining characteristics of both \emph{developmental},

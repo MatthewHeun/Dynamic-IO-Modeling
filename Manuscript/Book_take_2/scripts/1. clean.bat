@@ -20,6 +20,7 @@ erase *.synctex.gz
 erase *.toc
 erase *.lof
 erase *.lot
+erase *.out
 
 cd Part_0\Chapter_Introduction 
 erase *.aux

@@ -22,6 +22,7 @@ rm -f *.synctex.gz
 rm -f *.toc
 rm -f *.lof
 rm -f *.lot
+rm -f *.out
 
 cd Part_0; cd Chapter_Introduction; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_1; cd Chapter_Materials;    rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
