@@ -1,4 +1,4 @@
-This file contains options for opening mottos for each chapter.
+﻿This file contains options for opening mottos for each chapter.
 
 
 INTRODUCTION
@@ -72,10 +72,22 @@ doesn't tell us the things that we need to know.
 IMPLICATIONS
 
 **** Which do we want? ****
+Ugh. The only published, page numbered account is by rfk jr in the forward to 
+Senator Gaylor Nelsons' book. He doesn't attribute the quote to anyone.
 
-The economy is a wholly owned subsidiary of the environment, not the reverse.
+The economy is a wholly owned subsidiary of the environment.
+\hfill---\emph{Robert F. Kennedy, Jr.}
+
+CITE: Nelson, Gaylord, Campbell, Susan M., Paul A. Wozniak, 
+Foreward by Robert F. Kennedy, Jr.
+Beyond Earth Day: Fulfilling the Promise. 
+University of Wisconsin Press, 2002, p. xvi.
+
+
 **** Citation? https://www.goodreads.com/author/quotes/44187.Herman_E_Daly? 
-http://environmentalaccounting.org.au/wp-content/uploads/2014/01/Keynote-Speach-Lynn-MacLaren.pdf
+http://environmentalaccounting.org.au/wp-content/uploads
+/2014/01/Keynote-Speach-Lynn-MacLaren.pdf
+
 says it was 1977. Looks like it was in Steady State Economics. 
 But, I can't find it in Google Books
 http://books.google.com/books?id=qmp5mPdJ474C&printsec=frontcover&dq=HERMAN+DALY,+STEADY+STATE+ECONOMICS+(1977)&hl=en&sa=X&ei=iaflUrnDDenuyQG-woG4DA&ved=0CDIQ6AEwAA#v=snippet&q=wholly&f=false
@@ -96,11 +108,10 @@ SUMMARY
 Only a crisis---actual or perceived---produces real change. 
 When that crisis occurs, the actions that are 
 taken depend on the ideas that are lying around.
-1962 in Capitalism and Freedom
-http://steadystate.org/wp-content/uploads/Quotes_Steady_State_Economy.pdf
-
 \hfill---\emph{Milton Friedman}
 
+CITE: Friedman, Milton. Capitalism and Freedom. Chicago: University of Chicago Press,
+1982, p. ix.
 
 
 BOOKEND?
