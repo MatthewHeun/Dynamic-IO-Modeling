@@ -438,8 +438,11 @@ within the economy.
 The theoretical model of energy and resource flows through an economy can be empirically estimated using US data available 
 from the Bureau of Economic Analysis (BEA), published in their \emph{Survey of Current Business} journal. **** Need citation here. ****
  The two main tables of data needed to estimate dynamic value flows and capital accumulation within the economy 
-are the Input-Output accounts (IO) and the Capital Flow Table (CFT). 
- The IO table tracks commodities that are made in one industry and then used in another as intermediate inputs. [put rdot and sdot if appropriate. If transactions include capital flows, then also include kdot.]
+are the Input-Output Use Tables (IO) and the Fixed Asset, non-residential detail. 
+ The IO Use table tracks commodities that are made in one industry and then used in another as intermediate inputs ($\dot{R}$, $\dot{S}$). The Use table also tracks the output that
+is used for final consumption (NIPA categories, "CIGX"), including Private Fixed Investment ($\dot{K}$). However, the more detailed, but less accurate, Fixed Asset accounts are
+used to distinguish between the capital that is produced in the automobile industry
+that goes to self-use from that which is final consumption.
 The “making” industries related to extraction, refining, and utilities 
 mark the entry point for materials extracted from the biosphere into the economy. 
  These three industries (extraction, refining, and utilities) are the first three industries listed in the NAICS (North American Industry Classification System)
@@ -456,15 +459,10 @@ of value flows for the US auto industry.
 \label{fig:PERKS_value_auto_ind}
 \end{figure}
 
-The value of capital investment, “K” in the model is measured  by the ``Capital Flow Table.'' 
-This maps the outputs of construction and certain manufacturing industries to all other industries.
-****BRH add cite (Bonds and Aylor 1998)****  The ``waste output to the environment''
+The value of capital flows from other sectors into the automobile industry, ($\dot{K}$) is 
+also obtained from the Fixed Assets BEA table.  The ``waste output to the environment''
 can be approximated by the value of the commodities that are ``made'' in all industries 
-and ``used'' by the ``Waste Management Sector'' (NAICS 56). 
-[put \$0 instead of 441---there is a lot, but not all, of waste that 
-is routed through the waste industry on its way to the biosphere.]
-Using the automotive industry as an example, the KLEM **** define BRH ****S, Input-Output, 
-and Capital Flow data could be used to estimate the model as demonstrated in Table~\ref{tab:data}.\footnote{See Appendix~\ref{chap:auto_value_flows} for detailed calculations.}
+and ``used'' by the ``Waste Management Sector'' (NAICS 56).  Table~\ref{tab:data} contains the sources from the BEA that were used to obtain the values in Figure~\ref{fig:PERKS_value_auto_ind}.\footnote{See Appendix~\ref{chap:auto_value_flows} for detailed calculations.}
 
 
 \begin{table}
@@ -473,25 +471,25 @@ and Capital Flow data could be used to estimate the model as demonstrated in Tab
   \begin{tabular}{l r @{\hspace{2em}} l}
    \toprule 
      & 2011 USD &   \\ 
-Value Flow & (millions) & Data Source \\
+Value Flow & (millions) & BEA Data Source \\
 	\midrule
     Resources (other than Energy) & \$207,623            & KLEMS Intermediate Use Estimates 2011 \\
 &&\\
     Resources (Energy) &   3,367&   KLEMS Intermediate Use Estimates 2011                \\
 &&\\
     Short-lived Goods &   42,005 &   KLEMS Intermediate Use Estimates 2011    \\
-    Resources \cr (to/from Auto Industry) &  139,259 &  KLEMS Intermediate Use Estimates 2011     \\
+    Resources \cr (self-use) &  139,259 &  KLEMS Intermediate Use Estimates 2011     \\
 &&\\
     Output to Waste Sector & 441  &  KLEMS Intermediate Use Estimates 2011     \\
 &&\\
-    Capital &  26,474  &  1997 Capital Flow Table     \\  
+    Capital &  46,332  &  Fixed Assets 2011 (non-residential detailed estimates)     \\  
 &&\\
-    Capital (to/from Auto Industry) &  551 & 1997 Capital Flow Table      \\
+    Capital (self-use) & 15,181 & Fixed Assets 2011 (non-residential detailed estimates)      \\
 &&\\
-    Gross Economic Output & 467,941  &  The Use of Commodities by Industries \\
-&& 1997 Capital Flow Table  \\ 
+    Gross Economic Output & 474,186  &  The 2011 Use of Commodities by Industries \\
+
 &&\\
-    Net Economic Output & 327,580   &  The Use of Commodities by Industries \\
+    Net Economic Output & 319,746   &  The 2011 Use of Commodities by Industries \\
     \bottomrule
   \end{tabular}
 
