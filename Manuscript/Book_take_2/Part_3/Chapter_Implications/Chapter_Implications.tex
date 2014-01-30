@@ -311,7 +311,7 @@ found in most of the early literature is
 \end{equation}
 
 Bullard and Herendeen~\cite{Bullard-III:1975aa}, 
-following Kirkpatrick~\cite{Kirkpatrick:1974te}
+following Kirkpatrick~\cite{Kirkpatrick:1974te},
 added flows of capital stock as inputs 
 to each sector~\cite[Figure~5]{Bullard-III:1975aa},
 and, in so doing, changed Equation~\ref{eq:intensity_upper_left}
@@ -426,6 +426,15 @@ and Equation~\ref{eq:intensity_lower_left} include:
 	products of the sector.}
 \end{itemize}
 
+There are two topics related to capital stock that are worthy of consideration:
+waste flows and an accounting equation for capital stock.
+
+
+%--------- I-O implications: Capital stock: Waste ----------
+\subsection{Waste flows}
+\label{sec:waste_flows}
+%---------
+
 We are unaware of any estimates of the energy embodied in wasted
 material in an economy ($\vec{B}_{waste}$).  
 But, it may be possible to develop a metric for the resource material effiency of an 
@@ -490,29 +499,88 @@ from the embodied energy of the incoming resource and short-lived material flows
 	= \dot{B}_{\dot{R}_{j0}} + \dot{B}_{\dot{S}_{j0}}.
 \end{equation}
 
-At this point, it is instructive to look back at the 
-product-focused vs.\ physical discussion in Section~\ref{sec:prod_vs_physical}.
-We understand the argument for including capital stock in a product-focused
-accounting framework (lower-left quadrant of Figure~\ref{fig:coords_of_analysis}):
-capital stock and waste exist 
-solely due to product demand, 
-therefore energy embodied in capital and waste should be assigned to products. 
-However, the product-focused framework that includes capital stock (lower-left quadrant of
-Figure~\ref{fig:coords_of_analysis})
-masks structural aspects of economies
-that we believe are essential to fully understanding how and why energy flows 
-through economies, namely the accumulation of capital
-and associated energy embodied within sectors.
 
-The metabolic metaphor provides guidance here. 
-If we were to create a model of an organism that neglects 
-tissues that accumulate embodied energy,
-the organism (in the model) has nothing with which to 
-absorb, process, waste, or otherwise exchange
-material with the biosphere.
-The organism doesn't physically exist (in the model)!
-Neglecting to account for the stock of capital (and its embodied energy) 
-is tantamount to assuming that economic production occurs out of nothing!
+%--------- I-O implications: Capital stock: capital accounting equation ----------
+\subsection{Simplification via capital stock accounting equation}
+\label{sec:capital_accounting}
+%---------
+
+A possible simplification to Equation~\ref{eq:intensity_lower_right_no_society}
+can be obtained from a control volume around the stock of capital in sector $j$:
+
+\begin{equation}
+	\frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t}
+	= \sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}} 
+	- \gamma_{B,j} B_{K_{j}}.
+\end{equation}
+
+We can express the incoming energy embodied in capital ($\sum_{i=1}^{n} \dot{B}_{ij}$)
+as a fraction ($\alpha_{j}$) of the capital stock ($B_{K_{j}}$) as
+
+\begin{equation}
+	\alpha_{B,j}
+	\equiv 
+	\frac{\sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}}} {B_{K_{j}}}
+\end{equation}
+
+\noindent{}for $j \in [2,n]$ and the vector $\boldsymbol{\alpha}_{B}$ as
+
+\begin{equation}
+	\vec{\boldsymbol{\alpha}_{B}}
+	\equiv
+	\begin{Bmatrix}
+		\alpha_{B,2}	\\
+		\alpha_{B,3}
+	\end{Bmatrix}.
+\end{equation}
+
+\noindent{}Together with the Kronecker delta ($\delta_{ij}$), we can write
+
+\begin{equation}
+	\hat{\boldsymbol{\alpha}}_{B}
+	\equiv
+	\delta_{ij} \boldsymbol{\alpha}_{B}
+	=
+	\begin{bmatrix}
+		\alpha_{B,2}	& 0           \\
+		0               & \alpha_{B,3}  \\
+	\end{bmatrix}.
+\end{equation}
+
+\noindent{}Thus, the embodied energy accounting equation around
+the stock of capital in the economy can be written in matrix form as
+
+\begin{equation}
+	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
+	= \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
+	- \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}.
+\end{equation}
+
+\noindent{}Rearranging slightly gives
+
+\begin{equation} \label{eq:alpha_cap_stock}
+	\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
+	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
+	+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K},
+\end{equation}
+
+\noindent{}which says that incoming capital ($\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}$)
+can be used to either
+increase the stock of capital in the economy 
+$\left( \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right)$
+or overcome depreciation ($\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$).
+Substituting Equation~\ref{eq:alpha_cap_stock} into
+Equation~\ref{eq:epsilon_leontief_with_A} gives
+
+\begin{equation} \label{eq:epsilon_leontief_with_A_alpha}
+	\boldsymbol{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E}_{0} 
+				+ \vec{T}_{1} 
+				- \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
+				- \vec{B}_{waste}
+		\right].
+\end{equation}
 
 
 %+++++++++ I-O implications: Energy input from society ++++++++++
@@ -580,83 +648,6 @@ is significant relative to $\vec{E}_{0}$,
 neglecting $\vec{T}_{1}$
 will underpredict the energy intensity of economic output.
 
-A control volume around capital stock of sector $j$
-of the economy yields 
-
-\begin{equation}
-	\frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t}
-	= \sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}} 
-	- \gamma_{B,j} B_{K_{j}}.
-\end{equation}
-
-We can express the incoming energy embodied in capital ($\sum_{i=1}^{n} \dot{B}_{ij}$)
-as a fraction ($\alpha_{j}$) of the capital stock ($B_{K_{j}}$) as
-
-\begin{equation}
-	\alpha_{B,j}
-	\equiv 
-	\frac{\sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}}} {B_{K_{j}}}
-\end{equation}
-
-\noindent{}for $j \in [2,n]$ and the vector $\boldsymbol{\alpha}_{B}$ as
-
-\begin{equation}
-	\vec{\boldsymbol{\alpha}_{B}}
-	\equiv
-	\begin{Bmatrix}
-		\alpha_{B,2}	\\
-		\alpha_{B,3}
-	\end{Bmatrix}.
-\end{equation}
-
-\noindent{}Together with the Kronecker delta ($\delta_{ij}$), we can write
-
-\begin{equation}
-	\hat{\boldsymbol{\alpha}}_{B}
-	\equiv
-	\delta_{ij} \boldsymbol{\alpha}_{B}
-	=
-	\begin{bmatrix}
-		\alpha_{B,2}	& 0           \\
-		0               & \alpha_{B,3}  \\
-	\end{bmatrix}.
-\end{equation}
-
-\noindent{}Thus, the embodied energy accounting equation around
-the stock of capital in the economy can be written in matrix form as
-
-\begin{equation}
-	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
-	= \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
-	- \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}.
-\end{equation}
-
-\noindent{}Rearranging slightly gives
-
-\begin{equation} \label{eq:alpha_cap_stock}
-	\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
-	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
-	+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K},
-\end{equation}
-
-\noindent{}which says that incoming capital ($\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}$)
-can be used to either
-increase the stock of capital in the economy ($\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}$)
-or
-overcome depreciation ($\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$).
-Substituting Equation~\ref{eq:alpha_cap_stock} into
-Equation~\ref{eq:epsilon_leontief_with_A} gives
-
-\begin{equation} \label{eq:epsilon_leontief_with_A_alpha}
-	\boldsymbol{\varepsilon} 
-	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
-		\left[\vec{E}_{0} 
-				+ \vec{T}_{1} 
-				- \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
-				- \vec{B}_{waste}
-		\right].
-\end{equation}
-
 
 %+++++++++ I-O implications: Recommendation ++++++++++
 \subsection{Recommendation}
@@ -670,9 +661,35 @@ product-focused vs.\ physical accounting frameworks,
 whether capital stock is included, and
 whether energy input from society is included.
 The three factors are summarized in Figure~\ref{fig:coords_of_analysis}.
-For our framework, we chose the physical accounting approach
+
+At this point, it is instructive to look back at the 
+product-focused vs.\ physical discussion in Section~\ref{sec:prod_vs_physical}.
+We understand the argument for including capital stock in a product-focused
+accounting framework (lower-left quadrant of Figure~\ref{fig:coords_of_analysis}):
+capital stock and waste exist 
+solely due to product demand, 
+therefore energy embodied in capital and waste should be assigned to products. 
+However, a product-focused framework that includes capital stock (lower-left quadrant of
+Figure~\ref{fig:coords_of_analysis})
+masks structural aspects of economies
+that we believe are essential to fully understanding how and why energy flows 
+through economies, namely the accumulation of capital
+and associated energy embodied within sectors.
+
+The metabolic metaphor provides guidance here. 
+If we were to create a model of an organism that neglects 
+tissues that accumulate embodied energy,
+the organism (in the model) has nothing with which to 
+absorb, process, waste, or otherwise exchange
+material with the biosphere.
+The organism doesn't physically exist (in the model)!
+Neglecting to account for the stock of capital (and its embodied energy) 
+is tantamount to assuming that economic production occurs out of nothing!
+Accounting for capital stock is essential.
+
+For our framework, we chose a physical accounting approach
 (which puts us in the right column of Figure~\ref{fig:coords_of_analysis}).
-We chose the physical approach primarily because we believe that 
+We chose the physical approach primarily because of our belief that 
 capital is an important aspect of economies,
 and the physical accounting approach
 properly includes a stock of capital for each sector of the economy.
@@ -681,13 +698,12 @@ of why and how energy flows through economies will be masked.
 We acknowledge that the choice of a physical accounting framework necessitates
 careful tracking of capital flows (and associated embodied energy)
 through the economy. 
-We contend that the lower-right quadrant of Figure~\ref{fig:coords_of_analysis}
-is the best place for a comprehensive accounting framework.
+
 Finally, we suggest that accounting for energy input from society
 to the economy is important, 
 and we need to be in the lower half of the bottom-right quadrant
 of Figure~\ref{fig:coords_of_analysis}.
-So, we have moved from the nascent energy I-O literature
+So, the state of the art has moved from the nascent energy I-O literature
 located in the upper-left quadrant of Figure~\ref{fig:coords_of_analysis}
 as represented by Equation~\ref{eq:intensity_upper_left}
 through the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}
