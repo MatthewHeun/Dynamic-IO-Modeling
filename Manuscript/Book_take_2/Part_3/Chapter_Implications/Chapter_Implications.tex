@@ -63,9 +63,11 @@ important and useful metric that can assess
 the energy performance of economies,
 even within the prevailing subjective theory of value\index{theory of value!subjective}
 that underlies modern economics.
-For this reason, it is important to consider the assumptions behind
-the literature's presentation of the I-O method 
-for estimating the energy intensity economic output.
+It is important to consider the assumptions behind
+the literature's presentation of the energy I-O method 
+for estimating the energy intensity of economic output
+before drawing implications from our framework 
+for the energy I-O method.
 
 As we investigate, we will use the following
 coordinates of analysis:
@@ -524,7 +526,7 @@ we implicitly assumed that society
 (final consumption, Sector 1 in our model)
 contributes negligible energy to the economy.
 Thus, all vectors and matrices in Equation~\ref{eq:intensity_lower_right_no_society}
-involve sectors 2--n, but not sector 1.
+involve Sectors~2--n, but not Sector~1.
 
 Energy input from society to the economy ($\vec{T}_{1}$)
 is ``muscle work'' supplied by working humans 
@@ -578,8 +580,82 @@ is significant relative to $\vec{E}_{0}$,
 neglecting $\vec{T}_{1}$
 will underpredict the energy intensity of economic output.
 
-**** Add paragraphs here about energy accounting around the 
-capital stock. Switch to alpha notation. ****
+A control volume around capital stock of sector $j$
+of the economy yields 
+
+\begin{equation}
+	\frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t}
+	= \sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}} 
+	- \gamma_{B,j} B_{K_{j}}.
+\end{equation}
+
+We can express the incoming energy embodied in capital ($\sum_{i=1}^{n} \dot{B}_{ij}$)
+as a fraction ($\alpha_{j}$) of the capital stock ($B_{K_{j}}$) as
+
+\begin{equation}
+	\alpha_{B,j}
+	\equiv 
+	\frac{\sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}}} {B_{K_{j}}}
+\end{equation}
+
+\noindent{}for $j \in [2,n]$ and the vector $\boldsymbol{\alpha}_{B}$ as
+
+\begin{equation}
+	\vec{\boldsymbol{\alpha}_{B}}
+	\equiv
+	\begin{Bmatrix}
+		\alpha_{B,2}	\\
+		\alpha_{B,3}
+	\end{Bmatrix}.
+\end{equation}
+
+\noindent{}Together with the Kronecker delta ($\delta_{ij}$), we can write
+
+\begin{equation}
+	\hat{\boldsymbol{\alpha}}_{B}
+	\equiv
+	\delta_{ij} \boldsymbol{\alpha}_{B}
+	=
+	\begin{bmatrix}
+		\alpha_{B,2}	& 0           \\
+		0               & \alpha_{B,3}  \\
+	\end{bmatrix}.
+\end{equation}
+
+\noindent{}Thus, the embodied energy accounting equation around
+the stock of capital in the economy can be written in matrix form as
+
+\begin{equation}
+	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
+	= \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
+	- \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}.
+\end{equation}
+
+\noindent{}Rearranging slightly gives
+
+\begin{equation} \label{eq:alpha_cap_stock}
+	\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
+	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
+	+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K},
+\end{equation}
+
+\noindent{}which says that incoming capital ($\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}$)
+can be used to either
+increase the stock of capital in the economy ($\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}$)
+or
+overcome depreciation ($\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$).
+Substituting Equation~\ref{eq:alpha_cap_stock} into
+Equation~\ref{eq:epsilon_leontief_with_A} gives
+
+\begin{equation} \label{eq:epsilon_leontief_with_A_alpha}
+	\boldsymbol{\varepsilon} 
+	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+		\left[\vec{E}_{0} 
+				+ \vec{T}_{1} 
+				- \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
+				- \vec{B}_{waste}
+		\right].
+\end{equation}
 
 
 %+++++++++ I-O implications: Recommendation ++++++++++
@@ -613,14 +689,29 @@ and we need to be in the lower half of the bottom-right quadrant
 of Figure~\ref{fig:coords_of_analysis}.
 So, we have moved from the nascent energy I-O literature
 located in the upper-left quadrant of Figure~\ref{fig:coords_of_analysis}
-the lower half of the bottom-right quadrant 
-of Figure~\ref{fig:coords_of_analysis}.
+as represented by Equation~\ref{eq:intensity_upper_left}
+through the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}
+as represented by Equation~\ref{eq:intensity_lower_left}
+to the lower half of the bottom-right quadrant 
+of Figure~\ref{fig:coords_of_analysis}
+as represented by Equation~\ref{eq:epsilon_leontief_with_A_alpha}.
 
 The implication of this detailed development of a framework for
 material, energy, and value accounting on the energy I-O method is 
-some suggested changes to the energy I-O method.  
-We recommend that Equation~\ref{eq:epsilon_leontief_with_A} **** Change to alpha equation. ****
-be employed to estimate the energy intensity of economic products.
+some suggested enhancements to the energy I-O method, 
+including
+
+\begin{itemize}
+	\item{conversion to a physical accounting framework such as the one we propose herein,}
+	\item{physical (as opposed to financial) tracking 
+	of accumulated capital stock within economic sectors,}
+	\item{redefinition of $\vec{A}$ and $\boldsymbol{\varepsilon}$ to include
+	embodied energy on both inflows and outflows of material, and}
+	\item{use of Equation~\ref{eq:epsilon_leontief_with_A_alpha} instead of
+	Equations~\ref{eq:intensity_upper_left} or~\ref{eq:intensity_lower_left}
+	for estimating energy intensity ($\boldsymbol{\varepsilon}$)
+	of economic sectors within an economy.}
+\end{itemize}
  
 
 %%%%%%%%%% Implications %%%%%%%%%%
