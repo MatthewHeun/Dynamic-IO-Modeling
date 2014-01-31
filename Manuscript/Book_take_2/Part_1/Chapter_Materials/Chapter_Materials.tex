@@ -57,33 +57,38 @@ surrounding environment---the biosphere\index{biosphere}.
  
 
 There are many easily observable instances of material flow within an
-economy. I look around my office at my computer screen and coffee cup
-and myriad other items. I look out my window to the street and building
-opposite. All of these goods came originally from natural 
+economy. 
+A typical office contains a computer screen, coffee cup
+and myriad other items. 
+Beyond the window, there is a street and building
+opposite. 
+All of these goods came originally from natural 
 resources\index{natural resources}\index{resources!natural|see{natural resources}}, 
 be it paper or petroleum or rock. They were extracted and processed, transported and
 transformed requiring yet more materials and energy inputs in the form of
 electricity or fuels. 
 
-There are also inumerable material flows caused by an economy that we do not observe.
+There are also inumerable material flows caused by an economy that 
+most of us do not observe.
 The extraction of raw materials generates additional overburden---earth that must be
 extracted and processed and ultimately discarded without ever entering the economy
 proper. Other flows occur around us unseen. The cars outside my window suck in nitrogen
-and oxygen (without which the engine would not work) and emit water, carbon dioxide and
-other more harmful substances. 
+and oxygen (without which the engine would not work) and emit water, carbon dioxide, and
+other, more harmful, wastes. 
 
-Even services which we tend to think of as non-material, require at least some material
+Even services that we consider ``non-material'' require at least some material
 infrastructure. The hairdresser requires scissors (and to a greater or lesser extent 
 some hair) with which to work. Even the internet, often lauded as the exemplar of
 dematerialization of the economic process, requires a whole host of computer
-infrastructure including electricity, data servers, telephone networks and a
-computer by which to access it.
+infrastructure including uninterrupted electricity, data servers, 
+telephone networks, and a computer by which to access it.
 
-In this chapter, we will define a mathematical framework by which to track the flow of
-materials within an economy, building from a one-sector economy up to examples of both a
-two- and three-sector economy. We will finally apply this framework to the illustrative
-example of the US automobile industry that runs through the whole book. First let us
-outline the basic methodology.
+In this chapter, we will define a mathematical framework to track the flow of
+materials within an economy, building from a one-sector economy up to examples of both
+two- and three-sector economies. 
+We will finally apply this framework to the illustrative
+example of the US automobile industry that runs through the whole book. 
+First, we outline the basic methodology.
 
 \section{Methodology}
 \label{sec:Materials_Methodology}
@@ -119,7 +124,8 @@ between \emph{efficient cause} and \emph{material cause}. Resources are
 \subsection{Accounting in everyday life}
 
 Everyone counts material (and even non-material) things. 
-Rigorous counting requires precise definition of both 
+Rigorous counting at the scale of whole economies 
+requires precise definition of both 
 what we will be counting
 and the place (defined in both time and space) in which we will be counting. 
 Engineers often call the spatial definition a ``control volume.'' 
@@ -127,15 +133,6 @@ Another way to think of creating a
 control volume is drawing a boundary. 
 What gets counted is what passes through the boundary.
 For example, we 
-
-**** Do we want to write in the first person? ****
-**** Good question. We're using the first person
-in most of the chapters, but plural, ``we'', rather than
-singular. I've changed the ``I'' to ``we'', but we should
-double-check that we're happy with it, as it mixes
-plural and singular first person: ``we'' with ``my'' and
-``I'' ****
-
 may wish to count (or ``make an accounting of'') 
 the stock of apples in my home over the course of a week. 
 We draw a spatial boundary (control volume) around my home 
@@ -162,18 +159,18 @@ A rigorous apple accounting equation, in units of apples, is:
 \end{equation}
 
 Notice that, when discussing apples we use the specific terms ``grown'' and
-``eaten'' instead of the more general terms, ``produced'' and ``consumed.''
+``eaten,'' instead of the more general terms ``produced'' and ``consumed.''
 Later, in Chapter~\ref{chap:value}, when discussing value, we will use the terms
 ``generated'' and ``destroyed.'' For our purposes, these terms all have the equivalent
 meanings and we use them interchangeably.
 
 After accounting for the stock of apples in a week,
-we can reframe the questionL ``at what rate does the stock of
-apples change?'' That is, we can examine the rate of
+we can reframe the question: ``at what rate does the stock of
+apples change?'' 
+That is, we can examine the rate of
 change of the apple stock per unit of time relative to the flow of apples 
 ($\dot{a}$)\nomenclature[ab]{$\dot{a}$}{flow rate of apples [apples/time]}, 
-e.g.\ in units of apples per day, 
-in which case our accounting equation would become:
+in which case our accounting equation becomes:
 
 \begin{equation} \label{eq:apple_rate_accounting}
 	\frac{\mathrm{d}a}{\mathrm{d}t}
@@ -255,13 +252,17 @@ products, e.g.\ steel, may be produced or, in some circumstances, destroyed, the
 even as the mass changes form (e.g.\ from iron to steel) 
 through many economic processes.\footnote{For the sake of
 absolute rigor, we must point out that, in actuality, iron \emph{is} created within
-the core of silicon-burning stars. Mass and energy may also be converted in such processes, 
-such that only mass-energy is conserved. However, for the purposes of terrestrial
-processes, the total mass (in kg) of iron is constant. There are, additionally, some economic
+the core of silicon-burning stars. 
+Mass and energy may also be converted in such processes, 
+such that only mass-energy is conserved. 
+However, for the purposes of terrestrial
+processes, the total mass (in kg) of iron (Fe) is constant. 
+There are, additionally, some economic
 processes, within nuclear reactors, that change the atomic structure of elements
-and thus violate the accounting law presented here. Because the mass flows involved
+and thus violate the accounting law presented here. 
+Because the mass flows involved
 with these nuclear plants is negligible compared with total materials flows, we
-shall assume that the law holds.}
+shall assume that the mass of elements are conserved for this book.}
 
 % **** Discuss the steel industry. 
 % Show how steel is actually formed from other materials.
@@ -290,16 +291,16 @@ In the discussion that follows, we will make great use
 of the First Law.
 If I eat an apple, it is no longer an apple, 
 but the materials (i.e.\ chemical elements) and energy contained
-within the apple can still be traced via their mass and energy,
+within the apple can still be traced via their elemental mass and energy,
 even if they change form (apples into compost or 
-chemical potential energy to thermal energy).
+chemical potential energy into thermal energy).
 Thus, the apple accounting equation
 (Equation~\ref{eq:apple_rate_accounting}) can include
 terms accounting for the production and consumption of apples. 
 However, mass and energy accounting equations applied to 
 sectors of economies will \emph{not} include terms for the 
 production or destruction of mass or energy. 
-Rather, any addition of material or energy added \emph{to} the economy
+Rather, any addition of material or energy \emph{to} the economy
 or waste\index{waste} of material or energy \emph{from} the economy
 will occur as an interaction between the economy and the biosphere\index{biosphere}.
 Chapters~\ref{chap:materials}--\ref{chap:embodied_energy} cover mass and energy
@@ -345,7 +346,7 @@ Resource materials ($\dot{R}$)\nomenclature[Rb]{$\dot{R}$}{resource mass flow ra
 enter the sector on the left 
 and comprise those materials that are destined to be \emph{embodied} 
 in the goods produced by the sector ($\dot{P}$)\nomenclature[Pb]{$\dot{P}$}{product mass flow rate [kg/s]}, 
-except for some proportion that are wasted\index{waste}.
+except for some proportion that is wasted\index{waste}.
 Wastes depart from the bottom of the sector and are
 returned to the biosphere\index{biosphere}. 
 For example, sheet metal, rubber, and glass
@@ -356,7 +357,8 @@ Some fraction of these resources ($\dot{R}$) may not make it into the final prod
 such as trimming scrap from metal parts stamping, 
 and may be either recycled internally, 
 or wasted\index{waste} to the biosphere\index{biosphere}. 
-In this model, resource materials are not accumulated\index{accumulation} within a sector.
+In this framework, 
+resource materials are not accumulated\index{accumulation} within a sector.
 
 Short-lived goods ($\dot{S}$)\nomenclature[Sb]{$\dot{S}$}{short-lived goods mass flow rate [kg/s]}  
 include those materials 
@@ -376,15 +378,15 @@ but are not counted as short-lived goods,
 because the operation of the sector is dependent 
 upon the accumulation\index{accumulation} of these materials within the sector. 
 Such flows are counted as capital goods\index{capital goods} 
-($\dot{K}$).\nomenclature[Kb]{$\dot{K}$}{capital goods mass flow rate [kg/s]}
-Capital flows also enter from above, 
+($K$).\nomenclature[Kb]{$\dot{K}$}{capital goods mass flow rate [kg/s]}
+Capital flows ($\dot{K}$) also enter from above, 
 but are stored within the sector (represented by a storage tank) 
 and are returned to the biosphere as 
 physical capital depreciation\index{physical depreciation} from below.
 Examples of these capital flows would be the factory and office buildings or
 manufacturing equipment within the automobile industry.
-We are here assuming that there is no re-use of capital stock
-within other sectors of an economy,
+We assume (for simplicity) that there is no re-use of capital stock
+by other sectors of an economy,
 e.g.\ resale of vehicles or other equipment after depreciation,
 or recycling of material from capital stock into other goods,
 e.g.\ scrap metal. 
@@ -396,7 +398,7 @@ A fraction of the $\dot{P}$ flow may be returned to the sector as self-consumpti
 counted as resources destined to be embodied in the product ($\dot{R}$), 
 short-lived materials ($\dot{S}$), or 
 capital goods\index{capital goods} ($\dot{K}$); 
-the remainder flows to other sectors within the economy or final demand. 
+the remainder flows to other sectors within the economy or final consumption. 
 In this model, energy may be accounted
 as either an $\dot{R}$ flow or an $\dot{S}$ flow.
 An example of energy as an $\dot{R}$ flow is crude oil converted into
@@ -411,14 +413,6 @@ because the incoming chemical elements (carbon and hydrogen) \emph{do
 not} depart the plant as the product.  
 (The product of a power plant is electrons that travel through
 electricity transmission lines.)
-
-Throughout this book, we illustrate concepts with three example economies, 
-with increasing levels of disaggregation. 
-Example~A includes a single economic sector (1) and the biosphere (0).
-Example~B includes a production sector (2), society (1, which provides final demand),
-and the biosphere (0). 
-Example~C adds an energy sector (3) to Exammple~B.
-We begin with materials accounting for Example~A.
 
 
 %%%%%%%%%% Materials: Example A %%%%%%%%%%
@@ -436,15 +430,15 @@ Figure~\ref{fig:A_materials}.  We do not distinguish between production and cons
 \caption[Flows of materials for a one-sector economy]{Flows of materials 
 for a one-sector economy. 
 Resources ($\dot{R}_{01}$) and short-lived materials 
-($\dot{S}_{01}$) flow into the economy (1) 
-from the biosphere\index{biosphere} (0). Waste resources 
+($\dot{S}_{01}$) flow into the Society (1) 
+from the Biosphere\index{biosphere} (0). Waste resources 
 ($\dot{R}_{10}$) short-lived materials/goods 
 ($\dot{S}_{10}$) and capital goods\index{capital goods} 
 ($\dot{K}_{10}$) are returned to the biosphere.}
 \label{fig:A_materials}
 \end{figure}
 
-Resources, or perhaps more accurately raw materials, 
+Resources, or perhaps more accurately raw materials
 ($\dot{R}_{01}$), such as crude oil or iron ore, 
 and short-lived materials ($\dot{S}_{01}$), 
 such as oxygen or water that flow \emph{through} economic
@@ -457,22 +451,12 @@ goods\index{capital goods} ($\dot{K}_{11}$)
 which are able to be accumulated at some rate 
 $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$ within the
 stock of materials within society\footnote{See
-Section!\ref{sec:people_as_stock} for more discussion on
+Section~\ref{sec:people_as_stock} for more discussion on
 the inclusion of human beings as societal capital stock.}.
 Waste resources ($\dot{R}_{10}$) and used 
-% **** consumed? --MKH **** 
-% I don't think we want to use ``consumed'' as we are accounting
-% mass that is specifically not consumed. --MCD ****
 short-lived materials/goods ($\dot{S}_{10}$)
 are returned to the biosphere\index{biosphere} without 
-accumulating in society (1). 
-% **** Need to sort out whether we'll call (1)
-% ``society'' or ``the economy'' --MKH **** 
-% I would argue that sector (1) is always ``society''
-% however in Example A it also includes the ``economy'' which is
-% split out in later Examples. --MCD ****
-% **** Discussed and we use `society' in Ex. A,
-% then `final consumption' in Exs. B and C. --MCD ****
+accumulating in Society~(1). 
 Capital goods ($\dot{K}_{10}$) 
 are returned to the biosphere\index{biosphere} 
 when they are physically depreciated\index{depreciation}.
@@ -570,7 +554,7 @@ this inequality may be true in theory,
 it may be that in practice,
 the large amount of material,
 e.g.\ water or oxygen,
-that passes straight through the economy `unaffected',
+that passes straight through the economy ``unaffected,''
 i.e.\ without being embodied in products,
 is very large compared to the additional flow of short-lived goods
 produced within the economy,
@@ -643,7 +627,6 @@ we may say that:
 	= \dot{K}_{10}
 \end{equation}
 
-
 Looking deeper at flows of resources and short-lived goods,
 we can make some further observations. 
 Imagine following a kilogram of coal on its journey
@@ -654,20 +637,20 @@ products (part of $\dot{P}_{1}$) and some is wasted ($\dot{R}_{10}$).
 Some of the coal is destined for metalurgical processes 
 (such as the production of steel)
 and so re-enters the economy within flow $\dot{R}_{11}$,
-since the carbon in the coal ends up physically
-\emph{embodied} within the steel however,
-again,
+because the carbon in the coal ends up physically
+\emph{embodied} within the steel.
+However, again,
 some of the coal is wasted,
 leaving the economy as flow $\dot{R}_{10}$. 
-Some of coal is destined for electricity generation
+Some of the coal is destined for electricity generation
 and so re-enters the economy as part of flow $\dot{S}_{11}$,
 since the coal is \emph{not} physically embodied
 in the electricity and leaves the economy
 (in the form of carbon dioxide and ash)
 as part of flow $\dot{S}_{10}$.
 In summary, we may say that resources are destined
-to end up either as products or waste `resources'
-and that short-lived materials flow `straight through'
+to end up either as products or waste ``resources''
+and that short-lived materials flow ``straight through''
 the economy. 
 As such,
 we may state that:
@@ -753,14 +736,14 @@ of disposal of waste materials back to the biosphere ($\dot{R}_{10}$
 and $\dot{S}_{10}$). 
 
 Notice however, that although Equation~\ref{eq:A_CV_0a} is true for total mass of materials,
-it makes no comparison of the \emph{quality} of these materials.
+it does not account for the \emph{quality} of these materials.
 Society relies heavily on extracted resources from naturally
 occurring accumulations that are far from equilibrium with their surroundings,
 e.g.\ fossil fuel reservoirs or seams of high-grade ore. As these high quality
 material reserves are depleted and society must turn to lower grade reserves, 
 more energy and other economic factors (labor, capital, money) \emph{must} be 
 expended  in material extraction.\cite{Mudd2010} It is likely that the quality
-of flow $R_{01}$ is higher than flow $R_{10}$ 
+of flow $\dot{R}_{01}$ is higher than flow $\dot{R}_{10}$ 
 (e.g.\ overburden from mining operations). 
 If this were not the case,
 $\dot{R}_{10}$ could be easily substituted 
@@ -781,7 +764,7 @@ thermodynamic equilibrium
 Such systems maintain their internal structure by
 importing high quality energy and 
 materials~(negentropy) and exporting low quality
-energy and materials~(entropy)~\cite{Schroedinger1947}.
+energy and materials~(entropy).\cite{Schroedinger1947}
 
 Substituting Equation~\ref{eq:A_S1_balance} 
 into Equation~\ref{eq:A_CV_1}, we obtain:
@@ -834,7 +817,7 @@ in units of inverse time (e.g.\ 1/year),
 where $\gamma_{K_{j}}$ is defined as:
 
 \begin{equation}\label{eq:def_gamma}
-\gamma_{K_{j}} = \frac{\dot{B}_{j0}}{B_{j}},
+\gamma_{K_{j}} \equiv \frac{\dot{B}_{j0}}{B_{j}},
 \end{equation}
 
 \noindent{}i.e.\ the depreciation \emph{per unit}
@@ -852,8 +835,6 @@ such that Equation~\ref{eq:A_CV_1d} becomes:
 It is important to note that $\gamma_{K_{1}}$ 
 is inversely proportional to the average lifetime
 of man-made capital ($K_{1}$).
-This will be discussed in more detail in
-Section~\ref{sec:SSE}.
 We may rearrange Equation~\ref{eq:A_CV_1e} as:
 
  \begin{align}\label{eq:A_CV_1f}
@@ -901,10 +882,10 @@ are used within society in order to:
 %%%%%%%%%%
 
 In our second example B, we split the economy into two sectors: 
-a production sector (2) and final consumption (1), 
+Production (2) and Final Consumption (1), 
 as depicted in Figure~\ref{fig:B_materials}. 
 Sector~(2) produces all of the goods and services 
-that are delivered to final consumption (1), 
+that are delivered to Final Consumption (1), 
 as well as all of the intermediate goods that are not ``consumed'' 
 as part of final consumption, but stay within the production sector, e.g.\ manufacturing equipment.
 
@@ -944,15 +925,16 @@ some of which is returned to final consumption
 as resource ($\dot{R}_{11}$), 
 short-lived good ($\dot{S}_{11}$) 
 and capital good ($\dot{K}_{11}$) flows. 
-A flow of short-lived goods ($\dot{S}_{12}$)
-flows from final consumption (1) to production (2) 
+Short-lived goods ($\dot{S}_{12}$)
+flow from Final Consumption (1) to Production (2) 
 associated with the flow of labor. 
 There is no resource ($\dot{R}_{12}$) nor 
 capital good ($\dot{K}_{12}$) flow from 
 society (1) to production (2). 
-This is because the `product' of final consumption
-is the production of labor services 
-and the ``consumption'' of final goods. 
+This is because the ``product'' of Final Consumption (1)
+is labor services 
+and because Final Consumption (1) consumes, 
+rather than produces, final goods. 
 No materials flow from final consumption to be 
 \emph{transformed} into or \emph{embodied} 
 in the production goods of Sector~(2), 
@@ -970,8 +952,8 @@ from final consumption to the production sector
 represents labor,
 specifically  the material flow 
 associated with labor's energy 
-which is used within the production sector.
-\footnote{We assume that this flow is the 
+which is used within the production sector.\footnote{We assume 
+that this flow is the 
 adenosine triphosphate (ATP), 
 used as an energy
 carrier within the cells of organisms.} 
@@ -1024,10 +1006,10 @@ such that the material accounting equations become:
 
 One point worth noting is that 
 what we are here denoting as a flow of 
-`capital goods'\index{capital goods}
+``capital goods''\index{capital goods}
 into final consumption ($\dot{K}_{21}$) 
 would more normally be referred to by economist as 
-`consumer durables', 
+``consumer durables,'' 
 though would also include other products, 
 such as housing. 
 The important concept being that some goods 
@@ -1091,15 +1073,15 @@ capital ($\dot{K}$) within the biosphere:
 	+ \dot{K}_{20}.
 \end{align}
 
-Since we are assuming that only man-made capital
+Because we are assuming that only man-made capital
 is accounted within the physical stock of final consumption\footnote{If
 we were assuming that the human population
 was accounted within $\dot{K}_{1}$,
-then the `product' of final consumption would be human beings
+then the ``product'' of final consumption would be human beings
 (and the labor they provide),
 resource flow $\dot{R}_{11}$ would be material resources
 provided to human reproduction and
-`capital goods' flow $\dot{K}_{11}$ would be material
+``capital goods'' flow $\dot{K}_{11}$ would be material
 added to the human population stock. Again, 
 this issue is discussed in greater detail in 
 Section~\ref{sec:people_as_stock}.}~($K_{1}$)
@@ -1380,7 +1362,7 @@ we obtain:
 \noindent{}which tells us that
 the depletion of natural capital
 $\left(\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
-is used within the economy in order to:
+is used within the economy to:
 
 \begin{itemize}
 	\item build up capital stock
@@ -1424,7 +1406,7 @@ is used within the economy in order to:
 \label{sec:C_materials}
 %%%%%%%%%%
 
-In example C, we differentiate between two production sectors, sector (2) produces energy
+In Example~C, we differentiate between two production sectors, sector (2) produces energy
 products and sector (3) produces other goods and services, as depicted in Figure
 \ref{fig:C_materials}.
 
@@ -1602,7 +1584,7 @@ product flows~($\dot{P}$) as:
 	+ \sum_{j = 1}^{3}\dot{K}_{3j}
 \end{align}
 
-As in Example~B, final consumption (1) provides 
+As in Example~B, Final Consumption (1) provides 
 only labor (represented by $\dot{S}$ flows)
 to the other sectors of the economy.
 The energy sector (2) provides 
@@ -1616,9 +1598,9 @@ The energy sector does not produce capital goods,
 hence,
 for $j \in [1,3]: \dot{K}_{2j} = 0$.
 The goods and services (3) sector does not provide
-resources for the energy sector (2)\footnote{There
+resources for the energy sector (2),\footnote{There
 may be some exceptions to this, as in the case of
-energy from industrial waste streams.},
+energy from industrial waste streams.}
 hence $\dot{R}_{32} = 0$.
 
 Since we do not allow accumulation of either
@@ -1641,7 +1623,7 @@ and short-lived goods flows balances separately
 for each of the sectors of the economy:\footnote{It
 is worth remembering here that 
 $\dot{R}_{01} = \dot{R}_{21} = 0$,
-since final consumption only takes resources
+because final consumption only takes resources
 (in the form of food) from the goods and services
 sector~(3) and that $R_{32} = 0$ since
 the goods and services sector does not provide
@@ -1975,9 +1957,9 @@ may be thought of as four matrices
 for $\dot{S}$ flows): 
 one $3\times3$ matrix of flows 
 entirely within the economy, 
-a $3\times1$ vector of flows from the 
+a $3\times1$ row vector of flows from the 
 biosphere\index{biosphere} into the economy (extraction), 
-a $1\times3$ vector of flows from the economy 
+a $1\times3$ column vector of flows from the economy 
 into the biosphere\index{biosphere} (waste\index{waste}) 
 and a $1\times1$ matrix of flows 
 solely within the biosphere\index{biosphere} (environment), 
@@ -2030,7 +2012,10 @@ outlined in Table~\ref{tab:materials_auto}.
 %Talk to financial (value) flows in Section~\ref{sec:value_auto} 
 %as proxy for physical flows****
 
-Data on the rest of the flows at the industry level
+**** This paragraph is kind-of unclear. Rewrite for clarity?---MKH ****
+Data on the rest of the flows **** What do you mean by ``rest of the flows?''
+Do you mean that mass-based, as opposed to dollar-based data are hard to find? ---MKH ****
+at the industry level
 is very hard to obtain.\footnote{The issue of 
 lack of physical flow data is discussed in 
 Section~\ref{sec:Data}.}
@@ -2041,7 +2026,7 @@ states.\cite{EUROSTAT2011}
 Work is ongoing to characterize the inter-sectoral
 flows of materials.\cite{ConAccount1998}
 These material flows could be modeled in much the same
-manner as traditional energy IO estimates energy flows
+manner as traditional EI-O estimates energy flows
 through the economy,
 by converting financial data 
 (which is available, as discussed in 
@@ -2091,7 +2076,9 @@ short-lived materials ($\dot{S}$),
 and capital goods ($\dot{K}$)
 using data from~\cite{Sullivan1998, MacLean1998,Schweimer2000,
 McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}.
-This list is illustrative and by no means exhaustive.}
+This list is illustrative and by no means exhaustive.
+**** I thought there is very little COAL input to the auto industry. 
+Compare to Becky's table.---MKH ****}
 \begin{center}
  \begin{tabular}{p{4cm}p{1cm}p{5.2cm}}
 \toprule 
