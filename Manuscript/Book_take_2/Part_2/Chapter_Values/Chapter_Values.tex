@@ -64,7 +64,6 @@ and final products within an economy.
 \label{sec:Value_Methodology}
 %%%%%%%%%%
 
-**** MCD---do we need some references in this section? ****
 
 We begin by explicitly describing what we mean by value. 
 For pragmatic reasons, we follow the standard, neoclassical approach of using the market price at the time of an exchange
@@ -453,14 +452,14 @@ A ``primer'' on using the US BEA industry data can be found on the BEA website h
  The two main tables needed to estimate dynamic value flows and capital accumulation within the economy 
 are the Input-Output Tables (I-O) and the Fixed Asset, non-residential detail, table. 
  The I-O tables consist of `` make'' and use ``tables''. The use table tracks which \emph{industries} (columns) use which \emph{commodities} (rows) that are made in one industry and then used in another as intermediate inputs ($\dot{R}$, $\dot{S}$). The Use table also tracks the output that
-is used for final consumption, including Private Fixed Investment ($\dot{K}$). However, the more detailed, but less accurate, Fixed Asset accounts are
-used to distinguish between the capital that is produced in the automobile industry
-that goes to self-use from that which is final consumption.
+is used for final consumption, including Private Fixed Investment (capital in-flows). However, the more detailed  Fixed Asset accounts are
+used to estimate all capital value flows in this example ($\dot{K}$) so that capital from other sectors can be separated from the capital that is produced and used within the automobile industry.  
 
 
 
 Using these data, Figure~\ref{fig:PERKS_value_auto_ind} provides estimates 
-of value flows for the US auto industry.
+of value flows for the US auto industry. 
+
 
 \begin{figure}[!ht]
 \centering
@@ -469,10 +468,8 @@ of value flows for the US auto industry.
 \label{fig:PERKS_value_auto_ind}
 \end{figure}
 
-The value of capital flows from other sectors into the automobile industry, ($\dot{K}$) is 
-also obtained from the Fixed Assets BEA table.  The ``waste output to the environment''
-can be approximated by the value of the commodities that are ``made'' in all industries 
-and ``used'' by the ``Waste Management Sector'' (NAICS 56).  Table~\ref{tab:data} contains the sources from the BEA that were used to obtain the values in Figure~\ref{fig:PERKS_value_auto_ind}.\footnote{See Appendix~\ref{chap:auto_value_flows} for detailed calculations.}
+Table~\ref{tab:data} contains a brief description of the data sources that were used to obtain the values in Figure~\ref{fig:PERKS_value_auto_ind}. Appendix~\ref{chap:auto_value_flows} contains the
+detailed calculations and describes the BEA data sources.
 
 
 \begin{table}
@@ -483,23 +480,23 @@ and ``used'' by the ``Waste Management Sector'' (NAICS 56).  Table~\ref{tab:data
      & 2011 USD &   \\ 
 Value Flow & (millions) & BEA Data Source \\
 	\midrule
-    Resources (other than Energy) & \$207,623            & KLEMS Intermediate Use Estimates 2011 \\
+    Resources  & \$175,491           & 2011 KLEMS Total Material Inputs \\
 &&\\
-    Resources (Energy) &   3,367&   KLEMS Intermediate Use Estimates 2011                \\
+   Energy &   3,367&   2011 KLEMS Total Energy Inputs                \\
 &&\\
-    Short-lived Goods &   42,005 &   KLEMS Intermediate Use Estimates 2011    \\
-    Resources \cr (self-use) &  139,259 &  KLEMS Intermediate Use Estimates 2011     \\
+    Short-lived Goods &   42,446 &   2011 KLEMS Total Services Inputs    \\
 &&\\
-    Output to Waste Sector & 441  &  KLEMS Intermediate Use Estimates 2011     \\
-&&\\
-    Capital &  46,332  &  Fixed Assets 2011 (non-residential detailed estimates)     \\  
-&&\\
-    Capital (self-use) & 15,181 & Fixed Assets 2011 (non-residential detailed estimates)      \\
-&&\\
-    Gross Economic Output & 474,186  &  The 2011 Use of Commodities by Industries \\
+    Capital &  46,079  &  2011 Fixed Assets 2011 (non-residential detailed estimates)     \\  
 
 &&\\
-    Net Economic Output & 319,746   &  The 2011 Use of Commodities by Industries \\
+    Gross Economic Output & 467,941  &   2011 Input-Output Use Tables \\
+
+&&\\
+    Resources (self-use)  &  133,961 & 2011 KLEMS Total Material Inputs     \\
+&&\\
+    Capital (self-use) & 15,181 & 2011 Fixed Assets (non-residential detailed estimates)      \\
+&&\\
+    Net Economic Output & 325,044   &  2011 Input-Output Use Tables \\
     \bottomrule
   \end{tabular}
 
@@ -507,7 +504,6 @@ Value Flow & (millions) & BEA Data Source \\
 \label{tab:data}
 \end{table}
 
-Thus, in contrast to the lack of data for material and energy resource flows through the economy, \emph{dollar values} of material and energy resource flows through the economy are publicly available from the BEA website. 
 
 
 %%%%%%%%%% Value: Summary %%%%%%%%%%
