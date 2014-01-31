@@ -57,9 +57,10 @@ direct energy\index{direct energy}\index{energy!direct|see{direct energy}}
 that is associated with material flows
 through an economy.
 
-All forms of energy provide the potential to do mechanical work. The 
+All forms of energy provide the potential to do mechanical work.\footnote{The 
 quantification of the mechanical work potential of energy is \emph{exergy}\index{exergy}.
-When energy is ``consumed'' by an economy, exergy (work potential) is destroyed. 
+When energy is ``consumed'' by an economy, exergy (work potential) is destroyed.
+These topics are discussed in greater detail in Section~\ref{sec:material_quality}.}
 Energy (as mechanical work) 
 is an essential aspect of the metabolic economy;
 with it, materials are refined, shaped, and assembled
@@ -124,6 +125,9 @@ from Figure~\ref{fig:PERKS_materials}.}
 \label{fig:PERKS_energy_content}
 \end{figure}
 
+**** Matt---tie back to the discussion in Chapter 2
+about transfers in and transfers out. 
+Also, highlight that energy can be neither created nor destroyed. ****
 For any boundary (around, say, a machine, a plant,
 a sector of the economy, or the entire economy itself), 
 the First Law of Thermodynamics says that 
@@ -152,7 +156,9 @@ and waste heats ($\dot{Q}_{out}$) will be zero.
 
 It is important to note that the direct energy associated with some material flows can
 be so small as to be negligible compared to other direct energy flows in the economy.
-For example, the direct energy of steel into the automobile sector of the economy 
+For example, there is a small amount of chemical energy in steel that could be
+released upon combustion. 
+However, the direct energy associated flows of steel within the economy
 is almost negligible. (The \emph{embodied} energy of the steel is almost certainly
 \emph{not} negligible, as will be discussed in Chapter~\ref{chap:embodied_energy}.)
 On the other hand, the direct energy flow rates for 
@@ -195,16 +201,7 @@ the single-sector economy shown in Figure~\ref{fig:A_materials}.
 By summing the direct energy flows associated with
 each material flow of Figure~\ref{fig:A_materials}, we obtain
 a simplified picture of direct energy flows in the economy,
-as shown in Figure~\ref{fig:A_energy}.\footnote{Single 
-subscripts on quantities such as
-$E$ can mean one of two things: 
-$\dot{E}_{i}$ indicates the outflow of direct energy from sector $i$, 
-whereas $E_{i}$ denotes the direct energy content of sector $i$. 
-Double subscripts on quantities
-(e.g., $\dot{E}_{ij}$) indicate a flow 
-from sector $i$ to sector $j$. 
-The first index always indicates the sector \emph{from} which a quantity flows, 
-and the second index indicates the sector \emph{to} which a quantity flows.}
+as shown in Figure~\ref{fig:A_energy}.
 
 \begin{figure}[!ht]
 \centering
@@ -357,6 +354,20 @@ $\left(\frac{\mathrm{d}E_{2}}{\mathrm{d}t}\right)$, yields
 
 \noindent It is notable that Production (2) consumes ($\dot{E}_{22}$)
 a portion of its gross energy output ($\dot{E}_2$): it takes energy to make energy.
+The gross direct energy production of the energy sector (2) is 
+$\dot{E}_{2}$, and the direct energy consumption of the energy sector (2) is 
+$\dot{E}_{12} + \dot{E}_{22}$. 
+The net direct energy production by the energy sector (2)
+is given by $\dot{E}_{2} - (\dot{E}_{12} + \dot{E}_{22})$.
+The energy return on investment\index{energy return on investment|see{EROI}} 
+($EROI$)\index{EROI} of the energy sector (2) is given by
+
+\begin{equation} \label{eq:C-EROI}
+	EROI_{2} 
+	= \frac{\dot{E}_{2}}{\dot{E}_{12} + \dot{E}_{22}}.
+\end{equation}
+
+**** Mik---Add a discussion about system boundaries. ****
 
 Equation~\ref{eq:CV_E_dot_0} can be generalized with a sum as
 
@@ -398,19 +409,6 @@ a fuller picture of direct energy flows among sectors
 \caption[Direct energy flows for a three-sector economy]{Direct energy flows ($\dot{E}$) for a three-sector economy.}
 \label{fig:C_energy}
 \end{figure}
-
-We note that the gross direct energy production of the energy sector (2) is 
-$\dot{E}_{2}$, and the direct energy consumption of the energy sector (2) is 
-$\dot{E}_{12} + \dot{E}_{22} + \dot{E}_{32}$. 
-The net direct energy production by the energy sector (2)
-is given by $\dot{E}_{2} - (\dot{E}_{12} + \dot{E}_{22} + \dot{E}_{32})$.
-The energy return on investment\index{energy return on investment|see{EROI}} 
-($EROI$)\index{EROI} of the energy sector (2) is given by
-
-\begin{equation} \label{eq:C-EROI}
-	EROI_2 
-	= \frac{\dot{E}_{2}}{\dot{E}_{12} + \dot{E}_{22} + \dot{E}_{32}}.
-\end{equation}
 
 The First Law of Thermodynamics around the 
 biosphere (0), society (1), and the energy sector (2) gives
@@ -540,13 +538,6 @@ Total       &   $2.8 \times 10^{13}$ kJ (thermal equivalent) \\
 \end{center}
 \label{tab:auto_energy}
 \end{table}
-
-According to the International Organization of Motor Vehicle Manufacturers (OICA), 
-2.7 million cars were produced in 2010 in the US.\cite{Motor-Vehicle-Manufacturers-OICA:2014aa}
-In 2006, prior to the 
-Great Recession, the automobile industry purchased 
-40 trillion kJ ($4.0 \times 10^{13}$ kJ) of total energy and 
-produced 4.4 million cars.
 
 Total energy use can also be estimated by summing the energy use of the 
 underlying detailed processes in manufacturing automobiles. 
