@@ -77,7 +77,7 @@ In this chapter, we will adapt the First Law to account
 in the material flows of 
 an economy.\footnote{To the authors' knowledge, 
 this is the first appearance in the literature 
-of a systematic, detailed, and mathematically rigorous derivation 
+of a systematic, detailed, and mathematically-rigorous derivation 
 of embodied energy accounting equations based upon the 
 laws of thermodynamics.}
 
@@ -175,7 +175,7 @@ The material produced by a non-energy sector of the economy
 consists of indirect energy only ($\dot{E} \approx 0$, 
 and therefore $\dot{T} \approx \dot{B}$), 
 because direct energy ($E$) produced by 
-a non-energy sector is negligible in this economy. 
+a non-energy sector is negligible in this framework. 
 
 In other cases, a material flow may include both direct energy flow
 ($\dot{E}$) \emph{and} embodied energy flow ($\dot{B}$) components.
@@ -183,14 +183,15 @@ For example, the outgoing flow of refined petroleum from the energy sector
 has both a direct energy ($\dot{E}$, the energy content of the oil product, 
 usually represented by chemical potential energy) 
 and embodied energy ($\dot{B}$, which accounts for the energy 
-consumed in upstream processes 
-to extract and refine the crude oil).\footnote{Outputs from 
+(a) consumed in upstream processes 
+to extract and refine the crude oil and 
+(b) consumed by the refinery itself).\footnote{Outputs from 
 agricultural sectors will be similar: 
 both (a) the direct energy component (comprising chemical potential energy) 
 and (b) the embodied energy component (representing upstream
 energy consumed in food production) will be non-zero.}
 
-Most of the I-O literature~\cite{Bullard1975, Herendeen1978} 
+Most of the energy Input-Output (EI-O) literature~\cite{Bullard1975, Herendeen1978} 
 applies the following (and often unstated) assumptions:
 
 \begin{enumerate}
@@ -200,9 +201,7 @@ applies the following (and often unstated) assumptions:
 
 	\item steady state conditions exist 
 	(i.e., total energy does not accumulate in economic 
-	sectors),\footnote{We will see later how the
-	steady-state assumption in the literature 
-	can introduce errors into I-O analyses.} and
+	sectors), and
 	
 	\item the sum of the signed 
 	(input is positive, output is negative) 
@@ -211,7 +210,7 @@ applies the following (and often unstated) assumptions:
 	there is no ``waste'' of total energy).
 \end{enumerate}
 
-Like the I-O literature, we assume that total energy is conserved
+Like the EI-O literature, we assume that total energy is conserved
 and never wasted.\footnote{Of course, waste heat exists and is
 accounted by the First Law of Thermodynamics. However,
 waste heat is ignored when accounting for total energy.}
@@ -309,6 +308,8 @@ less the rate of output of embodied energy from the sector
 The first two terms on the right side of
 Equation~\ref{eq:embodied_energy_accounting_2} are expected: 
 accumulation is the difference between inflow and outflow rates. 
+The final term ($\dot{Q}_{out}$) is a proxy 
+for all direct energy ($\dot{E}$) consumed within the sector.
 
 Rearranging Equation~\ref{eq:embodied_energy_accounting_2}
 yields another version of the embodied energy accounting equation:
@@ -316,17 +317,17 @@ one that illuminates issues related to
 stages of growth for an economic sector.
 
 \begin{equation} \label{eq:embodied_energy_accounting_3}
-	\frac{\mathrm{d}B}{\mathrm{d}t} 
-	+ \sum \dot{B}_{out}
-	= \sum \dot{B}_{in}
+	\sum \dot{B}_{in}
 	+ \sum \dot{Q}_{out}
+	= \frac{\mathrm{d}B}{\mathrm{d}t} 
+	+ \sum \dot{B}_{out}
 \end{equation}
 
 \noindent From Equation~\ref{eq:embodied_energy_accounting_3},
 we see that incoming embodied energy ($\dot{B}_{in}$) and 
 waste heat\footnote{Because we have substituted 
 the First Law of Thermodynamics into the total energy accounting equation,
-$\dot{Q}_{out}$ becomes a proxy for direct energy consumption by the sector.} 
+$\dot{Q}_{out}$ is a proxy for direct energy consumption by the sector.} 
 ($\dot{Q}_{out}$) can be used to increase either (a)
 the embodied energy within a sector of the economy 
 $\left( \frac{\mathrm{d}B}{\mathrm{d}t}  \right)$
@@ -341,11 +342,11 @@ and direct energy consumption (represented by $\dot{Q}_{out}$)
 will be used to increase infrastructure 
 (and associated embodied energy, $B$) within the sector, 
 and $\frac{\mathrm{d}B}{\mathrm{d}t}$ will be positive.
-If, on the other hand, the sector is mature, 
+If, on the other hand, the sector is not expanding, 
 much of the incoming embodied energy ($\dot{B}_{in}$)
 and direct energy consumption (represented by $\dot{Q}_{out}$)
-will be used for production of goods ($\dot{B}_{out}$).
-$\frac{\mathrm{d}B}{\mathrm{d}t}$ will be close to zero.
+will be used for production of goods ($\dot{B}_{out}$),
+and $\frac{\mathrm{d}B}{\mathrm{d}t}$ will be close to zero.
 Equation~\ref{eq:embodied_energy_accounting_2} shows that
 an economic sector in decline may experience an outflow 
 of embodied energy (via products or depreciation\index{depreciation})
@@ -357,7 +358,7 @@ and $\frac{\mathrm{d}B}{\mathrm{d}t}$ will be negative.
 Equations~\ref{eq:embodied_energy_accounting_2}
 and~\ref{eq:embodied_energy_accounting_3} 
 highlight a contrast between 
-the present dynamic analysis and the I-O literature.
+the present dynamic analysis and the EI-O literature.
 The traditional assumption of steady-state conditions 
 in economic sectors is tantamount to assuming that
 $\frac{\mathrm{d}B}{\mathrm{d}t} = 0$ in 
@@ -369,7 +370,7 @@ and the embodied energy implications thereof.
 Equations~\ref{eq:embodied_energy_accounting_2}
 and~\ref{eq:embodied_energy_accounting_3} 
 are generalized embodied energy accounting equations that we will
-see again for Examples~A-C in the sections that follow.
+see again for Examples~A--C in the sections that follow.
 
 
 %%%%%%%%%% Embodied Energy: Example A %%%%%%%%%%
@@ -386,10 +387,10 @@ of total energy ($\dot{T}$) through the single-sector economy.
 \label{fig:A_total_energy_T_dot}
 \end{figure}
 
-As discussed above, we follow the I-O literature in assuming that 
+As discussed above, we follow the EI-O literature in assuming that 
 total energy ($T$) is conserved. 
 A total energy accounting around the biosphere (0)
-and the single-sector economy (1) gives
+and Society (1) gives
 
 \begin{equation} \label{eq:A_T_acct_0}
 	\frac{\mathrm{d}T_{0}}{\mathrm{d}t} 
@@ -488,7 +489,7 @@ and~\ref{eq:A_total_energy_1} become
 
 These equations show that direct energy consumed by a 
 sector ($\dot{E}_{01}$) increases the energy embodied within the sector ($B_1$), 
-whereas the waste from the sector produces an embodied
+whereas waste from the sector produces an embodied
 energy outflow ($\dot{B}_{10}$) that reduces 
 the energy embodied within the sector. 
 
@@ -730,7 +731,7 @@ We turn now to Example~B, a two-sector economy.
 %%%%%%%%%%
 
 For the two-sector economy of Figures~\ref{fig:B_materials}
-and~\ref{fig:B_energy}, we again follow the I-O literature 
+and~\ref{fig:B_energy}, we again follow the EI-O literature 
 by assuming that total energy ($T$) is conserved. 
 Figure~\ref{fig:B_total_energy} shows total energy
 flows for the two-sector economy.
@@ -1196,7 +1197,7 @@ Of this,
 100~GJ was (upstream) energy embodied in the materials~($\dot{B}_{\dot{R}}$)
 and the remaining was (direct) energy used within the auto
 industry to manufacture,
-assemble and transport the automobile. 
+assemble, and transport the automobile. 
 
 Two decades later in 1995, Stodolsky et al.\ estimated the energy consumed in materials and 
 manufacturing automobiles to be 79~GJ per vehicle for a conventional automobile and 66~GJ per vehicle
@@ -1230,7 +1231,7 @@ and the production of lightweight materials
 (employed to offset the weight of EV battery packs)
 leads to significantly increased lifecycle emissions.
 Many studies find that negligible or negative emissions
-savings are achieved by EVs.\cite{Anair:2012aa, Hawkins2012,zehner2013unclean}
+savings are achieved by EVs compared to ICVs.\cite{Anair:2012aa, Hawkins2012,zehner2013unclean}
 
 
 %%%%%%%%%% Embodied Energy: Summary %%%%%%%%%%
@@ -1251,8 +1252,8 @@ economies~A--C % chktex 8
 in Sections~\ref{sec:Embodied_Energy_Example_A}--\ref{sec:Embodied_Energy_Example_C}. 
 Finally, we discussed embodied energy in the context 
 of our running example, the US auto industry (Section~\ref{sec:embodied_energy_auto}).
-We found that there are a few historical estimates of energy embodied within
-automobiles.
+We found that there are few historical estimates of energy embodied within
+automobiles, with a range of 62--134 GJ/vehicle.
 
 In Chapter~\ref{chap:value}, we develop theory and equations to account
 for value flows though economies, leading (in Chapter~\ref{chap:intensity})
