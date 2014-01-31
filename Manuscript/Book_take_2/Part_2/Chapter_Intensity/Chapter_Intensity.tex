@@ -56,7 +56,7 @@ is the ratio
 of total energy ($\dot{T}$) 
 and value ($\dot{X}$) outflow rates 
 from an economic sector, 
-such that for the $j^{\mathrm{th}}$ goods and services sector,
+such that for the $j^{\mathrm{th}}$ sector,
 
 \begin{equation} \label{eq:epsilon_output_def_g_and_s}
 	\varepsilon_{j} \equiv \frac{\dot{T}_{j}}{\dot{X}_{j}},
@@ -80,13 +80,7 @@ thereby providing an estimate of the true energy cost of products.
 For inter-sector flows, we have
 
 \begin{equation} \label{eq:epsilon_transfers_1}
-	\varepsilon_{jk} = \frac{\dot{T}_{jk}}{\dot{X}_{jk}}.
-\end{equation}
-
-\noindent{}Furthermore, we note that 
-
-\begin{equation} \label{eq:epsilon_equiv_1}
-	\varepsilon_{j} = \varepsilon_{jk}
+	\varepsilon_{j} = \frac{\dot{T}_{jk}}{\dot{X}_{jk}}.
 \end{equation}
 
 \noindent{}for all $k$, because the energy intensity 
@@ -95,7 +89,7 @@ All goods produced by a sector
 are produced at the average energy intensity 
 of that sector.\footnote{If this approach is unsatisfactory, 
 the sector may be divided into sub-sectors 
-with different energy intensities.}
+each with its own energy intensity.}
 
 We define the input-ouput ratio ($a_{ij}$)\nomenclature[a]{$a$}{input-output ratio [-]}
 that represents the input 
@@ -646,7 +640,7 @@ as shown in Appendix~\ref{chap:Estimating_A}.
 Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 
 \begin{equation} \label{eq:epsilon_derivation_1}
-	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \boldsymbol{\epsilon}
+	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \boldsymbol{\varepsilon}
 	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 	+ \vec{B}_{waste}
 	+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}
@@ -657,7 +651,7 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 \noindent{}and
 
 \begin{equation} \label{eq:epsilon_derivation_2}
-	\boldsymbol{\epsilon}
+	\boldsymbol{\varepsilon}
 	= {\left[ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \right]}^{-1}
 		\left[
 			\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
@@ -672,8 +666,8 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 from Formula 6.2, p. 308 in Beyer~\cite{Beyer:1991vd}
 
 \begin{equation} \label{eq:matrix_identity_Beyer}
-	{\left(\vec{A}\vec{B}\vec{C}\right)}^{-1} 
-	= \vec{C}^{-1} \vec{B}^{-1} \vec{A}^{-1}
+	{\left(\vec{F}\vec{G}\vec{H}\right)}^{-1} 
+	= \vec{H}^{-1} \vec{G}^{-1} \vec{F}^{-1}
 \end{equation}
 
 \noindent{}to the right side of Equation~\ref{eq:epsilon_derivation_2} to obtain
@@ -715,6 +709,10 @@ on the right side of Equation~\ref{eq:epsilon_derivation_3} by $-1$ to obtain
 		\right].
 \end{equation}
 
+\noindent{}Comparison between Equations~\ref{eq:epsilon_leontief_with_A}
+and~\ref{eq:B-epsilon} shows that 
+the matrix form is an extension of the algebraic form of the energy intensity equation.
+
 Equation~\ref{eq:epsilon_leontief_with_A} provides a means 
 to estimate energy intensity ($\boldsymbol{\varepsilon}$)
 of the sectors of the economy, under the assumption that
@@ -748,7 +746,7 @@ Using national accounts data for 1967,
 Bullard and Herendeen calculated the
 total energy consumption rate~($\dot{T}$)
 of the US automobile industry as 
-$13,240 \times 10^{15}$~joules/year~$= 13.24$~EJ,
+$13,240\times10^{15}$~J/year (13.24~EJ/year),
 which was around 20\% of the nation's
 energy consumption in that year.\cite{Bullard1975}
 Around half of this energy was directly
@@ -821,14 +819,14 @@ DIRECT method values only.}
 \label{tab:C_and_H_selected_energy_intensities}
 \end{table}
 
-However, the Costanza results~\cite{Costanza:1984tq} 
-(and nearly all I-O results in the literature)
-assume the following: negligible energy input from society 
-(which is probably a reasonable assumption for the US), 
-steady-state economic conditions with negligible accumulation 
-of embodied energy in economic sectors 
-(which probably didn't exist in the US in the late 1960s), and 
-negligible energy embodied in wastes (which is untrue).
+% However, the Costanza results~\cite{Costanza:1984tq} 
+% (and nearly all I-O results in the literature)
+% assume the following: negligible energy input from society 
+% (which is probably a reasonable assumption for the US), 
+% steady-state economic conditions with negligible accumulation 
+% of embodied energy in economic sectors 
+% (which probably didn't exist in the US in the late 1960s), and 
+% negligible energy embodied in wastes (which is untrue).
 
 The Economic Input-Output Life Cycle 
 Assessment~(EIOLCA) online tool~\cite{EIOLCA2014} 
@@ -895,38 +893,16 @@ iron and steel mills sector~(331110).
 \label{tab:EIOLCA_selected_energy_intensities}
 \end{table}
 
-As discussed in Section~\ref{sec:total_energy_accounting},
-all of these methods differ from the framework presented
-in this Chapter due to the assumption that embodied energy
-does not accumulate within economic sectors.
-This issue is discussed by 
-Bullard and Herendeen~\cite[p.273]{Bullard1975},
-where they state of capital goods that,
-
-\begin{quote}
-	these are not considered part of the 
-	inter-industry transactions but are 
-	listed as sales to final demand.
-\end{quote}
-
-They later offer calculation of industry
-energy intensity values (which will be discussed
-in greater depth in Chapter~\ref{chap:intensity})
-including and excluding these capital goods
-flows~\cite[p.489]{Bullard1975},
-finding the inclusion of these flows adds
-on average 3--6\% to the sector
-energy intensity.
-
+All of these estimates use product-focused accounting frameworks.
+In Section~\ref{sec:prod_vs_physical}, 
+we recommend a physical accounting framework
 It would be interesting to know 
-how the above energy intensity results 
-(a)~change if the assumptions above are relaxed,\footnote{See 
-Section~\ref{sec:Implications_for_IO} for a discussion
-of the significance of these assumptions.}
+how the above energy intensity results vary
+(a)~if a physical accounting framework is employed,
 (b)~vary with time, and 
 (c)~vary across economies at different stages of industrialization.
 However, we know of no longitudinal estimates of the energy intensity of automobiles
-using the Input-Output method.
+using the EI-O method.
 In fact, the current account records, upon which the estimates 
 of energy intensity values above are based, are no longer
 maintained by the US government. 
