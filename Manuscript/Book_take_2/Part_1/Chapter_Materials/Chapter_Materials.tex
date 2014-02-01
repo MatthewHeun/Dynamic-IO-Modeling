@@ -472,9 +472,12 @@ electricity transmission lines.)
 \label{sec:A_materials}
 %%%%%%%%%%
 
-Our first example looks at the case where all processes within the economy occur within
-one sector---Society (1)---which exchanges materials with the biosphere\index{biosphere} (0) as depicted in
-Figure~\ref{fig:A_materials}.  We do not distinguish between production and consumption.
+Our first example looks at the case where 
+all processes within the economy occur within
+one sector---Society (1)---which exchanges materials 
+with the biosphere\index{biosphere} (0) as depicted in
+Figure~\ref{fig:A_materials}.  
+We do not distinguish between production and consumption.
 
 \begin{figure}[!ht]
 \centering{}
@@ -493,9 +496,11 @@ from the Biosphere\index{biosphere} (0). Waste resources
 Resources, or perhaps more accurately raw materials
 ($\dot{R}_{01}$), such as crude oil or iron ore, 
 and short-lived materials ($\dot{S}_{01}$), 
-such as oxygen or water that flow \emph{through} economic
-processes but are not literally \emph{embodied} within the output, 
-flow into the economy (1) from the biosphere\index{biosphere} (0).\footnote{Double 
+such as oxygen or water that flow 
+\emph{through} economic processes but are not 
+literally \emph{embodied} within the output, 
+flow into the economy (1) from the 
+biosphere\index{biosphere} (0).\footnote{Double 
 subscripts on quantities
 (e.g., $\dot{E}_{ij}$) indicate a flow 
 from sector $i$ to sector $j$. 
@@ -504,20 +509,23 @@ and the second index indicates the sector \emph{to} which a quantity flows.
 Single subscripts on quantities such as
 $E$ can mean one of two things: 
 $\dot{E}_{i}$ indicates the outflow of direct energy from sector $i$, 
-whereas $E_{i}$ denotes the direct energy content of sector $i$.} 
-These materials are processed within the economy into products ($\dot{P}_{1}$) 
-consisting of resource goods ($\dot{R}_{11}$), 
-short-lived goods ($\dot{S}_{11}$) and capital 
-goods\index{capital goods} ($\dot{K}_{11}$)
+whereas $E_{i}$ denotes the direct energy content of sector $i$.
+} 
+These materials are processed within the economy 
+into products ($\dot{P}_{1}$) consisting of 
+resource goods ($\dot{R}_{11}$), 
+short-lived goods ($\dot{S}_{11}$) and 
+capital goods\index{capital goods} ($\dot{K}_{11}$)
 which are able to be accumulated at some rate 
-$\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$ within the
-stock of materials within society\footnote{See
+$\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$ 
+within the stock of materials within society.\footnote{See
 Section~\ref{sec:people_as_stock} for more discussion on
-the inclusion of human beings as societal capital stock.}.
-Waste resources ($\dot{R}_{10}$) and used 
-short-lived materials/goods ($\dot{S}_{10}$)
-are returned to the biosphere\index{biosphere} without 
-accumulating in Society~(1). 
+the inclusion of human beings as societal capital stock.
+}
+Waste resources ($\dot{R}_{10}$) and 
+used short-lived materials/goods ($\dot{S}_{10}$)
+are returned to the biosphere\index{biosphere} 
+without accumulating in Society~(1). 
 Capital goods ($\dot{K}_{10}$) 
 are returned to the biosphere\index{biosphere} 
 when they are physically depreciated\index{depreciation}.
@@ -525,7 +533,7 @@ when they are physically depreciated\index{depreciation}.
 Drawing control volumes around both the 
 biosphere\index{biosphere}~(0) and society~(1)
 in Figure~\ref{fig:A_materials}, 
-we can consruct material accounting equations,
+we can construct material accounting equations,
 such that:
 
 \begin{align} \label{eq:A_CV_0}
@@ -596,19 +604,17 @@ since some resources are converted into
 short-lived goods ($\dot{S}_{11}$) or man-made capital ($\dot{K}_{11}$)
 and are only returned to the biosphere as either
 $\dot{S}_{10}$ or $\dot{K}_{10}$, respectively. 
-Hence,
-we may say that:
-
-\begin{equation}\label{eq:A_dR0_neq_0}
-	\frac{\mathrm{d}R_0}{\mathrm{d}t}
-	= \dot{R}_{10}
-	- \dot{R}_{01}
-	\neq 0.
-\end{equation}
-
-Additionally,
-and for similar reasons, we know that
-$\dot{S}_{01} \neq \dot{S}_{10}$,\footnote{While
+%Hence,
+%we may say that:
+%
+%\begin{equation}\label{eq:A_dR0_neq_0}
+%	\frac{\mathrm{d}R_0}{\mathrm{d}t}
+%	= \dot{R}_{10}
+%	- \dot{R}_{01}
+%	\neq 0.
+%\end{equation}
+Similarly, we know that
+$\dot{S}_{01} \neq \dot{S}_{10}$.\footnote{While
 this inequality may be true in theory,
 it may be that in practice,
 the large amount of material,
@@ -617,15 +623,16 @@ that passes straight through the economy ``unaffected,''
 i.e.\ without being embodied in products,
 is very large compared to the additional flow of short-lived goods
 produced within the economy,
-i.e.\ $\dot{S}_{11} << \dot{S}_{01}$.}
-such that:
-
-\begin{equation}\label{eq:A_dS0_neq_0}
-	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-	= \dot{S}_{10}
-	- \dot{S}_{01}
-	\neq 0.
-\end{equation}
+i.e.\ $\dot{S}_{11} << \dot{S}_{01}$.
+}
+%such that:
+%
+%\begin{equation}\label{eq:A_dS0_neq_0}
+%	\frac{\mathrm{d}S_0}{\mathrm{d}t}
+%	= \dot{S}_{10}
+%	- \dot{S}_{01}
+%	\neq 0.
+%\end{equation}
 
 %****BRH says, shouldn't this word be
 %"accounting" -- not accumulation -- given that is what we
@@ -633,8 +640,10 @@ such that:
 %Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
 %label for eqn. 2.5**** MIK - Agreed, changed to 'material balance'
 
-In this model, neither resources ($R$) 
-nor short-lived goods ($S$) accumulate within economic sectors, so we may also state:
+In this framework, neither resources ($R$) 
+nor short-lived goods ($S$) accumulate 
+within economic sectors, 
+so we may state:
 
 \begin{align}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}R_1}{\mathrm{d}t}				&
@@ -678,7 +687,7 @@ in the biosphere\index{biosphere}
 is that which is a waste\index{waste} flow 
 (capital depreciation\index{depreciation!capital})
 from the economy,
-e.g.\ worn-out machines in the scrap yard,
+(worn-out machines in the scrap yard),
 we may say that:
 
 \begin{equation} \label{eq:A_K0_balance}
@@ -691,26 +700,44 @@ we can make some further observations.
 Imagine following a kilogram of coal on its journey
 through the economy. It is pulled out of the earth as part
 of flow $\dot{R}_{01}$. 
-It enters the economy and is transformed into useful
-products (part of $\dot{P}_{1}$) and some is wasted ($\dot{R}_{10}$).
-Some of the coal is destined for metalurgical processes 
-(such as the production of steel)
-and so re-enters the economy within flow $\dot{R}_{11}$,
-because the carbon in the coal ends up physically
-\emph{embodied} within the steel.
-However, again,
-some of the coal is wasted,
-leaving the economy as flow $\dot{R}_{10}$. 
+It enters the economy and while most 
+is transformed into useful
+products (part of $\dot{P}_{1}$) some (hopefully small)
+fraction is wasted ($\dot{R}_{10}$).
 Some of the coal is destined for electricity generation
 and so re-enters the economy as part of flow $\dot{S}_{11}$,
-since the coal is \emph{not} physically embodied
+since the coal is \emph{not physically embodied}
 in the electricity and leaves the economy
 (in the form of carbon dioxide and ash)
 as part of flow $\dot{S}_{10}$.
-In summary, we may say that resources are destined
-to end up either as products or waste ``resources''
-and that short-lived materials flow ``straight through''
-the economy. 
+Some of the coal is destined for metallurgical processes 
+(such as the production of steel)
+and so re-enters the economy within flow $\dot{R}_{11}$,
+because the carbon in the coal ends up 
+\emph{physically embodied} within the steel in flow $\dot{P}_{1}$.
+Again,
+some of the coal is wasted (maybe within slag), 
+again leaving the economy as flow $\dot{R}_{10}$.
+The steel may re-enter the economy as part of
+the resource flow $\dot{R}_{11}$ and be manufactured
+into steel products (maybe a car) to leave as part of
+flow $\dot{P}_{1}$
+(again some being discharged within $\dot{R}_{10}$).
+At this point the carbon 
+(within the steel, within the car)
+re-enters the economy as part of flow $\dot{K}_{11}$
+and is accumulated within stock $K_{1}$.
+Here it sits until such time as it is depreciated,
+to leave the economy bound up in flow $\dot{K}_{10}$.
+In summary, we may say that short-lived materials flow 
+``straight through'' the economy and end up in the biosphere. 
+ Resources are destined
+to end up either as products or waste ``resources''.
+They cycle through the economy,
+entering and re-entering,
+until they are turned either into short-lived goods,
+whereupon they flow ``straight through'' into the biosphere,
+or they are turned into capital good and accumulate.
 As such,
 we may state that:
 
@@ -792,39 +819,29 @@ Equation~\ref{eq:A_CV_0a} states that the rate of ``accumulation''
 is dependent on the rates at which society extracts these materials
 from the biosphere ($\dot{R}_{01}$ and $\dot{S}_{01}$) and the rates
 of disposal of waste materials back to the biosphere ($\dot{R}_{10}$ 
-and $\dot{S}_{10}$). 
-
-**** Mik---Footnote or strike this paragraph. ****
-Notice however, that although Equation~\ref{eq:A_CV_0a} is true for total mass of materials,
+and $\dot{S}_{10}$).\footnote{Notice however, 
+that although Equation~\ref{eq:A_CV_0a} is true for total mass of materials,
 it does not account for the \emph{quality} of these materials.
 Society relies heavily on extracted resources from naturally
 occurring accumulations that are far from equilibrium with their surroundings,
 e.g.\ fossil fuel reservoirs or seams of high-grade ore. As these high quality
 material reserves are depleted and society must turn to lower grade reserves, 
 more energy and other economic factors (labor, capital, money) \emph{must} be 
-expended  in material extraction.\cite{Mudd2010} It is likely that the quality
+expended  in material extraction.\cite{Mudd2010} 
+It is likely that the quality
 of flow $\dot{R}_{01}$ is higher than flow $\dot{R}_{10}$ 
 (e.g.\ overburden from mining operations). 
 If this were not the case,
 $\dot{R}_{10}$ could be easily substituted 
 into the production process (i.e.\ recycled) thus
-offsetting the need for primary resource extraction\footnote{The
-issue of recycling is discussed in more detail in 
+offsetting the need for primary resource extraction. 
+The issue of recycling is discussed in more detail in 
 Section~\ref{sec:recycling}.
 The issue of material (and energy) quality 
 is discussed in more detail in 
-Section~\ref{sec:resource_quality_and_irreversibility}.}. 
-This relationship between 
-incoming high quality resources and emission of low
-quality waste is a general truth 
-for any thermodynamic process but is especially
-true for open systems operating far from 
-thermodynamic equilibrium 
-(of which every living system is an example). 
-Such systems maintain their internal structure by
-importing high quality energy and 
-materials~(negentropy) and exporting low quality
-energy and materials~(entropy).\cite{Schroedinger1947}
+Section~\ref{sec:resource_quality_and_irreversibility}. 
+}
+
 
 Substituting Equation~\ref{eq:A_S1_balance} 
 into Equation~\ref{eq:A_CV_1}, we obtain:
