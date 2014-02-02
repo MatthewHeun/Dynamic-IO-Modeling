@@ -705,8 +705,8 @@ we note that two important processes within a power plant are \emph{irreversible
 		The generator could be run as a motor by electricity to produce
 		mechanical work.
 		In theory,
-		electrical work and mechanical work are fully exchangeable,
-		in reality efficiency losses mean this is not quite the case.}}
+		electrical work and mechanical work are fully exchangeable;
+		in reality, efficiency losses mean this is not quite the case.}}
 \end{itemize}
 
 \noindent{}Thermal energy does not spontaneously flow from low temperature to high temperature.
@@ -775,6 +775,9 @@ burned to generate the electricity---i.e.\ the process is irreversible.
 **** Mik---Add a discussion here that links 
 EROI (Chapter 3, Example B) with resource quality. ****
 
+% Add a little vertical space to indicate a summary
+\vspace{5 mm}
+
 We recommend that future work be done to incorporate 
 concepts of resource quality and irreversibility 
 into our framework by accounting for flows and
@@ -786,13 +789,13 @@ destruction of exergy within economic processes.
 \label{sec:make-use}\index{co-products}
 %%%%%%%%%%
 
-The intersection between our materials, energy, and value accounting framework 
-and the I-O literature has been developed under the assumption 
+Our materials, energy, and value accounting framework 
+has been developed under the assumption 
 that each economic sector makes a single product ($\dot{P}$).
 In particular, the matrix mathematics of Chapter~\ref{chap:intensity}
 relies heavily on this assumption 
-from the early days of the I-O method.\cite{Bullard:1978vd}
-However, the I-O method has been extended 
+from the early days of the EI-O method.\cite{Bullard:1978vd}
+However, the EI-O method has been extended 
 in the literature to include
 co-products for each economic sector.\cite{Costanza:1984tq,Casler1984} 
 To do so, both \emph{make} and \emph{use} data are employed.
@@ -803,7 +806,7 @@ for the purposes of simplicity.
 The materials, energy, and value accounting framework
 presented herein is more easily understood 
 without the complexity of the make-use formulation 
-of the I-O method.
+of the EI-O method.
 However, work remains to adapt the materials and energy framework
 developed herein to the make-use formulation of the I-O method.
 
@@ -873,7 +876,7 @@ the framework presented is general enough to encompass either point of view.
 
 
 %%%%%%%%%% The Sun %%%%%%%%%%
-\section{What about the sun?}
+\section{What about the Sun?}
 \label{sec:emergy}
 %%%%%%%%%%
 
@@ -910,7 +913,7 @@ renewable energy\index{renewable energy}\index{energy!renewable|see{renewable en
 production sectors.
 Doing so would not account for longer-term storage
 of solar energy used to form fossil fuels, 
-but fossil fuels are already accounted by the $\dot{E}_{0}$ vector
+but fossil fuels are already accounted by the energy input vector ($\vec{E}_{0}$)
 in the framework presented in this book.
 
 A different approach that fully integrates solar 
@@ -937,8 +940,7 @@ There is debate in the literature about whether government\index{government sect
 and households\index{household sector} 
 (so-called ``final consumption'' Figure~\ref{fig:B_materials}) 
 should be endogenous to economic models.
-This debate is a discussion about the appropriate boundary
-for analysis.
+This debate is a discussion about the appropriate analysis boundary.
 Costanza~\cite{Costanza:1980ww} was the first to endogenize government and households, 
 because households provide services to the economy (labor) in exchange for wages 
 and government provides services to the economy in exchange for taxes, 
@@ -959,7 +961,7 @@ However, Equation~\ref{eq:epsilon_leontief_with_A}
 could be re-derived to endogenize 
 ``final consumption.''
 
-The total energy\index{total energy} accounting equation for final consumption (1)
+The total energy\index{total energy} accounting equation for Final Consumption (1)
 in Figure~\ref{fig:C_total_energy} can be written 
 analogously to Equations~\ref{eq:C-Total_Energy_Sec_2-b}
 and~\ref{eq:C-Total_Energy_Sec_3-b} as
@@ -1017,8 +1019,9 @@ of Equation~\ref{eq:epsilon_leontief_with_A}:
 	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
-				- \left. \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right|_{\mathrm{other}}
+				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 				- \vec{B}_{waste}
+				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
 		\right],
 \end{equation}
 
@@ -1026,8 +1029,9 @@ of Equation~\ref{eq:epsilon_leontief_with_A}:
 
 \begin{itemize}
 	\item{the vectors and matrices of Equations~\ref{eq:B_vec_def}--\ref{eq:gamma_hat_matrix_def}
-	and~\ref{eq:A_matrix_def} have been extended to include ``final consumption''~(1) and}
-	\item{ ``final consumption'' has been endogenized
+	and~\ref{eq:A_matrix_def} have been extended to include Final Consumption~(1) and}
+	
+	\item{Final Consumption~(1) has been endogenized
 	(the $\vec{T}_{1}$ term of Equation~\ref{eq:epsilon_leontief_with_A}
 	has been subsumed into the 
 	${(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}$
@@ -1040,7 +1044,7 @@ and~\ref{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}
 with updated economic data for a wider range of countries.\footnote{Costanza's
 analysis~\cite{Costanza:1980ww} was conducted using US data for 1963, 1967, and 1972.}
 Doing so could provide further insight on Costanza's result~\cite{Costanza:1980ww}
-that endogenizing ``final consumption'' reduces variation 
+that endogenizing Final Consumption (1) reduces variation 
 of energy intensity across all sectors of the economy ($\boldsymbol{\varepsilon}$).
 
 
@@ -1122,7 +1126,7 @@ Chapters~\ref{chap:materials}--\ref{chap:value}.
 	\item 
 		Firstly, $\vec{E}_{0}$ was defined as a flow 
 		from the biosphere to economic sectors
-		into which the energy \emph{physically} flows.
+		into which direct energy \emph{physically} flows.
 		It is inappropriate to route the energy elsewhere.
 	\item 
 		Secondly, Costanza and Herendeen's 
