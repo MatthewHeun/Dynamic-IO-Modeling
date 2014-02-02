@@ -111,6 +111,9 @@ Examples of direct energy flows include
 the chemical potential energy of coal\index{coal} inflows to an energy sector, 
 the thermal energy of process steam\index{steam} into a textile plant, and
 the thermal energy of CO$_2$ automobile exhaust.
+Each of these example flows is an example of a ``transfer in''
+or a ``transfer out,'' in the language 
+of Section~\ref{sec:accounting_in_everyday_life}.
 In each case, the material (coal, steam, and CO$_2$) 
 carries direct energy with it.
 Figure~\ref{fig:PERKS_energy_content} shows a corresponding 
@@ -125,21 +128,17 @@ from Figure~\ref{fig:PERKS_materials}.}
 \label{fig:PERKS_energy_content}
 \end{figure}
 
-**** Matt---tie back to the discussion in Chapter 2
-about transfers in and transfers out. 
-Also, highlight that energy can be neither created nor destroyed. ****
 For any boundary (around, say, a machine, a plant,
 a sector of the economy, or the entire economy itself), 
 the First Law of Thermodynamics says that 
 the accumulation rate 
-of direct energy ($E$)\nomenclature[E]{$E$}{direct energy [J]}
-within the boundary
-is equal to the sum of the signed direct energy flow rates 
-($\dot{E}$)\nomenclature[E]{$\dot{E}$}{direct energy flow rate [W]}
-across the boundary (where inflows are positive and outflows are negative)
+of direct energy within the 
+boundary $\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$\nomenclature[E]{$E$}{direct energy [J]}
+is equal to the sum of the incoming and outgoing direct energy transfer 
+rates ($\dot{E}$)\nomenclature[E]{$\dot{E}$}{direct energy flow rate [W]}
 less outflowing energy carried by wastes 
-($\dot{Q}_{out}$)\nomenclature[Q]{$\dot{Q}$}{waste heat flow rate [W]}: 
-energy is conserved.
+($\dot{Q}_{out}$)\nomenclature[Q]{$\dot{Q}$}{waste heat flow rate [W]}. 
+Energy is conserved: it be neither created nor destroyed.
 
 \begin{equation} \label{eq:First_Law_with_accumulation}
 	\frac{\mathrm{d}E}{\mathrm{d}t} = \sum \dot{E} - \sum \dot{Q}_{out}
@@ -516,7 +515,7 @@ Table~\ref{tab:auto_energy} shows the breakdown of energy by source.
 \centering
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Energy/images/PERKS_basic_unit_energy_auto_ind.pdf}
 \caption[Direct energy flows for the US Automobile Industry]
-{Direct energy flows for the US Automobile Industry using data from US Energy Information Administration. **** Use citation instead. ****}
+{Direct energy flows for the US Automobile Industry.\cite[Table 7.6]{EIA:2014aa}}
 \label{fig:PERKS_energy_auto}
 \end{figure}
 
