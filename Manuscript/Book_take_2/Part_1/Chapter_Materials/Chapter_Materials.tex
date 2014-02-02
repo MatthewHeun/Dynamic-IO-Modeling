@@ -22,7 +22,20 @@ I'm figgering on biggering and BIGGERING and \large BIGGERING
 % Always give a unique label
 \label{chap:materials} 
 
-\abstract*{[NEED TO ADD ABSTRACT HERE]}
+\abstract*{In this chapter we will develop a framework 
+for accounting material flows and accumulations within economies.
+We will begin by looking at accounting in everyday life
+before using concepts from thermodynamics, 
+such as system boundaries, control volumes as well as
+the First Law of Thermodynamics,
+to develop a rigorous accounting procedure.
+This procedure is applied first to a one-sector then 
+two-sector model of the economy,
+in order to build up to a general framework for material
+accounting.
+We then apply the framework to the real-world
+example of the US auto industry.
+ }
 
 %% \abstract{Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\newline\indent
 %% Please use the 'starred' version of the new Springer \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
@@ -119,14 +132,14 @@ has shaped the past and will continue to influence the future.
 In this section, we define rigorous ``counting'' methods that will be applied
 to money and energy throughout this book.
 
-**** Include somewhere in here the difference between \emph{flows} and \emph{funds}, 
-between \emph{efficient cause} and \emph{material cause}. Resources are 
-\emph{transformed} into products.****
+%**** Include somewhere in here the difference between \emph{flows} and \emph{funds}, 
+%between \emph{efficient cause} and \emph{material cause}. Resources are 
+%\emph{transformed} into products.****
 
 \subsection{Accounting in everyday life}
 
 We all count material (and non-material) stocks and flows every day,
-be it the eggs in our fridge, the gasoline we consume on our way to work
+be it the people in a room, the gasoline we consume on our way to work
 or the money in our bank account.
 Rigorous counting at the scale of whole economies 
 requires precise definition of
@@ -1245,9 +1258,9 @@ $\dot{P}_{1}$ and $\dot{P}_{2}$ as:
 	+ \dot{K}_{22},
 \end{align}
 
-
-\noindent Again, remembering that resources and short-lived
-goods do not accumulate within any sectors of the economy:
+\noindent Again, remembering that resources ($R$) 
+and short-lived goods ($S$) do not accumulate 
+within any sectors of the economy:
 
 \begin{align}\label{eq:dR_and_dS_zero}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}			&
@@ -1294,7 +1307,7 @@ for each of the sectors of the economy:
 \end{align}
 
 We may rearrange these equations in terms of
-the important variable.
+the important variables to obtain:
 
 \begin{align}
 \label{eq:B_P1a}
@@ -1321,7 +1334,7 @@ the important variable.
 Substituting
 Equations~\ref{eq:B_R0}-\ref{eq:B_dK0}
 into Equation~\ref{eq:B_CV_0}, 
-we obtain:
+gives:
 
 \begin{align} \label{eq:B_CV_0a}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
@@ -1380,10 +1393,11 @@ in which case we obtain:
 \end{align}
 
 \noindent{}which tells us that accumulation 
-of man-made capital ($K$) is dependent
-only on inflows of capital goods into the 
-sector~($\dot{K}_{2j}$) and depreciation
-of capital to the biosphere ($\dot{K}_{j0}$).
+of man-made capital ($K$) in each sector ($j$)
+is dependent only on inflows of capital goods 
+into that sector~($\dot{K}_{2j}$) and 
+depreciation of capital to the biosphere 
+from that sector ($\dot{K}_{j0}$).
 
 Now, substituting
 Equations~\ref{eq:B_P1_def}~and~\ref{eq:B_P2_def},
@@ -1410,8 +1424,9 @@ we obtain:
 \end{align}
 
 \noindent{}to which we may make the 
-substitution of the depreciation term (as before)
-and rearrange to obtain:
+substitution of the depreciation term 
+(as in Example A) and rearrange 
+to obtain:
 
 \begin{align} 
 \label{eq:B_CV_1d}
@@ -1433,25 +1448,34 @@ and rearrange to obtain:
 	+ \gamma_{K_{2}}K_{2}.
 \end{align}
 
-Equation~\ref{eq:B_CV_2d} tells us that the resources
-extracted and used by 
+Equation~\ref{eq:B_CV_2d} tells us that 
+the resources extracted and used by 
 the production sector~($\dot{R}_{02} - \dot{R}_{20}$)
-are for the purpose of:
+are for the purposes of: 
+%building up capital stock
+%in the production sector
+%$\left(\frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$;
+%manufacturing goods for final consumption
+%$\left(\dot{R}_{21} + \dot{S}_{21} + \dot{K}_{21}\right)$;
+%providing short-lived goods to support the 
+%production sector ($\dot{S}_{22}$); and
+%overcoming depreciation of production 
+%capital stock ($\gamma_{K_{2}}K_{2}$).
 
 \begin{itemize}
-	\item building up capital stock
+	\item{building up capital stock
 	in the production sector
-	$\left(\frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$
-	\item manufactured goods 
+	$\left(\frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$;}
+	\item{providing goods 
 	for final consumption
 	$\left(\dot{R}_{21}
 	+ \dot{S}_{21}
-	+ \dot{K}_{21}\right)	$,
-	\item providing short-lived goods
+	+ \dot{K}_{21}\right)	$;}
+	\item{providing short-lived goods
 	to support the 
 	production sector ($\dot{S}_{22}$), and
 	\item overcoming depreciation of production 
-	capital stock ($\gamma_{K_{2}}K_{2}$).
+	capital stock ($\gamma_{K_{2}}K_{2}$).}
 \end{itemize}
 
 Adding these two equations together,
@@ -1474,24 +1498,26 @@ we obtain:
 \end{align}
 
 \noindent{}which tells us that
-the depletion of natural capital
+the depletion of natural resources
 $\left(\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
-is used within the economy to:
+is used within the whole economy to:
 
 \begin{itemize}
-	\item build up capital stock
+	\item{build up capital stock
 	$\left(\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
-	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$,
-	\item produce short-lived goods
+	+ \frac{\mathrm{d}K_{2}}{\mathrm{d}t}\right)$;}
+	\item{produce short-lived goods
 	($\dot{S}_{11}
 	+ \dot{S}_{12} 
 	+ \dot{S}_{21}
-	+ \dot{S}_{22}$), and
-	\item overcome depreciation
+	+ \dot{S}_{22}$); and}
+	\item{overcome depreciation
 	$\left(\gamma_{K_{1}}K_{1}
-	+ \gamma_{K_{2}}K_{2}\right)$.
+	+ \gamma_{K_{2}}K_{2}\right)$.}
 \end{itemize}
 
+We now turn to a three-sector model of the economy
+in order to generalize these results.
 
 %As in Equation~\ref{eq:A_dK_1/dt_b},
 %we may define the disposal of man-made capital
@@ -1558,7 +1584,7 @@ into and out of the biosphere\index{biosphere}
 	- \dot{S}_{0},
 \end{align}
 
-\noindent which may be rewritten as:
+\noindent{}which may be rewritten as:
 
 \begin{align} \label{eq:C_CV_0_b}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
@@ -1571,6 +1597,8 @@ into and out of the biosphere\index{biosphere}
 	- \dot{S}_{0},
 \end{align}
 
+\noindent{}where the sum represents flows
+into the biosphere from each of the other $i$ sectors.
 Similarly, flows for the other sectors may be written:
 
 \begin{align} \label{eq:C_CV_1}
@@ -1794,7 +1822,7 @@ resources to the energy sector~(2).}
 	= 0,
 \end{align}
 
-We may rearrange these equations
+\noindent{}and then rearrange the equations
 in terms of the important variable:
 
 \begin{align}
@@ -1915,14 +1943,14 @@ more general result:
 	- \dot{K}_{j0}.
 \end{align}
 
-Equation~\ref{eq:C_CV_K_balance} states that
-for any economic sector,
-the accumulation of man-made capital stock
+\noindent{}Equation~\ref{eq:C_CV_K_balance} states that
+for any economic sector, $j$,
+the accumulation of man-made capital stock ($K_{j}$)
 is dependent only on inflows of capital stock
 from other economic sectors
 ($\dot{K}_{ij}$)
 and depreciation of capital stock back to the
-biosphere ($\dot{K}_{j0}$).
+biosphere from sector $j$, ($\dot{K}_{j0}$).
 
 Instead,
 substituting the alternative formulation for $\dot{P}$
@@ -2021,7 +2049,7 @@ we obtain:
 \noindent{}which,
 after substituting for 
 the depreciation term ($\dot{K}_{i0}$),
-simplifies to:
+can be simplified to:
 
 \begin{align}\label{eq:C_CV_all_a}
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
@@ -2045,18 +2073,19 @@ Equation~\ref{eq:C_CV_all_b} tells us that,
 depletion of natural resources in the 
 biosphere~$\left(- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
 by the economy
-are used for the purposes of:
+is used for the purposes of:
 
 \begin{itemize}
 	\item increasing man-made capital stocks
-	within the economy~$\left(\frac{\mathrm{d}K_{j}}{\mathrm{d}t}\right)$
+	within the economy~$\left(\frac{\mathrm{d}K_{j}}{\mathrm{d}t}\right)$;
 	\item providing short-lived goods exchanged within the
-	economy~($\dot{S}_{ij}$), and
+	economy~($\dot{S}_{ij}$); and
 	\item overcoming depreciation of man-made
 	capital stocks~($\sum_{j}\gamma_{K_{j}}K_{j}$).
 \end{itemize}
 
-\noindent{}This issue will be discussed in greater detail
+\noindent{}This implications of this 
+will be discussed in greater detail
 in Section~\ref{sec:SSE} concerning 
 sustainable scale of the economy and
 the concept of a steady-state economy.
@@ -2078,6 +2107,9 @@ into the biosphere\index{biosphere} (waste\index{waste})
 and a $1\times1$ matrix of flows 
 solely within the biosphere\index{biosphere} (environment), 
 that do not enter the economy.
+
+We now see how the formulation derived here may be
+applied to the real-world case of the US auto industry.
 
 \begin{figure}[!ht]
 \centering\
@@ -2115,52 +2147,52 @@ production of automobiles, directly as
 resources~($\dot{R}$) as well as short-lived 
 materials~($\dot{S}$) and capital goods~($\dot{K}$)
 outlined in Table~\ref{tab:materials_auto}. 
-
 %**** MCD---split list into resources, short-lived and capital flows as table both inputs and outputs. 
 % Maybe add annotation to Figure~\ref{fig:PERKS_materials_auto} ****
-
 %**** MCD - Talk about the different materials:
 %steel, glass, rubber, concrete, electricity, plastic
 %finished product is automobile. 
 %Emissions to air and water.
 %Talk to financial (value) flows in Section~\ref{sec:value_auto} 
 %as proxy for physical flows****
-
-**** This paragraph is kind-of unclear. Rewrite for clarity?---MKH ****
-Data on the rest of the flows **** What do you mean by ``rest of the flows?''
-Do you mean that mass-based, as opposed to dollar-based data are hard to find? ---MKH ****
+%**** This paragraph is kind-of unclear. Rewrite for clarity?---MKH ****
+Data on the actual flows %**** What do you mean by ``rest of the flows?''
+% Do you mean that mass-based, as opposed to dollar-based data are hard to find? ---MKH ****
 at the industry level
 is very hard to obtain.\footnote{The issue of 
 lack of physical flow data is discussed in 
-Section~\ref{sec:Data}.}
+Section~\ref{sec:Data}.
+}
 In Europe,
 economy-wide material flow accounts (EW-MFA)
-have been produced for each of the member 
-states.\cite{EUROSTAT2011} 
+have been produced by measurement of the physical flows
+of materials into and out of economies of 
+each of the member states.\cite{EUROSTAT2011} 
 Work is ongoing to characterize the inter-sectoral
-flows of materials.\cite{ConAccount1998}
-These material flows could be modeled in much the same
-manner as traditional EI-O estimates energy flows
-through the economy,
-by converting financial data 
+flows of these materials \cite{ConAccount1998}
+which can be modeled by converting financial data 
 (which is available, as discussed in 
 Section~\ref{sec:value_auto}) into physical flow data
 via knowledge of the entry points of materials into the economy,
-such as iron or bauxite mining sectors.
+i.e.\ via the extraction industries.
 
-A number of studies have looked at 
+A number of studies have instead looked at 
 the material and energy flows 
 associated with specific or representative vehicle manufacturing 
-processes.\cite{Sullivan1998, MacLean1998,Schweimer2000,
+\emph{processes}, rather than industry-level
+activity.\cite{Sullivan1998, MacLean1998,Schweimer2000,
 McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}
 The US automobile industry is composed
 of many of these manufacturing processes.
-According to the International Organization of Motor Vehicle Manufacturers (OICA), 
-2.7 million cars were produced in 2010 in the US.\cite{Motor-Vehicle-Manufacturers-OICA:2014aa}
-In 2006, prior to the 
-Great Recession, the automobile industry purchased 
+According to the International Organization of 
+Motor Vehicle Manufacturers~(OICA), 
+2.7 million cars were produced in 2010\footnote{In 2006, 
+prior to the Great Recession, 
+the automobile industry purchased 
 40 trillion kJ ($4.0 \times 10^{13}$ kJ) of total energy and 
 produced 4.4 million cars.
+} 
+in the US.\cite{Motor-Vehicle-Manufacturers-OICA:2014aa}
 In theory,
 a representation of the industry-level flows
 could be ``built up'' by assuming that the results from
@@ -2197,8 +2229,9 @@ and capital goods ($\dot{K}$)
 using data from~\cite{Sullivan1998, MacLean1998,Schweimer2000,
 McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}.
 This list is illustrative and by no means exhaustive.
-**** I thought there is very little COAL input to the auto industry. 
-Compare to Becky's table.---MKH ****}
+%**** I thought there is very little COAL input to the auto industry. 
+%Compare to Becky's table.---MKH ****
+}
 \begin{center}
  \begin{tabular}{p{4cm}p{1cm}p{5.2cm}}
 \toprule 
@@ -2217,17 +2250,22 @@ Resources from other sectors	& $\dot{R}_{ij}$		&	 cast iron (engine block);					
 												&								&	 rubber (tires);											\\
 												&								&	 plastic (bodywork, interiors, seals)			\\
 												&								&	 petroleum (paints, lubricants)					\\[0.15cm]
-Short-lived from other sectors	& $\dot{S}_{ij}$		&	 coal, oil, natural gas, electricity				\\
+Short-lived from other sectors	& $\dot{S}_{ij}$		&	 energy (oil, natural gas, electricity)			\\
 												&								&	 water (process)										\\
 												&								&	 petroleum (solvents)								\\
-												&								&	 paper (towels)										\\[0.15cm]
+												&								&	 plastic (packaging)									\\
+												&								&	 paper (towels, packaging)						\\[0.15cm]
 Capital from other sectors		& $\dot{K}_{ij}$		&	 steel (buildings, equipment)					\\
 												&								&	 concrete (buildings)								\\
 												&								&	 	glass (windows, screens)						\\
 												&								&	 plastic (fixtures, fittings, equipment)		\\
 												&								&	 	petroleum (paints, lubricants)				\\
 \midrule
-Product output							&	$\dot{P}_{j}$		&	finished automobile									\\
+Product output							&	$\dot{P}_{j}$		&	auto parts and finished automobiles			\\[0.15cm]
+\midrule
+Resource self-consumption		&	$\dot{R}_{jj}$		&	auto parts												\\[0.15cm]
+Short-lived self-consumption   &	$\dot{S}_{jj}$		&	none **** MCD---not sure about this ****\\[0.15cm]
+Capital self-consumption			&	$\dot{K}_{jj}$		&	finished automobiles								\\[0.15cm]
 \midrule
 Resources to biosphere			& $\dot{R}_{j0}$		&	trimmings and dust (metal, plastic, rubber)	\\[0.15cm]
 Short-lived to biosphere			& $\dot{S}_{j0}$		&	air emissions (GHG, NO$_x$, SO$_x$)		\\
@@ -2245,6 +2283,34 @@ Capital to biosphere					& $\dot{K}_{j0}$	&	discarded equipment								\\
 \section{Summary}
 \label{sec:materials_summary}
 %%%%%%%%%%
+
+In this chapter we saw how we all use accounting in our everyday lives
+to count not just physical things (people, apples) but also non-physical things
+(money). We developed a rigorous procedure for accounting by defining the 
+\emph{what}, \emph{when} and \emph{where}: what are we counting;
+when do we begin and end counting and where is our system
+boundary (control volume). We saw that some things that we count (apples) can be
+created and destroyed but other things (mass, energy)
+are never created or destroyed.
+
+We then applied this accounting procedure to materials 
+flowing through an economy. 
+We defined four different types of materials: \emph{resources},
+\emph{short-lived goods} and \emph{capital} which are used to make
+\emph{products} and specified that only capital 
+may accumulate within economic sectors.
+We used these definitions in three examples,
+building from a one-sector model of the economy,
+to a general framework for flows (and accumulation) of materials.
+We then applied the framework to the real-world example of
+the US auto industry.
+We categorized the types of materials used to produce
+automobiles,
+but also found that industry-level data is difficult to obtain.
+
+In the following two chapters of Part~\ref{part:matter},
+we will apply our accounting procedure to direct energy (Chapter~\ref{chap:direct_energy})
+and embodied energy (Chapter~\ref{chap:embodied_energy}.
 
 \bibliographystyle{unsrt}
 \bibliography{../../EROI_review_v2}
