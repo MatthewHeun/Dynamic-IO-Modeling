@@ -37,7 +37,7 @@
 the detailed development of our dynamic framework for material,
 energy, and value accounting.
 The first implications are for the energy I-O method itself. 
-We recommend a physical accounting method that fully
+We recommend a physical accounting framework that fully
 accounts for capital stock and energy input from society (final consumption)
 to the economy.
 We then discuss implications for economic ``development,''
@@ -64,7 +64,7 @@ implications for the Energy Input-Output (EI-O) method itself,
 implications for economic ``development,''
 implications for recycling, reuse, and dematerialization, and
 comparisons between our framework and the notion of a steady-state economy.
-We begin by examining the EI-O method itself 
+We begin by examining the EI-O method 
 through the lens of our framework.
 
 
@@ -792,8 +792,7 @@ including
 Across the world, economic health and well-being 
 is measured almost exclusively 
 by Gross Domestic Product (GDP). 
-If GDP grows, the economy is said to be growing.
-\footnote{GDP 
+If GDP grows, the economy is said to be growing.\footnote{GDP 
 	is not the only indicator of well-being available; 
 	there are a few other measures in use.
 	The Human Development Index (HDI) is a globally accepted measure 
@@ -989,8 +988,6 @@ we encourage further research in all of these areas.
 \label{sec:recycling}
 %%%%%%%%%%
 
-%**** Mik: take a shot a rewriting. **** MCD---shot taken! ****
-
 Dematerialization is the idea that economic activity can be unlinked 
 from material or energy demands.\cite{FischerKowalski:2011uo} 
 One method for dematerializing an economy 
@@ -1001,20 +998,11 @@ and depreciation of
 capital 
 stock~$\left(\hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}\right)$
 that would otherwise have
-been expended to the biosphere.\footnote{The other prevailing theory in the economics literature, that
+been discarded to the biosphere.\footnote{The 
+other prevailing theory in the economics literature, that
 dematerialization will occur as the economy substitutes away from production of material goods 
- toward information and services, has been strongly challenged by ecological economists. See~\cite{bartelmus2003,parenelli2004}, for example.
-
-
-***ADD CITE (bartelmus2003) Bartelmus, Peter. “Dematerialization and Capital Maintenance: Two Sides of the Sustainability Coin.” Ecological Economics 46, no. 1 (August 2003): 61–81. doi:10.1016/S0921-8009(03)00078-8. **** 
-
-****ADD CITE (parinello2004) Parrinello, Sergio. “The Service Economy Revisited.” Structural Change and Economic Dynamics 15, no. 4 (December 2004): 381–400. doi:10.1016/j.strueco.2004.01.001. ****}
-
-
-
-%**** MCD - I removed the following sentence as I don't agree with it. ****
-% The impact of recycling can be seen in the I-O formulation 
-% only when depreciation and accumulation terms are included. 
+toward information and services, has been strongly challenged 
+by ecological economists.\cite{Bartelmus:2003vi,parrinello2004service}}
 
 In Chapter~\ref{chap:intensity},
 we defined the rate of accumulation 
@@ -1035,23 +1023,14 @@ One effect of recycling is to reduce the magnitude
 of the waste 
 $\left(\vec{B}_{waste}\right)$
 and depreciation 
-$\left(\hat{\boldsymbol{\gamma}}_{K}\right)$ 
-terms,
-since for a given level of capital 
-stock~$\left(\vec{B}_{K}\right)$
-the amount of depreciation to the 
-biosphere $\left(\hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}\right)$
-will be lower due to the fraction that
-is now recycled.
-As can be seen by looking at 
-Equation~\ref{eq:matrix_leontief},
-this indicates that 
-recycling of material in an economy, 
-by reducing both $\vec{B}_{waste}$ 
+$\left(\hat{\boldsymbol{\gamma}}_{K}\right)$ terms.
+As can be seen in Equation~\ref{eq:matrix_leontief},
+reducing both $\vec{B}_{waste}$ 
 and~$\hat{\boldsymbol{\gamma}}_{K}$, 
 puts \emph{upward} pressure on the accumulation of 
 energy embodied in capital stock
-$\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
+$\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$,
+all other things being equal.
 
 Recycling has a mixed effect on energy demand ($\vec{E}_{0}$). 
 Because recycled materials can displace newly-produced material 
@@ -1059,16 +1038,18 @@ in the economy and society,
 recycling will tend to reduce energy demand ($\vec{E}_{0}$). 
 However, recycling processes require energy to operate, 
 thereby putting upward pressure on energy demand ($\vec{E}_{0}$). 
-If the energetic cost of recycling is lower than that of obtaining materials
-from virgin resources, as is the case for many metals, 
-e.g.\ aluminum~\cite{Chapman1975}, 
+If the energetic cost of recycling is lower than 
+the energetic cost of obtaining virgin materials, 
+as is the case for many metals
+(e.g.\ aluminum~\cite{Chapman1975}), 
 the result is a net reduction of energy demand 
 from the biosphere ($\vec{E}_{0}$). 
 Berry and Fels found that recycling of the material in automobiles
-would result in 12,640 kW-hr of energy reduction per vehicle.\cite[p. 15]{Berry:1973vo}
+would result in energy reduction of 12,640 kW-hr per vehicle.\cite[p.~15]{Berry:1973vo}
 Therefore recycling will also put \emph{downward} pressure on 
 the growth of embodied energy in the economy
-$\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$. 
+$\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$,
+via reduced $\vec{E}_{0}$, all other things being equal. 
 
 If recycling produces a net reduction in energy demand ($\vec{E}_{0}$), 
 % i.e.\ if the effect of displaced production dominates over the effect 
@@ -1097,63 +1078,55 @@ $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$.
 However,
 as will be discussed in Section~\ref{sec:material_quality},
 recycled materials can never entirely replace
-the need for new materials.
+the need for virgin materials.
+
 
 %%%%%%%%%% Implications %%%%%%%%%%
 \section{Comparison to a steady-state economy}
 \label{sec:SSE}
 %%%%%%%%%%
-Growth and development are connected to the notion of  a steady-state economy.
+
 \begin{quotation}
-\emph{Growth means larger jaws and a bigger digestive tract for more rapidly converting 
-more resources into more waste, in the service of unexamined and frequently 
-destructive individual wants. Development means better digestion of a} non-growing 
-throughput\emph{, and more 
-worthy and satisfying goals to which our life energies could be devoted.~\cite[emphasis added]{Daly2012}}
-
-
-\hfill---Herman Daly
+	Growth means larger jaws and a bigger digestive tract 
+	for more rapidly converting more resources into more waste, 
+	in the service of unexamined and frequently destructive 
+	individual wants.
+	Development means better digestion of a non-growing throughput, 
+	and more worthy and satisfying goals to which our life energies could be devoted.
+	**** Get citation from Becky. ****\cite{Daly2012}
 \end{quotation}
 
 As discussed in Chapter~\ref{chap:intro},
-the human economy is a subset of the biosphere which is a
-finite, non-growing system,
-\emph{open} to flows of solar energy but \emph{closed}
-to material transfers.
-Because the biosphere is finite in size,
-the human economy cannot physically grow indefinitely.
+the human economy is a subset of the biosphere, 
+a finite, non-growing system.
+Thus, the human economy cannot physically grow indefinitely.
 The concept of a non-growing or ``steady-state'' economy
 has existed for centuries.
+
 There are a number of different
 conditions that may characterize a system as steady-state.
 In thermodynamics,
-the condition of a zero rate of accumulation
-of some stock, $x$
-$\left(\frac{\mathrm{d}x}{\mathrm{d}t} = 0\right)$
-is normally used to define steady state conditions.\footnote{Or,
-more generally,
-a change in any property over time
-$\left(\frac{\partial p}{\partial t}\right)$.}
-
-
+steady state is characterized by unchanging system properties ($p$),
+such that $\left(\frac{\partial p}{\partial t}\right) = 0$.
 In ecological economics, a steady-state
 economy has been defined as a constant rate
-of throughput that maintains the stock
-of ecological capital as well as the ability for the population
-to live a qualitatively well-lived life.~\cite[p. 32]{Daly1996}  This is consistent
-with the zero rate of accumulation of stock. Ecological
-capital is not drawn down, nor is manufactured
-capital quantifiably increased. Increases in living standards result from economic ``development,'' in which qualitative 
-improvement in life occurs through increases in ``efficiency, technology, and ethics.''
-~\cite[167]{Daly1996} 
+of material throughput that maintains the stock
+of ecological capital and provides a qualitatively well-lived life 
+for the population.**** Need citation. ****\cite[p.~32]{Daly1996}  
+This definition is consistent
+with zero rate of accumulation of stock. 
+Ecological capital is not drawn down, 
+nor is manufactured capital quantifiably increased. 
+Increases in living standards result from economic ``development,'' 
+in which qualitative 
+improvement in life occurs through increases 
+in ``efficiency, technology, and ethics.''~\cite[p.~167]{Daly1996} 
 
 Two other conditions that might define a steady-state
-economy are
-constant GDP or constant population.
-Our framework,
-as outlined here,
-can address the first three steady-state conditions.
-The fourth condition, constant population, could be
+economy are constant GDP or constant population.
+Our framework, can address the first three steady-state conditions
+(constant capital stock, constant throughput, and constant GDP).
+The fourth condition (constant population) could be
 accommodated with some adaptation of the 
 framework. 
 The issue of human population as part of society's
@@ -1207,8 +1180,8 @@ reduces to:
 	+ \sum_{j}\gamma_{K_{j}}K_{j}.
 \end{align}
 
-A number of interesting concepts may be understood in
-relation to Equation~\ref{eq:C_CV_all_c}. 
+A number of interesting concepts may be understood via
+Equation~\ref{eq:C_CV_all_c}. 
 Firstly,
 if our steady-state economy is to be supported
 sustainably,
@@ -1302,7 +1275,7 @@ This is often referred to as the ``scale'' issue---how
 large is the (currently growing) human economy in relation
 to the finite, non-growing biosphere of which it is a sub-system?
 Growth of the human economy must either displace other natural
-ecosystems (replacing old growth forest for crops)
+ecosystems (replacing old growth forest with cultivated crops)
 or deplete natural capital stocks, be they 
 renewable (fisheries) or 
 non-renewable (fossil fuels).
@@ -1338,7 +1311,7 @@ Thus, within the constant throughput constraint,
 increasingly effective use of materials could
 theoretically allow increasing accumulation
 of man-made capital ($K$) 
-and increasing flow of short-lived goods ($\dot{S}$)
+and increasing flow of short-lived goods ($\dot{S}_{ij}$)
 as society learns to use resources better.
 Eventually,
 physical limits would entail that capital
@@ -1360,16 +1333,18 @@ the biosphere can assimilate.
 %++++++++++++++++++++++++++++++++++++++++
 \subsection{Constant GDP}
 
-Although a steady-state economy is based on constant levels of \emph{material} throughput,
+
+**** Mik---review this section. Becky added some stuff, 
+and I took a shot at editing it.---Matt ****
+
+Although one definition of a steady-state economy is
+based upon constant levels of \emph{material} throughput,
 it is possible to examine the implications of constraining the \emph{value} of 
-GDP to be constant.\footnote{This is a theoretical exercise, as Daly takes
-great pains to be clear that the steady-state economy is materially-based. "It is not
-to be thought of as 'zero growth in GNP','' he says.~\cite[p. 32]{Daly1996}}
-%The issue of GDP and economic ``development'' 
-%has already been discussed in 
-%Section~\ref{sec:implications_for_development}. 
-%However,
-%the case of zero growth in GDP was not.
+GDP to be constant.\footnote{This is a theoretical exercise, 
+	as Daly takes great pains to be clear that 
+	the steady-state economy is materially-based. ``It is not
+	to be thought of as `zero growth in GNP'.''~\cite[p. 32]{Daly1996}}
+
 Within our framework,
 a condition of constant GDP would be
 characterized by the following equation:
@@ -1377,17 +1352,17 @@ characterized by the following equation:
 \begin{equation}\label{eq:const_GDP}
 	\frac{\mathrm{d}}{\mathrm{d}t}\left(GDP\right)
 	=	\sum\limits_{j}\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{X}_{j}\right)
-	= 0
+	= 0.
 \end{equation}
 
-Since,
+Because,
 under the subjective theory of value,
 no value is attributed to the flow of materials
 to or from the biosphere,
 it is unclear what the impact constant GDP would be
 on capital stock ($K$)
 or material throughput
-(extraction and waste disposal).
+(both extraction and waste disposal).
 If we constrained $\dot{R}_{0}$ and
 $\dot{S}_{0}$, 
 it is likely that economic growth would 
@@ -1398,9 +1373,12 @@ economic growth may act to constrain
 material throughput,
 though this is certainly not assured.
 
-While restraining GDP may not achieve the desired restraint on material throughput,
-increasing GDP may not produce the desired increase in material well-being, either. This is particularly 
-true for countries that have already achieved high levels of wealth.  Many authors argue that increasing GDP
+Although restraining GDP may not achieve the desired restraint on material throughput,
+increasing GDP may not produce a desired increase 
+in material well-being, either. 
+This is particularly 
+true for countries that have already achieved high levels of wealth.  
+Many authors argue that increasing GDP
 no longer guarantees increasing welfare~\cite{G-R1975a, Wackernagel1996,
 Cobb1999, Daly2006, Costanza2014} 
 for two main reasons:
@@ -1408,15 +1386,22 @@ for two main reasons:
 	\item firstly, that the costs of growth in GDP (e.g., externalities 
            and defensive expenditures) outweigh any benefit 
 	that comes from increasing GDP;\@ and
+	
 	\item secondly, that increased GDP 
 	increases relative income inequality,
 	which decreases welfare for both rich and poor 
 	alike.\cite{Daly2006}
 \end{itemize}
 
-Indeed, it may be the case that at the margin that an increase in GDP is producing more ``illth' than ``wealth,'' resulting
-in ``uneconomic'' growth.~\cite[p. 42]{Daly2006} Uneconomic growth is much more likely 
-to occur in a wealthy society than in a poor one, according to the law of diminishing returns. Thus, a case could be made for constraining growth in GDP in wealthy countries so that resources may be allocated to poorer countries
+Indeed, it may be the case that at the margin that an increase 
+in GDP is producing more ``illth'' than ``wealth,'' 
+resulting
+in ``uneconomic'' growth.~\cite[p. 42]{Daly2006} 
+Uneconomic growth is much more likely 
+to occur in a wealthy society than in a poor one, 
+according to the law of diminishing returns. 
+Thus, a case could be made for constraining growth in GDP in wealthy countries 
+so that resources may be allocated to poorer countries
 where the growth is still economic.~\cite{Daly2006}
 
 
@@ -1446,8 +1431,8 @@ where the growth is still economic.~\cite{Daly2006}
 In this chapter, we discussed several implications that arise from 
 the detailed development of our dynamic framework for material,
 energy, and value accounting.
-The first implications are for the energy I-O method itself. 
-We recommend a physical accounting method that fully
+The first implications are for the EI-O method itself. 
+We recommend a physical accounting framework that fully
 accounts for capital stock and energy input from society (final consumption)
 to the economy.
 We then discussed implications for economic ``development,''
