@@ -85,8 +85,24 @@ doesn't tell us the things that we need to know.
 
 IMPLICATIONS
 
+Development without growth beyond the earth’s carrying capacity is true progress. 
+
+\hfill---\emph{Herman Daly}
+
+** not used **
+1. A steady-state economy is one that develops qualitatively 
+(by improvement in science, technology, and ethics) 
+without growing quantitatively in physical dimensions; 
+it lives on a diet — a constant metabolic flow of resources 
+from depletion to pollution (the entropic throughput) 
+maintained at a level that is both sufficient for a good life and 
+within the assimilative and regenerative capacities of the containing ecosystem.
+\hfill---\emph{Herman Daly}
+
+****CITE \"url{http://steadystate.org/top-10-policies-for-a-steady-state-economy/}
+
 Here is another idea:
-There is more to the idea of value than embodied energy or survival advantage. 
+2. There is more to the idea of value than embodied energy or survival advantage. 
 But, neither can the economy subsume the entire natural system under its managerial
 dominion of efficient allocation. This vision of the earth as an alchemist's
 centrally planned terrarium, with nothing wild or spontaneous but
