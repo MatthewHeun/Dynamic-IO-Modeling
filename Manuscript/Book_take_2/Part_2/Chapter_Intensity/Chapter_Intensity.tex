@@ -221,7 +221,7 @@ for the two-sector economy
 							\right)
 						= \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{B,2} B_{K_{2}}
+							+ \gamma_{B_{2}} B_{K_{2}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
 
@@ -236,7 +236,7 @@ and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2}, we obtain
 	- \varepsilon_{2}\dot{X}_{2} 
 	- \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{B,2} B_{K_{2}}
+							+ \gamma_{B_{2}} B_{K_{2}}
 							\right).
 \end{equation}
 
@@ -252,7 +252,7 @@ can be solved for energy intensity ($\varepsilon_{2}$) to obtain
 			- \frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t} 
 			- \dot{B}_{\dot{R}_{20}}
 			- \dot{B}_{\dot{S}_{20}}
-			- \gamma_{B,2} B_{B_{2}}
+			- \gamma_{B_{2}} B_{B_{2}}
 		\right]
 \end{equation}
 
@@ -329,7 +329,7 @@ of the three-sector economy:
 							\right)
 						= \left( \dot{B}_{\dot{R}_{j0}} 
 							+ \dot{B}_{\dot{S}_{j0}}
-							+ \gamma_{B,j} B_{K_{j}}
+							+ \gamma_{B_{j}} B_{K_{j}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
 
@@ -344,7 +344,7 @@ of the three-sector economy:
 	- \varepsilon_{2} \dot{X}_{2}
 	- \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{B,2} B_{K_{2}}
+							+ \gamma_{B_{2}} B_{K_{2}}
 							\right)
 \end{equation}
 
@@ -419,7 +419,7 @@ in vector notation as
 		\end{Bmatrix}
 		-
 		\begin{bmatrix}
-			\gamma_{B,2} & 0          \\
+			\gamma_{B_{2}} & 0          \\
 			0            & \gamma_{B,3}
 		\end{bmatrix}
 		\begin{Bmatrix}
@@ -526,11 +526,11 @@ in vector notation as
 \begin{equation} \label{eq:gamma_hat_matrix_def}
 	\hat{\boldsymbol{\gamma}}_{B}
 	\equiv
-	\delta_{ij} \gamma_{B,j}
+	\delta_{ij} \gamma_{B_{j}}
 	=
 	\begin{bmatrix}
-		\gamma_{B,2} & 0         \\
-		0            & \gamma_{B,3}
+		\gamma_{B_{2}} & 0         \\
+		0              & \gamma_{B_{3}}
 	\end{bmatrix};
 \end{equation}\nomenclature[g]{$\hat{\boldsymbol{\gamma}}$}{diagonal matrix of depreciation rates [\$/year]}
 
@@ -719,7 +719,7 @@ the matrix form is an extension of the algebraic form of the energy intensity eq
 Equation~\ref{eq:epsilon_leontief_with_A} provides a means 
 to estimate energy intensity ($\boldsymbol{\varepsilon}$)
 of the sectors of the economy, under the assumption that
-final consumption (Sector 1) is exogenous to the economy (Sectors 2--$n$). 
+final consumption (Sector 1) is exogenous to the economy (Sectors 2$\dots n$). 
 We discuss Equation~\ref{eq:epsilon_leontief_with_A}
 further in Section~\ref{sec:Implications_for_IO}.
 But first, the following section examines energy intensity 

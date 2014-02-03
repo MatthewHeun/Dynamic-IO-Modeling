@@ -665,7 +665,7 @@ can be represented by a depreciation term such as
 
 \begin{equation} \label{eq:depreciation_term_defined}
 	\dot{B}_{\dot{K}_{10}} 
-	= \gamma_{B,1} B_{K_{1}},
+	= \gamma_{B_{1}} B_{K_{1}},
 \end{equation}
 
 \noindent{}where $\gamma_{B}$ represents the depreciation rate 
@@ -691,7 +691,7 @@ Equation~\ref{eq:A-depreciation-of-B} to obtain
 	\dot{B}_{10}
 	= \dot{B}_{\dot{R}_{10}}
 	+ \dot{B}_{\dot{S}_{10}}
-	+ \gamma_{B,1} B_{K_{1}}.	
+	+ \gamma_{B_{1}} B_{K_{1}}.	
 \end{equation}
 
 \noindent{}Equation~\ref{eq:B_10_term} 
@@ -702,7 +702,7 @@ and~\ref{eq:A_dB1/dt_simp} to obtain
 	\frac{\mathrm{d}B_{0}}{\mathrm{d}t} 
 	= \dot{B}_{\dot{R}_{10}}
 	+ \dot{B}_{\dot{S}_{10}}
-	+ \gamma_{B,1} B_{K_{1}}
+	+ \gamma_{B_{1}} B_{K_{1}}
 	- \dot{Q}_{10} 
 \end{equation}
 
@@ -714,7 +714,7 @@ and~\ref{eq:A_dB1/dt_simp} to obtain
 	- \dot{B}_{1}
 	- \dot{B}_{\dot{R}_{10}}
 	- \dot{B}_{\dot{S}_{10}}
-	- \gamma_{B,1} B_{K_{1}}
+	- \gamma_{B_{1}} B_{K_{1}}
 	+ \dot{Q}_{10}.
 \end{equation}
 
@@ -728,7 +728,7 @@ less embodied energy the leaves the sector in its products~($\dot{B}_{1}$),
 less the rate of disposal of embodied energy associated with 
 scrap resources~($\dot{B}_{\dot{R}_{10}}$),
 short-lived material~($\dot{B}_{\dot{S}_{10}}$), and
-depreciated capital stock~($\gamma_{B,1} B_{K_{1}}$).
+depreciated capital stock~($\gamma_{B_{1}} B_{K_{1}}$).
 
 We turn now to Example~B, a two-sector economy.
 
@@ -903,7 +903,7 @@ to obtain
 	= \sum\limits_{i=1}^n 
 		\left( \dot{B}_{\dot{R}_{i0}} 
 				+ \dot{B}_{\dot{S}_{i0}} 
-				+ \gamma_{B,i} B_{K_{i}} \right)
+				+ \gamma_{B_{i}} B_{K_{i}} \right)
 	- \sum\limits_{i=1}^n\dot{Q}_{i0} 
 \end{equation}
 
@@ -915,7 +915,7 @@ to obtain
 	- \dot{B}_{j}
 	- \left( \dot{B}_{\dot{R}_{j0}}
 		+ \dot{B}_{\dot{S}_{j0}}
-		+ \gamma_{B,j} B_{K_{j}} \right)
+		+ \gamma_{B_{j}} B_{K_{j}} \right)
 	+ \dot{Q}_{j0}.
 \end{equation}
 
@@ -1021,7 +1021,7 @@ to obtain
 	= \sum\limits_{i=1}^n 
 		\left( \dot{B}_{\dot{R}_{i0}} 
 				+ \dot{B}_{\dot{S}_{i0}} 
-				+ \gamma_{B,i} B_{K_{i}} \right)
+				+ \gamma_{B_{i}} B_{K_{i}} \right)
 	- \sum\limits_{i=1}^n\dot{Q}_{i0} 
 \end{equation}
 
@@ -1033,7 +1033,7 @@ to obtain
 	- \dot{B}_{j}
 	- \left( \dot{B}_{\dot{R}_{j0}}
 		+ \dot{B}_{\dot{S}_{j0}}
-		+ \gamma_{B,j} B_{K_{j}} \right)
+		+ \gamma_{B_{j}} B_{K_{j}} \right)
 	+ \dot{Q}_{j0}.
 \end{equation}
 
@@ -1057,14 +1057,14 @@ for all sectors of the economy $\left( j \in [1,n] \right)$ to obtain
 		 \sum\limits_{i=1}^n 
 			\left( \dot{B}_{\dot{R}_{i0}} 
 					+ \dot{B}_{\dot{S}_{i0}} 
-					+ \gamma_{B,i} B_{K,i} \right)
+					+ \gamma_{B_{i}} B_{K,i} \right)
 		- \sum\limits_{i=1}^n \dot{Q}_{i0} \\
 		& + \sum\limits_{j=1}^n \sum\limits_{i=1}^n \dot{B}_{ij}
 		- \sum\limits_{j=1}^n \dot{B}_{j}	\\
 		& - \sum\limits_{j=1}^n
 				\left( \dot{B}_{\dot{R}_{j0}}
 					+ \dot{B}_{\dot{S}_{j0}}
-					+ \gamma_{B,j} B_{K,j} \right)
+					+ \gamma_{B_{j}} B_{K,j} \right)
 		+ \sum\limits_{j=1}^n \dot{Q}_{j0}.
 	\end{split}
 \end{equation}
@@ -1120,7 +1120,7 @@ can be expressed as
 
 \begin{equation} \label{eq:dBdt_with_alpha}
 	\frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} 
-	= (\alpha_{B,j} - \gamma_{B,j}) B_{K_{j}}
+	= (\alpha_{B,j} - \gamma_{B_{j}}) B_{K_{j}}
 	- \dot{B}_{waste,j} 
 	- \dot{B}_{j}
 	+ \dot{Q}_{j0}.
@@ -1130,7 +1130,7 @@ With Equation~\ref{eq:dBdt_with_alpha}, we see that
 the rate of accumulation of embodied energy in the capital stock of an economic sector
 $\left( \frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t} \right)$
 is affected by the balance between the inflow ($\alpha_{B,j}$) 
-and depreciation ($\gamma_{B,j}$) rates, the rate of wasting
+and depreciation ($\gamma_{B_{j}}$) rates, the rate of wasting
 embodied energy ($\dot{B}_{waste,j}$), 
 the rate at which embodied energy leaves with the products 
 of the sector ($\dot{B}_{j}$), 
