@@ -117,21 +117,22 @@ a materials, energy, and value accounting system.
 The distinction between product-focused and physical
 accounting frameworks is located in the columns
 of Figure~\ref{fig:coords_of_analysis}.
-A physical accounting framework strictly follows materials 
+A \emph{physical accounting} framework strictly follows materials 
 through the economy. 
-Embodied energy is accounted with the material stock or material flow
-in which it resides.
+Embodied energy is allocated to the material stock or material flow
+in which it resides---wherever it goes, so goes the embodied energy. 
+When the material is scrapped, so is the embodied energy.
 For example, energy embodied within wastes ($\vec{B}_{waste}$) 
 is not assigned to economic products. 
 Rather, the energy embodied in wastes flows out of sectors 
 into the biosphere \emph{with the waste material}.
-In contrast, a product-focused accounting framework assigns 
+In contrast, a \emph{product-focused accounting} framework assigns 
 energy embodied in wastes to the products of the sector.
 Both product-based and physical accounting frameworks
 assign direct energy ($\dot{E}$) consumed by each sector
 to the products of each sector.
 
-Equation~\ref{eq:B_prod_physical_excluding_K} 
+Equation~\ref{eq:B_prod_physical_excluding_K} below
 describes the outflow of embodied energy from sector $j$, 
 exclusive of capital stock, 
 for a physical accounting system 
@@ -208,20 +209,20 @@ to the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}.
 
 We agree with this move, because of the many ways in which
 capital stock is important for economies.
-We can use the ecosystem work of Eugene Odum 
-explain the importance of capital stock.
-And, we rely upon Herman Daly to connect
-ecosystems to economies.
+We can use the work of Eugene Odum~\cite{Odum1969}
+to explain the importance of capital stock
+within ecosystems and have Herman Daly to thank
+for making the connection between
+ecosystems and economies.~\cite{Daly1995}
 
 In 1969, Odum outlined a number of 
 defining characteristics of both \emph{developmental}
-(growing) and \emph{mature} ecosystems in terms of key
+(growing) and \emph{mature} (stable) ecosystems in terms of key
 properties of the system.\cite{Odum1969}
 Ecosystems cannot
 grow indefinitely in their (photosynthetic)~production~($P$)
 due to the necessity of increasing maintenance
-demands as the amount of biomass (capital
-stock,~$B$) increases.
+demands as the stock of biomass ($B$) increases.
 Eventually, all production is used in this manner
 and growth ceases 
 $\left(\frac{\mathrm{d}P}{\mathrm{d}t} = 0\right)$.
@@ -482,12 +483,13 @@ waste flows and an accounting equation for capital stock.
 
 We are unaware of any estimates of the energy embodied in wasted
 material in an economy ($\vec{B}_{waste}$).  
-But, it may be possible to develop a metric for the resource material effiency of an 
-economic sector ($\eta_{\dot{R}}$)\nomenclature[h]{$\eta_{\dot{R}}$}{resource efficiency [kg/kg]} 
-such that
+But, it may be possible to develop a metric for the resource material efficiency of an 
+economic sector ($\eta_{\dot{R}}$)\nomenclature[h]{$\eta_{\dot{R}}$}{resource efficiency [kg/kg]},
+i.e.\ the fraction of the material that actually makes it into the product, 
+such that:
 
 \begin{equation} \label{eq:manufacturing_effiency}
-	\eta_{\dot{R},j}
+	\eta_{\dot{R}_{j}}
 	\equiv \frac{\dot{P}_{j}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
 \end{equation}
 
@@ -524,7 +526,7 @@ of short-lived materials ($\dot{S}$) used by a sector could be given as a
 fraction of the resource ($\dot{R}$) use rate such that:
 
 \begin{equation}
-	\rho_{\dot{S},j}
+	\rho_{\dot{S}_{j}}
 	\equiv \frac{\dot{S}_{j0}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}
 	= \frac{\sum\limits_{i=1}^{n} \dot{S}_{ij}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
 \end{equation} \nomenclature[r]{$\rho_{\dot{S}}$}{ratio of short-lived material
@@ -535,7 +537,7 @@ can be given as
 
 \begin{equation}
 	\dot{R}_{j0} + \dot{S}_{j0}
-	= (1 - \eta_{\dot{R}_{j}} + \rho_{\dot{S},j}) \sum\limits_{i=1}^{n} \dot{R}_{ij}.
+	= (1 - \eta_{\dot{R}_{j}} + \rho_{\dot{S}_{j}}) \sum\limits_{i=1}^{n} \dot{R}_{ij}.
 \end{equation}
 
 \noindent{}The embodied energy in the waste materials would need to be estimated
@@ -640,17 +642,17 @@ we implicitly assumed that society
 (final consumption, Sector~1 in our model)
 contributes negligible energy to the economy.
 Thus, all vectors and matrices in Equation~\ref{eq:intensity_lower_right_no_society}
-involve Sectors~2--n, but not Sector~1.
+involve Sectors~2--$n$, but not Sector~1.
 
 Energy input from society to the economy ($\vec{T}_{1}$)
 is ``muscle work'' supplied by working humans 
-and draught animals.\cite{Ayres:2003ec,Ayres:2010ug,Warr:2012cg} 
+and draft animals.\cite{Ayres:2003ec,Ayres:2010ug,Warr:2012cg} 
 This muscle work term ($\vec{T}_{1}$) should include
 all upstream energy required to make the labor available.\footnote{It is important
 	to note that $\vec{T}_{1}$ should include all upstream energy,
 	because at this point in the development of our framework,
 	we are assuming that Final Consumption (Sector 1) is exogenous to the economy 
-	(Sectors 2--n), 
+	(Sectors 2--$n$), 
 	and upstream energy consumption needs to be included manually.
 	However, in Section~\ref{sec:what_is_endogenous}, we show that Final Consumption
 	can be endogenized.
@@ -1099,7 +1101,7 @@ There are a number of different
 conditions that may characterize a system as steady-state.
 In thermodynamics,
 steady state is characterized by unchanging system properties ($p$),
-such that $\left(\frac{\partial p}{\partial t}\right) = 0$.
+such that $\left(\frac{\textrm{d}p}{\textrm{d}t}\right) = 0$.
 In ecological economics, a steady-state
 economy has been defined as a constant rate
 of material throughput that maintains the stock
@@ -1141,10 +1143,10 @@ we introduced Equation~\ref{eq:C_CV_all_b}:
 \end{align}
 
 \noindent{}which indicates that 
-the depletion of natural resources in the 
+natural resources in the 
 biosphere~$\left(- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
-by the economy
-is used for the purposes of:
+are depleted by the economy
+for the purposes of:
 
 \begin{itemize}
 	\item{increasing man-made capital stocks
@@ -1152,7 +1154,7 @@ is used for the purposes of:
 	\item{providing short-lived goods exchanged within the
 	economy~$\left(\dot{S}_{ij}\right)$, and}
 	\item{overcoming depreciation of man-made
-	capital stocks~$\left(\sum_{j}\gamma_{K_{j}}K_{j}\right)$.}
+	capital stocks~$\left(\gamma_{K_{j}}K_{j}\right)$.}
 \end{itemize}
 
 Assuming,
@@ -1180,7 +1182,7 @@ sustainably,
 then withdrawal of natural resources from the biosphere
 $\left(\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
 had better be at some rate lower than the biosphere
-can replenish the natural capital stocks. 
+can replenish those stocks. 
 In reality, 
 $\frac{\mathrm{d}R_{0}}{\mathrm{d}t}$
 is really the sum of many different resources
@@ -1188,7 +1190,8 @@ is really the sum of many different resources
 its own natural rate of regeneration.
 As such, 
 the sustainability criterion  is a vector of values,
-one for each natural resource.
+one for each natural resource, 
+all of which be met individually.
 
 Secondly,
 the steady state condition 
@@ -1336,7 +1339,6 @@ GDP to be constant.\footnote{This is a theoretical exercise,
 	as Daly takes great pains to be clear that 
 	the steady-state economy is materially-based. ``It is not
 	to be thought of as `zero growth in GNP'.''~\cite[p. 32]{Daly1997}}
-
 Within our framework,
 a condition of constant GDP would be
 characterized by the following equation:
@@ -1385,16 +1387,21 @@ for two main reasons:
 	alike.\cite{Daly2006}
 \end{itemize}
 
-Indeed, it may be the case that at the margin that an increase 
-in GDP is producing more ``illth'' than ``wealth,'' 
+Indeed, it may be the case that at the margin an increase 
+in GDP produces more ``illth'' than ``wealth,'' 
 resulting
 in ``uneconomic'' growth.~\cite[p. 42]{Daly2006} 
 Uneconomic growth is much more likely 
 to occur in a wealthy society than in a poor one, 
-according to the law of diminishing returns. 
+according to the law of diminishing returns.\footnote{Measuring
+whether or not growth is ``economic'' cannot be done 
+with traditional measures, such as GDP, since there is no
+debit column in the ledger for GDP. 
+However, alternative metrics, such as ISEW or GPI, can perform such a function.
+}
 Thus, a case could be made for constraining growth in GDP in wealthy countries 
 so that resources may be allocated to poorer countries
-where the growth is still economic.~\cite{Daly2006}
+where growth in GDP is still likely to be ``economic''.~\cite{Daly2006}
 
 
 %****** Mik: Finish this section. 
