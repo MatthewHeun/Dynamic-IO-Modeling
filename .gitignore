@@ -25,6 +25,7 @@
 Heun_Dale_Haney*.ist
 *.nomin
 *.nomout
+_autidx_*
 
 #
 # Output .pdf files don't need to be updated in the repository
