@@ -71,24 +71,11 @@
 % see the list of further useful packages
 % in the Reference Guide
 
-% \makeindex{}           % used for the subject index
-                       % please use the style svind.ist with
-                       % your makeindex program
-% \makenomenclature{}    % generates the nomenclature table
-
-% \renewcommand{\nomname}{List of Symbols} % Changes the name of the nomenclature section.
-
-
 % Makes the Index, Nomenclature, and Glossary
 \makeglossaries{}
 
-
-
-
-
+% Use the next line for faster builds during testing.
 % \includeonly{Part_0/Chapter_Introduction/Chapter_Introduction}
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,7 +102,7 @@
 \listoftables{}
 % Add the List of Symbols using the glossaries package.
 \glssetwidest[0]{mm} % Indent for the symbol
-\glssetwidest[1]{$B_{waste}$mm} % Additional indent for the description
+\glssetwidest[1]{$B_{waste}$m} % Additional indent for the description
 \printglossary[type=nomenclature, style=alttreegroup, nonumberlist=true]
 
 
