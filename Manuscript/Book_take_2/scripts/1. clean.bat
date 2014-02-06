@@ -35,7 +35,11 @@ erase *.synctex.gz
 erase *.toc
 erase *.out
 
-cd Part_0\Chapter_Introduction 
+cd Part_0\Chapter_Acknowledgements
+erase *.aux
+erase *.bbl
+erase *.blg
+cd ..\Part_0\Chapter_Introduction 
 erase *.aux
 erase *.bbl
 erase *.blg

@@ -10,6 +10,15 @@
 % Define the glossary database for the nomenclature section
 \newglossary{nomenclature}{nomin}{nomout}{List of Symbols}
 
+% Define the style for the nomenclature
+\newglossarystyle{nomenclaturestyle}{
+	% \glossarystyle{tree}
+	\glossarystyle{alttreegroup}
+	\glssetwidest[0]{mm}                  % Indent for the symbol (width of "mm")
+	\glssetwidest[1]{$B_{waste}$m}        % Additional indent for the description
+	\renewcommand{\glssymbolsgroupname}{} % Eliminates the "Symbols" header on this list
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Nomenclature Categories %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

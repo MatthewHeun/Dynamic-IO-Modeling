@@ -96,14 +96,13 @@
 %\include{foreword}
 %\include{preface}
 %\include{acknow}
+\include{Part_0/Chapter_Acknowledgements/Chapter_Acknowledgements}
 
 \tableofcontents{}
 \listoffigures{}
 \listoftables{}
 % Add the List of Symbols using the glossaries package.
-\glssetwidest[0]{mm} % Indent for the symbol
-\glssetwidest[1]{$B_{waste}$m} % Additional indent for the description
-\printglossary[type=nomenclature, style=alttreegroup, nonumberlist=true]
+\printglossary[type=nomenclature, style=nomenclaturestyle, nonumberlist=true]
 
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,7 +152,7 @@
 %\include{solutions}
 
 \glstoctrue{} % Includes these glossaries in the table of contents.
-\printglossary[type=glossary, style=long, nonumberlist=true]
+\printglossary[type=glossary, style=glossarystyle, nonumberlist=true]
 
 % Add the index using the glossaries package.
 \printglossary[type=index, style=indexstyle]

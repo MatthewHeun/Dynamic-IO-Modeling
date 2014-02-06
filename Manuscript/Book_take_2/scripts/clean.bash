@@ -32,15 +32,16 @@ rm -f *.pdf
 rm -f *.synctex.gz
 rm -f *.toc
 
-cd Part_0; cd Chapter_Introduction; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_1; cd Chapter_Materials;    rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_1; cd Chapter_Energy;       rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_1; cd Chapter_Embodied;     rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_2; cd Chapter_Values;       rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_2; cd Chapter_Intensity;    rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_3; cd Chapter_Implications; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_3; cd Chapter_Unfinished;   rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_3; cd Chapter_Summary;      rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_0; cd Chapter_Acknowledgements; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_0; cd Chapter_Introduction;     rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_1; cd Chapter_Materials;        rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_1; cd Chapter_Energy;           rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_1; cd Chapter_Embodied;         rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_2; cd Chapter_Values;           rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_2; cd Chapter_Intensity;        rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_3; cd Chapter_Implications;     rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_3; cd Chapter_Unfinished;       rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_3; cd Chapter_Summary;          rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 # Delete Part 4's .aux files here, if we make a Part 4.
 # Delete Part 5's .aux files here, if we make a Part 5.
 cd Appendix_Auto;                   rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..
