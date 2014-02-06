@@ -6,20 +6,33 @@ REM Then, type "./clean.bash"
 
 REM Ensure a fresh build by deleting all auxiliary files created by LaTeX.
 cd ..
+erase *.acn
+erase *.acr
+erase *.acrin
+erase *.acrout
 erase *.aux
+erase *.alg
 erase *.bbl
 erase *.blg
+erase *.gidx
+erase *.gind
+erase *.glg
+erase *.gloin
+erase *.gloout
 erase *.idx
 erase *.ilg
 erase *.ind
+erase *.Heun_Dale_Haney*.ist
+erase *.lof
 erase *.log
+erase *.lot
 erase *.nlo
 erase *.nls
+erase *.nomin
+erase *.nomout
 erase *.pdf
 erase *.synctex.gz
 erase *.toc
-erase *.lof
-erase *.lot
 erase *.out
 
 cd Part_0\Chapter_Introduction 
