@@ -1,0 +1,28 @@
+%!TEX root = ../Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This file contins information for the acronym section.
+% Acronyms is built with the glossaries package.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define the glossary database for the nomenclature section
+\newglossary{glossary}{gloin}{gloout}{Glossary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Provide Glossary entries.
+%
+% Fields of the glossary entries are:
+%    key: the unnamed argument right after \newglossaryentry{_key_}{params}.
+%         Convention: Let's adopt the convention that ALL keys are ALL lower-case 
+%                     and prefixed by "glo:". This prevents conflicts with the Index.
+%    name: how the symbol will appear in the Glossary
+%    description: the description of the term.
+%    sort: how the entry will be sorted in the Index. If omitted, name is used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newglossaryentry{glo:nea}{type = glossary, 
+								name = NEA,
+								description = Net Energy Analysis
+								}
+

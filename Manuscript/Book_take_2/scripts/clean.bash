@@ -8,21 +8,29 @@
 
 # Ensure a fresh build by deleting all auxiliary files created by LaTeX.
 cd .. # Move up one level from the scripts folder to begin the cleaning process.
+rm -f *.acn;   rm -f *.acr
+rm -f *.acrin; rm -f *.acrout
 rm -f *.aux
+rm -f *.alg
 rm -f *.bbl
 rm -f *.blg
+rm -f *.gidx; rm -f *.gind
+rm -f *.glg
+rm -f *.gloin; rm -f *.gloout
 rm -f *.idx
 rm -f *.ilg
 rm -f *.ind
+rm -f Heun_Dale_Haney*.ist
+rm -f *.lof
 rm -f *.log
+rm -f *.lot
 rm -f *.nlo
 rm -f *.nls
+rm -f *.nomin; rm -f *.nomout
+rm -f *.out
 rm -f *.pdf
 rm -f *.synctex.gz
 rm -f *.toc
-rm -f *.lof
-rm -f *.lot
-rm -f *.out
 
 cd Part_0; cd Chapter_Introduction; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_1; cd Chapter_Materials;    rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..

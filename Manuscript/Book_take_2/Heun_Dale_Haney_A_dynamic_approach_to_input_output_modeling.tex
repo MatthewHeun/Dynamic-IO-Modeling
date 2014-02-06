@@ -36,15 +36,33 @@
 \usepackage{multicol}          % used for the two-column index
 \usepackage[bottom]{footmisc}  % places footnotes at page bottom
 \usepackage{mathtools}
-\usepackage{outlines}
+\usepackage{outlines}          % For outlines
 \usepackage{enumitem}
 \usepackage[normalem]{ulem}
-\usepackage{hyperref}          % Needs to come last in the list of loaded packages.
-
 \setenumerate[1]{label=\Roman*.}
 \setenumerate[2]{label=\Alph*.}
 \setenumerate[3]{label=\roman*.}
 \setenumerate[4]{label=\alph*.}
+
+
+% \usepackage{glossary-mcols}
+
+% Needs to come last in the list of loaded packages.
+\usepackage{hyperref}          
+
+% Except for the glossaries package.
+\usepackage[nomain,nopostdot]{glossaries}
+\renewcommand{\glsnamefont}[1]{\textnormal{#1}} % Makes names normal typeface (not bold)
+
+% Add index definitions
+\input{glossaries/index.tex}
+
+% Add nomenclature definitions
+\input{glossaries/nomenclature.tex}
+
+% Add glossary information
+\input{glossaries/glossary.tex}
+
 
 % Provides round-trip syncing from pdf viewer to text editor
 % \usepackage{pdfsync} % Unnecessary, because pdflatex supports synctex automatically.
@@ -53,11 +71,24 @@
 % see the list of further useful packages
 % in the Reference Guide
 
-\makeindex{}           % used for the subject index
+% \makeindex{}           % used for the subject index
                        % please use the style svind.ist with
                        % your makeindex program
-\makenomenclature{}    % generates the nomenclature table
-\renewcommand{\nomname}{List of Symbols} % Changes the name of the nomenclature section.
+% \makenomenclature{}    % generates the nomenclature table
+
+% \renewcommand{\nomname}{List of Symbols} % Changes the name of the nomenclature section.
+
+
+% Makes the Index, Nomenclature, and Glossary
+\makeglossaries{}
+
+
+
+
+
+% \includeonly{Part_0/Chapter_Introduction/Chapter_Introduction}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,6 +100,9 @@
 \subtitle{A dynamic framework for material, energy, and value accounting}
 \maketitle{}
 
+% Add all terms in the nomenclature and glossary
+\glsaddall[types={nomenclature,glossary}]
+
 \frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\include{dedic}
@@ -79,9 +113,10 @@
 \tableofcontents{}
 \listoffigures{}
 \listoftables{}
-\printnomenclature{}   % Put the nomenclature section here.
-
-%\include{acronym}
+% Add the List of Symbols using the glossaries package.
+\glssetwidest[0]{mm} % Indent for the symbol
+\glssetwidest[1]{$B_{waste}$mm} % Additional indent for the description
+\printglossary[type=nomenclature, style=alttreegroup, nonumberlist=true]
 
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,7 +164,13 @@
 \backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\include{glossary}
 %\include{solutions}
-\printindex{}
+
+\glstoctrue{} % Includes these glossaries in the table of contents.
+\printglossary[type=glossary, style=long, nonumberlist=true]
+
+% Add the index using the glossaries package.
+\printglossary[type=index, style=indexstyle]
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -36,10 +36,16 @@ cd Appendix_Estimating_A;           bibtex Appendix_Estimating_A; cd ..;
 cd Appendix_Casler;                 bibtex Appendix_Casler;       cd ..;
 
 # Make the index section.
-makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+#makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+
+# Make the index section with the glossaries package
+# makeindex -s svind.ist -i Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.gidx -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.gind
+makeglossaries Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
 # Make the nomenclature section.
-makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
+#makeindex -s nomencl.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
+
+
 
 # Run again--thrice--to include all the index, toc, and nomenclature information
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
