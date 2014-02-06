@@ -45,7 +45,10 @@
 \setenumerate[4]{label=\alph*.}
 
 
-% \usepackage{glossary-mcols}
+
+% \usepackage{authorindex}       % builds the author index.
+% \let\cite=\aicite              % converts all \cite commands to \aicite for authorindex
+
 
 % Needs to come last in the list of loaded packages.
 \usepackage{hyperref}          
@@ -156,7 +159,6 @@
 
 % Add the index using the glossaries package.
 \printglossary[type=index, style=indexstyle]
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
