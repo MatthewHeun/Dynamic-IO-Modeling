@@ -100,7 +100,7 @@
 								}
 
 \newglossaryentry{nom:A}{
-								name = $\textbf{A}$, % name = $\vec{A}$,
+								name = $\protect\vec{A}$, % need to protect vec to prevent errors
 								description = input output matrix [-],
 								sort = a:uc:vec:-,
 								parent = romanletter,
@@ -116,7 +116,7 @@
 								}
 
 \newglossaryentry{nom:B_waste}{
-								name = $\textbf{B}_{waste}$, % name = $\vec{B}_{waste}$,
+								name = $\protect\vec{B}_{waste}$,
 								description = vector of waste flows [J/s],
 								sort = b:uc:vec:waste,
 								type = nomenclature, 
@@ -276,7 +276,7 @@
 								}
 
 \newglossaryentry{nom:Tvec1}{
-								name = $\textbf{T}_{1}$, 
+								name = $\protect\vec{T}_{1}$, 
 								description = vector of total energy inputs 
 												from society to the economy [W],
 								sort = t:uc:vec:1,
@@ -317,7 +317,7 @@
 								}
 
 \newglossaryentry{nom:Xvechat}{
-								name = $\hat{\textbf{X}}$, % $\hat{\vec{X}}$
+								name = $\hat{\protect\vec{X}}$,
 								description = matrix of sector outputs 
 												in mixed units [\$/year or J/year],
 								sort = x:uc:vechat:-,
@@ -326,7 +326,7 @@
 								}
 								
 \newglossaryentry{nom:Xt}{
-								name = $\textbf{X}_{t}$, % $\hat{\vec{X}}$
+								name = $\protect\vec{X}_{t}$, 
 								description = transaction matrix [\$/year],
 								sort = x:uc:vec:t,
 								parent = romanletter,
