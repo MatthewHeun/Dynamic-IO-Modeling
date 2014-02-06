@@ -36,6 +36,8 @@ cd Appendix_Proof_1;                    bibtex Appendix_Proof_1;         cd ..;
 cd Appendix_Estimating_A;               bibtex Appendix_Estimating_A;    cd ..;
 cd Appendix_Casler;                     bibtex Appendix_Casler;          cd ..;
 
+# authorindex Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+
 # Make the glossaries for Index, Glossary, and List of Symbols
 makeglossaries Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
