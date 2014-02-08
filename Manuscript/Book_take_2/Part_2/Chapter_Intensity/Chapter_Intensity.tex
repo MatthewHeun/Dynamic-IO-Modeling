@@ -56,7 +56,7 @@ and we switch between these two meanings of the word ``embodied.''}
 \section{Methodology}
 %%%%%%%%%%
 
-Energy intensity ($\varepsilon$)\nomenclature[e]{$\varepsilon$}{energy intensity [J/\$]}
+Energy intensity ($\varepsilon$)
 \index{energy intensity}
 is the ratio 
 of total energy ($\dot{T}$) 
@@ -97,7 +97,7 @@ of that sector.\footnote{If this approach is unsatisfactory,
 the sector may be divided into sub-sectors 
 each with its own energy intensity.}
 
-We define the input-ouput ratio ($a_{ij}$)\nomenclature[a]{$a$}{input-output ratio [-]}
+We define the input-output ratio\index{input-output ratio} ($a_{ij}$)
 that represents the input 
 of good $i$ required to produce a unit of output from sector $j$.
 
@@ -113,14 +113,15 @@ We note that the value ($\dot{X}$) of all material flows must be counted such th
 		{\dot{X}_{\dot{R}_{j}} + \dot{X}_{\dot{S}_{j}} + \dot{X}_{\dot{K}_{j}}}.
 \end{equation}
 
-Input-output ratios ($a_{ij}$) are given in mixed units, 
+Input-output ratios\index{input-output ratio} ($a_{ij}$) are given in mixed units, 
 depending on both the purpose of each sector of the economy 
 and the type of input as shown in Figure~\ref{fig:A_matrix_units}.
 
 \begin{figure}[h!]
 \centering\
 \includegraphics[width=0.4\linewidth]{Part_2/Chapter_Intensity/images/I-O_units.pdf}
-\caption[Units for input-output ratios]{Units for input-output ratios ($a$).}
+\caption[Units for input-output ratios]{Units for input-output 
+ratios\index{input-output ratio} ($a$).}
 \label{fig:A_matrix_units}
 \end{figure}
 
@@ -463,8 +464,7 @@ in vector notation as
 		\dot{E}_{02} \\
 		\dot{E}_{03}
 	\end{Bmatrix},
-\end{equation} \nomenclature[E]{$\vec{E}_{0}$}{vector of direct energy inputs 
-												from the biosphere [W]}
+\end{equation}
 
 \begin{equation} \label{eq:T_vec_def}
 	\vec{T}_{1} 
@@ -473,8 +473,7 @@ in vector notation as
 		\dot{T}_{12} \\
 		\dot{T}_{13}
 	\end{Bmatrix},
-\end{equation} \nomenclature[T]{$\vec{T}_{1}$}{vector of total energy inputs 
-												from society to the economy [W]}
+\end{equation}
 
 \begin{equation} \label{eq:X_t_matrix_def}
 	\vec{X}_{t} 
@@ -483,7 +482,7 @@ in vector notation as
 		\dot{X}_{22} & \dot{X}_{23} \\
 		\dot{X}_{32} & \dot{X}_{33}
 	\end{bmatrix},
-\end{equation} \nomenclature[X]{$\vec{X}_{t}$}{transaction matrix [\$/year]}
+\end{equation}
 \index{transaction matrix}\index{matrix!transaction|see{transaction matrix}}
 
 \begin{equation} \label{eq:eps_vec_def}
@@ -493,8 +492,7 @@ in vector notation as
 		\varepsilon_{2}	\\
 		\varepsilon_{3}
 	\end{Bmatrix},
-\end{equation} \nomenclature[e]{$\boldsymbol{\varepsilon}$}{column vector 
-								of sector energy intensities [J/\$]}
+\end{equation} 
 								
 \begin{equation} \label{eq:waste_vec_def}
 	\vec{B}_{waste} 
@@ -513,9 +511,7 @@ in vector notation as
 		\dot{B}_{\dot{S}_{20}}	\\
 		\dot{B}_{\dot{B}_{30}}	\\
 	\end{Bmatrix},
-\end{equation} \nomenclature[B]{$\vec{B}_{waste}$}{column vector 
-								of waste embodied energy from resource ($\dot{R}$)
-								and short-lived material ($\dot{S}$) flow [J/s]}
+\end{equation}
 
 \begin{equation} \label{eq:X_hat_matrix_def}
 	\hat{\vec{X}} 
@@ -526,7 +522,7 @@ in vector notation as
 		\dot{X}_{2}		&	0	  \\
 		0				&	\dot{X}_{3}	\\
 	\end{bmatrix},
-\end{equation} \nomenclature[X]{$\hat{\vec{X}}$}{matrix of sector outputs [\$/year]}
+\end{equation} 
 
 \noindent{}and
 
@@ -539,7 +535,7 @@ in vector notation as
 		\gamma_{B_{2}} & 0         \\
 		0              & \gamma_{B_{3}}
 	\end{bmatrix};
-\end{equation}\nomenclature[g]{$\hat{\boldsymbol{\gamma}}$}{diagonal matrix of depreciation rates [\$/year]}
+\end{equation}
 
 \noindent{}with the ``Kronecker delta''
 
@@ -550,7 +546,7 @@ in vector notation as
 		0	&	\text{if  } i \neq j	\\
 		1 	& 	\text{if  } i = j
 	\end{cases};
-\end{equation}\nomenclature[d]{$\delta_{ij}$}{Kronecker delta}
+\end{equation}
 
 \noindent{}we can rewrite Equation~\ref{eq:C-Expanded_Matrix_Form}
 compactly as
@@ -585,8 +581,7 @@ compactly as
 		a_{22} & a_{23}	\\
 		a_{32} & a_{33}	
 	\end{bmatrix}.
-\end{equation} \nomenclature[A]{$\vec{A}$}{input-output matrix [-]}
-\index{input-output matrix}\index{matrix!input-output|see{input-output matrix}}
+\end{equation}\index{input-output matrix}\index{matrix!input-output|see{input-output matrix}}
 
 \noindent{}Appendix~\ref{app:Proof} shows that
 
@@ -612,7 +607,7 @@ to be recast as
 of the total energy accounting equation
 written in terms of embodied energy ($\vec{B}$), 
 energy intensities ($\boldsymbol{\varepsilon}$),
-and input-output ratios ($\vec{A}$).
+and input-output ratios\index{input-output ratio} ($\vec{A}$).
 Equation~\ref{eq:C-Expanded_Matrix_Form} applies 
 for the three-sector economy of Example~C, 
 but the equivalent matrix formulation (Equation~\ref{eq:matrix_leontief}) 
@@ -630,7 +625,7 @@ knowing only
 direct energy inputs to the economy from the biosphere ($\vec{E}_{0}$), 
 total energy inputs from society to the economy ($\vec{T}_{1}$),
 sector outputs ($\hat{\vec{X}}$), 
-sector input-output ratios ($\vec{A}$), 
+sector input-output ratios\index{input-output ratio} ($\vec{A}$), 
 sector energy intensities ($\boldsymbol{\varepsilon}$), 
 energy embodied in wastes from the economy ($\vec{B}_{waste}$),
 and physical depreciation rates of capital stock ($\hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}$). 
@@ -781,7 +776,7 @@ of the Motor Vehicles and Equipment sector (63) was not reported
 in~\cite{Costanza:1980ww}.
 Later, Costanza and Herendeen~\cite{Costanza:1984tq} re-estimated
 energy intensity and reported the energy intensity 
-of outputs from all 87 \gls{bea} sectors.
+of outputs from all 87 BEA\index{Bureau of Economic Analysis} sectors.
 The energy intensity of the Motor Vehicles and Equipment sector (63) 
 and selected other sectors are given in 
 Tables~\ref{tab:C_and_H_auto_energy_intensities}
@@ -851,7 +846,7 @@ detail in Section~\ref{sec:Data}.}
 Using the tool with the 2002 producer price model,
 we find that \$1M of output
 from the automobile manufacturing industry
-(NAICS sector 336111) generates
+(NAICS\index{North American Industry Classification System} sector 336111) generates
 a total flow of 8.33~TJ (10$^{12}$~J) of energy through the economy,
 2.19~TJ from the power generation and 
 supply sector~(221100) and 1.25~TJ from the
@@ -866,7 +861,9 @@ iron and steel mills sector~(331110).
 %estimated by Bullard and Herendeen.
 
 \begin{table}
-\caption[Automobile manufacturing sector energy intensity]{Automobile manufacturing sector (NAICS 33611x) energy intensity values.\cite{EIOLCA2014}}
+\caption[Automobile manufacturing sector energy intensity]{Automobile manufacturing 
+sector (NAICS\index{North American Industry Classification System} 
+33611x) energy intensity values.\cite{EIOLCA2014}}
 \begin{center}
 \begin{tabular} {r @{\hspace{2em}} l}
 	\toprule
