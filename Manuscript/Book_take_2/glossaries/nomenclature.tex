@@ -118,23 +118,32 @@
 
 \newglossaryentry{nom:B}{
 								name = $B$, 
-								description = embodied energy [J],
+								description = embodied energy [MJ],
 								sort = b:uc:-:-,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:BK}{
+								name = $\protect\vec{B}_{K}$, 
+								description = column vector of energy embodied 
+												in capital stock [MJ],
+								sort = b:uc:vec:k,
 								type = nomenclature, 
 								parent = romanletter,
 								}
 
 \newglossaryentry{nom:B_waste}{
 								name = $\protect\vec{B}_{waste}$,
-								description = vector of waste flows [J/s],
+								description = column vector of waste flows [MJ/year],
 								sort = b:uc:vec:waste,
 								type = nomenclature, 
 								parent = romanletter,
 								}
 								
-\newglossaryentry{nom:B_dot}{
+\newglossaryentry{nom:Bdot}{
 								name = $\dot{B}$,
-								description = embodied energy flow rate [W],
+								description = embodied energy flow rate [MJ/year],
 								sort = b:uc:dot:-,
 								type = nomenclature, 
 								parent = romanletter,
@@ -142,7 +151,7 @@
 
 \newglossaryentry{nom:E}{
 								name = $E$, 
-								description = direct energy [J],
+								description = direct energy [MJ],
 								sort = e:uc:-:-,
 								type = nomenclature, 
 								parent = romanletter,
@@ -150,7 +159,7 @@
 
 \newglossaryentry{nom:Edot}{
 								name = $\dot{E}$, 
-								description = direct energy flow rate [W],
+								description = direct energy flow rate [MJ/year],
 								sort = e:uc:dot:-,
 								type = nomenclature, 
 								parent = romanletter,
@@ -158,7 +167,8 @@
 
 \newglossaryentry{nom:E0}{
 								name = $\textbf{E}_{0}$, 
-								description = vector of direct energy inputs from the biosphere [W],
+								description = column vector of direct energy inputs 
+												from the biosphere [MJ/year],
 								sort = e:uc:vec:0,
 								type = nomenclature, 
 								parent = romanletter,
@@ -206,7 +216,7 @@
 
 \newglossaryentry{nom:Qdot}{
 								name = $\dot{Q}$,
-								description = waste heat flow rate [W],
+								description = waste heat flow rate [MJ/year],
 								sort = q:uc:dot:-,
 								parent = romanletter,
 								type = nomenclature, 
@@ -270,7 +280,7 @@
 
 \newglossaryentry{nom:T}{
 								name = $T$, 
-								description = total energy [J],
+								description = total energy [MJ],
 								sort = t:uc:-:-,
 								parent = romanletter,
 								type = nomenclature, 
@@ -278,7 +288,7 @@
 
 \newglossaryentry{nom:Tdot}{
 								name = $\dot{T}$, 
-								description = total energy flow rate [J/year],
+								description = total energy flow rate [MJ/year],
 								sort = t:uc:dot:-,
 								parent = romanletter,
 								type = nomenclature, 
@@ -286,8 +296,8 @@
 
 \newglossaryentry{nom:Tvec1}{
 								name = $\protect\vec{T}_{1}$, 
-								description = vector of total energy inputs 
-												from society to the economy [W],
+								description = column vector of total energy inputs 
+												from society to the economy [MJ/year],
 								sort = t:uc:vec:1,
 								parent = romanletter,
 								type = nomenclature, 
@@ -311,8 +321,8 @@
 
 \newglossaryentry{nom:Xvechat}{
 								name = $\hat{\protect\vec{X}}$,
-								description = matrix of sector outputs 
-												in mixed units [\$/year or J/year],
+								description = diagonal matrix of sector outputs 
+												in mixed units [\$/year or MJ/year],
 								sort = x:uc:vechat:-,
 								parent = romanletter,
 								type = nomenclature, 
@@ -357,7 +367,7 @@
 
 \newglossaryentry{nom:epsilon}{
 								name = $\varepsilon$,
-								description = energy intensity [J/\$],
+								description = energy intensity [MJ/\$],
 								sort = epsilon:lc:-:-,
 								parent = greekletter,
 								type = nomenclature, 
@@ -365,7 +375,7 @@
 
 \newglossaryentry{nom:epsilonvec}{
 								name = $\boldsymbol{\varepsilon}$,
-								description = column vector of sector energy intensities [J/\$],
+								description = column vector of sector energy intensities [MJ/\$],
 								sort = epsilon:lc:vec:-,
 								parent = greekletter,
 								type = nomenclature, 
@@ -399,6 +409,40 @@
 %+++++++++++++++++++++++++++++++
 %+++++++++ Subscripts ++++++++++
 %+++++++++++++++++++++++++++++++
+
+\newglossaryentry{nom:0}{
+								name = $0$,
+								description = Biosphere,
+								sort = 0:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:1}{
+								name = $1$,
+								description = Society~(Example~A) or
+												Final Consumption~(Examples~B and~C),
+								sort = 1:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:2}{
+								name = $2$,
+								description = Production sector~(Example~B) or
+												Energy sector~(Example~C),
+								sort = 2:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:3}{
+								name = $3$,
+								description = Goods and Services sector~(Example~C),
+								sort = 3:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
 
 \newglossaryentry{nom:dest}{
 								name = $dest$,
