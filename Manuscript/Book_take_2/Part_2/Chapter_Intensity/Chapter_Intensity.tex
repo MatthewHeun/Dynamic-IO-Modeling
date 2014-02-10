@@ -18,17 +18,26 @@
 % Always give a unique label
 \label{chap:intensity} 
 % use \chaptermark{} to alter or adjust the chapter heading in the running head
-\chaptermark{intensity}
+\chaptermark{Intensity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\abstract*{[NEED TO ADD ABSTRACT HERE]}
 
 %% \abstract{Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\newline\indent
 %% Please use the 'starred' version of the new Springer \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
 
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
+
+\abstract*{In this chapter, we derive algebraic equations that describe the energy intensity
+(in units of J/\$) of products of economic sectors.
+The algebraic equations are applied 
+to Examples~A--C to derive a matrix equation % chktex 8
+for a vector of energy intensities for the entire economy.
+We review several studies of energy intensity in the literature 
+and note a wide range of results from one study to the next.
+The estimates of energy intensity also vary with time.
+The range of energy intensities for the auto sector 
+is $0.83 \times 10^{4}$ kJ/\$ to $11.6 \times 10^{4}$ kJ/\$.}
 
 
 In Chapters~\ref{chap:direct_energy},~\ref{chap:embodied_energy}, and~\ref{chap:value}, 
@@ -38,8 +47,7 @@ the energy intensity ($\varepsilon$) of economic sectors,
 measured in joules per dollar.\footnote{The literature discusses 
 the energy embodied in \emph{products} for example, ``The data and methodologies described in this report 
 permit calculation of five types of energy `embodied' 
-in a particular goods~[\emph{sic}] or service,'' % chktex 38
-from Bullard~\cite[p.~268]{Bullard:1978vd}. 
+in a particular goods~[\emph{sic}] or service.''~\cite[p.~268]{Bullard:1978vd} % chktex 38
 It can be meaningful to discuss the energy intensity of \emph{processes}, too,
 and we switch between these two meanings of the word ``embodied.''}
 
@@ -48,7 +56,7 @@ and we switch between these two meanings of the word ``embodied.''}
 \section{Methodology}
 %%%%%%%%%%
 
-Energy intensity ($\varepsilon$)\nomenclature[e]{$\varepsilon$}{energy intensity [J/\$]}
+Energy intensity ($\varepsilon$)
 \index{energy intensity}
 is the ratio 
 of total energy ($\dot{T}$) 
@@ -89,7 +97,7 @@ of that sector.\footnote{If this approach is unsatisfactory,
 the sector may be divided into sub-sectors 
 each with its own energy intensity.}
 
-We define the input-ouput ratio ($a_{ij}$)\nomenclature[a]{$a$}{input-output ratio [-]}
+We define the input-output ratio\index{input-output ratio} ($a_{ij}$)
 that represents the input 
 of good $i$ required to produce a unit of output from sector $j$.
 
@@ -105,18 +113,19 @@ We note that the value ($\dot{X}$) of all material flows must be counted such th
 		{\dot{X}_{\dot{R}_{j}} + \dot{X}_{\dot{S}_{j}} + \dot{X}_{\dot{K}_{j}}}.
 \end{equation}
 
-Input-output ratios ($a_{ij}$) are given in mixed units, 
+Input-output ratios\index{input-output ratio} ($a_{ij}$) are given in mixed units, 
 depending on both the purpose of each sector of the economy 
 and the type of input as shown in Figure~\ref{fig:A_matrix_units}.
 
 \begin{figure}[h!]
 \centering\
 \includegraphics[width=0.4\linewidth]{Part_2/Chapter_Intensity/images/I-O_units.pdf}
-\caption[Units for input-output ratios]{Units for input-output ratios ($a$).}
+\caption[Units for input-output ratios]{Units for input-output 
+ratios\index{input-output ratio} ($a$).}
 \label{fig:A_matrix_units}
 \end{figure}
 
-Equations~\ref{eq:epsilon_transfers_1} and \ref{eq:aij_def} can be combined to give
+Equations~\ref{eq:epsilon_transfers_1} and~\ref{eq:aij_def} can be combined to give
 
 \begin{equation}
 	\dot{T}_{jk} = \varepsilon_{j} a_{jk} \dot{X}_{k}.
@@ -211,17 +220,16 @@ for the two-sector economy
 		% embodied energy appears only in the \emph{output} of a sector,
 		}
 	\item{$\dot{E}_{20} = 0$ meaning that $\dot{T}_{20} = \dot{B}_{20}$, 
-	because direct energy is not wasted to the biosphere at any significant rate\footnote{Oil
+	because direct energy is not wasted to the biosphere at any significant rate,\footnote{Oil
 	spills and gas leaks notwithstanding. Remember also that waste heat outflows ($\dot{Q}_{20}$)
-	is allocated to the product.}
-	, and} 
+	are allocated to the product.} and} 
 	\item{$\dot{B}_{20} = \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
 							+ \dot{B}_{\dot{K}_{20}}
 							\right)
 						= \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{B,2} B_{K_{2}}
+							+ \gamma_{B_{2}} B_{K_{2}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
 
@@ -236,7 +244,7 @@ and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2}, we obtain
 	- \varepsilon_{2}\dot{X}_{2} 
 	- \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{B,2} B_{K_{2}}
+							+ \gamma_{B_{2}} B_{K_{2}}
 							\right).
 \end{equation}
 
@@ -252,7 +260,7 @@ can be solved for energy intensity ($\varepsilon_{2}$) to obtain
 			- \frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t} 
 			- \dot{B}_{\dot{R}_{20}}
 			- \dot{B}_{\dot{S}_{20}}
-			- \gamma_{B,2} B_{B_{2}}
+			- \gamma_{B_{2}} B_{B_{2}}
 		\right]
 \end{equation}
 
@@ -329,7 +337,7 @@ of the three-sector economy:
 							\right)
 						= \left( \dot{B}_{\dot{R}_{j0}} 
 							+ \dot{B}_{\dot{S}_{j0}}
-							+ \gamma_{B,j} B_{K_{j}}
+							+ \gamma_{B_{j}} B_{K_{j}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
 
@@ -344,7 +352,7 @@ of the three-sector economy:
 	- \varepsilon_{2} \dot{X}_{2}
 	- \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{B,2} B_{K_{2}}
+							+ \gamma_{B_{2}} B_{K_{2}}
 							\right)
 \end{equation}
 
@@ -419,7 +427,7 @@ in vector notation as
 		\end{Bmatrix}
 		-
 		\begin{bmatrix}
-			\gamma_{B,2} & 0          \\
+			\gamma_{B_{2}} & 0          \\
 			0            & \gamma_{B,3}
 		\end{bmatrix}
 		\begin{Bmatrix}
@@ -456,8 +464,7 @@ in vector notation as
 		\dot{E}_{02} \\
 		\dot{E}_{03}
 	\end{Bmatrix},
-\end{equation} \nomenclature[E]{$\vec{E}_{0}$}{vector of direct energy inputs 
-												from the biosphere [W]}
+\end{equation}
 
 \begin{equation} \label{eq:T_vec_def}
 	\vec{T}_{1} 
@@ -466,8 +473,7 @@ in vector notation as
 		\dot{T}_{12} \\
 		\dot{T}_{13}
 	\end{Bmatrix},
-\end{equation} \nomenclature[T]{$\vec{T}_{1}$}{vector of total energy inputs 
-												from society to the economy [W]}
+\end{equation}
 
 \begin{equation} \label{eq:X_t_matrix_def}
 	\vec{X}_{t} 
@@ -476,8 +482,8 @@ in vector notation as
 		\dot{X}_{22} & \dot{X}_{23} \\
 		\dot{X}_{32} & \dot{X}_{33}
 	\end{bmatrix},
-\end{equation} \nomenclature[X]{$\vec{X}_{t}$}{transaction matrix [\$/year]}
-\index{transaction matrix}\index{matrix!transaction|see{transaction matrix}}
+\end{equation}
+\index{transaction matrix}
 
 \begin{equation} \label{eq:eps_vec_def}
 	\boldsymbol{\varepsilon} 
@@ -486,8 +492,7 @@ in vector notation as
 		\varepsilon_{2}	\\
 		\varepsilon_{3}
 	\end{Bmatrix},
-\end{equation} \nomenclature[e]{$\boldsymbol{\varepsilon}$}{column vector 
-								of sector energy intensities [J/\$]}
+\end{equation} 
 								
 \begin{equation} \label{eq:waste_vec_def}
 	\vec{B}_{waste} 
@@ -506,9 +511,7 @@ in vector notation as
 		\dot{B}_{\dot{S}_{20}}	\\
 		\dot{B}_{\dot{B}_{30}}	\\
 	\end{Bmatrix},
-\end{equation} \nomenclature[B]{$\vec{B}_{waste}$}{column vector 
-								of waste embodied energy from resource ($\dot{R}$)
-								and short-lived material ($\dot{S}$) flow [J/s]}
+\end{equation}
 
 \begin{equation} \label{eq:X_hat_matrix_def}
 	\hat{\vec{X}} 
@@ -519,20 +522,20 @@ in vector notation as
 		\dot{X}_{2}		&	0	  \\
 		0				&	\dot{X}_{3}	\\
 	\end{bmatrix},
-\end{equation} \nomenclature[X]{$\hat{\vec{X}}$}{matrix of sector outputs [\$/year]}
+\end{equation} 
 
 \noindent{}and
 
 \begin{equation} \label{eq:gamma_hat_matrix_def}
 	\hat{\boldsymbol{\gamma}}_{B}
 	\equiv
-	\delta_{ij} \gamma_{B,j}
+	\delta_{ij} \gamma_{B_{j}}
 	=
 	\begin{bmatrix}
-		\gamma_{B,2} & 0         \\
-		0            & \gamma_{B,3}
+		\gamma_{B_{2}} & 0         \\
+		0              & \gamma_{B_{3}}
 	\end{bmatrix};
-\end{equation}\nomenclature[g]{$\hat{\boldsymbol{\gamma}}$}{diagonal matrix of depreciation rates [\$/year]}
+\end{equation}
 
 \noindent{}with the ``Kronecker delta''
 
@@ -543,7 +546,7 @@ in vector notation as
 		0	&	\text{if  } i \neq j	\\
 		1 	& 	\text{if  } i = j
 	\end{cases};
-\end{equation}\nomenclature[d]{$\delta_{ij}$}{Kronecker delta}
+\end{equation}
 
 \noindent{}we can rewrite Equation~\ref{eq:C-Expanded_Matrix_Form}
 compactly as
@@ -578,8 +581,7 @@ compactly as
 		a_{22} & a_{23}	\\
 		a_{32} & a_{33}	
 	\end{bmatrix}.
-\end{equation} \nomenclature[A]{$\vec{A}$}{input-output matrix [-]}
-\index{input-output matrix}\index{matrix!input-output|see{input-output matrix}}
+\end{equation}\index{input-output matrix}
 
 \noindent{}Appendix~\ref{app:Proof} shows that
 
@@ -605,7 +607,7 @@ to be recast as
 of the total energy accounting equation
 written in terms of embodied energy ($\vec{B}$), 
 energy intensities ($\boldsymbol{\varepsilon}$),
-and input-output ratios ($\vec{A}$).
+and input-output ratios\index{input-output ratio} ($\vec{A}$).
 Equation~\ref{eq:C-Expanded_Matrix_Form} applies 
 for the three-sector economy of Example~C, 
 but the equivalent matrix formulation (Equation~\ref{eq:matrix_leontief}) 
@@ -617,13 +619,13 @@ and~\ref{eq:A_matrix_def} to include
 all sectors of an $n$-sector economy.\cite{Bullard:1978vd,Casler1984}
 
 Equation~\ref{eq:matrix_leontief} provides a means to 
-estimate the embodied energy accumulation rate
+estimate the embodied energy accumulation rate\index{accumulation!of embodied energy}
 in economic sectors $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 knowing only 
 direct energy inputs to the economy from the biosphere ($\vec{E}_{0}$), 
 total energy inputs from society to the economy ($\vec{T}_{1}$),
 sector outputs ($\hat{\vec{X}}$), 
-sector input-output ratios ($\vec{A}$), 
+sector input-output ratios\index{input-output ratio} ($\vec{A}$), 
 sector energy intensities ($\boldsymbol{\varepsilon}$), 
 energy embodied in wastes from the economy ($\vec{B}_{waste}$),
 and physical depreciation rates of capital stock ($\hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}$). 
@@ -719,7 +721,7 @@ the matrix form is an extension of the algebraic form of the energy intensity eq
 Equation~\ref{eq:epsilon_leontief_with_A} provides a means 
 to estimate energy intensity ($\boldsymbol{\varepsilon}$)
 of the sectors of the economy, under the assumption that
-final consumption (Sector 1) is exogenous to the economy (Sectors 2--$n$). 
+final consumption (Sector 1) is exogenous to the economy (Sectors $2\ldots{}n$). 
 We discuss Equation~\ref{eq:epsilon_leontief_with_A}
 further in Section~\ref{sec:Implications_for_IO}.
 But first, the following section examines energy intensity 
@@ -774,8 +776,7 @@ of the Motor Vehicles and Equipment sector (63) was not reported
 in~\cite{Costanza:1980ww}.
 Later, Costanza and Herendeen~\cite{Costanza:1984tq} re-estimated
 energy intensity and reported the energy intensity 
-of outputs from all 87 Bureau of Economic Affairs\index{Bureau of Economic Affairs} 
-(BEA) sectors.
+of outputs from all 87 BEA\index{Bureau of Economic Analysis} sectors.
 The energy intensity of the Motor Vehicles and Equipment sector (63) 
 and selected other sectors are given in 
 Tables~\ref{tab:C_and_H_auto_energy_intensities}
@@ -783,7 +784,7 @@ and~\ref{tab:C_and_H_selected_energy_intensities}.\footnote{Values
 from Costanza and Herendeen's 
 DIRECT method are provided here. 
 See Section~\ref{sec:energy_input_vector} for discussion
-of the differences between DIRECT and DEC methods
+of the differences between DIRECT and DEC\index{direct energy conversion} methods
 and justification for reporting
 DIRECT method values only.} 
 
@@ -845,7 +846,7 @@ detail in Section~\ref{sec:Data}.}
 Using the tool with the 2002 producer price model,
 we find that \$1M of output
 from the automobile manufacturing industry
-(NAICS sector 336111) generates
+(NAICS\index{North American Industry Classification System} sector 336111) generates
 a total flow of 8.33~TJ (10$^{12}$~J) of energy through the economy,
 2.19~TJ from the power generation and 
 supply sector~(221100) and 1.25~TJ from the
@@ -860,7 +861,9 @@ iron and steel mills sector~(331110).
 %estimated by Bullard and Herendeen.
 
 \begin{table}
-\caption[Automobile manufacturing sector energy intensity]{Automobile manufacturing sector (NAICS 33611x) energy intensity values.\cite{EIOLCA2014}}
+\caption[Automobile manufacturing sector energy intensity]{Automobile manufacturing 
+sector (NAICS\index{North American Industry Classification System} 
+33611x) energy intensity values.\cite{EIOLCA2014}}
 \begin{center}
 \begin{tabular} {r @{\hspace{2em}} l}
 	\toprule
@@ -920,8 +923,20 @@ In Section~\ref{sec:Data}, we discuss further the need for additional data.
 \label{sec:intensity_summary}
 %%%%%%%%%%
 
+In this chapter, we derived algebraic equations that describe the energy intensity
+(in units of J/\$) of products of economic sectors.
+The algebraic equations were applied to Examples~A--C % chktex 8
+to derive a matrix equation
+for a vector of energy intensities for the entire economy.
+We then reviewed several studies of energy intensity in the literature 
+and noted a wide range of results from one study to the next.
+The estimates of energy intensity also vary with time.
+The range of energy intensities for the auto sector 
+is $0.83 \times 10^{4}$ kJ/\$ to $11.6 \times 10^{4}$ kJ/\$.
 
-
+In the next chapter, we draw several implications 
+from the framework presented in
+Chapters~\ref{chap:materials}--\ref{chap:intensity}.
 
 
 \bibliographystyle{unsrt}

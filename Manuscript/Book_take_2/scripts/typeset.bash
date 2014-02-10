@@ -20,26 +20,27 @@ cd ..
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
 
 # Make the bibliobraphy. Need to do each chapter individually.
-cd Part_0; cd Chapter_Introduction; bibtex Chapter_Introduction;  cd ../..;
-cd Part_1; cd Chapter_Materials;    bibtex Chapter_Materials;     cd ../..;
-cd Part_1; cd Chapter_Energy;       bibtex Chapter_Energy;        cd ../..;
-cd Part_1; cd Chapter_Embodied;     bibtex Chapter_Embodied;      cd ../..;
-cd Part_2; cd Chapter_Values;       bibtex Chapter_Values;        cd ../..;
-cd Part_2; cd Chapter_Intensity;    bibtex Chapter_Intensity;     cd ../..;
-cd Part_3; cd Chapter_Implications; bibtex Chapter_Implications;  cd ../..;
-cd Part_3; cd Chapter_Unfinished;   bibtex Chapter_Unfinished;    cd ../..;
-cd Part_3; cd Chapter_Summary;      bibtex Chapter_Summary;       cd ../..;
-cd Appendix_Auto;                   bibtex Appendix_Auto;         cd ..;
-cd Appendix_Infinite_Series;        bibtex Appendix_Derivation;   cd ..;
-cd Appendix_Proof_1;                bibtex Appendix_Proof_1;      cd ..;
-cd Appendix_Estimating_A;           bibtex Appendix_Estimating_A; cd ..;
-cd Appendix_Casler;                 bibtex Appendix_Casler;       cd ..;
+cd Part_0; cd Chapter_Acknowledgements; bibtex Chapter_Acknowledgements; cd ../..;
+cd Part_0; cd Chapter_Introduction;     bibtex Chapter_Introduction;     cd ../..;
+cd Part_1; cd Chapter_Materials;        bibtex Chapter_Materials;        cd ../..;
+cd Part_1; cd Chapter_Energy;           bibtex Chapter_Energy;           cd ../..;
+cd Part_1; cd Chapter_Embodied;         bibtex Chapter_Embodied;         cd ../..;
+cd Part_2; cd Chapter_Values;           bibtex Chapter_Values;           cd ../..;
+cd Part_2; cd Chapter_Intensity;        bibtex Chapter_Intensity;        cd ../..;
+cd Part_3; cd Chapter_Implications;     bibtex Chapter_Implications;     cd ../..;
+cd Part_3; cd Chapter_Unfinished;       bibtex Chapter_Unfinished;       cd ../..;
+cd Part_3; cd Chapter_Summary;          bibtex Chapter_Summary;          cd ../..;
+cd Appendix_Auto;                       bibtex Appendix_Auto;            cd ..;
+cd Appendix_Infinite_Series;            bibtex Appendix_Derivation;      cd ..;
+cd Appendix_Proof_1;                    bibtex Appendix_Proof_1;         cd ..;
+cd Appendix_Estimating_A;               bibtex Appendix_Estimating_A;    cd ..;
+cd Appendix_Casler;                     bibtex Appendix_Casler;          cd ..;
 
-# Make the index section.
+# Make the index
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
-# Make the nomenclature section.
-makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nlo -s nomencl.ist -o Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.nls
+# Make the glossaries for the Glossary and List of Symbols
+makeglossaries Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
 # Run again--thrice--to include all the index, toc, and nomenclature information
 pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex

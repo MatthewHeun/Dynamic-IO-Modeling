@@ -23,11 +23,12 @@ I'm figgering on biggering and BIGGERING and \large BIGGERING
 \label{chap:materials} 
 
 \abstract*{In this chapter we will develop a framework 
-for accounting material flows and accumulations within economies.
+for accounting material flows and accumulations\index{accumulation!of materials}
+within economies.
 We will begin by looking at accounting in everyday life
 before using concepts from thermodynamics, 
 such as system boundaries, control volumes as well as
-the First Law of Thermodynamics,
+the First Law of Thermodynamics\index{First Law of Thermodynamics},
 to develop a rigorous accounting procedure.
 This procedure is applied first to a one-sector then 
 two-sector model of the economy,
@@ -69,14 +70,15 @@ surrounding environment---the biosphere\index{biosphere}.
 % especially fresh water, that are not directly embodied in the final product.
  
 
-There are many easily observable instances of material accumulations
+There are many easily observable instances 
+of material accumulations\index{accumulation!of materials}
 within an economy. 
 A typical office contains a computer screen, coffee cup
 and myriad other items. 
 Beyond the window, there is a street and building
 opposite. 
 All of these goods came originally from natural 
-resources\index{natural resources}\index{resources!natural|see{natural resources}}, 
+resources\index{natural resources}, 
 be it paper or petroleum or rock. They were extracted and processed, transported and
 transformed requiring yet more materials and energy inputs in the form of
 electricity or fuels. 
@@ -98,7 +100,7 @@ telephone networks, and a computer by which to access it.
 
 In this chapter, we will define a mathematical framework 
 to track the flow and accumulation of
-materials within an economy, 
+materials\index{accumulation!of materials} within an economy, 
 building from a one-sector economy up to examples of both
 two- and three-sector economies. 
 We will finally apply this framework to the illustrative
@@ -191,8 +193,7 @@ we can reframe the question to ask,
 ``at what rate does the stock of apples change?'' 
 That is, we can examine the rate of
 change of the apple stock per unit of time 
-relative to the flow of apples 
-($\dot{a}$)\nomenclature[ab]{$\dot{a}$}{flow rate of apples [apples/time]}, 
+relative to the flow of apples ($\dot{a}$), 
 in which case our accounting equation becomes:
 
 \begin{equation} \label{eq:apple_rate_accounting}
@@ -202,14 +203,12 @@ in which case our accounting equation becomes:
 	+ \dot{a}_{grown}
 	- \dot{a}_{eaten}
 \end{equation}
-\nomenclature[a]{$a$}{stock of apples [apples]}
-\nomenclature[t]{$t$}{time [s]}
 
 \noindent{}where the dot above the variable ($\dot{a}$) indicates 
 a flow rate per unit time [apples/time] and
 the time derivative $\left( \frac{\mathrm{d}a}{\mathrm{d}t} \right)$ 
 is the rate of change of the stock of apples per time unit, or more simply,
-the accumulation\index{accumulation} rate.
+the accumulation\index{accumulation!of apples} rate.
  
 % ***** Take a moment to tie apples to mass or material. 
 % Clearly note that material is measured kg rather than dollars.
@@ -258,7 +257,7 @@ we might write an equation like this:
 Note that the production and consumption terms are zero
 since steel is not created or destroyed within the automobile
 sector. Tracking the rate flows of steel, 
-$\dot{s}$ (in kg/s)\nomenclature[sd]{$\dot{s}$}{steel mass flow rate [kg/s]},
+$\dot{s}$ (in kg/s),
 we would write the following equation:
 
 \begin{equation}
@@ -266,7 +265,7 @@ we would write the following equation:
 	= \dot{s}_{in}
 	- \dot{s}_{out}
 \end{equation}
-\nomenclature[sc]{$s$}{stock of steel [kg]}
+
 
 Again, the last two terms 
 (representing steel production and consumption) 
@@ -324,7 +323,7 @@ Again, focusing on mass flows of the chemical elements avoids this necessity,
 because mass is \emph{conserved} in physical processes.
 Any mass entering a control volume (transfer in) 
 must go somewhere, 
-whether it stays within the volume (accumulation) 
+whether it stays within the volume (accumulation\index{accumulation}) 
 or is transferred out.
 Conservation of mass is expressed in equations such as the ones above
 for apples and steel for the auto industry. 
@@ -334,7 +333,7 @@ Similar to the principle of the conservation of mass,
 the First Law of Thermodynamics\index{First Law of Thermodynamics},
 says that \emph{energy can neither be created nor destroyed}. 
 In the discussion that follows, we will make great use 
-of the First Law.
+of the First Law\index{First Law of Thermodynamics}.
 If I eat an apple, it is no longer an apple, 
 but the materials (i.e.\ chemical elements) 
 and energy contained
@@ -373,10 +372,9 @@ as discussed in Chapter~\ref{chap:value}.
 When applying accounting equations to economic sectors,
 we distinguish among four types of
 materials flowing into or out of a production sector: 
-products ($P$) \nomenclature[P]{$P$}{mass of products [kg]}, 
-resources\index{resources} ($R$)\nomenclature[R]{$R$}{mass of resources [kg]},
-short-lived goods ($S$)\nomenclature[S]{$S$}{mass of short-lived goods [kg]},
-and capital goods\index{capital goods} ($K$)\nomenclature[K]{$K$}{mass of capital goods [kg]}, 
+products ($P$), resources\index{resources} ($R$),
+short-lived goods ($S$),
+and capital goods\index{capital goods} ($K$), 
 as shown in Figure~\ref{fig:PERKS_materials}.
 
 \begin{figure}[!ht]
@@ -398,10 +396,10 @@ Depreciated capital leaves the sector from below and is returned to the biospher
 \label{fig:PERKS_materials}
 \end{figure}
 
-Resource materials ($\dot{R}$)\nomenclature[Rb]{$\dot{R}$}{resource mass flow rate [kg/s]} 
+Resource materials ($\dot{R}$)
 enter the sector from the left.
 They comprise those materials that are destined to be \emph{embodied} 
-in the goods produced by the sector ($\dot{P}$)\nomenclature[Pb]{$\dot{P}$}{product mass flow rate [kg/s]}, which leave from the right,
+in the goods produced by the sector ($\dot{P}$), which leave from the right,
 except for some proportion that is wasted\index{waste}.
 All wastes depart from the bottom of the sector and are
 returned to the biosphere\index{biosphere}. 
@@ -414,9 +412,9 @@ such as trimming scrap from metal parts stamping,
 and may be either recycled internally, 
 or wasted\index{waste} to the biosphere\index{biosphere}. 
 In this framework, 
-resource materials are not accumulated\index{accumulation} within a sector.
+resource materials are not accumulated\index{accumulation!of materials} within a sector.
 
-Short-lived goods ($\dot{S}$)\nomenclature[Sb]{$\dot{S}$}{short-lived goods mass flow rate [kg/s]}  
+Short-lived goods ($\dot{S}$)
 include those materials 
 that are necessary for the production processes of a sector, 
 but are neither accumulated within the sector, 
@@ -435,17 +433,17 @@ resource flows (that are \emph{physically embodied}
 in the product) and other flows necessary to support production
 of the product.
 }~\cite{G-R1970} 
-or Daly's ``material causes''.~\cite{Daly2006}
+or Daly's ``material causes.''~\cite{Daly2006}
 
 Many of the material flows into the sector, 
 such as production equipment,
 are necessary for the continued operation of a sector 
 but are not counted as short-lived goods, 
 because the operation of the sector is dependent 
-upon the accumulation\index{accumulation} 
-of these materials within the sector. 
+upon the accumulation 
+of these materials\index{accumulation!of materials} within the sector. 
 Such flows are counted as capital goods\index{capital goods} 
-($K$).\nomenclature[Kb]{$\dot{K}$}{capital goods mass flow rate [kg/s]}
+($K$).
 Capital flows ($\dot{K}$) also enter from above, 
 but are stored within the sector 
 (represented by a storage tank) 
@@ -521,16 +519,15 @@ such as oxygen or water that flow
 literally \emph{embodied} within the output, 
 flow into the economy (1) from the 
 biosphere\index{biosphere} (0).\footnote{Double 
-subscripts on quantities
-(e.g., $\dot{E}_{ij}$) indicate a flow 
-from sector $i$ to sector $j$. 
-The first index always indicates the sector \emph{from} which a quantity flows, 
-and the second index indicates the sector \emph{to} which a quantity flows.
-Single subscripts on quantities such as
-$E$ can mean one of two things: 
-$\dot{E}_{i}$ indicates the outflow of direct energy from sector $i$, 
-whereas $E_{i}$ denotes the direct energy content of sector $i$.
-} 
+	subscripts on quantities
+	(e.g., $\dot{R}_{ij}$) indicate a flow 
+	from sector $i$ to sector $j$. 
+	The first index always indicates the sector \emph{from} which a quantity flows, 
+	and the second index indicates the sector \emph{to} which a quantity flows.
+	Single subscripts on quantities such as
+	$K$ can mean one of two things: 
+	$\dot{K}_{i}$ indicates the outflow of capital from sector $i$, 
+	whereas $K_{i}$ denotes the capital stock of sector $i$.} 
 These materials are processed within the economy 
 into products ($\dot{P}_{1}$) consisting of 
 resource goods ($\dot{R}_{11}$), 
@@ -551,7 +548,7 @@ are returned to the biosphere\index{biosphere}
 when they are physically depreciated\index{depreciation}.
 
 Drawing control volumes around both the 
-biosphere\index{biosphere}~(0) and society~(1)
+Biosphere\index{biosphere}~(0) and Society~(1)
 in Figure~\ref{fig:A_materials}, 
 we can construct material accounting equations,
 such that:
@@ -696,7 +693,7 @@ so we may state:
 % \end{align}
 
 % Equation~\ref{eq:A_CV_1b} indicates that the accumulation 
-% of capital\index{capital accumulation}\index{accumulation!capital|see{capital accumulation}}
+% of capitalindex{accumulation!of capital}
 % within society is the imbalance 
 % between the flow of materials pulled from the biosphere\index{biosphere}
 % ($\dot{R}_{01} + \dot{S}_{01}$) and the 
@@ -836,7 +833,8 @@ into Equation~\ref{eq:A_CV_0} we obtain:
 % is an open question. --MCD ****
 
 Equation~\ref{eq:A_CV_0a} states that the rate of ``accumulation'' 
-(or more accurately depletion) of natural capital~($R_{0}$ and $S_{0}$) 
+(or more accurately depletion) 
+of natural capital\index{accumulation!of natural capital}~($R_{0}$ and $S_{0}$) 
 is dependent on the rates at which society extracts these materials
 from the biosphere ($\dot{R}_{01}$ and $\dot{S}_{01}$) and the rates
 of disposal of waste materials back to the biosphere ($\dot{R}_{10}$ 
@@ -845,9 +843,9 @@ that although Equation~\ref{eq:A_CV_0a}
 is true for total mass of materials,
 it does not account for the \emph{quality} of these materials.
 Society relies heavily on extracted resources 
-from naturally occurring accumulations that are 
+from naturally occurring accumulations\index{accumulation!of natural resources} that are 
 far from equilibrium with their surroundings,
-e.g.\ fossil fuel reservoirs or seams of high-grade ore. 
+e.g.\ fossil fuel\index{fossil fuel} reservoirs or seams of high-grade ore. 
 As these high quality material reserves are depleted 
 and society must turn to lower grade reserves, 
 more energy and other economic factors (labor, capital, money) 
@@ -894,7 +892,7 @@ into Equation~\ref{eq:A_CV_1b}, we obtain:
 \end{equation}
 
 \noindent{}which tells us that 
-accumulation of capital in society~($K_{1}$)
+accumulation of capital\index{accumulation!of capital} in society~($K_{1}$)
 is dependent only on 
 inflows of capital into society~($\dot{K}_{11}$) 
 and depreciation of capital 
@@ -953,7 +951,7 @@ Noticing that the left-hand side
 of Equation~\ref{eq:A_CV_1f} is the negation 
 of the right-hand side of Equation~\ref{eq:A_dR0_neq_0},
 we may rewrite Equation~\ref{eq:A_CV_1f}
-in terms of the accumulation 
+in terms of the accumulation\index{accumulation!of natural resources} 
 (or more accurately, depletion)
 of natural resources: 
 
@@ -1020,36 +1018,48 @@ resource flows ($\dot{R}_{21}$),
 short-lived goods ($\dot{S}_{21}$) 
 and capital goods ($\dot{K}_{21}$)
 flows.
+%
+% Next sentence is awkward and convoluted.
+% 
+% One point worth noting is that 
+% what we are here denoting as a flow of 
+% ``capital goods''\index{capital goods}
+% into final consumption ($\dot{K}_{21}$) 
+% would more normally be referred to by economist as 
+% ``consumer durables,'' % chktex 38
+% though also includes other products, 
+% such as housing, 
+% that economists might not include in that category.
+% \footnote{
+% %For national accounting, 
+% % capital goods are used only within 
+% % productive sectors of the economy.
+% %%all capital goods are produced and used within the industry sectors. 
+% %%Bridges, roads, the internet, and all other public infrastructure are counted as 
+% %%government spending (ie. consumption), not investment in capital.
+% **** Mik - I took this footnote out altogether because in the last two
+% years the BEA\index{Bureau of Economic Analysis} has tried to fix this problem (of
+% categorizing all investment in the private sector) through adding
+% addenda onto the tables, etc. There is not a clear
+% sentence to write here without a lot of caveats. ****}
+%
+% This is the fix that Becky and Matt developed.
+%
 One point worth noting is that 
-what we are here denoting as a flow of 
+our flow of 
 ``capital goods''\index{capital goods}
 into final consumption ($\dot{K}_{21}$) 
-would more normally be referred to by economist as 
-``consumer durables,'' % chktex 38
-though also includes other products, 
-such as housing, 
-that economists might not include in that category.
-\footnote{
-%For national accounting, 
-% capital goods are used only within 
-% productive sectors of the economy.
-%%all capital goods are produced and used within the industry sectors. 
-%%Bridges, roads, the internet, and all other public infrastructure are counted as 
-%%government spending (ie. consumption), not investment in capital.
-**** Mik - I took this footnote out altogether because in the last two
-years the BEA has tried to fix this problem (of
-categorizing all investment in the private sector) through adding
-addenda onto the tables, etc. There is not a clear
-sentence to write here without a lot of caveats. ****}
-
-The important concept being that some goods 
-(fridges, televisions, apartment blocks) 
-may accumulate within sector~(1)
+includes consumer durables and housing
+in addition to typical items 
+such as bridges and other public infrastructure.
+We chose this approach because some goods 
+(refrigerators, televisions, apartment blocks) 
+may accumulate within Sector~(1)
 and would be represented within flow 
 $\dot{K}_{21}$, 
 whereas other short-lived goods
 (newspapers, plastic packaging, electricity) 
-do not accumulate and are represented within flow 
+do not accumulate within Sector~1 and are represented by flow 
 $\dot{S}_{21}$.
 
 %\footnote{As has been mentioned elsewhere,
@@ -1179,7 +1189,7 @@ This may be large in agrarian economies.}
 In contrast, 
 short-lived materials \emph{do} flow directly to final consumption 
 from the biosphere\index{biosphere}, 
-for example the flow of photons in sunlight or 
+for example the flow of photons in Sunlight or 
 oxygen into car engines and lungs. 
 We can redefine flow $\dot{S}_{0}$:
 %and $\dot{S}_{1}$:
@@ -1410,7 +1420,7 @@ in which case we obtain:
 \end{align}
 
 \noindent{}which tells us that accumulation 
-of man-made capital ($K$) in each sector ($j$)
+of man-made capital\index{accumulation!of capital}~($K$) in each sector ($j$)
 is dependent only on inflows of capital goods 
 into that sector~($\dot{K}_{2j}$) and 
 depreciation of capital to the biosphere 
@@ -1578,7 +1588,7 @@ In this example, we will take a slightly different approach
 than in the previous two examples. 
 Instead of discerning whether or not certain flows exist---asking for instance,
 is there a flow of resources ($\dot{R}_{21}$) from
-the energy sector (2) to final consumption (1)?----we
+Energy~(2) to Final Consumption~(1)?----we
 shall account for all flows,
 \emph{even if} those flows are zero.
 In this way,
@@ -1587,7 +1597,7 @@ framework for material accounting within an economy
 of any size.
 
 Accounting for the material flows 
-into and out of the biosphere\index{biosphere} 
+into and out of the Biosphere\index{biosphere} 
 (0) gives the following equation:
 
 \begin{align} \label{eq:C_CV_0}
@@ -1743,14 +1753,14 @@ product flows~($\dot{P}$) as:
 	+ \sum_{j = 1}^{3}\dot{K}_{3j}
 \end{align}
 
-As in Example~B, final consumption (1) provides 
+As in Example~B, Final Consumption~(1) provides 
 only labor (represented by $\dot{S}$ flows)
 to the other sectors of the economy.
-The energy sector (2) provides 
+The Energy sector~(2) provides 
 energy products~($\dot{S}_{2j}$) to the other
 sectors of the economy. 
 It may also provide resources to itself ($\dot{R}_{22}$)
-and to the goods and services sector (3), 
+and to the Goods and Services sector~(3), 
 as in the case of metallurgical coke or 
 natural gas for fertilizer.
 The energy sector does not produce capital goods,
@@ -1763,8 +1773,9 @@ energy from industrial waste streams.}
 hence $\dot{R}_{32} = 0$.
 
 Since we do not allow accumulation of either
-resources~(R) or short-lived capital goods~(S) in
-economic sectors,
+resources\index{accumulation!of resources}~(R) 
+or short-lived capital goods\index{accumulation!of short-lived capital}~(S) 
+in economic sectors,
 then we may say:
 
 \begin{align}\label{eq:C_dR_and_dS_zero}
@@ -1962,7 +1973,7 @@ more general result:
 
 \noindent{}Equation~\ref{eq:C_CV_K_balance} states that
 for any economic sector, $j$,
-the accumulation of man-made capital stock ($K_{j}$)
+the accumulation of man-made capital stock\index{accumulation!of capital}~($K_{j}$)
 is dependent only on inflows of capital stock
 from other economic sectors
 ($\dot{K}_{ij}$)
@@ -2304,26 +2315,28 @@ Capital to biosphere					& $\dot{K}_{j0}$	&	discarded equipment								\\
 In this chapter we saw how we all use accounting in our everyday lives
 to count not just physical things (people, apples) but also non-physical things
 (money). We developed a rigorous procedure for accounting by defining the 
-\emph{what}, \emph{when} and \emph{where}: what are we counting;
-when do we begin and end counting and where is our system
-boundary (control volume). We saw that some things that we count (apples) can be
+\emph{what}, \emph{when}, and \emph{where}: what are we counting,
+when do we begin and end counting,
+and where is our system boundary (control volume). 
+We saw that some things that we count (apples) can be
 created and destroyed but other things (mass, energy)
-are never created or destroyed.
+are never created nor destroyed.
 
 We then applied this accounting procedure to materials 
 flowing through an economy. 
 We defined four different types of materials: \emph{resources},
-\emph{short-lived goods} and \emph{capital} which are used to make
+\emph{short-lived goods}, and \emph{capital} which are used to make
 \emph{products} and specified that only capital 
 may accumulate within economic sectors.
 We used these definitions in three examples,
-building from a one-sector model of the economy,
-to a general framework for flows (and accumulation) of materials.
+building from a one-sector model of the economy
+to a general framework for flows (and accumulation) 
+of materials\index{accumulation!of materials}.
 We then applied the framework to the real-world example of
 the US auto industry.
 We categorized the types of materials used to produce
 automobiles,
-but also found that industry-level data is difficult to obtain.
+but found that industry-level data are difficult to obtain.
 
 In the following two chapters of Part~\ref{part:matter},
 we will apply our accounting framework 

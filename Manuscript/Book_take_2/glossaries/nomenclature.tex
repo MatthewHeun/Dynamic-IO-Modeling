@@ -1,0 +1,459 @@
+%!TEX root = ../Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This file contins information for the nomenclature section.
+% Nomenclature is built with the glossaries package.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define the glossary database for the nomenclature section
+\newglossary{nomenclature}{nomin}{nomout}{List of Symbols}
+
+% Define the style for the nomenclature
+\newglossarystyle{nomenclaturestyle}{
+	% \glossarystyle{tree}
+	\setglossarystyle{alttreegroup}
+	\glssetwidest[0]{mm}                  % Indent for the symbol (width of "mm")
+	\glssetwidest[1]{$B_{waste}$m}        % Additional indent for the description
+	\renewcommand{\glssymbolsgroupname}{} % Eliminates the "Symbols" header on this list
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Nomenclature Categories %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% These are the main headings of the nomenclature section.
+% They are used later to categorize the items in the nomenclature.
+%
+
+% Roman
+\newglossaryentry{romanletter}{name={\textit{Roman}},
+								description={\nopostdesc},
+								sort = 1roman % Prefix with "1" to ensure that Roman is first
+								}
+
+% Greek								
+\newglossaryentry{greekletter}{name={\textit{Greek}},
+								description={\nopostdesc},
+								sort = 2greek % Prefix with "2" to ensure that Greek is second
+								}
+
+% Subscripts								
+\newglossaryentry{subscript}{name={\textit{Subscripts}},
+								description={\nopostdesc},
+								sort = 3subscripts % "3" prefix to ensure subscripts are last
+								}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Nomenclature Entries %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Fields of the nomenclature entries are:
+%    key: the unnamed argument right after \newglossaryentry{_key_}{params}.
+%         Convention: Let's adopt the convention that ALL keys are ALL lower-case 
+%                     and prefixed by "nom:". This prevents conflicts with the Index.
+%    type: which glossary will contain this term. For all nomenclature entries, use "nomenclature"
+%    parent: which sublist will contain this term. Options are:
+%                           1) romanletter
+%                           2) greekletter
+%                           3) subscript
+%    name: how the symbol will appear in the List of Symbols
+%    description: the description of the symbol.
+%         Convention: append a unit string such as [J/s] at the end.
+%    sort: how the entry will be sorted in the Index. If omitted, name is used.
+%          Convention: Let's adopt 4-argument, colon-separated sort keys
+%                      The fields are:
+%                           1) variable name (without any subscripts)
+%                           2) lower case (lc) (will be 1st) or upper-case (uc) (will be 2nd)
+%                           3) variable decoration designation, one of
+%                              - (meaning no decoration)
+%                              dot, dotprime
+%                              hat, hatprime
+%                              vec, vechat, vecprime
+%                              The above will sort in a good order
+%                                  Use lowercase letters ONLY.
+%                           4) subscripts
+%                      Examples:
+%                           \dot{Q}        "q:uc:dot:-"
+%                           \hat{\vec{X}}  "x:uc:hat:-"
+%                           
+%
+
+%++++++++++++++++++++++++++++++++++
+%+++++++++ Roman Letters ++++++++++
+%++++++++++++++++++++++++++++++++++
+
+\newglossaryentry{nom:a-apples}{
+								name = $a$,
+								description = stock of apples [-],
+								sort = a:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:a-io}{
+								name = $a$,
+								description = input output ratio [-],
+								sort = a:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:a_dot}{
+								name = $\dot{a}$,
+								description = apple flow rate [apples/s],
+								sort = a:lc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:A}{
+								name = $\protect\vec{A}$, % need to protect vec to prevent errors
+								description = input output matrix [-],
+								sort = a:uc:vec:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:B}{
+								name = $B$, 
+								description = embodied energy [J],
+								sort = b:uc:-:-,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:B_waste}{
+								name = $\protect\vec{B}_{waste}$,
+								description = vector of waste flows [J/s],
+								sort = b:uc:vec:waste,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+								
+\newglossaryentry{nom:B_dot}{
+								name = $\dot{B}$,
+								description = embodied energy flow rate [W],
+								sort = b:uc:dot:-,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:E}{
+								name = $E$, 
+								description = direct energy [J],
+								sort = e:uc:-:-,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:Edot}{
+								name = $\dot{E}$, 
+								description = direct energy flow rate [W],
+								sort = e:uc:dot:-,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:E0}{
+								name = $\textbf{E}_{0}$, 
+								description = vector of direct energy inputs from the biosphere [W],
+								sort = e:uc:vec:0,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:K}{
+								name = $K$,
+								description = mass of capital goods [kg],
+								sort = k:uc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Kdot}{
+								name = $\dot{K}$,
+								description = capital goods mass flow rate [kg/year],
+								sort = k:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:P}{
+								name = $P$,
+								description = mass of products [kg],
+								sort = p:uc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Pdot}{
+								name = $\dot{P}$,
+								description = product mass flow rate [kg],
+								sort = p:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:n}{
+								name = $n$,
+								description = number of sectors in the economy,
+								sort = n:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Qdot}{
+								name = $\dot{Q}$,
+								description = waste heat flow rate [W],
+								sort = q:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:R}{
+								name = $R$, 
+								description = mass of resource [kg],
+								sort = r:uc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Rdot}{
+								name = $\dot{R}$, 
+								description = mass flow rate of resources [kg/year],
+								sort = r:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:s}{
+								name = $s$, 
+								description = stock of steel [kg],
+								sort = s:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:sdot}{
+								name = $\dot{s}$, 
+								description = mass flow rate of steel [kg/year],
+								sort = s:lc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:S}{
+								name = $S$, 
+								description = mass of short-lived goods [kg],
+								sort = s:uc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Sdot}{
+								name = $\dot{S}$, 
+								description = mass flow rate of short-lived goods [kg/year],
+								sort = s:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:t}{
+								name = $t$, 
+								description = time [year],
+								sort = t:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:T}{
+								name = $T$, 
+								description = total energy [J],
+								sort = t:uc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Tdot}{
+								name = $\dot{T}$, 
+								description = total energy flow rate [J/year],
+								sort = t:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Tvec1}{
+								name = $\protect\vec{T}_{1}$, 
+								description = vector of total energy inputs 
+												from society to the economy [W],
+								sort = t:uc:vec:1,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:X}{
+								name = $X$, 
+								description = stock of economic value [\$],
+								sort = x:uc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Xdot}{
+								name = $\dot{X}$, 
+								description = economic value flow rate [\$/year],
+								sort = x:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Xvechat}{
+								name = $\hat{\protect\vec{X}}$,
+								description = matrix of sector outputs 
+												in mixed units [\$/year or J/year],
+								sort = x:uc:vechat:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+								
+\newglossaryentry{nom:Xt}{
+								name = $\protect\vec{X}_{t}$, 
+								description = transaction matrix [\$/year],
+								sort = x:uc:vec:t,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+%++++++++++++++++++++++++++++++++++
+%+++++++++ Greek Letters ++++++++++
+%++++++++++++++++++++++++++++++++++
+
+\newglossaryentry{nom:alpha}{
+								name = $\alpha$,
+								description = ratio of inflowing capital stock rate 
+												to capital stock [1/year],
+								sort = alpha:lc:-:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:delta}{
+								name = $\delta_{ij}$,
+								description = Kronecker delta,
+								sort = delta:lc:-:ij,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+								
+\newglossaryentry{nom:etardot}{
+								name = $\eta_{\dot{R}}$,
+								description = resource efficiency [kg/kg],
+								sort = eta:lc:-:r,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:epsilon}{
+								name = $\varepsilon$,
+								description = energy intensity [J/\$],
+								sort = epsilon:lc:-:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:epsilonvec}{
+								name = $\boldsymbol{\varepsilon}$,
+								description = column vector of sector energy intensities [J/\$],
+								sort = epsilon:lc:vec:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:gammahat}{
+								name = $\hat{\boldsymbol{\gamma}}$,
+								description = diagonal matrix of depreciation rates [1/year],
+								sort = gamma:lc:vechat:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:gamma}{
+								name = $\gamma$,
+								description = depreciation rate [1/year],
+								sort = gamma:lc:-:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:rhosdot}{
+								name = $\rho_{\dot{S}}$,
+								description = ratio of short-lived material flow rate
+												to resource flow rate [kg/kg],
+								sort = rho:lc:-:s,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+%+++++++++++++++++++++++++++++++
+%+++++++++ Subscripts ++++++++++
+%+++++++++++++++++++++++++++++++
+
+\newglossaryentry{nom:dest}{
+								name = $dest$,
+								description = destruction,
+								sort = dest:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:gen}{
+								name = $gen$,
+								description = destruction,
+								sort = gen:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:i}{
+								name = $i$,
+								description = economic sector index,
+								sort = i:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:in}{
+								name = $in$,
+								description = denotes an inflow,
+								sort = in:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:j}{
+								name = $j$,
+								description = economic sector index,
+								sort = j:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:k}{
+								name = $k$,
+								description = economic sector index,
+								sort = k:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+								
+\newglossaryentry{nom:out}{
+								name = $out$,
+								description = denotes an outflow,
+								sort = out:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+								
