@@ -930,7 +930,7 @@ passing it to article class \MessageBreak
 % it defines various texts and their translations
 % called up with documentstyle options
 \def\switcht@albion{%
-\def\abstractname{Abstract}%
+\def\aractname{Abstract}%
 \def\ackname{Acknowledgements}%
 \def\andname{and}%
 \def\bibname{References}%
