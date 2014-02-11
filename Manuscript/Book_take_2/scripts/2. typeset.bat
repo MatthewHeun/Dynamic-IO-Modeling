@@ -88,7 +88,7 @@ cd ..
 
 
 REM Make the index section.
-REM makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
+makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
 REM Make the Glossary and List of Symbols
 makeglossaries Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
