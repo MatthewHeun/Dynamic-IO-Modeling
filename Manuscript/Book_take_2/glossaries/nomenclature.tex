@@ -94,7 +94,7 @@
 
 \newglossaryentry{nom:a-io}{
 								name = $a$,
-								description = input output ratio [-],
+								description = input output ratio{,} mixed units,
 								sort = a:lc:-:-,
 								parent = romanletter,
 								type = nomenclature, 
@@ -110,7 +110,7 @@
 
 \newglossaryentry{nom:A}{
 								name = $\protect\vec{A}$, % need to protect vec to prevent errors
-								description = input output matrix [-],
+								description = input output matrix{,} mixed units,
 								sort = a:uc:vec:-,
 								parent = romanletter,
 								type = nomenclature, 
@@ -119,6 +119,14 @@
 \newglossaryentry{nom:B}{
 								name = $B$, 
 								description = embodied energy [MJ],
+								sort = b:uc:-:-,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:B_biomass}{
+								name = $B$, 
+								description = ecosystem biomass stock [kg],
 								sort = b:uc:-:-,
 								type = nomenclature, 
 								parent = romanletter,
@@ -190,6 +198,14 @@
 								type = nomenclature, 
 								}
 
+\newglossaryentry{nom:n}{
+								name = $n$,
+								description = number of sectors in the economy,
+								sort = n:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
 \newglossaryentry{nom:P}{
 								name = $P$,
 								description = mass of products [kg],
@@ -198,18 +214,27 @@
 								type = nomenclature, 
 								}
 
-\newglossaryentry{nom:Pdot}{
-								name = $\dot{P}$,
-								description = product mass flow rate [kg],
-								sort = p:uc:dot:-,
+\newglossaryentry{nom:P_photosynthesis}{
+								name = $P$,
+								description = ecosystem photosynthetic 
+												energy production rate [J/year],
+								sort = p:uc:-:-,
 								parent = romanletter,
 								type = nomenclature, 
 								}
 
-\newglossaryentry{nom:n}{
-								name = $n$,
-								description = number of sectors in the economy,
-								sort = n:lc:-:-,
+\newglossaryentry{nom:P_lc}{
+								name = $p$,
+								description = a system property,
+								sort = p:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Pdot}{
+								name = $\dot{P}$,
+								description = product mass flow rate [kg],
+								sort = p:uc:dot:-,
 								parent = romanletter,
 								type = nomenclature, 
 								}
@@ -296,7 +321,7 @@
 
 \newglossaryentry{nom:Tvec1}{
 								name = $\protect\vec{T}_{1}$, 
-								description = column vector of total energy inputs 
+								description = column vector of total energy flows ($\dot{T}$)
 												from society to the economy [MJ/year],
 								sort = t:uc:vec:1,
 								parent = romanletter,
@@ -313,7 +338,7 @@
 
 \newglossaryentry{nom:Xdot}{
 								name = $\dot{X}$, 
-								description = economic value flow rate [\$/year],
+								description = economic value flow rate{,} mixed units,
 								sort = x:uc:dot:-,
 								parent = romanletter,
 								type = nomenclature, 
@@ -444,6 +469,14 @@
 								type = nomenclature, 
 								}
 
+\newglossaryentry{nom:B_sub}{
+								name = $B$,
+								description = pertaining to embodied energy,
+								sort = b:uc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+								
 \newglossaryentry{nom:dest}{
 								name = $dest$,
 								description = destruction,
@@ -492,6 +525,22 @@
 								type = nomenclature, 
 								}
 								
+\newglossaryentry{nom:K_sub}{
+								name = $K$,
+								description = pertaining to capital stock,
+								sort = k:uc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+								
+\newglossaryentry{nom:t_sub}{
+								name = $t$,
+								description = transaction,
+								sort = t:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
 \newglossaryentry{nom:out}{
 								name = $out$,
 								description = outflow,
@@ -500,4 +549,11 @@
 								type = nomenclature, 
 								}
 
+\newglossaryentry{nom:waste_sub}{
+								name = $waste$,
+								description = pertaining to waste,
+								sort = waste:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
 								
