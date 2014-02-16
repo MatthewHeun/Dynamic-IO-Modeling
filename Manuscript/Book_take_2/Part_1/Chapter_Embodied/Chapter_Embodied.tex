@@ -104,7 +104,7 @@ of the economy.
 See Section~\ref{sec:implications_for_development} for a
 discussion of various indicator of economic ``development.''}
 
-The purpose of this chapter is to develop a model for 
+The purpose of this chapter is to develop a framework for accounting
 embodied energy flows within economies. 
 With an embodied energy model in hand, we will be positioned
 to develop a model for the energy intensity 
@@ -173,13 +173,13 @@ consists of direct energy only ($\dot{B} = 0$ and $\dot{T} = \dot{E}$),
 because, in this framework, no embodied energy ($B$) is added 
 to the crude oil until it reaches the downstream side of the oil rig.
 Conversely, the material produced by a non-energy sector of the economy 
-consists of indirect energy only ($\dot{E} \approx 0$, 
+consists of embodied energy only ($\dot{E} \approx 0$, 
 and therefore $\dot{T} \approx \dot{B}$), 
 because direct energy ($E$) produced by 
 a non-energy sector is negligible in this framework. 
 
 In other cases, a material flow may include both a direct energy flow
-($\dot{E}$) \emph{and} an embodied energy flow ($\dot{B}$) component.
+($\dot{E}$) component \emph{and} an embodied energy flow ($\dot{B}$) component.
 For example, the outgoing flow of refined petroleum from the energy sector 
 has both a direct energy ($\dot{E}$, the energy content of the oil product, 
 usually represented by chemical potential energy) 
@@ -195,41 +195,41 @@ energy consumed in food production) will be non-zero.}
 Most of the energy Input-Output (EI-O) literature~\cite{Bullard1975, Herendeen1978} 
 applies the following (and often unstated) assumptions:
 
-\begin{enumerate}
-	\item flows of total energy ($\dot{T}$) are 
-	\emph{conserved},\footnote{Total energy 
-	can be neither created nor destroyed.}
+\begin{itemize}
+	\item{flows of total energy ($\dot{T}$) are 
+	conserved,\footnote{Total energy 
+	can be neither created nor destroyed.}}
 
-	\item steady state conditions exist 
-	(i.e., total energy does not accumulate in economic 
-	sectors),
+	\item{total energy does not accumulate in economic 
+	sectors,}
 	
-	\item the net total energy inflow to a sector
-	is allocated to the products of that sector (i.e., 
-	there is no ``waste'' of total energy), and
-	
-	\item there is never a flow of embodied energy to the biosphere,
-	it simply builds up (we hesitate to say\ldots{}accumulates) 
-	in the economy, however no stock of embodied 
-	energy is accounted.% \footnote{If it seems a little contradictory
+	\item{there is never a flow of embodied energy to the biosphere, and}
+	% it simply builds up (we hesitate to say\ldots{}accumulates) 
+	% in the economy, however no stock of embodied 
+	% energy is accounted.}% \footnote{If it seems a little contradictory
 	%	to say both that ``total energy does not accumulate'' and
 	%	that embodied energy simply accumulates in the economy,
 	%	we totally agree.}
-\end{enumerate}
 
-Like the EI-O literature, we assume that total energy is conserved
+	\item{all total energy inflow to a sector
+	is allocated to the products of that sector (i.e., 
+	there is no ``waste'' of total energy).}	
+\end{itemize}
+
+Like the EI-O literature, we assume that total energy ($T$) is conserved
 and never wasted.\footnote{Of course, waste heat exists and is
-accounted by the First Law of Thermodynamics. 
-However, waste heat is ignored when accounting for total energy.}
+	accounted by the First Law of Thermodynamics. 
+	However, waste heat is ignored when accounting for total energy.}
 However, we depart from the EI-O literature by explicitly
 accounting a stock 
 for total energy accumulation
 in economic sectors. 
-Steady state, this approach is not.
 
 Total energy ($T$) may accumulate within an economic sector 
 as stocks of direct energy materials 
-(piles of coal or tanks of oil) 
+(piles of coal or tanks of oil)\footnote{But little direct
+	energy accumulation actually occurs.
+	We use energy as fast as we make it available to society.}
 but also as energy embodied in stocks of capital goods 
 (e.g., machinery or buildings). 
 The rate of accumulation of total energy
@@ -296,7 +296,7 @@ are \emph{outflows} of energy from the sector.
 The embodied energy 
 terms ($\dot{B}$) represent embodied energy of inflows
 and outflows of material. Splitting the $\dot{B}$ term
-into inflows and outflows and rearranging gives
+into inflows and outflows gives
 
 \begin{equation} \label{eq:embodied_energy_accounting_2}
 	\frac{\mathrm{d}B}{\mathrm{d}t}
@@ -313,7 +313,7 @@ inflow of embodied energy into the sector
 	($\dot{B}_{in}$) 
 less the rate of output of embodied energy from the sector 
 	($\dot{B}_{out}$) 
-\emph{plus} the rate of waste direct energy from the sector 
+\emph{plus} the rate of waste heat from the sector 
 	($\dot{Q}_{out}$). 
 The first two terms on the right side of
 Equation~\ref{eq:embodied_energy_accounting_2} are expected: 
@@ -399,9 +399,9 @@ of total energy ($\dot{T}$) through the single-sector economy.
 \end{figure}
 
 As discussed above, we follow the EI-O literature in assuming that 
-total energy ($T$) is conserved. 
-A total energy accounting around the biosphere (0)
-and Society (1) gives
+total energy~($T$) is conserved. 
+A total energy accounting around the biosphere~(0)
+and Society~(1) gives
 
 \begin{equation} \label{eq:A_T_acct_0}
 	\frac{\mathrm{d}T_{0}}{\mathrm{d}t} 
@@ -1104,7 +1104,7 @@ for all sectors of the economy $\left( j \in [1,n] \right)$ to obtain
 \end{equation}
 
 \noindent{}as expected. The total embodied energy content of the system 
-remains constant with respect to time in this model.
+remains constant with respect to time in this framework.
 
 We can further simplify the above equations by expressing
 the embodied energy of the inflowing capital ($\sum_{i=1}^{n} \dot{B}_{ij}$)
@@ -1148,13 +1148,13 @@ and the waste heat that leaves the sector ($\dot{Q}_{j0}$).
 
 
 %%%%%%%%%% Embodied Energy: Auto industry example %%%%%%%%%%
-\section{Embodied energy in the auto industry}
+\section{Embodied energy in the US auto industry}
 \label{sec:embodied_energy_auto}
 %%%%%%%%%%
 
 In this section,
-we apply the methodology tracking flows of
-total energy to the US auto industry,
+we apply the framework developed above to flows of
+total energy in the US auto industry,
 as depicted in Figure~\ref{fig:PERKS_embodied_auto}.
 As in Section~\ref{sec:materials_auto},
 we face difficulties due to lack of data.
@@ -1207,7 +1207,7 @@ A limitation of the process-based approach employed by Berry and Fels
 is trucation error for upstream energy demand. 
 See Section~\ref{sec:hybrid} for details.
 }
-in the U.S.\ was 37,275~kW-hr = 134~GJ~(10$^9$~J) 
+in the U.S.\ was 37,275~kW-hr (134~GJ or $134 \times 10^9$~J) 
 per vehicle.\cite[Table~2]{Berry:1973vo} 
 Of this,
 100~GJ was (upstream) energy embodied in the materials~($\dot{B}_{\dot{R}}$)
@@ -1215,13 +1215,14 @@ and the remaining was (direct) energy used within the auto
 industry to manufacture,
 assemble, and transport the automobile. 
 
-Two decades later in 1995, Stodolsky et al.\ estimated the energy consumed in materials and 
+Two decades later (1995), Stodolsky et al.\ estimated the energy consumed in materials and 
 manufacturing automobiles to be 79~GJ per vehicle for a conventional automobile and 66~GJ per vehicle
 for an aluminum intensive vehicle, both under a maximum-recycling
 scenario.\cite[p.11]{Stodolsky1995}. 
-Three years later, MacLean and Lave estimated the the embodied energy
-for an automobile to be 113.6~MBtu = 120~GJ 
-(13~GJ upstream and 107~GJ direct)
+Three years later (1998), MacLean and Lave estimated the the embodied energy
+for an automobile to be 113.6~MBTU 
+(120~GJ, of which 13~GJ were consumed upstream and 107~GJ were consumed direct
+in the auto sector)
 per vehicle~\cite[Figure~2]{MacLean1998}, 
 which they compare with
 contemporaneous estimates from Sullivan of 81~GJ per 
