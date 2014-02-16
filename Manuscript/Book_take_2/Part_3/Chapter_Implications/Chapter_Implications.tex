@@ -87,8 +87,7 @@ that underlies modern economics.
 It is important to consider the assumptions behind
 the literature's presentation of the EI-O method 
 for estimating the energy intensity of economic output
-before drawing implications from our framework 
-for the EI-O method.
+before drawing implications from our framework.
 
 As we investigate, we will use the following
 coordinates of analysis:
@@ -98,7 +97,7 @@ whether energy input from society to the economy is included.
 (See Figure~\ref{fig:coords_of_analysis}.)
 We will end with our suggestion for how best to estimate
 $\boldsymbol{\varepsilon}$ within
-a materials, energy, and value accounting system.
+a materials, energy, and value accounting framework.
 
 \begin{figure}[!ht]
 \centering{}
@@ -120,7 +119,7 @@ A \emph{physical accounting} framework strictly follows materials
 through the economy. 
 Embodied energy is allocated to the material stock or material flow
 in which it resides---wherever it goes, so goes the embodied energy. 
-When the material is scrapped, so is the embodied energy.
+When the material is scrapped, so is its embodied energy.
 For example, energy embodied within wastes ($\vec{B}_{waste}$) 
 is not assigned to economic products. 
 Rather, the energy embodied in wastes flows out of sectors 
@@ -133,9 +132,10 @@ to the products of each sector.
 
 Equation~\ref{eq:B_prod_physical_excluding_K} below
 describes the outflow of embodied energy from sector $j$, 
-exclusive of capital stock, 
 for a physical accounting system 
-that neglects capital stock (upper-right quadrant of Figure~\ref{fig:coords_of_analysis}).\footnote{Equation~\ref{eq:B_prod_physical_excluding_K} 
+that neglects both capital stock accumulation
+and capital inflow (upper-right quadrant of
+Figure~\ref{fig:coords_of_analysis}).\footnote{Equation~\ref{eq:B_prod_physical_excluding_K} 
 	is used for illustrative purposes only. 
 	A physical accounting framework would necessarily 
 	include both flows and stocks of capital.
@@ -182,12 +182,12 @@ to products.
 
 
 %+++++++++ I-O implications: Capital stock ++++++++++
-\subsection{Capital stock}
+\subsection{Capital flows and stock}
 \label{sec:capital_stock}
 %+++++++++
 
 The rows of Figure~\ref{fig:coords_of_analysis}
-represent the role of capital stock in an accounting framework.
+represent the role of capital flows and stock in an accounting framework.
 The BEA Industry Accounts 
 include capital flows in the ``make''
 tables for each industry~\cite[Table~1]{Streitwieser:2011aa}, 
@@ -211,7 +211,8 @@ We agree with this move, because of the many ways in which
 capital stock is important for economies.
 We can use the work of Eugene Odum~\cite{Odum1969}
 to explain the importance of capital stock
-within ecosystems and have Herman Daly to thank
+within ecosystems,
+and we have Herman Daly to thank
 for making the connection between
 ecosystems and economies.\cite{Daly1995}
 
@@ -220,15 +221,16 @@ defining characteristics of both \emph{developmental}
 (growing) and \emph{mature} (stable) ecosystems in terms of key
 properties of the system.\cite{Odum1969}
 Ecosystems cannot
-grow indefinitely in their (photosynthetic)~production~($P$)
+grow indefinitely in their (photosynthetic)~production rate~($P$)
 due to the necessity of increasing maintenance
 demands as the stock of biomass~($B$) increases.
 Eventually, all production is used in this manner
 and growth ceases 
-$\left(\frac{\mathrm{d}P}{\mathrm{d}t} = 0\right)$.
+$\left(\frac{\mathrm{d}}{\mathrm{d}t}(P) = 0\right)$.
 
 In the early stages of ecosystem development,
-the energy production per unit of biomass stock~$\left( \frac{P}{B} \right)$
+the energy production rate 
+per unit of biomass stock~$\left( \frac{P}{B} \right)$
 is high.
 As the ecosystem approaches maturity,
 this ratio decreases.
@@ -288,14 +290,14 @@ Thus, this early literature implicitly assumes that
 and~\ref{eq:a_prime_lit}
 highlights the fact that the early literature neglects flows of capital stock
 ($\dot{X}_{\dot{K}_{ij}}$) on the input.
-Thus, the the input-output matrix in the early literature
+Thus, the input-output matrix in the early EI-O literature
 ($\vec{A^{'}}$) is
 
 \begin{equation} \label{eq:A_matrix_def_literature}
 	\vec{A}^{'} 
 	=
 	\begin{bmatrix}
-		a_{22}^{'} & a_{23}^{'}	\\
+		a_{22}^{'} & a_{23}^{'}	\\[4pt]   % [4pt] gives a little extra vertical space.
 		a_{32}^{'} & a_{33}^{'}	
 	\end{bmatrix}.
 \end{equation}
@@ -385,7 +387,7 @@ Consequently, they did not count incoming energy embodied
 in capital if the incoming capital was used 
 to increase the stock of capital within a sector.
 In fact, Bullard and Herendeen's
-product-focused accounting system
+product-focused accounting framework
 did not include an embodied energy stock 
 for economic sectors~($\vec{B}$) at all.
 They assumed that half of the incoming capital 
@@ -461,15 +463,21 @@ and Equation~\ref{eq:intensity_lower_left} include:
 	
 	\item{Equation~\ref{eq:intensity_lower_right_no_society} subtracts
 	accumulation $\left( \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right)$
-	and depreciation ($\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$)
 	of energy embodied in capital stock,
-	because energy embodied in the stock of capital ($K$)
-	for a sector
-	is not assigned to products of the sector, and}
+	because energy embodied in the stock of capital 
+	for a sector ($B_{K_{j}}$)
+	is assigned to products of the sector,}
 	
-	\item{Equation~\ref{eq:intensity_lower_right_no_society} subtracts $\vec{B}_{waste}$,
+	\item{Equation~\ref{eq:intensity_lower_right_no_society} subtracts
+	waste ($\vec{B}_{waste}$),
 	because energy embodied in waste products is not assigned to 
-	products of the sector.}
+	products of the sector, and}
+
+	\item{Equation~\ref{eq:intensity_lower_right_no_society} subtracts
+	depreciation ($\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$)
+	of energy embodied in capital stock,
+	because energy embodied in depreciated capital ($\dot{B}_{\dot{K}_{j0}}$)
+	is assigned to products of the sector.}
 \end{itemize}
 
 There are two topics related to Equation~\ref{eq:intensity_lower_right_no_society} 
@@ -564,35 +572,26 @@ can be obtained from a control volume around the stock of capital in sector $j$:
 \end{equation}
 
 We can express the incoming energy embodied in capital ($\sum_{i=1}^{n} \dot{B}_{\dot{K}_{ij}}$)
-as a fraction ($\alpha_{B,j}$) of the capital stock ($B_{K_{j}}$) as
+as a fraction ($\alpha_{B_{j}}$) of the capital stock ($B_{K_{j}}$) as
 
 \begin{equation}
-	\alpha_{B,j}
+	\alpha_{B_{j}}
 	\equiv 
 	\frac{\sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}}} {B_{K_{j}}}
 \end{equation}
 
-\noindent{}for $j \in [2,n]$ and the vector $\boldsymbol{\alpha}_{B}$ as
-
-\begin{equation}
-	\vec{\boldsymbol{\alpha}}_{B}
-	\equiv
-	\begin{Bmatrix}
-		\alpha_{B,2}	\\
-		\alpha_{B,3}
-	\end{Bmatrix}.
-\end{equation}
+\noindent{}for $j \in [2,n]$.
 
 \noindent{}Together with the Kronecker delta ($\delta_{ij}$), we can write
 
 \begin{equation}
 	\hat{\boldsymbol{\alpha}}_{B}
 	\equiv
-	\delta_{ij} \boldsymbol{\alpha}_{B}
+	\delta_{ij} \alpha_{B_{j}}
 	=
 	\begin{bmatrix}
-		\alpha_{B,2}	& 0           \\
-		0               & \alpha_{B,3}  \\
+		\alpha_{B_{2}}	& 0               \\
+		0               & \alpha_{B_{3}}  \\
 	\end{bmatrix}.
 \end{equation}
 
@@ -639,7 +638,7 @@ Equation~\ref{eq:intensity_lower_right_no_society} gives
 In Sections~\ref{sec:prod_vs_physical}
 and~\ref{sec:capital_stock} above,
 we implicitly assumed that society 
-(final consumption, Sector~1 in our model)
+(final consumption, Sector~1 in our example economies A--C)
 contributes negligible energy to the economy.
 Thus, all vectors and matrices in Equation~\ref{eq:intensity_lower_right_no_society}
 involve Sectors~2--$n$, but not Sector~1.
@@ -648,9 +647,8 @@ Energy input from society to the economy ($\vec{T}_{1}$)
 is ``muscle work'' supplied by working humans 
 and draft animals.\cite{Ayres:2003ec,Ayres:2010ug,Warr:2012cg} 
 This muscle work term ($\vec{T}_{1}$) should include
-all upstream energy required to make the labor available.\footnote{It is important
-	to note that $\vec{T}_{1}$ should include all upstream energy,
-	because at this point in the development of our framework,
+all upstream energy required to make the labor available.\footnote{At this point 
+	in the development of our framework,
 	we are assuming that Final Consumption (Sector 1) is exogenous to the economy 
 	(Sectors 2\ldots{}$n$), 
 	and upstream energy consumption needs to be included manually.
@@ -741,10 +739,10 @@ For our framework, we chose a physical accounting approach
 (which puts us in the right column of Figure~\ref{fig:coords_of_analysis}).
 We chose the physical approach primarily because of our belief that 
 capital is an important aspect of economies,
-and the physical accounting approach
+and the physical accounting framework
 properly includes a stock of capital for each sector of the economy.
 Product-based accounting frameworks mask crucial aspects 
-of why and how energy flows through economies will be masked.
+of why and how energy flows through economies.
 We acknowledge that the choice of a physical accounting framework necessitates
 careful tracking of capital flows (and associated embodied energy)
 through the economy. 
@@ -761,7 +759,7 @@ through the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}
 as represented by Equation~\ref{eq:intensity_lower_left}
 to the lower half of the bottom-right quadrant 
 of Figure~\ref{fig:coords_of_analysis}
-as represented by Equation~\ref{eq:epsilon_leontief_with_A_alpha}.
+as represented by Equation~\ref{eq:epsilon_leontief_with_A}.
 
 The implication of the detailed development of our framework
 on the EI-O method is 
@@ -777,7 +775,7 @@ including
 	\item{redefinition of $\vec{A}$ and $\boldsymbol{\varepsilon}$ to include
 	embodied energy on inflows of material, and}
 	
-	\item{use of Equation~\ref{eq:epsilon_leontief_with_A_alpha} instead of
+	\item{use of Equation~\ref{eq:epsilon_leontief_with_A} instead of
 	Equations~\ref{eq:intensity_upper_left} or~\ref{eq:intensity_lower_left}
 	for estimating energy intensity ($\boldsymbol{\varepsilon}$)
 	of economic sectors within an economy.}
@@ -794,7 +792,7 @@ is measured almost exclusively
 by Gross Domestic Product (GDP). 
 If GDP grows, the economy is said to be growing.\footnote{GDP 
 	is not the only indicator of well-being available; 
-	there are a few other measures in use.
+	there are several other measures in use.
 	The Human Development Index (HDI) is a globally accepted measure 
 	that augments GDP with education and life expectancy.\cite{Malik:2013aa} 
 	In the US, the state of Maryland has been tracking well-being 
@@ -818,9 +816,7 @@ If GDP grows, the economy is said to be growing.\footnote{GDP
 		community vitality, and 
 		living standards.\cite{Ura:2012aa,GNH:2014aa}
 	These alternatives to GDP are slowly gaining acceptance, particularly
-	as their valuation methods continue to be strengthened.\cite{Lawn:2003aa}
-	% 	% ***ADD CITE lawn2003 \url{http://www.dnr.maryland.gov/mdgpi/pdfs/GPIFoundation-Lawn2003.pdf}
- 	}
+	as their valuation methods are strengthened.\cite{Lawn:2003aa}}
 Our framework affords the opportunity to assess economic growth 
 in several dimensions.
 Viewing these dimensions through the lens of our framework 
@@ -870,7 +866,7 @@ If we turn this around,
 accumulation of embodied energy
 in economic sectors and society 
 could be considered a \emph{proxy} for growth.\footnote{Embodied energy 
-	as a proxy for development may be overly focused on capital stock, 
+	as a proxy for economic growth may be overly focused on capital stock, 
 	therefore one-dimensional, and reductive, 
 	but GDP and other measures are open to similar criticism.}
 Equation~\ref{eq:Dev_Integral_Economy} indicates how accumulated
@@ -885,7 +881,7 @@ of an economy ($\vec{B}_{K}$) could be calculated:
 
 \noindent{}where $\vec{B}_{K}$ is given by Equation~\ref{eq:B_vec_def}.
 Equation~\ref{eq:Dev_Integral_Economy} clearly shows
-that energy embodied in capital stock ($\vec{B}_{K}$) 
+that energy embodied in capital ($\vec{B}_{K}$) 
 is a \emph{stock} (in units of joules), not a flow.
 
 The behavior of $\vec{B}_{K}$ 
@@ -904,7 +900,7 @@ increasingly large energy extraction rates ($\vec{E}_{0}$)
 are required to maintain capital stock 
 in the sectors of the economy
 to offset the effects of depreciation 
-($\hat{\boldsymbol{\gamma}}_{K} \vec{B}_{K}$),
+($\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$),
 assuming that $\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \ge 0$ 
 is desired. 
 
@@ -940,7 +936,7 @@ invested back into the economy as capital.
 An example of this occured with rubber exports from the Amazon.
 Per capita incomes increased by an order of magnitude 
 from 1820 to 1900 during the rubber export boom. 
-However, as the value of rubber exports dropped 
+However, as Amazon rubber exports dropped in value
 due to stiff competition from Asian rubber production, 
 per capita incomes dropped precipitously back to original levels. 
 Throughout this period, the capital stock, 
@@ -950,7 +946,7 @@ remained nearly constant.\cite{bunker1984modes}
 In fact, capital (represented by energy embodied in infrastructure, $\vec{B}_{K}$) and 
 financial resources or wealth (represented by $X_{2 \ldots n}$) 
 are complementary factors of production for economic processes. 
-But, we can go further than linking capital with financial resources.
+But, we can go further than linking physical capital with financial resources.
 If capital~($\vec{B}_{K}$) is to be useful, we need financial resources
 or currency~($\dot{X}$) to 
 \begin{itemize}
@@ -991,7 +987,7 @@ is reuse and recycling of materials from both
 short-lived goods
 $\left(\vec{B}_{waste}\right)$
 and depreciated
-capital stock~$\left(\hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}\right)$
+capital stock~$\left(\hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}\right)$
 that would otherwise have
 been discarded to the biosphere.\footnote{The 
 other prevailing theory in the economics literature, that
@@ -1011,17 +1007,17 @@ by the following equation:
 	+ \vec{T}_{1}
 	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\boldsymbol{\varepsilon} 
 	- \vec{B}_{waste}
-	- \hat{\boldsymbol{\gamma}}_{K}\vec{B}_{K}\tag{\ref{eq:matrix_leontief}}
+	- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}\tag{\ref{eq:matrix_leontief}}
 \end{equation}
 
 One effect of recycling is to reduce the magnitude 
 of the waste 
 $\left(\vec{B}_{waste}\right)$
 and depreciation 
-$\left(\hat{\boldsymbol{\gamma}}_{K}\right)$ terms.
+$\left(\hat{\boldsymbol{\gamma}}_{B}\right)$ terms.
 As can be seen in Equation~\ref{eq:matrix_leontief},
 reducing both $\vec{B}_{waste}$ 
-and~$\hat{\boldsymbol{\gamma}}_{K}$, 
+and~$\hat{\boldsymbol{\gamma}}_{B}$, 
 puts \emph{upward} pressure on the accumulation of 
 energy embodied in capital stock
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$,
@@ -1041,7 +1037,7 @@ the result is a net reduction of energy demand
 from the biosphere ($\vec{E}_{0}$). 
 Berry and Fels found that recycling of the material in automobiles
 would result in energy reduction of 12,640 kW-hr per vehicle.\cite[p.~15]{Berry:1973vo}
-Therefore recycling will also put \emph{downward} pressure on 
+Therefore recycling will put \emph{downward} pressure on 
 the growth of embodied energy in the economy
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$,
 via reduced $\vec{E}_{0}$, all other things being equal. 
@@ -1052,7 +1048,8 @@ If recycling produces a net reduction in energy demand ($\vec{E}_{0}$),
 the upward pressure on growth 
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 from decrease in depreciation 
-$\left(\hat{\boldsymbol{\gamma}}_{K}\right)$ 
+$\left(\hat{\boldsymbol{\gamma}}_{B}\right)$ 
+and waste ($\vec{B}_{waste}$)
 and the downward pressure on growth 
 from net reduction in energy demand 
 $\left(\vec{E}_{0}\right)$ 
@@ -1429,8 +1426,8 @@ the detailed development of our dynamic framework for material,
 energy, and value accounting.
 The first implications are for the EI-O method itself. 
 We recommend a physical accounting framework that fully
-accounts for capital stock and energy input from society (normally
-assumed to be only a final consumption sector).
+accounts for capital stock and energy input from society 
+(normally assumed to not provide direct energy to the economy).
 We then discussed implications for economic ``growth,''
 namely that economic growth could be considered a ``fully coupled'' problem: 
 understanding it requires breadth of knowledge 
