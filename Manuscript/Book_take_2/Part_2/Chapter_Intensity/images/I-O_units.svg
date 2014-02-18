@@ -30,7 +30,7 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1378"
+     inkscape:window-width="1374"
      inkscape:window-height="856"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -67,17 +67,6 @@
          id="tspan2987"
          x="467.69751"
          y="250.46399">OUTPUT FROM</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="459.86395"
-       y="317.2338"
-       id="text2989"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="459.86395"
-         y="317.2338"
-         id="tspan2993">SOCIETY</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text2995"
@@ -120,17 +109,6 @@
          y="575.41626"
          x="303.45352"
          sodipodi:role="line">SECTOR</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="302.83633"
-       y="429.40845"
-       id="text3021"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="302.83633"
-         y="429.40845"
-         id="tspan3025">SOCIETY</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
@@ -571,5 +549,35 @@
        id="path3234"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="463.24677"
+       y="297.2338"
+       id="text3079"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="463.24677"
+         y="297.2338"
+         id="tspan3084">FINAL</tspan><tspan
+         sodipodi:role="line"
+         x="463.24677"
+         y="337.2338"
+         id="tspan3089">CONSUM.</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3091"
+       y="409.2338"
+       x="307.24677"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"><tspan
+         id="tspan3093"
+         y="409.2338"
+         x="307.24677"
+         sodipodi:role="line">FINAL</tspan><tspan
+         id="tspan3095"
+         y="449.2338"
+         x="307.24677"
+         sodipodi:role="line">CONSUM.</tspan></text>
   </g>
 </svg>
