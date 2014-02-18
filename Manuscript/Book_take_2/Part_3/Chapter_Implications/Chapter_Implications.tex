@@ -120,7 +120,7 @@ through the economy.
 Embodied energy is allocated to the material stock or material flow
 in which it resides---wherever it goes, so goes the embodied energy. 
 When the material is scrapped, so is its embodied energy.
-For example, energy embodied within wastes ($\vec{B}_{waste}$) 
+For example, energy embodied within wastes ($\vec{B}_{\dot{W}}$) 
 is not assigned to economic products. 
 Rather, the energy embodied in wastes flows out of sectors 
 into the biosphere \emph{with the waste material}.
@@ -146,20 +146,20 @@ Figure~\ref{fig:coords_of_analysis}).\footnote{Equation~\ref{eq:B_prod_physical_
 \begin{equation} \label{eq:B_prod_physical_excluding_K}
 	\dot{B}_{j}^{'}
 	= \sum\limits_{i=1}^{n} \dot{B}_{ij}^{'} 
-	- \dot{B}_{waste,j}
+	- \dot{B}_{\dot{W}_{j}}
 	+ \dot{Q}_{j0}
 \end{equation}
 
 \noindent{}Terms written with a ``prime''
 (e.g.~$\dot{B}_{j}^{'}$) indicate definitions and terms that 
 exclude input capital flows~($\dot{K}$) and capital stock~($K$).
-The term~$\dot{B}_{waste,j}$ represents the energy embodied 
+The term~$\dot{B}_{\dot{W}_{j}}$ represents the energy embodied 
 within wasted resource~($\dot{R}_{j0}$) 
 and short-lived~($\dot{S}_{j0}$) material flows.
-The $\dot{B}_{waste,j}$ term is subtracted, because waste material flows \emph{out of}
+The $\dot{B}_{\dot{W}_{j}}$ term is subtracted, because waste material flows \emph{out of}
 the sector. 
 In a physical accounting framework, the energy embodied 
-in waste flows ($\dot{B}_{waste,j}$)
+in waste flows ($\dot{B}_{\dot{W}_{j}}$)
 is not assigned to the product~($\dot{B}_{j}^{'}$).
 
 In contrast, Equation~\ref{eq:B_prod_product_excluding_K} describes the outflow 
@@ -176,7 +176,7 @@ for a product-focused accounting framework
 
 \noindent{}Notice that Equation~\ref{eq:B_prod_product_excluding_K} 
 does not subtract the energy embodied in waste resource and short-lived material
-flows ($\dot{B}_{waste,j}$) on the right side of the equation, 
+flows ($\dot{B}_{\dot{W}_{j}}$) on the right side of the equation, 
 because product-focused accounting systems assign energy embodied in wastes
 to products.
 
@@ -449,7 +449,7 @@ is described by Equation~\ref{eq:intensity_lower_right_no_society}.
 		{\left( \hat{\vec{X}}  \right)}^{-1}
 		\left[ \vec{E}_{0}
 			  - \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
-			  - \vec{B}_{waste}
+			  - \vec{B}_{\dot{W}}
 			  - \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K} \right].
 \end{equation}
 
@@ -469,7 +469,7 @@ and Equation~\ref{eq:intensity_lower_left} include:
 	is assigned to products of the sector,}
 	
 	\item{Equation~\ref{eq:intensity_lower_right_no_society} subtracts
-	waste ($\vec{B}_{waste}$),
+	waste ($\vec{B}_{\dot{W}}$),
 	because energy embodied in waste products is not assigned to 
 	products of the sector, and}
 
@@ -491,7 +491,7 @@ waste flows and an accounting equation for capital stock.
 %---------
 
 We are unaware of any estimates of the energy embodied in wasted
-material in an economy ($\vec{B}_{waste}$).  
+material in an economy ($\vec{B}_{\dot{W}}$).  
 But, it may be possible to develop a metric for the resource material efficiency of an 
 economic sector ($\eta_{\dot{R}}$),
 i.e.\ the fraction of the material that actually makes it into the product, 
@@ -552,7 +552,7 @@ can be given as
 from the embodied energy of the incoming resource and short-lived material flows as
 
 \begin{equation}
-	\dot{B}_{waste,j}
+	\dot{B}_{\dot{W}_{j}}
 	= \dot{B}_{\dot{R}_{j0}} + \dot{B}_{\dot{S}_{j0}}.
 \end{equation}
 
@@ -625,7 +625,7 @@ Equation~\ref{eq:intensity_lower_right_no_society} gives
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
 		\left[\vec{E}_{0} 
 				- \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
-				- \vec{B}_{waste}
+				- \vec{B}_{\dot{W}}
 		\right].
 \end{equation}
 
@@ -672,7 +672,7 @@ in Figure~\ref{fig:coords_of_analysis}.
 		\left[\vec{E}_{0} 
 				+ \vec{T}_{1} 
 				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
-				- \vec{B}_{waste}
+				- \vec{B}_{\dot{W}}
 				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
 		\right].\tag{\ref{eq:epsilon_leontief_with_A}}
 \end{equation}
@@ -985,7 +985,7 @@ from material or energy demands.\cite{FischerKowalski:2011uo}
 One method for dematerializing an economy 
 is reuse and recycling of materials from both
 short-lived goods
-$\left(\vec{B}_{waste}\right)$
+$\left(\vec{B}_{\dot{W}}\right)$
 and depreciated
 capital stock~$\left(\hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}\right)$
 that would otherwise have
@@ -1006,17 +1006,17 @@ by the following equation:
 	= \vec{E}_{0}
 	+ \vec{T}_{1}
 	+ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I})\boldsymbol{\varepsilon} 
-	- \vec{B}_{waste}
+	- \vec{B}_{\dot{W}}
 	- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}\tag{\ref{eq:matrix_leontief}}
 \end{equation}
 
 One effect of recycling is to reduce the magnitude 
 of the waste 
-$\left(\vec{B}_{waste}\right)$
+$\left(\vec{B}_{\dot{W}}\right)$
 and depreciation 
 $\left(\hat{\boldsymbol{\gamma}}_{B}\right)$ terms.
 As can be seen in Equation~\ref{eq:matrix_leontief},
-reducing both $\vec{B}_{waste}$ 
+reducing both $\vec{B}_{\dot{W}}$ 
 and~$\hat{\boldsymbol{\gamma}}_{B}$, 
 puts \emph{upward} pressure on the accumulation of 
 energy embodied in capital stock
@@ -1049,7 +1049,7 @@ the upward pressure on growth
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 from decrease in depreciation 
 $\left(\hat{\boldsymbol{\gamma}}_{B}\right)$ 
-and waste ($\vec{B}_{waste}$)
+and waste ($\vec{B}_{\dot{W}}$)
 and the downward pressure on growth 
 from net reduction in energy demand 
 $\left(\vec{E}_{0}\right)$ 
