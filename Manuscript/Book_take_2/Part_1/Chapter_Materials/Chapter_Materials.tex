@@ -87,18 +87,18 @@ There are also inumerable material flows caused by an economy that
 most of us do not observe.
 The extraction of raw materials generates additional overburden---earth that must be
 extracted and processed and ultimately discarded without ever entering the economy
-proper. Other flows occur around us unseen. The cars outside my window suck in nitrogen
+proper. Other flows occur around us unseen. The cars outside is the street suck in nitrogen
 and oxygen (without which the engine would not work) and emit water, carbon dioxide, and
 other, more harmful, wastes. 
 
 Even services that we consider ``non-material'' require at least some material
 infrastructure. The hairdresser requires scissors (and to a greater or lesser extent 
 some hair) with which to work. Even the internet, often lauded as the exemplar of
-dematerialization of the economic process, requires a whole host of computer
+dematerialization of the economic process, requires a whole host of
 infrastructure including uninterrupted electricity, data servers, 
 telephone networks, and a computer by which to access it.
 
-In this chapter, we will define a mathematical framework 
+In this chapter, we will define a mathematical accounting framework 
 to track the flow and accumulation of
 materials within an economy, 
 building from a one-sector economy up to examples of both
@@ -132,7 +132,7 @@ of its importance in the economic activity of our daily lives.
 And, we believe that the interplay between money and energy
 has shaped the past and will continue to influence the future.
 In this section, we define rigorous ``counting'' methods that will be applied
-to money and energy throughout this book.
+to materials, energy and money throughout this book.
 
 %**** Include somewhere in here the difference between \emph{flows} and \emph{funds}, 
 %between \emph{efficient cause} and \emph{material cause}. Resources are 
@@ -142,7 +142,7 @@ to money and energy throughout this book.
 \label{sec:accounting_in_everyday_life}
 
 We all count material (and non-material) stocks and flows every day,
-be it the people in a room, the gasoline we consume on our way to work
+be it the people in a room, the gasoline we consume on our way to work,
 or the money in our bank account.
 Rigorous counting at the scale of whole economies 
 requires precise definition of
@@ -173,17 +173,19 @@ A rigorous apple accounting equation, in units of apples, is:
 
 \noindent{}More generally, we may say:
 \begin{equation}
-	\mathrm{Accumulation}
-	= \mathrm{Transfers~in} 
-	- \mathrm{Transfers~out}
-	+ \mathrm{Production}
-	- \mathrm{Consumption}.
+	\mathrm{accumulation}
+	= \mathrm{transfers~in} 
+	- \mathrm{transfers~out}
+	+ \mathrm{production}
+	- \mathrm{consumption}.
 \end{equation}
 
 Notice that, when discussing apples we use the specific terms 
 ``grown'' and ``eaten,'' 
-instead of the more general terms ``produced'' and ``consumed.''
-Later, in Chapter~\ref{chap:value}, when discussing value, we will use the terms
+instead of the more general terms 
+``produced'' and ``consumed.''
+Later, in Chapter~\ref{chap:value}, when discussing economic value, 
+we will use the terms
 ``generated'' or ``added'' and ``destroyed.'' 
 For our purposes, these terms all have equivalent
 meanings and we use them interchangeably.
@@ -217,7 +219,7 @@ the accumulation rate.
 % We will later do material accounting in units of energy.
 % Even later, we will do material accouting in units of dollars. ****
 
-Notice, that instead of focusing on apples as our unit of accounting, 
+Instead of focusing on apples as our unit of accounting, 
 we could track the mass flow 
 (in units of mass per unit time,
 for instance  [kg/sec]) 
@@ -244,7 +246,7 @@ If, instead of a home, we drew a spatial control volume
 around a sector of an economy, 
 similar accounting methods can be applied. 
 In fact, throughout this book, we will illustrate theoretical concepts with
-a running example of the auto industry. 
+a running example of a control volume (boundary) around the US auto industry. 
 If we account for steel (in units of kg) in the auto industry, 
 we might write an equation like this:
 
@@ -270,8 +272,8 @@ we would write the following equation:
 Again, the last two terms 
 (representing steel production and consumption) 
 are not present. 
-This is in direct contrast with the apple 
-accounting equation outlined in Equation~\ref{eq:apple_rate_accounting}. 
+This is in direct contrast with apple 
+accounting outlined in Equation~\ref{eq:apple_rate_accounting}. 
 %**** Do the previous two sentences make sense?
 %The equation has only 2 terms. **** 
 %I have reworded to specify the production and consumption terms. ****
@@ -326,13 +328,15 @@ must go somewhere,
 whether it stays within the volume (accumulation) 
 or is transferred out.
 Conservation of mass is expressed in equations such as the ones above
-for apples and steel for the auto industry. 
+for apples in a home and steel in the auto industry. 
 
 Another important conservation principle is the conservation of energy.
 Similar to the principle of the conservation of mass,
 the First Law of Thermodynamics,
 says that \emph{energy can neither be created nor destroyed}. 
-In the discussion that follows, we will make great use 
+In the discussion that follows 
+(Chapters~\ref{chap:direct_energy}~and~\ref{chap:embodied_energy} in particular), 
+we will make great use 
 of the First Law.
 If I eat an apple, it is no longer an apple, 
 but the materials (i.e.\ chemical elements) 
@@ -411,7 +415,7 @@ Some fraction of these resources ($\dot{R}$) may not make it into the final prod
 such as trimming scrap from metal parts stamping, 
 and may be either recycled internally, 
 or wasted to the biosphere. 
-In this framework, 
+In this material accounting framework, 
 resource materials are not accumulated within a sector.
 
 Short-lived goods ($\dot{S}$)
@@ -447,7 +451,7 @@ Capital flows ($\dot{K}$) also enter from above,
 but are stored within the sector 
 (represented by a storage tank) 
 and are returned to the biosphere as 
-physical capital depreciation from below.
+physical capital depreciation.
 Examples of these capital flows would be the factory and office buildings or
 manufacturing equipment within the automobile industry.
 We assume (for simplicity) that there is no re-use of capital stock
@@ -455,7 +459,7 @@ by other sectors of an economy,
 e.g.\ resale of vehicles or other equipment after depreciation,
 or recycling of material from capital stock into other goods,
 e.g.\ scrap metal. 
-The issue of recycling is in greater detail in
+The issue of recycling is discussed in greater detail in
 Section~\ref{sec:recycling}.
 
 All products ($\dot{P}$) leave to the right of the sector. 
@@ -467,10 +471,11 @@ as short-lived materials ($\dot{S}$),
 or as capital goods~($\dot{K}$).
 The remainder flows to other sectors within the economy 
 or to Final Consumption~(1). 
-In this framework, energy may be accounted
-as either an $\dot{R}$ flow or an $\dot{S}$ flow.
-An example of energy as an $\dot{R}$ flow is crude oil converted into
-gasoline within a refinery: 
+In this material accounting framework, 
+energy may be accounted as either 
+an $\dot{R}$ flow or an $\dot{S}$ flow.
+An example of energy as an $\dot{R}$ flow is crude oil 
+to be converted into gasoline within a refinery: 
 the resource inflow (crude oil) is
 \emph{literally} embodied within the out-flowing product (gasoline).
 An example of energy as an $\dot{S}$ flow is electricity
@@ -504,7 +509,7 @@ all processes within the economy occur within
 one sector---Society (1)---which exchanges materials 
 with the Biosphere~(0) as depicted in
 Figure~\ref{fig:A_materials}.  
-We do not distinguish between production and consumption.
+%We do not distinguish between production and consumption.
 
 \begin{figure}[!ht]
 \centering{}
@@ -535,26 +540,28 @@ Biosphere~(0).\footnote{Double
 	and the second index indicates the sector \emph{to} which a quantity flows.
 	Single subscripts on quantities such as
 	$K$ can mean one of two things: 
-	$\dot{K}_{i}$ indicates the outflow of capital from sector $i$, 
-	whereas $K_{i}$ denotes the capital stock of sector $i$.} 
+	$\dot{K}_{j}$ (with a dot to indicate a flow) refers to 
+	the outflow of capital from sector $j$, 
+	whereas $K_{j}$ (without the dot) 
+	denotes the capital stock of sector $j$.
+	} 
 These materials are processed within the economy 
 into products ($\dot{P}_{1}$) consisting of 
 resource goods ($\dot{R}_{11}$), 
-short-lived goods ($\dot{S}_{11}$) and 
-capital goods ($\dot{K}_{11}$)
+short-lived goods ($\dot{S}_{11}$), 
+and capital goods ($\dot{K}_{11}$)
 which are able to be accumulated at some rate 
 $\frac{\mathrm{d}K_{1}}{\mathrm{d}t}$ 
 within the stock of materials within society.\footnote{See
-Section~\ref{sec:people_as_stock} for more discussion on
-the inclusion of human beings as societal capital stock.
-}
+	Section~\ref{sec:people_as_stock} for more discussion on
+	the inclusion of human beings as societal capital stock.
+	}
 Waste resources ($\dot{R}_{10}$) and 
 used short-lived materials/goods ($\dot{S}_{10}$)
 are returned to the biosphere
 without accumulating in Society~(1). 
-Capital goods ($\dot{K}_{10}$) 
-are returned to the biosphere
-when they are physically depreciated.
+Capital goods are returned to the biosphere
+when they are physically depreciated ($\dot{K}_{10}$).
 
 Drawing control volumes around both the 
 Biosphere~(0) and Society~(1)
@@ -626,7 +633,7 @@ Because mass is conserved, we find that:
 % \end{align}
 
 Clearly, $\dot{R}_{01} \neq \dot{R}_{10}$ 
-since some resources are converted into
+because some resources are converted into
 short-lived goods ($\dot{S}_{11}$) or man-made capital ($\dot{K}_{11}$)
 and are only returned to the biosphere as either
 $\dot{S}_{10}$ or $\dot{K}_{10}$, respectively. 
@@ -724,16 +731,15 @@ we may say that:
 
 Looking deeper at flows of resources and short-lived goods,
 we can make some further observations. 
-Imagine following a kilogram of coal on its journey
-through the economy. It is pulled out of the earth as part
-of flow $\dot{R}_{01}$. 
+Imagine following a kilogram of coal on its journey through the economy. 
+It is pulled out of the earth as part of flow $\dot{R}_{01}$. 
 It enters the economy and while most 
 is transformed into useful
 products (part of $\dot{P}_{1}$) some (hopefully small)
 fraction is wasted ($\dot{R}_{10}$).
 Some of the coal is destined for electricity generation
 and so re-enters the economy as part of flow $\dot{S}_{11}$,
-since the coal is \emph{not physically embodied}
+because the coal is \emph{not physically embodied}
 in the electricity and leaves the economy
 (in the form of carbon dioxide and ash)
 as part of flow $\dot{S}_{10}$.
@@ -744,7 +750,7 @@ because the carbon in the coal ends up
 \emph{physically embodied} within the steel in flow $\dot{P}_{1}$.
 Again,
 some of the coal is wasted (maybe within slag), 
-again leaving the economy as flow $\dot{R}_{10}$.
+leaving the economy as flow $\dot{R}_{10}$.
 The steel may re-enter the economy as part of
 the resource flow $\dot{R}_{11}$ and be manufactured
 into steel products (maybe a car) to leave as part of
@@ -759,12 +765,13 @@ to leave the economy bound up in flow $\dot{K}_{10}$.
 In summary, we may say that short-lived materials flow 
 ``straight through'' the economy and end up in the biosphere. 
  Resources are destined
-to end up either as products or waste ``resources''.
+to end up either physically embodied within products or waste ``resources.''
 They cycle through the economy,
 entering and re-entering,
 until they are turned either into short-lived goods,
 whereupon they flow ``straight through'' into the biosphere,
 or they are turned into capital good and accumulate.
+
 As such,
 we may state that:
 
@@ -792,13 +799,17 @@ the important variable as:
 	\dot{P}_{1}												&
 	= \dot{R}_{01}
 	+ \dot{R}_{11}
-	- \dot{R}_{10}	,										\\									
+	- \dot{R}_{10}	,
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:A_S11}
 	\dot{S}_{11}											&
 	= \dot{S}_{10}
 	- \dot{S}_{01}.
 \end{align}
-
 
 Substituting Equations~\ref{eq:A_R0},~\ref{eq:A_S0}~and~\ref{eq:A_K0_balance}
 into Equation~\ref{eq:A_CV_0} we obtain:
@@ -809,7 +820,7 @@ into Equation~\ref{eq:A_CV_0} we obtain:
 	=	\dot{R}_{10}		
 	+	\dot{S}_{10}	
 	-	\dot{R}_{01}											
-	-	\dot{S}_{01},							% \\
+	-	\dot{S}_{01}.							% \\
 %	\label{eq:A_CV_1c}
 %	\dot{K}_{11}								&
 %	= \dot{R}_{01} 
@@ -897,7 +908,7 @@ into Equation~\ref{eq:A_CV_1b}, we obtain:
 \begin{equation}\label{eq:A_CV_1c}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
 	= \dot{K}_{11}
-	- \dot{K}_{10}
+	- \dot{K}_{10},
 \end{equation}
 
 \noindent{}which tells us that 
@@ -921,10 +932,11 @@ into Equation~\ref{eq:A_CV_1b}, we obtain:
 The last depreciation term~($\dot{K}_{10}$)
 may be rewritten as the total stock
 of man-made capital~($K_{1}$) 
-multiplied by some depreciation rate~($\gamma_{K_{1}}$,
-which has units of inverse time, e.g.\ 1/year,
-and is inversely proportional to the average lifetime
-of man-made capital),
+multiplied by some depreciation rate~($\gamma_{K_{1}}$),\footnote{$\gamma_{K_{1}}$
+	has units of inverse time, e.g.\ 1/year,
+	and is inversely proportional to the average lifetime
+	of man-made capital
+	}
 where $\gamma_{K_{j}}$ is defined as:
 
 \begin{equation}\label{eq:def_gamma}
@@ -932,10 +944,10 @@ where $\gamma_{K_{j}}$ is defined as:
 \end{equation}
 
 \noindent{}i.e.\ the depreciation 
-\emph{per unit} of capital stock\footnote{This
-depreciation term will be discussed in more depth in
-Sections~\ref{sec:depreciation_embodied}~and~\ref{sec:capital_accounting}.
-},
+\emph{per unit} of capital stock,\footnote{This
+	depreciation term will be discussed in more depth in
+	Sections~\ref{sec:depreciation_embodied}~and~\ref{sec:capital_accounting}.
+	}
 such that Equation~\ref{eq:A_CV_1d} may be rewritten:
 
  \begin{align}\label{eq:A_CV_1e}
@@ -973,7 +985,7 @@ of natural resources:
 
 Equation~\ref{eq:A_CV_1g} tells us that depletion of
 natural resources~$\left(-\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
-are used within society in order to:
+is used within society to:
 
 \begin{itemize}
 	\item build up societal capital stock 
@@ -1012,8 +1024,8 @@ such as manufacturing equipment.
 \end{figure}
 
 As can be seen in Figure~\ref{fig:B_materials}, 
-Sector~(2) resembles very closely the basic unit
-outlined in Figure~\ref{fig:PERKS_materials}. 
+Production~(2) resembles very closely the basic unit
+shown in Figure~\ref{fig:PERKS_materials}. 
 Resource flows from the biosphere ($\dot{R}_{02}$)
 and those produced by Sector~(2) itself ($\dot{R}_{22}$) 
 are \emph{transformed} into product flow
@@ -1021,7 +1033,7 @@ are \emph{transformed} into product flow
 Flows of short-lived goods ($\dot{S}$) 
 and capital ($\dot{K}$) are required to
 support this transformative process. 
-Much of the product flow from Production~(2) 
+Much of the product flow from ($\dot{P}_{2}$) 
 enters Final Consumption~(1) as 
 resource flows ($\dot{R}_{21}$), 
 short-lived goods ($\dot{S}_{21}$) 
@@ -1082,9 +1094,9 @@ This is because the ``product'' of Final Consumption (1)
 is labor services 
 and because Final Consumption~(1) consumes, 
 rather than produces, final goods. 
-No materials flow from Final Consumption~(1) to be 
-\emph{transformed} into or \emph{embodied} 
-in the production goods of Sector~(2), 
+No resource materials flow from Final Consumption~(1) to be 
+\emph{physically embodied} 
+within the product output ($\dot{P}_{2}$), 
 therefore $\dot{R}_{12} = 0$. 
 Additionally, no capital \emph{goods} flow 
 from Final Consumption~(1) to accumulate
@@ -1096,12 +1108,13 @@ from Final Consumption~(1) to Production~(2)
 represents labor,
 specifically  the material flow 
 associated with labor's energy 
-which is used within the production sector.\footnote{We assume 
-that this flow is the 
-adenosine triphosphate (ATP), 
-used as an energy
-carrier within the cells of organisms,
-which is consumed during activity (labor)} 
+which is used within the production sector.\footnote{We 
+	assume that flow ($\dot{S}_{12}$) is the 
+	adenosine triphosphate (ATP), 
+	used as an energy
+	carrier within the cells of organisms,
+	which is consumed during activity (labor)
+	} 
 
 Resource flow $\dot{R}_{21}$ 
 into Final Consumption represents 
@@ -1157,11 +1170,13 @@ such that the material accounting equations become:
 
  %[WE NEED TO DISCUSS IF WE WANT TO ACCOUNT IT IN THIS WAY]
 Because no resources flow directly to Final Consumption~(1)
-from the Biosphere~(0),\footnote{A counter-example
-	to this assumption is the production of food
+from the Biosphere~(0),\footnote{A 
+	counter-example to this assumption is 
+	the production of food
 	outside of the agricultural industry, 
-	i.e.\ by households. 
-	This may be large in agrarian economies.}
+	i.e.\ by households, 
+	which may be large in agrarian economies.
+	}
  we may say:
 
 \begin{equation}\label{eq:B_R0}
@@ -1222,17 +1237,23 @@ and that the ``product'' of Final Consumption~(1) is labor
 (a short-lived material flow, $\dot{S}$),
 then we may also state that:
 
-\begin{align}\label{eq:B_R11_K11}
+\begin{align}
+\label{eq:B_R11}
 	\dot{R}_{11}				& 
-	= 0,								\\
-	\dot{K}_{11}				& 
 	= 0,
 \end{align}
 
 \noindent{}since labor is not a resource flow---it
 is not \emph{physically embodied} within products
-produced within the production sector---and additionally, 
-all capital goods are produced within
+produced within the production sector---and additionally that,
+
+\begin{align}
+\label{eq:B_K11}
+	\dot{K}_{11}				& 
+	= 0,
+\end{align}
+ 
+\noindent{}since all capital goods are produced within
 the production sector (2).
 
 % **** Are flows $\dot{R}_{11} = \dot{K}_{11} = 0$ *****
@@ -1250,13 +1271,18 @@ the production sector (2).
 
 From conservation of mass,
 we can also define product flows
-$\dot{P}_{1}$ and $\dot{P}_{2}$ as:
+$\dot{P}_{1}$ and $\dot{P}_{2}$ as:.
 
 \begin{align}
 \label{eq:B_P1_def}
 	\dot{P}_{1}				&
 	= \dot{S}_{11}
-	+ \dot{S}_{12},			\\
+	+ \dot{S}_{12},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:B_P2_def}
 	\dot{P}_{2}				&
 	= \dot{R}_{21}
@@ -1264,20 +1290,26 @@ $\dot{P}_{1}$ and $\dot{P}_{2}$ as:
 	+ \dot{S}_{21}
 	+ \dot{S}_{22}
 	+ \dot{K}_{21}	 
-	+ \dot{K}_{22},
+	+ \dot{K}_{22}
 \end{align}
 
 \noindent Again, remembering that resources ($R$) 
 and short-lived goods ($S$) do not accumulate 
 within any sectors of the economy:
 
-\begin{align}\label{eq:dR_and_dS_zero}
+\begin{align}
+\label{eq:dR_and_dS_zero}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}			&
 	= 0,																	\\
 	\frac{\mathrm{d}R_{2}}{\mathrm{d}t} 			&
 	= 0,																	\\
 	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 			&
-	= 0,																	\\
+	= 0,
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 			&
 	= 0.
 \end{align}
@@ -1305,14 +1337,19 @@ for each of the sectors of the economy:
 	+ \dot{R}_{22}
 	- \dot{P}_{2}
 	- \dot{R}_{20}
-	= 0,															\\
+	= 0,
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:B_dS2}
 	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 	&
 	= \dot{S}_{02}
 	+ \dot{S}_{12}
 	+ \dot{S}_{22}
 	- \dot{S}_{20}
-	= 0,
+	= 0.
 \end{align}
 
 We may rearrange these equations in terms of
@@ -1331,7 +1368,12 @@ the important variables to obtain:
 	\dot{P}_{2}												&
 	= \dot{R}_{02}
 	+ \dot{R}_{22}
-	- \dot{R}_{20},										\\
+	- \dot{R}_{20},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:B_S22}
 	\dot{S}_{22}											&
 	= \dot{S}_{20}
@@ -1343,7 +1385,7 @@ the important variables to obtain:
 Substituting
 Equations~\ref{eq:B_R0}-\ref{eq:B_dK0}
 into Equation~\ref{eq:B_CV_0}, 
-gives:
+gives,
 
 \begin{align} \label{eq:B_CV_0a}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
@@ -1367,7 +1409,12 @@ we obtain:
 	+ \dot{K}_{21}
 	- \dot{P}_{1} 
 	- \dot{R}_{10} 
-	- \dot{K}_{10},							\\
+	- \dot{K}_{10},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:B_CV_2a}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
 	=  \dot{R}_{02} 
@@ -1394,7 +1441,12 @@ in which case we obtain:
 \label{eq:B_CV_1b}
 	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
 	= \dot{K}_{21}
-	- \dot{K}_{10},							\\
+	- \dot{K}_{10},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:B_CV_2b}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
 	=  \dot{K}_{22}
@@ -1420,7 +1472,12 @@ we obtain:
 	- \dot{S}_{11}
 	- \dot{S}_{12} 
 	- \dot{R}_{10} 
-	- \dot{K}_{10},							\\
+	- \dot{K}_{10},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:B_CV_2c}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
 	=  \dot{R}_{02} 
@@ -1445,7 +1502,12 @@ to obtain:
 	- \dot{K}_{21}
 	+ \dot{S}_{11}
 	+ \dot{S}_{12} 
-	+ \gamma_{K_{1}}K_{1},											\\
+	+ \gamma_{K_{1}}K_{1},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:B_CV_2d}
 	\dot{R}_{02}
 	- \dot{R}_{20} 											&
@@ -1481,7 +1543,7 @@ are for the purposes of:
 	capital stock ($\gamma_{K_{2}}K_{2}$).}
 \end{itemize}
 
-Adding these two equations together,
+Adding Equations~\ref{eq:B_CV_1d}~and~\ref{eq:B_CV_2d} together,
 we obtain:
 
 \begin{align} 
@@ -1541,10 +1603,11 @@ and sector (3) produces other goods and services, as depicted in Figure
 
 In this example, we will take a slightly different approach
 than in the previous two examples. 
-Instead of discerning whether or not certain flows exist---asking for instance,
-is there a flow of resources ($\dot{R}_{21}$) from
-Energy~(2) to Final Consumption~(1)?----we
-shall account for all flows,
+Instead of discerning whether or not certain flows exist
+(asking for example,
+`is there a flow of resources ($\dot{R}_{21}$) from
+Energy~(2) to Final Consumption~(1)?'),
+we shall account for all flows,
 \emph{even if} those flows are zero.
 In this way,
 we may build up a completely general
@@ -1608,7 +1671,12 @@ Similarly, flows for the other sectors may be written:
 	- \dot{P}_{2}
 	- \dot{R}_{20} 
 	- \dot{S}_{20}
-	- \dot{K}_{20},										\\	
+	- \dot{K}_{20},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 	\label{eq:C_CV_3}
 	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{3}}{\mathrm{d}t}	
@@ -1645,7 +1713,7 @@ As in previous examples,
 we may define the balance of 
 resources~($\dot{R}$),
 short-lived materials~($\dot{S}$) and
-capital~($\dot{K}$) within the biosphere:
+capital~($\dot{K}$) within the biosphere as:
 
 \begin{align}\label{eq:C_dR0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
@@ -1662,7 +1730,12 @@ capital~($\dot{K}$) within the biosphere:
 	+ \dot{S}_{30}	
 	- \dot{S}_{01}
 	- \dot{S}_{02}
-	- \dot{S}_{03},										\\	
+	- \dot{S}_{03},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:C_dK0}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}	&
 	= \dot{K}_{10}
@@ -1680,7 +1753,12 @@ capital~($\dot{K}$) within the biosphere:
 \label{eq:C_dS0a}
 	\frac{\mathrm{d}S_{0}}{\mathrm{d}t}	&
 	= \sum_{i = 1}^{3}\dot{S}_{i0}
-	- \sum_{j = 1}^{3}\dot{S}_{0j},				\\
+	- \sum_{j = 1}^{3}\dot{S}_{0j},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 \label{eq:C_dK0a}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}	&
 	= \sum_{i = 1}^{3}\dot{K}_{i0}.
