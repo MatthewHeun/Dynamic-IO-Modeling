@@ -7,14 +7,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-% Next line tells bibTeX to create a chapter called "Bibliography" 
+% Tell bibTeX to not include "Chapter" at the start of the chapter
+\renewcommand{\chaptername}{}
+
+% Tell bibTeX to not include the chapter number (in this case "10")
+% at the start of the chapter.
+\renewcommand{\thechapter}{}
+
+% Tell bibTeX to create a chapter called "Bibliography" 
 % instead of a section called "References".
 \renewcommand{\bibsection}{\chapter{Bibliography}}
 
-% Next line removes the chapter name (in this case "Chapter 10")
-% from the title page for the Bibliography chapter.
-\renewcommand{\chaptername}{}
-\renewcommand{\thechapter}{}
+% Tell bibTeX to eliminate the citation number in front of entries in the bibliography
+\renewcommand{\bibnumfmt}[1]{}
 
 \nocite{*} % Adds everything from the Metabolic.bib file to the bibliography
 
