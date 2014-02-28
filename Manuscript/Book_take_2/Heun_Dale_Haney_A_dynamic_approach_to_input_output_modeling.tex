@@ -27,15 +27,16 @@
 \usepackage{booktabs}
 \usepackage[sectionbib,compress]{natbib}% provides a bibliography for each chapter
 \usepackage{chapterbib}
-\usepackage{makeidx}           % allows index generation
-\usepackage{graphicx}          % standard LaTeX graphics tool
-                               % when including figure files
+\usepackage[titletoc]{appendix}  % puts "Appendix" in front of appendix names in TOC
+\usepackage{makeidx}             % allows index generation
+\usepackage{graphicx}            % standard LaTeX graphics tool
+                                 % when including figure files
 \usepackage{tablefootnote}
-\usepackage{scrextend}         % provides the \footref script
-\usepackage{multicol}          % used for the two-column index
-\usepackage[bottom]{footmisc}  % places footnotes at page bottom
-\usepackage{mathtools}
-\usepackage{outlines}          % For outlines
+\usepackage{scrextend}           % provides the \footref script
+\usepackage{multicol}            % used for the two-column index
+\usepackage[bottom]{footmisc}    % places footnotes at page bottom
+\usepackage{mathtools} 
+\usepackage{outlines}            % For outlines
 \usepackage{enumitem}
 \usepackage[normalem]{ulem}
 \setenumerate[1]{label=\Roman*.}
@@ -130,22 +131,27 @@
 
 \include{Part_3/Chapter_Summary/Chapter_Summary}
 
-\appendix
+% \appendix
 
-\include{Appendix_Auto/Appendix_Auto}
+\begin{appendices}
+	
+	\include{Appendix_Auto/Appendix_Auto}
 
-\include{Appendix_Infinite_Series/Appendix_infinite_series}
+	\include{Appendix_Infinite_Series/Appendix_infinite_series}
 
-\include{Appendix_Proof_1/Appendix_proof_of_equation_1}
+	\include{Appendix_Proof_1/Appendix_proof_of_equation_1}
 
-\include{Appendix_Estimating_A/Appendix_Estimating_A}
+	\include{Appendix_Estimating_A/Appendix_Estimating_A}
 
-\include{Appendix_Casler/Appendix_Casler}
+	\include{Appendix_Casler/Appendix_Casler}
 
+\end{appendices}
 
 \backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\include{glossary}
 %\include{solutions}
+
+\include{bibliography/bibliography}
 
 \glstoctrue{} % Includes these glossaries in the table of contents.
 \printglossary[type=glossary, style=glossarystyle, nonumberlist=true]

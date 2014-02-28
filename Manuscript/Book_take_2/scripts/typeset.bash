@@ -36,6 +36,11 @@ cd Appendix_Proof_1;                    bibtex Appendix_Proof_1;         cd ..;
 cd Appendix_Estimating_A;               bibtex Appendix_Estimating_A;    cd ..;
 cd Appendix_Casler;                     bibtex Appendix_Casler;          cd ..;
 
+# Make the full bibliography for the end of the book
+# mv fullbib.aux bibliography/
+cd bibliography;                        bibtex bibliography;             cd ..;
+# bibtex fullbib
+
 # Make the index
 makeindex -s svind.ist Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling
 
