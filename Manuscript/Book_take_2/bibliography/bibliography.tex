@@ -11,6 +11,11 @@
 % instead of a section called "References".
 \renewcommand{\bibsection}{\chapter{Bibliography}}
 
+% Next line removes the chapter name (in this case "Chapter 10")
+% from the title page for the Bibliography chapter.
+\renewcommand{\chaptername}{}
+\renewcommand{\thechapter}{}
+
 \nocite{*} % Adds everything from the Metabolic.bib file to the bibliography
 
 \bibliographystyle{unsrt}
