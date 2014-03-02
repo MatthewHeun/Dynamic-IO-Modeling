@@ -572,12 +572,12 @@ such that:
 \begin{align} \label{eq:A_CV_0}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
+	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}			&	
 	=	\dot{R}_{10}		
 	+	\dot{S}_{10}	
 	+	\dot{K}_{10}											
 	-	\dot{R}_{0}											
-	-	\dot{S}_{0}								\\
+	-	\dot{S}_{0}													\\
 \label{eq:A_CV_1}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
@@ -1235,7 +1235,7 @@ Final Consumption\footnote{If
 }~($K_{1}$)
 and that the ``product'' of Final Consumption~(1) is labor
 (a short-lived material flow, $\dot{S}$),
-then we may also state that:
+then we may also state that
 
 \begin{align}
 \label{eq:B_R11}
@@ -1409,7 +1409,7 @@ we obtain:
 	+ \dot{K}_{21}
 	- \dot{P}_{1} 
 	- \dot{R}_{10} 
-	- \dot{K}_{10},
+	- \dot{K}_{10}
 \end{align}
 
 \noindent{}and
@@ -1453,7 +1453,8 @@ in which case we obtain:
 	- \dot{K}_{20},
 \end{align}
 
-\noindent{}which tells us that accumulation 
+\noindent{}Equations~\ref{eq:B_CV_1b}~and~\ref{eq:B_CV_2b} 
+tell us that accumulation 
 of man-made capital~($K$) in each sector~($j$)
 is dependent only on inflows of capital goods 
 into that sector~($\dot{K}_{2j}$) and 
@@ -1805,7 +1806,7 @@ resources for the Energy sector~(2),\footnote{There
 	energy from industrial waste streams.}
 hence $\dot{R}_{32} = 0$.
 
-Since we do not allow accumulation of either
+Because we do not allow accumulation of either
 resources~(R) 
 or short-lived capital goods~(S) 
 in economic sectors,
@@ -1815,7 +1816,7 @@ then we may say:
 	\frac{\mathrm{d}R_{j}}{\mathrm{d}t}			&
 	= 0,																	&
 	j \in [1,3],														\\
-	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 		&
+	\frac{\mathrm{d}S_{j}}{\mathrm{d}t} 		&
 	= 0,																	&
 	j \in [1,3].															
 \end{align}
@@ -1824,13 +1825,14 @@ As before,
 we may also define the resource-product
 and short-lived goods flows balances separately
 for each of the sectors of the economy:\footnote{It
-is worth remembering here that 
-$\dot{R}_{01} = \dot{R}_{21} = 0$,
-because Final Consumption~(1) takes resources
-(in the form of food) from Goods and Services~(3) only
-and that $R_{32} = 0$ because
-the Goods and Services sector~(3) does not provide
-resources to the Energy sector~(2).}
+	is worth remembering here that 
+	$\dot{R}_{01} = \dot{R}_{21} = 0$,
+	because Final Consumption~(1) takes resources
+	(in the form of food) from Goods and Services~(3) only
+	and that $R_{32} = 0$ because
+	the Goods and Services sector~(3) does not provide
+	resources to the Energy sector~(2).
+	}
 
 \begin{align}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 	&
@@ -1962,7 +1964,12 @@ to obtain:
 	+ \sum_{i = 1}^{3}\dot{K}_{i2}
 	- \dot{P}_{2}
 	- \dot{R}_{20} 
-	- \dot{K}_{20},										\\	
+	- \dot{K}_{20},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 	\label{eq:C_CV_3a}
 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
 	& =  \dot{R}_{03} 
@@ -1988,7 +1995,12 @@ we obtain:
 	\label{eq:C_CV_2b}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}		
 	& = \sum_{i = 1}^{3}\dot{K}_{i2}
-	- \dot{K}_{20},										\\	
+	- \dot{K}_{20},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 	\label{eq:C_CV_3b}
 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
 	& = \sum_{i = 1}^{3}\dot{K}_{i3}
@@ -2039,7 +2051,12 @@ we obtain:
 	- \sum_{j = 1}^{3}\dot{S}_{2j}
 	- \sum_{j = 1}^{3}\dot{K}_{2j}
 	- \dot{R}_{20} 
-	- \dot{K}_{20},										\\	
+	- \dot{K}_{20},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 	\label{eq:C_CV_3c}
 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}	&
 	=  \dot{R}_{03} 
@@ -2074,7 +2091,12 @@ to obtain:
 	+ \sum_{j = 1}^{3}\dot{R}_{2j}
 	+ \sum_{j = 1}^{3}\dot{S}_{2j}
 	+ \sum_{j = 1}^{3}\dot{K}_{2j}
-	+ \dot{K}_{20},											\\	
+	+ \dot{K}_{20},
+\end{align}
+
+\noindent{}and
+
+\begin{align}
 	\label{eq:C_CV_3d}
 	\dot{R}_{03}
 	- \dot{R}_{30} 											&
@@ -2130,7 +2152,7 @@ more generally:
 \end{align}
 
 Similarly to what we saw in Examples~A~and~B,
-Equation~\ref{eq:C_CV_all_b} tells us that,
+Equation~\ref{eq:C_CV_all_b} tells us that
 depletion of natural resources in the 
 biosphere~$\left(- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
 by the economy
@@ -2185,11 +2207,11 @@ applied to the real-world case of the US auto industry.
 %%%%%%%%%%
 
 Throughout the book, we shall be applying the methodology
-that has been outlined through the examples to the
+that has been outlined through Examples~A-C to the
 real-world case of the US auto industry.
 In Figure~\ref{fig:PERKS_materials_auto}
 we see the flows of resources,
-short-lived and capital materials
+short-lived, and capital materials
 into the auto industry.
 Because the industry does not
 extract resources directly from the biosphere,
@@ -2217,7 +2239,7 @@ outlined in Table~\ref{tab:materials_auto}.
 %Talk to financial (value) flows in Section~\ref{sec:value_auto} 
 %as proxy for physical flows****
 %**** This paragraph is kind-of unclear. Rewrite for clarity?---MKH ****
-Data on the actual flows %**** What do you mean by ``rest of the flows?''
+Data on the actual flow rates %**** What do you mean by ``rest of the flows?''
 % Do you mean that mass-based, as opposed to dollar-based data are hard to find? ---MKH ****
 at the industry level
 is very hard to obtain.\footnote{The issue of 
@@ -2237,14 +2259,14 @@ Section~\ref{sec:value_auto}) into physical flow data
 via knowledge of the entry points of materials into the economy,
 i.e.\ via the extraction industries.
 
-A number of studies have instead looked at 
+A number of studies have looked at 
 the material and energy flows 
 associated with specific or representative vehicle manufacturing 
 \emph{processes}, rather than industry-level
 activity.\cite{Sullivan1998, MacLean1998,Schweimer2000,
 McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}
 The US automobile industry is composed
-of many of these manufacturing processes.
+of many such manufacturing processes.
 According to the International Organization of 
 Motor Vehicle Manufacturers~(OICA), 
 2.7 million cars were produced in 2010\footnote{In 2006, 
@@ -2330,9 +2352,9 @@ Capital self-consumption			&	$\dot{K}_{jj}$		&	motor vehicles											\\[0.15c
 \midrule
 Resources to biosphere			& $\dot{R}_{j0}$		&	trimmings and dust (metal, plastic, rubber)	\\[0.15cm]
 Short-lived to biosphere			& $\dot{S}_{j0}$		&	air emissions (GHG, NO$_x$, SO$_x$)		\\
-												&								& emissions to water									\\[0.15cm]
-Capital to biosphere					& $\dot{K}_{j0}$	&	discarded equipment								\\
-												&								& disused buildings										\\
+												&								& 	emissions to water									\\[0.15cm]
+Capital to biosphere					& $\dot{K}_{j0}$	&	depreciated equipment								\\
+												&								& 	depreciated buildings										\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -2349,11 +2371,11 @@ In this chapter we saw how we all use accounting in our everyday lives
 to count not just physical things (people, apples) but also non-physical things
 (money). We developed a rigorous procedure for accounting by defining the 
 \emph{what}, \emph{when}, and \emph{where}: what are we counting,
-when do we begin and end counting,
-and where is our system boundary (control volume). 
+when we begin and end counting,
+and where is our system boundary (control volume) located. 
 We saw that some things that we count (apples) can be
 created and destroyed but other things (mass, energy)
-are never created nor destroyed.
+are neither created nor destroyed.
 
 We then applied this accounting procedure to materials 
 flowing through an economy. 
@@ -2365,8 +2387,8 @@ We used these definitions in three examples,
 building from a one-sector model of the economy
 to a general framework for flows (and accumulation) 
 of materials.
-We then applied the framework to the real-world example of
-the US auto industry.
+Finally, we applied the accounting framework to the 
+real-world example of the US auto industry.
 We categorized the types of materials used to produce
 automobiles,
 but found that industry-level data are difficult to obtain.
