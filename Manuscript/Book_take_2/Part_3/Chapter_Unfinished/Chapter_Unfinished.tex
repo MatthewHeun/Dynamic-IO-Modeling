@@ -834,7 +834,10 @@ relies heavily on this assumption.
 However, in later years, the EI-O method was extended 
 in the literature to include
 co-products for each economic sector.\cite{Costanza:1984tq,Casler1984} 
-To do so, both \emph{make} and \emph{use} data are employed.
+To do so, both \emph{make} and \emph{use} data are employed.\footnote{The
+	\emph{make-use} method is sometimes also called the
+	\emph{supply-use} method.
+	}
 
 We decided to leverage the older,
 single-product formulation of the EI-O method
@@ -846,6 +849,40 @@ of the EI-O method.
 However, work remains to adapt the framework
 developed herein to the make-use formulation of the EI-O method.
 
+%%%%%%%%%% Recycling %%%%%%%%%%
+\section{Extending the methodology to include recycling and waste treatment}
+\label{sec:sec:recycling_and_waste}
+%%%%%%%%%%
+
+In the accounting framework presented in Chapters~\ref{chap:materials}-\ref{chap:intensity},
+we assumed that all waste flows~($\dot{W}_{j0}$) and depreciated capital flows~($\dot{K}_{j0}$)
+from economic sector $j$ flowed straight to the biosphere.
+In general, this is not the case within the economy.
+The Waste Management and Remediation Services sector (NAICS 562) has the responsibility,
+within the US economy,
+of collecting and disposing of wastes.
+Additionally, much material is recycled within the economy 
+(rather than being disposed into the biosphere)
+and many capital goods are sold for re-use prior to recycling of materials,
+for example second-hand cars and office equipment.
+
+We may represent these flows of resources ($\dot{R}_{j}$), 
+short-lived goods ($\dot{S}_{j}$), and capital goods ($\dot{K}_{j}$)
+as flows other than the product flow ($\dot{P}_{j}$)
+leaving sector $j$
+as in Figure~\ref{fig:PERKS_waste}.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{Part_3/Chapter_Unfinished/images/PERKS_basic_unit_materials_recycle.pdf}
+	\caption[Material flows through an economic sector with waste treatment]{Material flows 
+					through an economic sector with waste treatment flows to other economic sectors.}
+	\label{fig:PERKS_waste}
+\end{figure}
+
+Such flows violate the `one sector-one product' assumption of the Leontief inversion method.
+Methods based on make-use tables,
+as developed by von Neumann~\cite{vonNeumann1945} and Sraffa~\cite{Sraffa1960}
+are able to account for multiple products from each sector.
 
 %%%%%%%%%% People as capital stock %%%%%%%%%%
 \section{Are people capital stock?}
