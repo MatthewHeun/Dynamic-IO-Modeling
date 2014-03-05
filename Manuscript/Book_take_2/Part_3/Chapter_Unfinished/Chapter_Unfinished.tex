@@ -273,7 +273,7 @@ and non-economists have searched for an invariant, objective,
 	we use the term intrinsic in the sense of ``objective.'' Costanza~\cite{Costanza:2004we} 
 	notes that a better term would be objective in order to avoid moral overtones associated 
 	with the term intrinsic.} 
-Adam Smith, Karl Marx, David Ricardo, and neo-Ricardian Pierro Sraffa all proposed 
+Adam Smith, Karl Marx, David Ricardo, and neo-Ricardian Piero Sraffa all proposed 
 alternative determinants of value.  
 Their proposed objective theories of value were based 
 on identifying the primary input into production,
@@ -834,7 +834,10 @@ relies heavily on this assumption.
 However, in later years, the EI-O method was extended 
 in the literature to include
 co-products for each economic sector.\cite{Costanza:1984tq,Casler1984} 
-To do so, both \emph{make} and \emph{use} data are employed.
+To do so, both \emph{make} and \emph{use} data are employed.\footnote{The
+	\emph{make-use} method is sometimes also called the
+	\emph{supply-use} method.
+	}
 
 We decided to leverage the older,
 single-product formulation of the EI-O method
@@ -846,6 +849,40 @@ of the EI-O method.
 However, work remains to adapt the framework
 developed herein to the make-use formulation of the EI-O method.
 
+%%%%%%%%%% Recycling %%%%%%%%%%
+\section{Extending the methodology to include recycling and waste treatment}
+\label{sec:recycling_and_waste}
+%%%%%%%%%%
+
+In the accounting framework presented in Chapters~\ref{chap:materials}-\ref{chap:intensity},
+we assumed that all waste flows~($\dot{W}_{j0}$) and depreciated capital flows~($\dot{K}_{j0}$)
+from economic sector $j$ flowed straight to the biosphere.
+In general, this is not the case within the economy.
+The Waste Management and Remediation Services sector (NAICS 562) has the responsibility,
+within the US economy,
+of collecting and disposing of wastes.
+Additionally, much material is recycled within the economy 
+(rather than being disposed into the biosphere)
+and many capital goods are sold for re-use prior to recycling of materials,
+for example second-hand cars and office equipment.
+
+We may represent these flows of resources ($\dot{R}_{j}$), 
+short-lived goods ($\dot{S}_{j}$), and capital goods ($\dot{K}_{j}$)
+as flows other than the product flow ($\dot{P}_{j}$)
+leaving sector $j$
+as in Figure~\ref{fig:PERKS_waste}.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{Part_3/Chapter_Unfinished/images/PERKS_basic_unit_materials_recycle.pdf}
+	\caption[Material flows through an economic sector with waste treatment]{Material flows 
+					through an economic sector with waste treatment flows to other economic sectors.}
+	\label{fig:PERKS_waste}
+\end{figure}
+
+Such flows violate the `one sector-one product' assumption of the Leontief inversion method.
+Methods based on make-use tables,
+as developed by von Neumann~\cite{vonNeumann1945} and Sraffa~\cite{Sraffa1960}
+are able to account for multiple products from each sector.
 
 %%%%%%%%%% People as capital stock %%%%%%%%%%
 \section{Are people capital stock?}
@@ -860,8 +897,12 @@ that accumulates in society.
 Should the material constituting literal
 \emph{human capital}---human bodies---be included? 
 If humans are to be included within $K_{1}$, 
-the resource needed to produce the necessary capital
-flow ($\dot{K}_{11}$) is food. 
+some resource flow~($\dot{R}_{i1}$)
+must be converted into 
+human capital flow~($\dot{K}_{11}$)
+which then adds to the stock of human capital~($K_{1}$)
+within society.
+This resource flow is food.
 Food itself represents a large ``resource''
 flow and has a large associated energy content. 
 Additionally, 
@@ -870,7 +911,7 @@ a large amount of energy resources
 are channeled toward the production of food, 
 meaning that the \emph{embodied energy}
 of food may actually be several times larger than
-the actual energy content of the food itself. 
+the direct energy content of the food itself. 
 
 Further questions arise. 
 What is the ``product'' of society? 
@@ -883,7 +924,7 @@ because its aim is to provide
 an energy service (labor)? 
 For non-industrial, agrarian societies, 
 the proportion of total energy flow 
-comprised by manual (or draft) energy 
+comprised by manual (or draught) energy 
 may be large. 
 In industrialized societies, 
 it may be negligible, 
@@ -903,7 +944,7 @@ includes only man-made capital,
 i.e.\ items manufactured by humans,
 but not humans themselves. 
 For the purposes of the framework outlined in this book, 
-we shall favor the latter view.
+we favored the latter view.
 Other researchers favor the opposing view.\cite{Giampietro2013}
 However,
 the framework presented in this book is general enough to encompass either point of view.
@@ -1105,6 +1146,8 @@ to estimate embodied energy and energy intensity.
 Resource quality and co-products were discussed 
 in Sections~\ref{sec:resource_quality_and_irreversibility}
 and~\ref{sec:make-use}, respectively.
+An extension to our accounting framework necessary to account
+waste treatment and recycling was discussed in Section~\ref{sec:recycling_and_waste}.
 Then, several questions were posed:
 \begin{itemize}
 	\item{are people capital stock?}

@@ -13,7 +13,7 @@
    height="344.52112"
    id="svg3126"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="Perpetual_motion_2.svg">
   <defs
      id="defs3128">
@@ -864,10 +864,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1229"
-     inkscape:window-height="756"
-     inkscape:window-x="1920"
-     inkscape:window-y="965"
+     inkscape:window-width="1380"
+     inkscape:window-height="856"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -1102,7 +1102,7 @@
          id="tspan4228"
          x="-26.060719"
          y="457.63358"
-         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start">RAW</tspan><tspan
+         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start">ENERGY</tspan><tspan
          sodipodi:role="line"
          x="-26.060719"
          y="473.88358"
