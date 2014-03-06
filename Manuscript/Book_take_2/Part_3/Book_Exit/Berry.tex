@@ -26,9 +26,19 @@
 	and that man's only real freedom 
 	is to know and faithfully occupy his place---a much humbler place 
 	than we have been taught to think---in the order of creation.
-
-	\hfill---Wendell Berry. 2002. \emph{The Art of the Commonplace: The Agrarian Essays.}
-	Counterpoint, Berkely, California, p.~89.
+	
+	\vspace{3 mm} % Gives some nice vertical space.
+	
+	{
+		% Set \parskip to 0.0pt, thereby overriding the 
+		% defaults for the quote environment.
+		% But, we only want to do it here, not for the quote environment for all time.
+		% So, we take advantage of LaTeX's scoping withing braces.
+		\setlength{\parskip}{0.0pt} % Ensures no vertical spacing between the next two lines
+		\hfill---Wendell Berry. 2002. \emph{The Art of the Commonplace: The Agrarian Essays.}
+	
+		\hfill Counterpoint, Berkely, California, p.~89.
+	}
 \end{quote}
 
 

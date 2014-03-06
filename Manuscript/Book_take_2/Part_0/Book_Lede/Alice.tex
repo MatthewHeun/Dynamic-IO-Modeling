@@ -29,9 +29,9 @@
 	``Why, I do believe we've been under this tree all the time! 
 	Everything's just as it was!''
 
-	``Of course it is,'' said the Queen: ``what would you have it?''
+	``Of course it is,'' said the Queen: ``what would you have it?'' % chktex 38
 
-	``Well, in \emph{our} country,'' said Alice, still panting a little, 
+	``Well, in \emph{our} country,'' said Alice, still panting a little, % chktex 38
 	``you'd generally get to somewhere else---if you ran very fast for a long time, 
 	as we've been doing.''
 
@@ -39,7 +39,20 @@
 	``Now, here, you see, it takes all the running you can do, to keep in the same place. 
 	If you want to get somewhere else, you must run at least twice as fast as that!''
 
-	\hfill---Carroll, Lewis. \emph{Through the Looking-Glass and What Alice Found There}, p.~47.
+	\vspace{3 mm} % Gives some nice vertical space.
+	
+	{
+		% Set \parskip to 0.0pt, thereby overriding the 
+		% defaults for the quote environment.
+		% But, we only want to do it here, not for the quote environment for all time.
+		% So, we take advantage of LaTeX's scoping withing braces.
+		\setlength{\parskip}{0.0pt} % Ensures no vertical spacing between the next two lines
+		\hfill---Lewis Carroll. **** Year ****.
+				 \emph{Through the Looking-Glass and What Alice Found There}
+	
+		\hfill **** Publisher ****, **** City ****, p.~47.
+	}
+	
 \end{quote}
 
 \normalsize{}
