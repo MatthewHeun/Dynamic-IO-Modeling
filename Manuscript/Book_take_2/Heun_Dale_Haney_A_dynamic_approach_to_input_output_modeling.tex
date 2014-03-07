@@ -32,7 +32,24 @@
 \usepackage{graphicx}            % standard LaTeX graphics tool
                                  % when including figure files
 \usepackage{setspace}			 % allows easy line and paragraph spacing with \doublespacing, etc.
-\usepackage[activate={true,nocompatibility},factor=1000]{microtype}  % procuces hanging punctuation
+\usepackage{microtype}           % produces hanging punctuation
+% this fixes first line not protruding in the quote environment. 
+% from http://tex.stackexchange.com/questions/13666/microtype-and-quote-environment-leads-to-different-indent-of-first-line/13711#13711
+\makeatletter                    
+\newcommand*\protrudeleft[1]{%
+    {\everypar{}%
+     \setbox\z@\vbox{\noindent#1}%
+     \vbadness=\@M
+     \splittopskip=\z@
+     \global\setbox\z@=\vsplit\z@ to \baselineskip
+     \unvbox\z@ \global\setbox\z@=\lastbox
+    }%
+    \ifhbox\z@
+      \leavevmode
+      \kern\leftmarginkern\z@
+    \fi
+    #1}
+\makeatother
 \usepackage{tablefootnote}
 \usepackage{scrextend}           % provides the \footref script
 \usepackage{multicol}            % used for the two-column index
