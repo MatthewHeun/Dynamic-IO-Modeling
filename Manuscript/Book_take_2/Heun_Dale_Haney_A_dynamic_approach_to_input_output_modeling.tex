@@ -114,21 +114,29 @@
 %\include{acknow}
 \include{Part_0/Chapter_Acknowledgements/Chapter_Acknowledgements}
 
-\microtypesetup{protrusion=false} % disables protrusion locally in the document
+\microtypesetup{protrusion=false} % disables protrusion
 
 \tableofcontents{}
 \listoffigures{}
 \listoftables{}
 
-\microtypesetup{protrusion=true} % disables protrusion locally in the document
+\microtypesetup{protrusion=true} % re-enables protrusion
 
 % Add the List of Symbols using the glossaries package.
 \printglossary[type=nomenclature, style=nomenclaturestyle, nonumberlist=true]
 
-\include{Part_0/Book_Lede/Alice} % Use \input so as to not create a new Chapter
+\include{Part_0/Book_Lede/Alice} 
 
+\include{Part_0/Chapter_Prologue/Chapter_Prologue}
+
+% We want the prologue to be unnumbered and the next chapter to be Chapter 1.
+% But, the Prologue incremented the chapter counter by 1, 
+% and the next chapter will also increment the counter by 1 leading to: Chapter 2 Introduction.
+% By setting the chapter counter to 0 here, we get the Introduction to be Chapter 1.
+\setcounter{chapter}{0}
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \include{Part_0/Chapter_Introduction/Chapter_Introduction}
 

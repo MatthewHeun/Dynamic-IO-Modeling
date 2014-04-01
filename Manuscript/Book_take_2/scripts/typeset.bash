@@ -21,6 +21,7 @@ pdflatex -halt-on-error Heun_Dale_Haney_A_dynamic_approach_to_input_output_model
 
 # Make the bibliobraphy. Need to do each chapter individually.
 cd Part_0; cd Chapter_Acknowledgements; bibtex Chapter_Acknowledgements; cd ../..;
+cd Part_0; cd Chapter_Prologue;         bibtex Chapter_Prologue;         cd ../..;
 cd Part_0; cd Chapter_Introduction;     bibtex Chapter_Introduction;     cd ../..;
 cd Part_1; cd Chapter_Materials;        bibtex Chapter_Materials;        cd ../..;
 cd Part_1; cd Chapter_Energy;           bibtex Chapter_Energy;           cd ../..;

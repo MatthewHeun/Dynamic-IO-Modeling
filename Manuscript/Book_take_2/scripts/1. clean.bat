@@ -39,6 +39,10 @@ cd Part_0\Chapter_Acknowledgements
 erase *.aux
 erase *.bbl
 erase *.blg
+cd Part_0\Chapter_Prologue
+erase *.aux
+erase *.bbl
+erase *.blg
 cd ..\Part_0\Chapter_Introduction 
 erase *.aux
 erase *.bbl
