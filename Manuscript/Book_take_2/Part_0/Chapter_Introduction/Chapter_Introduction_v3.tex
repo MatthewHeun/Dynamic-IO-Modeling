@@ -1,0 +1,695 @@
+%!TEX root = ../../Heun_Dale_Haney_A_dynamic_approach_to_input_output_modeling.tex
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\motto{Where there is no reliable accounting 
+and therefore no competent knowledge
+of the economic and ecological effects of our lives,
+we cannot live lives that are economically
+and ecologically responsible. 
+It is futile to plead and protest and lobby 
+in favor of public ecological responsibility while, 
+in virtually every act of our private lives, 
+we endorse and support an economic system 
+that is by intention, 
+and perhaps by necessity, 
+ecologically irresponsible.~\emph{\cite[p.~26]{Berry1998}}
+
+\hfill---\emph{Wendell Berry}}
+
+
+\chapter{Introduction}
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+\chaptermark{Introduction}
+% Always give a unique label
+\label{chap:intro}
+
+\abstract*{In this chapter we give our motivation for writing this book. 
+We outline some of the models and subsequent metaphors 
+that have been used to describe the economy---clockwork, 
+machine, engine---and suggest a new metaphor---the 
+metabolism of an organism.
+We give an overview of Leontief input-output methods
+and their extension to include energy and material inputs
+and waste flows out of the economy.
+We then propose a new input-output analysis method,
+fitting to the new metaphor of the metabolic economy;
+a dynamic accounting framework that includes accumulation of stocks
+within economic sectors.}
+
+****	Red queen \& treadmill of production
+
+\begin{quote}
+by year 50 the cost of maintaining the capital stock has overwhelmed the income from resource extraction, so profits are no longer sufficient to keep investment ahead of depreciation. The operation quickly shuts down, as the capital stock declines. The last and most expensive of the resource stays in the ground; it doesn’t pay to get it out~\cite[p.60]{Meadows2008}
+\end{quote}
+****
+
+
+%%%%%%	Burning question		%%%%%%
+\section{Burning question: how can you maintain a system of national accounts without accounting for natural assets?}
+\label{sec:burning_question}
+%%%%%%
+
+Unpack later to mean flows between the economy and the biosphere.
+
+%%%%%% Problem		%%%%%%
+\section{Problem: Our accounting systems are inadequate}
+\label{sec:problem}
+%%%%%%
+
+We're not counting materials, energy, and economic value in a way that allows society to (a) understand the connections between energy and the economy and (b) plan for a future in which energy transitions/transformations will occur. Why is this important?
+
+%%%%%% Transformations		%%%%%%
+\subsection{The world is facing energy transformations}
+\label{sec:transormations}
+%%%%%%
+
+
+
+%%%%%% Planning		%%%%%%
+\subsection{We need to plan for the imminent transformations}
+\label{sec:planning}
+%%%%%%
+
+Either the transformations will happen to us, or we will plan for them. We believe that planning is preferred.
+
+%%%%%%	Economic structure	%%%%%%
+\subsection{Structure of the economy is important}
+\label{sec:structure}
+%%%%%%
+
+To plan for the coming transformation, we need to know the existing materials and energy structure of our economy. And, we need to know where materials and embodied energy accumulate in economic sectors and infrastructure. In short, we need to understand the connections between energy and the economy.
+
+%%%%%%	Isolated machine metaphor	%%%%%%
+\subsection{Materials and energy not accounted}
+\label{sec:accounting}
+%%%%%%
+
+However, we (as a society) are not accounting the necessary things to help us plan for the economic challenges that will accompany the impending energy transformation. In fact, Congress is preventing the BEA from doing this! (See Prologue.)
+
+
+%%%%%%	Scarcity	%%%%%%
+\subsection{Relative vs. absolute scarcity and depletion!}
+\label{sec:scarcity}
+%%%%%%
+
+%%%%%% Solution	%%%%%%
+\section{Solution: we need to account for materials and energy}
+\label{sec:solution}
+%%%%%%
+
+Our book provides a dynamic model that shows (a) what should be accounted and (b) how to analyze the data. This is a step along the path of solving the stated problem.
+
+%%%%%% Collective imagination	%%%%%%
+\section{Why is our collective imagination stuck on a view of the economy as isolated from the biosphere?}
+\label{sec:collective_imagination}
+%%%%%%
+
+%%%%%%	Isolated machine metaphor	%%%%%%
+\subsection{The isolated economy}
+\label{sec:isolated_economy}
+%%%%%%
+
+The isolated machine metaphor for the economy tells us that structural transformations will occur smoothly. 
+     The isolated machine metaphor leads to some incorrect assumptions:
+
+%%%%%%	Economy not connected to biosphere	%%%%%%
+\subsubsection{No connection between the economy and the biosphere}
+\label{sec:no_connection}
+%%%%%%
+
+%%%%%% Infinite resources	%%%%%%
+\subsubsection{Resources are always available}
+\label{sec:infinite_resources}
+%%%%%%
+
+Resources are always available.  If a particular resource is becomes scarce, substitute.
+
+%%%%%% Infinite waste		%%%%%%
+\subsubsection{Infinite assimilative capacity for wastes}
+\label{sec:infinite_waste}
+%%%%%%
+
+%%%%%% Internal dynamics	%%%%%%
+\subsubsection{Only internal dynamics affect the economy}
+\label{sec:internal_dynamics}
+%%%%%%
+
+%%%%%%	Economic forces	%%%%%%
+\subsubsection{Economic forces (through prices and the market mechanism) will smoothly guide transition processes to good and just outcomes}
+\label{sec:economic_forces}
+%%%%%%
+
+
+%%%%%% Machine endures	%%%%%%
+\subsubsection{The machine can and will carry on}
+\label{sec:machine_endures}
+%%%%%%
+
+%%%%%% Destructive transformations	%%%%%%
+\subsection{Transformations have been rocky to this point. (eg. 1973, 2008)}
+\label{sec:transformations}
+%%%%%%
+
+%%%%%%	Wrong models	%%%%%%
+\subsection{Perhaps our economic models are wrong}
+\label{sec:wrong_models}
+%%%%%%
+
+But, economic models are informed by metaphors. Perhaps our metaphors are wrong.
+
+%%%%%%	Wrong metaphors		%%%%%%
+\subsection{Perhaps our metaphors are wrong}
+\label{sec:wrong_metaphors}
+%%%%%%
+
+
+%%%%%%	Importance of metaphors		%%%%%%
+\subsection{Importance of metaphors}
+\label{sec:importance_metaphors}
+%%%%%%
+
+%%%%%%	Requirements	%%%%%%
+\section{Attributes for an apt metaphor for the economy}
+\label{sec:metaphor_requirements}
+%%%%%%
+
+see first column of table below
+
+%%%%%% Inputs from biosphere	%%%%%%
+\subsection{Intakes materials and energy from the biosphere}
+\label{sec:inputs}
+%%%%%%
+
+%%%%%%	Internal exchanges	%%%%%%
+\subsection{Exchanges materials and information and dissipates energy internally}
+\label{sec:internal_exchange}
+%%%%%%
+
+%%%%%%	Discharges wastes	%%%%%%
+\subsection{Discharges wastes to the biosphere}
+\label{sec:discharges_waste}
+%%%%%%
+
+%%%%%% Accounts for scarcity	%%%%%%
+\subsection{Accounts for effects of scarcity (non-linearly) in the face of low-substitutability (and uncertainty)}
+\label{sec:accounts_for_scarcity}
+%%%%%%
+
+%%%%%% Importance of energy	%%%%%%
+\subsection{Places importance on energetic costs}
+\label{sec:importance_of_energy}
+%%%%%%
+
+%%%%%%	Dynamics and structure	%%%%%%
+\subsection{Able to address dynamics and structural transformations}
+\label{sec:structure}
+
+Able to describe energy embodied in capital stock of economic sectors.
+
+%%%%%%	Vefifiable	%%%%%%
+\subsection{Informs models that are verifiable against historical data}
+\label{sec:verifiable}
+%%%%%%
+
+%%%%%%	Metabolic metaphor %%%%%%
+\section{The metabolic economy}
+\label{sec:metabolic_economy}
+%%%%%%
+
+Perhaps a better metaphor for the economy is a metabolism (Greek root means ``change''). 
+
+%%%%%%	Metabolisms work %%%%%%
+\subsection{Metabolism captures the desired attributes}
+\label{sec:metabolism_works}
+%%%%%%
+     
+Metabolisms have the characteristics to meet the requirements outlined above.
+How can we fill in the metabolism metaphor? What ``ideas ... are lying around''?
+
+
+\begin{table}
+\label{tab:metabolic_economy}
+\caption{Attributes of the real economy that should be captured by our economic models and metaphors 
+				and ``useful ideas'' (analytic tools) that can be used to capture these attributes.}
+\begin{tabular}{p{0.5cm}p{5cm}p{2.2cm}p{4cm}}
+\hline
+																													&	
+	Aspects of economies that should be addressed by an apt metaphor		&
+	Ideas “lying around”																					&
+	Significance																								\\
+\hline
+1																													&	
+	Intakes material and energy from the biosphere										&
+	MFA, EW-MFA																							&
+	Stresses importance of material intake													\\
+2																													&
+	Exchanges materials and information internally										&
+	I-O method																								&
+	Highlights importance of internal exchanges											\\
+3																													&
+	Discharges wastes to the biosphere															&
+	LCA, EIOLCA																								&
+	Focuses attention on otherwise-neglected wastes 
+		(wastes are systemic, not exceptional)												\\
+4																													&
+	Affected by scarcity (non-linearity) in the face of 
+		low-substitutability (and uncertainty)													&
+		EROI																										&
+		Predicts that energy resource scarcity reduces EROI 
+			and increases prices																			\\
+5																													&
+	Affected by energetic costs																		&
+	EI-O method																								&
+	Gives prominence to energetic costs for internal flows							\\
+6																													&
+	Exhibits non-linear dynamics with 
+		the potential for structural transformation.
+		Embodies energy in capital stock of economic sectors.						&
+	Thermodynamic control volume modeling												&
+	Describes transient behavior and transformations.
+		Provides “accounting” equations.															\\
+\hline
+\end{tabular}
+\end{table}
+
+How can we fill in the metabolism metaphor? There are ideas “lying around” that can address these important aspects of economies. (See middle column of table.) However, ideas 1–5 above create snapshots of flows. None (except 6) provides structural information. In other words, 1–5 talk about the blood, not the bones. We need to understand flows (blood) and structure (stocks, bones). 6 helps with that
+
+%%%%%%	Analytic tools	%%%%%%
+\subsection{Filling in the metabolism metaphor with useful ideas: analytic tools}
+\label{sec:analytic_tools}
+%%%%%%
+
+What analytical tools and data are at our disposal?
+(Each sub-point below ties to the same sub-points in Item 7 above.)
+
+%%%%%%	MFA	%%%%%%
+\subsubsection{Material flow analysis (MFA)}
+\label{sec:MFA}
+%%%%%%
+
+MFA, EW-MFA: Stresses the importance of material intake
+
+%%%%%%	I-O	%%%%%%
+\subsubsection{Input-Output (I-O) method}
+\label{sec:I-O}
+%%%%%%
+
+I-O method: Highlights importance of internal exchanges
+
+%%%%%%	LCA	%%%%%%
+\subsubsection{Life cycle analysis (LCA)}
+\label{sec:LCA}
+%%%%%%
+
+LCA, EIOLCA: Focuses attention on otherwise-neglected wastes
+
+%%%%%%	NEA	%%%%%%
+\subsubsection{Net energy analysis}
+\label{sec:NEA}
+%%%%%%
+
+EROI: Predicts that energy resource scarcity reduces EROI and increases prices
+
+%%%%%%	EI-O method		%%%%%%
+\subsubsection{Energy Input-Output (EI-O) method}
+\label{sec:EI-O}
+%%%%%%
+
+EI-O method: gives prominence to energetic costs for all internal flows
+
+%%%%%%	CV modeling		%%%%%%
+\subsubsection{Thermodynamic control volume (CV) modeling}
+\label{sec:CV_modeling}
+%%%%%%
+
+Thermodynamic control volume modeling: captures transient behavior 
+and transformations.  
+Provides ``accounting'' equations.
+
+%%%%%%	Historically verifiable 	%%%%%%
+\subsection{Apt metaphor should inform models that are verifiable against historical data}
+\label{sec:historically_verifiable}
+%%%%%%
+
+Furthermore, an apt metaphor should inform models that are verifiable against historical data. We need a way to collect and categorize the information. The SNA is supposed to do that. But, the BEA doesn’t include important information (material flows and accumulation, for example) in the SNA. 
+
+%%%%%%	National Accounts	%%%%%%
+\subsubsection{System of National Accounts}
+\label{sec:national_accounts}
+%%%%%%
+
+System of National Accounts: provides data for analysis and verification purposes.  
+Needs to be expanded.
+
+These facts bring us back to:
+\begin{enumerate}
+	\item our burning question: how can you maintain a system of national accounts without accounting for natural assets? and
+	\item stated problem: we're not counting materials, energy, and economic value in a way that allows society to
+				\begin{enumerate}
+					\item understand the connections between energy and the economy
+					\item plan for a future in which energy transitions/transformations will occur.
+				\end{enumerate}
+\end{enumerate}
+
+
+%%%%%%	Restate the problem 	%%%%%%
+\section{Restate the Problem: we're not counting materials, energy, and value}
+\label{sec:restate_problem}
+%%%%%%
+
+We’re not counting materials, energy, and value in a way that allows society to: 
+\begin{enumerate}
+	\item understand the connections between energy and the economy
+	\item plan for a future in which energy transitions/transformations will occur.
+\end{enumerate} 
+
+
+
+
+%%%%%%	Need		%%%%%%
+\section{Need: a new modeling approach}
+\label{sec:need}
+%%%%%%
+
+Need: A modeling approach that
+\begin{enumerate}
+	\item brings together the ideas ``lying around,''
+	\item has the potential to describe structural transformations of the economy, and 
+	\item provides a framework for improved economic and environmental accounting.
+\end{enumerate} 
+
+
+%%%%%%	Approach		%%%%%%
+\section{Methodological approach}
+\label{sec:approach}
+%%%%%%
+
+Our approach to meet the need is to develop a dynamic model by applying rigorous thermodynamics to economies, informed by the ideas lying around and the metabolic metaphor, in a manner that is verifiable against the existing (or expanded) System of National Accounts (SNA).
+
+Where and how should we apply rigorous thermodynamics to develop our dynamic model? 
+
+%%%%%%	Structure		%%%%%%
+\subsection{What accounting must be done well to understand the dynamics of economies?}
+\label{sec:structure}
+%%%%%%
+
+%%%%%%	Materials		%%%%%%
+\subsubsection{Materials}
+\label{sec:materials}
+%%%%%%
+
+Materials (Chapter 2)
+
+%%%%%%	Energy		%%%%%%
+\subsubsection{Energy}
+\label{sec:energy}
+%%%%%%
+
+Energy (Chapter 3)
+
+%%%%%%	Embodied Energy		%%%%%%
+\subsubsection{Embodied energy}
+\label{sec:embodied_energy}
+%%%%%%
+
+Embodied energy (Chapter 4)
+
+%%%%%%	Economic value	%%%%%%
+\subsubsection{Economic value}
+\label{sec:economic_value}
+%%%%%%
+
+Economic value (already done very well by the System of National Accounts, Chapter 5)
+
+%%%%%%	Key metrics	%%%%%%
+\subsubsection{Key metrics}
+\label{sec:key_metrics}
+%%%%%%
+
+Key metrics that arise from this dynamic model: energy intensity and EROI (Chapter 6)
+
+The list above provides the outline for the center of the book. The rest of the outline is:
+
+%%%%%%	Implications	%%%%%%
+\subsubsection{Implications from the dynamic model}
+\label{sec:implications}
+%%%%%%
+
+Implications from the dynamic model (Chapter 7)
+
+%%%%%%	Unfinished business		%%%%%%
+\subsubsection{Unfinished business}
+\label{sec:unfinished_business}
+%%%%%%
+
+Unfinished business (Chapter 8)
+
+%%%%%%	Summary		%%%%%%
+\subsubsection{Summary}
+\label{sec:summary}
+%%%%%%
+
+Summary (Chapter 9)
+
+\bibliographystyle{unsrt}
+\bibliography{../../Metabolic}
+
+
+% Always give a unique label
+% and use \ref{<label>} for cross-references
+% and \cite{<label>} for bibliographic references
+% use \sectionmark{}
+% to alter or adjust the section heading in the running head
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% Use the standard \verb|equation| environment to typeset your equations, e.g.
+%
+%% \begin{equation}
+%% a \times b = c\;,
+%% \end{equation}
+%
+%% however, for multiline equations we recommend to use the \verb|eqnarray|
+%% environment\footnote{In physics texts please activate the class option \texttt{vecphys} to depict your vectors in \textbf{\itshape boldface-italic} type - as is customary for a wide range of physical jects.}.
+%% \begin{eqnarray}
+%% a \times b = c \nonumber\\
+%% \vec{a} \cdot \vec{b}=\vec{c}
+%% \label{eq:01}
+%% \end{eqnarray}
+
+%% \section{section Heading}
+%% \label{sec:2}
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references\index{cross-references} and citations\index{citations} as has already been described in Sect.~\ref{sec:2}.
+
+%% \begin{quotation}
+%% Please do not use quotation marks when quoting texts! Simply use the \verb|quotation| environment -- it will automatically render Springer's preferred layout.
+%% \end{quotation}
+
+
+%% \section{section Heading}
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}, see also Fig.~\ref{fig:1}\footnote{If you copy text passages, figures, or tables from other works, you must obtain \textit{permission} from the copyright holder (usually the original publisher). Please enclose the signed permission with the manucript. The sources\index{permission to print} must be acknowledged either in the captions, as footnotes or in a separate section of the book.}
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+% For figures use
+%
+%% \begin{figure}[b]
+%% \sidecaption
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the option graphics use
+%% \includegraphics[scale=.65]{figure}
+%
+% If not, use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+%% \caption{If the width of the figure is less than 7.8 cm use the \texttt{sidecapion} command to flush the caption on the left side of the page. If the figure is positioned at the top of the page, align the sidecaption with the top of the figure -- to achieve this you simply need to use the optional argument \texttt{[t]} with the \texttt{sidecaption} command}
+%% \label{fig:1}       % Give a unique label
+%% \end{figure}
+
+
+%% \paragraph{Paragraph Heading} %
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% For typesetting numbered lists we recommend to use the \verb|enumerate| environment -- it will automatically render Springer's preferred layout.
+
+%% \begin{enumerate}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \begin{enumerate}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{enumerate}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{enumerate}
+
+
+%% \paragraph{paragraph Heading} In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}, see also Fig.~\ref{fig:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% For unnumbered list we recommend to use the \verb|itemize| environment -- it will automatically render Springer's preferred layout.
+
+%% \begin{itemize}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development, cf. Table~\ref{tab:1}.}
+%% \begin{itemize}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{itemize}
+%% \item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
+%% \end{itemize}
+
+%% \begin{figure}[t]
+%% \sidecaption[t]
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the option graphics use
+%% \includegraphics[scale=.65]{figure}
+%
+% If not, use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+%% \caption{Please write your figure caption here}
+%% \label{fig:2}       % Give a unique label
+%% \end{figure}
+
+%% \runinhead{Run-in Heading Boldface Version} Use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% \runinhead{Run-in Heading Italic Version} Use the \LaTeX\ automatism for all your cross-refer\-ences and citations as has already been described in Sect.~\ref{sec:2}\index{paragraph}.
+% Use the \index{} command to code your index words
+%
+% For tables use
+%
+%% \begin{table}
+%% \caption{Please write your table caption here}
+%% \label{tab:1}       % Give a unique label
+%
+% For LaTeX tables use
+%
+%% \begin{tabular}{p{2cm}p{2.4cm}p{2cm}p{4.9cm}}
+%% \hline\noalign{\smallskip}
+%% Classes & class & Length & Action Mechanism  \\
+%% \noalign{\smallskip}\svhline\noalign{\smallskip}
+%% Translation & mRNA$^a$  & 22 (19--25) & Translation repression, mRNA cleavage\\
+%% Translation & mRNA cleavage & 21 & mRNA cleavage\\
+%% Translation & mRNA  & 21--22 & mRNA cleavage\\
+%%Translation & mRNA  & 24--26 & Histone and DNA Modification\\
+%%\noalign{\smallskip}\hline\noalign{\smallskip}
+%%\end{tabular}
+%%$^a$ Table foot note (with superscript)
+%%\end{table}
+%
+%% \section{Section Heading}
+%%\label{sec:3}
+% Always give a unique label
+% and use \ref{<label>} for cross-references
+% and \cite{<label>} for bibliographic references
+% use \sectionmark{}
+% to alter or adjust the section heading in the running head
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%%If you want to list definitions or the like we recommend to use the Springer-enhanced \verb|description| environment -- it will automatically render Springer's preferred layout.
+
+%%\begin{description}[Type 1]
+%%\item[Type 1]{That addresses central themes pertainng to migration, health, and disease. In Sect.~\ref{sec:1}, Wilson discusses the role of human migration in infectious disease distributions and patterns.}
+%%\item[Type 2]{That addresses central themes pertainng to migration, health, and disease. In Sect.~\ref{sec:2}, Wilson discusses the role of human migration in infectious disease distributions and patterns.}
+%%\end{description}
+
+%%\section{section Heading} %
+%% In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Use the \LaTeX\ automatism for all your cross-references and citations citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% \begin{svgraybox}
+%% If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option \verb|graybox| and the newly defined environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
+
+%% If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option and environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
+%% \end{svgraybox}
+
+
+%% \section{section Heading}
+%%Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Please note that the first line of text that follows a heading is not indented, whereas the first lines of all sequent paragraphs are.
+
+%% \begin{theorem}
+%% Theorem text goes here.
+%% \end{theorem}
+%
+% or
+%
+%% \begin{definition}
+%% Definition text goes here.
+%% \end{definition}
+
+%% \begin{proof}
+%\smartqed
+%% Proof text goes here.
+%% \qed
+%% \end{proof}
+
+%%\paragraph{Paragraph Heading} %
+%% Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Furtheron please use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+%% Note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
+%
+% For built-in environments use
+%
+%%\begin{theorem}
+%%Theorem text goes here.
+%%\end{theorem}
+%
+%%\begin{definition}
+%%Definition text goes here.
+%%\end{definition}
+%
+%%\begin{proof}
+%%\smartqed
+%% Proof text goes here.
+%%\qed
+%%\end{proof}
+%
+%% \begin{acknowledgement}
+%% If you want to include acknowledgments of assistance and the like at the end of an individual chapter please use the \verb|acknowledgement| environment -- it will automatically render Springer's preferred layout.
+%% \end{acknowledgement}
+%
+%% \section*{Appendix}
+%% \addcontentsline{toc}{section}{Appendix}
+%
+%% When placed at the end of a chapter or contribution (as opposed to at the end of the book), the numbering of tables, figures, and equations in the appendix section continues on from that in the main text. Hence please \textit{do not} use the \verb|appendix| command when writing an appendix at the end of your chapter or contribution. If there is only one the appendix is designated ``Appendix'', or ``Appendix 1'', or ``Appendix 2'', etc. if there is more than one.
+
+%% \begin{equation}
+%% a \times b = c
+%% \end{equation}
+% Problems or Exercises should be sorted chapterwise
+%% \section*{Problems}
+%% \addcontentsline{toc}{section}{Problems}
+%
+% Use the following environment.
+% Don't forget to label each problem;
+% the label is needed for the solutions' environment
+%% \begin{prob}
+%% \label{prob1}
+%% A given problem or Excercise is described here. The
+%% problem is described here. The problem is described here.
+%% \end{prob}
+
+%% \begin{prob}
+%% \label{prob2}
+%% \textbf{Problem Heading}\\
+%% (a) The first part of the problem is described here.\\
+%% (b) The second part of the problem is described here.
+%% \end{prob}
+
+
