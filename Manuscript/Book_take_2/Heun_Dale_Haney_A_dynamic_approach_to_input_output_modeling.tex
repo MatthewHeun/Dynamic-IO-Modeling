@@ -26,6 +26,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{booktabs}
+\usepackage{bookmark}            % Allows changing of outline levels for pdf document.
 \usepackage[sectionbib,compress]{natbib}% provides a bibliography for each chapter
 \usepackage{chapterbib}
 \usepackage[titletoc]{appendix}  % puts "Appendix" in front of appendix names in TOC
@@ -138,6 +139,9 @@
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% The next line puts the Intoduction at the root level of the pdf document
+% rather than as a child of the Prologue.
+\bookmarksetup{startatroot}
 
 \include{Part_0/Chapter_Introduction/Chapter_Introduction}
 
