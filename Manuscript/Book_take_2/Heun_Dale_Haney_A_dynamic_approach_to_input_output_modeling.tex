@@ -41,10 +41,10 @@
 \newcommand*\protrudeleft[1]{%
     {\everypar{}%
      \setbox\z@\vbox{\noindent#1}%
-     \vbadness=\@M
+     \vbadness=\@M%
      \splittopskip=\z@
-     \global\setbox\z@=\vsplit\z@ to \baselineskip
-     \unvbox\z@ \global\setbox\z@=\lastbox
+     \global\setbox\z@=\vsplit\z@ to \baselineskip%
+     \unvbox\z@ \global\setbox\z@=\lastbox%
     }%
     \ifhbox\z@
       \leavevmode
