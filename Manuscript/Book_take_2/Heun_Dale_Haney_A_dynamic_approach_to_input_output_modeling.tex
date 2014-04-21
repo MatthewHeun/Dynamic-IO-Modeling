@@ -139,7 +139,7 @@
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% The next line puts the Intoduction at the root level of the pdf document
+% The next line puts the Introduction at the root level of the pdf document
 % rather than as a child of the Prologue.
 \bookmarksetup{startatroot}
 
@@ -173,6 +173,10 @@
 \include{Part_3/Book_Exit/Berry}
 
 % \appendix
+% The next line sets the appendices at the top-level 
+% of the outline in the pdf document.
+% Without this line, they become children of Part III.
+\bookmarksetup{startatroot}
 
 \begin{appendices}
 	
