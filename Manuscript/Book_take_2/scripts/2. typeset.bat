@@ -22,8 +22,8 @@ bibtex Chapter_Acknowledgements
 cd ..\..
 
 cd Part_0
-cd Chapter_Prologue
-bibtex Chapter_Prologue
+cd Chapter_Preface
+bibtex Chapter_Preface
 cd ..\..
 
 cd Part_0

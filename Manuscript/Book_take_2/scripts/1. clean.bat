@@ -39,7 +39,7 @@ cd Part_0\Chapter_Acknowledgements
 erase *.aux
 erase *.bbl
 erase *.blg
-cd Part_0\Chapter_Prologue
+cd Part_0\Chapter_Preface
 erase *.aux
 erase *.bbl
 erase *.blg
