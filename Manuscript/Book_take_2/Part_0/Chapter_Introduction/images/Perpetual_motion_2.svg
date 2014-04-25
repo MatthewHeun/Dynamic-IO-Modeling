@@ -864,11 +864,11 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1380"
+     inkscape:window-width="1382"
      inkscape:window-height="856"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-x="4"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true"
      fit-margin-top="0"
@@ -1089,24 +1089,24 @@
     <path
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
-       d="m -28.09085,666.12773 0,-187.53682 95.05834,0"
+       d="m -28.09085,667.12804 0,-188.53713 95.05834,0"
        id="path4224"
        sodipodi:nodetypes="ccc" />
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
-       x="-26.060719"
-       y="457.63358"
+       style="font-size:13px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       x="16.291332"
+       y="475.63358"
        id="text4226"><tspan
          sodipodi:role="line"
          id="tspan4228"
-         x="-26.060719"
-         y="457.63358"
-         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start">ENERGY</tspan><tspan
+         x="16.291332"
+         y="475.63358"
+         style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle">ENERGY</tspan><tspan
          sodipodi:role="line"
-         x="-26.060719"
-         y="473.88358"
-         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
+         x="16.291332"
+         y="491.88358"
+         style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
          id="tspan4230">RESOURCES</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
