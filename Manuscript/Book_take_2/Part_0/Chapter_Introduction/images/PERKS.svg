@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="502.09866"
-   height="344.52112"
+   width="462.59476"
+   height="354.52112"
    id="svg3126"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="PERKS.svg">
+   sodipodi:docname="PERKS.pdf">
   <defs
      id="defs3128">
     <marker
@@ -859,16 +859,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.5726857"
-     inkscape:cx="241.98376"
-     inkscape:cy="173.47614"
+     inkscape:cx="292.85216"
+     inkscape:cy="158.04194"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1382"
      inkscape:window-height="856"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-x="-1"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true"
      fit-margin-top="0"
@@ -883,7 +883,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1089,41 +1089,41 @@
     <path
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
-       d="m -28.09085,666.12773 0,-187.53682 95.05834,0"
+       d="m -28.09085,676.12773 0,-197.53682 95.05834,0"
        id="path4224"
        sodipodi:nodetypes="ccc" />
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
-       x="-26.060719"
-       y="425.63358"
+       style="font-size:13px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       x="16.319897"
+       y="443.63358"
        id="text4226"><tspan
          sodipodi:role="line"
          id="tspan4228"
-         x="-26.060719"
-         y="425.63358"
-         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start" /><tspan
+         x="16.319897"
+         y="443.63358"
+         style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle" /><tspan
          sodipodi:role="line"
-         x="-26.060719"
-         y="441.88358"
-         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
+         x="16.319897"
+         y="459.88358"
+         style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
          id="tspan3148">ENERGY &amp;</tspan><tspan
          sodipodi:role="line"
-         x="-26.060719"
-         y="458.13358"
-         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
+         x="18.122631"
+         y="476.13358"
+         style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
          id="tspan3153">MATERIAL </tspan><tspan
          sodipodi:role="line"
-         x="-26.060719"
-         y="474.38358"
-         style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
+         x="16.319897"
+         y="492.38358"
+         style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
          id="tspan4230">RESOURCES</tspan></text>
     <g
        id="g4741">
       <path
          sodipodi:nodetypes="cc"
          id="path4739"
-         d="m 94.96749,502.59091 0,144.12885"
+         d="m 94.96749,502.59091 0,154.12885"
          style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
          inkscape:connector-curvature="0" />
     </g>
@@ -1133,13 +1133,13 @@
       <path
          inkscape:connector-curvature="0"
          style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
-         d="m 78.96749,514.59091 14,25.13781 0,120.99104"
+         d="m 78.96749,514.59091 14,25.13781 0,132.99104"
          id="path4758"
          sodipodi:nodetypes="ccc" />
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m -40.89201,669.70097 c 151.955,-32.92396 319.02694,-31.09345 455.36619,-0.42516"
+       d="m -40.89201,679.70097 c 151.955,-32.92396 319.02694,-31.09345 455.36619,-0.42516"
        id="path3146"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1167,46 +1167,53 @@
          sodipodi:role="line">spending</tspan></text>
     <text
        id="text3156"
-       y="675.63354"
+       y="685.63354"
        x="169.9393"
        style="font-size:13px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
        xml:space="preserve"><tspan
          id="tspan3160"
          style="font-size:13px;font-weight:normal;text-align:start;text-anchor:start"
-         y="675.63354"
+         y="685.63354"
          x="169.9393"
          sodipodi:role="line">Biosphere</tspan></text>
     <text
        id="text3164"
-       y="614.37305"
-       x="93.986923"
+       y="-97.738388"
+       x="575.56592"
        style="font-size:13px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
-       xml:space="preserve"><tspan
+       xml:space="preserve"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
          id="tspan3168"
          style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
-         y="614.37305"
-         x="93.986923"
-         sodipodi:role="line">ENERGY &amp;  MATERIAL</tspan><tspan
+         y="-97.738388"
+         x="575.56592"
+         sodipodi:role="line">ENERGY &amp; MATERIAL</tspan><tspan
          style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
-         y="630.62305"
-         x="93.986923"
+         y="-81.488388"
+         x="575.56592"
          sodipodi:role="line"
          id="tspan3151">WASTE  FLOWS</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
-       x="391.98694"
-       y="614.37305"
-       id="text3155"><tspan
+       x="595.56592"
+       y="-411.7384"
+       id="text3155"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
          sodipodi:role="line"
-         x="391.98694"
-         y="614.37305"
+         x="595.56592"
+         y="-411.7384"
          style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
-         id="tspan3157">ENERGY &amp;  MATERIAL</tspan><tspan
+         id="tspan3157">ENERGY &amp;</tspan><tspan
+         sodipodi:role="line"
+         x="595.56592"
+         y="-395.4884"
+         style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle"
+         id="tspan3152"> MATERIAL</tspan><tspan
          id="tspan3159"
          sodipodi:role="line"
-         x="391.98694"
-         y="630.62305"
+         x="595.56592"
+         y="-379.2384"
          style="font-size:13px;font-weight:normal;text-align:center;text-anchor:middle">WASTE  FLOWS</tspan></text>
   </g>
 </svg>
