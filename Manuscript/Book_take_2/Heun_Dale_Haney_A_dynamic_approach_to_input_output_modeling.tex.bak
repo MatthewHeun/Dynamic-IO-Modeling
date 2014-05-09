@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for	 the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox,envcountchap,sectrefs]{svmono}
+
+% choose options for [] as required from the list
+% in the Reference Guide
+\usepackage{framed}
+\usepackage{boxedminipage}
+\usepackage{float}              % Allows for precise table positioning.
+\usepackage{mathptmx}
+\usepackage{array}              % Allows for table text centered vertically
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{amsmath}
+\usepackage{txfonts}            % Allows bold greek letters; compatible with Springer styles.
+\usepackage{type1cm}         
+\usepackage{framed}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{bookmark}            % Allows changing of outline levels for pdf document.
+\usepackage[sectionbib,compress]{natbib}% provides a bibliography for each chapter
+\usepackage{chapterbib}
+\usepackage[titletoc]{appendix}  % puts "Appendix" in front of appendix names in TOC
+\usepackage{makeidx}             % allows index generation
+\usepackage{graphicx}            % standard LaTeX graphics tool
+                                 % when including figure files
+\usepackage{setspace}			 % allows easy line and paragraph spacing with \doublespacing, etc.
+\usepackage{microtype}           % produces hanging punctuation and beautiful type
+% this fixes first line not protruding in the quote environment. 
+% from http://tex.stackexchange.com/questions/13666/microtype-and-quote-environment-leads-to-different-indent-of-first-line/13711#13711
+\makeatletter                    
+\newcommand*\protrudeleft[1]{%
+    {\everypar{}%
+     \setbox\z@\vbox{\noindent#1}%
+     \vbadness=\@M%
+     \splittopskip=\z@
+     \global\setbox\z@=\vsplit\z@ to \baselineskip%
+     \unvbox\z@ \global\setbox\z@=\lastbox%
+    }%
+    \ifhbox\z@
+      \leavevmode
+      \kern\leftmarginkern\z@
+    \fi
+    #1}
+\makeatother
+\usepackage{tablefootnote}
+\usepackage{scrextend}           % provides the \footref script
+\usepackage{multicol}            % used for the two-column index
+\usepackage[bottom]{footmisc}    % places footnotes at page bottom
+\usepackage{mathtools} 
+\usepackage{outlines}            % For outlines
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+% \setenumerate[1]{label=\Roman*.}
+% \setenumerate[2]{label=\Alph*.}
+% \setenumerate[3]{label=\roman*.}
+% \setenumerate[4]{label=\alph*.}
+\usepackage{pdflscape}		% allows portions of the document, e.g. figures, to be landscape
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+% Needs to come last in the list of loaded packages.
+\usepackage{hyperref}          
+
+% Except for the glossaries package.
+\usepackage[nomain,nopostdot]{glossaries}
+\renewcommand{\glsnamefont}[1]{\textnormal{#1}} % Makes names normal typeface (not bold)
+
+% Add nomenclature definitions
+\input{glossaries/nomenclature.tex}
+
+% Add glossary information
+\input{glossaries/glossary.tex}
+
+
+% Provides round-trip syncing from pdf viewer to text editor
+% \usepackage{pdfsync} % Unnecessary, because pdflatex supports synctex automatically.
+\synctex=1
+
+% see the list of further useful packages
+% in the Reference Guide
+
+% Creates the Index
+\makeindex{}
+
+% Makes the Nomenclature and Glossary
+\makeglossaries{}
+
+% Use the next line for faster builds during testing.
+% \includeonly{Part_0/Chapter_Introduction/Chapter_Introduction}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\author{Matthew Kuperus Heun, Michael Carbajales-Dale, Becky Roselius Haney}
+\title{Accounting for the Environment}
+\subtitle{A Thermodynamic Approach to Energy and the Future Economy}
+\maketitle{}
+
+% Add all terms in the nomenclature and glossary
+\glsaddall[types={nomenclature,glossary}]
+
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{dedic}
+%\include{foreword}
+%\include{preface}
+%\include{acknow}
+\include{Part_0/Chapter_Acknowledgements/Chapter_Acknowledgements}
+
+\microtypesetup{protrusion=false} % disables protrusion
+
+\tableofcontents{}
+\listoffigures{}
+\listoftables{}
+
+\microtypesetup{protrusion=true} % re-enables protrusion
+
+% Add the List of Symbols using the glossaries package.
+\printglossary[type=nomenclature, style=nomenclaturestyle, nonumberlist=true]
+
+\include{Part_0/Book_Lede/Alice} 
+
+\include{Part_0/Chapter_Preface/Chapter_Preface}
+
+% We want the prologue to be unnumbered and the next chapter to be Chapter 1.
+% But, the Prologue incremented the chapter counter by 1, 
+% and the next chapter will also increment the counter by 1 leading to: Chapter 2 Introduction.
+% By setting the chapter counter to 0 here, we get the Introduction to be Chapter 1.
+\setcounter{chapter}{0}
+
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The next line puts the Introduction at the root level of the pdf document
+% rather than as a child of the Prologue.
+\bookmarksetup{startatroot}
+
+\include{Part_0/Chapter_Introduction/Chapter_Introduction}
+
+\part{Material and Energy Flows}
+\label{part:matter}
+
+\include{Part_1/Chapter_Materials/Chapter_Materials}
+
+\include{Part_1/Chapter_Energy/Chapter_Energy}
+
+\include{Part_1/Chapter_Embodied/Chapter_Embodied}
+
+\part{Economic Value Flows and Energy Intensity}
+\label{part:values}
+
+\include{Part_2/Chapter_Values/Chapter_Values} 
+
+\include{Part_2/Chapter_Intensity/Chapter_Intensity} 
+
+\part{Implications, Issues, and Summary}
+\label{part:implications}
+
+\include{Part_3/Chapter_Implications/Chapter_Implications}
+
+\include{Part_3/Chapter_Unfinished/Chapter_Unfinished}
+
+\include{Part_3/Chapter_Summary/Chapter_Summary}
+
+\include{Part_3/Book_Exit/Berry}
+
+% \appendix
+% The next line sets the appendices at the top-level 
+% of the outline in the pdf document.
+% Without this line, they become children of Part III.
+\bookmarksetup{startatroot}
+
+\begin{appendices}
+	
+	\include{Appendix_Auto/Appendix_Auto}
+
+	\include{Appendix_Infinite_Series/Appendix_infinite_series}
+
+	\include{Appendix_Proof_1/Appendix_proof_of_equation_1}
+
+	\include{Appendix_Estimating_A/Appendix_Estimating_A}
+
+	\include{Appendix_Casler/Appendix_Casler}
+
+\end{appendices}
+
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{glossary}
+%\include{solutions}
+
+\include{bibliography/bibliography}
+
+\glstoctrue{} % Includes these glossaries in the table of contents.
+\printglossary[type=glossary, style=glossarystyle, nonumberlist=true]
+
+% Add index entries
+\input{glossaries/index.tex}
+% Add index cross-references
+\input{glossaries/indexcf.tex}
+% Add the index using the makeidx package.
+\printindex{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
