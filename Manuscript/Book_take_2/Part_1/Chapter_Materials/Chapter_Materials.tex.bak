@@ -123,7 +123,7 @@ As discussed in the Preface,
 researchers are beginning to quantify these material exchanges.
 Further work, such as that by 
 the United Nations Environment Programme (UNEP)
-International Resource Panel (IRP)
+International Resource Panel (IRP),
 is attempting to measure 
 the total stock of materials within society.\cite{Graedel2010}
 Over the past two centuries,
@@ -162,11 +162,12 @@ the ``treadmill of production'' to describe the systemic process of
 ever-increasing capital investment (and thus demand for materials)
 inherent in capitalist society.\footnote{
 	The logic of the treadmill is:
- 		\begin{enumerate}
- 			\item 	more capital is becoming accumulated in Western economies, 
+ 		\begin{enumerate}[noitemsep,topsep=0pt]
+ 			\item 	capital (production equipment)
+ 						is accumulating in Western economies, 
  						to replace production labor 
- 						with new technologies to increase profits; 
- 			\item 	these new technologies require far more energy and/or chemicals 
+ 						with technologies to increase profits; 
+ 			\item 	these technologies require far more materials and/or energy 
  						to replace previous, labor-intensive processes;
 % 			\item 	new technologies emerge from the organization of scientific and 
 % 						technological research in universities and research institutes, 
@@ -174,8 +175,10 @@ inherent in capitalist society.\footnote{
  			\item 	moreover, unlike the prior use of labor, 
  						the new technologies represent forms of sunk capital;
  			\item 	because worker inputs can more readily be cut back 
- 						(as opposed to fixed costs of machine operations)
- 						labor is further reduced to sustain production at higher levels.~\cite[p.296]{Gould2004}
+ 						(as opposed to fixed costs of machine operations for sunk capital)
+ 						labor is further reduced to sustain production at higher levels;
+ 			\item	yet more capital is added to replace further reduced levels
+ 						of labor.~\cite[p.296]{Gould2004}
 		 \end{enumerate}
  }
 % \begin{quote}
