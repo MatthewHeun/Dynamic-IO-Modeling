@@ -752,6 +752,14 @@
 	Volume = {17},
 	Year = {2004}}
 
+@book{Graedel2010,
+  title={Metal Stocks in Society: Scientific Synthesis},
+  author={Graedel, TE},
+  year={2010},
+  publisher={United Nations Environment Programme}
+}
+
+
 @book{Grubler2003,
   title={Technology and global change},
   author={Gr{\"u}bler, Arnulf},
@@ -1453,11 +1461,6 @@ Title = {Philippines}}
 	Author = {{United Nations, Department of Economic and Social Affairs, Population Division}},
 	Howpublished = {\url{http://esa.un.org/wpp/}},
 	Title = {World Population Prospects: The 2012 Revision}}
-
-@misc{UNSEEA:aa,
-	Author = {{United Nations, Department of Economic and Social Affairs, Statistics Division}},
-	Howpublished = {\url{http://unstats.un.org/unsd/envaccounting/seea.asp}},
-	Title = {System of Environmental-Economic Accounting ({SEEA})}}
 
 @misc{UNSEEAWeb,
 	Author = {{United Nations Statistical Division}},
