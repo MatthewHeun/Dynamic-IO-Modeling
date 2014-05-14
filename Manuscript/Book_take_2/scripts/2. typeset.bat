@@ -27,6 +27,11 @@ bibtex Chapter_Preface
 cd ..\..
 
 cd Part_0
+cd Chapter_Prologue
+bibtex Chapter_Prologue
+cd ..\..
+
+cd Part_0
 cd Chapter_Introduction
 bibtex Chapter_Introduction
 cd ..\..

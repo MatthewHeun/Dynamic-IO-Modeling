@@ -43,6 +43,14 @@ cd Part_0\Chapter_Preface
 erase *.aux
 erase *.bbl
 erase *.blg
+cd Part_0\Chapter_Prologue
+erase *.aux
+erase *.bbl
+erase *.blg
+cd Part_0\Chapter_Epigraph
+erase *.aux
+erase *.bbl
+erase *.blg
 cd ..\Part_0\Chapter_Introduction 
 erase *.aux
 erase *.bbl
