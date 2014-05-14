@@ -35,7 +35,7 @@ rm -f *.toc
 cd Part_0; cd Chapter_Acknowledgements; rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_0; cd Chapter_Preface;          rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_0; cd Chapter_Prologue;         rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
-cd Part_0; cd Chapter_Epigraph;                 rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
+cd Part_0; cd Chapter_Epigraph;         rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_0; cd Chapter_Introduction;     rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_1; cd Chapter_Materials;        rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
 cd Part_1; cd Chapter_Energy;           rm -f *.aux; rm -f *.bbl; rm -f *.blg; cd ..; cd ..
