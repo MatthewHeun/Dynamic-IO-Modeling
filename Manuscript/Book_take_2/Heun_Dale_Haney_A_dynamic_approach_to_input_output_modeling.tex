@@ -119,8 +119,6 @@
 %\include{preface}
 %\include{acknow}
 
-\include{Part_0/Book_Lede/Alice} 
-
 \microtypesetup{protrusion=false} % disables protrusion
 
 \tableofcontents{}
@@ -132,9 +130,20 @@
 % Add the List of Symbols using the glossaries package.
 \printglossary[type=nomenclature, style=nomenclaturestyle, nonumberlist=true]
 
-\include{Part_0/Chapter_Preface/Chapter_Preface}
+{
+	% Eliminate the number before chapters of preface, acknow, epigraph, and prologue
+	% Inside braces to scope this change.
+	\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
 
-\include{Part_0/Chapter_Acknowledgements/Chapter_Acknowledgements}
+	\include{Part_0/Chapter_Preface/Chapter_Preface}
+
+	\include{Part_0/Chapter_Acknowledgements/Chapter_Acknowledgements}
+
+	\include{Part_0/Chapter_Epigraph/Alice} 
+
+	\include{Part_0/Chapter_Prologue/Chapter_Prologue}
+
+}
 
 % We want the prologue to be unnumbered and the next chapter to be Chapter 1.
 % But, the Prologue incremented the chapter counter by 1, 
