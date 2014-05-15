@@ -130,6 +130,19 @@
 % Add the List of Symbols using the glossaries package.
 \printglossary[type=nomenclature, style=nomenclaturestyle, nonumberlist=true]
 
+% We want the Introduction to be numbered as Chapter 1.
+% To do so, we set the chapter counter to -3 at this point.
+% Note that we have eliminated numbering for the 
+% Preface, Acknowledgements, Epigraph, and Prologue,
+% so we won't see negative chapter numbers for them.
+% Another note: simply resetting the chapter counter to 0
+% after the frontmatter caused hyperlinks within the book
+% to be mixed up.
+% For example, clicking on "1 Introduction" in the outline
+% brought you to the Preface.
+% Setting the chapter counter to -3 here solves that problem!
+\setcounter{chapter}{-3}
+
 {
 	% Eliminate the number before chapters of preface, acknow, epigraph, and prologue
 	% Inside braces to scope this change.
@@ -144,11 +157,6 @@
 	\include{Part_0/Chapter_Prologue/Chapter_Prologue}
 }
 
-% We want the prologue to be unnumbered and the next chapter to be Chapter 1.
-% But, the Prologue incremented the chapter counter by 1, 
-% and the next chapter will also increment the counter by 1 leading to: Chapter 2 Introduction.
-% By setting the chapter counter to 0 here, we get the Introduction to be Chapter 1.
-\setcounter{chapter}{0}
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

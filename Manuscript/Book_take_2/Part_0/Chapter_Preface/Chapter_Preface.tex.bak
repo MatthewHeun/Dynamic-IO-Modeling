@@ -7,14 +7,32 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
-\motto{The economic light is brightest under the lamppost of the market, 
-but neither drunks nor statisticians should confine their search there. 
-In extending the accounts, 
-we must endeavor to find dimly lit information outside our old boundaries of search, 
-particularly when the activities are of great value 
-to the nation.~\emph{\cite[p.~23]{Nordhaus1999a}}
+\motto{It was six men of Indostan
 
-\hfill---\emph{William Nordhaus}}
+To learning much inclined,			\\
+Who went to see the Elephant		\\
+(Though all of them were blind),	\\
+That each by observation				\\
+Might satisfy his mind...				\\
+\vspace{5 mm}
+And so these men of Indostan				\\
+Disputed loud and long,						\\
+Each in his own opinion						\\
+Exceeding stiff and strong,					\\
+Though each was partly in the right,	\\
+And all were in the wrong!					\\
+\vspace{2 mm}
+Moral.													\\
+\vspace{2 mm}
+So, oft in theologic wars						\\
+The disputants, I ween,						\\
+Rail on in utter ignorance						\\
+Of what each other mean,					\\
+And prate about an Elephant				\\
+\vspace{2 mm}
+Not one of them has seen!~\emph{\cite[p.~259--261]{saxe_poems_1873}}
+
+		\hfill---~\emph{John Godfrey Saxe. 1873.}The Blind Men and the Elephant}
 
 % There are several commands here that change things dramatically.
 % So, we put these inside braces to restrict the scope
@@ -82,8 +100,8 @@ living standards on the available natural capital, but ignore the role of manufa
 Economists focus attention on manufactured capital 
 as a primary factor of production (in addition to labor), 
 and ignore the role of natural capital. 
-However, as the oil embargo in the 1970's 
-painfully illustrated, the economy is highly depedent on both types of capital.
+However, as the oil embargo in the 1970s 
+painfully illustrated, the economy is highly dependent on both types of capital.
 While it is true that a direct correlation exists between the efficiency of manufactured capital
 and living standards, natural capital is required 
 to produce, operate, and maintain manufactured capital. Both types of capital are valuable
@@ -135,7 +153,7 @@ Clean air and water are not accounted in the SNA, for example.
 Although there is nothing in the SNA framework that prevents 
 accounting for assets (manufactured and natural capital),
 the focus of national accounting is squarely on income (GDP), 
-not wealth (manufactured and natural capital).~\cite[p.~415]{UNSNA2008}  
+not wealth (manufactured and natural capital).\cite[p.~415]{UNSNA2008}  
 Even in the US, manufactured capital (fixed assets) is given very little ``shelf space,'' 
 and natural capital is ignored outright.\footnote{Nations 
 	may have been lulled into believing that they 
@@ -156,7 +174,7 @@ economies deplete natural capital in the pursuit of income.
 Without a complete national balance sheet alongside an income statement, 
 policy-makers can unwittingly draw down a nation's wealth (natural capital) 
 to generate today's income (GDP). 
-In so doing, future income is put at risk. 
+In so doing, future living standards are put at risk. 
 
 In contrast to most countries' national accounting, 
 the UN \emph{Inclusive Wealth Report 2012}~\cite{IWR2012} 
@@ -184,183 +202,172 @@ to ensure sustainability.
 Nations must monitor and manage not only the goods and services they produce today, 
 but also their stocks of capital 
 and the state of that capital, their bequest to the future. 
-Many questions are unanswerable without both:
-
-\begin{enumerate}
-    \item{How is fossil fuel dependency embedded in the interlocking fabric of the economy?} 
-    \item{How will industries that are dependent on coal, oil, 
- 			and other forms of non-renewable energy transition 
-			to renewable forms of energy? And how will the industries that 
-			are in turn dependent on on those industries be affected
-			by the transition?} 
-	\item{How might the economy be affected as an increasing share of production resources
-			 gets directed toward
- 			waste emission mitigation and natural resource recycling and recovery?}
-\end{enumerate}
+Many questions, such as those found in Section~\ref{sec:what_to_count},
+are unanswerable without both.
 
 \vspace{10 mm}
 
-We're not the first to point out the importance of accounting 
-for both manufactured and natural capital. 
-The Brundtland Commission (1983--1987) recognized the need 
-to devise rigorous methods for integrating environmental assets 
-into national balance sheets and income statements. In its final
-report, \emph{Our Common Future}, the commission called for all nations to
-include a full (economic) accounting
-of the use and development of natural resources 
-in national accounts:
-
-\begin{quote}
-	The process of economic development must be more soundly 
-	based upon the realities of the stock of capital that sustains it. 
-	This is rarely done in either developed or developing countries. 
-	For example, income from forestry operations is conventionally measured 
-	in terms of the value of timber and other products extracted, 
-	minus the costs of extraction. 
-	The costs of regenerating the forest are not taken into account, 
-	unless money is actually spent on such work. 
-	Thus figuring profits from logging rarely takes full account 
-	of the losses in future revenue incurred through degradation of the forest. 
-	Similar incomplete accounting occurs in the exploitation 
-	of other natural resources, 
-	especially in the case of resources that are not capitalized 
-	in enterprise or national accounts: air, water, and soil. 
-	In all countries, rich or poor, 
-	economic development must take full account 
-	in its measurements of growth of the improvement or 
-	deterioration in the stock 
-	of natural resources.\cite[Chapter~2, Paragraph~36]{brundtland1987}
-\end{quote}
-
-In response to the call by the Brundtland Commission, 
-economist Peter Bartelmus led an effort at the UN Statistics Division 
-to develop a set of satellite accounts to accompany the UN System of National Accounts framework,
-the System for Environmental and Economic Accounting~(SEEA).~\cite{Bartelmus1991} 
-**** MCD - SHOULD THIS BE \cite{bartelmus_integrated_1991}? ****
-The UN published the first Handbook for the SEEA in 1993.\cite{UNSEEA1993} 
-The SEEA has obtained only moderate traction, however.
-The Philippines implemented SEEA in its national accounts 
-in a 1993 pilot study and permanently thereafter.\cite{uno1998, PhilippinesSEEAWeb}
-The SEEA is currently in its third revision, 
-and has  influenced the development 
-of accounts to track natural capital stocks and flows
-in the European Union member states, Canada, and Australia as well.\cite{UNSEEAWeb,PhilippinesSEEAWeb} 
-The Netherlands, in particular, has developed a National Accounting Matrix that 
-includes Environmental Accounts.~\cite{DutchStats2009}
-
-Shortly after the publication 
-of the UN's SEEA methodology,
-the US Bureau of Economic Analysis (BEA) began development of its own
-framework for environmental-economic satellite accounts called the 
-Integrated Environmental-Economic System of Accounts (IEESA). 
-The motivation, methodology, and first set of data tables were published 
-in April 1994.\cite{BEA1994a} 
-These accounts provided a range of numbers to bracket the value
-of the stocks of subsoil mineral assets in the nation's portfolio. The IEESA data
-and the detailed plans for additional phases of development were comprehensive and methodologically rigorous. 
-This effort on the part of the BEA
-represented a tremendous leap forward for 
-national accounting in the US.
-
-Unfortunately, progress toward integrated environmental-economic accounting 
-in the US came to a screeching halt immediately after the first IEESA tables were published. 
-The US Congress responded swiftly and negatively. The House Report that 
-accompanied the next appropriations bill explicitly forbad the BEA from spending  
-any additional resources to develop or extend
-the integrated environmental and economic accounting methodology. 
-
-
-\begin{quote}
-	The conferees understand that there has been considerable debate 
-	over the years as to the objectivity, methodology, and applicability 
-	of ``Integrated Environmental-Economic Accounting'' or ``Green GDP.''
-	The conferees understand that the Department [the BEA]
-	has completed the development of Phase I of this initiative. 
-	The conferees believe that an independent review, 
-	by an external organization such as the National Academy of Sciences, 
-	should be conducted to analyze 
-	the proposed objectivity, methodology, and application of environmental accounting. 
-	The conferees expect BEA to use \$400,000 under this account 
-	to fund this independent study, as suggested by the House report. 
-	The conferees expect BEA to suspend development 
-	of Phase II of this initiative 
-	until the review has been completed and the results have been submitted 
-	to the Committees on Appropriations of the House and the Senate, 
-	as well as the appropriate authorizing committees.~\cite{HR103708}
-\end{quote}
-
-The House Report also ordered 
-a panel convened by the National Academy of Sciences (NAS)
- to evaluate the objectivity and methodology of the IEESA.
-The review panel was to submit a report to congress before the BEA 
-could continue its work on the IEESA.
-Esteemed economist William Nordhaus chaired the review panel
-that evaluated whether the BEA should extend 
-the national income and product accounts to include 
-``assets and production activities associated 
-with natural resources and the environment.''~\cite[p.~2]{Nordhaus1999a} 
-In 1999, the panel submitted its comprehensive report 
-to Congress strongly recommending that the BEA be authorized 
-to continue producing the environmental-economic satellite accounts.\cite{Nordhaus1999a}
-
-The report illuminated the need for a nation 
-to keep ``comprehensive economic accounts'' that ``provide a complete reckoning of
-economic activity, whether it takes place inside or outside 
-the boundary of the marketplace.''~\cite[p.~29]{Nordhaus1999a}
-The panel noted that the data would used 
-by states, local governments, businesses, and investors alike 
-to make sound economic decisions. 
-The panel asked reasonable questions and showed how a system like the IEESA
-could provide sensible answers.
-For example, should the timber from an old growth forest be harvested? 
-Using data that are limited to income-generating transactions only, 
-the answer is ``yes,''
-because the harvest adds directly to national income. 
-However, the value of foregone ``hunting, fishing, 
-and other forms of nonmarket forest recreation'' 
-services over time (likely to exceed the value of the harvested timber)
-cannot be part of the decision unless 
-a system such as the IEESA is in place.\cite[p.~30]{Nordhaus1999a}
-
-Despite the review panel's ringing endorsement of the BEA's work,
-Congress continued to expressly forbid the BEA's efforts.
-Appropriations bills through FY 2002 contained the sentence:
-
-\begin{quote}
-	The Committee continues the prohibition on use of funds under this appropriation,
-	or under the Census Bureau appropriation accounts,
-	to carry out the Integrated Environmental-Economic Accounting or ``Green GDP'' initiative.
-\end{quote}
-
-Today, appropriations bills no longer expressly prohibit work on the IEESA,
-but the BEA is understandably gun-shy after their experience in the 1990s.
-Sadly, the BEA did not receive the necessary political backing
-despite a Democratic administration
-and two Democratically-controlled chambers of Congress.
-Restarting an effort similar to the IEESA will require a specific
-mandate from both the administration and Congress, 
-a significant political task to be sure.
-
-Perhaps it is a rare nation that will voluntarily consume less today 
-to save for future generations. 
-However, a nation that maintains both a balance sheet and 
-an income statement can at least observe when it is consuming 
-future generations' productive capital 
-to produce the current generation's income. 
-This is information that business leaders and policy-makers should want to have. 
-So, despite the political challenges, 
-we unabashedly call for a resumption of this type of accounting.
-
-\vspace{10 mm}
+% We're not the first to identify the importance of accounting 
+% for both manufactured and natural capital. 
+% The Brundtland Commission (1983--1987) recognized the need 
+% to devise rigorous methods for integrating environmental assets 
+% into national balance sheets and income statements. In its final
+% report, \emph{Our Common Future}, the commission called for all nations to
+% include a full (economic) accounting
+% of the use and development of natural resources 
+% in national accounts:
+% 
+% \begin{quote}
+% 	The process of economic development must be more soundly 
+% 	based upon the realities of the stock of capital that sustains it. 
+% 	This is rarely done in either developed or developing countries. 
+% 	For example, income from forestry operations is conventionally measured 
+% 	in terms of the value of timber and other products extracted, 
+% 	minus the costs of extraction. 
+% 	The costs of regenerating the forest are not taken into account, 
+% 	unless money is actually spent on such work. 
+% 	Thus figuring profits from logging rarely takes full account 
+% 	of the losses in future revenue incurred through degradation of the forest. 
+% 	Similar incomplete accounting occurs in the exploitation 
+% 	of other natural resources, 
+% 	especially in the case of resources that are not capitalized 
+% 	in enterprise or national accounts: air, water, and soil. 
+% 	In all countries, rich or poor, 
+% 	economic development must take full account 
+% 	in its measurements of growth of the improvement or 
+% 	deterioration in the stock 
+% 	of natural resources.\cite[Chapter~2, Paragraph~36]{brundtland1987}
+% \end{quote}
+% 
+% In response to the call by the Brundtland Commission, 
+% economist Peter Bartelmus led an effort at the UN Statistics Division 
+% to develop a set of satellite accounts, 
+% called the System for Environmental and Economic Accounting~(SEEA),
+% which accompanies the UN System of National Accounts framework.\cite{bartelmus_integrated_1991}
+% The UN published the first Handbook for the SEEA in 1993 and it is now in 
+% its third revision.\cite{UNSEEA1993} 
+% The Philippines served as a pilot study for the new integrated environmental-economic
+% accounting approach, and the island nation's current concerns about mitigating the impacts of 
+% rising sea levels has reinvigorated this aspect 
+% of their national accounting.\cite{uno1998, PhilippinesSEEAWeb}
+% The Netherlands currently leads the way 
+% among developed nations with a complete  National Accounting Matrix that 
+% includes Environmental Accounts.\cite{DutchStats2009}
+% Many European Union member states, 
+% as well as Canada and Australia have integrated 
+% some environmental acounts with their national accounting.\cite{UNSEEAWeb} 
+% 
+% Shortly after the publication 
+% of the UN's SEEA methodology,
+% the US Bureau of Economic Analysis (BEA) began development of its own
+% framework for environmental-economic satellite accounts called the 
+% Integrated Environmental-Economic System of Accounts (IEESA). 
+% The motivation, methodology, and first set of data tables were published 
+% in April 1994.\cite{BEA1994a} 
+% These accounts provided a range of numbers to bracket the value
+% of the stocks of subsoil mineral assets in the nation's portfolio. 
+% The IEESA data and the detailed plans for additional phases 
+% of development were comprehensive and methodologically rigorous. 
+% This effort on the part of the BEA
+% represented a tremendous leap forward for 
+% national accounting in the US.
+% 
+% Unfortunately, progress toward integrated environmental-economic accounting 
+% in the US came to a screeching halt immediately after the first IEESA tables were published. 
+% The US Congress responded swiftly and negatively. The House Report that 
+% accompanied the next appropriations bill explicitly forbade the BEA from spending  
+% any additional resources to develop or extend
+% the integrated environmental and economic accounting methodology. 
+% 
+% 
+% \begin{quote}
+% 	The conferees understand that there has been considerable debate 
+% 	over the years as to the objectivity, methodology, and applicability 
+% 	of ``Integrated Environmental-Economic Accounting'' or ``Green GDP.''
+% 	The conferees understand that the Department [the BEA]
+% 	has completed the development of Phase I of this initiative. 
+% 	The conferees believe that an independent review, 
+% 	by an external organization such as the National Academy of Sciences, 
+% 	should be conducted to analyze 
+% 	the proposed objectivity, methodology, and application of environmental accounting. 
+% 	The conferees expect BEA to use \$400,000 under this account 
+% 	to fund this independent study, as suggested by the House report. 
+% 	The conferees expect BEA to suspend development 
+% 	of Phase II of this initiative 
+% 	until the review has been completed and the results have been submitted 
+% 	to the Committees on Appropriations of the House and the Senate, 
+% 	as well as the appropriate authorizing committees.\cite{HR103708}
+% \end{quote}
+% 
+% Esteemed economist William Nordhaus chaired the 
+% National Academy of Sciences (NAS) review panel
+% that evaluated whether the BEA should extend 
+% the national income and product accounts to include 
+% ``assets and production activities associated 
+% with natural resources and the environment.''~\cite[p.~2]{Nordhaus1999a} 
+% In 1999, the panel submitted its comprehensive report 
+% to Congress strongly recommending that the BEA be authorized 
+% to continue producing the environmental-economic satellite accounts.\cite{Nordhaus1999a}
+% 
+% The report illuminated the need for a nation 
+% to keep ``comprehensive economic accounts'' that 
+% ``provide a complete reckoning of economic activity, 
+% whether it takes place inside or outside 
+% the boundary of the marketplace.''~\cite[p.~29]{Nordhaus1999a}
+% The panel noted that the data would be used 
+% by states, local governments, businesses, and investors alike 
+% to make sound economic decisions. 
+% The panel asked reasonable questions and showed how a system like the IEESA
+% could provide sensible answers.
+% For example, should the timber from an old growth forest be harvested? 
+% Using data that are limited to income-generating transactions only, 
+% the answer is ``yes,''
+% because the harvest adds directly to national income. 
+% However, the value of foregone ``hunting, fishing, 
+% and other forms of nonmarket forest recreation'' 
+% services over time (likely to exceed the value of the harvested timber)
+% cannot be part of the decision unless 
+% a system such as the IEESA is in place.\cite[p.~30]{Nordhaus1999a}
+% 
+% Despite the review panel's ringing endorsement of the BEA's work,
+% Congress continued to expressly forbid the BEA's efforts.
+% Appropriations bills through FY~2002 contained the sentence:
+% 
+% \begin{quote}
+% 	The Committee continues the prohibition on use of funds under this appropriation,
+% 	or under the Census Bureau appropriation accounts,
+% 	to carry out the Integrated Environmental-Economic Accounting or ``Green GDP'' initiative.
+% \end{quote}
+% 
+% Today, appropriations bills no longer expressly prohibit work on the IEESA,
+% but the BEA is understandably gun-shy after their experience in the 1990s.
+% Sadly, the BEA did not receive the necessary political backing
+% despite a Democratic administration
+% and two Democratically-controlled chambers of Congress.
+% Restarting an effort similar to the IEESA will require a specific
+% mandate from both the administration and Congress, 
+% a significant political task to be sure.
+% 
+% Perhaps it is a rare nation that will voluntarily consume less today 
+% to save for future generations. 
+% However, a nation that maintains both a balance sheet and 
+% an income statement can at least observe when it is consuming 
+% future generations' productive capital 
+% to produce the current generation's income. 
+% This is information that business leaders and policy-makers should want to have. 
+% So, despite the political challenges, 
+% we unabashedly call for a resumption of this type of accounting.
+% 
+% \vspace{10 mm}
 
 In the ancient fable, 
 six blind men observe six different parts 
 of an elephant and draw different conclusions 
-about the unseen animal.
+about the unseen animal before them.
 Today, 
 scientists and economists observe two different parts 
 of the economy and draw strikingly different conclusions 
-about the unseen future. 
+about the unseen future ahead. 
 We contend that both scientists and economists 
 need to take off their blinders and 
 appreciate that capital in all forms 
@@ -370,19 +377,19 @@ These two perspectives must be brought together
 to understand the potential futures we are facing. 
 These two perspectives must inform the data we collect about our economies.
 
-But, what would we do with comprehensive environmental-economic data, 
+% But, what would we do with comprehensive environmental-economic data, 
+% including natural and manufactured capital, 
+% if they were routinely and readily available? 
+
+But, what would we do with integrated and comprehensive environmental-economic data, 
 including natural and manufactured capital, 
 if they were routinely and readily available? 
 The goal of this book is to answer that question.
 Herein, we develop an accounting framework 
 and analysis approach that could take advantage of such data,
 and we draw several implications from our framework.
-We think that the benefits of ``accounting for the environment''
-will be worth the political efforts needed
-to resume the practice.
-After reading this book, we hope you will agree.
 
-We look forward to the day when such data are available!
+We look forward to the day when such data are readily available!
 
 \bibliographystyle{unsrt}
 \bibliography{../../Metabolic}
