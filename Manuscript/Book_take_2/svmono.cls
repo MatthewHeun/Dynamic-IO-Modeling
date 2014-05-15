@@ -196,7 +196,7 @@
 \renewenvironment{svgraybox}%
        {\fboxsep=12pt\relax
         \begin{shaded}%
-        \list{}{\leftmargin=12pt\rightmargin=2\leftmargin\leftmargin=\z@\topsep=\z@\relax}%
+        \list{}{\leftmargin=12pt\rightmargin=0.4\leftmargin\leftmargin=\z@\topsep=\z@\relax}%
         \expandafter\item\parindent=\svparindent
         \hskip-\listparindent}%
        {\endlist\end{shaded}}%
