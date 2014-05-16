@@ -390,9 +390,6 @@ the EROI defined here is EROI$_{2,d}$~\cite[Table~1]{Murphy2011}
 or GER$_{\gamma}$~\cite[Table~1]{Brandt2011},
 where GER stands for \emph{gross energy ratio}
 an equivalent metric to EROI\@.
-
-**** MCD discussion of resource quality ****
-
 As discussed in Chapter~\ref{chap:materials},
 society relies heavily on concentrations of high quality
 material resources.
@@ -416,7 +413,7 @@ Chapters~\ref{chap:embodied_energy}~and~\ref{chap:value}
 and discussed in more
 detail in Section~\ref{sec:resource_quality_and_irreversibility}.
 
-****
+
 %**** Mik---Add a discussion about system boundaries. ****
 
 Equation~\ref{eq:CV_E_dot_0} can be generalized with a sum as
