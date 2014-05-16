@@ -126,7 +126,8 @@ the sector.\footnote{The amount of energy embodied in an entire economy
 	may be an indicator of its level of 
 	``development.''
 	See Section~\ref{sec:implications_for_development} for a
-	discussion of several indicators of economic ``development.''}
+	discussion of several indicators of economic ``development.''
+	}
 
 The purpose of this chapter is to develop a framework for accounting
 embodied energy flows within economies. 
@@ -761,6 +762,34 @@ less the rate of disposal of embodied energy associated with
 scrap resources~($\dot{B}_{\dot{R}_{10}}$),
 short-lived material~($\dot{B}_{\dot{S}_{10}}$), and
 depreciated capital stock~($\gamma_{B_{1}} B_{K_{1}}$).
+
+**** MCD discussion of resource quality ****
+
+As discussed in previous Chapters,
+natural resource quality has a direct impact on both
+material and energy intensity of economic processes.
+As we extract lower quality resources we require
+larger inputs of materials and energy,
+to process greater volumes of material,
+but also indirectly to build the extra capital equipment
+necessary to do the processing.
+The same is also true of energy resources within the environment.
+Fossil fuels represent stocks of solar energy
+accumulated (in the form of biomass)
+over many millions of years.
+These resources are extremely far from equilibrium with the environment.
+EROI can be considered an indicator of energy resource quality.
+As EROI (and thus energy quality) declines,
+more energy is needed to extract and deliver energy from the environment,
+both directly, for example the energy to pump oil from deeper underground,
+and indirectly, in order to build the extra oil rigs necessary to maintain production levels.
+This issue of resource quality will be re-visited in 
+Chapters~\ref{chap:embodied_energy}~and~\ref{chap:value}
+and discussed in more
+detail in Section~\ref{sec:resource_quality_and_irreversibility}.
+
+****
+
 
 We turn now to Example~B, a two-sector economy.
 
