@@ -2,10 +2,12 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Matt at 2014-04-28 13:37:21 -0400 
+%% Created for Matt at 2014-05-15 16:47:36 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
+
+
 
 @book{allwood2012sustainable,
 	Author = {Allwood, Julian M and Cullen, Jonathan M and Carruth, Mark A and Cooper, Daniel R and McBrien, Martin and Milford, Rachel L and Moynihan, Muiris C and Patel, Alexandra CH},
@@ -70,20 +72,21 @@
 	Year = {2004}}
 
 @article{bartelmus_integrated_1991,
-	title = {{INTEGRATED} {ENVIRONMENTAL} {AND} {ECONOMIC} {ACCOUNTING:} {FRAMEWORK} {FOR} A {SNA} {SATELLITE} {SYSTEM}},
-	volume = {37},
-	issn = {0034-6586, 1475-4991},
-	shorttitle = {{INTEGRATED} {ENVIRONMENTAL} {AND} {ECONOMIC} {ACCOUNTING}},
-	url = {http://doi.wiley.com/10.1111/j.1475-4991.1991.tb00350.x},
-	doi = {10.1111/j.1475-4991.1991.tb00350.x},
-	language = {en},
-	number = {2},
-	urldate = {2014-05-10},
-	journal = {Review of Income and Wealth},
-	author = {Bartelmus, Peter and Stahmer, Carsten and Tongeren, Jan van},
-	month = jun,
-	year = {1991},
-	pages = {111--148}}
+	Author = {Bartelmus, Peter and Stahmer, Carsten and Tongeren, Jan van},
+	Date-Modified = {2014-05-15 20:41:15 +0000},
+	Issn = {0034-6586, 1475-4991},
+	Journal = {Review of Income and Wealth},
+	Language = {en},
+	Month = jun,
+	Number = {2},
+	Pages = {111--148},
+	Shorttitle = {{INTEGRATED} {ENVIRONMENTAL} {AND} {ECONOMIC} {ACCOUNTING}},
+	Title = {{INTEGRATED} {ENVIRONMENTAL} {AND} {ECONOMIC} {ACCOUNTING:} {FRAMEWORK} {FOR} A {SNA} {SATELLITE} {SYSTEM}},
+	Urldate = {2014-05-10},
+	Volume = {37},
+	Year = {1991},
+	Bdsk-Url-1 = {http://doi.wiley.com/10.1111/j.1475-4991.1991.tb00350.x},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1111/j.1475-4991.1991.tb00350.x}}
 
 @article{Bartelmus:2003vi,
 	Author = {Bartelmus, Peter},
@@ -158,7 +161,7 @@
 	Year = {1993}}
 
 @article{Berry:1973vo,
-	author={Berry, R Stephen and Fels, Margaret F},	
+	Author = {Berry, R Stephen and Fels, Margaret F},
 	Journal = {Science and Public Affairs},
 	Number = {10},
 	Pages = {11--17},
@@ -243,15 +246,14 @@
 	Year = {2013}}
 
 @article{Brimblecombe2006,
-  title={The clean air act after 50 years},
-  author={Brimblecombe, Peter},
-  journal={Weather},
-  volume={61},
-  number={11},
-  pages={311--314},
-  year={2006},
-  publisher={Wiley Online Library}
-}
+	Author = {Brimblecombe, Peter},
+	Journal = {Weather},
+	Number = {11},
+	Pages = {311--314},
+	Publisher = {Wiley Online Library},
+	Title = {The clean air act after 50 years},
+	Volume = {61},
+	Year = {2006}}
 
 @incollection{Brown2004,
 	Address = {New York},
@@ -262,14 +264,14 @@
 	Year = {2004}}
 
 @book{brundtland1987,
-	address = {Oxford ; New York},
-	series = {Oxford paperbacks},
-	title = {Our common future},
-	isbn = {{019282080X}},
-	lccn = {HD75.6 .O97 1987},
-	publisher = {Oxford University Press},
-	author = {{World Commission on Environment and Development}},
-	year = {1987},}
+	Address = {Oxford ; New York},
+	Author = {{World Commission on Environment and Development}},
+	Isbn = {{019282080X}},
+	Lccn = {HD75.6 .O97 1987},
+	Publisher = {Oxford University Press},
+	Series = {Oxford paperbacks},
+	Title = {Our common future},
+	Year = {1987}}
 
 @article{Bullard-III:1975aa,
 	Author = {Bullard III, Clark W and Herendeen, Robert A},
@@ -281,8 +283,8 @@
 	Year = {1975}}
 
 @article{Bullard:1978vd,
-	author={Bullard, Clark W and Penner, Peter S and Pilati, David A},
-  	Journal = {Resources and energy},
+	Author = {Bullard, Clark W and Penner, Peter S and Pilati, David A},
+	Journal = {Resources and energy},
 	Number = {3},
 	Pages = {267--313},
 	Title = {Net energy analysis: Handbook for combining process and input-output analysis},
@@ -472,7 +474,7 @@
 	Year = {2004}}
 
 @article{Costanza2014,
-	Author = {Costanza, Robert and Kubiszewski, Ida and Giovannini, Enrico and Lovins, Hunter and McGlade, Jacqueline and Pickett, Kate E and Ragnarsd{\'o}ttir, Krist{\'i}n and Roberts, Debra and De Vogli, Roberto and Wilkinson, Richard},
+	Author = {Costanza, Robert and Kubiszewski, Ida and Giovannini, Enrico and Lovins, Hunter and McGlade, Jacqueline and Pickett, Kate E and Ragnarsd{\'o}ttir, Krist{\'\i}n and Roberts, Debra and De Vogli, Roberto and Wilkinson, Richard},
 	Journal = {Nature},
 	Number = {7483},
 	Pages = {283--285},
@@ -576,23 +578,23 @@
 	Year = {2013}}
 
 @book{diamond2011,
-	edition = {Revised edition},
-	title = {Collapse: How Societies Choose to Fail or Succeed: Revised Edition},
-	shorttitle = {Collapse},
-	language = {English},
-	publisher = {Penguin Books},
-	author = {Diamond, Jared},
-	month = jan,
-	year = {2011}
-}
+	Author = {Diamond, Jared},
+	Edition = {Revised edition},
+	Language = {English},
+	Month = jan,
+	Publisher = {Penguin Books},
+	Shorttitle = {Collapse},
+	Title = {Collapse: How Societies Choose to Fail or Succeed: Revised Edition},
+	Year = {2011}}
 
 @techreport{DutchStats2009,
-	title = {The Dutch environmental accounts: present status and future developments},
-	url = {http://unstats.un.org/unsd/statcom/statcom_09/seminars/environment/Present%20state%20and%20future%20developments%20of%20the%20Dutch%20environmental%20accounts.pdf},
-	institution = {Statistics Netherlands},
-	author = {Schenau, Sjoerd and Delahaye, Roel and Graveland, Cor and van Rossum, Maarten},
-	month = feb,
-	year = {2009}}
+	Author = {Schenau, Sjoerd and Delahaye, Roel and Graveland, Cor and van Rossum, Maarten},
+	Date-Modified = {2014-05-15 20:41:15 +0000},
+	Institution = {Statistics Netherlands},
+	Month = feb,
+	Title = {The Dutch environmental accounts: present status and future developments},
+	Year = {2009},
+	Bdsk-Url-1 = {http://unstats.un.org/unsd/statcom/statcom_09/seminars/environment/Present%20state%20and%20future%20developments%20of%20the%20Dutch%20environmental%20accounts.pdf}}
 
 @article{EcoInvent2012,
 	Author = {Weidema, Bo P and Bauer, Christian and Hischier, Roland and Mutel, Christopher and Nemecek, Thomas and Reinhard, J{\"u}rgen and Vadenbo, Carl O and Wernet, Gregor},
@@ -601,14 +603,15 @@
 	Year = {2012}}
 
 @article{theeconomist2010,
-	title = {Economics focus: Agents of change},
-	issn = {0013-0613},
-	shorttitle = {Economics focus},
-	url = {http://www.economist.com/node/16636121},
-	urldate = {2013-04-05},
-	journal = {The Economist},
-	month = jul,
-	year = {2010}}
+	Date-Modified = {2014-05-15 20:41:15 +0000},
+	Issn = {0013-0613},
+	Journal = {The Economist},
+	Month = jul,
+	Shorttitle = {Economics focus},
+	Title = {Economics focus: Agents of change},
+	Urldate = {2013-04-05},
+	Year = {2010},
+	Bdsk-Url-1 = {http://www.economist.com/node/16636121}}
 
 @techreport{EIA:2014aa,
 	Author = {{EIA}},
@@ -753,19 +756,16 @@
 	Year = {2004}}
 
 @book{Graedel2010,
-  title={Metal Stocks in Society: Scientific Synthesis},
-  author={Graedel, TE},
-  year={2010},
-  publisher={United Nations Environment Programme}
-}
-
+	Author = {Graedel, TE},
+	Publisher = {United Nations Environment Programme},
+	Title = {Metal Stocks in Society: Scientific Synthesis},
+	Year = {2010}}
 
 @book{Grubler2003,
-  title={Technology and global change},
-  author={Gr{\"u}bler, Arnulf},
-  year={2003},
-  publisher={Cambridge University Press}
-}
+	Author = {Gr{\"u}bler, Arnulf},
+	Publisher = {Cambridge University Press},
+	Title = {Technology and global change},
+	Year = {2003}}
 
 @article{Haberl2001,
 	Author = {Haberl, Helmut},
@@ -859,9 +859,9 @@
 	Year = {2003}}
 
 @techreport{HR103708,
-	title = {Committee on Appropriations. Departments of Commerce, Justice, and State, the Judiciary, and Related Agencies Appropriations Bill, {FY} 1995.},
-	number = {103 H. Rpt. 708},
-	author = {{{U.S.} House.}}}
+	Author = {{{U.S.} House.}},
+	Number = {103 H. Rpt. 708},
+	Title = {Committee on Appropriations. Departments of Commerce, Justice, and State, the Judiciary, and Related Agencies Appropriations Bill, {FY} 1995.}}
 
 @misc{IIOA-Data,
 	Author = {{International Input-Output Association}},
@@ -875,21 +875,21 @@
 	Year = {1990}}
 
 @book{IPCC2013,
-	title = {Climate Change 2013: The Physical Science Basis. Contributions of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change},
-	publisher = {Cambridge University Press},
-	editor = {Stocker, T. F. {et al.}},
-	year = {2013}}
+	Editor = {Stocker, T. F. {et al.}},
+	Publisher = {Cambridge University Press},
+	Title = {Climate Change 2013: The Physical Science Basis. Contributions of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change},
+	Year = {2013}}
 
 @book{IWR2012,
-	address = {Cambridge},
-	title = {Inclusive Wealth Report 2012: Measuring Progress Toward Sustainability},
-	isbn = {9781107683396},
-	shorttitle = {Inclusive Wealth Report 2012},
-	language = {English},
-	publisher = {Cambridge University Press},
-	author = {Programme, United Nations University International Human Dimensions and Programme, United Nations Environment},
-	month = jul,
-	year = {2012}}
+	Address = {Cambridge},
+	Author = {Programme, United Nations University International Human Dimensions and Programme, United Nations Environment},
+	Isbn = {9781107683396},
+	Language = {English},
+	Month = jul,
+	Publisher = {Cambridge University Press},
+	Shorttitle = {Inclusive Wealth Report 2012},
+	Title = {Inclusive Wealth Report 2012: Measuring Progress Toward Sustainability},
+	Year = {2012}}
 
 @book{Jevons1865,
 	Author = {Jevons, William Stanley},
@@ -934,14 +934,14 @@
 	Year = {2008}}
 
 @article{kim2014,
-	title = {Industry Economic Accounts: Results of the Comprehensive Revision Revised Statistics for 1997-2012},
-	copyright = {Copyright Superintendent of Documents Sep 2005},
-	language = {English},
-	journal = {Survey of Current Business},
-	author = {Kim, Donald D. and Strassner, Erich H. and Wasshausen, David B.},
-	month = Feb,
-	year = {2014},
-	keywords = {Business And Economics--Economic Situation And Conditions, Economic growth, Economic statistics, Economic trends, Estimates, Manyindustries, Statistics}}
+	Author = {Kim, Donald D. and Strassner, Erich H. and Wasshausen, David B.},
+	Copyright = {Copyright Superintendent of Documents Sep 2005},
+	Journal = {Survey of Current Business},
+	Keywords = {Business And Economics--Economic Situation And Conditions, Economic growth, Economic statistics, Economic trends, Estimates, Manyindustries, Statistics},
+	Language = {English},
+	Month = Feb,
+	Title = {Industry Economic Accounts: Results of the Comprehensive Revision Revised Statistics for 1997-2012},
+	Year = {2014}}
 
 @techreport{Kirkpatrick:1974te,
 	Address = {Urbana, Illinois},
@@ -953,22 +953,30 @@
 	Year = {1974}}
 
 @techreport{Kemick2013,
-  title={Impacts of Ethanol Policy on Corn Prices: A Review and Meta-Analysis of Recent Evidence},
-  author={Klemick, Heather and Wolverton, Ann and Condon, Nicole},
-  year={2013},
-  institution={Agricultural and Applied Economics Association}
-}
+	Author = {Klemick, Heather and Wolverton, Ann and Condon, Nicole},
+	Institution = {Agricultural and Applied Economics Association},
+	Title = {Impacts of Ethanol Policy on Corn Prices: A Review and Meta-Analysis of Recent Evidence},
+	Year = {2013}}
 
 @article{Krausmann2009,
-  title={Growth in global materials use, GDP and population during the 20th century},
-  author={Krausmann, Fridolin and Gingrich, Simone and Eisenmenger, Nina and Erb, Karl-Heinz and Haberl, Helmut and Fischer-Kowalski, Marina},
-  journal={Ecological Economics},
-  volume={68},
-  number={10},
-  pages={2696--2705},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Krausmann, Fridolin and Gingrich, Simone and Eisenmenger, Nina and Erb, Karl-Heinz and Haberl, Helmut and Fischer-Kowalski, Marina},
+	Journal = {Ecological Economics},
+	Number = {10},
+	Pages = {2696--2705},
+	Publisher = {Elsevier},
+	Title = {Growth in global materials use, GDP and population during the 20th century},
+	Volume = {68},
+	Year = {2009}}
+
+@book{kummel2011,
+	Author = {K{\"u}mmel, Reiner},
+	Edition = {2011 edition},
+	Language = {English},
+	Month = jun,
+	Publisher = {Springer},
+	Shorttitle = {The Second Law of Economics},
+	Title = {The Second Law of Economics: Energy, Entropy, and the Origins of Wealth},
+	Year = {2011}}
 
 @article{Landefeld:2008aa,
 	Author = {Landefeld, J Steven and Seskin, Eugene P and Fraumeni, Barbara M},
@@ -1129,15 +1137,14 @@
 	Year = {2010}}
 
 @article{Mudd2007,
-  title={Global trends in gold mining: Towards quantifying environmental and resource sustainability},
-  author={Mudd, Gavin M},
-  journal={Resources Policy},
-  volume={32},
-  number={1},
-  pages={42--56},
-  year={2007},
-  publisher={Elsevier}
-}
+	Author = {Mudd, Gavin M},
+	Journal = {Resources Policy},
+	Number = {1},
+	Pages = {42--56},
+	Publisher = {Elsevier},
+	Title = {Global trends in gold mining: Towards quantifying environmental and resource sustainability},
+	Volume = {32},
+	Year = {2007}}
 
 @article{Mudd2010,
 	Author = {Mudd, Gavin M},
@@ -1219,17 +1226,18 @@
 	Year = {1996}}
 
 @techreport{OECD2012,
-	address = {Paris},
-	type = {{OECD} Economic Policy Papers},
-	title = {Looking to 2060: Long-Term Global Growth Prospects},
-	shorttitle = {Looking to 2060},
-	url = {http://www.oecd-ilibrary.org/content/workingpaper/5k8zxpjsggf0-en},
-	language = {en},
-	urldate = {2014-05-09},
-	institution = {Organisation for Economic Co-operation and Development},
-	author = {Johansson, Åsa and Guillemette, Yvan and Murtin, Fabrice and Turner, David and Nicoletti, 	Giuseppe and de la Maisonneuve, Christine and Bousquet, Guillaume and Spinelli, Francesca},
-	month = nov,
-	year = {2012}}
+	Address = {Paris},
+	Author = {Johansson, {\AA}sa and Guillemette, Yvan and Murtin, Fabrice and Turner, David and Nicoletti, 	Giuseppe and de la Maisonneuve, Christine and Bousquet, Guillaume and Spinelli, Francesca},
+	Date-Modified = {2014-05-15 20:41:15 +0000},
+	Institution = {Organisation for Economic Co-operation and Development},
+	Language = {en},
+	Month = nov,
+	Shorttitle = {Looking to 2060},
+	Title = {Looking to 2060: Long-Term Global Growth Prospects},
+	Type = {{OECD} Economic Policy Papers},
+	Urldate = {2014-05-09},
+	Year = {2012},
+	Bdsk-Url-1 = {http://www.oecd-ilibrary.org/content/workingpaper/5k8zxpjsggf0-en}}
 
 @article{parrinello2004service,
 	Author = {Parrinello, Sergio},
@@ -1262,9 +1270,9 @@
 	Year = {2012}}
 
 @misc{PhilippinesSEEAWeb,
-Author = {{World Bank}},
-Howpublished = {\url{http://web.worldbank.org/WBSITE/EXTERNAL/TOPICS/ENVIRONMENT/0,,contentMDK:23144834~menuPK:242154~pagePK:210058~piPK:210062~theSitePK:244381,00.html}},
-Title = {Philippines}}
+	Author = {{World Bank}},
+	Howpublished = {\url{http://web.worldbank.org/WBSITE/EXTERNAL/TOPICS/ENVIRONMENT/0,,contentMDK:23144834~menuPK:242154~pagePK:210058~piPK:210062~theSitePK:244381,00.html}},
+	Title = {Philippines}}
 
 @book{Rao2004,
 	Author = {Rao, YVC},
@@ -1284,6 +1292,17 @@ Title = {Philippines}}
 	Publisher = {ERIC},
 	Title = {The Red Queen Syndrome: Running Faster--Going Nowhere?},
 	Year = {1988}}
+
+@incollection{saxe_poems_1873,
+	Address = {Boston},
+	Author = {Saxe, John Godfrey},
+	Booktitle = {{The poems of John Godfrey Saxe}},
+	Date-Modified = {2014-05-15 20:47:36 +0000},
+	Language = {eng},
+	Pages = {259--261},
+	Publisher = {J. R. Osgood},
+	Title = {{The Blind Men and the Elephant}},
+	Year = {1873}}
 
 @book{Schnaiberg1980,
 	Author = {Schnaiberg, Allan},
@@ -1443,6 +1462,13 @@ Title = {Philippines}}
 	Volume = {62},
 	Year = {2007}}
 
+@misc{UCS1992,
+	Author = {{Union of Concerned Scientists}},
+	Date-Added = {2014-04-25 01:24:00 +0000},
+	Date-Modified = {2014-04-28 17:37:21 +0000},
+	Howpublished = {\url{http://www.unep.org/resourcepanel/Publications/tabid/54044/Default.aspx}},
+	Title = {Publications}}
+
 @misc{UNEP-IRP:aa,
 	Author = {{United Nations Environment Programme International Resource Panel}},
 	Date-Added = {2014-04-25 01:24:00 +0000},
@@ -1465,40 +1491,40 @@ Title = {Philippines}}
 @misc{UNSEEAWeb,
 	Author = {{United Nations Statistical Division}},
 	Howpublished = {\url{https://unstats.un.org/unsd/envaccounting/seea.asp}},
-	Title = {System of Environmental-Economic Accounting (SEEA)}
-	
+	Title = {System of Environmental-Economic Accounting (SEEA)}}
+
 @book{UNSEEA1993,
-	address = {New York},
-	series = {Studies in methods},
-	title = {Integrated environmental and economic accounting: interim version},
-	isbn = {9211613590},
-	lccn = {HF5686.N3 I57 1993},
-	shorttitle = {Integrated environmental and economic accounting},
-	number = {no. 61},
-	publisher = {United Nations},
-	author = {{United Nations}},
-	year = {1993}}
+	Address = {New York},
+	Author = {{United Nations}},
+	Isbn = {9211613590},
+	Lccn = {HF5686.N3 I57 1993},
+	Number = {no. 61},
+	Publisher = {United Nations},
+	Series = {Studies in methods},
+	Shorttitle = {Integrated environmental and economic accounting},
+	Title = {Integrated environmental and economic accounting: interim version},
+	Year = {1993}}
 
 @book{UNSNA2008,
-	address = {New York},
-	title = {System of national accounts 2008},
-	isbn = {9789211615227},
-	lccn = {HC79.I5 S9737 2009},
-	publisher = {United Nations},
-	author = {{United Nations} and {European Commission} and {International Monetary Fund} and {Organisation for Economic Co-operation and Development} and {World Bank}},
-	year = {2009},
-	keywords = {Accounting, National income}}
+	Address = {New York},
+	Author = {{United Nations} and {European Commission} and {International Monetary Fund} and {Organisation for Economic Co-operation and Development} and {World Bank}},
+	Isbn = {9789211615227},
+	Keywords = {Accounting, National income},
+	Lccn = {HC79.I5 S9737 2009},
+	Publisher = {United Nations},
+	Title = {System of national accounts 2008},
+	Year = {2009}}
 
 @book{uno1998,
-	address = {Dordrecht ; Boston},
-	edition = {1997 edition},
-	title = {Environmental Accounting in Theory and Practice},
-	isbn = {9780792345596},
-	language = {English},
-	publisher = {Springer},
-	author = {Uno, Kimio and Bartelmus, Peter},
-	month = jan,
-	year = {1998}}
+	Address = {Dordrecht ; Boston},
+	Author = {Uno, Kimio and Bartelmus, Peter},
+	Edition = {1997 edition},
+	Isbn = {9780792345596},
+	Language = {English},
+	Month = jan,
+	Publisher = {Springer},
+	Title = {Environmental Accounting in Theory and Practice},
+	Year = {1998}}
 
 @book{Ura:2012aa,
 	Address = {Thimphu, Bhutan},
@@ -1608,8 +1634,8 @@ Title = {Philippines}}
 	Year = {2013}}
 
 @article{Zhai2010,
-  	author={Zhai, Pei and Williams, Eric D},
-  	Journal = {Environmental Science \& Technology},
+	Author = {Zhai, Pei and Williams, Eric D},
+	Journal = {Environmental Science \& Technology},
 	Number = {20},
 	Pages = {7950--7955},
 	Title = {Dynamic Hybrid Life Cycle Assessment of Energy and Carbon of Multicrystalline Silicon Photovoltaic Systems},
