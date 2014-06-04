@@ -75,6 +75,12 @@ they do not march orderly from one state to the next.
 To fully understand our economies,
 we must appreciate their dynamic nature.
 
+This book presents a new model that explicitly accounts for the interactions
+ between the economy and the biosphere; that accounts for capital that has accumulated in the economy; 
+and ***BRH to continue, unless someone else gets on this before I get back at 3:30pm Wed.***
+
+
+
 This is also a book about metaphors and models.
 We use metaphors to simplify and make sense of the world around us.
 They influence us as stories we tell ourselves to convey meaning,
@@ -115,8 +121,9 @@ particularly in the US,
 were established to measure the things that 
 our economic models value most: 
 physical production and consumption. 
-However, national accounting systems measure production and consumption 
-as \emph{income}, not as its underlying cause: \emph{wealth}.
+However, national accounting systems easily capture changes in \emph{income}
+from production and consumption, 
+but do not so easily capture changes to the source of a nation's income: its \emph{wealth}.
 Part of a nation's wealth is its natural resources.
 So the focus on income means that we are not accounting for natural assets, 
 not even the important categories of materials and energy,\footnote{Note that
@@ -592,7 +599,6 @@ the First Law of Thermodynamics---the
 law of conservation of energy.\cite{Rao2004}
 However, thermodynamics tells us that all physical processes 
 require a transfer of energy.
-**** Mik, should we add back the perp motion machine of the 2nd kind later? MKH ****
 
 
 %%%%%%%%%% Resource metaphors %%%%%%%%%%
@@ -710,20 +716,11 @@ a few predictable policy levers.
 But, in light of the challenges discussed above,
 how accurate is the engine model?
 
-
-%%%%%%%%%% A new metaphor %%%%%%%%%%
-\subsection{A new metaphor}
-\label{sec:new_metaphor}
-%%%%%%%%%% 
-
-**** MCD - added from previous version of the Intro.
-Does this seem OK? ****
-
 According to the Second Law of Thermodynamics,
 all real-world processes involve the degradation
 of material and especially energy resources
 and the creation of entropy.
-High quality (low entropy) material and energy come in,
+High quality (low entropy) material and energy come in;
 low quality (high entropy) material and energy go out.
 The depiction in Figure~\ref{fig:perp_motion_2} 
 can be classified as a perpetual motion machine
@@ -732,7 +729,7 @@ it perfectly converts energy resources into
 work~(useful services) without generating
 any entropy,
 in violation of the Second Law of Thermodynamics.
-Since the generation of high entropy~(low quality)
+Because the generation of high entropy~(low quality)
 output is a \emph{necessary} feature of \emph{all} processes 
 (including economic processes)
 then the generation of wastes is a \emph{normal} feature of
@@ -741,10 +738,16 @@ not an anomaly.
 Within a closed system, such as the earth,
 these wastes soon accumulate,
 necessitating the change to a ``spaceship'' economy,
-wherein account is made of the waste outflows of
+wherein account is made of the waste outflows from
 the economy.
 
-****
+We need a different model.
+
+
+%%%%%%%%%% A new metaphor %%%%%%%%%%
+\subsection{A new metaphor}
+\label{sec:new_metaphor}
+%%%%%%%%%% 
 
 When our collective imagination is stuck on a metaphor that 
 informs models in which the economy is isolated from or closed to the biosphere,
@@ -800,23 +803,23 @@ that a real economy:
 	\item{\label{itm:robust}maintains organizational structure despite changes 
 			in the environment.\footnote{We note that 
 				several areas of the literature speak to the items in this list.
-				Material Flow Analysis (MFA) and 
-				Economy-Wide Material Flow Analys (EW-MFA)
+				Material Flow Analysis~(MFA) and 
+				Economy-Wide Material Flow Analys~(EW-MFA)
 				stress the importance of
 				material intake by the economy. 
 				(See Section~\ref{sec:materials_auto}.)
-				The Input-Output (I-O) method highlights the effects of internal exchanges
+				The Input-Output~(I-O) method highlights the effects of internal exchanges
 				of material and information with economies. 
 				(See Chapter~\ref{chap:intensity}.)
-				Life-Cycle Assessment (LCA) techniques focus attention 
+				Life-Cycle Assessment~(LCA) techniques focus attention 
 				on otherwise-neglected wastes. 
 				(See Section~\ref{sec:intensity_auto}.)
-				Net Energy Analysis (NEA) predicts that energy resource 
-				scarcity reduces Energy Return on Investment (EROI)
+				Net Energy Analysis~(NEA) predicts that energy resource 
+				scarcity reduces Energy Return on Investment~(EROI)
 				and increases energy prices.
 				(See Sections~\ref{sec:B_energy} 
 				and~\ref{sec:resource_quality_and_irreversibility}.)
-				The Energy Input-Output (EI-O) method gives prominence to energetic costs
+				The Energy Input-Output~(EI-O) method gives prominence to energetic costs
 				for internal material and energy flows.
 				(See Chapter~\ref{chap:intensity}.)
 				And, thermodynamic control-volume modeling describes
@@ -882,49 +885,102 @@ In our opinion, apt models should have the following characteristics:
 	\item{\label{itm:accumulation}account for accumulation of materials and energy 
 			within the economy,}
 	\item{\label{itm:metrics}provide metrics that relate energy demands and economic value, and}
-	\item{\label{itm:sna}provide results that are comparable against existing 
-			(or expanded) systems of national accounts.}
+	\item{\label{itm:accounting}provide results that are comparable against existing 
+			(or expanded) national accounting.}
 \end{enumerate}
 
 Material and energy flow balance equations, 
 often employed by thermodynamicists, 
 can account for both flows~(\ref{itm:flows}) and accumulation~(\ref{itm:accumulation}) 
 of materials and energy within systems.
-We will adapt an existing Input-Output~(I-O),
+We will adapt an existing Input-Output~(I-O)
 energy analysis method to develop a 
-technique for obtaining metrics of energy and economic value~(\ref{itm:metrics}).
+technique for obtaining metrics 
+of energy and economic value~(\ref{itm:metrics}).\footnote{See Chapter~\ref{chap:intensity}
+for details of the I-O method.}
 Finally, we note that systems of national accounts use the economic sector
 as their level of analysis. 
 Thus, our models should be also implemented at the economic sector level
 so that results from the models we develop can be 
-compared against existing (or expanded) systems of national accounts~(\ref{itm:sna}).
+compared against existing (or expanded) national accounting~(\ref{itm:accounting}).
 
 
 %%%%%%%%%% What to Count %%%%%%%%%%
-\section{What to count?}
+\section{Our New Model}
 \label{sec:what_to_count}
 %%%%%%%%%%
+
+**** Add a discussion of the "system" and "boundaries". Discuss levels of disaggregation as a proxy for area of interest ****
+
+**** Emphasize the greater understanding that comes from explicitly modeling accumulation of (embodied) energy and materials within the economy. ****
+
+**** You have to draw boundaries somewhere.****
+
+**** We disaggregate the economy, because that the is the locus of our interest. An ecologist, in contrast, may choose to disaggregated the biosphere to answer questions such as biodiversity, etc. The biosphere is a container with which our system of interest is interacting. Why? An area of interest is the impact of energy transitions on the economy. ****
+
+
+
+
+
 We contend that society is not accounting materials and energy adequately 
 to prepare for the coming material and energy transformations.
-After settling on the metabolism metaphor for the economy, 
+After settling on a new metaphor for the economy 
 and after deciding to employ transient thermodynamic equations to develop our model, 
-are we any further ahead?
-More importantly, will this model allow consumers, producers,
-and policy-makers to answer critical questions that are not
-answerable today? We think so, 
-for example,
-\begin{enumerate}
-    \item{How is fossil fuel dependency embedded in the interlocking fabric of the economy?} 
-    \item{How will industries that are dependent on coal, oil, 
- 			and other forms of non-renewable energy transition 
-			to renewable forms of energy? And how will the industries that 
-			are in turn dependent on on those industries be affected
-			by the transition?} 
-	\item{How might the economy be affected as an increasing share of production resources
-			 gets directed toward
- 			waste emission mitigation and natural resource recycling and recovery?}
-\end{enumerate}
+are we any further ahead?  
+We think so.
 
+
+In Figure~\ref{fig:biosphere_economy},
+the economy is shown as embedded within the surrounding environment,
+the biosphere.
+Materials and energy (yellow arrows) flow around the biosphere,
+many of which do not interact with the economy.
+Some of the flows are extracted from the biosphere for human purposes.
+These flow around (and accumulate within) the economy,
+before ultimately being emitted back into the biosphere as waste.
+Processes within the biosphere are then able to regenerate some of these
+flows making them available again for human use,
+for example the conversion of carbon dioxide into oxygen by photosynthesis.
+
+We have chosen to draw the system boundary of this new model around the economy
+and focus only on those flows that pass through the economy.\footnote{An ecologist
+	is likely have a different focus 
+	and study material and energy flows that never enter the economy.
+	}
+This is the same system boundary used by the
+systems of national accounts (SNA),
+although the types of flows accounted are different.
+As will be seen in later chapters,
+the economy (as our main locus of interest) is further disaggregated 
+to the level of industrial sectors.
+Our primary interest in doing this is that it is important 
+to know where materials and energy accumulate in understanding
+the structure of our economies.
+This will provide us a better model of the economy and
+enable greater understanding of the structural transformation that lies ahead.
+
+The biosphere is included in the model, but only at an aggregated level;
+it is the container for the economy. 
+We ignore material and energy flows that occur only within the biosphere,
+but do not enter the economy.
+This means that many important issues lie outside the scope of our new model. 
+For example, questions of species loss and
+bio-diversity remain outside of this system. 
+
+
+\begin{figure}[!ht]
+\centering\
+\includegraphics[width=\linewidth]{Part_0/Chapter_Introduction/images/Biosphere_economy.pdf}
+\caption[The biosphere and the economy **** MCD - NEED A BETTER FIGURE TITLE ****]
+				{The interaction of the economy with the biosphere.
+				Materials and energy (yellow arrows) flow around the biosphere.
+				Some flows are extracted for human use and enter the economy.
+				The materials and energy flow around the economy 
+				(as well as accumulating in capital stocks)
+				before being emitted as wastes back into the biosphere.
+				The size of the arrows does not indicate magnitude of flows.}
+\label{fig:biosphere_economy}
+\end{figure}
 
 We believe the key to understanding how energy transformations will unfold
 involves specifically understanding how
@@ -943,13 +999,29 @@ If we can begin to carefully track these items,
 we will be on our way to gathering the information required to 
 assist planning for upcoming materials and energy transformations.
 
+A model informed by the metabolism metaphor may allow consumers, producers,
+and policy-makers to answer critical questions that are not
+answerable today. Example questions include:
+
+\begin{enumerate}
+	\item{What might be the optimal scale of an economy in terms of GDP 
+			and what are the impacts of an optimally-sized economy on natural capital?}
+    \item{How is fossil fuel dependency embedded in the interlocking fabric of the economy?} 
+    \item{How will economies that are dependent on coal, oil, 
+ 			and other forms of non-renewable energy transition 
+			to renewable forms of energy?}
+	\item{How might an economy be affected as an increasing share of production
+			is directed toward replacing 
+			degraded ecosystem services?~\cite[p.~221]{kummel2011}​}
+\end{enumerate}
+
 To summarize Sections~\ref{sec:apt_metaphor}--\ref{sec:what_to_count}, 
 our approach is to:
 
-**** MCD - further to discussion,
-which do we prefer? ****
-
-**** This? ****
+% **** MCD - further to discussion,
+% which do we prefer? ****
+% 
+% **** This? ****
 
 \begin{svgraybox}
 	develop a dynamic model 
@@ -959,27 +1031,8 @@ which do we prefer? ****
 	informed by the metabolism metaphor,
 	in a manner that is verifiable against 
 	the existing (or expanded) 
-	System of National Accounts (SNA).
+	national accounts.
 \end{svgraybox}
-
-**** Or this ? ****
-
-\begin{svgraybox}
-	\begin{quote}
-		\begin{normalsize}
-			develop a dynamic model 
-			by applying rigorous thermodynamics 
-			to materials and energy flows into, among, 
-			and out of economic sectors,
-			informed by the metabolism metaphor,
-			in a manner that is verifiable against 
-			the existing (or expanded) 
-			System of National Accounts (SNA).
-		\end{normalsize}
-	\end{quote}
-\end{svgraybox}
-
-****
 
 \noindent{}If successful, we will have developed an analysis framework 
 that allows us to \emph{account for the environment}.
@@ -990,7 +1043,7 @@ that allows us to \emph{account for the environment}.
 \label{sec:structure}
 %%%%%%%%%%
 
-The list in Section~\ref{sec:what_to_count} 
+The bulleted list in Section~\ref{sec:what_to_count} 
 provides the beginning of the structure for the rest of this book.
 
 Part~\ref{part:matter} addresses flows of physical matter and energy
@@ -999,10 +1052,6 @@ Chapter~\ref{chap:materials} discusses material flows and accumulation.
 Flows of energy are covered in Chapter~\ref{chap:direct_energy}, 
 and a rigorous, thermodynamics-based definition of and accounting for 
 embodied energy is presented in Chapter~\ref{chap:embodied_energy}.
-Throughout the methodological chapters~(\ref{chap:materials}--\ref{chap:value}),
-our accounting framework is developed
-through a series of increasingly-disaggregated
-models of the economy~(Table~\ref{tab:examplesABC}).
 
 In Part~\ref{part:values}, we turn to flow and accumulation of 
 non-physical entities through the economy. 
@@ -1038,13 +1087,17 @@ used throughout this book.}
 \label{tab:examplesABC}
 \end{table}
  
-Throughout the book, we use the US auto industry 
+Throughout the methodological chapters~(\ref{chap:materials}--\ref{chap:intensity}),
+our accounting framework is developed
+through a series of increasingly-disaggregated
+models of the economy~(Table~\ref{tab:examplesABC}),
+and we use the US auto industry 
 as a running example for application and discussion.
 
-**** The next two paragraphs will be moved to the 
-Materials chapter, Section 2.5 (Materials in the US Auto Industry).
-But, we put them here for now so that the editors can 
-see the justification for the auto industry example. ****
+**** The next two paragraphs are duplicated from 
+Section 2.5 (Materials in the US Auto Industry).
+We duplicated them here temporarily so that the editors can 
+see the purpose of and justification for the auto industry example. ****
 
 The running example of the US auto industry demonstrates that our dynamic model 
 can be tied into national accounts.
