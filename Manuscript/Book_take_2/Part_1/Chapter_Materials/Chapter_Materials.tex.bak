@@ -1050,7 +1050,7 @@ production.\footnote{This theme
 	in relation to both energy~(direct energy in Chapter~\ref{chap:direct_energy}
 	and embodied energy in Chapter~\ref{chap:embodied_energy}) and 
 	value~(Chapter~\ref{chap:value}).
-	}
+	}\cite{Mudd2010}
 
 It is likely that the quality
 of flow $\dot{R}_{01}$ is higher than flow $\dot{R}_{10}$ 
@@ -2376,12 +2376,24 @@ that do not enter the economy.
 We now see how the formulation derived here may be
 applied to the real-world case of the US auto industry.
 
+**** MCD - WHICH FIGURE DO WE PREFER? ****
+
 \begin{figure}[!ht]
 \centering\
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/Matrix.pdf}
-\caption[The matrix of biosphere-economy flows]{The matrix of biosphere-economy flows.}
+\caption[The matrix of biosphere-economy flows]{The matrix of biosphere-economy flows. 
+				Note that flow $\dot{S}_{00}$ is not included within our framework.}
 \label{fig:C_mat_matrix}
 \end{figure}
+
+\begin{figure}[!ht]
+\centering\
+\includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/Matrix_v2.pdf}
+\caption[The matrix of biosphere-economy flows]{The matrix of biosphere-economy flows. 
+				Note that flow $\dot{S}_{00}$ is not included within our framework.}
+\label{fig:C_mat_matrix}
+\end{figure}
+
 
 %%%%%%%%%% Materials: Auto industry example %%%%%%%%%%
 \section{Materials in the US auto industry}
