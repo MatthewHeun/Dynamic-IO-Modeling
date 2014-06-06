@@ -67,6 +67,147 @@ Hendrickson and Lave (EIOLCA)
 
 Refer to Giampietro for the dogfights.
 
+**** MCD - taken from old intro ****
+
+Input-Output (I-O) analysis, developed by Wassilly Leontief in the 1930s 
+as an extension to the work of Quesnay and Walras~\cite{Leontief1936}, 
+is of primary importance in national accounting. 
+The method allows determination of the flows of value through
+an economy as well as, 
+among other things, 
+calculation of a nation's gross domestic product (GDP), 
+today's prevailing measure of economic activity.
+
+The basic premise of the I-O method, 
+as depicted in Figure~\ref{fig:basic_unit}A, 
+is that each economic sector takes in factors of production 
+from other sectors (and possibly itself) 
+to produce an economic good at some rate. 
+For example, the automotive sector takes in steel, rubber, glass, etc. 
+and produces a number of cars per year. 
+In contrast to high-level economic growth models 
+that include only a few factors of production (such as land, capital, and labor), 
+the I-O analysis technique allows many differentiated factors of production 
+and raw material feedstocks.\cite{Costanza:1980ww} 
+In I-O methods, each factor of production 
+is considered to be a output from a sector of the economy. 
+As will be discussed later,
+%****MAKE SURE TO DISCUSS THIS LATER!****, 
+the traditional primary factors of production (land, capital, and labor) 
+are not \emph{flows} into the production processes. 
+Rather, they are \emph{stocks} that, when present, 
+allow factors of production (steel, rubber, and glass) 
+to be transformed into final products (automobiles). 
+The quantity and quality of these stocks 
+determine the quantity and quality of their flow of productive services.
+
+\begin{figure}[!ht]
+\centering\
+\includegraphics[width=\linewidth]{Part_2/Chapter_Intensity/images/Basic_unit_square.pdf}
+\caption[The basic unit of input-output analysis]{The basic unit 
+of input-output analysis: 
+\textbf{A} the standard economic approach includes only transactions 
+among sectors of the economy; 
+\textbf{B} the Energy Input-Output (EI-O) method allows inputs 
+from the natural environment to be factors of production; 
+\textbf{C} including waste flows to the environment makes the model physically consistent; and
+\textbf{D} the framework developed and presented herein accounts also for accumulation
+in capital stock ($K$) of embodied energy within materials in economic sectors.}
+\label{fig:basic_unit}
+\end{figure}
+
+The oil shocks of the 1970's spurred great interest in
+the important role of energy in economic production.
+In addition to the productive services 
+provided by flows of capital and labor,
+a flow of energy\footnote{Or, more precisely, 
+the degradation of an exergetic gradient/destruction of exergy.} 
+is required for economic activity. 
+These energy flows originate from the natural environment, 
+recognition of which provoked researchers from fields of 
+net energy analysis (NEA) to extend 
+the traditional Leontief
+input-output method to include important 
+energy flows from the environment, 
+developing an Energy Input-Output (EI-O)
+method as depicted in Figure~\ref{fig:basic_unit}B.\cite{Carter1974,
+Bullard1975,Bullard1976a,Herendeen1978,Costanza:1980ww,
+Casler1984,Joshi:1999uw,Suh2009}
+While the Leontief input-output method
+relies exclusively 
+on monetary units to represent value flows 
+among sectors of an economy, 
+the key insight of the EI-O method 
+is to rely upon physical units 
+(especially energy units of joules) 
+to represent some of the flows among economic sectors. 
+In doing so, 
+energy intensities of monetary flows can be estimated. 
+
+However,
+as we discussed above,
+resource inputs are only one side of the coin.
+According to thermodynamics,
+all acts of production (requiring inputs from the biosphere)
+are simultaneously acts of consumption,
+degrading high quality inputs into wastes to be 
+discharged back into the biosphere.
+Now that the global economy is experiencing the pressure of physical constraints, 
+the necessity for a more comprehensive model, 
+and collection of data to estimate it,
+is emerging. 
+A number of disciplines including
+material flow analysis (MFA), 
+industrial ecology (IE), and 
+life-cycle assessment (LCA) 
+have developed further extensions of the EI-O
+framework to account for energy, material and waste flows
+between the economy and the biosphere.
+Motivated by concerns over environmental impacts
+(especially climate change),
+the primary focus of such efforts has been on
+tracking flows of materials
+(especially greenhouse gases)
+into the biosphere
+rather than on resource depletion.\cite{ConAccount1998,
+Lenzen1998, Hoekstra2003, Bailey2004, Pedersen2006, Turner2007}
+
+Both the original Leontief input-output method
+and the extensions cited in Sections~\ref{sec:IO_basic}-\ref{sec:IO_waste} 
+assume steady-state conditions in an economy, 
+i.e., flows of value and material into 
+and out of each economic sector are in balance. 
+Dynamic or transient behavior 
+of the economic system is not considered. 
+Thus, there is no accumulation of economic factors
+or embodied energy
+within any of the sectors. 
+The analysis techniques provide ``snapshots'' 
+of economic activity at an instant in time.
+
+Assuming no accumulation of materials, 
+within economic sectors or society itself, 
+is tantamount to assuming that \emph{all} material flows 
+through the economy are directed toward 
+the production of non-durable goods. 
+However, evidence of the durability of goods 
+and the accumulation of materials surrounds us. 
+Furthermore, 
+energy was required to both fabricate and emplace 
+the durable goods and infrastructure of modern economies. 
+(The energy it took to create the durable goods and infrastructure 
+can be considered ``embodied'' within the built environment, 
+a point to which we will return in detail later). 
+As Georgescu-Roegen notes, 
+``in the everyday world one cannot possibly cross a river 
+only on the flow of maintenance materials 
+of a non-existent bridge.''~\cite{G-R1975}
+
+Because economic activity requires energy, 
+we need to understand the way energy flows through economies. 
+The steady-state I-O techniques of Bullard, Herendeen, 
+and others~\cite{Bullard1975,Herendeen1978} 
+offer a means to that end. 
 
 %%%%%%%%%% Methodology %%%%%%%%%%
 \section{Methodology}
