@@ -39,6 +39,10 @@ cd Part_0\Chapter_Acknowledgements
 erase *.aux
 erase *.bbl
 erase *.blg
+cd Part_0\Chapter_Acct_For_WoN
+erase *.aux
+erase *.bbl
+erase *.blg
 cd Part_0\Chapter_Preface
 erase *.aux
 erase *.bbl

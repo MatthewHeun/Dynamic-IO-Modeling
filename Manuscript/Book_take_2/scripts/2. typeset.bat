@@ -36,6 +36,11 @@ cd Chapter_Introduction
 bibtex Chapter_Introduction
 cd ..\..
 
+cd Part_0
+cd Chapter_Acct_For_WoN
+bibtex Chapter_Acct_for_WoN
+cd ..\..
+
 cd Part_1
 cd Chapter_Materials
 bibtex Chapter_Materials
