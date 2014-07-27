@@ -24,6 +24,7 @@ cd Part_0; cd Chapter_Acknowledgements; bibtex Chapter_Acknowledgements; cd ../.
 cd Part_0; cd Chapter_Preface;          bibtex Chapter_Preface;          cd ../..;
 cd Part_0; cd Chapter_Prologue;         bibtex Chapter_Prologue;         cd ../..;
 cd Part_0; cd Chapter_Introduction;     bibtex Chapter_Introduction;     cd ../..;
+cd Part_0; cd Chapter_Acct_For_WoN;     bibtex Chapter_Acct_For_WoN;     cd ../..;
 cd Part_1; cd Chapter_Materials;        bibtex Chapter_Materials;        cd ../..;
 cd Part_1; cd Chapter_Energy;           bibtex Chapter_Energy;           cd ../..;
 cd Part_1; cd Chapter_Embodied;         bibtex Chapter_Embodied;         cd ../..;
