@@ -156,14 +156,15 @@ between energy and economic activity from 1890 to 1982.
 Because of the high correlation between energy consumption and economic activity,
 it stands to reason that energy shortage relative to demand will hinder economic activity.
 Of course, there are degrees of shortage. 
-In extreme cases, goods become hard to find 
+In extreme cases, and in the absence of price controls,
+goods become hard to find and prices spike
 as observed in the US during 1970s oil crisis.
 (See Figure~\ref{fig:gas_shortage}.)
 
 \begin{figure}[!ht]
 \centering\
 \includegraphics[width=\linewidth]{Part_0/Chapter_Introduction/images/gas_shortage_1973.jpg}
-\caption[Gasoline shortage]{Gasoline scarcity (in the vernacular sense) in 1973.
+\caption[Gasoline shortage]{Gasoline shortages in 1973.
 **** We probably don't need to obtain permission to use this photograph, because
 it is from the US national archives.
 \url{http://arcweb.archives.gov/arc/action/ExternalIdSearch?id=548053}
@@ -172,27 +173,27 @@ it is from the US national archives.
 \label{fig:gas_shortage}
 \end{figure}
 
-In mild cases, and in the absence of price controls, 
+In mild cases,
 shortage of any good relative to demand leads to increasing prices,
 even when goods remain available.
-Figure~\ref{fig:oils_prices_and_production} oil prices (line) and 
-worldwide oil production (bars). 
+For example,
+Figure~\ref{fig:oils_prices_and_production} shows oil prices (line) and 
+worldwide oil production (bars) around the time of the great recession. 
 Demand for oil increased steadily in the early 2000s, 
 and production mostly kept pace through early-2005.
 However, demand continued to increase while 
 production flat-lined from early-2005 through late-2007, 
 leading to a steep price increase.
-From late-2007 through the end of 2008, a small amount of 
-thentofore reserved production was brought online,
+From late-2007 through the end of 2008, the small amount of 
+remaining reserve oil production was brought online,
 but it was too little, too late.
 Prices spiked above \$130/barrel in mid-2007. 
 The great recession reduced demand slightly (about 2 Mb/day)
 and the price collapsed to about \$40/barrel.
 Thereafter, demand and prices rose to their previous levels 
 as the world pulled out of the great recession.
-Oil production has risen slightly past its previous record highs
-as additional production capacity has come online
-in the years since 2008.
+In the years since 2008, oil production has risen slightly past the previous record highs
+as additional production capacity has come online.
 
 \begin{figure}[!ht]
 \centering\
@@ -221,7 +222,7 @@ established firms to increase production.
 However, the timing of supply and demand events is crucial.
 If firms can't or don't increase production to meet demand, 
 prices will remain elevated.
-In the absence of increased production, falling demand will 
+Even without increased production, falling demand will 
 bring prices back to earth.
 
 In terms of energy, and oil in particular, 
@@ -243,40 +244,47 @@ become the ties that bind the financial to the biophysical.
 Put another way, temporal considerations are the point at which the economy 
 becomes coupled to the biosphere.
 
-In economic terms, these biophysical constraints reduce the 
-price elasticity of supply.
-Price elasticity of supply is the rate of change of production
-per rate of change of price.
+In economic terms, biophysical constraints reduce the 
+price elasticity of supply, defined as 
 %
 \begin{equation} \label{eq:price_elasticity_of_supply}
-	E_s \equiv \frac{a}{b}
+	E_s \equiv \frac{\frac{1}{Q}\frac{\partial Q}{\partial t}}{\frac{1}{P}\frac{\partial P}{\partial t}}
 \end{equation}
 %
-**** Define price elasticity of supply.
+where $P$ is price, $Q$ is production quantity.%
+	\footnote{
+	The typical layperson's interpretation of price elasticity of supply is the 
+	percent change of supply divided by the percent change of price
+	during a given time period.
+	}
 
-Biophysical limits to production lead to economic inelasticity of supply
-in the short term. ****
+In Figure~\ref{fig:oils_prices_and_production}, 
+a \emph{very large} percentage change in oil price was required to 
+increase oil production by only a \emph{very small} percentage
+in the 2005--2008 timeframe.
+Under these circumstances, 
+oil supply is said to be very \emph{inelastic} to price.
+The observed price inelasticity is caused by 
+biophysical limits to oil production discussed above.
+Nothing, not even high prices, can induce producers to 
+increase supply in the short term (5-year time span), 
+because it is physically impossible to do so.
+In 2008, the world was running at full oil production capacity, 
+but economies demanded more!
 
-% These dynamics help to explain several aspects of the links between energy and the economy.
-% First, an inability to increase energy production to meet demand
-% implies a constraint on economic activity.
-% Second, rapid price spikes
-% (indicating quickly-increasing scarcity due to either rapidly increasing demand or
-% rapidly falling availability)
-% provide a more-severe economic impact.
-
+But, what caused the recession that followed?
 Recently, a few authors have found that \emph{energy cost share} 
-is an explanatory variable for energy-economy dynamics.
+is an explanatory variable for these dynamics.
 Energy cost share ($f_E$) is defined, for any period of time, as
 %
 \begin{equation}
-	f_E \equiv \frac{\displaystyle\sum_i p_i Q_i}{GDP} \; ,
+	f_E \equiv \frac{\displaystyle\sum_i P_i Q_i}{GDP} \; ,
 \end{equation}
 %
 where 
 the subscript $i$ indicates types of energy 
 (electricity, gasoline, natural gas, etc.),
-$p$ indicates the price of energy,
+$P$ indicates the price of energy,
 $Q$ indicates the quantity of energy purchased within the economy, and
 $GDP$ is gross domestic product.
 
@@ -348,7 +356,7 @@ But, many have noted that the physical importance of energy to the economy
 far exceeds its cost share.\cite{Ayres:2013aa}
 And, as discussed above, because the biophysical world is coupled 
 to the economy through temporal considerations as manifest 
-by the low price elasticity of supply, 
+by the low price elasticity of energy supply, 
 the physical importance of energy far exceeds its financial importance.
 Eventually, the tight coupling between energy and the economy 
 that is difficult to see becomes impossible to ignore.
@@ -419,12 +427,13 @@ and $\dot{Q}_c$ is the rate of energy consumed in the energy production process 
 As time proceeds, the Best First Principle suggests that
 $EROI$ will decline.
 Indeed it has.
-$EROI$ for oil has declined 
+Turning again to our oil example, $EROI$ has declined 
 from a value of 100 in the 1930s~\cite[p.~781]{Cleveland:2005uy} 
 to around 20 today.\cite[Fig.~2]{Hall:2014aa}
 In other words, it takes 5~times more energy today
-to make a barrel of oil available to society
-than it did in 1930.
+than it did in 1930
+to make a barrel of oil available to society.
+
 Furthermore, declining oil $EROI$ has economic impacts.
 Both Heun and de~Wit~\cite{Heun:2012ek} and King and Hall~\cite{King:2011go}
 show that declining $EROI$ correlates with higher prices for oil, 
@@ -439,15 +448,15 @@ In the race against the Best First Principle,
 technological advances can bring about higher extraction rates, 
 despite additional physical ``effort'' required.
 
-For example, the recent shale oil boom, made possible by advanced technology,
+For example, the recent shale oil boom, made possible by new extraction technology,
 has increased US oil production significantly. 
 But, Figure~\ref{fig:US_oil_production} shows that increased US production
 is coming from so-called ``tight'' oil (which includes shale oil), 
-which has lower $EROI$ than crude oil.
+that has lower $EROI$ than crude oil.
 Furthermore, today's ``tight'' oil is more expensive to produce 
 than the crude of yesteryear.
 Consequently, oil prices must remain high for 
-shale production to continue into the foreseeable future. 
+shale oil production to remain financially feasible into the foreseeable future. 
 Unfortunately, Section~\ref{sec:energy-economy_coupling} indicates that
 high energy prices can lead to high energy cost share in the economy
 and recessionary pressure.
@@ -481,7 +490,6 @@ One possible cure is higher oil prices.
 But, again, we saw 
 in Section~\ref{sec:energy-economy_coupling}
 that high energy cost share 
-(which could be caused by high energy prices)
 provides recessionary pressure.
 
 \begin{figure}[!ht]
@@ -500,18 +508,19 @@ more financially expensive,
 to extract oil today than it was 10, 20, 30, and 100 years ago.
 It is more difficult to obtain oil today because we have depleted
 the stock of easy-to-obtain crude oil from the biosphere.
-And, the remaining stock is lower quality (e.g., shale)
+And, the remaining stock is both lower quality (e.g., shale)
 or further away (e.g., deeper offshore).
-Both the declining \emph{quantity} and 
+Thus, both the declining \emph{quantity} and 
 the diminishing \emph{quality} of remaining non-renewable oil stocks 
 are contributing to the slowdown of growth in mature economies.
 
+Without going into detail, we state without discussion 
+that similar dynamics apply to 
+any non-renewable material or energy stock in the biosphere
+for which substitution is difficult.
 Using oil as our example, we observe that 
 stocks of natural capital, especially energy resources,
 have significant economic implications.
-Without going into the details, similar dynamics apply to 
-any non-renewable material or energy stock in the biosphere
-for which substitution is difficult.
 
 Stocks of another sort are important drivers of material and energy consumption
 and also play a role in the slowdown of growth experienced by mature economies.
@@ -530,7 +539,32 @@ is the key to continued growth. [Reference Thomas Friedman here,
 \label{sec:stall_capital_stock}
 %+++++++++
 
-In Chapter~\ref{chap:intro}.
+Define capital stock.
+
+Give examples: roads, machines, etc.
+
+It takes energy to manufacture and emplace capital stock.
+
+It takes financial resources to purchase and emplace capital stock.
+Usually loans are required, because capital costs are beyond the savings of firms.
+
+The financial obligations associated with capital loans mean that the capital
+is expected to be productive for its useful life.
+
+Production over the useful life of the stock means that 
+raw materials and energy will be demanded over the life of the capital.
+
+Thus, capital is an important driver of material and energy flows from the biosphere.
+
+But, given the discussion in the previous section, 
+flows of natural materials and energy from the biosphere to the econmoy
+are subject to biophysical limitations.
+
+We ought to be keeping track of capital stock in physical terms, not only financial terms.
+
+Biophysical limitations should lead us to want to know 
+the material and energy demands that our capital stock 
+will be making on the biosphere into the forseeable future.
 
 
 %%%%%%%%%% Policy focused on flows %%%%%%%%%%
