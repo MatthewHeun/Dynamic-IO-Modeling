@@ -61,16 +61,13 @@
 \usepackage{outlines}            % For outlines
 \usepackage{enumitem}
 \usepackage[normalem]{ulem}
-% \setenumerate[1]{label=\Roman*.}
-% \setenumerate[2]{label=\Alph*.}
-% \setenumerate[3]{label=\roman*.}
-% \setenumerate[4]{label=\alph*.}
 \usepackage{pdflscape}		% allows portions of the document, e.g. figures, to be landscape
 %\usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
 
 % Needs to come last in the list of loaded packages.
-\usepackage{hyperref}          
+% But, it is apparently loaded by another package, too.
+%\usepackage{hyperref}          
 
 % Except for the glossaries package.
 \usepackage[nomain,nopostdot]{glossaries}
@@ -105,8 +102,10 @@
 \begin{document}
 
 \author{Matthew Kuperus Heun, Michael Carbajales-Dale, Becky Roselius Haney}
-\title{Accounting for the Environment}
-\subtitle{A Thermodynamic Approach to Energy and the Future Economy}
+% \title{Accounting for the Environment}
+% \subtitle{A Thermodynamic Approach to Energy and the Future Economy}
+\title{Beyond GDP}
+\subtitle{National accounting in the age of resource depletion}
 \maketitle{}
 
 % Add all terms in the nomenclature and glossary
@@ -165,6 +164,8 @@
 \bookmarksetup{startatroot}
 
 \include{Part_0/Chapter_Introduction/Chapter_Introduction}
+
+\include{Part_0/Chapter_Acct_For_WoN/Chapter_Acct_For_WoN}
 
 \part{Material and Energy Flows}
 \label{part:matter}
