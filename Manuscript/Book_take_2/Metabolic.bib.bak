@@ -2,12 +2,291 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Matt at 2014-05-15 16:47:36 -0400 
+%% Created for Matt at 2014-08-24 20:32:56 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
+@article{Kleiber1947,
+  title={Body size and metabolic rate},
+  author={Kleiber, Max},
+  journal={Physiol. Rev},
+  volume={27},
+  number={4},
+  pages={511--541},
+  year={1947},
+  publisher={Am Physiological Soc}
+}
 
+@techreport{Ayres:1996aa,
+	Author = {Robert U. Ayres},
+	Date-Added = {2014-08-25 00:32:27 +0000},
+	Date-Modified = {2014-08-25 00:32:27 +0000},
+	Institution = {INSEAD's Centre for the Management of Environmental Resource},
+	Month = {July},
+	Number = {96/49/EPS},
+	Title = {{Turning Point: The End of the Growth Paradigm}},
+	Type = {Working Paper},
+	Url = {https://flora.insead.edu/fichiersti_wp/inseadwp1996/96-49.pdf},
+	Year = {1996},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QYy4uLy4uLy4uLy4uL0RvY3VtZW50cy9QYXBlcnMvRmlsZXMvMTk5Ni9BeXJlczE5OTZUdXJuaW5nIFBvaW50IFRoZSBFbmQgb2YgdGhlIEdyb3d0aCBQYXJhZGlnbWFhLnBkZtIXCxgZV05TLmRhdGFPEQJAAAAAAAJAAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADPkAYESCsAAAAbi0YfQXlyZXMxOTk2VHVybmluZyBQb2kjMkZBQjZDLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+rbNAf+b8AAAAAAAAAAAAEAAUAAAkgAAAAAAAAAAAAAAAAAAAABDE5OTYAEAAIAADPkD5EAAAAEQAIAADQIDH/AAAAAQAYABuLRgAbirgAGXNMAAjzJgAI8yUAAmWbAAIAWU1hY2ludG9zaCBIRDpVc2VyczoAbWF0dDoARG9jdW1lbnRzOgBQYXBlcnM6AEZpbGVzOgAxOTk2OgBBeXJlczE5OTZUdXJuaW5nIFBvaSMyRkFCNkMucGRmAAAOAHgAOwBBAHkAcgBlAHMAMQA5ADkANgBUAHUAcgBuAGkAbgBnACAAUABvAGkAbgB0ACAAVABoAGUAIABFAG4AZAAgAG8AZgAgAHQAaABlACAARwByAG8AdwB0AGgAIABQAGEAcgBhAGQAaQBnAG0AYQBhAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBiVXNlcnMvbWF0dC9Eb2N1bWVudHMvUGFwZXJzL0ZpbGVzLzE5OTYvQXlyZXMxOTk2VHVybmluZyBQb2ludCBUaGUgRW5kIG9mIHRoZSBHcm93dGggUGFyYWRpZ21hYS5wZGYAEwABLwAAFQACAAv//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgD0APkBAQNFA0cDTANXA2ADbgNyA3kDggOHA5QDlwOpA6wDsQAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAOz}}
+
+@misc{WorldBank2014,
+	Author = {{World Bank}},
+	Date-Added = {2014-08-25 00:13:33 +0000},
+	Date-Modified = {2014-08-25 00:20:16 +0000},
+	Howpublished = {\url{http://data.worldbank.org/indicator/NY.GDP.PCAP.CD}},
+	Month = {24 August},
+	Title = {{GDP per capita (current US\$)}},
+	Year = {2014}}
+
+@book{ayres1997,
+	Abstract = {This text discusses the current basis of economic growth, concluding that it is is failing to deliver, and is actually harming our prospects for future security. Further arguments propose a possible long-term strategy for economic revival - eco-restructuring. This strategy involves a shifting away from production of goods to production of services, closing material cycles and eliminating reliance on non-renewable resources.},
+	Author = {Ayres, Robert},
+	Isbn = {9781853834394},
+	Language = {English},
+	Month = aug,
+	Publisher = {Routledge},
+	Shorttitle = {Turning Point},
+	Title = {Turning Point: End of the Growth Paradigm},
+	Year = {1997}}
+
+@book{simon1996,
+	Abstract = {This book provides a comprehensive and balanced assessment of the state of the Earth and its inhabitants at the close of the twentieth century. More than fifty scholars from all over the world present new, concise and accessible accounts of the present state of humanity and the prospects for its social and natural environment. The subjects range from deforestation, water pollution and ozone layer depletion to poverty, homelessness, mortality and murder. Each contributor considers the present situation, historical trends, likely future prospects, and the efficacy or otherwise of current activity and policy. The coverage is worldwide, with a particular emphasis on North America. The State of Humanity is a magnificent and eye-opening synthesis of cultural, social, economic and environmental perspectives. It will interest all those - including geographers, economists, sociologists and policy makers - concerned to understand some of the most pressing problems of our time.},
+	Author = {Simon, Julian},
+	Edition = {1 edition},
+	Isbn = {9781557865854},
+	Language = {English},
+	Month = jan,
+	Publisher = {Wiley-Blackwell},
+	Title = {The State of Humanity},
+	Year = {1996}}
+
+@book{OECD2014,
+	Author = {{OECD}},
+	Date-Modified = {2014-08-25 00:13:05 +0000},
+	Isbn = {9789264204669, 9789264219915, 9789264204676},
+	Language = {en},
+	Month = jun,
+	Publisher = {{OECD} Publishing},
+	Series = {{OECD} Economic Outlook},
+	Title = {{OECD} Economic Outlook, Volume 2014 Issue 1},
+	Urldate = {2014-08-22},
+	Volume = {2014},
+	Year = {2014},
+	Bdsk-Url-1 = {http://www.keepeek.com/Digital-Asset-Management/oecd/economics/oecd-economic-outlook-volume-2014-issue-1_eco_outlook-v2014-1-en#page1}}
+
+@book{cowen2011,
+	Abstract = {--This text refers to the Audio {CD} edition.},
+	Author = {Cowen, Tyler},
+	Isbn = {9780525952718},
+	Language = {English},
+	Month = jun,
+	Publisher = {Dutton Adult},
+	Shorttitle = {The Great Stagnation},
+	Title = {The Great Stagnation: How America Ate All the Low-Hanging Fruit of Modern History, Got Sick, and Will(Eventually) Feel Better},
+	Year = {2011}}
+
+@techreport{lindsey2013,
+	Author = {Lindsey,Brink},
+	Date-Modified = {2014-08-25 00:13:05 +0000},
+	Institution = {Cato Institute},
+	Title = {Why Growth Is Getting Harder},
+	Urldate = {2014-08-22},
+	Bdsk-Url-1 = {http://www.cato.org/publications/policy-analysis/why-growth-getting-harder}}
+
+@techreport{CBO2014,
+	Author = {{Congressional Budget Office}},
+	Date-Modified = {2014-08-25 00:13:05 +0000},
+	Month = feb,
+	Number = {4869},
+	Title = {The Budget and Economic Outlook: 2014 to 2024},
+	Urldate = {2014-08-22},
+	Year = {2014},
+	Bdsk-Url-1 = {http://www.cbo.gov/sites/default/files/cbofiles/attachments/45010-Outlook2014_Feb.pdf}}
+
+@article{Hall:2014aa,
+	Author = {Charles A.S. Hall and Jessica G. Lambert and Stephen B. Balogh},
+	Date-Added = {2014-08-13 02:00:25 +0000},
+	Date-Modified = {2014-08-13 02:00:25 +0000},
+	Journal = {Energy Policy},
+	Pages = {141--152},
+	Title = {{EROI of Different Fuels and the Implications for Society}},
+	Volume = {64},
+	Year = {2014}}
+
+@article{Cleveland:2005uy,
+	Annote = {This paper uses a break-even EROI of 1.0. 
+
+Direct energy inputs to the drilling process are from real report (p. 777). Indirect energy inputs come from the energy intensity of economic activity. 
+
+Energy usage in the oil and gas sector peaked in the early 1980s due to all-time high drilling rates and capital investment in the domestic U.S. oil and gas industry.},
+	Author = {Cleveland, Cutler J},
+	Date-Added = {2014-08-13 01:47:16 +0000},
+	Date-Modified = {2014-08-13 01:47:28 +0000},
+	Journal = {Energy},
+	Number = {5},
+	Pages = {769--782},
+	Rating = {0},
+	Read = {Yes},
+	Title = {{Net Energy from the Extraction of Oil and Gas in the United States}},
+	Volume = {30},
+	Year = {2005}}
+
+@article{King:2011go,
+	Author = {Carey W King and Charles A S Hall},
+	Date-Added = {2014-08-12 15:34:25 +0000},
+	Date-Modified = {2014-08-12 15:34:44 +0000},
+	Journal = {Sustainability},
+	Language = {English},
+	Month = oct,
+	Number = {10},
+	Pages = {1810--1832},
+	Rating = {0},
+	Title = {{Relating Financial and Energy Return on Investment}},
+	Volume = {3},
+	Year = {2011}}
+
+@article{Heun:2012ek,
+	Author = {Matthew Kuperus Heun and Martin {de Wit}},
+	Date-Added = {2014-08-12 15:33:00 +0000},
+	Date-Modified = {2014-08-22 01:22:29 +0000},
+	Journal = {Energy Policy},
+	Month = jan,
+	Number = {C},
+	Pages = {147--158},
+	Publisher = {Elsevier},
+	Rating = {0},
+	Read = {Yes},
+	Title = {{Energy Return on (Energy) Invested (EROI), Oil Prices, and Energy Transitions}},
+	Volume = {40},
+	Year = {2012}}
+
+@incollection{Cleveland:2008aa,
+	Author = {Cutler J. Cleveland},
+	Booktitle = {The Encyclopedia of Earth},
+	Date-Added = {2014-08-12 14:59:54 +0000},
+	Date-Modified = {2014-08-12 14:59:54 +0000},
+	Editor = {Robert Costanza},
+	Series = {Energy},
+	Title = {{Natural Resource Quality}},
+	Year = {2008},
+	Bdsk-Url-1 = {http://www.eoearth.org/view/article/154798/}}
+
+@incollection{Hamilton:2013vc,
+	Author = {Hamilton, James D},
+	Booktitle = {Handbook on Energy and Climate Change},
+	Date-Added = {2014-08-12 12:35:39 +0000},
+	Date-Modified = {2014-08-12 12:38:14 +0000},
+	Pages = {29--63},
+	Publisher = {Edward Elgar},
+	Rating = {0},
+	Read = {Yes},
+	Title = {{Oil Prices, Exhaustible Resources, and Economic Growth}},
+	Year = {2013}}
+
+@article{Ayres:2013aa,
+	Author = {Robert U. Ayres and Jeroen C.J.M. van den Bergh and Dietmar Lindenbergerf and Benjamin Warr},
+	Date-Added = {2014-08-11 19:53:08 +0000},
+	Date-Modified = {2014-08-11 19:53:08 +0000},
+	Journal = {Structural Change and Economic Dynamics},
+	Pages = {79-88},
+	Title = {{The Underestimated Contribution of Energy to Economic Growth}},
+	Volume = {27},
+	Year = {2013}}
+
+@article{Murphy:2011jh,
+	Author = {Murphy, David J and Hall, Charles A S},
+	Date-Added = {2014-08-11 19:28:31 +0000},
+	Date-Modified = {2014-08-11 19:28:39 +0000},
+	Journal = {Annals of the New York Academy of Sciences},
+	Month = feb,
+	Number = {1},
+	Pages = {52--72},
+	Rating = {0},
+	Read = {Yes},
+	Title = {{Energy return on investment, peak oil, and the end of economic growth}},
+	Volume = {1219},
+	Year = {2011}}
+
+@article{Stern:2012ey,
+	Author = {Stern, David I and Kander, Astrid},
+	Date-Added = {2014-08-11 19:27:22 +0000},
+	Date-Modified = {2014-08-11 19:27:39 +0000},
+	Journal = {The Energy Journal},
+	Month = jul,
+	Number = {3},
+	Pages = {125--152},
+	Rating = {0},
+	Read = {Yes},
+	Title = {{The Role of Energy in the Industrial Revolution and Modern Economic Growth}},
+	Volume = {33},
+	Year = {2012}}
+
+@article{Bashmakov:2007ek,
+	Author = {Bashmakov, Igor},
+	Date-Added = {2014-08-11 19:21:30 +0000},
+	Date-Modified = {2014-08-11 19:21:53 +0000},
+	Journal = {Energy Policy},
+	Month = jul,
+	Number = {7},
+	Pages = {3583--3594},
+	Rating = {0},
+	Read = {Yes},
+	Title = {{Three Laws of Energy Transitions}},
+	Volume = {35},
+	Year = {2007}}
+
+@article{Cleveland:1984aa,
+	Author = {Cutler J Cleveland and Robert Costanza and Charles A S Hall},
+	Date-Added = {2014-08-11 18:05:20 +0000},
+	Date-Modified = {2014-08-11 18:09:17 +0000},
+	Journal = {Science},
+	Number = {31 August},
+	Pages = {890--897},
+	Rating = {0},
+	Read = {Yes},
+	Title = {{Energy and the US Economy: a Biophysical Perspective}},
+	Volume = {225},
+	Year = {1984}}
+
+@book{Heijman:1988aa,
+	Author = {Wim Heijman},
+	Date-Added = {2014-08-06 19:37:38 +0000},
+	Date-Modified = {2014-08-06 19:38:14 +0000},
+	Publisher = {Kluwer},
+	Title = {{The Economic Metabolism}},
+	Year = {1988}}
+
+@article{Roza:1984aa,
+	Author = {Allan M. Roza and Harry M. Shizgal},
+	Date-Added = {2014-08-05 17:42:23 +0000},
+	Date-Modified = {2014-08-05 17:42:23 +0000},
+	Journal = {The American Journal of Clinical Nutrition},
+	Month = {July},
+	Pages = {168-182},
+	Title = {{The Harris Benedict Equation Reevaluated: Resting Energy Requirements and the Body Cell Mass}},
+	Volume = {40},
+	Year = {1984}}
+
+@book{Schweid:2004aa,
+	Author = {Richard Schweid},
+	Date-Added = {2014-07-30 13:47:42 +0000},
+	Date-Modified = {2014-07-30 13:50:26 +0000},
+	Pages = {216},
+	Publisher = {University of North Carolina Press},
+	Title = {Che's Chevrolet, Fidel's Oldsmobile: On the Road in Cuba},
+	Year = {2004}}
+
+@article{Ramey:2014aa,
+	Author = {Jay Ramey},
+	Date-Added = {2014-07-30 13:40:51 +0000},
+	Date-Modified = {2014-08-06 01:31:34 +0000},
+	Journal = {Autoweek},
+	Month = {5 April},
+	Title = {{New Car Sales in Cuba Soured by 400-percent Markups}},
+	Year = {2014},
+	Bdsk-Url-1 = {http://autoweek.com/article/car-news/new-car-sales-cuba-soured-400-percent-markups}}
 
 @book{allwood2012sustainable,
 	Author = {Allwood, Julian M and Cullen, Jonathan M and Carruth, Mark A and Cooper, Daniel R and McBrien, Martin and Milford, Rachel L and Moynihan, Muiris C and Patel, Alexandra CH},
@@ -72,11 +351,10 @@
 	Year = {2004}}
 
 @book{Barradas1936,
-  title={The Economic Organism},
-  author={Barradas, Gerald},
-  year={1936},
-  publisher={Hooper Printing Company}
-}
+	Author = {Barradas, Gerald},
+	Publisher = {Hooper Printing Company},
+	Title = {The Economic Organism},
+	Year = {1936}}
 
 @article{bartelmus_integrated_1991,
 	Author = {Bartelmus, Peter and Stahmer, Carsten and Tongeren, Jan van},
@@ -649,14 +927,15 @@
 	Title = {The ecological footprint atlas 2008},
 	Year = {2008}}
 
-@article{F-K1998,
+@article{F-K1999,
 	Author = {Fischer-Kowalski, Marina and H{\"u}ttler, Walter},
+	Date-Modified = {2014-07-31 18:08:38 +0000},
 	Journal = {Journal of industrial ecology},
 	Number = {4},
 	Pages = {107--136},
 	Title = {Society's metabolism},
 	Volume = {2},
-	Year = {1998}}
+	Year = {1999}}
 
 @article{F-K2003,
 	Author = {Fischer-Kowalski, Marina},
@@ -1000,6 +1279,13 @@
 	Pages = {105-118},
 	Title = {A Theoretical Foundation to Support the Index of Sustainable Economic Welfare ({ISEW}), Genuine Progress Indicator ({GPI}), and Other Related Indexes}}
 
+@article{Lawson1997,
+	Author = {Lawson, Ann M},
+	Journal = {Survey of Current Business},
+	Pages = {36-57},
+	Title = {Benchmark Input-Output Accounts of the {United States}, 1992},
+	Year = {1997}}
+
 @article{Lawson2002,
 	Author = {Lawson, Ann M and Bersani, Kurt S and Guo, Jiemin},
 	Journal = {Survey of Current Business},
@@ -1037,7 +1323,8 @@
 	Year = {1936}}
 
 @article{Liu2012,
-	Author = {Liu, Eric and Hanauer, Nick},
+	Author = {Eric Liu and Nick Hanauer},
+	Date-Modified = {2014-08-06 01:37:27 +0000},
 	Journal = {The New York Times, July 10, 2012, sec. Opinion. http://www.nytimes.com/2012/07/11/opinion/our-gardenbrain-economy.html.},
 	Title = {The Machine and the Garden},
 	Volume = {July, 10},
@@ -1473,7 +1760,7 @@
 	Author = {{Union of Concerned Scientists}},
 	Howpublished = {\url{http://www.ucsusa.org/about/1992-world-scientists.html}},
 	Title = {{1992 World Scientists' Warning to Humanity}},
-	Year={1992}}
+	Year = {1992}}
 
 @misc{UNEP-IRP:aa,
 	Author = {{United Nations Environment Programme International Resource Panel}},

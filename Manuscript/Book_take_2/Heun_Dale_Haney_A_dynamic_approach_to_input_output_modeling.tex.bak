@@ -167,7 +167,7 @@
 
 \include{Part_0/Chapter_Acct_For_WoN/Chapter_Acct_For_WoN}
 
-\part{Material and Energy Flows}
+\part{Material and Energy}
 \label{part:matter}
 
 \include{Part_1/Chapter_Materials/Chapter_Materials}
@@ -176,7 +176,7 @@
 
 \include{Part_1/Chapter_Embodied/Chapter_Embodied}
 
-\part{Economic Value Flows and Energy Intensity}
+\part{Economic Value and Energy Intensity}
 \label{part:values}
 
 \include{Part_2/Chapter_Values/Chapter_Values} 
