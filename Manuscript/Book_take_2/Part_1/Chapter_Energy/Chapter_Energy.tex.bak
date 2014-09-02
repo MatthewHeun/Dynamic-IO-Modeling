@@ -160,7 +160,7 @@ It is important to note that the direct energy associated with some material flo
 be so small as to be negligible compared to other direct energy flows in the economy.
 For example, there is a small amount of chemical energy in steel that could be
 released upon combustion. 
-However, the direct energy associated flows of steel within the economy
+However, the direct energy associated with flows of steel within the economy
 is almost negligible. (The \emph{embodied} energy of the steel is most certainly
 \emph{not} negligible, as will be discussed in Chapter~\ref{chap:embodied_energy}.)
 On the other hand, the direct energy flow rates for 
@@ -249,11 +249,15 @@ the First Law of Thermodynamics for Example~A indicates that
 
 Note that $\dot{E}_{1}$ is the gross direct energy production rate
 of society. 
-For example, firms extract crude oil (a component of $\dot{E}_{01}$) 
-and refine it into petroleum products (a component of $\dot{E}_{1}$)
-that are consumed by society.
+For example, firms extract crude oil from the biosphere (a component of $\dot{E}_{01}$) 
+and refine it into petroleum products 
+(which in Figure~\ref{fig:A_energy}, leave as part of flow $\dot{E}_{1}$)
+that are then consumed by society.
 The direct energy consumption of extraction and refining firms 
-is a component of $\dot{E}_{11}$.
+is a component of $\dot{E}_{11}$,
+that is some of the energy that circulates back into society in flow $\dot{E}_{11}$
+is used within the extraction and refining processes to generate flow
+$\dot{E}_{01}$ from the biosphere.
 
 Aside from, for example, the US 
 Strategic Petroleum Reserve, 
@@ -410,11 +414,13 @@ EROI can be considered an indicator of energy resource quality.
 As EROI (and thus energy quality) declines,
 more energy is needed to extract and deliver energy from the environment,
 both directly, for example the energy to pump oil from deeper underground,
-and indirectly, in order to build the extra oil rigs necessary to maintain production levels.
-This issue of resource quality will be re-visited in 
-Chapters~\ref{chap:embodied_energy}~and~\ref{chap:value}
-and discussed in more
-detail in Section~\ref{sec:resource_quality_and_irreversibility}.
+and indirectly, in order to build the extra oil rigs necessary to 
+maintain production levels.\footnote{This issue 
+	of resource quality will be re-visited in 
+	Chapters~\ref{chap:embodied_energy}~and~\ref{chap:value}
+	and discussed in more
+	detail in Section~\ref{sec:resource_quality_and_irreversibility}.
+	}
 
 ****
 %**** Mik---Add a discussion about system boundaries. ****

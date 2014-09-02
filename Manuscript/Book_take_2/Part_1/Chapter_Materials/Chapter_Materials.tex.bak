@@ -15,7 +15,7 @@ I'm figgering on biggering and BIGGERING and \large BIGGERING
 
 \hfill---\emph{The Once-ler}}
 
-\chapter{Material flows}
+\chapter{Material stocks and flows}
 % use \chaptermark{}
 % to alter or adjust the chapter heading in the running head
 \chaptermark{Materials}
@@ -45,11 +45,14 @@ example of the US auto industry.
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
 
 In Chapter~\ref{chap:intro}, we put forward the idea that 
-the economy is society's metabolism.
+economies are like organisms,
+using energy and material resources 
+derived from the natural environment
+for their construction, maintenance and growth.
 This chapter explores
 this idea further by observing the interchange of materials \emph{within}
 an economy, as well as exchanges of materials between an economy and 
-surrounding environment---the biosphere. 
+its surrounding environment---the biosphere. 
 
 % [THE FOLLOWING PARAGRAPH CONNECTS MORE WITH THE METABOLISM METAPHOR,
 % NEED TO DECIDE BETWEEN THAT AND THE ONE AFTER OR MAYBE MIX THE TWO]
@@ -177,7 +180,7 @@ inherent in capitalist society.\footnote{
  						(as opposed to fixed costs of machine operations for sunk capital)
  						labor is further reduced to sustain production at higher levels;
  			\item	yet more capital is added to replace further reduced levels
- 						of labor.~\cite[p.296]{Gould2004}
+ 						of labor.\cite[p.~296]{Gould2004}
 		 \end{enumerate}
  }
 % \begin{quote}
@@ -192,7 +195,7 @@ inherent in capitalist society.\footnote{
 % 	for ecosystem elements.~\cite[p.296]{Gould2004}
 % \end{quote}
 The treadmill leads to ``higher and higher levels of demand for natural resources 
-for a given level of social welfare''.\cite[p.297]{Gould2004}
+for a given level of social welfare.''~\cite[p.297]{Gould2004}
 The treadmill of production is evident today, 
 driving up demand for many commodities.
 From an economic stand-point we may view the treadmill
@@ -302,7 +305,10 @@ of its importance in the economic activity of our daily lives.
 And, we believe that the interplay between money and energy
 has shaped the past and will continue to influence the future.
 In this section, we define rigorous ``counting'' methods that will be applied
-to materials, energy and money throughout this book.
+to materials~(this chapter), 
+energy~(Chapters~\ref{chap:direct_energy}~and~\ref{chap:embodied_energy}) and 
+money~(Chapter~\ref{chap:value} 
+throughout this book.
 
 %**** Include somewhere in here the difference between \emph{flows} and \emph{funds}, 
 %between \emph{efficient cause} and \emph{material cause}. Resources are 
@@ -343,6 +349,7 @@ A rigorous apple accounting equation, in units of apples, is:
 
 \noindent{}More generally, we may say:
 \begin{equation}
+	\label{eq:general_accumulation_equation}
 	\mathrm{accumulation}
 	= \mathrm{transfers~in} 
 	- \mathrm{transfers~out}
@@ -567,7 +574,10 @@ enter the sector from above and leave from below to return to the biosphere.
 Only capital stock ($\dot{K}$) may accumulate within the sector,
 depicted by the storage tank.
 These also enter the sector from above. 
-Depreciated capital leaves the sector from below and is returned to the biosphere.}
+Depreciated capital leaves the sector from below and is returned to the biosphere.
+Energy flows are associated with all flows of materials, 
+but are not drawn explicitly in this diagram. 
+Flows of energy will be depicted in diagrams in later chapters.}
 \label{fig:PERKS_materials}
 \end{figure}
 
@@ -648,14 +658,15 @@ an $\dot{R}$ flow or an $\dot{S}$ flow.
 An example of energy as an $\dot{R}$ flow is crude oil 
 to be converted into gasoline within a refinery: 
 the resource inflow (crude oil) is
-\emph{literally} embodied within the out-flowing product (gasoline).
+\emph{literally} contained within the out-flowing product (gasoline).
 An example of energy as an $\dot{S}$ flow is electricity
 used by an automobile factory: the resource inflow (electrons)
 is not embodied \emph{literally} in the out-flowing product (automobiles).
 Similarly, the coal or natural gas flowing into a
 power plant is accounted as an $\dot{S}$ flow, 
 because the incoming chemical elements (carbon and hydrogen) \emph{do
-not} depart the plant as the product.  
+not} depart the plant contained within the product,
+but leave the economy in the form of carbon dioxide.  
 (The product of a power plant is electrons that ``travel'' through
 electricity transmission lines.)
 We also set up another material flow,
@@ -693,7 +704,8 @@ Resources ($\dot{R}_{01}$) and short-lived materials
 from the Biosphere~(0). Waste resources 
 ($\dot{R}_{10}$) short-lived materials/goods 
 ($\dot{S}_{10}$) and capital goods
-($\dot{K}_{10}$) are returned to the biosphere.}
+($\dot{K}_{10}$) are returned to the biosphere.
+}
 \label{fig:A_materials}
 \end{figure}
 \end{landscape}
@@ -912,7 +924,7 @@ products (part of $\dot{P}_{1}$) some (hopefully small)
 fraction is wasted ($\dot{R}_{10}$).
 Some of the coal is destined for electricity generation
 and so re-enters the economy as part of flow $\dot{S}_{11}$,
-because the coal is \emph{not physically embodied}
+because the coal is \emph{not physically contained}
 in the electricity and leaves the economy
 (in the form of carbon dioxide and ash)
 as part of flow $\dot{S}_{10}$.
@@ -920,7 +932,7 @@ Some of the coal is destined for metallurgical processes
 (such as the production of steel)
 and so re-enters the economy within flow $\dot{R}_{11}$,
 because the carbon in the coal ends up 
-\emph{physically embodied} within the steel in flow $\dot{P}_{1}$.
+\emph{physically contained} within the steel in flow $\dot{P}_{1}$.
 Again,
 some of the coal is wasted (maybe within slag), 
 leaving the economy as flow $\dot{R}_{10}$.
@@ -2378,12 +2390,14 @@ applied to the real-world case of the US auto industry.
 
 **** MCD - WHICH FIGURE DO WE PREFER? ****
 
+**** I prefer the 2nd one, but it doesn't render correctly. -MKH ****
+
 \begin{figure}[!ht]
 \centering\
 \includegraphics[width=0.8\linewidth]{Part_1/Chapter_Materials/images/Matrix.pdf}
 \caption[The matrix of biosphere-economy flows]{The matrix of biosphere-economy flows. 
 				Note that flow $\dot{S}_{00}$ is not included within our framework.}
-\label{fig:C_mat_matrix}
+\label{fig:C_mat_matrix_0}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -2405,14 +2419,14 @@ that has been outlined through Examples~A-C to the
 real-world case of the US auto industry.
 The running example of the US auto industry demonstrates that our dynamic model 
 can be tied into national accounts.
-The US auto industry example shows where data are available 
-(e.g., economic value, Chapter~\ref{chap:value}), 
-where it is old (e.g., energy intensity, Chapter~\ref{chap:intensity}), 
+The US auto industry example shows where data are 
+currently available~(e.g., economic value, Chapter~\ref{chap:value}), 
+where it is old~(e.g., energy intensity, Chapter~\ref{chap:intensity}), 
 and where it has never been available 
-(e.g., accumulated embodied energy, Chapter~\ref{chap:embodied_energy}).  
+(e.g., materials, current chapter, and accumulated embodied energy, Chapter~\ref{chap:embodied_energy}).  
 The US auto industry is, therefore, 
 illustrative of the challenges inherent 
-in obtaining data that would feed the model.
+in obtaining data that would feed our model.
 
 The auto industry 
 has been used previously
@@ -2483,8 +2497,7 @@ A number of studies have looked at
 the material and energy flows 
 associated with specific or representative vehicle manufacturing 
 \emph{processes}, rather than industry-level
-activity.\cite{Sullivan1998, MacLean1998,Schweimer2000,
-McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}
+activity.\cite{Sullivan1998, McCleese2002, Sullivan2010, Hawkins2012, MacLean1998, MacLean2003, Schweimer2000, Burnham2006}
 The US automobile industry is composed
 of many such manufacturing processes.
 According to the International Organization of 
@@ -2516,9 +2529,10 @@ with appropriately wide uncertainty bounds.
 \centering
 \includegraphics[width=\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials_auto_ind.pdf}
 \caption[Material flows for the US automobile industry]{Material 
-flows for the US automobile industry using data from~\cite{Sullivan1998, 
-MacLean1998,Schweimer2000, McCleese2002,MacLean2003, Burnham2006,
-Sullivan2010, Hawkins2012}.}
+flows for the US automobile industry 
+using data from~\cite{Sullivan1998, McCleese2002, Sullivan2010, 
+Hawkins2012, MacLean1998, MacLean2003, Schweimer2000, Burnham2006}.
+**** MCD - not much data in this figure. Is more coming? ****}
 \label{fig:PERKS_materials_auto}
 \end{figure}
 
