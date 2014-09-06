@@ -2416,33 +2416,45 @@ applied to the real-world case of the US auto industry.
 %%%%%%%%%%
 
 Throughout the book, we shall be applying the methodology
-that has been outlined through Examples~A-C to the
+that has been outlined through Examples~A--C to the
 real-world case of the US auto industry.
 The running example of the US auto industry demonstrates that our dynamic model 
 can be tied into national accounts.
-The US auto industry example shows where data are 
-currently available~(e.g., economic value, Chapter~\ref{chap:value}), 
-where it is old~(e.g., energy intensity, Chapter~\ref{chap:intensity}), 
-and where it has never been available 
-(e.g., materials, current chapter, and accumulated embodied energy, Chapter~\ref{chap:embodied_energy}).  
-The US auto industry is, therefore, 
+The US auto industry example shows where data are:
+\begin{itemize}
+	\item 	currently available~(e.g., economic value, Chapter~\ref{chap:value}), 
+	\item	where it is old~(e.g., energy intensity, Chapter~\ref{chap:intensity}), and 
+	\item	where it has never been available 
+				(e.g., materials, current chapter, and accumulated embodied energy, Chapter~\ref{chap:embodied_energy}). 
+\end{itemize} 
+\noindent{}The US auto industry is, therefore, 
 illustrative of the challenges inherent 
 in obtaining data that would feed our model.
 
-The auto industry 
-has been used previously
+Although our choice for using the auto industry is somewhat arbitrary,
+there are a number of compelling reasons for choosing to study it. 
+Automobile manufacture has been used previously
 in the literature in both 
 process-based~\cite{Berry:1973vo, Sullivan1995, Stodolsky1995, 
 							Sullivan1998, McCleese2002, Sullivan2010, Hawkins2012}
 and Input-Output~\cite{Bullard:1978vd, MacLean1998, MacLean2003}
 analysis methods,
+The automobile boom was clearly central to 
+the development of most Western countries 
+during the 20$^\mathrm{th}$ Century.
 Furthermore, the industry
-remains a large portion of many industrialized economies, 
-is very resource intensive, 
-has obvious links with energy because
-its health is sensitive to disruptions in energy supplies, and
-the industry also shows evidence of 
-post-industrial decline (shrinking profit margins, etc.).
+remains a large portion of many industrialized economies.
+The automobile industry is a large consumer of material resources,
+some of which are listed below in Table~\ref{tab:materials_auto}.
+The automobile has obvious links with the energy industry, 
+both in the direct demand for energy used in automobile manufacture,
+and also indirectly for the oil needed to operate vehicles.
+This dependence aptly demonstrates demand `lock-in', 
+discussed in Section~\ref{sec:consumption_unsustainable}.
+The industry also shows evidence of 
+post-industrial decline (shrinking profit margins, etc.)
+and thus represents a sector-level analogy of the maturation and 
+decline in growth of economies.
 
 In Figure~\ref{fig:PERKS_materials_auto}
 we see the flows of resources,
@@ -2493,49 +2505,6 @@ which can be analyzed by converting financial data
 Section~\ref{sec:value_auto}) into physical flow data
 via knowledge of the entry points of materials into the economy,
 i.e.\ via the extraction industries.
-
-A number of studies have looked at 
-the material and energy flows 
-associated with specific or representative vehicle manufacturing 
-\emph{processes}, rather than industry-level
-activity.\cite{Sullivan1998, McCleese2002, Sullivan2010, Hawkins2012, MacLean1998, MacLean2003, Schweimer2000, Burnham2006}
-The US automobile industry is composed
-of many such manufacturing processes.
-According to the International Organization of 
-Motor Vehicle Manufacturers~(OICA), 
-2.7 million cars were produced in 2010\footnote{In 2006, 
-prior to the Great Recession, 
-the automobile industry purchased 
-40 trillion kJ ($4.0 \times 10^{13}$ kJ) of total energy and 
-produced 4.4 million cars.
-} 
-in the US.\cite{Motor-Vehicle-Manufacturers-OICA:2014aa}
-In theory,
-a representation of the industry-level flows
-could be ``built up'' by assuming that the results from
-these process-based analysis methods represent average
-processes within the whole industry and 
-scaling the material flows accordingly,
-with appropriately wide uncertainty bounds.
-
-
-%**** MCD---I'm not sure what else I can write here.
-%% I could talk about process-based models? 
-%Talk about other industries
-%that may have better data.
-%Signpost the issue of lack of data in Section~\ref{sec:Data}
-%****
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials_auto_ind.pdf}
-\caption[Material flows for the US automobile industry]{Material 
-flows for the US automobile industry 
-using data from~\cite{Sullivan1998, McCleese2002, Sullivan2010, 
-Hawkins2012, MacLean1998, MacLean2003, Schweimer2000, Burnham2006}.
-**** MCD - not much data in this figure. Is more coming? ****}
-\label{fig:PERKS_materials_auto}
-\end{figure}
 
 \begin{table}
 \caption[List of material input and output flows for the 
@@ -2595,6 +2564,51 @@ Capital to biosphere					& $\dot{K}_{j0}$	&	depreciated equipment								\\
 \end{center}
 \label{tab:materials_auto}
 \end{table}
+
+
+A number of studies have looked at 
+the material and energy flows 
+associated with specific or representative vehicle manufacturing 
+\emph{processes}, rather than industry-level
+activity.\cite{Sullivan1998, McCleese2002, Sullivan2010, Hawkins2012, MacLean1998, MacLean2003, Schweimer2000, Burnham2006}
+The US automobile industry is composed
+of many such manufacturing processes.
+According to the International Organization of 
+Motor Vehicle Manufacturers~(OICA), 
+2.7 million cars were produced in 2010\footnote{In 2006, 
+prior to the Great Recession, 
+the automobile industry purchased 
+40 trillion kJ ($4.0 \times 10^{13}$ kJ) of total energy and 
+produced 4.4 million cars.
+} 
+in the US.\cite{Motor-Vehicle-Manufacturers-OICA:2014aa}
+In theory,
+a representation of the industry-level flows
+could be ``built up'' by assuming that the results from
+these process-based analysis methods represent average
+processes within the whole industry and 
+scaling the material flows accordingly,
+with appropriately wide uncertainty bounds.
+
+
+%**** MCD---I'm not sure what else I can write here.
+%% I could talk about process-based models? 
+%Talk about other industries
+%that may have better data.
+%Signpost the issue of lack of data in Section~\ref{sec:Data}
+%****
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\linewidth]{Part_1/Chapter_Materials/images/PERKS_basic_unit_materials_auto_ind.pdf}
+\caption[Material flows for the US automobile industry]{Material 
+flows for the US automobile industry 
+using data from~\cite{Sullivan1998, McCleese2002, Sullivan2010, 
+Hawkins2012, MacLean1998, MacLean2003, Schweimer2000, Burnham2006}.
+**** MCD - not much data in this figure. Is more coming? ****}
+\label{fig:PERKS_materials_auto}
+\end{figure}
+
 
 
 %%%%%%%%%% Materials: Summary %%%%%%%%%%

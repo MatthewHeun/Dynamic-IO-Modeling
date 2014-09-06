@@ -39,7 +39,7 @@ to transport the stuff away.~\emph{\cite[p.88]{Mackay2008}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Embodied Energy Flows %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Embodied energy flows}
+\chapter{Embodied energy stocks and flows}
 % Always give a unique label
 \label{chap:embodied_energy}
 % use \chaptermark{} to alter or adjust the chapter heading in the running head
@@ -96,7 +96,7 @@ in order to maintain the same level of production.\cite{Mudd2010}
 In Chapter~\ref{chap:direct_energy}, the 
 First Law of Thermodynamics
 accounted direct energy ($\dot{E}$) flowing among sectors of an economy.
-In this chapter, we will adapt the First Law to account  
+In this chapter, we will adapt the First Law to account for the
 \emph{embodied} energy
 in the material flows of 
 an economy.\footnote{To the authors' knowledge, 
@@ -156,7 +156,9 @@ Total energy ($T$)
 is defined as the sum of 
 direct energy
 ($E$, see Chapter~\ref{chap:direct_energy}) 
-and embodied energy ($B$).
+and embodied energy ($B$),
+which we will not define at present.
+This analysis will lead us to a mathematical definition of embodied energy.
 
 \begin{equation} \label{eq:T_def}
 	T \equiv E + B
@@ -771,22 +773,22 @@ material and energy intensity of economic processes.
 As we extract lower quality resources we require
 larger inputs of materials and energy,
 to process greater volumes of material,
-but also indirectly to build the extra capital equipment
-necessary to do the processing.
-The same is also true of energy resources within the environment.
-Fossil fuels represent stocks of solar energy
-accumulated (in the form of biomass)
-over many millions of years.
-These resources are extremely far from equilibrium with the environment.
-EROI can be considered an indicator of energy resource quality.
-As EROI (and thus energy quality) declines,
-more energy is needed to extract and deliver energy from the environment,
-both directly, for example the energy to pump oil from deeper underground,
-and indirectly, in order to build the extra oil rigs necessary to maintain production levels.
-This issue of resource quality will be re-visited in 
-Chapters~\ref{chap:embodied_energy}~and~\ref{chap:value}
-and discussed in more
-detail in Section~\ref{sec:resource_quality_and_irreversibility}.
+and to build the extra capital equipment
+necessary to do the extra processing.
+An analogous impact is seen in the embodied energy.
+A greater amount of energy is embodied within the 
+material and energy products of a sector 
+and the extra capital equipment
+represents a greater amount of energy embodied within the
+production sector.
+Additionally, each unit of capital will have a greater amount of
+energy embodied within it due to increases in 
+the material and energy intensity of 
+upstream sectors.\footnote{This issue 
+	of resource quality will be re-visited in 
+	Chapter~\ref{chap:value} and discussed in more
+	detail in Section~\ref{sec:resource_quality_and_irreversibility}.
+	}
 
 ****
 

@@ -370,7 +370,7 @@ $\dot{E}_{12} + \dot{E}_{22}$.
 The net direct energy production Energy~(2)
 is given by $\dot{E}_{2} - (\dot{E}_{12} + \dot{E}_{22})$.
 The \emph{energy return on investment}
-($EROI$) of the Energy sector~(2) is given by
+($EROI$)~\cite{Smith1960, Hall1986} of the Energy sector~(2) is given by
 
 \begin{equation} \label{eq:C-EROI}
 	EROI_{2} 
@@ -395,7 +395,7 @@ or GER$_{\gamma}$~\cite[Table~1]{Brandt2011},
 where GER stands for \emph{gross energy ratio}
 an equivalent metric to EROI\@.
 
-**** MCD discussion of resource quality ****
+%**** MCD discussion of resource quality ****
 
 As discussed in Chapter~\ref{chap:materials},
 society relies heavily on concentrations of high quality
@@ -466,7 +466,7 @@ a fuller picture of direct energy flows among sectors
 \end{figure}
 \end{landscape}
 
-The First Law of Thermodynamics around the 
+The First Law of Thermodynamics applied to the 
 Biosphere~(0), Society~(1), and the Energy~(2) gives
 
 \begin{equation} \label{eq:C-CV_E_dot_0}
@@ -499,7 +499,7 @@ Biosphere~(0), Society~(1), and the Energy~(2) gives
 	- \dot{Q}_{20}.
 \end{equation}
 
-The First Law around the Goods and Services sector~(3) including, 
+The First Law applied to the Goods and Services sector~(3) including, 
 for now, the accumulation rate of direct energy in the sector 
 $\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$ yields
 
@@ -579,15 +579,15 @@ Table~\ref{tab:auto_energy} shows the breakdown of energy by source.
 \caption[Energy inputs to US auto industry in 2010]{Energy inputs to US auto industry 
 (NAICS Code 336111) in 2010.\cite[Table 7.6]{EIA:2014aa}}
 \begin{center}
- \begin{tabular}{ r @{\hspace{2em}} l }
+ \begin{tabular}{ r @{\hspace{2em}} c @{\hspace{2em}} c }
 \toprule 
 Source & Quantity \\
 \midrule
-Electricity &   $3.0 \times 10^{9}$ kW-hr                    \\
-Natural gas &   $1.5 \times 10^{10}$  ft$^{3}$               \\
-Other       &   $1.0 \times 10^{12}$  BTU                    \\
+Electricity 	&   $3.0 \times 10^{9}$ kW-hr   			&	$10.8 \times 10^{12}$ $^{a}$		\\
+Natural gas 	&   $1.5 \times 10^{10}$  ft$^{3}$		&	$16.3 \times 10^{12}$				\\
+Other       	&   $1.0 \times 10^{12}$  BTU				&	$1.1 \times 10^{12}$					\\
 \midrule
-Total       &   $2.8 \times 10^{13}$ kJ (thermal equivalent) \\
+Total       		&   $2.8 \times 10^{13}$ kJ (thermal equivalent) \\
 \bottomrule
 \end{tabular}
 \end{center}
