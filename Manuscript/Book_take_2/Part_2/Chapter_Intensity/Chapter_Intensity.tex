@@ -225,7 +225,7 @@ Energy intensity ($\varepsilon$)
 is the ratio 
 of total energy ($\dot{T}$) 
 and value ($\dot{X}$) outflow rates 
-from an economic sector, 
+from an economic sector (e.g., the auto industry), 
 such that for sector $j$, %$^{\mathrm{th}}$,
 
 \begin{equation} \label{eq:epsilon_output_def_g_and_s}
@@ -281,6 +281,11 @@ We note that the value ($\dot{X}$) of all material flows must be counted such th
 		{\dot{X}_{\dot{R}_{j}} + \dot{X}_{\dot{S}_{j}} + \dot{X}_{\dot{K}_{j}}}.
 \end{equation}
 
+\noindent{}where $R$ represents resources,
+$S$ represents short-lived materials, and
+$K$ represents capital,
+as discussed in Chapter~\ref{chap:materials}.
+
 Input-output ratios~($a_{ij}$) are given in mixed units, 
 depending on both the purpose of each sector of the economy 
 and the type of input as shown in Figure~\ref{fig:A_matrix_units}.
@@ -299,6 +304,12 @@ Equations~\ref{eq:epsilon_transfers_1} and~\ref{eq:aij_def} can be combined to g
 	\dot{T}_{jk} = \varepsilon_{j} a_{jk} \dot{X}_{k}.
 \end{equation}
 
+\noindent{}That is,
+the flow of total energy from sector $j$ into sector $k$~($\dot{T}_{jk}$),
+is given by the energy intensity of sector $k$~($\varepsilon_{j}$)
+multiplied by the amount of input good $j$ is required 
+to produce a unit of output from sector $k$~($a_{jk}$)
+multiplied by the output flow of value from sector $k$~($\dot{X}_{k}$).
 
 %%%%%%%%%% Example A %%%%%%%%%%
 \section{Example A: single-sector economy} % chktex 13
@@ -704,7 +715,9 @@ in vector notation as
 	\end{bmatrix};
 \end{equation}
 
-\noindent{}with the ``Kronecker delta''
+\noindent{}with the ``Kronecker delta''~($\delta_{ij}$),
+being a function of two integer variables ($i$ and $j$)
+that has value of 1 if $i$ and $j$ are equal and zero otherwise;
 
 \begin{equation}\label{eq:k_delta}
 	\delta_{ij} 
