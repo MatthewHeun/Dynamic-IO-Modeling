@@ -15,7 +15,7 @@ We come to value what we measure.~\emph{\cite[p.~2]{Meadows:1998aa}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Value Flows %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Value flows}
+\chapter{Value stocks and flows}
 \label{chap:value} % Always give a unique label
 % use \chaptermark{}
 % to alter or adjust the chapter heading in the running head
@@ -77,7 +77,7 @@ of using the market price at the time of an exchange
 to determine the value of the flows of products (goods, services and capital). 
 As materials and energy flow in one direction between sectors, 
 currency flows in the opposite direction. 
-The monetary flow is an easy and logical
+The monetary flow is an easy and logical (though imperfect)
 proxy for the value of the material and energy flows. 
 Market transactions are readily captured, 
 and the data 
