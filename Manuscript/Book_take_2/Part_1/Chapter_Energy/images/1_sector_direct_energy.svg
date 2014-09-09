@@ -24,12 +24,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1382"
+     inkscape:window-width="1373"
      inkscape:window-height="856"
      id="namedview97"
      showgrid="false"
      inkscape:zoom="0.48396946"
-     inkscape:cx="746.10748"
+     inkscape:cx="709.94817"
      inkscape:cy="555.82019"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -43,6 +43,26 @@
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><marker
+   inkscape:stockid="Arrow1Mstart"
+   orient="auto"
+   refY="0.0"
+   refX="0.0"
+   id="Arrow1Mstart"
+   style="overflow:visible"><path
+     id="path3917"
+     d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+     style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+     transform="scale(0.4) translate(10,0)" /></marker><marker
+   inkscape:stockid="Arrow1Mend"
+   orient="auto"
+   refY="0.0"
+   refX="0.0"
+   id="Arrow1Mend"
+   style="overflow:visible;"><path
+     id="path3920"
+     d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+     style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+     transform="scale(0.4) rotate(180) translate(10,0)" /></marker><marker
    inkscape:stockid="Arrow1Lstart"
    orient="auto"
    refY="0"
@@ -628,7 +648,7 @@
    inkscape:connector-curvature="0"
    id="path4319"
    d="m 395.4946,470.29861 0,69.01014 -249.06238,0 0,-158.57665 160,-0.16758"
-   style="fill:none;stroke:#008000;stroke-width:1.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)" /><text
+   style="fill:none;stroke:#008000;stroke-width:3.20000000000000018;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)" /><text
    transform="scale(1,-1)"
    sodipodi:linespacing="125%"
    id="text4115"
@@ -644,6 +664,7 @@
      x="-91.893478"
      sodipodi:role="line"
      id="tspan4119">(0)</tspan></text>
+
 
 
 
@@ -789,6 +810,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -832,6 +854,7 @@
 
 
 
+
 <path
    d="m 309.27099,-44.21217 0,468.3 85.42,48 85.417,-48 0,-468.047 -85.417,-48.125 z"
    id="path4124"
@@ -840,7 +863,7 @@
    sodipodi:nodetypes="ccccccc" /><path
    d="m 394.68949,-88.93106 0,-183.39388"
    id="path4841"
-   style="fill:none;stroke:#008000;stroke-width:1.60000001999999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.40000000000000036, 6.40000000000000036;stroke-dashoffset:0;marker-end:url(#Arrow1Lend)"
+   style="fill:none;stroke:#008000;stroke-width:3.20000000000000018;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.40000000000000036, 6.40000000000000036;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
    inkscape:connector-curvature="0"
    sodipodi:nodetypes="cc" /><text
    transform="scale(1,-1)"
@@ -856,6 +879,7 @@
      sodipodi:role="line">Q<tspan
    id="tspan4847"
    style="font-size:52.00042725%;baseline-shift:sub">10</tspan></tspan></text>
+
 
 
 
@@ -913,6 +937,7 @@
      id="tspan3107"
      x="1491.8081"
      y="664.91211" /></text>
+
 
 
 
@@ -1218,6 +1243,7 @@
 
 
 
+
 </g></g>
 
 
@@ -1297,7 +1323,7 @@
 
 
 <path
-   style="fill:none;stroke:#008000;stroke-width:1.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:none"
+   style="fill:none;stroke:#008000;stroke-width:3.20000000000000018;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:none"
    d="m 307.92518,-19.67824 -925.86236,0 0,-256.34423"
    id="path4521"
    inkscape:connector-curvature="0"
@@ -1315,6 +1341,7 @@
      sodipodi:role="line">E<tspan
    id="tspan4527"
    style="font-size:52.00042725%;text-align:start;text-anchor:start;baseline-shift:sub">0</tspan></tspan></text>
+
 
 
 
@@ -1428,6 +1455,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1486,6 +1514,7 @@
    id="tspan3462">1</tspan> = E<tspan
    id="tspan3160"
    style="font-size:52.00042725%;baseline-shift:sub">11</tspan></tspan></text>
+
 
 
 

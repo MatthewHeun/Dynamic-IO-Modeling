@@ -78,6 +78,8 @@ Need more energy to process more material. Ref Materials chapter.
 
 Need more energy to make more capital equipment to process more material.
 
+Possibly refer to the Best-First Principle.
+
 **** MCD From materials chapter:
 
 Society relies heavily on extracted resources 
@@ -102,7 +104,7 @@ in the material flows of
 an economy.\footnote{To the authors' knowledge, 
 	this is the first appearance in the literature 
 	of a systematic, detailed, and mathematically-rigorous derivation 
-	of embodied energy accounting equations based upon the 
+	of embodied energy accounting equations derived from the 
 	laws of thermodynamics.}
 
 Energy can become ``embodied'' in the output of an economic sector
@@ -671,7 +673,8 @@ because of the benefit of canceling direct energy flow terms ($\dot{E}$).
 
 The term $\dot{B}_{10}$ in Equation~\ref{eq:A_dB1/dt_simp}
 represents the disposal rate 
-of embodied energy from Society (1) to the Biosphere (0). 
+of embodied energy from Society (1) to the Biosphere (0),
+i.e., depreciated physical assets. 
 Figure~\ref{fig:A_materials} shows that the outgoing material flow
 from Society (1) is comprised of 
 resources ($\dot{R}_{10}$),
