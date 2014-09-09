@@ -304,10 +304,11 @@ That energy is required to do \emph{anything} is evidence
 of its importance in the economic activity of our daily lives.
 And, we believe that the interplay between money and energy
 has shaped the past and will continue to influence the future.
-In this section, we define rigorous ``counting'' methods that will be applied
-to materials~(this chapter), 
-energy~(Chapters~\ref{chap:direct_energy}~and~\ref{chap:embodied_energy}) and 
-money~(Chapter~\ref{chap:value} 
+In this section, we define rigorous ``counting'' methods that will be applied to
+materials~(this chapter), 
+energy~(Chapter~\ref{chap:direct_energy}), 
+embodied energy~(Chapter~\ref{chap:embodied_energy}), and 
+money~(Chapter~\ref{chap:value}) 
 throughout this book.
 
 %**** Include somewhere in here the difference between \emph{flows} and \emph{funds}, 
@@ -575,7 +576,7 @@ Only capital stock ($\dot{K}$) may accumulate within the sector,
 depicted by the storage tank.
 These also enter the sector from above. 
 Depreciated capital leaves the sector from below and is returned to the biosphere.
-Energy flows are associated with all flows of materials, 
+Energy flows (green lines) are associated with all flows of materials, 
 but are not drawn explicitly in this diagram. 
 Flows of energy will be depicted in diagrams in later chapters.}
 \label{fig:PERKS_materials}
@@ -2422,7 +2423,7 @@ The running example of the US auto industry demonstrates that our dynamic model
 can be tied into national accounts.
 The US auto industry example shows where data are:
 \begin{itemize}
-	\item 	currently available~(e.g., economic value, Chapter~\ref{chap:value}), 
+	\item 	currently available~(e.g., economic value, Chapter~\ref{chap:value} and direct energy, Chapter~\ref{chap:direct_energy}), 
 	\item	where it is old~(e.g., energy intensity, Chapter~\ref{chap:intensity}), and 
 	\item	where it has never been available 
 				(e.g., materials, current chapter, and accumulated embodied energy, Chapter~\ref{chap:embodied_energy}). 
@@ -2438,12 +2439,12 @@ in the literature in both
 process-based~\cite{Berry:1973vo, Sullivan1995, Stodolsky1995, 
 							Sullivan1998, McCleese2002, Sullivan2010, Hawkins2012}
 and Input-Output~\cite{Bullard:1978vd, MacLean1998, MacLean2003}
-analysis methods,
+analysis methods.
 The automobile boom was clearly central to 
 the development of most Western countries 
 during the 20$^\mathrm{th}$ Century.
 Furthermore, the industry
-remains a large portion of many industrialized economies.
+still remains a large portion of many industrialized economies.
 The automobile industry is a large consumer of material resources,
 some of which are listed below in Table~\ref{tab:materials_auto}.
 The automobile has obvious links with the energy industry, 
@@ -2565,6 +2566,19 @@ Capital to biosphere					& $\dot{K}_{j0}$	&	depreciated equipment								\\
 \label{tab:materials_auto}
 \end{table}
 
+Using EW-MFA data on materials,
+together with financial flows among sectors
+as a proxy for material flows,
+researchers could begin to understand the material intensity
+of different sectors of the economy in an analogous fashion to
+the manner in which energy input-output (EI-O) methods
+calculate energy intensities for sectors within the economy;
+to produce physical input-output tables.~\cite{Hoekstra2006}
+Work is being done in this direction with the 
+Environmental Input-Output Life-Cycle Assessment (EIOLCA) models,
+among others.~\cite{EIOLCA2014}
+A short-coming of this approach is that materials accumulate within economic sectors.
+This accumulation is ignored by the 
 
 A number of studies have looked at 
 the material and energy flows 

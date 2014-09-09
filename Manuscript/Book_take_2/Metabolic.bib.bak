@@ -2,30 +2,68 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Matt at 2014-09-02 22:04:38 -0400 
+%% Created for Matt at 2014-09-07 21:06:17 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
-@article{Smith1960,
-  title={The yield and energy content of milk and the energetic efficiency of sows on different levels of nutrition during gestation and lactation},
-  author={Smith, DM},
-  journal={New Zealand Journal of Agricultural Research},
-  volume={3},
-  number={5},
-  pages={745--763},
-  year={1960},
-  publisher={Taylor \& Francis}
+@article{Hoekstra2006,
+  title={Constructing physical input--output tables for environmental modeling and accounting: Framework and illustrations},
+  author={Hoekstra, Rutger and van den Bergh, Jeroen CJM},
+  journal={Ecological Economics},
+  volume={59},
+  number={3},
+  pages={375--393},
+  year={2006},
+  publisher={Elsevier}
 }
 
+@book{Georgescu-Roegen:1971aa,
+	Author = {Nicolas Georgescu-Roegen},
+	Date-Added = {2014-09-07 18:28:55 +0000},
+	Date-Modified = {2014-09-07 18:29:31 +0000},
+	Isbn = {9780674281646},
+	Publisher = {Harvard University Press},
+	Title = {The Entropy Law and the Economic Process},
+	Url = {http://books.google.com/books?id=fOyenQEACAAJ},
+	Year = {1971}}
+
+@article{Odum:1973aa,
+	Author = {Howard T. Odum},
+	Date-Added = {2014-09-07 17:44:26 +0000},
+	Date-Modified = {2014-09-07 17:44:26 +0000},
+	Journal = {Ambio},
+	Number = {6},
+	Pages = {220-227},
+	Title = {Energy, Ecology, and Economics},
+	Volume = {2},
+	Year = {1973}}
+
+@book{Box:1987aa,
+	Author = {George E P Box and Norman R Draper},
+	Date-Added = {2014-09-07 16:56:00 +0000},
+	Date-Modified = {2014-09-08 01:05:28 +0000},
+	Publisher = {Wiley},
+	Title = {Empirical Model-Building and Response Surfaces},
+	Year = {1987}}
+
+@article{Smith1960,
+	Author = {Smith, DM},
+	Journal = {New Zealand Journal of Agricultural Research},
+	Number = {5},
+	Pages = {745--763},
+	Publisher = {Taylor \& Francis},
+	Title = {The yield and energy content of milk and the energetic efficiency of sows on different levels of nutrition during gestation and lactation},
+	Volume = {3},
+	Year = {1960}}
 
 @book{UNSEEA2014,
-	title = {System of Environmental-Economic Accounting 2012 Central Framework},
-	url = {http://unstats.un.org/unsd/envaccounting/seeaRev/SEEA_CF_Final_en.pdf},
-	publisher = {United Nations Statistics Division},
-	author = {{United Nations}},
-	year = {2014}
-}
+	Author = {{United Nations}},
+	Publisher = {United Nations Statistics Division},
+	Title = {System of Environmental-Economic Accounting 2012 Central Framework},
+	Url = {http://unstats.un.org/unsd/envaccounting/seeaRev/SEEA_CF_Final_en.pdf},
+	Year = {2014},
+	Bdsk-Url-1 = {http://unstats.un.org/unsd/envaccounting/seeaRev/SEEA_CF_Final_en.pdf}}
 
 @article{Zwaan:2002aa,
 	Author = {van der Zwaan, Bob CC and Gerlagh, Reyer and Klaassen, G and Schrattenholzer, Leo},
@@ -300,15 +338,14 @@
 	Year = {2013}}
 
 @book{ayres1997,
-	title = {Turning Point: End of the Growth Paradigm},
-	isbn = {9781853834394},
-	shorttitle = {Turning Point},
-	language = {English},
-	publisher = {Routledge},
-	author = {Ayres, Robert},
-	month = aug,
-	year = {1997}
-}
+	Author = {Ayres, Robert},
+	Isbn = {9781853834394},
+	Language = {English},
+	Month = aug,
+	Publisher = {Routledge},
+	Shorttitle = {Turning Point},
+	Title = {Turning Point: End of the Growth Paradigm},
+	Year = {1997}}
 
 @techreport{Ayres:1996aa,
 	Author = {Robert U. Ayres},
@@ -1225,8 +1262,8 @@ Energy usage in the oil and gas sector peaked in the early 1980s due to all-time
 
 @article{F-K1999,
 	Author = {Marina Fischer-Kowalski and Walter H{\"u}ttler},
-	Date-Modified = {2014-08-25 23:59:48 +0000},
-	Journal = {Journal of industrial ecology},
+	Date-Modified = {2014-09-06 00:41:38 +0000},
+	Journal = {Journal of Industrial Ecology},
 	Number = {4},
 	Pages = {107--136},
 	Title = {Society's metabolism},
@@ -1277,9 +1314,13 @@ Energy usage in the oil and gas sector peaked in the early 1980s due to all-time
 
 @article{G-R1975a,
 	Author = {Georgescu-Roegen, Nicholas},
+	Date-Modified = {2014-09-07 18:25:30 +0000},
 	Journal = {Southern Economic Journal},
+	Month = {January},
+	Number = {3},
 	Pages = {347--381},
 	Title = {Energy and economic myths},
+	Volume = {41},
 	Year = {1975}}
 
 @article{G-R1979a,
@@ -1451,8 +1492,9 @@ Energy usage in the oil and gas sector peaked in the early 1980s due to all-time
 	Title = {{IO}-Data}}
 
 @book{Ingrao1990,
-	Author = {Ingrao, Bruna and Israel, Giorgio and McGilvray, Ian},
-	Publisher = {Mit Press Cambridge, MA},
+	Author = {Bruna Ingrao and Giorgio Israeland Ian McGilvray},
+	Date-Modified = {2014-09-08 01:06:17 +0000},
+	Publisher = {MIT Press Cambridge, MA},
 	Title = {The invisible hand: economic equilibrium in the history of science},
 	Year = {1990}}
 
