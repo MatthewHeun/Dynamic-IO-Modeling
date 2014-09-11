@@ -222,13 +222,13 @@ is the ratio
 of total energy ($\dot{T}$) 
 and value ($\dot{X}$) outflow rates 
 from an economic sector (e.g., the auto industry), 
-such that for sector $j$, %$^{\mathrm{th}}$,
-
+such that for sector $j$,
+%
 \begin{equation} \label{eq:epsilon_output_def_g_and_s}
 	\varepsilon_{j} \equiv \frac{\dot{T}_{j}}{\dot{X}_{j}},
 \end{equation} 
-
-\noindent{}and $\varepsilon$ is in units of J/\$.\footnote{It may be
+%
+and $\varepsilon$ is in units of J/\$.\footnote{It may be
 instructive to consider energy intensity as the quotient
 of embodied energy (in units of J/kg) and price (in \$/kg).}
 Energy intensity ($\varepsilon_j$) represents the total energy demanded
@@ -248,12 +248,12 @@ because it accounts for upstream energy consumption,
 thereby providing an estimate of the true total energy cost of products.
 
 For inter-sector flows, we have
-
+%
 \begin{equation} \label{eq:epsilon_transfers_1}
 	\varepsilon_{j} = \frac{\dot{T}_{jk}}{\dot{X}_{jk}}.
 \end{equation}
-
-\noindent{}for all $k$, because the energy intensity 
+%
+for all $k$, because the energy intensity 
 of output from sector $j$ is independent of its destination ($k$). 
 In other words, all goods produced by a sector 
 are produced at the average energy intensity 
@@ -264,20 +264,20 @@ each with its own energy intensity.}
 We define the input-output ratio~($a_{ij}$)
 that represents the input 
 of good $i$ required to produce a unit of output from sector $j$.
-
+%
 \begin{equation} \label{eq:aij_def}
 	a_{ij} \equiv \frac{\dot{X}_{ij}}{\dot{X}_{j}}
 \end{equation}
 
 We note that the value ($\dot{X}$) of all material flows must be counted such that
-
+%
 \begin{equation} \label{eq:aij_def_expanded}
 	a_{ij} =	 
 	\frac{\dot{X}_{\dot{R}_{ij}} + \dot{X}_{\dot{S}_{ij}} + \dot{X}_{\dot{K}_{ij}}}
 		{\dot{X}_{\dot{R}_{j}} + \dot{X}_{\dot{S}_{j}} + \dot{X}_{\dot{K}_{j}}}.
 \end{equation}
-
-\noindent{}where $R$ represents resources,
+%
+where $R$ represents resources,
 $S$ represents short-lived materials, and
 $K$ represents capital,
 as discussed in Chapter~\ref{chap:materials}.
@@ -295,27 +295,28 @@ ratios~($a$).}
 \end{figure}
 
 Equations~\ref{eq:epsilon_transfers_1} and~\ref{eq:aij_def} can be combined to give
-
+%
 \begin{equation}
 	\dot{T}_{jk} = \varepsilon_{j} a_{jk} \dot{X}_{k}.
 \end{equation}
-
-\noindent{}That is,
+%
+That is,
 the flow of total energy from sector $j$ into sector $k$~($\dot{T}_{jk}$),
 is given by the energy intensity of sector $k$~($\varepsilon_{j}$)
 multiplied by the amount of input good $j$ is required 
 to produce a unit of output from sector $k$~($a_{jk}$)
 multiplied by the output flow of value from sector $k$~($\dot{X}_{k}$).
 
+
 %%%%%%%%%% Example A %%%%%%%%%%
-\section{Example A: single-sector economy} % chktex 13
+\section{Example~A: single-sector economy} % chktex 13
 %%%%%%%%%%
 
 With reference to Figures~\ref{fig:A_energy}, 
 \ref{fig:A_total_energy_T_dot}, 
 and~\ref{fig:A_value},
 the energy intensity ($\varepsilon_{1}$) of a single-sector economy is calculated by
-
+%
 \begin{equation} \label{eq:A-energy_intensity}
 	\varepsilon_{1} 
 	= \frac{\dot{T}_{1}}{\dot{X}_{1}} 
@@ -333,7 +334,7 @@ we move to Examples~B and~C in the following sections.
 
 
 %%%%%%%%%% Example B %%%%%%%%%%
-\section{Example B: two-sector economy} % chktex 13
+\section{Example~B: two-sector economy} % chktex 13
 %%%%%%%%%%
 
 With reference to Figures~\ref{fig:B_energy}, 
@@ -341,35 +342,35 @@ With reference to Figures~\ref{fig:B_energy},
 and~\ref{fig:B_value}, 
 the energy intensity ($\varepsilon_{2}$) 
 of the production sector is given by
-
+%
 \begin{equation} \label{eq:single_sector_energy_intensity}
 	\varepsilon_{2} 
 	= \frac{\dot{T}_{2}}{\dot{X}_{2}} 
 	= \frac{\dot{T}_{22}}{\dot{X}_{22}}.
 \end{equation}
-
-\noindent{}Thus,
-
+%
+Thus,
+%
 \begin{equation} \label{eq:T_dot_1_single_sector}
 	\dot{T}_{2} = \varepsilon_{2}\dot{X}_{2},
 \end{equation}
 
 The input-output ratio 
 for the production sector's self-use of output ($a_{22}$) is
-
+%
 \begin{equation} \label{eq:io_ratio_single_sector}
 	a_{22} = \frac{\dot{X}_{22}}{\dot{X}_{2}},
 \end{equation}
-
-\noindent{}thus
-
+%
+thus
+%
 \begin{equation} \label{eq:T_dot_11_single_sector}
 	\dot{T}_{22} = \varepsilon_{2}a_{22}\dot{X}_{2}.
 \end{equation}
 
 We can rewrite the total energy accounting equation 
 for Production~(2)
-
+%
 \begin{equation}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 	 
 	= \dot{T}_{02} 
@@ -378,9 +379,9 @@ for Production~(2)
 	- \dot{T}_{2} 
 	- \dot{T}_{20} \tag{\ref{eq:CV_T_2}}
 \end{equation}
-
-\noindent{}using energy intensity by realizing that:
-
+%
+using energy intensity by realizing that:
+%
 \begin{itemize}
 	\item{$\frac{\mathrm{d}E_2}{\mathrm{d}t} = 0$
 		meaning that
@@ -391,13 +392,14 @@ for Production~(2)
 		because resources ($R$) and short-lived materials ($S$) do not 
 		accumulate at appreciable rates in economic sectors,}
 	\item{$\dot{B}_{02} = 0$ meaning that $\dot{T}_{02} = \dot{E}_{02}$,
-		because flows from the biosphere have yet to have any energy from society embodied in them,
-		% embodied energy appears only in the \emph{output} of a sector,
-		}
+		because flows from the biosphere have yet to have any energy from society embodied in them,}
 	\item{$\dot{E}_{20} = 0$ meaning that $\dot{T}_{20} = \dot{B}_{20}$, 
-	because direct energy is not wasted to the biosphere at any significant rate,\footnote{Oil
-	spills and gas leaks notwithstanding. Remember also that waste heat outflows ($\dot{Q}_{20}$)
-	are allocated to the product.} and} 
+		because direct energy is not wasted to the biosphere at any significant rate,%
+			\footnote{Oil spills and gas leaks notwithstanding. 
+			Remember also that waste heat outflows ($\dot{Q}_{20}$)
+			are allocated to the product.
+			} 
+		and} 
 	\item{$\dot{B}_{20} = \left( \dot{B}_{\dot{R}_{20}} 
 							+ \dot{B}_{\dot{S}_{20}}
 							+ \dot{B}_{\dot{K}_{20}}
@@ -407,10 +409,10 @@ for Production~(2)
 							+ \gamma_{B_{2}} B_{K_{2}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
-
-\noindent{}If we substitute Equations~\ref{eq:T_dot_1_single_sector} 
+%
+If we substitute Equations~\ref{eq:T_dot_1_single_sector} 
 and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2}, we obtain
-
+%
 \begin{equation} \label{eq:dB1/dt_single_sector_after_substituting_eps_and_a}
 	\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t} 
 	= \dot{E}_{02} 
@@ -425,7 +427,7 @@ and~\ref{eq:T_dot_11_single_sector} into Equation~\ref{eq:CV_T_2}, we obtain
 
 Equation~\ref{eq:dB1/dt_single_sector_after_substituting_eps_and_a}
 can be solved for energy intensity ($\varepsilon_{2}$) to obtain
-
+%
 \begin{equation} \label{eq:B-epsilon}
 	\varepsilon_{2}
 	= {(1 - a_{22})}^{-1} {\dot{X}_{2}}^{-1} 
@@ -466,7 +468,7 @@ Figures~\ref{fig:C_energy},~\ref{fig:C_total_energy}, and~\ref{fig:C_value}
 to obtain the following total energy accounting equations
 for the Energy~(2) and Goods and Services~(3) sectors 
 of Example~C: % chktex 13
-
+%
 \begin{equation} \label{eq:C-Total_Energy_Sec_2-a}
 	\frac{\mathrm{d}T_{2}}{\mathrm{d}t} 
 	= \dot{T}_{02}  
@@ -476,9 +478,9 @@ of Example~C: % chktex 13
 	- \dot{T}_{2}
 	- \dot{T}_{20}
 \end{equation}
-
-\noindent{}and
-
+%
+and
+%
 \begin{equation} \label{eq:C-Total_Energy_Sec_3-a}
 	\frac{\mathrm{d}T_{3}}{\mathrm{d}t} 
 	= \dot{T}_{03}  
@@ -488,9 +490,9 @@ of Example~C: % chktex 13
 	- \dot{T}_{3}
 	- \dot{T}_{30}.
 \end{equation}
-
-\noindent{}Similar to Example~B, we realize that: 
-
+%
+Similar to Example~B, we realize that: 
+%
 \begin{itemize}
 	\item{$\frac{\mathrm{d}E_i}{\mathrm{d}t} = 0$
 		meaning that
@@ -501,11 +503,9 @@ of Example~C: % chktex 13
 		because resources ($R$) and short-lived materials ($S$) do not 
 		accumulate at appreciable rates in economic sectors,}
 	\item{$\dot{B}_{0j} = 0$ meaning that $\dot{T}_{0j} = \dot{E}_{0j}$,
-		because flows from the biosphere have yet to have any energy from society embodied in them,
-		% embodied energy appears only in the \emph{output} of a sector,
-		}
+		because flows from the biosphere have yet to have any energy from society embodied in them,}
 	\item{$\dot{E}_{j0} = 0$ meaning that $\dot{T}_{j0} = \dot{B}_{j0}$, 
-	because direct energy is not wasted to the biosphere at any significant rate, and} 
+		because direct energy is not wasted to the biosphere at any significant rate, and} 
 	\item{$\dot{B}_{j0} = \left( \dot{B}_{\dot{R}_{j0}} 
 							+ \dot{B}_{\dot{S}_{j0}}
 							+ \dot{B}_{\dot{K}_{j0}}
@@ -515,9 +515,9 @@ of Example~C: % chktex 13
 							+ \gamma_{B_{j}} B_{K_{j}}
 							\right)$, as shown in Section~\ref{sec:Embodied_Energy_Example_C}.}
 \end{itemize}
-
-\noindent{}to obtain
-
+%
+to obtain
+%
 \begin{equation} \label{eq:C-Total_Energy_Sec_2-b}
 	\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t}
 	= \dot{E}_{02}
@@ -530,9 +530,9 @@ of Example~C: % chktex 13
 							+ \gamma_{B_{2}} B_{K_{2}}
 							\right)
 \end{equation}
-
-\noindent{}and
-
+%
+and
+%
 \begin{equation} \label{eq:C-Total_Energy_Sec_3-b}
 	\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t}
 	= \dot{E}_{03}
@@ -555,7 +555,7 @@ of Example~C: % chktex 13
 Equations~\ref{eq:C-Total_Energy_Sec_2-b} 
 and~\ref{eq:C-Total_Energy_Sec_3-b} can be rewritten 
 in vector notation as
-
+%
 \begin{equation} \label{eq:C-Expanded_Matrix_Form}
 	\begin{split}
 		\begin{Bmatrix}
@@ -611,9 +611,9 @@ in vector notation as
 		\end{Bmatrix}.
 	\end{split}
 \end{equation}
-
-\noindent{}If we define the following matrices and vectors:
-
+%
+If we define the following matrices and vectors:
+%
 \begin{equation} \label{eq:B_vec_def}
 	\vec{B}_{K} 
 	\equiv
@@ -622,7 +622,7 @@ in vector notation as
 		B_{K_{3}}
 	\end{Bmatrix},
 \end{equation}
-
+%
 \begin{equation} \label{eq:dBdt_vec_def}
 	\frac{\mathrm{d}\vec{B}_K}{\mathrm{d}t} 
 	\equiv
@@ -631,7 +631,7 @@ in vector notation as
 		\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t}
 	\end{Bmatrix},
 \end{equation}
-
+%
 \begin{equation} \label{eq:E_vec_def}
 	\vec{E}_{0} 
 	\equiv
@@ -640,7 +640,7 @@ in vector notation as
 		\dot{E}_{03}
 	\end{Bmatrix},
 \end{equation}
-
+%
 \begin{equation} \label{eq:T_vec_def}
 	\vec{T}_{1} 
 	\equiv
@@ -649,7 +649,7 @@ in vector notation as
 		\dot{T}_{13}
 	\end{Bmatrix},
 \end{equation}
-
+%
 \begin{equation} \label{eq:X_t_matrix_def}
 	\vec{X}_{t} 
 	\equiv
@@ -658,7 +658,7 @@ in vector notation as
 		\dot{X}_{32} & \dot{X}_{33}
 	\end{bmatrix},
 \end{equation}
-
+%
 \begin{equation} \label{eq:eps_vec_def}
 	\boldsymbol{\varepsilon} 
 	\equiv
@@ -667,7 +667,7 @@ in vector notation as
 		\varepsilon_{3}
 	\end{Bmatrix},
 \end{equation} 
-								
+%								
 \begin{equation} \label{eq:waste_vec_def}
 	\vec{B}_{\dot{W}} 
 	=
@@ -686,7 +686,7 @@ in vector notation as
 		\dot{B}_{\dot{B}_{30}}	\\
 	\end{Bmatrix},
 \end{equation}
-
+%
 \begin{equation} \label{eq:X_hat_matrix_def}
 	\hat{\vec{X}} 
 	\equiv
@@ -697,9 +697,9 @@ in vector notation as
 		0				&	\dot{X}_{3}	\\
 	\end{bmatrix},
 \end{equation} 
-
-\noindent{}and
-
+%
+and
+%
 \begin{equation} \label{eq:gamma_hat_matrix_def}
 	\hat{\boldsymbol{\gamma}}_{B}
 	\equiv
@@ -710,11 +710,11 @@ in vector notation as
 		0              & \gamma_{B_{3}}
 	\end{bmatrix};
 \end{equation}
-
-\noindent{}with the ``Kronecker delta''~($\delta_{ij}$),
+%
+with the ``Kronecker delta''~($\delta_{ij}$),
 being a function of two integer variables ($i$ and $j$)
 that has value of 1 if $i$ and $j$ are equal and zero otherwise;
-
+%
 \begin{equation}\label{eq:k_delta}
 	\delta_{ij} 
 	\equiv
@@ -723,10 +723,10 @@ that has value of 1 if $i$ and $j$ are equal and zero otherwise;
 		1 	& 	\text{if  } i = j
 	\end{cases};
 \end{equation}
-
-\noindent{}we can rewrite Equation~\ref{eq:C-Expanded_Matrix_Form}
+%
+we can rewrite Equation~\ref{eq:C-Expanded_Matrix_Form}
 compactly as
-
+%
 \begin{equation} \label{eq:matrix_leontief_pre_1}
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
@@ -736,9 +736,9 @@ compactly as
 	- \vec{B}_{\dot{W}}
 	- \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}.
 \end{equation}
-
-\noindent{}Equation~\ref{eq:matrix_leontief_pre_1} can be simplified to
-
+%
+Equation~\ref{eq:matrix_leontief_pre_1} can be simplified to
+%
 \begin{equation} \label{eq:matrix_leontief_pre_2}
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
@@ -747,9 +747,9 @@ compactly as
 	- \vec{B}_{\dot{W}}
 	- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}.
 \end{equation}
-
-\noindent{}We can define the input-output matrix ($\vec{A}$) as
-
+%
+We can define the input-output matrix ($\vec{A}$) as
+%
 \begin{equation} \label{eq:A_matrix_def}
 	\vec{A} 
 	\equiv
@@ -758,18 +758,18 @@ compactly as
 		a_{32} & a_{33}	
 	\end{bmatrix}.
 \end{equation}
-
-\noindent{}Appendix~\ref{app:Proof} shows that
-
+%
+Appendix~\ref{app:Proof} shows that
+%
 \begin{equation} \label{eq:Xdifference1}
 	\vec{X}_{t}^{\mathrm{T}} 
 	- \hat{\vec{X}} 
 	= \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}),
 \end{equation}
-
-\noindent{}which allows Equation~\ref{eq:matrix_leontief_pre_2}
+%
+which allows Equation~\ref{eq:matrix_leontief_pre_2}
 to be recast as
-
+%
 \begin{equation} \label{eq:matrix_leontief}
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
@@ -778,8 +778,8 @@ to be recast as
 	- \vec{B}_{\dot{W}}
 	- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}.
 \end{equation}
-
-\noindent{}Equation~\ref{eq:matrix_leontief} is the matrix version 
+%
+Equation~\ref{eq:matrix_leontief} is the matrix version 
 of the total energy accounting equation
 written in terms of embodied energy ($\vec{B}$), 
 energy intensities ($\boldsymbol{\varepsilon}$),
@@ -812,14 +812,8 @@ knowledge of input-output matrix ($\vec{A}$)
 would be derived from the transaction matrix ($\vec{X}_{t}$),
 as shown in Appendix~\ref{chap:Estimating_A}.
 
-
-% %%%%%%%%%% Example C %%%%%%%%%%
-% \section{Estimating $\boldsymbol{\varepsilon}$}
-% \label{sec:estimating_epsilon-intensity_chapter}
-% %%%%%%%%%%
-
 Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
-
+%
 \begin{equation} \label{eq:epsilon_derivation_1}
 	\hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \boldsymbol{\varepsilon}
 	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
@@ -828,9 +822,9 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 	- \vec{E}_{0}
 	- \vec{T}_{1} 
 \end{equation}
-
-\noindent{}and
-
+%
+and
+%
 \begin{equation} \label{eq:epsilon_derivation_2}
 	\boldsymbol{\varepsilon}
 	= {\left[ \hat{\vec{X}} (\vec{A}^{\mathrm{T}} - \vec{I}) \right]}^{-1}
@@ -842,17 +836,17 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 			- \vec{T}_{1} 
 		\right].
 \end{equation}
-
-\noindent{}We apply the matrix identity 
+%
+We apply the matrix identity 
 \cite[Formula~6.2, p.~308]{Beyer:1991vd}
-
+%
 \begin{equation} \label{eq:matrix_identity_Beyer}
 	{\left(\vec{F}\vec{G}\vec{H}\right)}^{-1} 
 	= \vec{H}^{-1} \vec{G}^{-1} \vec{F}^{-1}
 \end{equation}
-
-\noindent{}to the right side of Equation~\ref{eq:epsilon_derivation_2} to obtain
-
+%
+to the right side of Equation~\ref{eq:epsilon_derivation_2} to obtain
+%
 \begin{equation} \label{eq:epsilon_derivation_3}
 	\boldsymbol{\varepsilon}
 	= {(\vec{A}^{\mathrm{T}} - \vec{I})}^{-1} {\hat{\vec{X}}}^{-1} 
@@ -864,8 +858,8 @@ Equation~\ref{eq:matrix_leontief} can be rearranged to obtain
 			- \vec{T}_{1} 
 		\right].
 \end{equation}
-
-\noindent{}Finally, we can multiply both parenthetical terms\footnote{The parenthetical
+%
+Finally, we can multiply both parenthetical terms\footnote{The parenthetical
 terms on the right side of Equation~\ref{eq:epsilon_derivation_3} 
 are $(\vec{A}^{\mathrm{T}} - \vec{I})$ and
 $
@@ -878,7 +872,7 @@ $
 \right]
 $.} 
 on the right side of Equation~\ref{eq:epsilon_derivation_3} by $-1$ to obtain
-
+%
 \begin{equation} \label{eq:epsilon_leontief_with_A}
 	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
@@ -889,8 +883,8 @@ on the right side of Equation~\ref{eq:epsilon_derivation_3} by $-1$ to obtain
 				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
 		\right].
 \end{equation}
-
-\noindent{}Comparison of Equations~\ref{eq:epsilon_leontief_with_A}
+%
+Comparison of Equations~\ref{eq:epsilon_leontief_with_A}
 and~\ref{eq:B-epsilon} shows that 
 the matrix form is an extension of the algebraic form of the energy intensity equation.
 
@@ -912,10 +906,13 @@ in the context of our running example, the US auto industry.
 Equation~\ref{eq:epsilon_leontief_with_A} shows 
 that it is possible to estimate the energy intensity 
 of products of economic sectors 
-using the Input-Output (I-O) analysis method.\footnote{For a discussion
+using the Input-Output (I-O) analysis method.%
+	\footnote{
+	For a discussion
 	of differences between Equation~\ref{eq:epsilon_leontief_with_A} 
 	and similar equations in the literature, 
-	see Appendix~\ref{chap:Casler}.}
+	see Appendix~\ref{chap:Casler}.
+	}
 Several studies have used similar energy-based, 
 input-output methods (EI-O) to estimate the energetic
 cost of goods and services produced by various
@@ -957,13 +954,16 @@ of outputs from all 87 BEA sectors.
 The energy intensity of the Motor Vehicles and Equipment sector (63) 
 and selected other sectors are given in 
 Tables~\ref{tab:C_and_H_auto_energy_intensities}
-and~\ref{tab:C_and_H_selected_energy_intensities}.\footnote{Values 
+and~\ref{tab:C_and_H_selected_energy_intensities}.%
+	\footnote{
+	Values 
 	from Costanza and Herendeen's 
 	DIRECT method are provided here. 
 	See Section~\ref{sec:energy_input_vector} for discussion
 	of the differences between DIRECT and DEC methods
 	and justification for reporting
-	DIRECT method values only.} 
+	DIRECT method values only.
+	} 
 
 \begin{table}
 \caption[Motor vehicles and equipment energy intensity]{Motor Vehicles and Equipment sector (63) 
@@ -1000,15 +1000,6 @@ and~\ref{tab:C_and_H_selected_energy_intensities}.\footnote{Values
 \label{tab:C_and_H_selected_energy_intensities}
 \end{table}
 
-% However, the Costanza results~\cite{Costanza:1984tq} 
-% (and nearly all I-O results in the literature)
-% assume the following: negligible energy input from society 
-% (which is probably a reasonable assumption for the US), 
-% steady-state economic conditions with negligible accumulation 
-% of embodied energy in economic sectors 
-% (which probably didn't exist in the US in the late 1960s), and 
-% negligible energy embodied in wastes (which is untrue).
-
 The Economic Input-Output Life Cycle 
 Assessment~(EIOLCA) online tool~\cite{EIOLCA2014} 
 is based on the framework outlined
@@ -1028,14 +1019,6 @@ a total flow of 8.33~TJ (10$^{12}$~J) of energy through the economy,
 2.19~TJ from the power generation and 
 supply sector~(221100) and 1.25~TJ from the
 iron and steel mills sector~(331110).
-%**** Mik: instead of estimating embodied energy content, 
-%calculate energy intensity. 
-%That way, we won't need to deal with the auto price!---MKH ****
-%Assuming an average vehicle price of \$30,000,
-%in 2002 **** MCD---Becky, is this reasonable? ****
-%this equates to an embodied energy of
-%250 GJ/vehicle, 67\% greater than the value
-%estimated by Bullard and Herendeen.
 
 \begin{table}
 \caption[Automobile manufacturing sector energy intensity]{Automobile manufacturing 
