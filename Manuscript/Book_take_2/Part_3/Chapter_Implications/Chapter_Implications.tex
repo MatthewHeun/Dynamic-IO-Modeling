@@ -509,7 +509,7 @@ can depreciate.
 A physical accounting framework that fully includes capital stock
 (lower-right quadrant of Figure~\ref{fig:coords_of_analysis}) 
 is described by Equation~\ref{eq:intensity_lower_right_no_society}. 
-
+%
 \begin{equation} \label{eq:intensity_lower_right_no_society}
 	\boldsymbol{\varepsilon}
 	= {\left( \vec{I} - {\vec{A}}^{\mathrm{T}} \right)}^{-1}
@@ -519,10 +519,10 @@ is described by Equation~\ref{eq:intensity_lower_right_no_society}.
 			  - \vec{B}_{\dot{W}}
 			  - \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K} \right].
 \end{equation}
-
-\noindent{}Differences between Equation~\ref{eq:intensity_lower_right_no_society}
+%
+Differences between Equation~\ref{eq:intensity_lower_right_no_society}
 and Equation~\ref{eq:intensity_lower_left} include:
-
+%
 \begin{itemize}
 	\item{Equation~\ref{eq:intensity_lower_right_no_society} includes $\vec{A}$
 	while Equation~\ref{eq:intensity_lower_left} splits $\vec{A}$ into
@@ -563,13 +563,13 @@ But, it may be possible to develop a metric for the resource material efficiency
 economic sector ($\eta_{\dot{R}}$),
 i.e.\ the fraction of the material that actually makes it into the product, 
 such that:
-
+%
 \begin{equation} \label{eq:manufacturing_effiency}
 	\eta_{\dot{R}_{j}}
 	\equiv \frac{\dot{P}_{j}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}.
 \end{equation}
-
-\noindent{}With the above definition, 
+%
+With the above definition, 
 the scrap rate for resources could be expressed as
 $(1~-~\eta_{\dot{R}}) \sum\limits_{i=1}^{n} \dot{R}_{ij}$.
 Allwood et.\ al.~\cite[p. 193]{allwood2012sustainable} 
@@ -600,7 +600,7 @@ for selected manufactured goods.\cite{allwood2012sustainable}}
 Furthermore, one could assume that the rate
 of short-lived materials ($\dot{S}$) used by a sector could be given as a 
 fraction of the resource ($\dot{R}$) use rate such that:
-
+%
 \begin{equation}
 	\rho_{\dot{S}_{j}}
 	\equiv \frac{\dot{S}_{j0}}{\sum\limits_{i=1}^{n} \dot{R}_{ij}}
@@ -609,15 +609,15 @@ fraction of the resource ($\dot{R}$) use rate such that:
 
 With the above definitions, the waste resource rate from an economic sector
 can be given as
-
+%
 \begin{equation}
 	\dot{R}_{j0} + \dot{S}_{j0}
 	= (1 - \eta_{\dot{R}_{j}} + \rho_{\dot{S}_{j}}) \sum\limits_{i=1}^{n} \dot{R}_{ij}.
 \end{equation}
-
-\noindent{}The embodied energy in the waste materials would need to be estimated
+%
+The embodied energy in the waste materials would need to be estimated
 from the embodied energy of the incoming resource and short-lived material flows as
-
+%
 \begin{equation}
 	\dot{B}_{\dot{W}_{j}}
 	= \dot{B}_{\dot{R}_{j0}} + \dot{B}_{\dot{S}_{j0}}.
@@ -631,7 +631,7 @@ from the embodied energy of the incoming resource and short-lived material flows
 
 A possible simplification to Equation~\ref{eq:intensity_lower_right_no_society}
 can be obtained from a control volume around the stock of capital in sector $j$:
-
+%
 \begin{equation}
 	\frac{\mathrm{d}B_{K_{j}}}{\mathrm{d}t}
 	= \sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}} 
@@ -640,16 +640,16 @@ can be obtained from a control volume around the stock of capital in sector $j$:
 
 We can express the incoming energy embodied in capital ($\sum_{i=1}^{n} \dot{B}_{\dot{K}_{ij}}$)
 as a fraction ($\alpha_{B_{j}}$) of the capital stock ($B_{K_{j}}$) as
-
+%
 \begin{equation}
 	\alpha_{B_{j}}
 	\equiv 
 	\frac{\sum\limits_{i=1}^{n} \dot{B}_{\dot{K}_{ij}}} {B_{K_{j}}}
 \end{equation}
-
-\noindent{}for $j \in [2,n]$.
+%
+for $j \in [2,n]$.
 Together with the Kronecker delta ($\delta_{ij}$), we can write
-
+%
 \begin{equation}
 	\hat{\boldsymbol{\alpha}}_{B}
 	\equiv
@@ -660,32 +660,32 @@ Together with the Kronecker delta ($\delta_{ij}$), we can write
 		0               & \alpha_{B_{3}}  \\
 	\end{bmatrix}.
 \end{equation}
-
-\noindent{}Thus, the embodied energy accounting equation around
+%
+Thus, the embodied energy accounting equation around
 the stock of capital in the economy can be written in matrix form as
-
+%
 \begin{equation}
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 	= \hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
 	- \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}.
 \end{equation}
-
-\noindent{}Rearranging slightly gives
-
+%
+Rearranging slightly gives
+%
 \begin{equation} \label{eq:alpha_cap_stock}
 	\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}
 	= \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
 	+ \hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K},
 \end{equation}
-
-\noindent{}which says that incoming capital ($\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}$)
+%
+which says that incoming capital ($\hat{\boldsymbol{\alpha}}_{B} \vec{B}_{K}$)
 can be used to either
 increase the stock of capital in the economy 
 $\left( \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} \right)$
 or overcome depreciation ($\hat{\boldsymbol{\gamma}}_{B} \vec{B}_{K}$).
 Substituting Equation~\ref{eq:alpha_cap_stock} into
 Equation~\ref{eq:intensity_lower_right_no_society} gives
-
+%
 \begin{equation} \label{eq:epsilon_leontief_with_A_alpha}
 	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
@@ -731,7 +731,7 @@ Equation~\ref{eq:epsilon_leontief_with_A}
 adds the effect of energy input from society to the economy,
 effectively moving from the top half to the lower half of the lower-right quadrant
 in Figure~\ref{fig:coords_of_analysis}.
-
+%
 \begin{equation}
 	\boldsymbol{\varepsilon} 
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
@@ -889,38 +889,27 @@ Viewing these dimensions through the lens of our framework
 illustrates some important points about measures 
 of economic growth and well-being.
 
-% We're not using this footnote, because we have moved 
-% toward talking about ``growth'' and away from talking about ``development.''
-% Economic ``development''\footnote{We choose 
-% 	to use the word ``development'' to
-% 	describe expanding economies, despite significant misgivings about the term. 
-% 	The unambiguously positive connotations of the words ``development'' and ``developed''
-% 	fail to capture the nuances of travel along economic development paths:
-% 	there are so many ways in which life experience in ``developed'' countries 
-% 	is both better and worse than life in ``developing'' countries.
-% 	We hope to convey our misgivings by surrounding these words with quotation marks in this text.}
-% 
 With reference to Figure~\ref{fig:C_value}, GDP is calculated by
-
+%
 \begin{equation} \label{eq:GDP_def}
 	GDP
 	= \sum\limits_{j=2}^{n} \dot{X}_{j}
 \end{equation}
-
-\noindent{}where $n$ is the number of sectors in the economy.
+%
+where $n$ is the number of sectors in the economy.
 Equation~\ref{eq:GDP_def} clearly shows that 
 $GDP$ is a \emph{flow} of value in units of \$/year.
 
 A second possible measure of economic well-being is a \emph{stock}, 
 wealth:
-
+%
 \begin{equation} \label{eq:Dev_Integral_Wealth}
 	X_{j}(t) 
 	= X_{j}(0) 
 	+ \int_{t=0}^{t=t} \frac{\mathrm{d}X_{j}}{\mathrm{d}t}\mathrm{d}t,
 \end{equation}
-
-\noindent{}where $j=1$ for societal wealth 
+%
+where $j=1$ for societal wealth 
 and $j \in [2,n]$ for corporate wealth, both measured in dollars.
 
 As an economy grows,
@@ -938,14 +927,14 @@ could be considered a \emph{proxy} for growth.\footnote{Embodied energy
 Equation~\ref{eq:Dev_Integral_Economy} indicates how accumulated
 embodied energy in the capital stock 
 of an economy ($\vec{B}_{K}$) could be calculated:
-
+%
 \begin{equation} \label{eq:Dev_Integral_Economy}
 	\vec{B}_{K}(t) 
 	= \vec{B}_{K}(0) 
 	+ \int_{t=0}^{t=t} \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\mathrm{d}t,
 \end{equation}
-
-\noindent{}where $\vec{B}_{K}$ is given by Equation~\ref{eq:B_vec_def}.
+%
+where $\vec{B}_{K}$ is given by Equation~\ref{eq:B_vec_def}.
 Equation~\ref{eq:Dev_Integral_Economy} clearly shows
 that energy embodied in capital ($\vec{B}_{K}$) 
 is a \emph{stock} (in units of joules), not a flow.
@@ -987,14 +976,6 @@ But as the GDP decline continues,
 maintenance flows for capital stock will be reduced.
 If depreciation overtakes maintenance, $\vec{B}_{K}$ will decline. 
 
-% This next paragraph is too speculative.
-% We don't have evidence of this at this time.
-% If economic decline is associated with significant external 
-% infrastructure investment (such as occurred in post-colonial Africa),
-% GDP may decrease 
-% while the stock of energy embodied in the economy ($\vec{B}_{K}$) increases 
-% due to foreign aid focused on infrastructure enhancement. 
-
 ``Extract and export'' economies may exhibit different dynamics.
 GDP growth occurs as resources are extracted and sold, 
 but $\vec{B}_{K}$ remains flat if that income is not 
@@ -1015,6 +996,7 @@ are complementary factors of production for economic processes.
 But, we can go further than linking physical capital with financial resources.
 If capital~($\vec{B}_{K}$) is to be useful, we need financial resources
 or currency~($\dot{X}$) to 
+%
 \begin{itemize}
 	\item{purchase direct energy~($\dot{E}$) to power the capital,}
 	
@@ -1097,7 +1079,7 @@ we defined the rate of accumulation
 of embodied energy within the economy
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$
 by the following equation:
-
+%
 \begin{equation}
 	\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
 	= \vec{E}_{0}
@@ -1140,8 +1122,6 @@ $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$,
 via reduced $\vec{E}_{0}$, all other things being equal. 
 
 If recycling produces a net reduction in energy demand ($\vec{E}_{0}$), 
-% i.e.\ if the effect of displaced production dominates over the effect 
-% of energy consumed in recycling processes, 
 the upward pressure on growth 
 $\left(\frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}\right)$ 
 from decrease in depreciation 
@@ -1235,15 +1215,15 @@ capital stock is addressed in Section~\ref{sec:people_as_stock}.
 
 In Chapter~\ref{chap:materials}, 
 we introduced Equation~\ref{eq:C_CV_all_b}:
-
+%
 \begin{align}\tag{\ref{eq:C_CV_all_b}}
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
 	=\sum_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}
 	+ \sum_{i,j}\dot{S}_{ij}
 	+ \sum_{j}\gamma_{K_{j}}K_{j}.
 \end{align}
-
-\noindent{}which indicates that 
+%
+which indicates that 
 natural resources in the 
 biosphere~$\left(- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
 are depleted by the economy
@@ -1268,7 +1248,7 @@ of some sectors of the economy, provided that there is
 equal contraction elsewhere.}
 we can see that Equation~\ref{eq:C_CV_all_b}
 reduces to:
-
+%
 \begin{align}\label{eq:C_CV_all_c}
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
 	= \sum_{i,j}\dot{S}_{ij}
@@ -1391,16 +1371,16 @@ We may characterize constant material throughput
 as either constant rate of extraction, constant rate of
 waste disposal, or both.
 In the language of our framework, we could write:
-
+%
 \begin{align}\label{eq:const_throughput}
 	\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{R}_{0}\right)		&
 	= 0,																							\\
 	\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{S}_{0}\right)		&
 	= 0,
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 	\sum\limits_{i}
 			\left[
@@ -1452,7 +1432,7 @@ GDP to be constant.\footnote{This is a theoretical exercise,
 Within our framework,
 a condition of constant GDP would be
 characterized by the following equation:
-
+%
 \begin{equation}\label{eq:const_GDP}
 	\frac{\mathrm{d}}{\mathrm{d}t}\left(GDP\right)
 	=	\sum\limits_{j}\frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{X}_{j}\right)
@@ -1486,6 +1466,7 @@ Many authors argue that increasing GDP
 no longer guarantees increasing welfare~\cite{G-R1975a, Wackernagel1996,
 Cobb1999, Daly2006, Costanza2014} 
 for two main reasons:
+%
 \begin{itemize}
 	\item firstly, that the costs of growth in GDP (e.g., externalities 
            and defensive expenditures) outweigh any benefit 
@@ -1511,24 +1492,6 @@ However, alternative metrics, such as ISEW or GPI, can perform such a function.}
 Thus, a case could be made for constraining GDP growth in wealthy countries 
 so that resources may be allocated to poorer countries
 where growth in GDP is still likely to be ``economic.''~\cite{Daly2006}
-
-
-%****** Mik: Finish this section. 
-%In terms of what a SSE would look like in the I-O framework, 
-%at first blush, I would think that dB/dt = 0 is one aspect.  
-%Also, with no growth, inflow rates = depreciation rates.  
-%The larger that B is for any society, the larger E must be (to overcome depreciation).  
-%To minimize E, hyper-recycling is probably useful.  
-%Those are at least a place to start. ******
-%
-%****** In our discussion, 
-%we also addressed the attempts at SSE from point of view of society. 
-%In order to achieve this goal \emph{without} recycling, 
-%the goods and services sector should have to increase extraction to offset decreasing ore grade, 
-%the energy sector should have to increase extraction of energy 
-%to allow increasing extraction (unless efficiency could make up the gap: unlikely) 
-%in which case the SSE would be violated from these two and from the POV of the earth.
-%******
 
 
 %%%%%%%%%% Energy Input Vector %%%%%%%%%%
