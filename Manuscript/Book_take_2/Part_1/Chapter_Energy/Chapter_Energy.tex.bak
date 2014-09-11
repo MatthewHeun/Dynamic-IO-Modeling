@@ -47,23 +47,32 @@ are discussed.}
 
 
 
-In Chapter~\ref{chap:intro}, we formulated a model of economies
-consisting of producers and consumers who exchange
+In Chapters~\ref{chap:intro} and~\ref{chap:acct_for_won}, 
+we showed that energy consumption is intimately linked to economic activity
+and established the metabolism metaphor for the economy.
+From the metabolism metaphor, we understand that the economy 
+consists of producers and consumers who exchange
 goods and services and factors of production 
-while extracting resources and disposing of wastes. 
+while extracting resources from and disposing wastes to the biosphere. 
 In Chapter~\ref{chap:materials}, we established the material basis of economies: 
-economies are analogous to organisms with metabolisms that processes
+economies processes
 raw resources for the benefit of producers and consumers 
 while generating unavoidable wastes.
 In this chapter, we describe and analyze the 
 direct energy
-that is associated with material flows
-through an economy.
+that is associated with economic activity within an economy.
 
-All forms of energy provide the potential to do mechanical work.\footnote{The 
-quantification of the mechanical work potential of energy is \emph{exergy}.
-When energy is ``consumed'' by an economy, exergy (work potential) is destroyed.
-These topics are discussed in greater detail in Section~\ref{sec:material_quality}.}
+All forms of energy provide the potential% 
+	\footnote{
+	The quantification of the mechanical work potential of energy is \emph{exergy}.
+	When energy is ``consumed'' by an economy, exergy (work potential) is destroyed.
+	These topics are discussed in greater detail in Section~\ref{sec:material_quality}.
+	}
+to do mechanical work.%
+	\footnote{
+	Mechanical work is the product of a force and the distance
+	through which it acts.
+	}
 Energy (as mechanical work) 
 is an essential aspect of the metabolic economy;
 with it, materials are refined, shaped, and assembled
@@ -142,7 +151,7 @@ rates ($\dot{E}$)
 less outflowing energy carried by wastes 
 ($\dot{Q}_{out}$). 
 Energy is conserved: it be neither created nor destroyed.
-
+%
 \begin{equation} \label{eq:First_Law_with_accumulation}
 	\frac{\mathrm{d}E}{\mathrm{d}t} = \sum \dot{E} - \sum \dot{Q}_{out}
 \end{equation}
@@ -151,7 +160,7 @@ When there is no accumulation of direct energy within the boundary
 $\left( \frac{\mathrm{d}E}{\mathrm{d}t} = 0 \right)$, the sum of all 
 signed direct energy flow rates ($\dot{E}$) 
 and waste heats ($\dot{Q}_{out}$) will be zero.
-
+%%
 \begin{equation} \label{eq:First_Law_no_accumulation}
 	0 = \sum \dot{E} - \sum \dot{Q}_{out}
 \end{equation}
@@ -176,7 +185,7 @@ For example, the direct energy inputs from other sectors of the economy
 (labeled as $\dot{E}_{\dot{R}}$, $\dot{E}_{\dot{S}}$, and $\dot{E}_{\dot{K}}$ 
 at the top of Figure~\ref{fig:PERKS_energy_content}) can be summed to $\dot{E}$ 
 (in Figure~\ref{fig:PERKS_energy}) such that
-
+%
 \begin{equation} \label{eq:direct_energy_aggregation}
 	\dot{E} 
 	= \dot{E}_{\dot{R}} 
@@ -230,15 +239,15 @@ both direct energy ($\dot{E}$), and waste heat ($\dot{Q}$)
 are accounted by the First Law of Thermodynamics. 
 Accounting for possible accumulation of direct energy, 
 the First Law of Thermodynamics for Example~A indicates that
-
+%
 \begin{equation} \label{eq:dE_0/dt_single_sector}
 	\frac{\mathrm{d}E_0}{\mathrm{d}t} 
 	= \dot{Q}_{10} 
 	- \dot{E}_{01}
 \end{equation}
-
-\noindent and
-
+%
+and
+%
 \begin{equation} \label{eq:dE_1/dt_single_sector}
 	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 
 	= \dot{E}_{01} 
@@ -274,15 +283,15 @@ in Chapter~\ref{chap:embodied_energy}.)
 Thus, the accumulation rates for direct energy 
 $\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$ in the above equations 
 could be set to zero as follows:
-
+%
 \begin{equation} \label{eq:biosphere_direct_energy_steady_state}
 	0 
 	= \dot{Q}_{10} 
 	- \dot{E}_{01}
 \end{equation}
-
-\noindent and
-
+%
+and
+%
 \begin{equation} \label{eq:single_sector_direct_energy_steady_state}
 	0 
 	= \dot{E}_{01} 
@@ -290,8 +299,8 @@ could be set to zero as follows:
 	- \dot{E}_{1} 
 	- \dot{Q}_{10}.
 \end{equation}
-
-\noindent{}However, we shall see later (in Chapter~\ref{chap:direct_energy}) 
+%
+However, we shall see later (in Chapter~\ref{chap:direct_energy}) 
 that keeping direct energy accumulation terms
 $\left( \frac{\mathrm{d}E}{\mathrm{d}t} \right)$ 
 provides an advantage when deriving embodied energy accounting equations.
@@ -323,16 +332,16 @@ be conserved around each
 entity (1 and 2) as well as around the Biosphere~(0).
 
 \noindent{}First Law energy accounting around the Biosphere~(0) and Society~(1) gives
-
+%
 \begin{equation} \label{eq:CV_E_dot_0}
 	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
 	= \dot{Q}_{10} 
 	+ \dot{Q}_{20} 
 	- \dot{E}_{02},
 \end{equation}
-
-\noindent and 
-
+%
+and 
+%
 \begin{equation} \label{eq:CV_E_dot_1}
 	\frac{\mathrm{d}E_{1}}{\mathrm{d}t} 	 
 	= \dot{E}_{11} 
@@ -342,7 +351,7 @@ entity (1 and 2) as well as around the Biosphere~(0).
 \end{equation}
 
 Note that $\dot{E}_{12}$ represents useful work that people
-and draught animals contribute to Production (2). 
+and draft animals contribute to Production (2). 
 Ayres and Warr~\cite{Ayres:2003ec,Warr:2012cg} call this ``muscle work.'' 
 $\dot{E}_{11}$ represents the muscle work required for consumption. 
 Direct energy (electricity, oil, natural gas, etc.) 
@@ -352,7 +361,7 @@ is included in $\dot{E}_{21}$.
 The First Law around Production (2), 
 including the accumulation rate of direct energy in the sector 
 $\left(\frac{\mathrm{d}E_{2}}{\mathrm{d}t}\right)$, yields
-
+%
 \begin{equation} \label{eq:CV_E_dot_2}
 	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 
 	= \dot{E}_{02} 
@@ -361,8 +370,8 @@ $\left(\frac{\mathrm{d}E_{2}}{\mathrm{d}t}\right)$, yields
 	- \dot{E}_{2} 
 	- \dot{Q}_{20}.
 \end{equation}
-
-\noindent It is notable that Production (2) consumes ($\dot{E}_{22}$)
+%
+It is notable that Production (2) consumes ($\dot{E}_{22}$)
 a portion of its gross energy output ($\dot{E}_2$): \emph{it takes energy to make energy}.
 The gross direct energy production of the Energy sector~(2) is 
 $\dot{E}_{2}$, and the direct energy consumption of the Energy sector~(2) is 
@@ -371,13 +380,13 @@ The net direct energy production Energy~(2)
 is given by $\dot{E}_{2} - (\dot{E}_{12} + \dot{E}_{22})$.
 The \emph{energy return on investment}
 ($EROI$)~\cite{Smith1960, Hall1986} of the Energy sector~(2) is given by
-
+%
 \begin{equation} \label{eq:C-EROI}
 	EROI_{2} 
 	= \frac{\dot{E}_{2}}{\dot{E}_{12} + \dot{E}_{22}}.
 \end{equation}
-
-\noindent{}EROI represents the energy production \emph{per unit} of energy
+%
+EROI represents the energy production \emph{per unit} of energy
 invested by society in the production process and may
 be considered a measure of the ease of obtaining
 energy resources from the biosphere.
@@ -394,8 +403,6 @@ the EROI defined here is EROI$_{2,d}$~\cite[Table~1]{Murphy2011}
 or GER$_{\gamma}$~\cite[Table~1]{Brandt2011},
 where GER stands for \emph{gross energy ratio}
 an equivalent metric to EROI\@.
-
-%**** MCD discussion of resource quality ****
 
 As discussed in Chapter~\ref{chap:materials},
 society relies heavily on concentrations of high quality
@@ -415,36 +422,35 @@ As EROI (and thus energy quality) declines,
 more energy is needed to extract and deliver energy from the environment,
 both directly, for example the energy to pump oil from deeper underground,
 and indirectly, in order to build the extra oil rigs necessary to 
-maintain production levels.\footnote{This issue 
+maintain production levels.%
+	\footnote{
+	This issue 
 	of resource quality will be re-visited in 
 	Chapters~\ref{chap:embodied_energy}~and~\ref{chap:value}
 	and discussed in more
 	detail in Section~\ref{sec:resource_quality_and_irreversibility}.
 	}
 
-****
-%**** Mik---Add a discussion about system boundaries. ****
-
 Equation~\ref{eq:CV_E_dot_0} can be generalized with a sum as
-
+%
 \begin{equation} \label{eq:CV_E_biosphere_general}
 	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 
 	= \sum\limits_{i=1}^n \left( \dot{Q}_{i0} - \dot{E}_{0i} \right),
 \end{equation}
-
-\noindent where $n$ is the number of economic sectors in the accounting framework
+%
+where $n$ is the number of economic sectors in the accounting framework
 (in this example, $n = 2$).
 Similarly, Equations~\ref{eq:CV_E_dot_1}~and~\ref{eq:CV_E_dot_2} 
 can generalized with a sum as
-
+%
 \begin{equation} \label{eq:B-CV_E_econ_general}
 	\frac{\mathrm{d}E_{j}}{\mathrm{d}t} 
 	= \sum\limits_{i=0}^n\dot{E}_{ij} 
 	- \dot{E}_{j}  
 	- \dot{Q}_{j0},
 \end{equation}
-
-\noindent where $j \in [1, n]$.
+%
+where $j \in [1, n]$.
 
 
 %%%%%%%%%% Energy: Example C %%%%%%%%%%
@@ -468,7 +474,7 @@ a fuller picture of direct energy flows among sectors
 
 The First Law of Thermodynamics applied to the 
 Biosphere~(0), Society~(1), and the Energy~(2) gives
-
+%
 \begin{equation} \label{eq:C-CV_E_dot_0}
 	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
 	= \dot{Q}_{10} 
@@ -477,7 +483,7 @@ Biosphere~(0), Society~(1), and the Energy~(2) gives
 	- \dot{E}_{02} 
 	- \dot{E}_{03},
 \end{equation}
-
+%
 \begin{equation} \label{eq:C-CV_E_dot_1}
 	\frac{\mathrm{d}E_{1}}{\mathrm{d}t}
 	= \dot{E}_{11}
@@ -486,9 +492,9 @@ Biosphere~(0), Society~(1), and the Energy~(2) gives
 	- \dot{E}_{1}
 	- \dot{Q}_{10},
 \end{equation}
-
-\noindent and 
-
+%
+and 
+%
 \begin{equation} \label{eq:C-CV_E_dot_2}
 	\frac{\mathrm{d}E_{2}}{\mathrm{d}t} 	 
 	= \dot{E}_{02} 
@@ -502,7 +508,7 @@ Biosphere~(0), Society~(1), and the Energy~(2) gives
 The First Law applied to the Goods and Services sector~(3) including, 
 for now, the accumulation rate of direct energy in the sector 
 $\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$ yields
-
+%
 \begin{equation} \label{eq:C-CV_E_dot_3}
 	\frac{\mathrm{d}E_{3}}{\mathrm{d}t} 
 	= \dot{E}_{03} 
@@ -516,22 +522,22 @@ $\left(\frac{\mathrm{d}E_{3}}{\mathrm{d}t}\right)$ yields
 Similar to Example~B, we can generalize 
 Equations~\ref{eq:C-CV_E_dot_0}--\ref{eq:C-CV_E_dot_3}
 with sums to obtain
-
+%
 \begin{equation} \label{eq:C-CV_E_biosphere_general}
 	\frac{\mathrm{d}E_{0}}{\mathrm{d}t} 	 
 	= \sum\limits_{i=1}^n \dot{Q}_{i0} - \sum\limits_{i=1}^n \dot{E}_{0i}
 \end{equation}
-
-\noindent and
-
+%
+and
+%
 \begin{equation} \label{eq:C-CV_E_econ_general}
 	\frac{\mathrm{d}E_{j}}{\mathrm{d}t} 
 	= \sum\limits_{i=0}^n\dot{E}_{ij} 
 	- \dot{E}_{j}  
 	- \dot{Q}_{j0},
 \end{equation}
-
-\noindent where $j \in [1, n]$. 
+%
+where $j \in [1, n]$. 
 Equations~\ref{eq:C-CV_E_biosphere_general} and 
 \ref{eq:C-CV_E_econ_general} are identical to 
 Equations~\ref{eq:CV_E_biosphere_general} and 
@@ -579,16 +585,17 @@ Table~\ref{tab:auto_energy} shows the breakdown of energy by source.
 \caption[Energy inputs to US auto industry in 2010]{Energy inputs to US auto industry 
 (NAICS Code 336111) in 2010.\cite[Table 7.6]{EIA:2014aa}}
 \begin{center}
- \begin{tabular}{ r @{\hspace{2em}} c @{\hspace{2em}} c }
+ \begin{tabular}{ r @{\hspace{2em}} l @{\hspace{2em}} l }
 \toprule 
-Source & Quantity \\
+Source 			&		Quantity											&	Energy content [kJ]						\\
 \midrule
-Electricity 	&   $3.0 \times 10^{9}$ kW-hr   			&	$10.8 \times 10^{12}$ $^{a}$		\\
-Natural gas 	&   $1.5 \times 10^{10}$  ft$^{3}$		&	$16.3 \times 10^{12}$				\\
-Other       	&   $1.0 \times 10^{12}$  BTU				&	$1.1 \times 10^{12}$					\\
+Electricity 	&		$3.0 \times 10^{9}$ kW-hr   			&	$10.8 \times 10^{12}$ $^{a}$		\\
+Natural gas 	&		$1.5 \times 10^{10}$  ft$^{3}$		&	$16.3 \times 10^{12}$				\\
+Other       	&		$1.0 \times 10^{12}$  BTU				&	$1.1 \times 10^{12}$					\\
 \midrule
-Total       		&   $2.8 \times 10^{13}$ kJ (thermal equivalent) \\
+Total       		&		\multicolumn{2}{l}{$2.8 \times 10^{13}$ kJ (thermal equivalent)}			 \\
 \bottomrule
+\multicolumn{3}{l}{{\footnotesize $^{a}$ Non-quality corrected value}}
 \end{tabular}
 \end{center}
 \label{tab:auto_energy}
