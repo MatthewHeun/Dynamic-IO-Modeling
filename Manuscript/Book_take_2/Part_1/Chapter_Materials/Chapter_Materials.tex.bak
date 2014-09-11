@@ -44,35 +44,48 @@ example of the US auto industry.
 
 %% Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout.
 
-In Chapter~\ref{chap:intro}, we put forward the idea that 
-economies are like organisms,
+In Chapter~\ref{chap:acct_for_won}, we put forward the idea that 
+the economy is like a metabolism,
 using energy and material resources 
-derived from the natural environment
-for their construction, maintenance and growth.
+extracted from the natural environment
+for the construction, maintenance, and growth of society.
+We also noted, 
+in Section~\ref{sec:new_national_accounting},
+that to fully make use of the metabolism metaphor,
+we must track material and energy flows
+\emph{and accumulations} 
+not just at the economy-wide level,
+but also at the sectoral level.
 This chapter explores
-this idea further by observing the interchange of materials \emph{within}
-an economy, as well as exchanges of materials between an economy and 
-its surrounding environment---the biosphere. 
+this idea further by observing 
+the accumulation and interchange of materials 
+\emph{within} an economy, 
+as well as exchanges of materials 
+between an economy and its surrounding environment---the biosphere. 
 
 % [THE FOLLOWING PARAGRAPH CONNECTS MORE WITH THE METABOLISM METAPHOR,
 % NEED TO DECIDE BETWEEN THAT AND THE ONE AFTER OR MAYBE MIX THE TWO]
 
-% Just as a living organism takes
-% in food, water and air, so too an
-% economy must take in raw materials from its environment. To a large extent,
-% the major exchanges of materials between industrial economies and their 
-% environment mirror those of an animal. Large inputs of fresh water, hydrocarbons
-% and oxygen with the emission of carbon dioxide and polluted water [REF BRANDT]
-% dioxide and hydro-carbons These
-% materials are then used for a number of different purposes. Some
-% become the building blocks from which the physical structures within the 
-% economy---buildings, roads, even people---are composed. These materials
-% must be extracted from the environment and processed, transported and then
-% manufactured into final goods. Such activities require energy resources. In
-% an economy primarily dependent on the combustion of fossil fuels, energy conversion
-% of energy necessarily requires the presence of oxygen in the atmosphere and
-% the emission of carbon dioxide. Many processes also require flows of materials, 
-% especially fresh water, that are not directly embodied in the final product.
+ Just as a biological organism metabolizes
+ food, water and air, 
+ so too an economy 
+ must take in raw materials from its environment. 
+ To a large extent,
+ the major exchanges of materials between industrial economies and 
+ the natural environment mirror those of an animal. 
+ Large inputs of fresh water, hydrocarbons and oxygen 
+ resulting in the emission of carbon dioxide and polluted water.~\cite{SweeneySmith2013}
+ These materials inputs are used for a number of different purposes. 
+ In `anabolic' processes, materials become the building blocks 
+ from which the physical structures within the 
+ economy---buildings, roads, even people---are composed. 
+ These materials must be extracted from the environment and processed, transported and then
+ manufactured into final goods. 
+ Such activities require energy resources. In
+ an economy primarily dependent on the combustion of fossil fuels, energy conversion
+ of energy necessarily requires the presence of oxygen in the atmosphere and
+ the emission of carbon dioxide. Many processes also require flows of materials, 
+ especially fresh water, that are not directly embodied in the final product.
  
 
 There are many easily observable instances 
@@ -110,7 +123,7 @@ a computer by which to access it.
 It almost goes without saying that 
 all materials within the economy (the \emph{econosphere}~\cite{Boulding1966})
 started their ``lives'' within the biosphere,
-be they food, water or paper, petroleum or rock. 
+be they food, water or paper, petroleum, or rock. 
 %They were extracted and processed, transported and
 %transformed requiring yet more materials and energy inputs in the form of
 %electricity or fuels.
@@ -155,8 +168,6 @@ if the global in-use per capita stock of metals were to
 increase to the level of industrialized nations,
 the total stock might be 3-9 times the present level.\cite{Graedel2010}
 
-**** MCD - try to reduce treadmill logic to fewer bullet points ****
-**** MCD - done this. Becky, does the footnote look better now? ****
 
 A less obvious answer comes from social science.
 In 1980, Schnaiberg~\cite{schnaiberg1980} introduced the concept of 
@@ -166,20 +177,20 @@ inherent in capitalist society.\footnote{
 	The logic of the treadmill is:
  		\begin{enumerate}[noitemsep,topsep=0pt]
  			\item 	capital (production equipment)
- 						is accumulating in Western economies, 
- 						to replace production labor 
- 						with technologies to increase profits; 
+ 						is accumulating in Western economies 
+ 						as labor is replaced
+ 						by technologies; 
  			\item 	these technologies require far more materials and/or energy 
- 						to replace previous, labor-intensive processes;
+ 						than the previous, labor-intensive processes;
 % 			\item 	new technologies emerge from the organization of scientific and 
 % 						technological research in universities and research institutes, 
 % 						as well as in the new ``research and development'' departments of large firms;
- 			\item 	moreover, unlike the prior use of labor, 
+ 			\item 	moreover, unlike labor, 
  						the new technologies represent forms of sunk capital;
- 			\item 	because worker inputs can more readily be cut back 
- 						(as opposed to fixed costs of machine operations for sunk capital)
+ 			\item 	because the remaining labor  inputs can more readily be cut back 
+ 						(as opposed to sunk capital)
  						labor is further reduced to sustain production at higher levels;
- 			\item	yet more capital is added to replace further reduced levels
+ 			\item	more capital is added to replace further reduced levels
  						of labor.\cite[p.~296]{Gould2004}
 		 \end{enumerate}
  }
@@ -340,6 +351,7 @@ apples that are eaten~(consumed),
 and, if we own an apple tree (lucky us!), 
 apples that are grown~(produced) during a week. 
 A rigorous apple accounting equation, in units of apples, is:
+%
 \begin{equation}
 	\mathrm{\Delta}\mathrm{apples} 
 	= \mathrm{apples~in} 
@@ -347,8 +359,9 @@ A rigorous apple accounting equation, in units of apples, is:
 	+ \mathrm{apples~grown} 
 	- \mathrm{apples~eaten}.
 \end{equation}
-
-\noindent{}More generally, we may say:
+%
+More generally, we may say:
+%
 \begin{equation}
 	\label{eq:general_accumulation_equation}
 	\mathrm{accumulation}
@@ -376,7 +389,7 @@ That is, we can examine the rate of
 change of the apple stock per unit of time 
 relative to the flow of apples ($\dot{a}$), 
 in which case our accounting equation becomes:
-
+%
 \begin{equation} \label{eq:apple_rate_accounting}
 	\frac{\mathrm{d}a}{\mathrm{d}t}
 	= \dot{a}_{in}
@@ -384,19 +397,12 @@ in which case our accounting equation becomes:
 	+ \dot{a}_{grown}
 	- \dot{a}_{eaten}
 \end{equation}
-
-\noindent{}where the dot above the variable ($\dot{a}$) indicates 
+%
+where the dot above the variable ($\dot{a}$) indicates 
 a flow rate per unit time [apples/time] and
 the time derivative $\left( \frac{\mathrm{d}a}{\mathrm{d}t} \right)$ 
 is the rate of change of the stock of apples per time unit, or more simply,
-the accumulation rate.
- 
-% ***** Take a moment to tie apples to mass or material. 
-% Clearly note that material is measured kg rather than dollars.
-% Note the distinction between material and mass.
-% We are doing material accounting in units of mass.
-% We will later do material accounting in units of energy.
-% Even later, we will do material accouting in units of dollars. ****
+the accumulation rate. 
 
 Instead of focusing on apples as our unit of accounting, 
 we could track the mass flow 
@@ -419,8 +425,6 @@ or, eventually, leave via the air (as carbon dioxide
 and water vapor) or otherwise (as excreta) after they have
 been metabolized.
 
-%**** Auto industry example here? Perhaps steel? ****
-
 If, instead of a home, we drew a spatial control volume 
 around a sector of an economy, 
 similar accounting methods can be applied. 
@@ -428,7 +432,7 @@ In fact, throughout this book, we will illustrate theoretical concepts with
 a running example of a control volume (boundary) around the US auto industry. 
 If we account for steel (in units of kg) in the auto industry, 
 we might write an equation like this:
-
+%
 \begin{equation}
 	\mathrm{\Delta}\mathrm{steel} 
 	= \mathrm{steel~in} 
@@ -436,26 +440,23 @@ we might write an equation like this:
 \end{equation}
 
 Note that the production and consumption terms are zero
-since steel is not created or destroyed within the automobile
-sector. Tracking the rate flows of steel, 
+because steel is neither created nor destroyed within the automobile
+sector. 
+Tracking the rate flows of steel, 
 $\dot{s}$ (in kg/s),
 we would write the following equation:
-
+%
 \begin{equation}
 	\frac{\mathrm{d}s}{\mathrm{d}t}
 	= \dot{s}_{in}
 	- \dot{s}_{out}
 \end{equation}
 
-
 Again, the last two terms 
 (representing steel production and consumption) 
 are not present. 
 This is in direct contrast with apple 
 accounting outlined in Equation~\ref{eq:apple_rate_accounting}. 
-%**** Do the previous two sentences make sense?
-%The equation has only 2 terms. **** 
-%I have reworded to specify the production and consumption terms. ****
 Despite the fact that steel is neither produced nor consumed 
 within the \emph{automobile sector}, 
 there \emph{are} sectors of the economy 
@@ -483,10 +484,6 @@ shall assume that the mass of elements are conserved for this book.}
 In fact, we may go further.
 Every act of economic production
 has an associated act of consumption or destruction.
-% **** Discuss the steel industry. 
-% Show how steel is actually formed from other materials.
-% Show that \emph{mass} is neither created nor destroyed, 
-% but it may change form. ****
 Indeed, within the car industry, inputs of steel, glass, plastic, rubber, etc.\ 
 are \emph{consumed} in the very process of producing cars, 
 such that \emph{cars} are (literally) \emph{created}
@@ -609,16 +606,16 @@ They enter the sector from above and leave the sector from
 below to return to the biosphere. 
 Examples of these short-lived flows include energy resources, such as
 the electricity needed to run automobile factories 
-% including any contribution from labor, **** contribution from labor seems out of place here --MKH ****
 and process water used by the sector. 
 Resources and short-lived materials make up 
-Georgescu-Roegen's ``flow'' elements\footnote{In
-fact,
-Georgescu-Roegen does not make a distinction between
-resource flows (that are \emph{physically embodied}
-in the product) and other flows necessary to support production
-of the product.
-}~\cite{G-R1970} 
+Georgescu-Roegen's ``flow'' elements%
+	\footnote{
+	In fact,
+	Georgescu-Roegen does not make a distinction between
+	resource flows (that are \emph{physically embodied}
+	in the product) and other flows necessary to support production
+	of the product.
+	}~\cite{G-R1970} 
 or Daly's ``material causes.''~\cite{Daly2006}
 
 Many of the material flows into the sector, 
@@ -675,13 +672,14 @@ We also set up another material flow,
 that of \emph{wastes} ($\dot{W}$) which include both
 resource and short-lived goods flowing to the biosphere from sector $j$, 
 such that:
-
+%
 \begin{equation}
 \dot{W}_{j0} =  \dot{R}_{j0} + \dot{S}_{j0}
 \end{equation}
 
 This waste flow will be useful later in Section~\ref{sec:Embodied_Energy_Example_C}.
 We now track these material flows through some model economies.
+
 
 %%%%%%%%%% Materials: Example A %%%%%%%%%%
 \section{Example~A: single-sector economy} % chktex 13
@@ -755,7 +753,7 @@ Biosphere~(0) and Society~(1)
 in Figure~\ref{fig:A_materials}, 
 we can construct material accounting equations,
 such that:
-
+%
 \begin{align} \label{eq:A_CV_0}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
@@ -781,7 +779,7 @@ such that:
 \end{align}
 
 Because mass is conserved, we find that:
-
+%
 \begin{align} 
 \label{eq:A_R0}
 	\dot{R}_{0}				&
@@ -796,29 +794,6 @@ Because mass is conserved, we find that:
 	+ \dot{K}_{11},	
 \end{align}
 
-% \noindent{}such that Equations~\ref{eq:A_CV_0}~and~\ref{eq:A_CV_1} 
-% become:
-
-% \begin{align} \label{eq:A_CV_0a}
-% 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-% 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-% 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
-% 	=	\dot{R}_{10}		
-% 	+	\dot{S}_{10}	
-% 	+	\dot{K}_{10}											
-% 	-	\dot{R}_{01}											
-% 	-	\dot{S}_{01}								\\
-% \label{eq:A_CV_1a}
-% 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}
-% 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}
-% 	+ \frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
-% 	= \dot{R}_{01} 
-% 	+ \dot{S}_{01} 
-% 	- \dot{R}_{10}				
-% 	- \dot{S}_{10}				
-% 	- \dot{K}_{10}.
-% \end{align}
-
 Clearly, $\dot{R}_{01} \neq \dot{R}_{10}$ 
 because some resources are converted into
 short-lived goods ($\dot{S}_{11}$) or man-made capital ($\dot{K}_{11}$)
@@ -826,7 +801,7 @@ and are only returned to the biosphere as either
 $\dot{S}_{10}$ or $\dot{K}_{10}$, respectively. 
 Hence,
 we may say that:
-
+%
 \begin{equation}\label{eq:A_dR0_neq_0}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}
 	= \dot{R}_{10}
@@ -846,62 +821,18 @@ is very large compared to the additional flow of short-lived goods
 produced within the economy,
 i.e.\ $\dot{S}_{11} << \dot{S}_{01}$.
 }
-%such that:
-%
-%\begin{equation}\label{eq:A_dS0_neq_0}
-%	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-%	= \dot{S}_{10}
-%	- \dot{S}_{01}
-%	\neq 0.
-%\end{equation}
-
-%****BRH says, shouldn't this word be
-%"accounting" -- not accumulation -- given that is what we
-%called it in the sentence introducing eq. 2.4. Or, should we change "accounting" above to accumulation?
-%Or, are they synonyms? And, aren't there two of these equations? 2.4 and 2.5? I added a separate
-%label for eqn. 2.5**** MIK - Agreed, changed to 'material balance'
 
 In this framework, neither resources ($R$) 
 nor short-lived goods ($S$) accumulate 
 within economic sectors, 
 so we may state:
-
+%
 \begin{align}\label{eq:A-dS_1/dt_zero}
 	\frac{\mathrm{d}R_1}{\mathrm{d}t}				&
 	= 0,																	\\
 	\frac{\mathrm{d}S_1}{\mathrm{d}t}				&
 	= 0.
 \end{align}
-
-% \noindent{}which means that 
-% Equations~\ref{eq:A_CV_0a}~and~\ref{eq:A_CV_1a}
-% become:
-
-% \begin{align}\label{eq:A_CV_0b}
-% 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
-% 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}
-% 	+	\frac{\mathrm{d}K_0}{\mathrm{d}t}		&	
-% 	=	\dot{R}_{10}		
-% 	+	\dot{S}_{10}	
-% 	+	\dot{K}_{10}											
-% 	-	\dot{R}_{01}											
-% 	-	\dot{S}_{01}								\\
-% 	\label{eq:A_CV_1b}
-% 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
-% 	= \dot{R}_{01} 
-% 	+ \dot{S}_{01} 
-% 	- \dot{R}_{10}				
-% 	- \dot{S}_{10}				
-% 	- \dot{K}_{10}.										
-% \end{align}
-
-% Equation~\ref{eq:A_CV_1b} indicates that the accumulation 
-% of capital
-% within society is the imbalance 
-% between the flow of materials pulled from the biosphere
-% ($\dot{R}_{01} + \dot{S}_{01}$) and the 
-% flow rate of materials disposed back to the biosphere 
-% ($\dot{R}_{10} + \dot{S}_{10} + \dot{K}_{10}$). 
 
 Because the only ``capital'' that accumulates 
 in the biosphere
@@ -910,7 +841,7 @@ is that which is a waste flow
 from the economy,
 (worn-out machines in the scrap yard),
 we may say that:
-
+%
 \begin{equation} \label{eq:A_K0_balance}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}		
 	= \dot{K}_{10}
@@ -961,7 +892,7 @@ or they are turned into capital good and accumulate.
 
 As such,
 we may state that:
-
+%
 \begin{align}
 % \label{eq:A_R1_balance}
 	\frac{\mathrm{d}R_1}{\mathrm{d}t}		&
@@ -980,7 +911,7 @@ we may state that:
 
 We may rearrange these equations in terms of
 the important variable as:
-
+%
 \begin{align}
 \label{eq:A_P1a}
 	\dot{P}_{1}												&
@@ -988,9 +919,9 @@ the important variable as:
 	+ \dot{R}_{11}
 	- \dot{R}_{10}	,
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:A_S11}
 	\dot{S}_{11}											&
@@ -1000,44 +931,15 @@ the important variable as:
 
 Substituting Equations~\ref{eq:A_R0},~\ref{eq:A_S0}~and~\ref{eq:A_K0_balance}
 into Equation~\ref{eq:A_CV_0} we obtain:
-
+%
 \begin{align}\label{eq:A_CV_0a}
 	\frac{\mathrm{d}R_0}{\mathrm{d}t}		
 	+	\frac{\mathrm{d}S_0}{\mathrm{d}t}		&	
 	=	\dot{R}_{10}		
 	+	\dot{S}_{10}	
 	-	\dot{R}_{01}											
-	-	\dot{S}_{01}.							% \\
-%	\label{eq:A_CV_1c}
-%	\dot{K}_{11}								&
-%	= \dot{R}_{01} 
-%	+ \dot{S}_{01} 
-%	- \dot{R}_{10}				
-%	- \dot{S}_{10}.
+	-	\dot{S}_{01}.
 \end{align}
-
-
-
-
-
-% **** Would we not also say that $\dot{S}_{01} = \dot{S}_{10}$? 
-% The idea of the short-lived materials is that they are ``flow-through.''
-% Think of water as the prototypical $\dot{S}$ flow. 
-% The flow rate of water into society is probably very nearly equal
-% to the flow rate of water out of society. 
-% If this is right, the equations above simplify even further, right? 
-% A counterpoint to this approach would be an argument that society
-% ``makes'' $\dot{S}_{11}$ material for use by society (i.e.\ in the $\dot{P}_{11}$ flow).
-% If society makes an $\dot{S}_{11}$, do we have
-% $\dot{S}_{01} + \dot{S}_{11} = \dot{S}_{10}$?  --MKH ****
-% I would definitely say that we are converting $\dot{R}_{01}$
-% flows into $\dot{S}_{11}$ (and consequently $\dot{S}_{10}$ flows)
-% in quite significant proportions, such as the large quantities of
-% plastic packaging, paper,
-% etc.\ waste that flows through but is never accumulated.
-% How large this flow is (in mass terms) in comparison to,
-% say water,
-% is an open question. --MCD ****
 
 Equation~\ref{eq:A_CV_0a} states that the rate of ``accumulation'' 
 (or more accurately depletion) 
@@ -1059,12 +961,14 @@ and society must turn to lower grade reserves,
 more material must be processed 
 (requiring the deployment of more productive capital)
 in order to maintain the same level of 
-production.\footnote{This theme 
+production.%
+	\footnote{
+	This theme 
 	will be revisited in later sections,
 	in relation to both energy~(direct energy in Chapter~\ref{chap:direct_energy}
 	and embodied energy in Chapter~\ref{chap:embodied_energy}) and 
 	value~(Chapter~\ref{chap:value}).
-	}\cite{Mudd2010}
+	}~\cite{Mudd2010}
 
 It is likely that the quality
 of flow $\dot{R}_{01}$ is higher than flow $\dot{R}_{10}$ 
@@ -1081,7 +985,7 @@ Section~\ref{sec:resource_quality_and_irreversibility}.
 
 Substituting Equation~\ref{eq:A_S1_balance} 
 into Equation~\ref{eq:A_CV_1}, we obtain:
-
+%
 \begin{align}\label{eq:A_CV_1b}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
@@ -1092,19 +996,19 @@ into Equation~\ref{eq:A_CV_1}, we obtain:
 	- \dot{K}_{10}.
 \end{align}
 
-Since we have two different formulations for $\dot{P}_{1}$,
+Because we have two different formulations for $\dot{P}_{1}$,
 represented by Equations~\ref{eq:A_P1} and~\ref{eq:A_P1a}, 
 we may substitute either into Equation~\ref{eq:A_CV_1b}.
 Substituting Equation~\ref{eq:A_P1a} 
 into Equation~\ref{eq:A_CV_1b}, we obtain:
-
+%
 \begin{equation}\label{eq:A_CV_1c}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
 	= \dot{K}_{11}
 	- \dot{K}_{10},
 \end{equation}
-
-\noindent{}which tells us that 
+%
+which tells us that 
 accumulation of capital in society~($K_{1}$)
 is dependent only on 
 inflows of capital into society~($\dot{K}_{11}$) 
@@ -1113,8 +1017,8 @@ to the biosphere ($\dot{K}_{10}$).
 
 Substituting instead Equation~\ref{eq:A_P1} 
 into Equation~\ref{eq:A_CV_1b}, we obtain:
-
- \begin{align}\label{eq:A_CV_1d}
+%
+\begin{align}\label{eq:A_CV_1d}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
 	- \dot{R}_{10}
@@ -1130,19 +1034,20 @@ multiplied by some depreciation rate~($\gamma_{K_{1}}$),\footnote{$\gamma_{K_{1}
 	and is inversely proportional to the average lifetime
 	of man-made capital.}
 where $\gamma_{K_{j}}$ is defined as:
-
+%
 \begin{equation}\label{eq:def_gamma}
 \gamma_{K_{j}} \equiv \frac{\dot{B}_{j0}}{B_{j}},
 \end{equation}
-
-\noindent{}i.e.\ the depreciation 
-\emph{per unit} of capital stock,\footnote{This
+%
+i.e.\ the depreciation \emph{per unit} of capital stock,%
+	\footnote{
+	This
 	depreciation term will be discussed in more depth in
 	Sections~\ref{sec:depreciation_embodied}~and~\ref{sec:capital_accounting}.
 	}
 such that Equation~\ref{eq:A_CV_1d} may be rewritten:
-
- \begin{align}\label{eq:A_CV_1e}
+%
+\begin{align}\label{eq:A_CV_1e}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		&
 	= \dot{R}_{01} 
 	- \dot{R}_{10}
@@ -1151,8 +1056,8 @@ such that Equation~\ref{eq:A_CV_1d} may be rewritten:
 \end{align}
 
 We may rearrange Equation~\ref{eq:A_CV_1e} as:
-
- \begin{align}\label{eq:A_CV_1f}
+%
+\begin{align}\label{eq:A_CV_1f}
 	\dot{R}_{01} 
 	- \dot{R}_{10}												&
 	= 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
@@ -1167,8 +1072,8 @@ we may rewrite Equation~\ref{eq:A_CV_1f}
 in terms of the accumulation
 (or more accurately, depletion)
 of natural resources: 
-
- \begin{align}\label{eq:A_CV_1g}
+%
+\begin{align}\label{eq:A_CV_1g}
 	- 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
 	= 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
 	+ \dot{S}_{11}
@@ -1178,7 +1083,7 @@ of natural resources:
 Equation~\ref{eq:A_CV_1g} tells us that depletion of
 natural resources~$\left(-\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
 is used within society to:
-
+%
 \begin{itemize}
 	\item build up societal capital stock 
 	$\left(\frac{\mathrm{d}K_{1}}{\mathrm{d}t}\right)$,
@@ -1187,7 +1092,8 @@ is used within society to:
 	\item overcome depreciation
 	($\gamma_{K_{1}}{K}_{1}$).
 \end{itemize}
-\noindent{}In other words,
+%
+In other words,
 the economy is completely dependent on stocks of natural resources
 within the biosphere for all of these activities.
 We now turn to a slightly more disaggregated model of the economy.
@@ -1251,40 +1157,22 @@ whereas other short-lived goods
 do not accumulate within Sector~1 and are represented by flow 
 $\dot{S}_{21}$.
 
-%\footnote{As has been mentioned elsewhere,
-%this is a somewhat different conception of 
-%``capital goods'' than is often used by economists, 
-%whereby capital goods are used only within 
-%productive sectors of the economy. 
-%What we are here labeling as ``capital goods'' 
-%might be termed \emph{consumer durables} by economists. 
-% For our intention, consumer durables in society 
-% serve the same purpose as capital equipment in the
-% economy---they are necessary to support the goal 
-% of the sector: production in one case
-% and consumption in the other. [MAYBE REPHRASE AS ``production of goods in one case and production
-% of labor in the other.'']}
-
 There is also a product outflow 
 from Final Consumption ($\dot{P}_{1}$), 
 some of which is returned to Final Consumption~(1)
 as resources ($\dot{R}_{11}$), 
 short-lived goods ($\dot{S}_{11}$) 
-and capital goods ($\dot{K}_{11}$) flows.\footnote{In actuality,
+and capital goods ($\dot{K}_{11}$) flows.%
+	\footnote{
+	In actuality,
 	both $\dot{R}_{11}$ and $\dot{S}_{11}$
 	are zero,
-	as will be discussed shortly.} 
-%Short-lived goods ($\dot{S}_{12}$)
-%flow from Final Consumption (1) 
-%to Production (2) 
-%associated with the flow of labor. 
+	as will be discussed shortly.
+	} 
 There is no resource ($\dot{R}_{12}$) nor 
 capital good ($\dot{K}_{12}$) flow from 
 Final Consumption~(1) to Production~(2).
-%This is because there is no resource flow associated
-%with labor---it is not \emph{physically embodied}
-%in products---and 
-This is because the ``product'' of Final Consumption (1)
+This is because the ``product'' of Final Consumption~(1)
 is labor services 
 and because Final Consumption~(1) consumes, 
 rather than produces, final goods. 
@@ -1296,14 +1184,14 @@ Additionally, no capital \emph{goods} flow
 from Final Consumption~(1) to accumulate
 within the production sector, 
 therefore $\dot{K}_{12} = 0$.
-% **** Rewrite this paragraph below ****
 The flow of short-lived goods~($\dot{S}_{12}$) 
 from Final Consumption~(1) to Production~(2)
 represents labor,
 specifically  the material flow 
 associated with labor's energy 
-which is used within the production sector.\footnote{We 
-	assume that flow ($\dot{S}_{12}$) is the 
+which is used within the production sector.%
+	\footnote{
+	We assume that flow ($\dot{S}_{12}$) is the 
 	adenosine triphosphate (ATP), 
 	used as an energy
 	carrier within the cells of organisms,
@@ -1320,7 +1208,7 @@ As in Example~A,
 we set control volumes around the biosphere
 and our two economic sectors, 
 such that the material accounting equations become:
-
+%
 \begin{align} 
 \label{eq:B_CV_0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
@@ -1362,7 +1250,6 @@ such that the material accounting equations become:
 	- \dot{K}_{20},
 \end{align}
 
- %[WE NEED TO DISCUSS IF WE WANT TO ACCOUNT IT IN THIS WAY]
 Because no resources flow directly to Final Consumption~(1)
 from the Biosphere~(0),\footnote{A 
 	counter-example to this assumption is 
@@ -1371,8 +1258,8 @@ from the Biosphere~(0),\footnote{A
 	i.e.\ by households, 
 	which may be large in agrarian economies.
 	}
- we may say:
-
+we may say:
+%
 \begin{equation}\label{eq:B_R0}
 	\dot{R}_{0} = \dot{R}_{02}.
 \end{equation}
@@ -1383,8 +1270,7 @@ from the Biosphere~(0),
 for example the flow of photons in Sunlight or 
 oxygen into car engines and lungs. 
 We can redefine flow $\dot{S}_{0}$:
-%and $\dot{S}_{1}$:
-
+%
 \begin{equation}\label{eq:B_S0}
 	\dot{S}_{0} 
 	= \dot{S}_{01} + \dot{S}_{02}.
@@ -1394,7 +1280,7 @@ As in Example A, we may easily define
 the balance of resources ($\dot{R}$),
 short-lived materials ($\dot{S}$) and
 capital ($\dot{K}$) within the biosphere:
-
+%
 \begin{align}\label{eq:B_dR0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
 	= \dot{R}_{10}
@@ -1430,52 +1316,39 @@ Final Consumption\footnote{If
 and that the ``product'' of Final Consumption~(1) is labor
 (a short-lived material flow,~$\dot{S}$),
 then we may also state that
-
+%
 \begin{align}
 \label{eq:B_R11}
 	\dot{R}_{11}				& 
 	= 0,
 \end{align}
-
-\noindent{}since labor is not a resource flow---it
+%
+because labor is not a resource flow---it
 is not \emph{physically embodied} within products
 produced within the production sector---and additionally that,
-
+%
 \begin{align}
 \label{eq:B_K11}
 	\dot{K}_{11}				& 
 	= 0,
 \end{align}
- 
-\noindent{}because all capital goods are produced within
+% 
+because all capital goods are produced within
 the Production sector~(2).
-
-% **** Are flows $\dot{R}_{11} = \dot{K}_{11} = 0$ *****
-% **** Yes, they are, since we are assuming that
-% $K_{1}$ includes only man-made capital, not humans
-% and all capital manufacture occurs in 
-% the production sector.
-
-% [NOT SURE IF THIS IS TRUE IF WE THINK OF $\dot{R}_{12}$ AS FOOD AND $K_{1}$ 
-% AS INCLUDING HUMANS\ldots 
-% YES, I THINK $\dot{R}_{12}$ CAN BE TURNED INTO  $\dot{K}_{1}$ INTERNALLY, 
-% AS THE ACCUMULATION OF (LITERAL) HUMAN CAPITAL, I.E. POPULATION]
-
-
 
 From conservation of mass,
 we can also define product flows
-$\dot{P}_{1}$ and $\dot{P}_{2}$ as:.
-
+$\dot{P}_{1}$ and $\dot{P}_{2}$ as:
+%
 \begin{align}
 \label{eq:B_P1_def}
 	\dot{P}_{1}				&
 	= \dot{S}_{11}
 	+ \dot{S}_{12},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:B_P2_def}
 	\dot{P}_{2}				&
@@ -1484,13 +1357,13 @@ $\dot{P}_{1}$ and $\dot{P}_{2}$ as:.
 	+ \dot{S}_{21}
 	+ \dot{S}_{22}
 	+ \dot{K}_{21}	 
-	+ \dot{K}_{22}
+	+ \dot{K}_{22}.
 \end{align}
-
-\noindent Again, remembering that resources ($R$) 
+%
+Again, remembering that resources ($R$) 
 and short-lived goods ($S$) do not accumulate 
 within any sectors of the economy:
-
+%
 \begin{align}
 \label{eq:dR_and_dS_zero}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t}			&
@@ -1500,9 +1373,9 @@ within any sectors of the economy:
 	\frac{\mathrm{d}S_{1}}{\mathrm{d}t} 			&
 	= 0,
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 			&
 	= 0.
@@ -1512,7 +1385,7 @@ As in Example~A,
 we may also define the resource-product
 and short-lived goods flows balances separately
 for each of the sectors of the economy:
-
+%
 \begin{align}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 	&
 	= \dot{R}_{21}
@@ -1533,9 +1406,9 @@ for each of the sectors of the economy:
 	- \dot{R}_{20}
 	= 0,
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:B_dS2}
 	\frac{\mathrm{d}S_{2}}{\mathrm{d}t} 	&
@@ -1548,7 +1421,7 @@ for each of the sectors of the economy:
 
 We may rearrange these equations in terms of
 the important variables to obtain:
-
+%
 \begin{align}
 \label{eq:B_P1a}
 	\dot{P}_{1}												&
@@ -1564,9 +1437,9 @@ the important variables to obtain:
 	+ \dot{R}_{22}
 	- \dot{R}_{20},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:B_S22}
 	\dot{S}_{22}											&
@@ -1575,12 +1448,11 @@ the important variables to obtain:
 	- \dot{S}_{12}.	
 \end{align}
 
-
 Substituting
 Equations~\ref{eq:B_R0}-\ref{eq:B_dK0}
 into Equation~\ref{eq:B_CV_0}, 
-gives,
-
+gives
+%
 \begin{align} \label{eq:B_CV_0a}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}		& 
@@ -1595,7 +1467,7 @@ Substituting Equations~\ref{eq:dR_and_dS_zero},~\ref{eq:B_dS1}~and~\ref{eq:B_dS2
 into Equations~\ref{eq:B_CV_1}~and~\ref{eq:B_CV_2},
 respectively,
 we obtain:
-
+%
 \begin{align} 
 \label{eq:B_CV_1a}
 	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
@@ -1605,9 +1477,9 @@ we obtain:
 	- \dot{R}_{10} 
 	- \dot{K}_{10}
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:B_CV_2a}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
@@ -1619,7 +1491,6 @@ we obtain:
 	- \dot{K}_{20},
 \end{align}
 
-
 As in Example~A,
 we again have two definitions for $\dot{P}_{1}$
 (Equations~\ref{eq:B_P1_def} and~\ref{eq:B_P1a})
@@ -1630,24 +1501,24 @@ Equations~\ref{eq:B_CV_1a} and~\ref{eq:B_CV_2a},
 respectively. 
 Let us start by substituting Equations~\ref{eq:B_P1a} and~\ref{eq:B_P2a},
 in which case we obtain:
-
+%
 \begin{align} 
 \label{eq:B_CV_1b}
 	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
 	= \dot{K}_{21}
 	- \dot{K}_{10},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:B_CV_2b}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
 	=  \dot{K}_{22}
-	- \dot{K}_{20},
+	- \dot{K}_{20}.
 \end{align}
-
-\noindent{}Equations~\ref{eq:B_CV_1b} and~\ref{eq:B_CV_2b} 
+%
+Equations~\ref{eq:B_CV_1b} and~\ref{eq:B_CV_2b} 
 tell us that accumulation 
 of man-made capital~($K$) in each sector~($j$)
 is dependent only on inflows of capital goods 
@@ -1658,7 +1529,7 @@ from that sector~($\dot{K}_{j0}$).
 Now, substituting
 Equations~\ref{eq:B_P1_def} and~\ref{eq:B_P2_def},
 we obtain:
-
+%
 \begin{align} 
 \label{eq:B_CV_1c}
 	 \frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
@@ -1669,9 +1540,9 @@ we obtain:
 	- \dot{R}_{10} 
 	- \dot{K}_{10},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:B_CV_2c}
 	\frac{\mathrm{d}K_{2}}{\mathrm{d}t}	&
@@ -1683,12 +1554,12 @@ we obtain:
 	- \dot{R}_{20} 
 	- \dot{K}_{20},
 \end{align}
-
-\noindent{}to which we may make the 
+%
+to which we may make the 
 substitution of the depreciation term 
 (as in Example~A) and rearrange 
 to obtain:
-
+%
 \begin{align} 
 \label{eq:B_CV_1d}
 	- \dot{R}_{10} 	 										&
@@ -1699,9 +1570,9 @@ to obtain:
 	+ \dot{S}_{12} 
 	+ \gamma_{K_{1}}K_{1},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:B_CV_2d}
 	\dot{R}_{02}
@@ -1713,12 +1584,12 @@ to obtain:
 	+ \dot{S}_{22}
 	+ \gamma_{K_{2}}K_{2}.
 \end{align}
-
+%
 Equation~\ref{eq:B_CV_2d} tells us that 
 the resources extracted and used by 
 the production sector~($\dot{R}_{02} - \dot{R}_{20}$)
 are for the purposes of: 
-
+%
 \begin{itemize}
 	\item{building up capital stock
 	in the production sector
@@ -1740,7 +1611,7 @@ are for the purposes of:
 
 Adding Equations~\ref{eq:B_CV_1d}~and~\ref{eq:B_CV_2d} together,
 we obtain:
-
+%
 \begin{align} 
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}			&
 	= \dot{R}_{02}
@@ -1756,12 +1627,12 @@ we obtain:
 	+ \gamma_{K_{1}}K_{1}
 	+ \gamma_{K_{2}}K_{2}.
 \end{align}
-
-\noindent{}which tells us that
+%
+which tells us that
 the depletion of natural resources
 $\left(\frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
 is used within the whole economy to:
-
+%
 \begin{itemize}
 	\item{build up capital stock
 	$\left(\frac{\mathrm{d}K_{1}}{\mathrm{d}t}
@@ -1814,7 +1685,7 @@ of any size.
 Accounting for the material flows 
 into and out of the Biosphere
 (0) gives the following equation:
-
+%
 \begin{align} \label{eq:C_CV_0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
@@ -1825,9 +1696,9 @@ into and out of the Biosphere
 	- \dot{R}_{0} 
 	- \dot{S}_{0},
 \end{align}
-
-\noindent{}which may be rewritten as:
-
+%
+which may be rewritten as:
+%
 \begin{align} \label{eq:C_CV_0_b}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
@@ -1838,11 +1709,11 @@ into and out of the Biosphere
 	- \dot{R}_{0} 
 	- \dot{S}_{0},
 \end{align}
-
-\noindent{}where the sum represents flows
+%
+where the sum represents flows
 into the biosphere from each of the other $i$ sectors.
 Similarly, flows for the other sectors may be written:
-
+%
 \begin{align} \label{eq:C_CV_1}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 
 	+ \frac{\mathrm{d}S_{1}}{\mathrm{d}t}	
@@ -1870,9 +1741,9 @@ Similarly, flows for the other sectors may be written:
 	- \dot{S}_{20}
 	- \dot{K}_{20},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 	\label{eq:C_CV_3}
 	\frac{\mathrm{d}R_{3}}{\mathrm{d}t} 
@@ -1889,29 +1760,12 @@ Similarly, flows for the other sectors may be written:
 	- \dot{K}_{30}.										
 \end{align}
 
-%Equations~\ref{eq:C_CV_1}~through~\ref{eq:C_CV_3} may be summarized
-%in one single equation as:
-%
-%\begin{align} \label{eq:C_CV_1_to_3_b}
-%	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
-%	& =  \dot{R}_{0j} 
-%	+ \dot{S}_{0j}
-%	+ \sum_{i = 1}^{3}\dot{R}_{ij}
-%	+ \sum_{i = 1}^{3}\dot{S}_{ij}
-%	+ \sum_{i = 1}^{3}\dot{K}_{ij}
-%	- \dot{P}_{j}
-%	- \dot{R}_{j0} 
-%	- \dot{S}_{j0}
-%	- \dot{K}_{j0};
-%	& j \in \left[1,3\right].
-%\end{align}
-
 As in previous examples,
 we may define the balance of 
 resources~($\dot{R}$),
 short-lived materials~($\dot{S}$) and
 capital~($\dot{K}$) within the biosphere as:
-
+%
 \begin{align}\label{eq:C_dR0}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
 	= \dot{R}_{10}
@@ -1929,9 +1783,9 @@ capital~($\dot{K}$) within the biosphere as:
 	- \dot{S}_{02}
 	- \dot{S}_{03},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:C_dK0}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}	&
@@ -1939,9 +1793,9 @@ capital~($\dot{K}$) within the biosphere as:
 	+ \dot{K}_{20}
 	+ \dot{K}_{30}.
 \end{align}
-
-\noindent{}which may be rewritten:
-
+%
+which may be rewritten:
+%
 \begin{align}
 \label{eq:C_dR0a}
 	\frac{\mathrm{d}R_{0}}{\mathrm{d}t}	&
@@ -1952,9 +1806,9 @@ capital~($\dot{K}$) within the biosphere as:
 	= \sum_{i = 1}^{3}\dot{S}_{i0}
 	- \sum_{j = 1}^{3}\dot{S}_{0j},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 \label{eq:C_dK0a}
 	\frac{\mathrm{d}K_{0}}{\mathrm{d}t}	&
@@ -1964,7 +1818,7 @@ capital~($\dot{K}$) within the biosphere as:
 Applying conservation of mass
 allows us to define the
 product flows~($\dot{P}$) as:
-
+%
 \begin{align}
 \label{eq:C_P1_def}
 	\dot{P}_{1}										&
@@ -1980,7 +1834,7 @@ product flows~($\dot{P}$) as:
 	\dot{P}_{3}										&
 	= \sum_{j = 1}^{3}\dot{R}_{3j}
 	+ \sum_{j = 1}^{3}\dot{S}_{3j}
-	+ \sum_{j = 1}^{3}\dot{K}_{3j}
+	+ \sum_{j = 1}^{3}\dot{K}_{3j}.
 \end{align}
 
 As in Example~B, Final Consumption~(1) provides 
@@ -2007,7 +1861,7 @@ resources~(R)
 or short-lived capital goods~(S) 
 in economic sectors,
 then we may say:
-
+%
 \begin{align}\label{eq:C_dR_and_dS_zero}
 	\frac{\mathrm{d}R_{j}}{\mathrm{d}t}			&
 	= 0,																	&
@@ -2020,8 +1874,9 @@ then we may say:
 As before,
 we may also define the resource-product
 and short-lived goods flows balances separately
-for each of the sectors of the economy:\footnote{It
-	is worth remembering here that 
+for each of the sectors of the economy:%
+	\footnote{
+	It is worth remembering here that 
 	$\dot{R}_{01} = \dot{R}_{21} = 0$,
 	because Final Consumption~(1) takes resources
 	(in the form of food) from Goods and Services~(3) only
@@ -2029,7 +1884,7 @@ for each of the sectors of the economy:\footnote{It
 	the Goods and Services sector~(3) does not provide
 	resources to the Energy sector~(2).
 	}
-
+%
 \begin{align}
 	\frac{\mathrm{d}R_{1}}{\mathrm{d}t} 	&
 	= \dot{R}_{01}
@@ -2080,10 +1935,10 @@ for each of the sectors of the economy:\footnote{It
 	- \dot{S}_{30}
 	= 0,
 \end{align}
-
-\noindent{}and then rearrange the equations
+%
+and then rearrange the equations
 in terms of the important variable:
-
+%
 \begin{align}
 \label{eq:C_P1a}
 	\dot{P}_{1}												&
@@ -2126,25 +1981,11 @@ in terms of the important variable:
 	- \dot{S}_{23}.	
 \end{align}
 
-%We may rewrite Equation~\ref{eq:C_CV_0_b}
-%by substituting 
-%Equations~\ref{eq:C_dR0}~-~\ref{eq:C_dK0a}
-%to obtain:
-%
-%\begin{align} \label{eq:C_CV_0_c}
-%	\frac{\mathrm{d}R_{0}}{\mathrm{d}t} 
-%	+ \frac{\mathrm{d}S_{0}}{\mathrm{d}t}	
-%	& =  \sum_{i = 1}^{3}\dot{R}_{i0}
-%	+ \sum_{i = 1}^{3}\dot{S}_{i0}
-%	- \sum_{j = 2}^{3}\dot{R}_{0j}
-%	- \sum_{j = 1}^{3}\dot{S}_{0j},
-%\end{align}
-
 We now make use of 
 Equations~\ref{eq:C_dR_and_dS_zero},~\ref{eq:C_dS1},~\ref{eq:C_dS2}~and~\ref{eq:C_dS3},
 in simplifying Equations~\ref{eq:C_CV_1}~-~\ref{eq:C_CV_3},
 to obtain:
-
+%
 \begin{align} \label{eq:C_CV_1a}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
 	& =  \dot{R}_{01} 
@@ -2162,9 +2003,9 @@ to obtain:
 	- \dot{R}_{20} 
 	- \dot{K}_{20},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 	\label{eq:C_CV_3a}
 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
@@ -2183,7 +2024,7 @@ Substituting,
 first, 
 Equations~\ref{eq:C_P1a},~\ref{eq:C_P2a}~and~\ref{eq:C_P3a},
 we obtain:
-
+%
 \begin{align} \label{eq:C_CV_1b}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}		
 	& = \sum_{i = 1}^{3}\dot{K}_{i1}
@@ -2193,26 +2034,26 @@ we obtain:
 	& = \sum_{i = 1}^{3}\dot{K}_{i2}
 	- \dot{K}_{20},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 	\label{eq:C_CV_3b}
 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}		
 	& = \sum_{i = 1}^{3}\dot{K}_{i3}
 	- \dot{K}_{30},										
 \end{align}
-
-\noindent{}which we may rewrite as the 
+%
+which we may rewrite as the 
 more general result:
-
+%
 \begin{align} \label{eq:C_CV_K_balance}
 	\frac{\mathrm{d}K_{j}}{\mathrm{d}t}		
 	& =  \sum_{i}\dot{K}_{ij}
 	- \dot{K}_{j0}.
 \end{align}
-
-\noindent{}Equation~\ref{eq:C_CV_K_balance} states that
+%
+Equation~\ref{eq:C_CV_K_balance} states that
 for any economic sector, $j$,
 the accumulation of man-made capital stock~($K_{j}$)
 is dependent only on inflows of capital stock
@@ -2227,7 +2068,7 @@ from Equations~\ref{eq:C_P1_def}~-~\ref{eq:C_P3_def}
 into Equations~\ref{eq:C_CV_1a}~-~\ref{eq:C_CV_3a},
 respectively,
 we obtain:
-
+%
 \begin{align} \label{eq:C_CV_1c}
 	\frac{\mathrm{d}K_{1}}{\mathrm{d}t}	&
 	= \dot{R}_{01}
@@ -2249,9 +2090,9 @@ we obtain:
 	- \dot{R}_{20} 
 	- \dot{K}_{20},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 	\label{eq:C_CV_3c}
 	\frac{\mathrm{d}K_{3}}{\mathrm{d}t}	&
@@ -2267,7 +2108,7 @@ we obtain:
 
 As before, we can rearrange these equations
 to obtain:
-
+%
 \begin{align} \label{eq:C_CV_1d}
 	\dot{R}_{01}
 	- \dot{R}_{10} 											&
@@ -2289,9 +2130,9 @@ to obtain:
 	+ \sum_{j = 1}^{3}\dot{K}_{2j}
 	+ \dot{K}_{20},
 \end{align}
-
-\noindent{}and
-
+%
+and
+%
 \begin{align}
 	\label{eq:C_CV_3d}
 	\dot{R}_{03}
@@ -2307,7 +2148,7 @@ to obtain:
 
 Summing Equations~\ref{eq:C_CV_1d}~-~\ref{eq:C_CV_3d},
 we obtain:
-
+%
 \begin{align}\label{eq:C_CV_all}
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
 	= \sum_{j = 1}^{3}\dot{R}_{0j}
@@ -2324,22 +2165,22 @@ we obtain:
 	+ \dot{K}_{20}
 	+ \dot{K}_{30},
 \end{align}
-
-\noindent{}which,
+%
+which,
 after substituting for 
 the depreciation term ($\dot{K}_{i0}$),
 can be simplified to:
-
+%
 \begin{align}\label{eq:C_CV_all_a}
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
 	=\sum_{j = 1}^{3}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}
 	+ \sum_{j = 1}^{3}\sum_{i = 1}^{3}\dot{S}_{ij}
 	+ \sum_{j = 1}^{3}\gamma_{K_{j}}K_{j}
 \end{align}
-
-\noindent{}or,
+%
+or,
 more generally:
-
+%
 \begin{align}\label{eq:C_CV_all_b}
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
 	=\sum_{j}\frac{\mathrm{d}K_{j}}{\mathrm{d}t}
@@ -2353,7 +2194,7 @@ depletion of natural resources in the
 biosphere~$\left(- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}\right)$
 by the economy
 is used for the purposes of:
-
+%
 \begin{itemize}
 	\item increasing man-made capital stocks
 	within the economy~$\left(\frac{\mathrm{d}K_{j}}{\mathrm{d}t}\right)$,
@@ -2362,8 +2203,8 @@ is used for the purposes of:
 	\item overcoming depreciation of man-made
 	capital stocks~($\sum_{j}\gamma_{K_{j}}K_{j}$).
 \end{itemize}
-
-\noindent{}This implications of this 
+%
+This implications of this 
 will be discussed in greater detail
 in Section~\ref{sec:SSE} concerning 
 sustainable scale of the economy and
@@ -2478,17 +2319,7 @@ production of automobiles, directly as
 resources~($\dot{R}$) as well as short-lived 
 materials~($\dot{S}$) and capital goods~($\dot{K}$)
 outlined in Table~\ref{tab:materials_auto}. 
-%**** MCD---split list into resources, short-lived and capital flows as table both inputs and outputs. 
-% Maybe add annotation to Figure~\ref{fig:PERKS_materials_auto} ****
-%**** MCD - Talk about the different materials:
-%steel, glass, rubber, concrete, electricity, plastic
-%finished product is automobile. 
-%Emissions to air and water.
-%Talk to financial (value) flows in Section~\ref{sec:value_auto} 
-%as proxy for physical flows****
-%**** This paragraph is kind-of unclear. Rewrite for clarity?---MKH ****
-Data on the actual flow rates %**** What do you mean by ``rest of the flows?''
-% Do you mean that mass-based, as opposed to dollar-based data are hard to find? ---MKH ****
+Data on the actual flow rates 
 at the industry level
 is very hard to obtain.\footnote{The issue of 
 lack of physical flow data is discussed in 
@@ -2517,8 +2348,6 @@ and capital goods ($\dot{K}$)
 using data from~\cite{Sullivan1998, MacLean1998,Schweimer2000,
 McCleese2002,MacLean2003, Burnham2006,Sullivan2010, Hawkins2012}.
 This list is illustrative and by no means exhaustive.
-%**** I thought there is very little COAL input to the auto industry. 
-%Compare to Becky's table.---MKH ****
 }
 \begin{center}
  \begin{tabular}{p{4cm}p{1cm}p{5.2cm}}
@@ -2609,7 +2438,7 @@ A problem with this product-focused approach is that
 the studies seldom account for material usage not directly
 associated with vehicle manufacturing process,
 for example, materials used in factory construction,
-that is, again accumulation within the sector is neglected.~\cite{MacLean2003}
+that is, again accumulation within the sector is neglected.\cite{MacLean2003}
 ****
 MCD - double-check that \cite{MacLean2003} does not include capital materials. 
 ****
@@ -2632,7 +2461,6 @@ Hawkins2012, MacLean1998, MacLean2003, Schweimer2000, Burnham2006}.
 **** MCD - not much data in this figure. Is more coming? ****}
 \label{fig:PERKS_materials_auto}
 \end{figure}
-
 
 
 %%%%%%%%%% Materials: Summary %%%%%%%%%%

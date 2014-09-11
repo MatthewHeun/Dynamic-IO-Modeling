@@ -2,21 +2,57 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Matt at 2014-09-07 21:06:17 -0400 
+%% Created for Matt at 2014-09-11 08:31:37 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
+@inproceedings{SweeneySmith2013,
+	Author = {Stuart Sweeney Smith and Adelaide Calbry-Muzyka and Adam Brandt and Christopher F. Edwards},
+	Title = {Economy-Wide Exergy Accounting for Energy Technologies: Integrating Life Cycle Analysis and Thermodynamics},
+	Publisher = {Presented at GCEP Research Symposium 2013},
+	Year = {2013}}
+
+
+@article{Soklis:2009aa,
+	Author = {George Soklis},
+	Date-Added = {2014-09-11 12:31:10 +0000},
+	Date-Modified = {2014-09-11 12:31:10 +0000},
+	Journal = {Bulletin of Political Economy},
+	Number = {1},
+	Pages = {51-70},
+	Title = {{The Conversion of the Supply and Use Tables to Symmetric Input-Output Tables: A Critical Review}},
+	Url = {http://mpra.ub.uni-muenchen.de/46873/},
+	Volume = {3},
+	Year = {2009}}
+
+@misc{Tverberg:2013aa,
+	Author = {Gail Tverberg},
+	Date-Added = {2014-09-09 18:06:18 +0000},
+	Date-Modified = {2014-09-09 18:07:46 +0000},
+	Howpublished = {\url{http://ourfiniteworld.com/2013/10/02/our-oil-problems-are-not-over/}},
+	Month = {2 October},
+	Title = {{Our Oil Problems are Not Over!}},
+	Year = {2013}}
+
+@misc{Kopits:2014aa,
+	Author = {Steven Kopits},
+	Date-Added = {2014-09-09 18:01:39 +0000},
+	Date-Modified = {2014-09-09 18:03:07 +0000},
+	Howpublished = {\url{http://blogs.platts.com/2014/07/30/peak-oil-forecasts/}},
+	Month = {30 July},
+	Title = {{Guest blog: Hamilton has it right on oil}},
+	Year = {2014}}
+
 @article{Hoekstra2006,
-  title={Constructing physical input--output tables for environmental modeling and accounting: Framework and illustrations},
-  author={Hoekstra, Rutger and van den Bergh, Jeroen CJM},
-  journal={Ecological Economics},
-  volume={59},
-  number={3},
-  pages={375--393},
-  year={2006},
-  publisher={Elsevier}
-}
+	Author = {Hoekstra, Rutger and van den Bergh, Jeroen CJM},
+	Journal = {Ecological Economics},
+	Number = {3},
+	Pages = {375--393},
+	Publisher = {Elsevier},
+	Title = {Constructing physical input--output tables for environmental modeling and accounting: Framework and illustrations},
+	Volume = {59},
+	Year = {2006}}
 
 @book{Georgescu-Roegen:1971aa,
 	Author = {Nicolas Georgescu-Roegen},
@@ -26,7 +62,8 @@
 	Publisher = {Harvard University Press},
 	Title = {The Entropy Law and the Economic Process},
 	Url = {http://books.google.com/books?id=fOyenQEACAAJ},
-	Year = {1971}}
+	Year = {1971},
+	Bdsk-Url-1 = {http://books.google.com/books?id=fOyenQEACAAJ}}
 
 @article{Odum:1973aa,
 	Author = {Howard T. Odum},
@@ -183,34 +220,27 @@
 	Abstract = {Abstract In this paper, the role of energy use is incorporated into unified growth theory. The paper presents some interesting evidence about the evolu- tion of energy in the transition from stagnation to growth , and it subsequently develops a growth model where the observed increase in ...},
 	Author = {Fr{\"o}ling, M},
 	Date-Added = {2014-08-31 17:11:02 +0000},
-	Date-Modified = {2014-08-31 17:11:02 +0000},
-	File = {{Journal of Population Economics 2009 Fr{\"o}ling.pdf:/Users/matt/Library/Application Support/Papers2/Articles/2009/Fr{\"o}ling/Journal of Population Economics 2009 Fr{\"o}ling.pdf:application/pdf}},
+	Date-Modified = {2014-09-09 18:01:05 +0000},
 	Journal = {Journal of Population Economics},
-	Local-Url = {file://localhost/Users/matt/Library/Application%20Support/Papers2/Articles/2009/Fr%C3%B6ling/Journal%20of%20Population%20Economics%202009%20Fr%C3%B6ling.pdf},
 	Number = {3},
 	Pages = {1133--1163},
 	Rating = {1},
 	Read = {Yes},
 	Title = {{Energy use, population and growth, 1800--1970}},
-	Uri = {\url{papers2://publication/uuid/072BABB0-2B21-42B1-83A6-7A1CA239D17C}},
 	Volume = {24},
 	Year = {2009}}
 
 @article{Nel:2010fv,
 	Author = {Nel, Willem P and van Zyl, Gerhardus},
 	Date-Added = {2014-08-31 17:08:38 +0000},
-	Date-Modified = {2014-08-31 17:08:38 +0000},
-	File = {{Applied Energy 2010 Nel.pdf:/Users/matt/Library/Application Support/Papers2/Articles/2010/Nel/Applied Energy 2010 Nel.pdf:application/pdf}},
+	Date-Modified = {2014-09-09 18:01:17 +0000},
 	Journal = {Applied Energy},
-	Local-Url = {file://localhost/Users/matt/Library/Application%20Support/Papers2/Articles/2010/Nel/Applied%20Energy%202010%20Nel.pdf},
 	Month = jan,
 	Number = {1},
 	Pages = {168--177},
-	Publisher = {Elsevier Ltd},
 	Rating = {0},
 	Read = {Yes},
 	Title = {{Defining limits: Energy constrained economic growth}},
-	Uri = {\url{papers2://publication/doi/10.1016/j.apenergy.2009.06.003}},
 	Volume = {87},
 	Year = {2010}}
 
@@ -218,15 +248,12 @@
 	Abstract = {I. INTRODUCTION All theory depends on assumptions which are not quite true. That is what makes it theory. The art of successful theorizing is to make the inevitable simplifying assumptions in such a way that the final results are not very sensitive. 1 A "crucial" assumption is one ...},
 	Author = {Solow, Robert M},
 	Date-Added = {2014-08-31 15:21:42 +0000},
-	Date-Modified = {2014-08-31 15:21:42 +0000},
-	File = {{1956 Solow.pdf:/Users/matt/Library/Application Support/Papers2/Articles/1956/Solow/1956 Solow.pdf:application/pdf}},
+	Date-Modified = {2014-09-09 18:01:29 +0000},
 	Journal = {The Quarterly Journal of Economics},
-	Local-Url = {file://localhost/Users/matt/Library/Application%20Support/Papers2/Articles/1956/Solow/1956%20Solow.pdf},
 	Number = {1},
 	Pages = {65--94},
 	Rating = {0},
 	Title = {{A Contribution to the Theory of Economic Growth}},
-	Uri = {\url{papers2://publication/uuid/A813541E-45E5-4000-A8E1-AB15BDD166AC}},
 	Volume = {70},
 	Year = {1956}}
 
