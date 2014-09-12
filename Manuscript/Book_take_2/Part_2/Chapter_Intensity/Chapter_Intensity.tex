@@ -1032,7 +1032,8 @@ of the sectors of the economy, under the assumption that
 Final Consumption~(1) is exogenous to the economy (Sectors $2\ldots{}n$). 
 We discuss Equation~\ref{eq:epsilon_leontief_with_A}
 further in Section~\ref{sec:Implications_for_IO}.
-But first, the following section examines energy intensity 
+But first, we address a few methodological questions
+followed by an examination of energy intensity 
 in the context of our running example, the US auto industry.
 
 
@@ -1151,6 +1152,141 @@ analysis~\cite{Costanza:1980ww} was conducted using US data for 1963, 1967, and 
 Doing so could provide further insight on Costanza's result~\cite{Costanza:1980ww}
 that endogenizing Final Consumption (1) reduces variation 
 of energy intensity ($\boldsymbol{\varepsilon}$) across all sectors of the economy.
+
+
+%%%%%%%%%% Energy Input Vector %%%%%%%%%%
+\section{Choice of energy input vector}
+\label{sec:energy_input_vector}
+%%%%%%%%%%
+
+There is discussion in the literature about the $\vec{E}_{0}$
+vector and how it should be applied to the economy.
+Costanza and Herendeen~\cite{Costanza:1984tq} counted fossil fuel input 
+from the biosphere to the economy
+at both 
+
+\begin{enumerate}
+	\item{the points where direct energy physically 
+		enters the economy from the biosphere, 
+		typically energy-producing sectors
+		(called the DIRECT method), and}
+
+	\item{the points of conversion to useful work, 
+		typically all energy \emph{consuming} sectors
+		(called the Direct Energy Conversion
+		(DEC) method).}
+\end{enumerate}
+
+Costanza and Herendeen justified the Direct Energy Conversion~(DEC) 
+approach on both thermodynamic and economic grounds. 
+The thermodynamic justification derived from the purpose 
+of energy consumption in an economy, 
+namely to produce useful work. 
+If direct energy flows \emph{through} a sector, 
+it should not be counted \emph{against} that sector: 
+only energy that is converted to useful work \emph{within} 
+a sector should be counted against that sector.
+The economic justification derives 
+from the typical treatment of transportation sectors of the economy.
+Costanza and Herendeen note:
+
+\begin{quote}
+	The primary energy sectors functions [\emph{sic}] \sout{are}
+	like the transportation sectors, 
+	which alse~[\emph{sic}] require special treatment in I-O analysis 
+	based on the difference between the services they provide 
+	and their physical inputs and outputs. 
+	If a strictly physical interpretation were applied to the 
+	transportation sectors, 
+	they would receive almost all goods produced in the whole economy as inputs 
+	and redistribute them as output, 
+	masking information on transfers of goods between sectors. 
+	For this reason, the transportation sectors in I-O analysis 
+	are thought of as providing transportation services 
+	that are purchased by the producing sector, 
+	preserving the connection between the producing and consuming sector 
+	but adding a `transportation margin.' 
+	For analogous reasons, 
+	the primary energy sectors should be thought of as providing a 
+	`transportation service' in moving primary energy 
+	from nature to the consuming sectors. 
+	The DEC energy input vector incorporates this interpretation.\cite[p. 151]{Costanza:1984tq}
+\end{quote}
+
+The derivation of the materials, energy, and value accounting framework
+presented herein counts energy flows from the biosphere to the economy
+at the point of physical inflow to the economy. 
+That is, elements of the energy input vector 
+($\vec{E}_{0}$) are non-zero only for those sectors 
+that receive energy directly from the biosphere. 
+So, for example, in Figure~\ref{fig:C_energy} from Example~C, 
+$\dot{E}_{03} = 0$ and $\dot{E}_{02} \ge 0$. 
+Our approach is equivalent to Costanza's DIRECT method.
+We believe that the DIRECT approach is correct 
+and that the DEC method is unwarranted.
+
+Justification for our position comes from the detailed derivation
+of the materials, energy, and value framework presented in 
+Chapters~\ref{chap:materials}--\ref{chap:value}. 
+
+\begin{enumerate}
+	\item 
+		Firstly, $\vec{E}_{0}$ was defined as a flow 
+		from the biosphere to economic sectors
+		into which direct energy \emph{physically} flows.
+		It is inappropriate to route the energy elsewhere.
+	\item 
+		Secondly, Costanza and Herendeen's 
+		concern~\cite[pp. 130 \& 138]{Costanza:1984tq}
+		about flow-through of direct energy is unfounded, 
+		because direct energy outflows from a sector
+		are \emph{never} counted against the sector
+		with the DIRECT method.
+		We see this fact in the following terms:
+			\begin{enumerate}
+				\item
+					{$- \dot{E}_{1}$ in 
+					Equation~\ref{eq:A_total_energy_1},}
+				\item
+					{$- \dot{E}_{j}$ in Equation~\ref{eq:C-CV_dB_123},}
+				\item
+					{$- 
+						\begin{bmatrix}
+							\dot{X}_{2} & 0          \\
+							0           & \dot{X}_{3}
+						\end{bmatrix}
+						\begin{Bmatrix}
+							\varepsilon_{2}\\
+							\varepsilon_{3}
+						\end{Bmatrix}
+					$
+					in Equation~\ref{eq:C-Expanded_Matrix_Form}, and}
+				\item
+					{$- \hat{\vec{X}}\boldsymbol{\varepsilon}$ 
+					in Equation~\ref{eq:matrix_leontief_pre_1}.}
+			\end{enumerate}
+	\item
+		Thirdly, further proof that the DEC approach is unwarranted
+		comes from equations that show waste 
+		heat~($\dot{Q}_{j0}$) as counting toward 
+		the accumulation of embodied energy within 
+		an economic sector.
+		Equation~\ref{eq:A_dB1/dt} of 
+		Section~\ref{subsec:A_first_law_embodied}
+		is an example. 
+		It is the waste heat~($\dot{Q}_{10}$), 
+		i.e.\ the energy \emph{burned within} the sector,
+		that counts against the sector.
+\end{enumerate}
+
+The DIRECT approach \emph{already always} provides 
+the effect that Costanza and Herendeen~\cite{Costanza:1984tq}
+desired from the DEC approach. 
+Because the DEC approach is unwarranted, 
+we quote DIRECT energy intensity values only
+when discussing energy intensities in 
+the following section (\ref{sec:intensity_auto}).
+
 
 
 %%%%%%%%%% Intensity: Auto industry example %%%%%%%%%%
