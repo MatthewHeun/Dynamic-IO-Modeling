@@ -490,10 +490,10 @@ summary of the intensity chapter (Section~\ref{sec:intensity_summary}).
 
 %**** MCD - Talk about Red Queen here ****
 
-The quality of both materials
-and energy play a role in the 
-efficiency with which economies 
-convert material resources into products.
+% The quality of both materials
+% and energy play a role in the
+% efficiency with which economies
+% convert material resources into products.
 
 ****
 
@@ -991,7 +991,10 @@ as in Figure~\ref{fig:PERKS_waste}.
 \begin{figure}
 	\includegraphics[width=\linewidth]{Part_3/Chapter_Unfinished/images/PERKS_basic_unit_materials_recycle.pdf}
 	\caption[Material flows through an economic sector with waste treatment]{Material flows 
-					through an economic sector with waste treatment flows to other economic sectors.}
+					through an economic sector with waste treatment flows to other economic sectors.
+					**** MKH says, Mik---now that we're using dashed lines to
+					indicate monetary flow, should we choose a different line type for this figure?
+					****}
 \label{fig:PERKS_waste}
 \end{figure}
 
@@ -1148,120 +1151,122 @@ Then go on to the discussion below.
 
 ****
 
+DONE !!!!!!!!!!!!!!!
+
 Matt: Move to Energy Intensity chapter.
 
 ****
 
-There is debate in the literature about whether government
-and households
-(Final Consumption~(1) in Figure~\ref{fig:B_materials}) 
-should be endogenous to economic models.
-This debate is a discussion about the appropriate analysis boundary.
-Costanza~\cite{Costanza:1980ww} was the first to endogenize government and households, 
-because households provide services to the economy (labor) in exchange for wages 
-and government provides services to the economy in exchange for taxes, 
-both of which require energy. 
-Costanza~\cite{Costanza:1980ww} also demonstrated that 
-energy intensity results
-are a function of boundary (control volume) selection. 
-By including government and households 
-as sectors in the model, 
-the variation of energy intensity is significantly reduced 
-across all sectors of the economy. 
-
-The key energy intensity equation in this book
-(Equation~\ref{eq:epsilon_leontief_with_A})
-was derived under the assumption that Final Consumption~(1)
-is exogenous to energy intensity calculation.
-However, Equation~\ref{eq:epsilon_leontief_with_A}
-could be re-derived to endogenize 
-Final Consumption~(1).
-
-The total energy accounting equation for Final Consumption (1)
-in Figure~\ref{fig:C_total_energy} can be written 
-analogously to Equations~\ref{eq:C-Total_Energy_Sec_2-b}
-and~\ref{eq:C-Total_Energy_Sec_3-b} as
+% There is debate in the literature about whether government
+% and households
+% (Final Consumption~(1) in Figure~\ref{fig:B_materials})
+% should be endogenous to economic models.
+% This debate is a discussion about the appropriate analysis boundary.
+% Costanza~\cite{Costanza:1980ww} was the first to endogenize government and households,
+% because households provide services to the economy (labor) in exchange for wages
+% and government provides services to the economy in exchange for taxes,
+% both of which require energy.
+% Costanza~\cite{Costanza:1980ww} also demonstrated that
+% energy intensity results
+% are a function of boundary (control volume) selection.
+% By including government and households
+% as sectors in the model,
+% the variation of energy intensity is significantly reduced
+% across all sectors of the economy.
 %
-\begin{equation} \label{eq:C-Total_Energy_Sec_1-unfinished}
-	\frac{\mathrm{d}B_{K_{1}}}{\mathrm{d}t}
-	= \dot{E}_{01}
-	+ \varepsilon_{1} \dot{X}_{11}
-	+ \varepsilon_{2} \dot{X}_{21}
-	+ \varepsilon_{3} \dot{X}_{31}
-	- \varepsilon_{1} \dot{X}_{1}
-	- \left( \dot{B}_{\dot{R}_{10}} 
-							+ \dot{B}_{\dot{S}_{10}}
-							+ \gamma_{K,1} B_{K_{1}}
-							\right).
-\end{equation}
+% The key energy intensity equation in this book
+% (Equation~\ref{eq:epsilon_leontief_with_A})
+% was derived under the assumption that Final Consumption~(1)
+% is exogenous to energy intensity calculation.
+% However, Equation~\ref{eq:epsilon_leontief_with_A}
+% could be re-derived to endogenize
+% Final Consumption~(1).
 %
-Furthermore, Equations~\ref{eq:C-Total_Energy_Sec_2-b}
-and~\ref{eq:C-Total_Energy_Sec_3-b}
-can be rewritten as 
+% The total energy accounting equation for Final Consumption (1)
+% in Figure~\ref{fig:C_total_energy} can be written
+% analogously to Equations~\ref{eq:C-Total_Energy_Sec_2-b}
+% and~\ref{eq:C-Total_Energy_Sec_3-b} as
+% %
+% \begin{equation} \label{eq:C-Total_Energy_Sec_1-unfinished}
+% 	\frac{\mathrm{d}B_{K_{1}}}{\mathrm{d}t}
+% 	= \dot{E}_{01}
+% 	+ \varepsilon_{1} \dot{X}_{11}
+% 	+ \varepsilon_{2} \dot{X}_{21}
+% 	+ \varepsilon_{3} \dot{X}_{31}
+% 	- \varepsilon_{1} \dot{X}_{1}
+% 	- \left( \dot{B}_{\dot{R}_{10}}
+% 							+ \dot{B}_{\dot{S}_{10}}
+% 							+ \gamma_{K,1} B_{K_{1}}
+% 							\right).
+% \end{equation}
+% %
+% Furthermore, Equations~\ref{eq:C-Total_Energy_Sec_2-b}
+% and~\ref{eq:C-Total_Energy_Sec_3-b}
+% can be rewritten as
+% %
+% \begin{equation} \label{eq:C-Total_Energy_Sec_2-unfinished}
+% 	\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t}
+% 	= \dot{E}_{02}
+% 	+ \varepsilon_{1} \dot{X}_{12}
+% 	+ \varepsilon_{2} \dot{X}_{22}
+% 	+ \varepsilon_{3} \dot{X}_{32}
+% 	- \varepsilon_{2} \dot{X}_{2}
+% 	- \left( \dot{B}_{\dot{R}_{20}}
+% 							+ \dot{B}_{\dot{S}_{20}}
+% 							+ \gamma_{K,2} B_{K_{2}}
+% 							\right)
+% \end{equation}
+% %
+% and
+% %
+% \begin{equation} \label{eq:C-Total_Energy_Sec_3-unfinished}
+% 	\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t}
+% 	= \dot{E}_{03}
+% 	+ \varepsilon_{1} \dot{X}_{13}
+% 	+ \varepsilon_{2} \dot{X}_{23}
+% 	+ \varepsilon_{3} \dot{X}_{33}
+% 	- \varepsilon_{3} \dot{X}_{3}
+% 	- \left( \dot{B}_{\dot{R}_{30}}
+% 							+ \dot{B}_{\dot{S}_{30}}
+% 							+ \gamma_{K,3} B_{K_{3}}
+% 							\right).
+% \end{equation}
+% %
+% Following the derivation of Chapter~\ref{chap:intensity},
+% we can obtain an updated version
+% of Equation~\ref{eq:epsilon_leontief_with_A}:
+% %
+% \begin{equation} \label{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}
+% 	\boldsymbol{\varepsilon}
+% 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
+% 		\left[\vec{E}_{0}
+% 				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t}
+% 				- \vec{B}_{\dot{W}}
+% 				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
+% 		\right],
+% \end{equation}
+% %
+% wherein
+% %
+% \begin{itemize}
+% 	\item{the vectors and matrices of Equations~\ref{eq:B_vec_def}--\ref{eq:gamma_hat_matrix_def}
+% 	and~\ref{eq:A_matrix_def} have been extended to include Final Consumption~(1) and}
 %
-\begin{equation} \label{eq:C-Total_Energy_Sec_2-unfinished}
-	\frac{\mathrm{d}B_{K_{2}}}{\mathrm{d}t}
-	= \dot{E}_{02}
-	+ \varepsilon_{1} \dot{X}_{12}
-	+ \varepsilon_{2} \dot{X}_{22}
-	+ \varepsilon_{3} \dot{X}_{32}
-	- \varepsilon_{2} \dot{X}_{2}
-	- \left( \dot{B}_{\dot{R}_{20}} 
-							+ \dot{B}_{\dot{S}_{20}}
-							+ \gamma_{K,2} B_{K_{2}}
-							\right)
-\end{equation}
+% 	\item{Final Consumption~(1) has been endogenized
+% 	(the $\vec{T}_{1}$ term of Equation~\ref{eq:epsilon_leontief_with_A}
+% 	has been subsumed into the
+% 	${(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}$
+% 	term of Equation~\ref{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}).}
+% \end{itemize}
 %
-and
-%
-\begin{equation} \label{eq:C-Total_Energy_Sec_3-unfinished}
-	\frac{\mathrm{d}B_{K_{3}}}{\mathrm{d}t}
-	= \dot{E}_{03}
-	+ \varepsilon_{1} \dot{X}_{13}
-	+ \varepsilon_{2} \dot{X}_{23}
-	+ \varepsilon_{3} \dot{X}_{33}
-	- \varepsilon_{3} \dot{X}_{3}
-	- \left( \dot{B}_{\dot{R}_{30}} 
-							+ \dot{B}_{\dot{S}_{30}}
-							+ \gamma_{K,3} B_{K_{3}}
-							\right).
-\end{equation}
-%
-Following the derivation of Chapter~\ref{chap:intensity},
-we can obtain an updated version 
-of Equation~\ref{eq:epsilon_leontief_with_A}:
-%
-\begin{equation} \label{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}
-	\boldsymbol{\varepsilon} 
-	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}
-		\left[\vec{E}_{0} 
-				- \frac{\mathrm{d}\vec{B}_{K}}{\mathrm{d}t} 
-				- \vec{B}_{\dot{W}}
-				- \hat{\boldsymbol{\gamma}}_{B}\vec{B}_{K}
-		\right],
-\end{equation}
-%
-wherein 
-%
-\begin{itemize}
-	\item{the vectors and matrices of Equations~\ref{eq:B_vec_def}--\ref{eq:gamma_hat_matrix_def}
-	and~\ref{eq:A_matrix_def} have been extended to include Final Consumption~(1) and}
-	
-	\item{Final Consumption~(1) has been endogenized
-	(the $\vec{T}_{1}$ term of Equation~\ref{eq:epsilon_leontief_with_A}
-	has been subsumed into the 
-	${(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1}\hat{\vec{X}}^{-1}$
-	term of Equation~\ref{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}).}
-\end{itemize}
-
-Future work could estimate energy intensity~($\boldsymbol{\varepsilon}$) 
-using Equations~\ref{eq:epsilon_leontief_with_A}
-and~\ref{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}
-with updated economic data for a wider range of countries.\footnote{Costanza's
-analysis~\cite{Costanza:1980ww} was conducted using US data for 1963, 1967, and 1972.}
-Doing so could provide further insight on Costanza's result~\cite{Costanza:1980ww}
-that endogenizing Final Consumption (1) reduces variation 
-of energy intensity across all sectors of the economy ($\boldsymbol{\varepsilon}$).
+% Future work could estimate energy intensity~($\boldsymbol{\varepsilon}$)
+% using Equations~\ref{eq:epsilon_leontief_with_A}
+% and~\ref{eq:epsilon_leontief_depreciation_simplification_demand_endogenized}
+% with updated economic data for a wider range of countries.\footnote{Costanza's
+% analysis~\cite{Costanza:1980ww} was conducted using US data for 1963, 1967, and 1972.}
+% Doing so could provide further insight on Costanza's result~\cite{Costanza:1980ww}
+% that endogenizing Final Consumption (1) reduces variation
+% of energy intensity across all sectors of the economy ($\boldsymbol{\varepsilon}$).
 
 
 %%%%%%%%%% Unfinished: Summary %%%%%%%%%%
