@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="PERKS_basic_unit_embodied_energy_content_auto_ind.svg">
+   sodipodi:docname="PERKS_basic_unit_embodied_energy_content.svg">
   <defs
      id="defs4">
     <marker
@@ -418,7 +418,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0087525"
-     inkscape:cx="366.78969"
+     inkscape:cx="349.44153"
      inkscape:cy="276.97461"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -440,7 +440,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -535,9 +535,9 @@
        inkscape:connector-curvature="0"
        id="path6796"
        d="m -242.33459,561.34686 -0.41408,95.47929"
-       style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9,9;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9,9;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m -12.33459,503.34686 -0.41408,153.47929"
        id="path6806"
        inkscape:connector-curvature="0"
@@ -607,7 +607,7 @@
        inkscape:connector-curvature="0"
        id="path6848"
        d="m -82.33459,561.34686 -0.41408,93.47929"
-       style="fill:none;stroke:#2a7fff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#2a7fff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9,9;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#EmptyDiamondM);marker-end:url(#Arrow1Mend)"
        d="m 256.88013,523.67729 0.005,-186.33041 -591.21948,0 -0.33767,137.52821 61.92359,-0.0489"
