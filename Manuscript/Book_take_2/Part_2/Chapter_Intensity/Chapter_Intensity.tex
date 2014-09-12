@@ -46,16 +46,20 @@ energy, embodied energy, and energy intensity would
 provide firms and consumers with better information to
 navigate upcoming energy transitions.
 To that end, we developed equations that describe the
-flow and accumulation of direct energy, embodied energy, and value within an economy
+flow and accumulation of direct energy, embodied energy, and economic value within an economy
 in Chapters~\ref{chap:direct_energy},~\ref{chap:embodied_energy}, and~\ref{chap:value}.
-In this chapter, we merge energy and value together to estimate
+In this chapter, we merge energy and economic value together to estimate
 the energy intensity ($\varepsilon$) of economic sectors,
-measured in joules per dollar.\footnote{The literature discusses 
-the energy embodied in \emph{products} for example, ``The data and methodologies described in this report 
-permit calculation of five types of energy `embodied' 
-in a particular goods~[\emph{sic}] or service.''~\cite[p.~268]{Bullard:1978vd} % chktex 38
-It can be meaningful to discuss the energy intensity of \emph{processes}, too,
-and we switch between these two meanings of the word ``embodied.''}
+measured in joules per dollar.%
+	\footnote{
+	The literature discusses 
+	the energy embodied in \emph{products} for example, 
+	``The data and methodologies described in this report 
+	permit calculation of five types of energy `embodied' 
+	in a particular goods~[\emph{sic}] or service.''~\cite[p.~268]{Bullard:1978vd} % chktex 38
+	It can be meaningful to discuss the energy intensity of \emph{processes}, too,
+	and we switch between these two meanings of the word ``embodied.''
+	}
 
 
 %%%%%%%%%% Background %%%%%%%%%%
@@ -80,19 +84,29 @@ to produce an economic good at some rate.
 For example, the automotive sector takes in steel, rubber, glass, etc. 
 and produces a number of cars per year. 
 In contrast to high-level economic growth models 
-that include only a few factors of production (such as land, capital, and labor), 
+that include only a few factors of production (such as land, capital, and labor),%
+	 \footnote{
+	 The traditional primary factors of production (land, capital, and labor) 
+	 are not \emph{flows} into the production processes. 
+	 Rather, they are \emph{stocks} that, when present, 
+	 allow factors of production (steel, rubber, and glass) 
+	 to be transformed into final products (automobiles). 
+	 The quantity and quality of these stocks 
+	 determine the quantity and quality of their flow of productive services.
+	 }
 the I-O analysis technique allows many differentiated factors of production 
 and raw material feedstocks.\cite{Costanza:1980ww} 
-In I-O methods, each factor of production 
-is considered to be a output from a sector of the economy. 
-As will be discussed later,
-the traditional primary factors of production (land, capital, and labor) 
-are not \emph{flows} into the production processes. 
-Rather, they are \emph{stocks} that, when present, 
-allow factors of production (steel, rubber, and glass) 
-to be transformed into final products (automobiles). 
-The quantity and quality of these stocks 
-determine the quantity and quality of their flow of productive services.
+This is important, because, in reality, 
+each economic process exists in a complex network of
+interacting processes that comprise the entire economy.
+Bullard et al.\ said 
+``each step in a process analysis may be viewed as 
+an expansion of the system boundary 
+(around the item being analyzed) 
+into the economic system.''~\cite[p.~281]{Bullard:1978vd}
+Figure~\ref{fig:Hybrid_boundary} shows that 
+every process calls on every other process within the economy,
+even if only minutely and indirectly at many steps removed.
 
 \begin{figure}[!ht]
 \centering\
@@ -109,19 +123,26 @@ in capital stock ($K$) of embodied energy within materials in economic sectors.}
 \label{fig:basic_unit}
 \end{figure}
 
+\begin{figure}[p]
+\centering\
+\includegraphics[width=\linewidth]{Part_3/Chapter_Unfinished/images/Hybrid_boundary.pdf}
+\caption[System boundary for process and I-O analyses]{System boundary for process and I-O analyses, adapted from~\cite{Bullard:1978vd}.}
+\label{fig:Hybrid_boundary}
+\end{figure}
+
 As discussed in Chapter~\ref{chap:acct_for_won}, 
 the oil shocks of the 1970's spurred great interest in
 the important role of energy in economic production.
 In addition to the productive services 
-provided by flows of capital and labor,
+provided by stocks of capital and labor,
 a flow of energy%
 	\footnote{
 	Or, more precisely, 
 	the degradation of an exergetic gradient/destruction of exergy.
 	} 
 is required for economic activity. 
-These energy flows originate from the natural environment, 
-recognition of which provoked researchers from the field of 
+These energy flows originate from the biosphere, 
+recognition of which prompted researchers from the field of 
 Net Energy Analysis (NEA) to extend 
 the traditional Leontief
 input-output method to include important 
@@ -134,55 +155,113 @@ While the Leontief input-output method
 relies exclusively 
 on monetary units to represent value flows 
 among sectors of an economy, 
-the key insight of the EI-O method 
-is to rely upon physical units 
+EI-O method 
+relies upon physical units 
 (especially energy units of joules) 
 to represent some of the flows among economic sectors. 
 In doing so, 
-energy intensities of monetary flows can be estimated. 
+energy intensities ($\varepsilon$) of product flows can be estimated. 
 
-However,
-as we discussed in Chapter~\ref{chap:acct_for_won},
-resource inputs are only one side of the coin.
-According to thermodynamics,
-all acts of production (requiring inputs from the biosphere)
-are simultaneously acts of consumption,
-degrading high quality inputs into wastes to be 
-discharged back into the biosphere.
-Now that the global economy is experiencing the pressure of physical constraints, 
-the necessity for a more comprehensive model, 
-and collection of data to estimate it,
-is emerging. 
-A number of disciplines including
-material flow analysis (MFA), 
-industrial ecology (IE), and 
-life-cycle assessment (LCA) 
-have developed further extensions of the EI-O
-framework to account for energy, material and waste flows
-between the economy and the biosphere.
-Motivated by concerns over environmental impacts
-(especially climate change),
-the primary focus of such efforts has been on
-tracking flows of materials
-(especially greenhouse gases)
-into the biosphere
-rather than on resource depletion.\cite{ConAccount1998,
-Lenzen1998, Hoekstra2003, Bailey2004, Pedersen2006, Turner2007}
+The EI-O method can be considered a ``top-down'' analysis approach for
+estimating energy intensity.
+An alternative, ``bottom-up'' approach, 
+that we will discuss here briefly but not employ in this book,
+consists of detailed, process-based analysis
+of specific economic processes.
+Process analysis calculates the
+energetic and material flows associated with the process
+under study by disaggregating the process into
+several components or sub-processes.
+Model specification and data collection for process analysis is arduous,
+time-consuming,
+and costly.
+Obviously,
+the time, 
+effort,
+and cost involved with trying to model and
+measure all of the flows in process analysis becomes daunting
+for even low numbers of interacting processes.
+The decision of where to draw the boundary of
+a process analysis is known in the 
+lifecycle assessment literature as the 
+\emph{truncation problem}.\cite{Suh2004}
+A comparison of the top-down and bottom-up approaches is provided 
+in Figure~\ref{fig:IO_vs_process}.
+For the purposes simplicity,
+we focus on top-down EI-O methods in this book.%
+	\footnote{
+	It is possible to pursue hybrid top-down and bottom-up analysis methods.
+	They hybrid approach 
+	utilizes data from an EI-O analysis to supplement the
+	missing data from truncation of a process analysis.
+	The financial cost of goods and services identified by
+	the process analysis are converted to energy
+	(or material) flows via the EI-O method.
+	The truncation error is replaced by a smaller aggregation
+	error due to limitations of the EI-O 
+	method.\cite{Bullard:1978vd}
+	A variety of other hybrid methods exist which also aim to
+	overcome the limitations of either process or I-O method 
+	individually.\cite{Bullard:1978vd, Suh2004, Suh2002, 
+	Crawford2008, Zhai2010}	
+	}
+
+\begin{figure}[p]
+\centering\
+\includegraphics[width=0.8\linewidth]{Part_3/Chapter_Unfinished/images/Top_down_vs_bottom_up.pdf}
+\caption[Top-down vs.\ bottom-up analyses]{Advantages (pros) and disadvantages (cons) of ``top-down,'' I-O and ``bottom-up,'' process-based analyses.
+Adapted from~\cite{Hendrickson2006}.} % chktex 38
+\label{fig:IO_vs_process}
+\end{figure}
+
+% However, as we discussed in Chapter~\ref{chap:acct_for_won},
+% resource inputs are only one aspect of production.
+% According to thermodynamics,
+% all acts of production (requiring inputs from the biosphere)
+% are simultaneously acts of consumption,
+% degrading high quality inputs into wastes to be
+% discharged back into the biosphere.
+% In the age of resource depletion
+% the necessity for a more comprehensive model,
+% and collection of data to estimate it,
+% is emerging.
+% A number of disciplines including
+% material flow analysis (MFA),
+% industrial ecology (IE), and
+% life-cycle assessment (LCA)
+% have developed further extensions of the EI-O
+% framework to account for energy, material and waste flows
+% between the economy and the biosphere.
+% Motivated by concerns over environmental impacts
+% (especially climate change),
+% the primary focus of such efforts has been on
+% tracking flows of materials
+% (especially greenhouse gases)
+% into the biosphere
+% rather than on resource depletion.\cite{ConAccount1998,
+% Lenzen1998, Hoekstra2003, Bailey2004, Pedersen2006, Turner2007}
 
 Both the original Leontief input-output method
-and the extensions cited above
+(Figure~\ref{fig:basic_unit}A)
+and the EI-O extension cited above
+(Figure~\ref{fig:basic_unit}B)
 assume steady-state conditions in an economy, 
-i.e., flows of value and material into 
-and out of each economic sector are in balance. 
-Dynamic or transient behavior 
+i.e., flows of economic value and material into 
+and out of each economic sector are in balance.
+Wastes are not present, and
+dynamic or transient behavior 
 of the economic system is not considered. 
-Thus, there is no accumulation of economic factors
+Thus, in the EI-O analysis technique, 
+there is no accumulation of economic factors
 or embodied energy
 within any of the sectors. 
-The analysis techniques provide ``snapshots'' 
+The EI-O approach provides ``snapshots'' 
 of economic activity at an instant in time.
 
-Assuming no accumulation of materials, 
+However, the EI-O method provides an incomplete model of the economy.
+Figures~\ref{fig:basic_unit}C and~D show that wastes exist and
+materials can accumulate in economic sectors as manufactured capital.
+In fact, assuming no accumulation of materials, 
 within economic sectors or society itself, 
 is tantamount to assuming that \emph{all} material flows 
 through the economy are directed toward 
@@ -207,10 +286,15 @@ we need to understand the way energy flows through economies.
 The steady-state EI-O techniques of Bullard, Herendeen, 
 and others~\cite{Bullard1975,Herendeen1978} 
 offer a starting point to that end. 
-In the sections below, we extend the steady-state EI-O
-techniques to include accumulation of embodied energy
-within the accounting framework outlined in 
-Chapters~\ref{chap:materials}--\ref{chap:value}.
+But, we need to move toward a fuller picture of 
+the role of energy and manufactured capital in the economy;
+we need to move toward Figures~\ref{fig:basic_unit}C and~D.
+In the sections below, we utilize the
+the results from
+Chapters~\ref{chap:materials}--\ref{chap:value}
+and extend the steady-state EI-O
+techniques to estimate energy intensity given the existence of
+wastes and the accumulation of embodied energy.
 
 
 %%%%%%%%%% Methodology %%%%%%%%%%
@@ -1082,7 +1166,9 @@ In Section~\ref{sec:Data}, we discuss further the need for additional data.
 \label{sec:intensity_summary}
 %%%%%%%%%%
 
-In this chapter, we derived algebraic equations that describe the energy intensity
+In this chapter, we derived algebraic equations,
+based on the top-down EI-O method,
+that describe the energy intensity
 (in units of J/\$) of products of economic sectors.
 The algebraic equations were applied to Examples~A--C % chktex 8
 to derive a matrix equation
