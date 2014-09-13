@@ -1,0 +1,65 @@
+David:
+
+Please find attached the following files:
+
+* <something>.zip: contains the raw LaTeX code and images for Beyond GDP.
+* BeyondGDP.pdf: our compiled version of the book
+
+There are a few known issues that we will work on in the coming weeks:
+
+* Obtaining permissions for the following figures:
+  - 
+  
+* Including a new version of Figure ____. Steve Kopits told me that he is working on a new version of this chart. I'm hopeful it will arrive in the next couple of weeks.
+
+
+There are a few known issues for which we would like assistance from the Springer copy editors:
+
+* index:  We have included the following files in the glossaries folder:
+  - index.tex:   contains terms we would like indexed
+  - indexcf.tex: contains terms we would like cross-referenced in the index
+The index is compiled when the book is built, but each term in the index includes only one page number. \index{} tags should be placed everywhere that these terms appear in the text to complete the index.
+At one point you indicated that Springer would compile the index from a list of terms we provide. We trust that this approach is sufficient to indicate the terms we want included in the index and that copyeditors can find the appropriate places in the text to include the \index{} tags.
+
+* bibliography: 
+  - We have included a bibliography that is intended to include all of the references from the entire book (and only those references).  In the attached version of the book, the bibliography contains MORE references than are in the chpaters.  Can your copy editors eliminate unused BibTeX references the "metabolic.bib" file?  Or, is that something that we should do?
+  - The bibliographic entries have inconsistent formatting at this time.  For example:
+    . Some references use full first and middle names, but some have initials only
+	. Some article references have capitilized titles, but some have only the first word capitalized 
+Can your copy editors sort this out?
+
+* We're using the "microtype" package to provide beautiful typesetting. However, for quotation marks, it appears to only protrude the first apostrophe, not both. This is obvious in the Lewis Carrol quote that preceds the Preface, but the problem persists throughout the book. Can the Springer copy editors find a way to hang both apostrophes in the quotation marks?
+
+* We're using the hyperref package to provide hyperlinks in the .pdf version of the book.  Unfortunately, not all is working yet.  At present, clicking on footnote marks doesn't bring you to the appropriate footnote, it brings you to title page of the document.  When typesetting the book, we see errors of the type
+
+pdfTeX warning (dest): name{Hfootnote.91} has been referenced but does not exist, replaced by a fixed one
+
+for every footnote in the text.  Can the Springer copy editors sort this out?  It would be really nice to have hyperlinked foonotes in the ebook version.  
+
+For yout LaTeX gurus: I suspect that hyperref should be loaded LAST.  At present, we're not loading hyperref in the main .tex file, because there is some other package that must also load hyperref.  Sorting out the load order might fix this problem.
+
+
+
+Now a few questions:
+
+* Foreword: we would like to ask William Nordhaus to provide a foreward to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Spring will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
+
+* Blurbs: we would like to ask Herman Daly, Robert Herendeen, and Clark Bullard to provide jacket blurbs for the book.  Who should do this?  When should they be approached?
+
+ 
+
+
+
+
+Now a few notes:
+
+* the glossary:  We have included a glossary. The glossaries package uses the file glossaries/glossary.tex to generate the glossary. We're open to suggestions for additional terms that should be included.
+
+
+
+
+
+
+
+
+Thank you for the opportunity to work on this book.  We are honored to have the opportunity to both develop our ideas and thoughts and communicate them to a broader audience.
