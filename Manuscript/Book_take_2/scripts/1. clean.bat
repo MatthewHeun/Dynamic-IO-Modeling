@@ -97,12 +97,22 @@ erase *.aux
 erase *.bbl
 erase *.blg    
 
+cd ..\..\Part_3\Book_Exit
+erase *.aux
+erase *.bbl
+erase *.blg    
+
 cd ..\..\Appendix_Auto
 erase *.aux
 erase *.bbl
 erase *.blg   
 
 cd ..\..\Appendix_Casler
+erase *.aux
+erase *.bbl
+erase *.blg   
+
+cd ..\..\bibliography
 erase *.aux
 erase *.bbl
 erase *.blg   
