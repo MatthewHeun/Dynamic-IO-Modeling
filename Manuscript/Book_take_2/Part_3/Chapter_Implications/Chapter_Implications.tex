@@ -82,7 +82,7 @@ from continuous monitoring of several important metrics, including
 \begin{itemize}
 	\item{energy intensity of products of economic sectors 
 	(Chapter~\ref{chap:intensity}),}
-	\item{total accumulation of material (Chapter~\ref{chap:materials},) 
+	\item{total accumulation of material (Chapter~\ref{chap:materials}) 
 	and embodied energy (Chapter~\ref{chap:embodied_energy}) in economic sectors,}
 	\item{the flow rate of energy from the biosphere into economic sectors 
 	(Chapter~\ref{chap:direct_energy}),}
@@ -106,7 +106,7 @@ The replacement material will have embodied energy.
 Production of the replacement places an energy drain on the economy.  
 We have no way of quantifying that drain at the present time.  
 If our model were implemented and periodic updates were available, 
-society would understand better the costs (in terms of both dollars \emph{and} energy) 
+society would better understand the costs (in terms of both dollars \emph{and} energy) 
 of maintaining capital.  
 And, society would understand how those maintenance flows constrain economic growth.
 
@@ -140,8 +140,8 @@ product-based vs.\ physical accounting frameworks,
 whether capital stock is included in the accounting framework, and
 whether energy input from society to the economy is included.
 (See Figure~\ref{fig:coords_of_analysis}.)
-We will end with our suggestion for how best to estimate
-$\boldsymbol{\varepsilon}$ within
+We will end with our recommendation for how best to estimate energy intensity
+($\boldsymbol{\varepsilon}$) within
 a materials, energy, and value accounting framework.
 
 \begin{figure}[!ht]
@@ -169,33 +169,37 @@ For example, energy embodied within wastes ($\vec{B}_{\dot{W}}$)
 is not assigned to economic products. 
 Rather, the energy embodied in wastes flows out of sectors 
 into the biosphere \emph{with the waste material}.
+
 In contrast, a \emph{product-focused accounting} framework assigns 
 energy embodied in wastes to the products of the sector.
 Both product-based and physical accounting frameworks
 assign direct energy ($\dot{E}$) consumed by each sector
 to the products of each sector.
 
-Equation~\ref{eq:B_prod_physical_excluding_K} below
-describes the outflow of embodied energy from sector $j$, 
+Equation~\ref{eq:B_prod_physical_excluding_W_dot} below
+describes the outflow of embodied energy from sector $j$
 for a physical accounting system 
 that neglects both capital stock accumulation
 and capital inflow (upper-right quadrant of
-Figure~\ref{fig:coords_of_analysis}).\footnote{Equation~\ref{eq:B_prod_physical_excluding_K} 
+Figure~\ref{fig:coords_of_analysis}).%
+	\footnote{
+	Equation~\ref{eq:B_prod_physical_excluding_W_dot} 
 	is used for illustrative purposes only. 
 	A physical accounting framework would necessarily 
 	include both flows and stocks of capital.
 	Thus, the upper-right quadrant of Figure~\ref{fig:coords_of_analysis}
 	(physical accounting framework that neglects capital)
-	is labeled as nonsensical.}
-
-\begin{equation} \label{eq:B_prod_physical_excluding_K}
+	is labeled as nonsensical.
+	}
+%
+\begin{equation} \label{eq:B_prod_physical_excluding_W_dot}
 	\dot{B}_{j}^{'}
 	= \sum\limits_{i=1}^{n} \dot{B}_{ij}^{'} 
 	- \dot{B}_{\dot{W}_{j}}
 	+ \dot{Q}_{j0}
 \end{equation}
-
-\noindent{}Terms written with a ``prime''
+%
+Terms written with a ``prime''
 (e.g.~$\dot{B}_{j}^{'}$) indicate definitions and terms that 
 exclude input capital flows~($\dot{K}$) and capital stock~($K$).
 The term~$\dot{B}_{\dot{W}_{j}}$ represents the energy embodied 
@@ -207,36 +211,37 @@ In a physical accounting framework, the energy embodied
 in waste flows ($\dot{B}_{\dot{W}_{j}}$)
 is not assigned to the product~($\dot{B}_{j}^{'}$).
 
-In contrast, Equation~\ref{eq:B_prod_product_excluding_K} describes the outflow 
+In contrast, Equation~\ref{eq:B_prod_product_including_W_dot} describes the outflow 
 of embodied energy from sector~$j$,
 exclusive of capital stock,
 for a product-focused accounting framework 
 (upper left quadrant of Figure~\ref{fig:coords_of_analysis}).
-
-\begin{equation} \label{eq:B_prod_product_excluding_K}
+%
+\begin{equation} \label{eq:B_prod_product_including_W_dot}
 	\dot{B}_{j}^{'}
 	= \sum\limits_{i=1}^{n} \dot{B}_{ij}^{'} 
 	+ \dot{Q}_{j0}
 \end{equation}
-
-\noindent{}Notice that Equation~\ref{eq:B_prod_product_excluding_K} 
+%
+Notice that Equation~\ref{eq:B_prod_product_including_W_dot} 
 does not subtract the energy embodied in waste resource and short-lived material
 flows ($\dot{B}_{\dot{W}_{j}}$) on the right side of the equation, 
 because product-focused accounting systems assign energy embodied in wastes
 to products.
+The magnitude of $\dot{B}_{\dot{W}_{j}}$ relative to the
+$\sum\limits_{i=1}^{n} \dot{B}_{ij}^{'}$ and
+$\dot{Q}_{j0}$ terms determines whether, for any particular sector,
+the value of $\dot{B}_{j}^{'}$ is different between 
+a physical accounting framework 
+(Equation~\ref{eq:B_prod_physical_excluding_W_dot})
+and a product-focused accounting framework 
+(Equation~\ref{eq:B_prod_product_including_W_dot}).
 
-%****
-%MCD - does this subsection flow from the IO method,
-%or is it more general?
-%I.e., should they be their own sections?
-%****
 
 %+++++++++ I-O implications: Capital stock ++++++++++
 \subsection{Capital flows and stock}
 \label{sec:capital_stock}
 %+++++++++
-
-
 
 The rows of Figure~\ref{fig:coords_of_analysis}
 represent the role of capital flows and stock in an accounting framework.
@@ -442,7 +447,7 @@ In fact, Bullard and Herendeen's
 product-focused accounting framework
 did not include an embodied energy stock 
 for economic sectors~($\vec{B}$) at all.
-They assumed that half of the incoming capital 
+They assumed instead that half of the incoming capital 
 went toward replacement.
 These early researchers moved from the upper-left quadrant
 to the lower-left quadrant of Figure~\ref{fig:coords_of_analysis}.
@@ -467,17 +472,16 @@ as a stock that can accumulate within the economic sector itself.
 Our recommendation is informed by the work of 
 Odum~\cite{Odum1969} and Daly~\cite{Daly1995}
 and is based on the belief that
-accounting for stocks of capital is important for developing a coherent view
+accounting for stocks of capital is important 
+for developing a coherent view
 of the structure of an economy. 
 Stocks of capital are essential to the production process:
 without machines and factories, cars cannot be produced. 
 And, in industrialized economies 
-maintenance of captial stock becomes an important 
-driver of demand
-and may also constrain available supply,
-as illustrated by this quote from Meadows,
+maintenance of capital stock becomes an important 
+driver of both financial and natural resource demands,
+as illustrated by the following quote from Meadows:
 
-%**** MCD - Meadows quote should be somewhere here
 \begin{quote}
 	By year 50 the cost of maintaining the capital stock 
 	has overwhelmed the income from resource extraction, 
@@ -490,7 +494,8 @@ as illustrated by this quote from Meadows,
 \end{quote}
 
 Thus, the buildup of capital stock (and associated embodied energy) 
-within economic sectors is an essential aspect of industrialization.
+within economic sectors is an essential aspect of the industrialization
+process.
 Carefully tracking (on a physical, as opposed to financial, basis) 
 capital stock in each economic sector is essential 
 for understanding the network effects of 
@@ -833,6 +838,7 @@ some suggested enhancements to the EI-O method,
 including
 
 \begin{itemize}
+	
 	\item{conversion to a physical accounting framework such as the one we propose herein,}
 	
 	\item{physical (as opposed to financial) tracking 
@@ -842,10 +848,23 @@ including
 	embodied energy on inflows of material, and}
 	
 	\item{use of Equation~\ref{eq:epsilon_leontief_with_A} instead of
-	Equations~\ref{eq:intensity_upper_left} or~\ref{eq:intensity_lower_left}
+	Equation~\ref{eq:intensity_upper_left} or Equation~\ref{eq:intensity_lower_left}
 	for estimating energy intensity ($\boldsymbol{\varepsilon}$)
 	of economic sectors within an economy.}
+	
 \end{itemize}
+
+Of course, whether or not any particular flow of embodied energy 
+is included in or excluded from analyses 
+or whether the product-focused or physical form 
+of the framework is adopted
+is less important than beginning to account for embodied energy
+and routinely reporting energy intensity values
+in the first place.
+Deciding to do so will require an understanding that such analyses
+are important (see Chapters~\ref{chap:intro} and~\ref{chap:acct_for_won})
+and the courage to make some movement in the right direction 
+(see Chapter~\ref{chap:summary}).
  
 
 %%%%%%%%%% Implications %%%%%%%%%%
@@ -887,7 +906,14 @@ Our framework affords the opportunity to assess economic growth
 in several dimensions.
 Viewing these dimensions through the lens of our framework 
 illustrates some important points about measures 
-of economic growth and well-being.
+of economic growth and well-being, including
+whether it be measured by a stock or a flow,
+and the roles of 
+currency, 
+capital stock, 
+energy, 
+natural resources, 
+and labor in economic processes.
 
 With reference to Figure~\ref{fig:C_value}, GDP is calculated by
 %
@@ -998,6 +1024,7 @@ If capital~($\vec{B}_{K}$) is to be useful, we need financial resources
 or currency~($\dot{X}$) to 
 %
 \begin{itemize}
+	
 	\item{purchase direct energy~($\dot{E}$) to power the capital,}
 	
 	\item{purchase resources~($\dot{R}$) to feed the capital, and}
@@ -1005,11 +1032,12 @@ or currency~($\dot{X}$) to
 	\item{pay workers~(represented 
 	by societal energy input to the economy,~$\vec{T}_{1}$) 
 	to operate the capital.}
+
 \end{itemize}
 
 Thus, economic growth could be considered a ``fully coupled'' problem:
 understanding it requires breadth of knowledge and appreciation for 
-interactions among many important factors.
+interactions among many important and complementary factors.
 Each factor discussed above 
 ($\dot{X}$, $X$, $\vec{B}_{K}$, $\dot{E}$, $\dot{R}$, and $\vec{T}_{1}$)
 is necessary, but not sufficient, for economic growth.
@@ -1019,7 +1047,7 @@ Should it be measured by a stock or a flow?
 Which measure is most appropriate? 
 What roles do currency, capital stock, energy, resources, and labor
 play in economic processes?
-These are overlapping and complementary areas of inquiry, and
+These are overlapping areas of inquiry, and
 we encourage further research in all of these areas.
 
 
@@ -1027,11 +1055,6 @@ we encourage further research in all of these areas.
 \section{Implications for recycling, reuse, and dematerialization}
 \label{sec:recycling}
 %%%%%%%%%%
-
-%**** Mik asks ``Do we want to discuss the Simon-Erlich wager here?''
-%I feel like it is important to discuss that Simon won more by
-%luch than judgement. See~\cite{Kiel2010}. ****
-%AND~\cite{Lawn2010},
 
 Dematerialization is the idea that economic activity can be unlinked 
 from material or energy demands.\cite{FischerKowalski:2011uo} 
@@ -1212,7 +1235,7 @@ of material throughput that maintains the stock
 of ecological capital and provides a qualitatively well-lived life 
 for the population.\cite[p.~32]{Daly1997}  
 This definition is consistent
-with zero rate of accumulation of stock. 
+with zero rate of accumulation of capital stock within the economy and society. 
 Ecological capital is not drawn down, 
 nor is manufactured capital quantifiably increased. 
 Increases in living standards result from economic ``development,'' 
@@ -1222,10 +1245,10 @@ in ``efficiency, technology, and ethics.''~\cite[p.~167]{Daly1997}
 
 Two other conditions that might define a steady-state
 economy are constant GDP or constant population.
-Our framework, can address the first three steady-state conditions
+Our framework can address the first three steady-state conditions
 (constant capital stock, constant throughput, and constant GDP).
 The fourth condition (constant population) could be
-accommodated with some adaptation of the 
+accommodated with some adaptation of our
 framework. 
 The issue of human population as part of society's
 capital stock is addressed in Section~\ref{sec:people_as_stock}.
@@ -1236,8 +1259,8 @@ capital stock is addressed in Section~\ref{sec:people_as_stock}.
 %+++++++++++++++++++++++++++++++++++++++++++
 \subsection{Constant level of capital stock}
 
-In Chapter~\ref{chap:materials}, 
-we introduced Equation~\ref{eq:C_CV_all_b}:
+Chapter~\ref{chap:materials}
+includes Equation~\ref{eq:C_CV_all_b}:
 %
 \begin{align}\tag{\ref{eq:C_CV_all_b}}
 	- \frac{\mathrm{d}R_{0}}{\mathrm{d}t}										&
@@ -1257,7 +1280,7 @@ for the purposes of:
 	within the economy~$\left(\frac{\mathrm{d}K_{j}}{\mathrm{d}t}\right)$,}
 	\item{providing short-lived goods exchanged within the
 	economy~$\left(\dot{S}_{ij}\right)$, and}
-	\item{overcoming depreciation of man-made
+	\item{overcoming depreciation of manufactured
 	capital stocks~$\left(\gamma_{K_{j}}K_{j}\right)$.}
 \end{itemize}
 
@@ -1538,17 +1561,15 @@ direct energy, resources, and societal inputs.
 Each, alone, is necessary, but not sufficient, for economic growth.
 We discussed implications for recycling and reuse of materials
 as well as the concept of dematerialziation.
-We viewed the concept of a steady-state economy through
+Finally, we viewed the concept of a steady-state economy through
 the lens of our framework.
-We found that there are many potential definitions of a steady-state economy,
+We found that there are many potential definitions 
+of a steady-state economy,
 none of which are fully satisfying when compared against the ideal 
 of sustainability.
-Finally, in Section~\ref{sec:energy_input_vector}, we discussed a technical issue
-regarding the choice of energy input vector ($\vec{E}_{0}$) 
-and found that attempts in the literature to allocate energy
-at the point of use are unneeded.
 
-In the next chapter, we point to some unfinished business.
+In the next chapter, we suggest some next steps toward implementing 
+our framework.
 
 
 \bibliographystyle{unsrt}
