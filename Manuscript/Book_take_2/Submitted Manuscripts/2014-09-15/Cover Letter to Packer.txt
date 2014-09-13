@@ -41,6 +41,7 @@ At one point you indicated that Springer would compile the index from a list of 
   - The bibliographic entries have inconsistent formatting at this time.  For example:
     . Some references use full first and middle names, but some have initials only
 	. Some article references have capitilized titles, but some have only the first word capitalized 
+  - We would like the bibliography to have hanging indents. http://tex.stackexchange.com/questions/57503/hang-alignment-in-bibliography provides a possible answer.
 Can your copy editors sort out these issues?
 
 * We're using the hyperref package to provide hyperlinks in the .pdf version of the book.  Unfortunately, not all is working yet.  At present, clicking on footnote marks doesn't bring you to the appropriate footnote, it brings you to title page of the document.  When typesetting the book, we see errors of the type
