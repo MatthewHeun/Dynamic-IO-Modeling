@@ -76,7 +76,7 @@
 %                           4) subscripts
 %                      Examples:
 %                           \dot{Q}        "q:uc:dot:-"
-%                           \hat{\vec{X}}  "x:uc:hat:-"
+%                           \hat{\vec{X}}  "x:uc:vechat:-"
 %                           
 %
 
@@ -100,10 +100,10 @@
 								type = nomenclature, 
 								}
 
-\newglossaryentry{nom:a-age}{
-								name = $a$,
-								description = age [years],
-								sort = a:lc:-:-,
+\newglossaryentry{nom:a0}{
+								name = $a_0$,
+								description = LINEX fitting parameter [-],
+								sort = a:lc:-:0,
 								parent = romanletter,
 								type = nomenclature, 
 								}
@@ -116,10 +116,18 @@
 								type = nomenclature, 
 								}
 
-\newglossaryentry{nom:A}{
+\newglossaryentry{nom:A-io}{
 								name = $\protect\vec{A}$, % need to protect vec to prevent errors
 								description = input output matrix{,} mixed units,
 								sort = a:uc:vec:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:A-tech}{
+								name = $A$,
+								description = technology augmentation factor [-],
+								sort = a:uc:-:-,
 								parent = romanletter,
 								type = nomenclature, 
 								}
@@ -165,6 +173,22 @@
 								parent = romanletter,
 								}
 
+\newglossaryentry{nom:ct}{
+								name = $c_t$,
+								description = LINEX fitting parameter [-],
+								sort = c:lc:-:t,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:e}{
+								name = $e$,
+								description = indexed energy [-],
+								sort = e:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
 \newglossaryentry{nom:E}{
 								name = $E$, 
 								description = direct energy [MJ],
@@ -181,9 +205,17 @@
 								parent = romanletter,
 								}
 
-\newglossaryentry{nom:Es}{
+\newglossaryentry{nom:Esub}{
 								name = $E_s$, 
 								description = elasticity of substitution [-],
+								sort = e:uc:-:s,
+								type = nomenclature, 
+								parent = romanletter,
+								}
+
+\newglossaryentry{nom:Esup}{
+								name = $E_s$, 
+								description = elasticity of supply [-],
 								sort = e:uc:-:s,
 								type = nomenclature, 
 								parent = romanletter,
@@ -214,13 +246,13 @@
 								parent = romanletter,
 								}
 
-% \newglossaryentry{nom:h}{
-% 								name = $h$,
-% 								description = height [cm],
-% 								sort = h:lc:-:-,
-% 								parent = romanletter,
-% 								type = nomenclature,
-% 								}
+\newglossaryentry{nom:k_lc}{
+								name = $k$,
+								description = indexed capital stock [-],
+								sort = k:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
 
 \newglossaryentry{nom:K}{
 								name = $K$,
@@ -234,6 +266,22 @@
 								name = $\dot{K}$,
 								description = capital goods mass flow rate [kg/year],
 								sort = k:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:l}{
+								name = $l$,
+								description = indexed labor [-],
+								sort = l:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:m}{
+								name = $m$,
+								description = mass [kg],
+								sort = m:lc:-:-,
 								parent = romanletter,
 								type = nomenclature, 
 								}
@@ -287,6 +335,14 @@
 								type = nomenclature, 
 								}
 
+\newglossaryentry{nom:q0}{
+								name = $q_0$,
+								description = proportionality constant [W/kg$^{\nicefrac{3}{4}}$],
+								sort = q:uc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
 \newglossaryentry{nom:Q}{
 								name = $Q$,
 								description = quantity of production or demand [various],
@@ -295,7 +351,15 @@
 								type = nomenclature, 
 								}
 
-\newglossaryentry{nom:Qdot}{
+\newglossaryentry{nom:Qdotkleiber}{
+								name = $\dot{Q}$,
+								description = energy consumption rate in Kleiber's Law [W],
+								sort = q:uc:dot:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:Qdotwaste}{
 								name = $\dot{Q}$,
 								description = waste heat flow rate [MJ/year],
 								sort = q:uc:dot:-,
@@ -310,14 +374,6 @@
 								parent = romanletter,
 								type = nomenclature, 
 								}
-
-% \newglossaryentry{nom:REE}{
-% 								name = $REE$,
-% 								description = Resting Energy Expenditure [kcal/day],
-% 								sort = ree:uc:-:-,
-% 								parent = romanletter,
-% 								type = nomenclature,
-% 								}
 
 \newglossaryentry{nom:Rdot}{
 								name = $\dot{R}$, 
@@ -392,14 +448,6 @@
 								type = nomenclature, 
 								}
 
-% \newglossaryentry{nom:w}{
-% 								name = $w$,
-% 								description = weight [kg],
-% 								sort = w:lc:-:-,
-% 								parent = romanletter,
-% 								type = nomenclature,
-% 								}
-
 \newglossaryentry{nom:Wdot}{
 								name = $\dot{W}$, 
 								description = waste flow rate [kg/year],
@@ -441,15 +489,48 @@
 								type = nomenclature, 
 								}
 
+\newglossaryentry{nom:y}{
+								name = $y$, 
+								description = indexed economic output [-],
+								sort = y:lc:-:-,
+								parent = romanletter,
+								type = nomenclature, 
+								}
+
 %++++++++++++++++++++++++++++++++++
 %+++++++++ Greek Letters ++++++++++
 %++++++++++++++++++++++++++++++++++
 
 \newglossaryentry{nom:alpha}{
 								name = $\alpha$,
+								description = output elasticity of capital [-],
+								sort = alpha:lc:-:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:alphaprod}{
+								name = $\alpha$,
 								description = ratio of inflowing capital stock rate 
 												to capital stock [1/year],
 								sort = alpha:lc:-:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:alphahatB}{
+								name = $\hat{\boldsymbol{\alpha}}$,
+								description = diagonal matrix of ratios incoming embodied energy 
+												in capital [-],
+								sort = alpha:lc:vechat:B,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:beta}{
+								name = $\beta$,
+								description = output elasticity of labor [-],
+								sort = beta:lc:-:-,
 								parent = greekletter,
 								type = nomenclature, 
 								}
@@ -498,6 +579,31 @@
 								name = $\gamma$,
 								description = depreciation rate [1/year],
 								sort = gamma:lc:-:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:gama-prod}{
+								name = $\gamma$,
+								description = output elasticity of energy [-],
+								sort = gamma:lc:-:-,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:rhok}{
+								name = $\rho_k$,
+								description = ratio of indexed capital 
+												to the average of indexed labor and energy [-],
+								sort = rho:lc:-:k,
+								parent = greekletter,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:rhol}{
+								name = $\rho_l$,
+								description = ratio of indexed labor to indexed energy [-],
+								sort = rho:lc:-:l,
 								parent = greekletter,
 								type = nomenclature, 
 								}
@@ -581,14 +687,6 @@
 								type = nomenclature, 
 								}
 
-% \newglossaryentry{nom:f}{
-% 								name = $f$,
-% 								description = female,
-% 								sort = f:lc:-:-,
-% 								parent = subscript,
-% 								type = nomenclature,
-% 								}
-
 \newglossaryentry{nom:gen}{
 								name = $gen$,
 								description = generation,
@@ -644,14 +742,6 @@
 								parent = subscript,
 								type = nomenclature, 
 								}
-								
-% \newglossaryentry{nom:m}{
-% 								name = $m$,
-% 								description = male,
-% 								sort = m:lc:-:-,
-% 								parent = subscript,
-% 								type = nomenclature,
-% 								}
 
 \newglossaryentry{nom:t_sub}{
 								name = $t$,
@@ -665,6 +755,14 @@
 								name = $out$,
 								description = outflow,
 								sort = out:lc:-:-,
+								parent = subscript,
+								type = nomenclature, 
+								}
+
+\newglossaryentry{nom:soc}{
+								name = $soc$,
+								description = society,
+								sort = soc:lc:-:-,
 								parent = subscript,
 								type = nomenclature, 
 								}
