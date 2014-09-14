@@ -38,16 +38,17 @@ this appendix derives a column vector version of the energy intensity equation
 that is often found in the literature.
 The point of comparison is Casler.\cite{Casler1984}
 Casler's energy intensity (Equation 6)
-was derived from row vectors 
-as\footnote{Equation~\ref{eq:Casler6-converted} is written according
-to the variable conventions in this manuscript.
-The literal Equation~6 in Casler~\cite{Casler1984} is
-$
-\varepsilon
-= E \hat{X}^{-1} {(I - A)}^{-1}.
-$
-}
-
+was derived from row vectors as%
+	\footnote{
+	Equation~\ref{eq:Casler6-converted} is written according
+	to the variable conventions in this manuscript.
+	The literal Equation~6 in Casler~\cite{Casler1984} is
+	$
+	\varepsilon
+	= E \hat{X}^{-1} {(I - A)}^{-1}.
+	$
+	}
+%
 \begin{equation} \label{eq:Casler6-converted}
 	\boldsymbol{\varepsilon}
 	= \vec{E} 
@@ -57,26 +58,29 @@ $
 
 We begin with Equations~3 and~4 from Casler~\cite{Casler1984},
 converted to overdot notation for rates.
-
+%
 \begin{equation} \label{eq:Casler-3}
 	\varepsilon_{1} \dot{X}_{11}
 	+ \varepsilon_{2} \dot{X}_{21}
 	= \varepsilon_{1} \dot{X}_{1}
 \end{equation}
-
+%
 \begin{equation} \label{eq:Casler-4}
 	\varepsilon_{1} \dot{X}_{12}
 	+ \varepsilon_{2} \dot{X}_{22}
 	+ \dot{E}_{02}
 	= \varepsilon_{2} \dot{X}_{2}
 \end{equation}
-
-\noindent{}Adding an $\dot{E}_{01}$ term\footnote{Note that 
-$\dot{E}_{01} = 0$ for Casler~\cite{Casler1984}, 
-so $\dot{E}_{01}$ can be included without changing Equation~\ref{eq:Casler-3}.} 
+%
+Adding an $\dot{E}_{01}$ term%
+	\footnote{
+	Note that 
+	$\dot{E}_{01} = 0$ for Casler~\cite{Casler1984}, 
+	so $\dot{E}_{01}$ can be included without changing Equation~\ref{eq:Casler-3}.
+	} 
 and utilizing matrix notation with column vectors 
 (instead of row vectors) gives
-
+%
 \begin{equation} \label{eq:Casler34-matrix}
 	\begin{bmatrix}
 		\dot{X}_{11} & \dot{X}_{21} \\
@@ -101,10 +105,10 @@ and utilizing matrix notation with column vectors
 		\varepsilon_{2}
 	\end{Bmatrix}.
 \end{equation}
-
-\noindent{}Substituting $\dot{X}_{ij} = a_{ij} \dot{X}_{j}$ (from 
+%
+Substituting $\dot{X}_{ij} = a_{ij} \dot{X}_{j}$ (from 
 Equation~\ref{eq:aij_def}) gives
-
+%
 \begin{equation} \label{eq:Casler34-matrix-with-a}
 	\begin{bmatrix}
 		a_{11} \dot{X}_{1} & a_{21} \dot{X}_{1} \\
@@ -129,9 +133,9 @@ Equation~\ref{eq:aij_def}) gives
 		\varepsilon_{2}
 	\end{Bmatrix}.
 \end{equation}
-
-\noindent{}Expanding Equation~\ref{eq:Casler34-matrix-with-a} gives
-
+%
+Expanding Equation~\ref{eq:Casler34-matrix-with-a} gives
+%
 \begin{equation} \label{eq:Casler34-matrix-expanded}
 	\begin{bmatrix}
 		\dot{X}_{1} & 0 \\
@@ -160,22 +164,22 @@ Equation~\ref{eq:aij_def}) gives
 		\varepsilon_{2}
 	\end{Bmatrix}.
 \end{equation}
-
-\noindent{}With the definitions of $\hat{\vec{X}}$,
+%
+With the definitions of $\hat{\vec{X}}$,
 $\vec{A}$, $\boldsymbol{\varepsilon}$, and $\vec{E}_{0}$
 from Equations~\ref{eq:X_hat_matrix_def},
 \ref{eq:A_matrix_def},~\ref{eq:E_vec_def}, 
 and~\ref{eq:eps_vec_def}, respectively,
 we can rewrite Equation~\ref{eq:Casler34-matrix-expanded} as
-
+%
 \begin{equation}
 	\hat{\vec{X}} \vec{A}^{\mathrm{T}} \boldsymbol{\varepsilon}
 	+ \vec{E}_{0}
 	= \hat{\vec{X}} \boldsymbol{\varepsilon}.
 \end{equation}
-
-\noindent{}Solving for $\boldsymbol{\varepsilon}$ gives
-
+%
+Solving for $\boldsymbol{\varepsilon}$ gives
+%
 \begin{equation} \label{eq:Casler6-column-vector}
 	\boldsymbol{\varepsilon}
 	= {(\vec{I} - \vec{A}^{\mathrm{T}})}^{-1} 
