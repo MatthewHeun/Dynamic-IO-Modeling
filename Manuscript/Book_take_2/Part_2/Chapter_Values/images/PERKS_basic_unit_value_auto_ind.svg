@@ -417,9 +417,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4757869"
+     inkscape:zoom="0.52249848"
      inkscape:cx="1149.5821"
-     inkscape:cy="299.62059"
+     inkscape:cy="333.56858"
      inkscape:document-units="px"
      inkscape:current-layer="g4157"
      showgrid="false"
@@ -701,7 +701,7 @@
            id="flowPara4273">Goods</flowPara><flowPara
            style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4275">$74,578</flowPara></flowRoot>      <flowRoot
-         transform="translate(-133.67273,-63.191525)"
+         transform="translate(-128.25189,-61.836316)"
          style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          id="flowRoot4277"
          xml:space="preserve"><flowRegion
@@ -712,13 +712,14 @@
              height="81.732613"
              width="175.2493"
              id="rect4281"
-             ry="2.0611029" /></flowRegion><flowPara
+             ry="2.0611029"
+             rx="2.0611029" /></flowRegion><flowPara
            style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara4283">Capital</flowPara><flowPara
            style="font-size:22px;font-weight:bold;-inkscape-font-specification:Sans Bold"
            id="flowPara3363">$14,532</flowPara><flowPara
            style="font-size:14px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-           id="flowPara3385">$15,447  w/R&amp;D</flowPara></flowRoot>      <flowRoot
+           id="flowPara3385">($15,447  w/ R&amp;D)</flowPara></flowRoot>      <flowRoot
          transform="translate(-90.100039,184.48933)"
          style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          id="flowRoot4287"
@@ -1035,7 +1036,7 @@
            id="flowPara3450"
            style="font-size:22px;font-style:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Bold">$795</flowPara><flowPara
            id="flowPara3458"
-           style="font-size:14px;font-style:normal;-inkscape-font-specification:Sans Bold">$15,181 w/ R&amp;D</flowPara></flowRoot>    </g>
+           style="font-size:14px;font-style:normal;-inkscape-font-specification:Sans Bold">($15,181 w/ R&amp;D)</flowPara></flowRoot>    </g>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3474"
