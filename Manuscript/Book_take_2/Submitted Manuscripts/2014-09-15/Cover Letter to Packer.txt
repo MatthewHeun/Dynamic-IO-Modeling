@@ -55,13 +55,13 @@ for every footnote in the text.  Can the Springer copy editors sort this out?  I
 
 * We're using the "microtype" package to provide beautiful typesetting. However, for quotation marks, it appears to protrude only the first apostrophe, not both. This is obvious in the Lewis Carrol quote that preceds the Preface, but the problem exists throughout the book. Can the Springer copy editors find a way to hang both apostrophes in the quotation marks?
 
-For your LaTeX gurus: I suspect that the hyperref pacakge should be loaded LAST.  At present, we're not loading hyperref in the main .tex file, because there is some other package (I don't know which one) that loads hyperref.  Sorting out the load order might fix the footnote hyperlink problem.
+For your LaTeX gurus: I suspect that the hyperref package should be loaded LAST.  At present, we're not loading hyperref in the main .tex file, because there is some other package (I don't know which one) that loads hyperref.  Sorting out the load order might fix the footnote hyperlink problem.
 
 
 Now a few questions:
 
 
-* Foreword: we would like to ask William Nordhaus to provide a foreward to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Springer will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
+* Foreword: we would like to ask William Nordhaus to provide a foreword to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Springer will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
 
 
 * Blurbs: we would like to ask Herman Daly, Robert Herendeen, and Clark Bullard to provide jacket blurbs for the book.  Who should do this?  When should they be approached?
