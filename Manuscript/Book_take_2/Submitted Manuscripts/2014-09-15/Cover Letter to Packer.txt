@@ -50,8 +50,6 @@ pdfTeX warning (dest): name{Hfootnote.91} has been referenced but does not exist
 
 for every footnote in the text.  Can the Springer copy editors sort this out?  It would be really nice to have hyperlinked foonotes in the ebook version.  
 
-* abstracts:  At the moment, none of our appendices have abstracts. Do we need to provide them?
-
 * pagination:  There are several instances (often before the full-page diagrams) where large portions of pages contain white space.  We hope this can be cleaned up by the copy editor.
 
 * We're using the "microtype" package to provide beautiful typesetting. However, for quotation marks, it appears to protrude only the first apostrophe, not both. This is obvious in the Lewis Carrol quote that preceds the Preface, but the problem exists throughout the book. Can the Springer copy editors find a way to hang both apostrophes in the quotation marks?
@@ -64,6 +62,10 @@ Now a few questions:
 * Foreword: we would like to ask William Nordhaus to provide a foreward to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Spring will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
 
 * Blurbs: we would like to ask Herman Daly, Robert Herendeen, and Clark Bullard to provide jacket blurbs for the book.  Who should do this?  When should they be approached?
+
+* Abstracts: 
+  - we have adopted a somewhat formal tone for the abstracts. Do you think they are OK?
+  - at the moment, none of our appendices contain abstracts. Is that acceptable?
 
 
 Now a few notes:
