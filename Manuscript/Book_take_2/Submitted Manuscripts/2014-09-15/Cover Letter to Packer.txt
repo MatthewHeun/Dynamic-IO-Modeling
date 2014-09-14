@@ -59,7 +59,7 @@ For your LaTeX gurus: I suspect that the hyperref pacakge should be loaded LAST.
 
 Now a few questions:
 
-* Foreword: we would like to ask William Nordhaus to provide a foreward to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Spring will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
+* Foreword: we would like to ask William Nordhaus to provide a foreward to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Springer will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
 
 * Blurbs: we would like to ask Herman Daly, Robert Herendeen, and Clark Bullard to provide jacket blurbs for the book.  Who should do this?  When should they be approached?
 
