@@ -50,6 +50,8 @@ pdfTeX warning (dest): name{Hfootnote.91} has been referenced but does not exist
 
 for every footnote in the text.  Can the Springer copy editors sort this out?  It would be really nice to have hyperlinked foonotes in the ebook version.  
 
+* pagination:  There are several instances (often before the full-page diagrams) where large portions of pages contain white space.  We hope this can be cleaned up by the copy editor.
+
 * We're using the "microtype" package to provide beautiful typesetting. However, for quotation marks, it appears to protrude only the first apostrophe, not both. This is obvious in the Lewis Carrol quote that preceds the Preface, but the problem exists throughout the book. Can the Springer copy editors find a way to hang both apostrophes in the quotation marks?
 
 For your LaTeX gurus: I suspect that the hyperref pacakge should be loaded LAST.  At present, we're not loading hyperref in the main .tex file, because there is some other package (I don't know which one) that loads hyperref.  Sorting out the load order might fix the footnote hyperlink problem.
