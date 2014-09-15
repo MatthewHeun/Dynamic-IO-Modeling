@@ -1,11 +1,11 @@
 David:
 
-Please find attached the following files:
+Beyond GDP is ready for copy editing!  Please find attached the following file:  BeyondGDP-Heun-Dale-Haney_2014-09-14.pdf
 
-* <something>.zip: contains the raw LaTeX code and images for Beyond GDP.
-* BeyondGDP.pdf: our compiled version of the book.
+The LaTeX sources that created the attached .pdf file can be found at 
+https://www.dropbox.com/s/ppod0kbewwo06op/BeyondGDP_sources_2014-09-14.zip?dl=0
 
-We trust that these are what is needed at this point.  
+We trust that these are what is needed at this point.  If not, please let us know.
 
 A quick note to your copy editors:  We use the scripts in the "scripts" folder to build the book.  On a Mac, use "typeset.bash".  On a PC, use "2. typeset.bat".
 
@@ -25,7 +25,7 @@ There are a few known issues that we will work on in the coming weeks:
   - Figure 1.2: Permission has been requested from Science. If they don't grant permission, we can work toward re-generating our own version of the graph from historical data.
   - Figure 2.4: Old cars in Havana. I asked for permission via email from the photographer (Larry Cowles). No response yet.
     
-* Including a new version of Figure ____. Steve Kopits told me that he is working on a new version of this chart. I'm hopeful it will arrive in the next couple of weeks.
+* Including a new version of Figure 1.6. Steve Kopits told me that he is working on a new version of this chart. I'm hopeful it will arrive in the next couple of weeks.
 
 
 There are a few known issues for which we would like assistance from the Springer copy editors:
@@ -62,9 +62,9 @@ for every footnote in the text.  Can the Springer copy editors sort this out?  I
 Now a few questions:
 
 
-* Appendix A first paragraph: The first in Appendix A has a wider right margin than Table A.1.  I'm not sure if this is expected or desired.
+* Appendix A first paragraph: The first paragraph in Appendix A has a different margin compared to Table A.1.  I'm not sure if this is expected or desired.
 
-* Foreword: we would like to ask William Nordhaus to provide a foreword to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Springer will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
+* Foreword: we would like to ask William Nordhaus to provide a foreword to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Springer will do on our behalf?  Or, should the authors ask for him to provide the foreword?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
 
 * Blurbs: we would like to ask Herman Daly, Robert Herendeen, and Clark Bullard to provide jacket blurbs for the book.  Who should do this?  When should they be approached?
 
@@ -72,9 +72,9 @@ Now a few questions:
   - we have adopted a somewhat formal tone for the abstracts. Do you think they are OK?
   - at the moment, none of our appendices contain abstracts. Is that acceptable?
   
-* In what format will we receive the proofs?  Will the copy editor give us LaTeX files that we can merge with our existing repository?  Or will we be working from pdfs only at that point?
+* In what format will we receive the proofs?  Will the copy editor give us LaTeX files that we can merge with our existing GitHub repository?  Or will we be working from pdfs only at that point?
 
 
-Now a few notes:
+Now a note:
 
 * the glossary:  We have included a glossary that is built by the glossaries package. The glossaries package uses the file glossaries/glossary.tex to generate the glossary. We're open to suggestions from the copy editors for additional terms that should be included.
