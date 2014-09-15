@@ -53,22 +53,26 @@ for every footnote in the text.  Can the Springer copy editors sort this out?  I
 
 * pagination:  There are several instances (often before the full-page diagrams) where large portions of pages contain white space.  We hope this can be cleaned up by the copy editor.
 
-* We're using the "microtype" package to provide beautiful typesetting. However, for quotation marks, it appears to protrude only the first apostrophe, not both. This is obvious in the Lewis Carrol quote that preceds the Preface, but the problem exists throughout the book. Can the Springer copy editors find a way to hang both apostrophes in the quotation marks?
+* Hanging quotation marks: We're using the "microtype" package to provide beautiful typesetting. However, for quotation marks, it appears to protrude only the first apostrophe, not both. This is obvious in the Lewis Carrol quote that preceds the Preface, but the problem exists throughout the book. Can the Springer copy editors find a way to hang both apostrophes in the quotation marks?  I suspect that the hyperref package should be loaded LAST.  At present, we're not loading hyperref in the main .tex file, because there is another package (I don't know which one) that loads hyperref.  Sorting out the load order might fix the footnote hyperlink problem.
 
-For your LaTeX gurus: I suspect that the hyperref package should be loaded LAST.  At present, we're not loading hyperref in the main .tex file, because there is some other package (I don't know which one) that loads hyperref.  Sorting out the load order might fix the footnote hyperlink problem.
+* Appendix A footnotes: We obtain duplicated footnotes at the end of Table A.1, but we have no idea why.  Hopefully your LaTeX experts can figure this out.
+
 
 
 Now a few questions:
 
 
-* Foreword: we would like to ask William Nordhaus to provide a foreword to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Springer will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
+* Appendix A first paragraph: The first in Appendix A has a wider right margin than Table A.1.  I'm not sure if this is expected or desired.
 
+* Foreword: we would like to ask William Nordhaus to provide a foreword to the book. The Prologue provides background information for why a foreward from him would be excellent.  Is that something that Springer will do on our behalf?  Or, should the authors ask for him to provide the foreward?  And, at what point should he be approached?  Now?  Or when the proof copy is available?
 
 * Blurbs: we would like to ask Herman Daly, Robert Herendeen, and Clark Bullard to provide jacket blurbs for the book.  Who should do this?  When should they be approached?
 
 * Abstracts: 
   - we have adopted a somewhat formal tone for the abstracts. Do you think they are OK?
   - at the moment, none of our appendices contain abstracts. Is that acceptable?
+  
+* In what format will we receive the proofs?  Will the copy editor give us LaTeX files that we can merge with our existing repository?  Or will we be working from pdfs only at that point?
 
 
 Now a few notes:

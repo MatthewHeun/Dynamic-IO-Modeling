@@ -18,225 +18,217 @@ This appendix describes the calculations used
 to estimate the value flows to and from the US Auto Industry  
 in Chapter~\ref{chap:value}.  
 The details of the calculations and assumptions made to calculate 
-each of the value flows is described in Table~\ref{tab:calculations}. 
+each of the value flows is described in Table~\ref{tab:auto_calculations}. 
 The data sources are are described in Table~\ref{tab:data_definitions}. 
 These data are free and available for download 
 from the BEA website.
 (See references in Table~\ref{tab:data_definitions}.)
 
-\begin{table}[H]
-\caption[Data sources and calculations for auto industry example]{Data sources and calculations for auto industry (IOC 3361MV) example.}
-\begin{center}
-  \begin{tabular}{l r @{\hspace{2em}} p{7cm}}
+\begin{longtabu} to \linewidth {l r @{\hspace{2em}} p{7cm}}
+	
+\caption[Data sources and calculations for auto industry example]{Data sources
+and calculations for auto industry (IOC 3361MV) example.} \\
+%
    \toprule 
-                    & 2011 USD      &   \\ 
-Value Flow          & (millions)    & Data Calculations \\
+                    & 2011 USD      &       					            \\ 
+Value Flow          & (millions)    &		 Data Calculations 				\\
 	\midrule
-Resources           & \$175,491     &    2011 KLEMS Total Material Intermediate Inputs 
-	into Auto Industry (IOC 3361MV). 
-	Total Material Inputs (\$346,882), less self-use (\$139,259) 
-	and inputs recategorized as services (\$32,132).\tablefootnote{Two commodities 
-		categorized in the KLEMS data as ``Material'' intermediate inputs
-		are ``Wholesale Trade'' (IOC 4200, \$26,580) and ``Truck Transportation.'' 
-		(IOC 4840, \$5,552). 
-		For our calculations, these commodities were recategorized as ``Services.''
-		The value of the flows in the table reflects the fact that 
-		these dollar amounts were subtracted from this ``Resource''
-		flow and added to ``Short-lived Goods.''\label{fn:a}} 
-	Self-use Resources are defined as the two intermediate commodity inputs: 
-	Motor Vehicles, Bodies, Trailers \& Parts (IOC 3361, \$138,077), 
-	and Motor Vehicles (IOC 336A, \$1,182). \\
-&&\\
-Energy              &   3,637       &    2011 KLEMS Total Energy Intermediate Inputs 
-	into Auto Industry. 
-	The sum of the value of all ``Energy'' intermediate inputs.               \\
-	&&\\
-Short-lived Goods   &   74,578      &   2011 KLEMS Total Service Intermediate Inputs 
-	into Auto Industry.
-	Total Inputs from Service Sector (\$42,446) 
-	plus Wholesale Trade and Truck Transportation from the KLEMS Material
-	category.\footref{fn:a}
-	The value of waste services that are part of this value flow 
-	is the sum of Water \& Sewage (IOC 2213, \$123) 
-	and Waste Management Services (IOC 5620, \$381).    \\
-&&\\
-Capital             &  14,532      &   2011  Fixed Assets (non-residential detailed estimates).
-	The  value of Equipment
-	and Structures purchased by the Auto Industry (\$15,327), 
-	less the value of the equipment that was produced within the Auto Industry itself (\$795). 
-	These figures exclude Intellectual Property, as explained in
-	the calculation of  Capital (self-use) below.     \\  
+\endhead
+
+	\midrule
+\endfoot
+
+	\bottomrule
+\endlastfoot
+
+Resources           & \$175,491     &    	2011 KLEMS Total Material Intermediate Inputs 
+											into Auto Industry (IOC 3361MV). 
+											Total Material Inputs (\$346,882), 
+											less self-use (\$139,259) 
+											and inputs recategorized as services
+											(\$32,132).%
+												\tablefootnote{
+												Two commodities 
+												categorized in the KLEMS data as ``Material''
+												intermediate inputs
+												are ``Wholesale Trade'' (IOC 4200, \$26,580) and
+												``Truck Transportation.'' 
+												(IOC 4840, \$5,552). 
+												For our calculations, these commodities were
+												recategorized as ``Services.''
+												The value of the flows in the table reflects the fact
+												that these dollar amounts were subtracted 
+												from this ``Resource''
+												flow and added to ``Short-lived Goods.''\label{fn:a}
+												} 
+											Self-use Resources are defined as 
+											the two intermediate commodity inputs: 
+											Motor Vehicles, Bodies, Trailers \& Parts 
+											(IOC 3361, \$138,077) 
+											and Motor Vehicles (IOC 336A, \$1,182). 			\\
+					&				&	\\
+Energy              &   3,637       &    	2011 KLEMS Total Energy Intermediate Inputs 
+											into Auto Industry. 
+											The sum of the value of all ``Energy'' 
+											intermediate inputs.              					\\
+					&				&	\\
+Short-lived Goods   &   74,578      &   	2011 KLEMS Total Service Intermediate Inputs 
+											into Auto Industry.
+											Total Inputs from Service Sector (\$42,446) 
+											plus Wholesale Trade and Truck Transportation 
+											from the KLEMS Material
+											category.\footref{fn:a}
+											The value of waste services that are part 
+											of this value flow 
+											is the sum of Water \& Sewage (IOC 2213, \$123) 
+											and Waste Management Services (IOC 5620, \$381).    \\
+					% &				&	\\ % commented because it comes at the top of a table section
+Capital             &  14,532      	&   	2011  Fixed Assets (non-residential detailed estimates).
+											The  value of Equipment
+											and Structures purchased by the Auto Industry (\$15,327), 
+											less the value of the equipment 
+											that was produced within 
+											the Auto Industry itself (\$795). 
+											These figures exclude Intellectual Property, 
+											as explained in
+											the calculation of Capital (self-use) below.     	\\  
  
-&&\\
-Gross Economic Output & 482,269     &   2011 Input-Output accounts. 
-	The Use of Commodities by Industries before Redefinitions. 
-	(Producers' Prices). 
-	Total Industry Output for Industry 3361MV\@.
-	Data downloaded from the Bea.gov website for the Automobile Industry (IOC 3361MV).  \\ 
-&&\\
-Resources (self-use) & 133,961      & 2011 Input-Output accounts. 
-Self-Use of Resources that were made in the automobile industry (IOC 3361MV used by IOC 3361MV, \$133,961). \\
-&&\\
-
-
-    \bottomrule
-  \end{tabular}
-
-
-
-\emph{(Table continued on next page.)}
-
-
-\end{center}
-\label{tab:calculations}
-\end{table}
-
-\begin{table}[H]
-Table A.1 (cont.): Data sources and calculations for auto industry (IOC 3361MV) example.
-\begin{center}
-  \begin{tabular}{l r @{\hspace{2em}} p{7cm}}
-   \toprule 
-                    & 2011 USD      &   \\ 
-Value Flow          & (millions)    & Data Calculations \\
-	\midrule
-
-Capital (self-use) &  795    & 2011  Fixed Assets (non-residential detailed estimates).
-	The authors designated capital flows as ``self-use'' if the Equipment was 	
-	an item that would be produced within the Automobile Industry: 
-	autos, internal combustion engines, light trucks, 
-	other trucks, buses and truck trailers. \\
-&\\
-
-&&  Note: Intellectual property is not
-	counted as a (physical) capital flow in our framework, thus
-	\$14,133 of  R\&D developed by the auto industry (as well as custom software made within the Auto industry)
-	is excluded from this flow, even though it is considered a capital investment 	
-	in  US national accounting and is part of the total capital investment
-	as calculated in the US Fixed Assets table. Section~\ref{sec:value_auto}
-	contains further discussion about the implications of including
-	intellectual property as part of the national measure of capital stock. \\
-
-&&\\
-
-%(Custom software, \& Own account software.)\tablefootnote{To confirm 
-%		that these fixed asset types (particularly ``Custom Software'' and 
-%		``Own account software'') actually originated from the Auto Industry 
-%		(that is, that they are truly self-made capital), 
-%		the I-O ``Make'' table was consulted to ensure 
-%		that these commodities were made by the Auto Industry.}     \\
-
-
-Net Economic Output & 347,513   &   2011 Input-Output accounts. 
-	The Use of Commodities by Industries before Redefinitions. 
-	(Producers' Prices). Total Industry Output, less Capital (self-use)
-	(\$795) and  Resources (self-use)
-	(IOC 3361MV used by IOC 3361MV, \$133,961).\tablefootnote{Note that 
-		this self-use of resources is slightly lower than the one used 
-		to calculate the total of self-use Resources (\$139,259) 
-		that was subtracted from total Material inputs (above) to arrive at a figure 
-		for Resources from all other sectors (above). 
-		This is because the KLEMS data, like the Fixed Asset data, 
-		are more detailed than the standard I-O accounts 
-		and may contain judgments and trend estimates.  
-		For example, in 2011, the KLEMS total intermediate inputs 
-		to the auto industry is higher than the amount 
-		from the Use table: \$392,965 vs.\$368,476.}  \\
-    \bottomrule
-  \end{tabular}
-\end{center}
-\end{table}
+					&				&	\\
+Gross Economic Output & 482,269     &   	2011 Input-Output accounts. 
+											The Use of Commodities 
+											by Industries before Redefinitions. 
+											(Producers' Prices). 
+											Total Industry Output for Industry 3361MV\@.
+											Data downloaded from \url{http://www.bea.gov}
+											for the Automobile Industry (IOC 3361MV).  			\\ 
+					&				&	\\
+Resources (self-use) & 133,961      & 		2011 Input-Output accounts. 
+											Self-Use of Resources that were made 
+											in the automobile industry 
+											(IOC 3361MV used by IOC 3361MV, \$133,961). 		\\
+					&				&	\\
+Capital (self-use) 	&  795    		& 2011  Fixed Assets (non-residential detailed estimates).
+											The authors designated capital flows 
+											as ``self-use'' if the Equipment was 	
+											an item that would be produced 
+											within the Automobile Industry: 
+											autos, internal combustion engines, light trucks, 
+											other trucks, buses and truck trailers. 			
+											Note: Intellectual property is not
+											counted as a (physical) capital flow 
+											in our framework, thus
+											\$14,133 of R\&D developed by the auto industry 
+											(as well as custom software made 
+											within the Auto industry)
+											is excluded from this flow, 
+											even though it is considered a capital investment 	
+											in US national accounting 
+											and is part of the total capital investment
+											as calculated in the US Fixed Assets table.
+											Section~\ref{sec:value_auto}
+											contains further discussion about 
+											the implications of including
+											intellectual property as part 
+											of the national measure of capital stock. 			\\
+					&				&	\\
+Net Economic Output & 347,513		&   	2011 Input-Output accounts. 
+											The Use of Commodities by Industries 
+											before Redefinitions. 
+											(Producers' Prices). 
+											Total Industry Output, less Capital (self-use)
+											(\$795) and  Resources (self-use)
+											(IOC 3361MV used by IOC 3361MV,
+											\$133,961).%
+												\tablefootnote{
+												Note that 
+												this self-use of resources 
+												is slightly lower than the one used 
+												to calculate the total 
+												of self-use Resources (\$139,259) 
+												that was subtracted from total Material 
+												inputs (above) to arrive at a figure 
+												for Resources from all other sectors (above). 
+												This is because the KLEMS data, 
+												like the Fixed Asset data, 
+												are more detailed than the standard I-O accounts 
+												and may contain judgments and trend estimates.  
+												For example, in 2011, 
+												the KLEMS total intermediate inputs 
+												to the auto industry is higher than the amount 
+												from the Use table: \$392,965 vs. \$368,476.
+												}												\\
+\label{tab:auto_calculations}
+\end{longtabu}
 
 
 \begin{table}
 \caption[BEA data sources]{BEA data sources.}
 \begin{center}
-
-         
-
   \begin{tabular}{l @{\hspace{2em}} p{10cm}}
    \toprule 
     Dataset & Details  \\ 
 
 	\midrule
-Use Tables & Annual Input-Output accounts. 
-	These are the primary industry data collected by the BEA\@.
-	The Use tables present what industries use what commodities 
-	as intermediate goods, and the value of the commodities that end up as final goods. 
-	The values are computed at Producer’s prices. 
-	That is, the value includes the sales price, plus sales and excise taxes, 
-	less any subsidies. 
-	This table provides a link from Industry data to National data. 
-	The sum of all final output is a measure of National GDP\@.
-	An introduction to these data is available.\cite{Streitwieser:2011aa}
-	The tables can be found online.\cite{BEAIOData}\\
- & \\
+Use Tables 	& 	Annual Input-Output accounts. 
+				These are the primary industry data collected by the BEA\@.
+				The Use tables present what industries use what commodities 
+				as intermediate goods, and the value of the commodities that end up as final goods. 
+				The values are computed at Producer’s prices. 
+				That is, the value includes the sales price, plus sales and excise taxes, 
+				less any subsidies. 
+				This table provides a link from Industry data to National data. 
+				The sum of all final output is a measure of National GDP\@.
+				An introduction to these data is available.\cite{Streitwieser:2011aa}
+				The tables can be found online.\cite{BEAIOData}\\
+			& 	\\
 
-KLEMS & (K-capital, L-labor, E-energy, M-materials, and S-purchased services) 
-	refers to broad categories of intermediate inputs 
-	that are consumed by industries in their production 
-	of goods and services.\cite{Strassner:2005aa}
-	The detailed estimates of intermediate inputs of an industry 
-	are classified into one of three cost categories:
-	energy~(E), materials~(M), and purchased services~(S).
-	The labor cost category~(L) includes an industry’s compensation to labor from value added, 
-	and the capital cost category~(K) includes the industry’s 
-	gross operating surplus plus taxes on production and imports less subsidies.  \\
-&\\
-	& Important note: As of January 2014, the 1998--2011 KLEMS tables
-	that were used for the analyses in Chapter~\ref{chap:value}) are 
-	no longer available online. They have been archived and replaced 
-	with the 2005-2012 revised format KLEMS dataset. Due to budget
-	cuts, the new
-	KLEMS only contains the Energy, Materials, and Service
-	value flow \emph{totals}. It no longer captures the underlying detail
-	sources. Thus, the authors' calculations for self-use of
-	materials, and re-categorization of some material inputs
-	to service inputs are not possible with the revised data.
-	The original dataset used for these analyses are available
-	by request from the BEA. For more information
-	on the KLEMS revison, see \cite{kim2014}, \cite{BEAKLEMSData}.\\
-&\\
-	& The authors hope, of course, that a reinviorated focus on
-	the importance of these details for national accounting
-	will provide justification for the BEA to return to 
-	making publicly available the underyling detailed KLEMS data.\\
- & \\
-Fixed Assets &  Fixed Assets Table. Detailed Fixed Assets Table. 
-	Categorizes capital investment by industry into three categories:
-	equipment, structure, and software. 
-	To obtain an estimate of self-use of capital, 
-	we went to the more detailed tables, 
-	which are less reliable than the standard tables. 
-	The BEA notes on the detailed tables indicates that 
-	``the more detailed estimates are more likely to be based on judgmental trends, 
-	on trends in the higher level aggregate, 
-	or on less reliable source data.''~\cite[Table~2.5]{BEADetailedData}\\
+KLEMS 		& 	Capital~(K), Labor, Energy, Materials, and purchased Services
+				refers to broad categories of intermediate inputs 
+				that are consumed by industries in their production 
+				of goods and services.\cite{Strassner:2005aa}
+				The detailed estimates of intermediate inputs of an industry 
+				are classified into one of three cost categories:
+				energy~(E), materials~(M), and purchased services~(S).
+				The labor cost category~(L) includes an industry’s compensation 
+				to labor from value added, 
+				and the capital cost category~(K) includes the industry’s 
+				gross operating surplus plus taxes on production and imports less subsidies.  \\
+			&	\\
+			& 	Important note: As of January 2014, the 1998--2011 KLEMS tables
+				that were used for the analyses in Chapter~\ref{chap:value}) are 
+				no longer available online. They have been archived and replaced 
+				with the 2005-2012 revised format KLEMS dataset. Due to budget
+				cuts, the new
+				KLEMS only contains the Energy, Materials, and Service
+				value flow \emph{totals}. It no longer captures the underlying detail
+				sources. Thus, the authors' calculations for self-use of
+				materials, and re-categorization of some material inputs
+				to service inputs are not possible with the revised data.
+				The original dataset used for these analyses are available
+				by request from the BEA. For more information
+				on the KLEMS revison, see~\cite{kim2014} and~\cite{BEAKLEMSData}.\\
+			&	\\
+			& 	The authors hope, of course, that a reinviorated focus on
+				the importance of these details for national accounting
+				will provide justification for the BEA to return to 
+				making publicly available the underyling detailed KLEMS data.\\
+			& 	\\
+Fixed Assets &	Fixed Assets Table. Detailed Fixed Assets Table. 
+				Categorizes capital investment by industry into three categories:
+				equipment, structure, and software. 
+				To obtain an estimate of self-use of capital, 
+				we went to the more detailed tables, 
+				which are less reliable than the standard tables. 
+				The BEA notes on the detailed tables indicates that 
+				``the more detailed estimates are more likely to be based on judgmental trends, 
+				on trends in the higher level aggregate, 
+				or on less reliable source data.''~\cite[Table~2.5]{BEADetailedData}\\
     \bottomrule
   \end{tabular}
 
 \end{center}
 \label{tab:data_definitions}
 \end{table}
-
-% Footnotes that belong with Table \ref{tab:calculations}:
-% 
-% 
-% \footnotesize{a. Two commodities categorized in the KLEMS data as ``Material'' intermediate inputs
-%  are ``Wholesale Trade'' (IOC 4200, \$26,580) and ``Truck Transportation.'' (IOC 4840, \$5,552). 
-% For our calculations, these commodities were recategorized as ``Services.''
-% The value of the flows in the table reflects the fact that 
-% these dollar amounts were subtracted from this ``Resource''
-% flow and added to ``Short-lived Goods.''}
-% 
-% 
-% 
-% \footnotesize{b. To confirm that these fixed asset types (particularly ``Custom Software'' and ``Own account software'')
-%  actually originated from the Auto Industry (that is, that they are truly self-made capital), the I-O ``Make'' table was consulted to ensure 
-% that these commodities were made by the Auto Industry.}
-% 
-% 
-% 
-% \footnotesize{c. Note that this self-use of resources is slightly lower than the one used to calculate the total of self-use Resources (\$139,259) that was subtracted from total Material inputs to arrive at a figure for Resources from all other sectors (above). This is because the KLEMS data, like the Fixed Asset data, are more detailed than the standard I-O accounts and may contain judgments and trend estimates.  For example, in 2011, the KLEMS total intermediate inputs to the auto industry is higher than the amount from the Use table: \$392,965 vs.\$368,476.}
 
 \clearpage{}
 
