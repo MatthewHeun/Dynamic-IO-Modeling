@@ -1,0 +1,32 @@
+Chapter 8:
+
+In this chapter, we discuss several implications that arise 
+from the detailed development of our dynamic framework for material, energy, and value accounting. 
+The first implications are for the energy I-O method itself. 
+We recommend a physical accounting framework that fully accounts 
+for capital stock and energy input from society (final consumption) to the economy. 
+We then discuss implications for economic ``development,'' 
+namely that economic growth could be considered a ``fully coupled'' problem: 
+understanding it requires breadth of knowledge and appreciation 
+for interactions among many important and complementary factors, 
+including financial capital, physical capital and associated ambodied energy, 
+direct energy, resources, and societal inputs. 
+Each, alone, is necessary, but not sufficient, for economic development. 
+We discuss implications for recycling and reuse of materials 
+as well as the concept of dematerialziation. 
+Finally, we view the concept of a steady-state economy 
+through the lens of our framework. 
+We find that there are many potential definitions of a steady-state economy, 
+none of which are fully satisfying when compared against the ideal of sustainability. 
+
+
+
+Chapter 9:
+
+This chapter briefly summarizes the book and highlights 
+the need for additional data on both inter-sector flows and accumulation 
+of manufactured capital and associated embodied energy. 
+We continue with a call to action, a list containing several tasks 
+that should be undertaken to modify national accounting. 
+Finally, we note that moving forward on these issues will be politically difficult, 
+but necessary, to adapt to the age of resource depletion.

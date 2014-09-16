@@ -1,0 +1,49 @@
+Chapter 2:
+
+In this chapter, we describe the development of approaches 
+to the relationship between the economy and the biosphere. 
+The historical development takes place over three eras, 
+the era of abundance, the era of energy constraints, 
+and the age of resource depletion. 
+Each era is defined by a dominant metaphor that guides 
+the economic model and leads to a framework for national accounting 
+that is perceived as relevant to understanding the economy. 
+The metaphor for the economy has evolved from the clockwork mechanism 
+of classical physics (economy isolated from the environment) 
+to an engine (the economy is dependent on an inexhaustible supply of inputs from the environment). 
+The chapter then suggests that the previous metaphors are insufficient 
+for the age of resource depletion and suggests a new metaphor: 
+the economy is society's \emph{metabolism}. 
+Next, the way in which the metabolism metaphor leads 
+to an expanded understanding of the requirements for national accounting 
+is described. 
+An argument is made for accounting a nation's wealth 
+(manufactured and natural capital) in addition to its income (GDP). 
+The chapter ends with a description of the structure of the rest of the book. 
+
+
+
+
+
+Chapter 6:
+
+In this chapter, we develop techniques to account 
+for flows of economic value through economies. 
+We employ the prevailing subjective theory of value for our framework, 
+that is, we use the value of market transactions 
+to value physical flows of materials and energy. 
+As part of the methodology section, we discuss the limitations 
+to relying solely on valuations obtainable from market transactions 
+and call for additional non-market valuation methods to be employed in national accounting. 
+In particular, we point to the System of Environmental Economic Accounts (SEEA), 
+the international standard developed by the UN\@. 
+We then develop value accounting equations and apply them to example economies~A--C.
+This chapter introduces two new terms to capture value-added (and destroyed) 
+within economic sectors, and demonstrate that these terms capture the value for GDP in national accounts. 
+Finally, we illustrate how our framework can be populated with data 
+from current national accounts to derive inter-sectoral value flows, 
+using national accounting data for the auto industry for illustration. 
+This section of the chapter also contains a discussion of the potential problems 
+with including intangible intellectual property assets in the nations measure of its capital stock. 
+
+

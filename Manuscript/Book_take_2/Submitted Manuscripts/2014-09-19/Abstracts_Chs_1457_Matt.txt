@@ -1,0 +1,58 @@
+Chapter 1:
+
+Biophysical limits are becoming binding constraints on mature economies, 
+and the data needed for policy-makers to understand and manage this reality are not universally available. 
+In this chapter, we discuss the problems that arise from relying solely 
+on the Solow growth model to describe an economy that is deeply interconnected to the biosphere. 
+We point out that mainstream economists forecast low growth rates for mature economies for 
+the foreseeable future because traditional drivers of economic growth 
+(growth rates of capital and labor productivity) have plateaued. 
+The guiding premise of this book is that stalled economic growth can  
+be the natural outcome of mature economies reaching a limit of the supply 
+of energy and other forms of natural capital. 
+Thus, mainstream policy recommendations based on a Solow growth model 
+that would spur consumption and investment to invigorate economic growth 
+may actually backfire: 
+expansion of the stock of capital in the economy can contribute to the 
+slowdown of economic growth. 
+The chapter ends with a call for acknowledging the \emph{biophysical} 
+constraints of the economy and adjusting national accounting accordingly. 
+
+
+
+Chapter 4:
+
+In this chapter, we develop equations, assisted by the First Law of Thermodynamics, 
+that describe the flow of direct energy through economies. 
+The equations are applied to example economies with increasing levels of disaggregation. 
+Finally, the energy flows for our running example, the US auto industry, are discussed. 
+
+
+
+Chapter 5: 
+
+This chapter develops equations that describe 
+the accumulation and flow of embodied energy through economies. 
+We noted that waste heat from a sector is additive to the energy 
+embodied within products of a sector, 
+thereby providing the mechanism for accumulating 
+embodied energy along the manufacturing supply chain. 
+The embodied energy accounting equations were applied to example economies~A--C. 
+Finally, we discussed embodied energy in the context of our running example, 
+the US auto industry. 
+We found that there are a few historical estimates of energy embodied within automobiles. 
+
+
+
+Chapter 7:
+
+In this chapter, we derive algebraic equations 
+that describe the energy intensity 
+(in units of J/\$) of products of economic sectors. 
+The algebraic equations are applied to Examples~A--C 
+to derive a matrix equation % chktex 8 for a vector of energy intensities for the entire economy. 
+We review several studies of energy intensity in the literature 
+and note a wide range of results from one study to the next. 
+The estimates of energy intensity also vary with time. 
+The range of energy intensities for the auto sector 
+is $0.83 \times 10^{4}$ kJ/\$ to $11.6 \times 10^{4}$ kJ/\$. 
