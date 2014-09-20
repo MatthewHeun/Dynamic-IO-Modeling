@@ -22,47 +22,82 @@ about where and how the book supports this premise.
 
 Chapter 1:
 
-Biophysical limits are becoming binding constraints on mature economies, 
-and the data needed for policy-makers to understand and manage this reality are not universally available. 
+We are entering a new era in which 
+biophysical limits related to natural resource extraction rates and
+the biosphere's waste assimilation capacity
+are becoming binding constraints on mature economies.
+Unfortunately, the data needed for policy-makers to understand and manage 
+economic growth in the new era are not universally available. 
 In this chapter, we discuss the problems that arise from relying solely 
-on the Solow growth model to describe an economy that is deeply interconnected to the biosphere. 
-We point out that mainstream economists forecast low growth rates for mature economies for 
-the foreseeable future because traditional drivers of economic growth 
+on the Solow growth model to describe an economy that is,
+in reality, deeply interconnected with the biosphere. 
+We point out that mainstream economists forecast low growth rates 
+for mature economies for the foreseeable future, 
+because traditional drivers of economic growth 
 (growth rates of capital and labor productivity) have plateaued. 
-The guiding premise of this book is that stalled economic growth can  
-be the natural outcome of mature economies reaching a limit of the supply 
-of energy and other forms of natural capital. 
-Thus, mainstream policy recommendations based on a Solow growth model 
-that would spur consumption and investment to invigorate economic growth 
-may actually backfire: 
-expansion of the stock of capital in the economy can contribute to the 
-slowdown of economic growth. 
-The chapter ends with a call for acknowledging the \emph{biophysical} 
-constraints of the economy and adjusting national accounting accordingly. 
+Unfortunately, mainstream policy recommendations to reinvigorate growth,
+based on the Solow growth model, 
+ignore three critical realities:
+the economy is tightly coupled to the biosphere, 
+there exist real and binding physical and technological limits 
+to the rate at which materials and energy can be extracted from the biosphere, and
+today’s emplacement of manufactured capital locks in tomorrow’s 
+material and energy demands from the biosphere.
+As such, mainstream policy recommendations are likely to fail in the long run:
+today's expansion of the stock of capital in the economy 
+in the hopes of enhancing consumption can contribute to the 
+slowdown of economic growth by bringing us ever-closer to biophysical limits.
+The chapter ends by noting that we need a new way to understand our economy, 
+and we suggest that a single agency gather, analyze, and disseminate
+detailed information about energy, embodied energy, and energy intensity 
+to provide markets and policymakers a more-comprehensive understanding 
+of the biophysical economy.
+However, a firm theoretical underpinning is needed before proceeding
+along this new path, 
+and the remainder of this book provide a rigorous theoretical framework 
+for a better system of national accounts, one that goes beyond GDP 
+and one that is relevant to the age of resource depletion.
 
 
 
 Chapter 4:
 
-In this chapter, we develop equations, assisted by the First Law of Thermodynamics, 
-that describe the flow of direct energy through economies. 
+Accounting for direct energy as it flows through an economy is essential 
+for developing a dynamic picture of its metabolism.
+In this chapter, we apply the First Law of Thermodynamics
+to sectors of the economy to describe the flow of direct energy
+from the biosphere, through economies, and ultimately back to the biosphere as waste heat. 
 The equations are applied to example economies with increasing levels of disaggregation. 
-Finally, the energy flows for our running example, the US auto industry, are discussed. 
+Finally, direct energy flows for the example of the US auto industry are discussed. 
+
 
 
 
 Chapter 5: 
 
-This chapter develops equations that describe 
-the accumulation and flow of embodied energy through economies. 
-We noted that waste heat from a sector is additive to the energy 
+In addition to materials and direct energy, embodied energy is essential to understanding 
+how the biophysical economy operates, because it provdes an indication of the 
+distribution of energy demand created by consumption of goods and services within an economy.
+Furthermore, the energy embodied in manufactured capital
+provides, to first approximation, an estimate of the energy required to replace
+depreciated capital.
+This chapter begins by developing, for the first time in the literature,
+a rigorous, theormodynamically-based definition of embodied energy.
+We then show that energy embodied in the products of an economic sector 
+the sum of all direct energy 
+consumed along the supply chain, 
+including all upstream processing stages.
+Equations that describe 
+the accumulation and flow of embodied energy through economies are developed
+through a series of increasingly-disaggregated model economies. 
+We note that waste heat from a sector is additive to the energy 
 embodied within products of a sector, 
 thereby providing the mechanism for accumulating 
 embodied energy along the manufacturing supply chain. 
-The embodied energy accounting equations were applied to example economies~A--C. 
-Finally, we discussed embodied energy in the context of our running example, 
+Finally, we discuss embodied energy in the context of our running example, 
 the US auto industry. 
-We found that there are a few historical estimates of energy embodied within automobiles. 
+There are very few historical estimates 
+of energy embodied within automobiles in the literature. 
 
 
 
