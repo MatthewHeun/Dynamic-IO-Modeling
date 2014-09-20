@@ -67,7 +67,8 @@ for developing a dynamic picture of its metabolism.
 In this chapter, we apply the First Law of Thermodynamics
 to sectors of the economy to describe the flow of direct energy
 from the biosphere, through economies, and ultimately back to the biosphere as waste heat. 
-The equations are applied to example economies with increasing levels of disaggregation. 
+Direct energy accounting equations are developed through a series 
+of example economies with increasing levels of disaggregation. 
 Finally, direct energy flows for the example of the US auto industry are discussed. 
 
 
@@ -84,32 +85,44 @@ depreciated capital.
 This chapter begins by developing, for the first time in the literature,
 a rigorous, theormodynamically-based definition of embodied energy.
 We then show that energy embodied in the products of an economic sector 
-the sum of all direct energy 
+is the sum of all direct energy 
 consumed along the supply chain, 
 including all upstream processing stages.
-Equations that describe 
-the accumulation and flow of embodied energy through economies are developed
-through a series of increasingly-disaggregated model economies. 
 We note that waste heat from a sector is additive to the energy 
 embodied within products of a sector, 
 thereby providing the mechanism for accumulating 
 embodied energy along the manufacturing supply chain. 
+Equations that describe 
+the accumulation and flow of embodied energy through economies are developed
+through a series of increasingly-disaggregated model economies. 
 Finally, we discuss embodied energy in the context of our running example, 
 the US auto industry. 
-There are very few historical estimates 
-of energy embodied within automobiles in the literature. 
+We find that there are very few estimates in the literature
+of energy embodied within automobiles.
 
 
 
 Chapter 7:
 
-In this chapter, we derive algebraic equations 
-that describe the energy intensity 
-(in units of J/\$) of products of economic sectors. 
-The algebraic equations are applied to Examples~A--C 
-to derive a matrix equation % chktex 8 for a vector of energy intensities for the entire economy. 
-We review several studies of energy intensity in the literature 
-and note a wide range of results from one study to the next. 
+Energy intensity, 
+the ratio of total energy consumed during the manufacture of a product
+to the economic value of that product, 
+is an inherently useful metric that describes the accumulation 
+of energy consumption along
+with the pathways traveled by products through an economy.
+It is a key piece of information that will help consumers and firms alike 
+make wise consumption and investment decisions in the age of resource depletion.
+The Energy Input-Output (EI-O) method developed by Leontief and extended by
+Bullard, Herendeen, and others was used historically to develop 
+static estimates of the energy intensity of products within economy.
+In this chapter, we extend the EI-O method 
+to develop a mathematical technique to estimate 
+energy intensity in a dynamic economy, 
+one that can accumulate manufactured capital in its sectors.
+As in previous chapters, 
+the equations are demonstrated on increasingly-disaggregated example economies.
+We review several studies of energy intensity of the US auto industry in the literature 
+and note a wide range of results from one study to the next.
 The estimates of energy intensity also vary with time. 
 The range of energy intensities for the auto sector 
 is $0.83 \times 10^{4}$ kJ/\$ to $11.6 \times 10^{4}$ kJ/\$. 
