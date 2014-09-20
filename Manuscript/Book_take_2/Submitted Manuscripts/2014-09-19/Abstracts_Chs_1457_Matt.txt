@@ -49,7 +49,7 @@ in the hopes of enhancing consumption can contribute to the
 slowdown of economic growth by bringing us ever-closer to biophysical limits.
 The chapter ends by noting that we need a new way to understand our economy, 
 and we suggest that 
-detailed information about energy, embodied energy, and energy intensity 
+detailed information about materials, energy, embodied energy, and energy intensity 
 be routinely gathered and analyzed and disseminated from a centralized location
 to provide markets and policymakers a more-comprehensive understanding 
 of the biophysical economy.
@@ -116,8 +116,9 @@ make wise consumption and investment decisions in the age of resource depletion.
 Unfortunately, energy intensity is not routinely estimated, and, if it is, 
 it erroneously does not account for the energy embodied 
 in our accumulating stock of manufactured capital.
-The Energy Input-Output (EI-O) method developed by Leontief and extended by
-Bullard, Herendeen, and others has been used historically to develop 
+The Energy Input-Output (EI-O) method, developed by
+Bullard, Herendeen, and others as an extension to Leontief's groundbreaking work,
+has been used historically to develop 
 static estimates of the energy intensity of products within economy.
 In this chapter, we extend the EI-O method 
 to develop a mathematical technique to estimate 
