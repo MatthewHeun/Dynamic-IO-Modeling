@@ -36,3 +36,16 @@ recycling, reuse, and dematerialization.
 The framework developed herein also provides an opportunity
 to assess an array of definitions for Daly's ``steady-state economy''
 relative to the ideal of a sustainable economy.
+
+The book ends with a list of next steps that could be taken including
+(1) national accounting agencies worldwide should develop and maintain 
+balance sheets of both nautral and manufactured capital 
+in addition to national income statements,
+(2) all stocks and inter-sector flows should be provided 
+in physical as well as financial units,
+(3) in the US, the Bureau for Economic Analysis (BEA) should restart detailed 
+Capital, Labor, Energy, Material, and Services (KLEMS)
+reporting,
+(4) national accounting agencies should routinely estimate 
+the energy intensity of economic products, and 
+(5) all of the above should be estimated and disseminated on an annual basis.
