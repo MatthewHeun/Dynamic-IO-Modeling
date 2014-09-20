@@ -1,0 +1,38 @@
+This book uses the metaphor ``The economy is society's metabolism'' 
+as a springboard to develop a rigorous theoretical framework 
+for a better system of national accounts, 
+one that goes \emph{Beyond GDP} and 
+one that is relevant to the age of resource depletion.
+We are entering a new era in which 
+biophysical limits related to natural resource extraction rates and
+the biosphere's waste assimilation capacity
+are becoming binding constraints on mature economies.
+Unfortunately, the data needed for policy-makers to understand and manage 
+economic growth in the new era are not universally available. 
+We need a new way to understand our economy, 
+and we suggest that 
+detailed information about materials, energy, embodied energy, and energy intensity 
+be routinely gathered, analyzed, and disseminated from a centralized location
+to provide markets and policymakers with a more-comprehensive understanding 
+of the biophysical economy.
+However, a firm theoretical foundation is needed before proceeding
+along this new path, 
+and this book provides just such a foundation.
+
+After arguing that both manufactured capital stock is
+an important driver of material and energy demands imposed upon the biopshere, 
+a new accounting framework is derived from the laws of thermodynamics
+that correctly reflects the reality that material and embodied energy 
+acccumulate within the capital stock of economic sectors.
+The framework developed herein extends the energy input-output (EI-O)
+techniques first developed by Bullard, Herendeen, and others 
+to estimate energy intensity of economic products.
+
+Implications from the new framework are discussed, including 
+the value of economic metrics for policy-making,
+the need for physically-based rather than product-based EI-O formulations, 
+a re-assessement of the concept of economic ``growth,'' and
+recycling, reuse, and dematerialization.
+The framework developed herein also provides an opportunity
+to assess an array of definitions for Daly's ``steady-state economy''
+relative to the ideal of a sustainable economy.
