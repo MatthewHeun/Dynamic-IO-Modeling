@@ -19,7 +19,7 @@ However, a firm theoretical foundation is needed before proceeding
 along this new path, 
 and this book provides just such a foundation.
 
-After arguing that both manufactured capital stock is
+After arguing that the stock of manufactured capital is
 an important driver of material and energy demands imposed upon the biopshere, 
 a new accounting framework is derived from the laws of thermodynamics
 that correctly reflects the reality that material and embodied energy 
