@@ -22,7 +22,24 @@ about where and how the book supports this premise.
 
 Chapter 2:
 
-In this chapter, we describe the development of approaches 
+Economic policies are based on assumptions
+about how the economy functions. When those models are incorrect,
+economic policies can result in unforeseen negative
+consequences. In this chapter, we argue that 
+current mainstream economic models, which typically exclude the biosphere,
+need to be updated. Vital physical transactions
+between the economy and the biosphere, such as waste
+pollution, natural resource extraction, and 
+use of ecosystem services, are not captured
+in current models of the economy. Because these 
+models also determine what data are needed to 
+develop appropriate policy, 
+national accounts are incomplete as well.
+In this chapter, we describe explain how economic models
+can be informed by the metaphors for how
+the economy works.
+
+the development of approaches 
 to the relationship between the economy and the biosphere. 
 The historical development takes place over three eras, 
 the era of abundance, the era of energy constraints, 
