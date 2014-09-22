@@ -51,10 +51,10 @@ to address important issues such as appropriate levels and types of capital form
 efficient energy production, wise use of recycling, and 
 the appropriate scale of the economy relative to the biosphere. 
 The problem is compounded by the fact that 
-systems of national accounts (mis)measure economic health by income (GDP),
-thereby counting many beneficial activities (such as recycling) 
-that preserve or enhance natural capital
-against economic health.
+GDP (mis)measures economic health by
+counting many beneficial activities 
+that preserve or enhance natural capital (such as recycling) 
+negatively.
 We conclude that navigating through the age of resource depletion
 will require expanded national accounting that captures
 robust, annual data on the entire portfolio of a nation's wealth 
