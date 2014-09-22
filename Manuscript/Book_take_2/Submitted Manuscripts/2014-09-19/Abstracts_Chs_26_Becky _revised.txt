@@ -22,101 +22,67 @@ about where and how the book supports this premise.
 
 Chapter 2:
 
-Economic policies are based on simplified models
-about how an economy functions. When those models are not 
-correct,
-economic policies based on them can result in unexpected negative
-economic outcomes, as shown in the previous chapter. In this chapter, we argue that 
-current mainstream economic models, which typically exclude the biosphere,
-are too narrow in scope. Vital physical transactions
-between the economy and the biosphere, such as waste
-pollution, natural resource extraction, and 
-use of ecosystem services, are not captured. We suggest
-that the reason for this is that current
-economic models are based
-on an incorrect metaphor for the economy. We describe 
-three eras of thinking about the economy,
-its relationship to the biosphere, and the
-metaphors that emerged during those times. We argue
-that as the world enters the age
-of resource depletion, 
-it is time for a new metaphor. We join with several
-others in arguing for a metaphor that presumes that society 
-is more similar to a living organism tightly coupled
-to the biosphere, than to a mechanical engine that the biosphere 
-provides for as needed. 
-We then suggest that if society 
-resembles a living organism, 
-the economy represents society's \emph{metabolism}. 
-We describe the metabolic processes 
-of anabolism, catabolism, and autophagy and draw analogies from them
-to key elements of economic processes: capital
-formation, energy production, and recycling. Currently, 
-economic policies are unable
-to address such issues as appropriate 
-levels and types of capital formation, 
-efficient energy production, and wise use of recycling, in the context of the 
-appropriate scale
-in relation to the biosphere. Currently, national accounting
-counts these and other types of beneficial activities against the measure
-of economic growth, because national accounts  
-only produce measures of economic output
-(national income). These 
-beneficial activities would likely reduce economic
-output, but they would benefit the economy by
-increasing its
-\emph{natural capital}.
-We conclude that current economic policies
-require expanded national accounting that captures
-robust, annual data on the entire portfolio of a nation's wealth 
-(manufactured and natural capital) and not simply
-data on national income (GDP). 
-The chapter ends with a description of the structure of the rest of the book. 
 
+Mainstream economic models, 
+which typically exclude physical transactions
+between the economy and the biosphere, 
+are incomplete: 
+wastes, pollution, natural resource extraction, and 
+use of ecosystem services are not included. 
+When economic policy is informed by these incomplete models,
+unexpected negative outcomes can arise.
+In this chapter, we suggest
+that the reason for the incompleteness of the economic models is 
+that we incorrectly understand the economy 
+through an outdated metaphor: the economy is a machine.
+We describe three eras of thinking about the economy,
+its relationship to the biosphere, and the
+metaphors that emerged during each era. 
+We argue that as the world enters the age
+of resource depletion, it's time for a new metaphor:
+the economy is society's \emph{metabolism}.
+We describe the metabolic processes 
+of anabolism, catabolism, and autophagy 
+and draw analogies from them
+to key elements of economic processes: 
+capital formation, energy production, and recycling. 
+Based on the machine metaphor, today's economic policies are unable
+to address important issues such as appropriate levels and types of capital formation, 
+efficient energy production, wise use of recycling, and 
+the appropriate scale of the economy relative to the biosphere. 
+The problem is compounded by the fact that 
+systems of national accounts (mis)measure economic health by income (GDP),
+thereby counting many beneficial activities (such as recycling) 
+that preserve or enhance natural capital
+against economic health.
+We conclude that navigating through the age of resource depletion
+will require expanded national accounting that captures
+robust, annual data on the entire portfolio of a nation's wealth 
+(manufactured and natural capital) in addition to 
+data on national income (GDP).
+The chapter ends with a description of the structure of the rest of the book. 
 
 
 
 
 Chapter 6:
 
-Accounting for the flow of value through an economy, also know as
-value-added, is currently the primary mission of national accounts. 
-The sum of value-added across all industry sectors is a nation's
-income, or GDP.
-The US Bureau of Econonmic Analysis and most other national
-accounting agencies produce a wide
-array of annual data tables
-on the components of national income and the inter-sectoral
-flows, know as Input-Output accounts. In this chapter, 
-we use these same techniques to account 
-for flows of economic value through economies. We argue that 
-accounting
-value flows is more complicated than accounting physical flows
-because it requires philosophical justification for the 
-how value is ascribed. 
-National accounting agencies employ a \emph{subjective} theory of value,
-as do we in our framework. That is, the value 
-of the flow of physical materials and energy
-is assumed to be the negotiated price 
-used in the exchange of currency for the materials or energy. 
-In this chapter, however, we also discuss the limitations 
-to relying solely on market transactions to value economic flows.
-Valuable exchanges between the economy and the biosphere
-take place outside the market, and thus are not integrated into
-national accounts. 
-We point to the expanded UN System of Environmental Economic Accounts (SEEA)
-or the US Integrated Enviornmental Economic System of Accounts (IEESA) as the way forward.
-We then introduce the terms needed in our framework to capture value-added (and destroyed) 
-and develop value accounting equations. We apply them to example economies~A--C,
-as in previous chapters,
-and illustrate how our framework works with extant
-national accounts by
-populating it with national accounting data for the auto industry.
-The chapter uses the auto industry example to raise a concern about data
-missing from national accounts and
-the effects of recent changes to national accounts that 
-have begun to account more and more intangible assets, such as
-software and intellectual property, in the nations measure of its capital stock. 
-
-
-
+To quantify financial activites and interdependencies within an economy,
+economists account for flows of economic value among sectors of the economy. 
+In this chapter, we utilize the prevailing subjective theory of value
+to develop a framework for value accounting that is consistent with the 
+materials, energy, and embodied energy accounting frameworks
+presented in prior chapters.
+We note that important and essential material exchanges between the economy and the biosphere
+(including energy extraction from the biosphere and waste assimilation by the biosphere)
+take place outside of the market, and, as such, they are not included in
+national accounts and have no economic value.
+We point to the UN System of Environmental Economic Accounts (SEEA)
+or the US Integrated Enviornmental Economic System of Accounts (IEESA) as the way forward
+to including some of these essential extra-market transactions in national accounting.
+Similar to previous chapters, 
+a series of increasingly-disaggregated model economies is used
+to develop our value accounting framework.
+Value flows for the US auto industry are presented,
+and concerns are raised about recent changes to include intangible assets,
+such as software and intellectual property, as capital stock.
