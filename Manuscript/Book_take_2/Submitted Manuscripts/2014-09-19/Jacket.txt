@@ -22,9 +22,9 @@ and this book provides just such a foundation.
 After arguing that the stock of manufactured capital is
 an important driver of material and energy demands imposed upon the biopshere, 
 a new accounting framework is derived from the laws of thermodynamics
-that correctly reflects the reality that material and embodied energy 
+that correctly reflects the facts that material and embodied energy 
 acccumulate within the capital stock of economic sectors.
-The framework developed herein extends the energy input-output (EI-O)
+The framework developed herein extends the Energy Input-Output (EI-O)
 techniques first developed by Bullard, Herendeen, and others 
 to estimate energy intensity of economic products.
 
@@ -32,7 +32,7 @@ Implications from the new framework are discussed, including
 the value of economic metrics for policy-making,
 the need for physically-based rather than product-based EI-O formulations, 
 a re-assessement of the concept of economic ``growth,'' and
-recycling, reuse, and dematerialization.
+an evaluation of recycling, reuse, and dematerialization.
 The framework developed herein also provides an opportunity
 to assess an array of definitions for Daly's ``steady-state economy''
 relative to the ideal of a sustainable economy.

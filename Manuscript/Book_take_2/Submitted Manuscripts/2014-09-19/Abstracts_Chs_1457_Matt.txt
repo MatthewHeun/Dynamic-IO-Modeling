@@ -51,7 +51,7 @@ The chapter ends by noting that we need a new way to understand our economy,
 and we suggest that 
 detailed information about materials, energy, embodied energy, and energy intensity 
 be routinely gathered and analyzed and disseminated from a centralized location
-to provide markets and policymakers a more-comprehensive understanding 
+to provide markets and policymakers with more-complete knowledge 
 of the biophysical economy.
 However, a firm theoretical underpinning is needed before proceeding
 along this new path, 
@@ -77,7 +77,8 @@ Finally, direct energy flows for the example of the US auto industry are discuss
 
 Chapter 5: 
 
-In addition to materials and direct energy, embodied energy is essential to understand 
+In addition to materials and direct energy, 
+accounting for embodied energy is essential to understand 
 how the biophysical economy operates, because it provides an indication of the 
 distribution of intra-economy energy demand created by consumption of goods and services.
 Furthermore, the energy embodied in manufactured capital
@@ -113,19 +114,19 @@ of energy consumption and economic value along
 the pathways traveled by products through an economy.
 It is a key piece of information that can help consumers and firms alike 
 make wise consumption and investment decisions in the age of resource depletion.
-Unfortunately, energy intensity is not routinely estimated, and, if it is, 
-it erroneously does not account for the energy embodied 
-in our accumulating stock of manufactured capital.
 The Energy Input-Output (EI-O) method, developed by
 Bullard, Herendeen, and others as an extension to Leontief's groundbreaking work,
 has been used historically to develop 
 static estimates of the energy intensity of products within economy.
+Unfortunately, energy intensity is not routinely estimated, and, if it is, 
+it erroneously does not account for the energy embodied 
+in our accumulating stock of manufactured capital.
 In this chapter, we extend the EI-O method 
 to develop a mathematical technique to estimate 
 energy intensity in a dynamic economy, 
 one that can accumulate manufactured capital in its sectors.
 As in previous chapters, 
-the equations are developed by example in increasingly-disaggregated economies.
+the equations are developed by example in increasingly-disaggregated model economies.
 We review several studies of energy intensity of the US auto industry in the literature 
 and note a wide range of results from one study to the next.
 The estimates of energy intensity also vary with time. 

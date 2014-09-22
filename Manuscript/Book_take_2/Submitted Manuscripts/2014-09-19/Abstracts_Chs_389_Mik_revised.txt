@@ -22,7 +22,7 @@ about where and how the book supports this premise.
 Chapter 3:
 
 The first step in understanding the economic metabolism 
-is to account the flow of materials through the economy 
+is to account for the flow of materials through the economy 
 and the exchange of materials with the biosphere.
 In this chapter, we develop a framework 
 for accounting material flows and accumulation
@@ -32,7 +32,7 @@ and continue with concepts from thermodynamics,
 such as system boundaries, control volumes, and
 the First Law of Thermodynamics,
 to develop a rigorous accounting framework.
-This framework is applied first to a one-sector then 
+The framework is applied first to a one-sector then 
 two-sector model of the economy
 as we construct a general framework for material
 accounting.
@@ -47,7 +47,7 @@ The metabolism metaphor and the material, energy, and economic value accounting 
 presented in the book has a number of implications for 
 the manner in which we understand our economies.
 In this chapter, we discuss several of these implications. 
-The first set of implications is for the energy I-O method itself. 
+The first set of implications is for the Energy Input-Output method itself. 
 We recommend a physical accounting framework that fully accounts 
 for capital stock and energy input from society (final consumption) to the economy. 
 We then discuss implications for economic ``development,'' 
@@ -69,7 +69,7 @@ none of which are fully satisfying when compared against the ideal of sustainabi
 Chapter 9:
 
 The dynamic accounting framework presented in previous chapters
-naturally gives rise to a set next steps necessary
+naturally gives rise to a set of next steps necessary
 to expand systems of national accounts 
 to encompass material and energy flows within our economies 
 and exchanges with the biosphere.
