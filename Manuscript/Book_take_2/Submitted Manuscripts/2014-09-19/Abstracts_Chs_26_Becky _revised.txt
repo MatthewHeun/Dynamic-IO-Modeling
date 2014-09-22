@@ -50,11 +50,12 @@ Based on the machine metaphor, today's economic policies are unable
 to address important issues such as appropriate levels and types of capital formation, 
 efficient energy production, wise use of recycling, and 
 the appropriate scale of the economy relative to the biosphere. 
-The problem is compounded by the fact that 
-GDP (mis)measures economic health by
-counting many beneficial activities 
-that preserve or enhance natural capital (such as recycling) 
-negatively.
+The problem is compounded by today's national accounting,
+which fails to count many beneficial decisions in GDP, 
+simply because because GDP measures only what is produced. 
+Thus, beneficial decisions that would that preserve or enhance
+natural capital (such as refraining from clearcutting forests)
+might, ultimately, reduce GDP.
 We conclude that navigating through the age of resource depletion
 will require expanded national accounting that captures
 robust, annual data on the entire portfolio of a nation's wealth 
