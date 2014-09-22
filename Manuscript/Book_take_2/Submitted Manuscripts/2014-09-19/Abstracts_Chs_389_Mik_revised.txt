@@ -21,40 +21,44 @@ about where and how the book supports this premise.
 
 Chapter 3:
 
-The first step in understanding the economic metabolism is to account the flow of materials through the economy and the exchange of materials with the biosphere.
-In this chapter we will develop a framework 
-for accounting material flows and accumulations
+The first step in understanding the economic metabolism 
+is to account the flow of materials through the economy 
+and the exchange of materials with the biosphere.
+In this chapter, we develop a framework 
+for accounting material flows and accumulation
 within economies.
-We will begin by looking at accounting in everyday life
-before using concepts from thermodynamics, 
-such as system boundaries, control volumes as well as
+We begin by considering accounting in everyday life
+and continue with concepts from thermodynamics, 
+such as system boundaries, control volumes, and
 the First Law of Thermodynamics,
-to develop a rigorous accounting procedure.
-This procedure is applied first to a one-sector then 
-two-sector model of the economy,
-in order to build up to a general framework for material
+to develop a rigorous accounting framework.
+This framework is applied first to a one-sector then 
+two-sector model of the economy
+as we construct a general framework for material
 accounting.
 We then apply the framework to the real-world
-example of the US auto industry.}
+example of the US auto industry.
+
+
 
 Chapter 8:
 
-The metabolic metaphor and the material, energy and economic value accounting framework 
+The metabolism metaphor and the material, energy, and economic value accounting framework 
 presented in the book has a number of implications for 
-the the manner in which we understand our economies.
+the manner in which we understand our economies.
 In this chapter, we discuss several of these implications. 
-The first set of implications are for the energy I-O method itself. 
+The first set of implications is for the energy I-O method itself. 
 We recommend a physical accounting framework that fully accounts 
 for capital stock and energy input from society (final consumption) to the economy. 
 We then discuss implications for economic ``development,'' 
 namely that economic growth could be considered a ``fully coupled'' problem: 
 understanding it requires breadth of knowledge and appreciation 
 for interactions among many important and complementary factors, 
-including financial capital, physical capital and associated embodied energy, 
-direct energy, resources, and societal inputs. 
+including financial capital, manufactured capital and associated embodied energy, 
+natural capital, direct energy, and societal inputs. 
 Each, alone, is necessary, but not sufficient, for economic development. 
 We discuss implications for recycling and reuse of materials 
-as well as the concept of dematerialization. 
+and for the concept of dematerialization. 
 Finally, we view the concept of a steady-state economy 
 through the lens of our framework. 
 We find that there are many potential definitions of a steady-state economy, 
@@ -64,11 +68,15 @@ none of which are fully satisfying when compared against the ideal of sustainabi
 
 Chapter 9:
 
-The dynamic accounting framework we have presented naturally gives rise to a set next steps required to expand systems of national accounts to encompass material and energy flows within our economies and exchanges with the biosphere.
-This chapter briefly summarizes the book and highlights 
+The dynamic accounting framework presented in previous chapters
+naturally gives rise to a set next steps necessary
+to expand systems of national accounts 
+to encompass material and energy flows within our economies 
+and exchanges with the biosphere.
+This final chapter briefly summarizes the book and highlights 
 the need for additional data on both inter-sector flows and accumulation 
-of manufactured capital and associated embodied energy. 
-We continue with a call to action, a list containing several tasks 
-that should be undertaken to modify national accounting. 
+of manufactured capital and its embodied energy. 
+We continue with a call to action, 
+a list of several tasks that should be undertaken to modify national accounting. 
 Finally, we note that moving forward on these issues will be politically difficult, 
 but necessary, to adapt to the age of resource depletion.
