@@ -32,26 +32,26 @@ use of ecosystem services are not included.
 When economic policy is informed by these incomplete models,
 unexpected negative outcomes can arise.
 In this chapter, we suggest
-that the reason for the incompleteness of the economic models is 
+that the reason for the incompleteness of mainstream economic models is 
 that we incorrectly understand the economy 
 through an outdated metaphor: the economy is a machine.
 We describe three eras of thinking about the economy,
 its relationship to the biosphere, and the
 metaphors that emerged during each era. 
 We argue that as the world enters the age
-of resource depletion, it's time for a new metaphor:
+of resource depletion, it is time for a new metaphor:
 the economy is society's \emph{metabolism}.
 We describe the metabolic processes 
 of anabolism, catabolism, and autophagy 
-and draw analogies from them
-to key elements of economic processes: 
+and draw analogies
+to key economic processes: 
 capital formation, energy production, and recycling. 
 Based on the machine metaphor, today's economic policies are unable
 to address important issues such as appropriate levels and types of capital formation, 
 efficient energy production, wise use of recycling, and 
 the appropriate scale of the economy relative to the biosphere. 
 The problem is compounded by today's national accounting,
-which fails to count many beneficial decisions in GDP, 
+which fails to count many beneficial activities in GDP, 
 simply because because GDP measures only what is produced. 
 Thus, wise and beneficial long-term decisions that would that preserve or enhance
 natural capital (such as refraining from clearcutting forests)
