@@ -78,13 +78,13 @@ Finally, direct energy flows for the example of the US auto industry are discuss
 Chapter 5: 
 
 In addition to materials and direct energy, embodied energy is essential to understand 
-how the biophysical economy operates, because it provdes an indication of the 
+how the biophysical economy operates, because it provides an indication of the 
 distribution of intra-economy energy demand created by consumption of goods and services.
 Furthermore, the energy embodied in manufactured capital
 provides, to first approximation, an estimate of the energy required to replace
 depreciated capital.
 This chapter begins by developing, for the first time in the literature,
-a rigorous, theormodynamically-based definition of embodied energy.
+a rigorous, thermodynamically-based definition of embodied energy.
 We then show that energy embodied in the products of an economic sector 
 is the sum of all direct energy 
 consumed along the supply chain, 
