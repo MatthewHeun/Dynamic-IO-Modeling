@@ -24,12 +24,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1370"
+     inkscape:window-width="1378"
      inkscape:window-height="856"
      id="namedview97"
      showgrid="false"
      inkscape:zoom="0.48396946"
-     inkscape:cx="709.94817"
+     inkscape:cx="673.78886"
      inkscape:cy="555.82019"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -762,6 +762,7 @@
 
 
 
+
 <text
    transform="scale(1,-1)"
    sodipodi:linespacing="125%"
@@ -778,6 +779,7 @@
    id="tspan3169">01</tspan> = E<tspan
    style="font-size:52.00042725%;text-align:start;text-anchor:start;baseline-shift:sub"
    id="tspan3044">01</tspan></tspan></text>
+
 
 
 
@@ -866,6 +868,7 @@
 
 
 
+
 <path
    d="m 309.27099,-44.21217 0,468.3 85.42,48 85.417,-48 0,-468.047 -85.417,-48.125 z"
    id="path4124"
@@ -874,7 +877,7 @@
    sodipodi:nodetypes="ccccccc" /><path
    d="m 394.68949,-88.93106 0,-183.39388"
    id="path4841"
-   style="fill:none;stroke:#008000;stroke-width:3.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.40000000000000036, 6.40000000000000036;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+   style="fill:none;stroke:#008000;stroke-width:3.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.4,6.4;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
    inkscape:connector-curvature="0"
    sodipodi:nodetypes="cc" /><text
    transform="scale(1,-1)"
@@ -892,6 +895,7 @@
    id="tspan3181">10</tspan> = B<tspan
    id="tspan4847"
    style="font-size:52.00042725%;text-align:start;text-anchor:start;baseline-shift:sub">10</tspan></tspan></text>
+
 
 
 
@@ -953,6 +957,7 @@
      id="tspan3107"
      x="1491.8081"
      y="664.91211" /></text>
+
 
 
 
@@ -1262,6 +1267,7 @@
 
 
 
+
 </g></g>
 
 
@@ -1388,6 +1394,7 @@
 
 
 
+
 <path
    transform="matrix(0.07404241,0,0,-0.1031305,-585.02581,-131.70169)"
    d="m -155.14324,250.41866 c 0,10.7104 -12.09348,19.3929 -27.01155,19.3929 -14.91806,0 -27.01154,-8.6825 -27.01154,-19.3929 0,-10.71041 12.09348,-19.39291 27.01154,-19.39291 14.91807,0 27.01155,8.6825 27.01155,19.39291 z"
@@ -1494,6 +1501,7 @@
 
 
 
+
 <path
    sodipodi:type="arc"
    style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1558,6 +1566,7 @@
    id="tspan3457">1</tspan> = T<tspan
    id="tspan3160"
    style="font-size:52.00042725%;baseline-shift:sub">11</tspan></tspan></text>
+
 
 
 

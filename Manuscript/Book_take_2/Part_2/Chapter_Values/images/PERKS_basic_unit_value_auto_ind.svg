@@ -10,10 +10,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1237.8521"
-   height="558.80261"
+   height="578.80261"
    id="svg4584"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="PERKS_basic_unit_value_auto_ind.pdf">
   <defs
      id="defs4586">
@@ -418,15 +418,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.73952369"
-     inkscape:cx="1149.5821"
-     inkscape:cy="333.56858"
+     inkscape:cx="662.78228"
+     inkscape:cy="333.56855"
      inkscape:document-units="px"
      inkscape:current-layer="g4157"
      showgrid="false"
-     inkscape:window-width="1218"
-     inkscape:window-height="698"
-     inkscape:window-x="54"
-     inkscape:window-y="-8"
+     inkscape:window-width="1380"
+     inkscape:window-height="856"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -435,19 +435,19 @@
      fit-margin-right="0"
      fit-margin-bottom="0">
     <sodipodi:guide
-       position="1093.1587,-54.336071"
+       position="1093.1587,-54.336103"
        orientation="0,744.09448"
        id="guide4913" />
     <sodipodi:guide
-       position="984.5873,929.4547"
+       position="984.5873,929.45467"
        orientation="-1052.3622,0"
        id="guide4915" />
     <sodipodi:guide
-       position="1198.873,611.37821"
+       position="1198.873,611.37818"
        orientation="0,-744.09448"
        id="guide4917" />
     <sodipodi:guide
-       position="-312.55556,751.37821"
+       position="-312.55556,751.37818"
        orientation="1052.3622,0"
        id="guide4919" />
   </sodipodi:namedview>
@@ -467,7 +467,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-6.84127,-370.6521)">
+     transform="translate(-6.84127,-350.6521)">
     <g
        transform="translate(828.55264,220.62332)"
        id="g4157">
@@ -907,11 +907,11 @@
            id="flowPara4375">$347,513</flowPara></flowRoot>      <text
          sodipodi:linespacing="125%"
          id="text4965"
-         y="170.41354"
+         y="150.41354"
          x="-392.84967"
          style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
          xml:space="preserve"><tspan
-           y="170.41354"
+           y="150.41354"
            x="-392.84967"
            id="tspan4967"
            sodipodi:role="line">Inputs from other sectors of the economy</tspan></text>
@@ -987,7 +987,7 @@
       <flowRoot
          xml:space="preserve"
          id="flowRoot3365"
-         style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
            id="flowRegion3367"><rect
              id="rect3369"
              width="0"
@@ -997,7 +997,7 @@
            id="flowPara3371" /></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot3387"
-         style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
            id="flowRegion3389"><rect
              id="rect3391"
              width="0"
@@ -1007,7 +1007,7 @@
            id="flowPara3393" /></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot3395"
-         style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
            id="flowRegion3397"><rect
              id="rect3399"
              width="2.6521869"
@@ -1040,7 +1040,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot3474"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:oblique;font-weight:bold;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Sans Oblique"><flowRegion
+       style="font-size:16px;font-style:oblique;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Oblique"><flowRegion
          id="flowRegion3476"><rect
            id="rect3478"
            width="3.9782801"
@@ -1050,7 +1050,7 @@
          id="flowPara3480" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3482"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:oblique;font-weight:bold;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Sans Oblique"><flowRegion
+       style="font-size:16px;font-style:oblique;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Oblique"><flowRegion
          id="flowRegion3484"><rect
            id="rect3486"
            width="2.6521869"

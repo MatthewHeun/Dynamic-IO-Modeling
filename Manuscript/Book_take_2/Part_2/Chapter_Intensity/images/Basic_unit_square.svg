@@ -9,14 +9,28 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1469.9001"
-   height="994.63922"
+   width="1472.9001"
+   height="1023.4286"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="Basic_unit_square.svg">
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="Basic_unit_square.pdf">
   <defs
      id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path4082"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
@@ -109,14 +123,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.96517408"
+     inkscape:zoom="0.64143861"
      inkscape:cx="734.95007"
-     inkscape:cy="497.31961"
+     inkscape:cy="628.33327"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
+     inkscape:window-width="1380"
+     inkscape:window-height="856"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -132,7 +146,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -140,9 +154,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(59.68512,158.75777)">
+     transform="translate(59.68512,187.54715)">
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m 1084.9541,699.90105 -0.4141,93.4793"
        id="path3264"
        inkscape:connector-curvature="0"
@@ -154,13 +168,13 @@
        d="m 912.62232,544.05219 0,156.48509 343.54138,0 0,-156.52902 z"
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m 1255.9857,620.11211 153.4793,0.41408"
        id="path3276"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Mend)"
        d="m 1084.954,457.90106 -0.4141,83.4793"
        id="path3278"
        inkscape:connector-curvature="0"
@@ -199,13 +213,13 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m 1148.9541,635.90105 -0.4141,165.4793"
        id="path3391"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Mend)"
        d="m 1220.5748,457.47895 0,138.0429 -29.4793,0.4141"
        id="path3397"
        inkscape:connector-curvature="0"
@@ -215,7 +229,7 @@
        inkscape:connector-curvature="0"
        id="path4273"
        d="m 738.01523,820.40344 0.22526,-199.42761 170.35212,0.23395"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)" />
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
@@ -271,18 +285,18 @@
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        x="1129.5564"
-       y="392.83762"
+       y="372.83762"
        id="text3035"
        sodipodi:linespacing="125%"><tspan
          id="tspan3072"
          style="font-size:28px;text-align:center;text-anchor:middle"
          sodipodi:role="line"
          x="1129.5564"
-         y="392.83762">Inputs from other sectors</tspan><tspan
+         y="372.83762">Inputs from other sectors</tspan><tspan
          style="font-size:28px;text-align:center;text-anchor:middle"
          sodipodi:role="line"
          x="1129.5564"
-         y="427.83762"
+         y="407.83762"
          id="tspan3152">of the economy</tspan></text>
     <text
        xml:space="preserve"
@@ -301,7 +315,7 @@
          id="tspan3158">flows</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 912.62232,24.05219 0,156.48509 343.54138,0 0,-156.52902 z"
+       d="m 912.62232,4.05219 0,156.48509 343.54138,0 0,-156.52902 z"
        id="path3186"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
@@ -309,63 +323,63 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path3188"
-       d="m 1255.9857,100.11211 153.4793,0.41408"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)" />
+       d="m 1255.9857,80.11211 153.4793,0.41408"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path3190"
-       d="m 1084.954,-62.09894 -0.4141,83.4793"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Lend)" />
+       d="m 1084.954,-82.09894 -0.4141,83.4793"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Mend)" />
     <text
        sodipodi:linespacing="125%"
        id="text3192"
-       y="-118.67184"
+       y="-138.67184"
        x="700.39691"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
          style="font-size:56px"
-         y="-118.67184"
+         y="-138.67184"
          x="700.39691"
          id="tspan3194"
          sodipodi:role="line">B</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3196"
-       y="89.805908"
+       y="69.805908"
        x="1260.6757"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
-         y="89.805908"
+         y="69.805908"
          x="1260.6757"
          id="tspan3198"
          sodipodi:role="line">Economic</tspan><tspan
          id="tspan3200"
-         y="124.80591"
+         y="104.80591"
          x="1260.6757"
          sodipodi:role="line">output</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="m 738.01523,300.40344 0.22526,-199.42761 170.35212,0.23395"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)"
+       d="m 738.01523,280.40344 0.22526,-199.42761 170.35212,0.23395"
        id="path3208"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
     <text
        sodipodi:linespacing="125%"
        id="text3210"
-       y="59.65564"
+       y="39.65564"
        x="746.88062"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
          id="tspan3212"
-         y="59.65564"
+         y="39.65564"
          x="746.88062"
          sodipodi:role="line">Inputs from</tspan><tspan
          id="tspan3214"
-         y="94.65564"
+         y="74.65564"
          x="746.88062"
          sodipodi:role="line">the natural</tspan><tspan
-         y="129.65564"
+         y="109.65564"
          x="746.88062"
          sodipodi:role="line"
          id="tspan3216">environment</tspan></text>
@@ -373,33 +387,33 @@
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        x="938.75934"
-       y="310.31702"
+       y="290.31702"
        id="text3218"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3220"
          x="938.75934"
-         y="310.31702">Biosphere</tspan></text>
+         y="290.31702">Biosphere</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1259.4377,303.11274 c -161.5514,-38.26737 -372.71068,-40.45343 -531.2321,0"
+       d="m 1259.4377,283.11274 c -161.5514,-38.26737 -372.71068,-40.45343 -531.2321,0"
        id="path3222"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <text
        sodipodi:linespacing="125%"
        id="text3230"
-       y="-127.16238"
+       y="-167.16238"
        x="1129.5564"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
-         y="-127.16238"
+         y="-167.16238"
          x="1129.5564"
          sodipodi:role="line"
          style="font-size:28px;text-align:center;text-anchor:middle"
          id="tspan3232">Inputs from other sectors</tspan><tspan
          id="tspan3234"
-         y="-92.162376"
+         y="-132.16238"
          x="1129.5564"
          sodipodi:role="line"
          style="font-size:28px;text-align:center;text-anchor:middle">of the economy</tspan></text>
@@ -408,7 +422,7 @@
        inkscape:connector-curvature="0"
        id="path3242"
        d="m 324.9541,699.90105 -0.4141,93.4793"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 152.62232,544.05219 0,156.48509 343.54138,0 0,-156.52902 z"
@@ -420,13 +434,13 @@
        inkscape:connector-curvature="0"
        id="path3246"
        d="m 495.9857,620.11211 153.4793,0.41408"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path3248"
        d="m 324.954,457.90106 -0.4141,83.4793"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Lend)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Mend)" />
     <text
        sodipodi:linespacing="125%"
        id="text3250"
@@ -455,7 +469,7 @@
          x="500.67572"
          sodipodi:role="line">output</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m -21.98477,820.40344 0.22526,-199.42761 170.35212,0.23395"
        id="path3267"
        inkscape:connector-curvature="0"
@@ -499,17 +513,17 @@
     <text
        sodipodi:linespacing="125%"
        id="text3289"
-       y="392.83762"
+       y="372.83762"
        x="369.5564"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
-         y="392.83762"
+         y="372.83762"
          x="369.5564"
          sodipodi:role="line"
          style="font-size:28px;text-align:center;text-anchor:middle"
          id="tspan3291">Inputs from other sectors</tspan><tspan
          id="tspan3293"
-         y="427.83762"
+         y="407.83762"
          x="369.5564"
          sodipodi:role="line"
          style="font-size:28px;text-align:center;text-anchor:middle">of the economy</tspan></text>
@@ -532,17 +546,17 @@
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path3301"
-       d="m 152.62232,24.05219 0,156.48509 343.54138,0 0,-156.52902 z"
+       d="m 152.62232,4.05219 0,156.48509 343.54138,0 0,-156.52902 z"
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="m 495.9857,100.11211 153.4793,0.41408"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Mend)"
+       d="M 495.9857,80.11211 649.465,80.52619"
        id="path3303"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Lend)"
-       d="m 324.954,-62.09894 -0.4141,83.4793"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#Arrow1Mend)"
+       d="m 324.954,-82.09894 -0.4141,83.4793"
        id="path3305"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -550,37 +564,37 @@
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        x="-59.603088"
-       y="-118.67184"
+       y="-138.67184"
        id="text3307"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3309"
          x="-59.603088"
-         y="-118.67184"
+         y="-138.67184"
          style="font-size:56px">A</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        x="500.67572"
-       y="89.805908"
+       y="69.805908"
        id="text3311"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3313"
          x="500.67572"
-         y="89.805908">Economic</tspan><tspan
+         y="69.805908">Economic</tspan><tspan
          sodipodi:role="line"
          x="500.67572"
-         y="124.80591"
+         y="104.80591"
          id="tspan3315">output</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3327"
-       y="310.31702"
+       y="290.31702"
        x="178.75934"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
-         y="310.31702"
+         y="290.31702"
          x="178.75934"
          id="tspan3329"
          sodipodi:role="line">Biosphere</tspan></text>
@@ -588,24 +602,24 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path3331"
-       d="m 499.4377,303.11274 c -161.5514,-38.26737 -372.71068,-40.45343 -531.2321,0"
+       d="m 499.4377,283.11274 c -161.5514,-38.26737 -372.71068,-40.45343 -531.2321,0"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
        x="369.5564"
-       y="-127.16238"
+       y="-167.16238"
        id="text3333"
        sodipodi:linespacing="125%"><tspan
          id="tspan3335"
          style="font-size:28px;text-align:center;text-anchor:middle"
          sodipodi:role="line"
          x="369.5564"
-         y="-127.16238">Inputs from other sectors</tspan><tspan
+         y="-167.16238">Inputs from other sectors</tspan><tspan
          style="font-size:28px;text-align:center;text-anchor:middle"
          sodipodi:role="line"
          x="369.5564"
-         y="-92.162376"
+         y="-132.16238"
          id="tspan3337">of the economy</tspan></text>
   </g>
 </svg>

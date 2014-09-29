@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="PERKS_basic_unit_value.svg">
+   sodipodi:docname="PERKS_basic_unit_value.pdf">
   <defs
      id="defs4">
     <marker
@@ -734,12 +734,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.85683676"
-     inkscape:cx="601.63152"
-     inkscape:cy="489.929"
+     inkscape:cx="581.20756"
+     inkscape:cy="349.87899"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1378"
+     inkscape:window-width="1380"
      inkscape:window-height="856"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -756,7 +756,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -818,7 +818,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6,6;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m -12.33459,503.34686 -0.41408,33.47929"
        id="path6806"
        inkscape:connector-curvature="0"
@@ -964,11 +964,11 @@
     <text
        sodipodi:linespacing="125%"
        id="text4965"
-       y="175.26691"
+       y="155.26691"
        x="-386.526"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
        xml:space="preserve"><tspan
-         y="175.26691"
+         y="155.26691"
          x="-386.526"
          id="tspan4967"
          sodipodi:role="line">Inputs from other sectors of the economy</tspan></text>
@@ -990,9 +990,9 @@
        inkscape:connector-curvature="0"
        id="path3167"
        d="m -90.33459,403.34686 -0.41408,37.47929"
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6,6;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2,2;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Lend)"
        d="m -74.33459,404.34707 -0.41408,37.47929"
        id="path3169"
        inkscape:connector-curvature="0"
@@ -1002,7 +1002,7 @@
        inkscape:connector-curvature="0"
        id="path3172"
        d="m 20.771398,523.14659 53.47929,0.41408"
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-start:url(#DotL);marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6,6;stroke-dashoffset:0;marker-start:url(#DotL);marker-end:url(#Arrow1Mend)" />
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.34521055;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
