@@ -391,7 +391,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -682,46 +682,48 @@
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans Bold"
-       x="-447.77228"
+       x="-433.77228"
        y="271.70667"
        id="text3091"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3093"
-         x="-447.77228"
-         y="271.70667">$175,491</tspan></text>
+         x="-433.77228"
+         y="271.70667">175,491</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       x="-260.42041"
-       y="466.5065"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold;text-anchor:middle;text-align:center"
+       x="-161.56592"
+       y="442.5065"
        id="text3095"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3097"
          x="-260.42041"
-         y="466.5065">US Automobile</tspan><tspan
+         y="442.5065">US Automobile</tspan><tspan
          sodipodi:role="line"
          x="-260.42041"
-         y="501.5065"
+         y="477.5065"
          id="tspan3099">Manufacturing</tspan><tspan
          sodipodi:role="line"
          x="-260.42041"
-         y="536.50647"
-         id="tspan3101">Sector 2011</tspan></text>
+         y="512.50647"
+         id="tspan3101">Sector 2011</tspan><tspan
+         sodipodi:role="line"
+         x="-260.42041"
+         y="547.50647"
+         id="tspan3094">(Million USD)</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3107"
        y="271.70667"
-       x="-278.42853"
-       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans Bold"
+       x="-194.94806"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans Bold"
        xml:space="preserve"><tspan
          y="271.70667"
-         x="-278.42853"
+         x="-194.94806"
          id="tspan3109"
-         sodipodi:role="line">$3,637<tspan
-   style="text-align:end;text-anchor:end"
-   id="tspan3111" /></tspan></text>
+         sodipodi:role="line">3,637</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3113"
@@ -732,7 +734,7 @@
          y="271.70667"
          x="-77.772278"
          id="tspan3115"
-         sodipodi:role="line">$74,578</tspan></text>
+         sodipodi:role="line">74,578</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans Bold"
@@ -743,7 +745,7 @@
          sodipodi:role="line"
          id="tspan3119"
          x="75.571472"
-         y="271.70667">$15,447</tspan></text>
+         y="271.70667">15,447</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans Bold"
@@ -754,7 +756,7 @@
          sodipodi:role="line"
          id="tspan3125"
          x="82.227722"
-         y="571.70667">$482,269</tspan></text>
+         y="571.70667">482,269</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3127"
@@ -765,7 +767,7 @@
          y="571.70667"
          x="301.57147"
          id="tspan3129"
-         sodipodi:role="line">$347,513</tspan></text>
+         sodipodi:role="line">347,513</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3131"
@@ -776,7 +778,7 @@
          y="465.70667"
          x="103.57147"
          id="tspan3133"
-         sodipodi:role="line">$15,181</tspan></text>
+         sodipodi:role="line">15,181</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans Bold"
@@ -787,6 +789,6 @@
          sodipodi:role="line"
          id="tspan3137"
          x="309.32928"
-         y="327.70667">$133.961</tspan></text>
+         y="327.70667">133,961</tspan></text>
   </g>
 </svg>
